@@ -2,10 +2,10 @@ FROM python:3.6
 
 EXPOSE 5000
 
-WORKDIR /app
+WORKDIR /backend
 
-COPY requirements.txt /app
+COPY requirements.txt /backend
 RUN pip install -r requirements.txt
 
-COPY app.py /app
+COPY app.py /backend
 CMD python app.py
