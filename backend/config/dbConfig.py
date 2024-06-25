@@ -8,4 +8,5 @@ load_dotenv()
 class dbConfig:
     SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL')
 
+
 db = SQLAlchemy()

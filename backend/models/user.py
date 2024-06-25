@@ -1,5 +1,4 @@
-from ..config.dbConfig import db
-
+from backend.app import db
 
 class User(db.Model):
     __tablename__ = 'user'
