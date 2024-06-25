@@ -16,7 +16,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
     volumes:
-      - ./db:/docker-entrypoint-initdb.d/:ro
+      - ./config:/docker-entrypoint-initdb.d/:ro
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -25,5 +25,5 @@ services:
     ports:
       - "8080:80"
     environment:
-      PMA_HOST: db
+      PMA_HOST: config
       MYSQL_ROOT_PASSWORD: root
