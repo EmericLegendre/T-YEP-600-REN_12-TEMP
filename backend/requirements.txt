@@ -1,2 +1,7 @@
+# pip install -r requirements.txt
 Flask
-mysql-connector
+Flask-SQLAlchemy
+python-dotenv
+pymysql
+Flask-Migrate
+cryptography
