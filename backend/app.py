@@ -1,8 +1,7 @@
 from flask import Flask
 from config.dbConfig import dbConfig, db
 from flask_migrate import Migrate
-from models.user import User
-
+from blueprints.userBlueprint import userBp
 
 def create_app():
     app = Flask(__name__)
@@ -12,8 +11,7 @@ def create_app():
     db.init_app(app)
     migrate = Migrate(app, db)
 
-    with app.app_context():
-        db.create_all()
+    app.register_blueprint(userBp)
 
     return app
 
