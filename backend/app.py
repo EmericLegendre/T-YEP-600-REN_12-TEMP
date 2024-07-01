@@ -1,9 +1,11 @@
 from flask import Flask
 
-from config.dbConfig import dbConfig, db
-from flask_migrate import Migrate
+from blueprints.countryBlueprint import countryBp
 from blueprints.userBlueprint import userBp
 from blueprints.keyLocationsBlueprint import keyLocationsBp
+from config.dbConfig import dbConfig, db
+from flask_migrate import Migrate
+
 
 def create_app():
     app = Flask(__name__)
@@ -15,6 +17,7 @@ def create_app():
 
     app.register_blueprint(userBp)
     app.register_blueprint(keyLocationsBp)
+    app.register_blueprint(countryBp)
 
     return app
 
