@@ -5,7 +5,7 @@ class City(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(255), nullable=False)
     countryId = db.Column(db.Integer, db.ForeignKey('country.id'), nullable=False)
-    # stateId = db.Column(db.Integer, db.ForeignKey('state.id'), nullable=False)
+    stateId = db.Column(db.Integer, db.ForeignKey('state.id'), nullable=False)
     population = db.Column(db.String(255), nullable=False)
     populationName = db.Column(db.String(255), nullable=False)
 
