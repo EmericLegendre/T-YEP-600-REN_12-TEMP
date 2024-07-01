@@ -4,7 +4,7 @@ from config.dbConfig import db
 class Country(db.Model):
     __tablename__ = 'country'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    name = db.Column(db.String(50), unique=True, nullable=False)
+    name = db.Column(db.String(50), nullable=False)
     continent = db.Column(db.String(50), nullable=False)
     subContinent = db.Column(db.String(50), nullable=False)
     currency = db.Column(db.String(50), nullable=False)
