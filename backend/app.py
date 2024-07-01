@@ -3,6 +3,7 @@ from flask import Flask
 from blueprints.countryInfosBlueprint import countryInfosBp
 from blueprints.countryBlueprint import countryBp
 from blueprints.userBlueprint import userBp
+from blueprints.cityBlueprint import cityBp
 from blueprints.keyLocationsBlueprint import keyLocationsBp
 from config.dbConfig import dbConfig, db
 from flask_migrate import Migrate
@@ -20,6 +21,9 @@ def create_app():
     app.register_blueprint(keyLocationsBp)
     app.register_blueprint(countryBp)
     app.register_blueprint(countryInfosBp)
+    app.register_blueprint(cityBp)
+
+    
 
     return app
 
