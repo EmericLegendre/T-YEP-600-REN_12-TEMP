@@ -14,6 +14,6 @@ class User(db.Model):
     country = db.Column(db.String(50), nullable=True)
 
     def __repr__(self) -> str:
-        ...
+
         return f"User(id={self.id!r}, mail={self.email!r}, password={self.password!r}, firstName={self.firstName!r},\
         lastname={self.lastName!r}, address={self.address!r}, city={self.city!r}, postalCode={self.postalCode!r}, country={self.country!r})"
