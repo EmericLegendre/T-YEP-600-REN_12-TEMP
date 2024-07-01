@@ -1,5 +1,6 @@
 from flask import Flask
 
+from blueprints.countryInfosBlueprint import countryInfosBp
 from blueprints.countryBlueprint import countryBp
 from blueprints.userBlueprint import userBp
 from blueprints.keyLocationsBlueprint import keyLocationsBp
@@ -18,6 +19,7 @@ def create_app():
     app.register_blueprint(userBp)
     app.register_blueprint(keyLocationsBp)
     app.register_blueprint(countryBp)
+    app.register_blueprint(countryInfosBp)
 
     return app
 
