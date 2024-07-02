@@ -33,6 +33,24 @@ def addCountry():
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
 
+@countryBp.route('/get', methods=['GET'])
+def getCountries():
+    try:
+        countries = Country.query.all()
+        return jsonify([{
+            'id': country.id,
+            'name': country.name,
+            'continent': country.continent,
+            'subContinent': country.subContinent,
+            'currency': country.currency,
+            'capital': country.capital,
+            'population': country.population,
+            'populationName': country.populationName,
+            'timezone': country.timezone
+        } for country in countries]), 200
+    except SQLAlchemyError as e:
+        return jsonify({'error': str(e)}), 400
+    
 @countryBp.route('/delete/<int:id>', methods=['DELETE'])
 def deleteCountry(id):
     try:
