@@ -15,7 +15,6 @@ class User(db.Model):
     country = db.Column(db.String(50), nullable=True)
 
     def __repr__(self) -> str:
-
         return f"User(id={self.id!r}, mail={self.email!r}, password={self.password!r}, firstName={self.firstName!r},\
         lastname={self.lastName!r}, address={self.address!r}, city={self.city!r}, postalCode={self.postalCode!r}, country={self.country!r})"
 
@@ -26,3 +25,6 @@ class User(db.Model):
     @password.setter
     def password(self, password):
         self.password_hash = generate_password_hash(password)
+
+    def verify_password(self, password):
+        return check_password_hash(self.password_hash, password)
