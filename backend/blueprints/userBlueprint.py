@@ -1,7 +1,8 @@
 from flask import Blueprint, request, jsonify
-from flask_jwt_extended import jwt_required, get_jwt_identity, create_access_token
+from flask_jwt_extended import jwt_required, create_access_token
 from models.user import User
 from config.dbConfig import db
+from sqlalchemy.exc import SQLAlchemyError
 
 userBp = Blueprint('userBlueprint', __name__)
 
@@ -57,3 +58,20 @@ def addUser():
 
     return jsonify({'message': 'User created successfully',
                     'user': {'id': newUser.id, 'email': newUser.email}}), 201
+
+
+# Delete User -> userId in URL
+@userBp.route('/delete/<int:id>', methods=['DELETE'])
+@jwt_required()
+def deleteUser(id):
+    try:
+        country = User.query.get(id)
+        if country is None:
+            return jsonify({'error': 'User not found'}), 404
+
+        db.session.delete(country)
+        db.session.commit()
+        return jsonify({'message': 'User deleted successfully'}), 200
+    except SQLAlchemyError as e:
+        db.session.rollback()
+        return jsonify({'error': str(e)}), 400
