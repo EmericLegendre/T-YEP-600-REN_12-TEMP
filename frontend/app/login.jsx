@@ -1,7 +1,10 @@
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native'
+import { Stack, useRouter } from 'expo-router'
 import React from 'react'
 
 const login = () => {
+
+  const router = useRouter();
   return (
       <View style={styles.container}>
         <Text style={styles.header}>Login</Text>
@@ -9,8 +12,9 @@ const login = () => {
         <TextInput style={styles.textinput} placeholder="Email address" underlineColorAndroid={'transparent'}/>
         <TextInput style={styles.textinput} placeholder="Password" secureTextEntry={true} underlineColorAndroid={'transparent'}/>
 
-        <TouchableOpacity style={styles.button}>
-                  <Text style={styles.btntext}>Sign Up</Text>
+        <TouchableOpacity style={styles.button}
+            onPress={() => router.push('/home')}>
+            <Text style={styles.btntext}>Sign Up</Text>
         </TouchableOpacity>
       </View>
     );

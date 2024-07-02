@@ -6,10 +6,7 @@ const home = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text>HomePage</Text>
-      <Button
-          title="Register here"
-          onPress={() => navigation.navigate('register')}
-      />
+
     </View>
   );
 }

@@ -1,8 +1,11 @@
-import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
-import React from 'react';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native'
+import { Stack, useRouter } from 'expo-router'
+import React from 'react'
 
 
 const register = () => {
+
+  const router = useRouter();
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Registration</Text>
@@ -12,7 +15,8 @@ const register = () => {
       <TextInput style={styles.textinput} placeholder="Email adress" underlineColorAndroid={'transparent'}/>
       <TextInput style={styles.textinput} placeholder="Password" secureTextEntry={true} underlineColorAndroid={'transparent'}/>
 
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button}
+      onPress={() => router.push('/home')}>
           <Text style={styles.btntext}>Sign Up</Text>
       </TouchableOpacity>
     </View>
