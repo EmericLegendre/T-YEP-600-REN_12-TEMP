@@ -47,7 +47,7 @@ def getStates():
         } for state in states]), 200
     except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400
-    
+
 @stateBp.route('/get/<int:id>', methods=['GET'])
 def getStateById(id):
     try:
