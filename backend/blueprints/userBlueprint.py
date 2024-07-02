@@ -102,3 +102,24 @@ def updateUser(id):
     except SQLAlchemyError as e:
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
+
+
+# Get User informations -> userId in URL
+@userBp.route('/get/<int:id>', methods=['GET'])
+@jwt_required()
+def getCountryById(id):
+    try:
+        user = User.query.get(id)
+        if user is None:
+            return jsonify({'error': 'User not found'}), 404
+        return jsonify({
+            'id': user.id,
+            'email': user.email,
+            'firstName': user.firstName,
+            'lastName': user.lastName,
+            'country': user.country,
+            'city': user.city
+
+        }), 200
+    except SQLAlchemyError as e:
+        return jsonify({'error': str(e)}), 400
