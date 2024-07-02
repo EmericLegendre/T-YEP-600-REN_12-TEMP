@@ -9,7 +9,7 @@ class Country(db.Model):
     subContinent = db.Column(db.String(50), nullable=False)
     currency = db.Column(db.String(50), nullable=False)
     capital = db.Column(db.String(50), nullable=False)
-    population = db.Column(db.Integer, nullable=False)
+    population = db.Column(db.String(255), nullable=False)
     populationName = db.Column(db.String(50), nullable=False)
     timezone = db.Column(db.String(50), nullable=False)
     countryInfos = db.relationship('CountryInfos', backref='country')
