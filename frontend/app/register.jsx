@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const profile = () => {
+const register = () => {
   return (
     <View>
       <Text>Register</Text>
@@ -9,6 +9,12 @@ const profile = () => {
   )
 }
 
-export default profile
+export default register
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  container: {
+    flex:1,
+    justifyContent: 'center',
+    alignitems:'center'
+  }
+})
