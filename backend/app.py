@@ -21,13 +21,13 @@ def create_app():
     migrate = Migrate(app, db)
 
     app.register_blueprint(userBp, url_prefix='/api/users')
-    app.register_blueprint(keyLocationsBp)
-    app.register_blueprint(countryBp)
-    app.register_blueprint(countryInfosBp)
-    app.register_blueprint(cityBp)
-    app.register_blueprint(cityInfosBp)
-    app.register_blueprint(stateInfosBp)
-    app.register_blueprint(stateBp)
+    app.register_blueprint(keyLocationsBp, url_prefix='/api/keyLocations')
+    app.register_blueprint(countryBp, url_prefix='/api/country')
+    app.register_blueprint(countryInfosBp, url_prefix='/api/countryInfos')
+    app.register_blueprint(cityBp, url_prefix='/api/city')
+    app.register_blueprint(cityInfosBp, url_prefix='/api/cityInfos')
+    app.register_blueprint(stateInfosBp, url_prefix='/api/stateInfos')
+    app.register_blueprint(stateBp, url_prefix='/api/state')
     
     return app
 

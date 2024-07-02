@@ -20,5 +20,4 @@ class Country(db.Model):
 
         return (f"Country(id={self.id!r}, name={self.name!r}, continent={self.continent!r}, "
                 f"subContinent={self.subContinent!r}, currency={self.currency!r}, capital={self.capital!r}, "
-                f"population={self.population!r}, populationName={self.populationName!r}, timezone={self.timezone!r}, "
-                f"countryInfos={self.countryInfos!r})")
+                f"population={self.population!r}, populationName={self.populationName!r}, timezone={self.timezone!r}")
