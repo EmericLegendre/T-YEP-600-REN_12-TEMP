@@ -2,10 +2,12 @@ from flask import Blueprint, jsonify, request
 from models.country import Country
 from config.dbConfig import db
 from sqlalchemy.exc import SQLAlchemyError
+from flask_jwt_extended import jwt_required, create_access_token
 
 countryBp = Blueprint('countryBlueprint', __name__)
 
 @countryBp.route('/add', methods=['POST'])
+@jwt_required()
 def addCountry():
     data = request.get_json()
     required_fields = ['name', 'continent', 'subContinent', 'currency', 'capital', 'population', 'populationName', 'timezone']
@@ -34,6 +36,7 @@ def addCountry():
         return jsonify({'error': str(e)}), 400
 
 @countryBp.route('/get', methods=['GET'])
+@jwt_required()
 def getCountries():
     try:
         countries = Country.query.all()
@@ -52,6 +55,7 @@ def getCountries():
         return jsonify({'error': str(e)}), 400
 
 @countryBp.route('/get/<int:id>', methods=['GET'])
+@jwt_required()
 def getCountryById(id):
     try:
         country = Country.query.get(id)
@@ -72,6 +76,7 @@ def getCountryById(id):
         return jsonify({'error': str(e)}), 400
     
 @countryBp.route('/delete/<int:id>', methods=['DELETE'])
+@jwt_required()
 def deleteCountry(id):
     try:
         country = Country.query.get(id)
