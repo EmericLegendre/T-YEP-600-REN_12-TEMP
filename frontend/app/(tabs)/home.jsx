@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, SafeAreaView, Button } from 'react-native'
 import React from 'react'
 import { Stack } from 'expo-router'
 
-const home = () => {
+const home = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text>HomePage</Text>
@@ -11,7 +11,7 @@ const home = () => {
           onPress={() => navigation.navigate('register')}
       />
     </View>
-  )
+  );
 }
 
 export default home
