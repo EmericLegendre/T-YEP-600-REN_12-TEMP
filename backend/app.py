@@ -9,12 +9,14 @@ from blueprints.cityInfosBlueprint import cityInfosBp
 from blueprints.stateInfosBlueprint import stateInfosBp
 from blueprints.keyLocationsBlueprint import keyLocationsBp
 from config.dbConfig import dbConfig, db
+from config.jwtConfig import jwt, jwtConfig
 from flask_migrate import Migrate
 
 
 def create_app():
     app = Flask(__name__)
     app.config.from_object(dbConfig)
+    app.config.from_object(jwtConfig)
 
     # init config & migrations
     db.init_app(app)
