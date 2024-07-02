@@ -12,13 +12,12 @@ class Country(db.Model):
     population = db.Column(db.Integer, nullable=False)
     populationName = db.Column(db.String(50), nullable=False)
     timezone = db.Column(db.String(50), nullable=False)
-    countryInfos = db.relationship('countryInfos', backref='Country')
-    states = db.relationship('states', backref='Country')
-    cities = db.relationship('cities', backref='Country')
+    countryInfos = db.relationship('CountryInfos', backref='country')
+    states = db.relationship('State', backref='country')
+    cities = db.relationship('City', backref='country')
 
     def __repr__(self) -> str:
 
         return (f"Country(id={self.id!r}, name={self.name!r}, continent={self.continent!r}, "
                 f"subContinent={self.subContinent!r}, currency={self.currency!r}, capital={self.capital!r}, "
-                f"population={self.population!r}, populationName={self.populationName!r}, timezone={self.timezone!r}, "
-                f"countryInfos={self.countryInfos!r})")
+                f"population={self.population!r}, populationName={self.populationName!r}, timezone={self.timezone!r}")

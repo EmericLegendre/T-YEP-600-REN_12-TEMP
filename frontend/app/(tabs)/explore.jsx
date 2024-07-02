@@ -1,15 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const register = () => {
+const explore = () => {
   return (
-    <View>
-      <Text>Register</Text>
+    <View style={styles.container}>
+      <Text>Explore</Text>
     </View>
   )
 }
 
-export default register
+export default explore
 
 const styles = StyleSheet.create({
   container: {
