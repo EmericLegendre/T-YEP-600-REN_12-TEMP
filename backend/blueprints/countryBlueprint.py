@@ -50,6 +50,26 @@ def getCountries():
         } for country in countries]), 200
     except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400
+
+@countryBp.route('/get/<int:id>', methods=['GET'])
+def getCountryById(id):
+    try:
+        country = Country.query.get(id)
+        if country is None:
+            return jsonify({'error': 'Country not found'}), 404
+        return jsonify({
+            'id': country.id,
+            'name': country.name,
+            'continent': country.continent,
+            'subContinent': country.subContinent,
+            'currency': country.currency,
+            'capital': country.capital,
+            'population': country.population,
+            'populationName': country.populationName,
+            'timezone': country.timezone
+        }), 200
+    except SQLAlchemyError as e:
+        return jsonify({'error': str(e)}), 400
     
 @countryBp.route('/delete/<int:id>', methods=['DELETE'])
 def deleteCountry(id):
