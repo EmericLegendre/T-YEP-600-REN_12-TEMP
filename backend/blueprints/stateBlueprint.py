@@ -48,6 +48,22 @@ def getStates():
     except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400
 
+@stateBp.route('/get/<int:id>', methods=['GET'])
+def getStateById(id):
+    try:
+        state = State.query.get(id)
+        if state is None:
+            return jsonify({'error': 'State not found'}), 404
+        return jsonify({
+            'id': state.id,
+            'name': state.name,
+            'countryId': state.countryId,
+            'population': state.population,
+            'populationName': state.populationName,
+            'regionalCapital': state.regionalCapital
+        }), 200
+    except SQLAlchemyError as e:
+        return jsonify({'error': str(e)}), 400
 
 @stateBp.route('/delete/<int:id>', methods=['DELETE'])
 @jwt_required()
