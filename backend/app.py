@@ -20,7 +20,7 @@ def create_app():
     db.init_app(app)
     migrate = Migrate(app, db)
 
-    app.register_blueprint(userBp)
+    app.register_blueprint(userBp, url_prefix='/api/users')
     app.register_blueprint(keyLocationsBp)
     app.register_blueprint(countryBp)
     app.register_blueprint(countryInfosBp)
