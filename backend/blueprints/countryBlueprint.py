@@ -71,6 +71,30 @@ def getCountryById(id):
     except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400
     
+@countryBp.route('/update/<int:id>', methods=['PUT'])
+def updateCountry(id):
+    data = request.get_json()
+    updatable_fields = ['name', 'continent', 'subContinent', 'currency', 'capital', 'population', 'populationName', 'timezone']
+
+    for field in data.keys():
+        if field not in updatable_fields:
+            return jsonify({'error': f'Invalid field: {field}'}), 400
+    
+    try:
+        country = Country.query.get(id)
+        if country is None:
+            return jsonify({'error': 'Country not found'}), 404
+
+        for field in updatable_fields:
+            if field in data:
+                setattr(country, field, data[field])
+
+        db.session.commit()
+        return jsonify({'message': 'Country updated successfully'}), 200
+    except SQLAlchemyError as e:
+        db.session.rollback()
+        return jsonify({'error': str(e)}), 400
+
 @countryBp.route('/delete/<int:id>', methods=['DELETE'])
 def deleteCountry(id):
     try:
