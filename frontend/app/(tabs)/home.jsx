@@ -1,15 +1,16 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native'
 import React from 'react'
+import { Stack } from 'expo-router'
 
-const explore = () => {
+const home = () => {
   return (
     <View style={styles.container}>
-      <Text>Explore</Text>
+      <Text>HomePage</Text>
     </View>
   )
 }
 
-export default explore
+export default home
 
 const styles = StyleSheet.create({
   container: {
