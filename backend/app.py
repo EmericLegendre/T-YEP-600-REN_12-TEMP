@@ -9,18 +9,22 @@ from blueprints.cityInfosBlueprint import cityInfosBp
 from blueprints.stateInfosBlueprint import stateInfosBp
 from blueprints.keyLocationsBlueprint import keyLocationsBp
 from config.dbConfig import dbConfig, db
-from config.jwtConfig import jwt, jwtConfig
+from config.jwtConfig import jwtConfig
 from flask_migrate import Migrate
+from flask_jwt_extended import JWTManager
 
 
 def create_app():
     app = Flask(__name__)
     app.config.from_object(dbConfig)
-    app.config.from_object(jwtConfig)
 
     # init config & migrations
     db.init_app(app)
     migrate = Migrate(app, db)
+
+    # JWT token init
+    jwt = JWTManager(app)
+    app.config.from_object(jwtConfig)
 
     app.register_blueprint(userBp, url_prefix='/api/users')
     app.register_blueprint(keyLocationsBp)

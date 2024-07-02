@@ -1,4 +1,5 @@
 from flask import Blueprint, request, jsonify
+from flask_jwt_extended import jwt_required, get_jwt_identity, create_access_token
 from models.user import User
 from config.dbConfig import db
 
@@ -7,8 +8,22 @@ userBp = Blueprint('userBlueprint', __name__)
 
 # User Routes
 
+# User Authentication ad give JWT token
+@userBp.route('/auth', methods=['POST'])
+def authentication():
+    data = request.get_json()
+    email = data.get('email')
+    password = data.get('password')
+    user = User.query.filter_by(email=email).first()
 
-# Create User -> JSON {email, }
+    if user and user.verify_password(password):
+        token = create_access_token(identity=user.email)
+        return jsonify({'apiToken': token}), 200
+    else:
+        return jsonify({'error': 'Invalid username or password'}), 401
+
+
+# Create User -> JSON {email, password, firstName, lastName, country, city}
 @userBp.route('/add', methods=['POST'])
 def addUser():
     data = request.get_json()
