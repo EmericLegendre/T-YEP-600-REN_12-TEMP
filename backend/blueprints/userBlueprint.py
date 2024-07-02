@@ -75,3 +75,30 @@ def deleteUser(id):
     except SQLAlchemyError as e:
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
+
+
+# Update user infos -> JSON {optionals : email, password, firstName, lastName, country, city}
+@userBp.route('/update/<int:id>', methods=['PUT'])
+@jwt_required()
+def updateUser(id):
+    data = request.get_json()
+    updatable_fields = ['email', 'password', 'firstName', 'lastName', 'country', 'city']
+
+    for field in data.keys():
+        if field not in updatable_fields:
+            return jsonify({'error': f'Invalid field: {field}'}), 400
+
+    try:
+        user = User.query.get(id)
+        if user is None:
+            return jsonify({'error': 'Country not found'}), 404
+
+        for field in updatable_fields:
+            if field in data:
+                setattr(user, field, data[field])
+
+        db.session.commit()
+        return jsonify({'message': 'User updated successfully'}), 200
+    except SQLAlchemyError as e:
+        db.session.rollback()
+        return jsonify({'error': str(e)}), 400
