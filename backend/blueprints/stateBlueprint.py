@@ -31,3 +31,17 @@ def addState():
     except SQLAlchemyError as e:
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
+    
+@stateBp.route('/delete/<int:id>', methods=['DELETE'])
+def deleteState(id):
+    try:
+        state = State.query.get(id)
+        if state is None:
+            return jsonify({'error': 'State not found'}), 404
+
+        db.session.delete(state)
+        db.session.commit()
+        return jsonify({'message': 'State deleted successfully'}), 200
+    except SQLAlchemyError as e:
+        db.session.rollback()
+        return jsonify({'error': str(e)}), 400
