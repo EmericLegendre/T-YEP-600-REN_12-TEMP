@@ -1,1 +1,4 @@
 node_modules
+*.pyc
+*/migrations/versions
+.env
