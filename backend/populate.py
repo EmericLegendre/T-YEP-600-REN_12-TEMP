@@ -91,6 +91,52 @@ def insert_states_to_db(states_data):
 
     return f"{success_count} states created successfully"
 
+def insert_cities_to_db(cities_data):
+    success_count = 0
+
+    for city_data in cities_data:
+        country_name = city_data["country_name"]
+        state_name = city_data["state_name"]
+        city_name = city_data["name"]
+        population = city_data["population"]
+        population_name = city_data["populationName"]
+
+        # Find or create the country
+        country = Country.query.filter_by(name=country_name).first()
+        if not country:
+            print(f"Country {country_name} not found in the database. Skipping city {city_name}.")
+            continue
+
+        # Find or create the state within the country
+        state = State.query.filter_by(name=state_name, countryId=country.id).first()
+        if not state:
+            print(f"State {state_name} in {country_name} not found in the database. Skipping city {city_name}.")
+            continue
+
+        # Check if city already exists in the database
+        existing_city = City.query.filter_by(name=city_name, stateId=state.id).first()
+        if existing_city:
+            print(f"City {city_name} in {state_name}, {country_name} already exists in the database. Skipping insertion.")
+            continue
+
+        # Create a new City object and add it to the session
+        new_city = City(
+            name=city_name,
+            population=population,
+            stateId=state.id,
+            countryId=country.id,
+            populationName=population_name
+        )
+        try:
+            db.session.add(new_city)
+            db.session.commit()
+            success_count += 1
+        except SQLAlchemyError as e:
+            db.session.rollback()
+            print(f"Error inserting city {city_name}: {e}")
+
+    return f"{success_count} cities created successfully"
+
 def populate_countries_from_json():
     with open('countries_data.json', 'r') as json_file:
         countries = json.load(json_file)
@@ -105,9 +151,16 @@ def populate_states_from_json():
     result = insert_states_to_db(states_data)
     print(result)
 
+def populate_cities_from_json():
+    with open('cities_data.json', 'r') as json_file:
+        cities_data = json.load(json_file)
+
+    result = insert_cities_to_db(cities_data)
+    print(result)
+
 if __name__ == '__main__':
     if len(sys.argv) > 2:
-        print("Usage: python script.py [countries|states]")
+        print("Usage: python script.py [countries|states|cities]")
         sys.exit(1)
 
     option = sys.argv[1] if len(sys.argv) > 1 else ""
@@ -117,7 +170,10 @@ if __name__ == '__main__':
             populate_countries_from_json()
         elif option == "states":
             populate_states_from_json()
+        elif option == "cities":
+            populate_cities_from_json()
         else:
             populate_countries_from_json()
             populate_states_from_json()
+            populate_cities_from_json()
 
