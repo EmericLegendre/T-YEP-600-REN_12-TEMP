@@ -8,13 +8,4 @@ COPY requirements.txt /backend
 RUN pip install -r requirements.txt
 
 COPY app.py /backend
-COPY populate.py /backend/
-COPY countries_data.json /backend/
-COPY states_data.json /backend/
-COPY migrations /backend/migrations
-
-# Add entrypoint script to run migrations and populate script
-COPY entrypoint.sh /backend/entrypoint.sh
-RUN chmod +x /backend/entrypoint.sh
-
-CMD ["./entrypoint.sh"]
+CMD python app.py
