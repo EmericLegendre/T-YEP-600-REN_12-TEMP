@@ -1,0 +1,3415 @@
+[
+    {
+        "name": "Wallis-et-Futuna",
+        "capital": "Mata-Utu",
+        "population": 11750,
+        "populationName": "Wallis and Futuna Islander",
+        "currency": "CFP franc",
+        "continent": "Oceania",
+        "subContinent": "Polynesia",
+        "timezone": "UTC+12:00",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "Islande",
+        "capital": "Reykjavik",
+        "population": 366425,
+        "populationName": "Islandais",
+        "currency": "Icelandic kr\u00f3na",
+        "continent": "Europe",
+        "subContinent": "Northern Europe",
+        "timezone": "UTC",
+        "languages": [
+            "Icelandic"
+        ]
+    },
+    {
+        "name": "Luxembourg",
+        "capital": "Luxembourg",
+        "population": 632275,
+        "populationName": "Luxembourgeois",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Western Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "German",
+            "French",
+            "Luxembourgish"
+        ]
+    },
+    {
+        "name": "Mali",
+        "capital": "Bamako",
+        "population": 20250834,
+        "populationName": "Malien",
+        "currency": "West African CFA franc",
+        "continent": "Africa",
+        "subContinent": "Western Africa",
+        "timezone": "UTC",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "Comores",
+        "capital": "Moroni",
+        "population": 869595,
+        "populationName": "Comorien",
+        "currency": "Comorian franc",
+        "continent": "Africa",
+        "subContinent": "Eastern Africa",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "Arabic",
+            "French",
+            "Comorian"
+        ]
+    },
+    {
+        "name": "Australie",
+        "capital": "Canberra",
+        "population": 25687041,
+        "populationName": "Australien",
+        "currency": "Australian dollar",
+        "continent": "Oceania",
+        "subContinent": "Australia and New Zealand",
+        "timezone": "UTC+05:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Estonie",
+        "capital": "Tallinn",
+        "population": 1331057,
+        "populationName": "Estonien",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Northern Europe",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "Estonian"
+        ]
+    },
+    {
+        "name": "Canada",
+        "capital": "Ottawa",
+        "population": 38005238,
+        "populationName": "Canadien",
+        "currency": "Canadian dollar",
+        "continent": "Americas",
+        "subContinent": "North America",
+        "timezone": "UTC-08:00",
+        "languages": [
+            "English",
+            "French"
+        ]
+    },
+    {
+        "name": "Bi\u00e9lorussie",
+        "capital": "Minsk",
+        "population": 9398861,
+        "populationName": "Bi\u00e9lorusse",
+        "currency": "Belarusian ruble",
+        "continent": "Europe",
+        "subContinent": "Eastern Europe",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "Belarusian",
+            "Russian"
+        ]
+    },
+    {
+        "name": "Guyana",
+        "capital": "Georgetown",
+        "population": 786559,
+        "populationName": "Guyanien",
+        "currency": "Guyanese dollar",
+        "continent": "Americas",
+        "subContinent": "South America",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Gambie",
+        "capital": "Banjul",
+        "population": 2416664,
+        "populationName": "Gambien",
+        "currency": "dalasi",
+        "continent": "Africa",
+        "subContinent": "Western Africa",
+        "timezone": "UTC+00:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Tunisie",
+        "capital": "Tunis",
+        "population": 11818618,
+        "populationName": "Tunisien",
+        "currency": "Tunisian dinar",
+        "continent": "Africa",
+        "subContinent": "Northern Africa",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Arabic"
+        ]
+    },
+    {
+        "name": "Cameroun",
+        "capital": "Yaound\u00e9",
+        "population": 26545864,
+        "populationName": "Camerounais",
+        "currency": "Central African CFA franc",
+        "continent": "Africa",
+        "subContinent": "Middle Africa",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "English",
+            "French"
+        ]
+    },
+    {
+        "name": "Rwanda",
+        "capital": "Kigali",
+        "population": 12952209,
+        "populationName": "Rwandais",
+        "currency": "Rwandan franc",
+        "continent": "Africa",
+        "subContinent": "Eastern Africa",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "English",
+            "French",
+            "Kinyarwanda"
+        ]
+    },
+    {
+        "name": "Cambodge",
+        "capital": "Phnom Penh",
+        "population": 16718971,
+        "populationName": "Cambodgien",
+        "currency": "Cambodian riel",
+        "continent": "Asia",
+        "subContinent": "South-Eastern Asia",
+        "timezone": "UTC+07:00",
+        "languages": [
+            "Khmer"
+        ]
+    },
+    {
+        "name": "B\u00e9nin",
+        "capital": "Porto-Novo",
+        "population": 12123198,
+        "populationName": "B\u00e9ninois",
+        "currency": "West African CFA franc",
+        "continent": "Africa",
+        "subContinent": "Western Africa",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "Gr\u00e8ce",
+        "capital": "Athens",
+        "population": 10715549,
+        "populationName": "Grec",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Southern Europe",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "Greek"
+        ]
+    },
+    {
+        "name": "Cor\u00e9e du Sud",
+        "capital": "Seoul",
+        "population": 51780579,
+        "populationName": "Sud-cor\u00e9en",
+        "currency": "South Korean won",
+        "continent": "Asia",
+        "subContinent": "Eastern Asia",
+        "timezone": "UTC+09:00",
+        "languages": [
+            "Korean"
+        ]
+    },
+    {
+        "name": "\u00cele Maurice",
+        "capital": "Port Louis",
+        "population": 1265740,
+        "populationName": "Mauricien",
+        "currency": "Mauritian rupee",
+        "continent": "Africa",
+        "subContinent": "Eastern Africa",
+        "timezone": "UTC+04:00",
+        "languages": [
+            "English",
+            "French",
+            "Mauritian Creole"
+        ]
+    },
+    {
+        "name": "\u00celes Vierges des \u00c9tats-Unis",
+        "capital": "Charlotte Amalie",
+        "population": 106290,
+        "populationName": "Virgin Islander",
+        "currency": "United States dollar",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Ahvenanmaa",
+        "capital": "Mariehamn",
+        "population": 29458,
+        "populationName": "\u00c5landais",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Northern Europe",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "Swedish"
+        ]
+    },
+    {
+        "name": "Saint-Marin",
+        "capital": "City of San Marino",
+        "population": 33938,
+        "populationName": "Saint-Marinais",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Southern Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Italian"
+        ]
+    },
+    {
+        "name": "Maldives",
+        "capital": "Mal\u00e9",
+        "population": 540542,
+        "populationName": "Maldivien",
+        "currency": "Maldivian rufiyaa",
+        "continent": "Asia",
+        "subContinent": "Southern Asia",
+        "timezone": "UTC+05:00",
+        "languages": [
+            "Maldivian"
+        ]
+    },
+    {
+        "name": "Vanuatu",
+        "capital": "Port Vila",
+        "population": 307150,
+        "populationName": "Vanuatuan",
+        "currency": "Vanuatu vatu",
+        "continent": "Oceania",
+        "subContinent": "Melanesia",
+        "timezone": "UTC+11:00",
+        "languages": [
+            "Bislama",
+            "English",
+            "French"
+        ]
+    },
+    {
+        "name": "Malawi",
+        "capital": "Lilongwe",
+        "population": 19129955,
+        "populationName": "Malawien",
+        "currency": "Malawian kwacha",
+        "continent": "Africa",
+        "subContinent": "Eastern Africa",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "English",
+            "Chewa"
+        ]
+    },
+    {
+        "name": "\u00c9gypte",
+        "capital": "Cairo",
+        "population": 102334403,
+        "populationName": "\u00c9gyptien",
+        "currency": "Egyptian pound",
+        "continent": "Africa",
+        "subContinent": "Northern Africa",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "Arabic"
+        ]
+    },
+    {
+        "name": "S\u00e9n\u00e9gal",
+        "capital": "Dakar",
+        "population": 16743930,
+        "populationName": "S\u00e9n\u00e9galais",
+        "currency": "West African CFA franc",
+        "continent": "Africa",
+        "subContinent": "Western Africa",
+        "timezone": "UTC",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "G\u00e9orgie",
+        "capital": "Tbilisi",
+        "population": 3714000,
+        "populationName": "G\u00e9orgien",
+        "currency": "lari",
+        "continent": "Asia",
+        "subContinent": "Western Asia",
+        "timezone": "UTC+04:00",
+        "languages": [
+            "Georgian"
+        ]
+    },
+    {
+        "name": "Nouvelle-Z\u00e9lande",
+        "capital": "Wellington",
+        "population": 5084300,
+        "populationName": "Neo-Z\u00e9landais",
+        "currency": "New Zealand dollar",
+        "continent": "Oceania",
+        "subContinent": "Australia and New Zealand",
+        "timezone": "UTC-11:00",
+        "languages": [
+            "English",
+            "M\u0101ori",
+            "New Zealand Sign Language"
+        ]
+    },
+    {
+        "name": "\u00celes du Cap-Vert",
+        "capital": "Praia",
+        "population": 555988,
+        "populationName": "Cap-verdien",
+        "currency": "Cape Verdean escudo",
+        "continent": "Africa",
+        "subContinent": "Western Africa",
+        "timezone": "UTC-01:00",
+        "languages": [
+            "Portuguese"
+        ]
+    },
+    {
+        "name": "Italie",
+        "capital": "Rome",
+        "population": 59554023,
+        "populationName": "Italien",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Southern Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Italian"
+        ]
+    },
+    {
+        "name": "Monaco",
+        "capital": "Monaco",
+        "population": 39244,
+        "populationName": "Mon\u00e9gasque",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Western Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "Slovaquie",
+        "capital": "Bratislava",
+        "population": 5458827,
+        "populationName": "Slovaque",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Central Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Slovak"
+        ]
+    },
+    {
+        "name": "Uruguay",
+        "capital": "Montevideo",
+        "population": 3473727,
+        "populationName": "Uruguayen",
+        "currency": "Uruguayan peso",
+        "continent": "Americas",
+        "subContinent": "South America",
+        "timezone": "UTC-03:00",
+        "languages": [
+            "Spanish"
+        ]
+    },
+    {
+        "name": "Laos",
+        "capital": "Vientiane",
+        "population": 7275556,
+        "populationName": "Laotien",
+        "currency": "Lao kip",
+        "continent": "Asia",
+        "subContinent": "South-Eastern Asia",
+        "timezone": "UTC+07:00",
+        "languages": [
+            "Lao"
+        ]
+    },
+    {
+        "name": "\u00celes F\u00e9ro\u00e9",
+        "capital": "T\u00f3rshavn",
+        "population": 48865,
+        "populationName": "F\u00e9ro\u00efen",
+        "currency": "Danish krone",
+        "continent": "Europe",
+        "subContinent": "Northern Europe",
+        "timezone": "UTC+00:00",
+        "languages": [
+            "Danish",
+            "Faroese"
+        ]
+    },
+    {
+        "name": "Niue",
+        "capital": "Alofi",
+        "population": 1470,
+        "populationName": "Niu\u00e9en",
+        "currency": "New Zealand dollar",
+        "continent": "Oceania",
+        "subContinent": "Polynesia",
+        "timezone": "UTC-11:00",
+        "languages": [
+            "English",
+            "Niuean"
+        ]
+    },
+    {
+        "name": "Mac\u00e9doine du Nord",
+        "capital": "Skopje",
+        "population": 2077132,
+        "populationName": "Mac\u00e9donien",
+        "currency": "denar",
+        "continent": "Europe",
+        "subContinent": "Southeast Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Macedonian"
+        ]
+    },
+    {
+        "name": "Chili",
+        "capital": "Santiago",
+        "population": 19116209,
+        "populationName": "Chilien",
+        "currency": "Chilean peso",
+        "continent": "Americas",
+        "subContinent": "South America",
+        "timezone": "UTC-06:00",
+        "languages": [
+            "Spanish"
+        ]
+    },
+    {
+        "name": "Chypre",
+        "capital": "Nicosia",
+        "population": 1207361,
+        "populationName": "Chypriote",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Southern Europe",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "Greek",
+            "Turkish"
+        ]
+    },
+    {
+        "name": "Macao",
+        "capital": "",
+        "population": 649342,
+        "populationName": "Macanais",
+        "currency": "Macanese pataca",
+        "continent": "Asia",
+        "subContinent": "Eastern Asia",
+        "timezone": "UTC+08:00",
+        "languages": [
+            "Portuguese",
+            "Chinese"
+        ]
+    },
+    {
+        "name": "Salvador",
+        "capital": "San Salvador",
+        "population": 6486201,
+        "populationName": "Salvadorien",
+        "currency": "United States dollar",
+        "continent": "Americas",
+        "subContinent": "Central America",
+        "timezone": "UTC-06:00",
+        "languages": [
+            "Spanish"
+        ]
+    },
+    {
+        "name": "Jordanie",
+        "capital": "Amman",
+        "population": 10203140,
+        "populationName": "Jordanien",
+        "currency": "Jordanian dinar",
+        "continent": "Asia",
+        "subContinent": "Western Asia",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "Arabic"
+        ]
+    },
+    {
+        "name": "Jama\u00efque",
+        "capital": "Kingston",
+        "population": 2961161,
+        "populationName": "Jama\u00efcain",
+        "currency": "Jamaican dollar",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-05:00",
+        "languages": [
+            "English",
+            "Jamaican Patois"
+        ]
+    },
+    {
+        "name": "Barbade",
+        "capital": "Bridgetown",
+        "population": 287371,
+        "populationName": "Barbadien",
+        "currency": "Barbadian dollar",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Sahara Occidental",
+        "capital": "El Aai\u00fan",
+        "population": 510713,
+        "populationName": "Sahrawi",
+        "currency": "Algerian dinar",
+        "continent": "Africa",
+        "subContinent": "Northern Africa",
+        "timezone": "UTC+00:00",
+        "languages": [
+            "Berber",
+            "Hassaniya",
+            "Spanish"
+        ]
+    },
+    {
+        "name": "Qatar",
+        "capital": "Doha",
+        "population": 2881060,
+        "populationName": "Qatarien",
+        "currency": "Qatari riyal",
+        "continent": "Asia",
+        "subContinent": "Western Asia",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "Arabic"
+        ]
+    },
+    {
+        "name": "Guatemala",
+        "capital": "Guatemala City",
+        "population": 16858333,
+        "populationName": "Guat\u00e9malt\u00e8que",
+        "currency": "Guatemalan quetzal",
+        "continent": "Americas",
+        "subContinent": "Central America",
+        "timezone": "UTC-06:00",
+        "languages": [
+            "Spanish"
+        ]
+    },
+    {
+        "name": "Micron\u00e9sie",
+        "capital": "Palikir",
+        "population": 115021,
+        "populationName": "Micron\u00e9sien",
+        "currency": "United States dollar",
+        "continent": "Oceania",
+        "subContinent": "Micronesia",
+        "timezone": "UTC+10:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Montserrat",
+        "capital": "Plymouth",
+        "population": 4922,
+        "populationName": "Montserratien",
+        "currency": "Eastern Caribbean dollar",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Papouasie-Nouvelle-Guin\u00e9e",
+        "capital": "Port Moresby",
+        "population": 8947027,
+        "populationName": "Papouasien",
+        "currency": "Papua New Guinean kina",
+        "continent": "Oceania",
+        "subContinent": "Melanesia",
+        "timezone": "UTC+10:00",
+        "languages": [
+            "English",
+            "Hiri Motu",
+            "Tok Pisin"
+        ]
+    },
+    {
+        "name": "Br\u00e9sil",
+        "capital": "Bras\u00edlia",
+        "population": 212559409,
+        "populationName": "Br\u00e9silien",
+        "currency": "Brazilian real",
+        "continent": "Americas",
+        "subContinent": "South America",
+        "timezone": "UTC-05:00",
+        "languages": [
+            "Portuguese"
+        ]
+    },
+    {
+        "name": "Lituanie",
+        "capital": "Vilnius",
+        "population": 2794700,
+        "populationName": "Lituanien",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Northern Europe",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "Lithuanian"
+        ]
+    },
+    {
+        "name": "Guyane",
+        "capital": "Cayenne",
+        "population": 254541,
+        "populationName": "Guyanais",
+        "currency": "Euro",
+        "continent": "Americas",
+        "subContinent": "South America",
+        "timezone": "UTC-03:00",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "Moldavie",
+        "capital": "Chi\u0219in\u0103u",
+        "population": 2617820,
+        "populationName": "Moldave",
+        "currency": "Moldovan leu",
+        "continent": "Europe",
+        "subContinent": "Eastern Europe",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "Romanian"
+        ]
+    },
+    {
+        "name": "Kirghizistan",
+        "capital": "Bishkek",
+        "population": 6591600,
+        "populationName": "Kirghize",
+        "currency": "Kyrgyzstani som",
+        "continent": "Asia",
+        "subContinent": "Central Asia",
+        "timezone": "UTC+06:00",
+        "languages": [
+            "Kyrgyz",
+            "Russian"
+        ]
+    },
+    {
+        "name": "Cura\u00e7ao",
+        "capital": "Willemstad",
+        "population": 155014,
+        "populationName": "Curacien",
+        "currency": "Netherlands Antillean guilder",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "English",
+            "Dutch",
+            "Papiamento"
+        ]
+    },
+    {
+        "name": "Vi\u00eat Nam",
+        "capital": "Hanoi",
+        "population": 97338583,
+        "populationName": "Vietnamien",
+        "currency": "Vietnamese \u0111\u1ed3ng",
+        "continent": "Asia",
+        "subContinent": "South-Eastern Asia",
+        "timezone": "UTC+07:00",
+        "languages": [
+            "Vietnamese"
+        ]
+    },
+    {
+        "name": "Angola",
+        "capital": "Luanda",
+        "population": 32866268,
+        "populationName": "Angolais",
+        "currency": "Angolan kwanza",
+        "continent": "Africa",
+        "subContinent": "Middle Africa",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Portuguese"
+        ]
+    },
+    {
+        "name": "Malaisie",
+        "capital": "Kuala Lumpur",
+        "population": 32365998,
+        "populationName": "Malaisien",
+        "currency": "Malaysian ringgit",
+        "continent": "Asia",
+        "subContinent": "South-Eastern Asia",
+        "timezone": "UTC+08:00",
+        "languages": [
+            "English",
+            "Malay"
+        ]
+    },
+    {
+        "name": "Suisse",
+        "capital": "Bern",
+        "population": 8654622,
+        "populationName": "Suisse",
+        "currency": "Swiss franc",
+        "continent": "Europe",
+        "subContinent": "Western Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "French",
+            "Swiss German",
+            "Italian",
+            "Romansh"
+        ]
+    },
+    {
+        "name": "Tha\u00eflande",
+        "capital": "Bangkok",
+        "population": 69799978,
+        "populationName": "Tha\u00eflandais",
+        "currency": "Thai baht",
+        "continent": "Asia",
+        "subContinent": "South-Eastern Asia",
+        "timezone": "UTC+07:00",
+        "languages": [
+            "Thai"
+        ]
+    },
+    {
+        "name": "R\u00e9publique dominicaine",
+        "capital": "Santo Domingo",
+        "population": 10847904,
+        "populationName": "Dominicain",
+        "currency": "Dominican peso",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "Spanish"
+        ]
+    },
+    {
+        "name": "Ouzb\u00e9kistan",
+        "capital": "Tashkent",
+        "population": 34232050,
+        "populationName": "Ouzb\u00e8ke",
+        "currency": "Uzbekistani so\u02bbm",
+        "continent": "Asia",
+        "subContinent": "Central Asia",
+        "timezone": "UTC+05:00",
+        "languages": [
+            "Russian",
+            "Uzbek"
+        ]
+    },
+    {
+        "name": "Tchad",
+        "capital": "N'Djamena",
+        "population": 16425859,
+        "populationName": "Tchadien",
+        "currency": "Central African CFA franc",
+        "continent": "Africa",
+        "subContinent": "Middle Africa",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Arabic",
+            "French"
+        ]
+    },
+    {
+        "name": "\u00celes Cocos",
+        "capital": "West Island",
+        "population": 544,
+        "populationName": "Cocos Islander",
+        "currency": "Australian dollar",
+        "continent": "Oceania",
+        "subContinent": "Australia and New Zealand",
+        "timezone": "UTC+06:30",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Guin\u00e9e",
+        "capital": "Conakry",
+        "population": 13132792,
+        "populationName": "Guin\u00e9en",
+        "currency": "Guinean franc",
+        "continent": "Africa",
+        "subContinent": "Western Africa",
+        "timezone": "UTC",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "\u00celes Turques-et-Ca\u00efques",
+        "capital": "Cockburn Town",
+        "population": 38718,
+        "populationName": "Turks and Caicos Islander",
+        "currency": "United States dollar",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Porto Rico",
+        "capital": "San Juan",
+        "population": 3194034,
+        "populationName": "Portoricain",
+        "currency": "United States dollar",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "English",
+            "Spanish"
+        ]
+    },
+    {
+        "name": "Bhoutan",
+        "capital": "Thimphu",
+        "population": 771612,
+        "populationName": "Bhoutanais",
+        "currency": "Bhutanese ngultrum",
+        "continent": "Asia",
+        "subContinent": "Southern Asia",
+        "timezone": "UTC+06:00",
+        "languages": [
+            "Dzongkha"
+        ]
+    },
+    {
+        "name": "\u00celes Ca\u00efmans",
+        "capital": "George Town",
+        "population": 65720,
+        "populationName": "Ca\u00efmanien",
+        "currency": "Cayman Islands dollar",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-05:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "\u00celes Marshall",
+        "capital": "Majuro",
+        "population": 59194,
+        "populationName": "Marshallais",
+        "currency": "United States dollar",
+        "continent": "Oceania",
+        "subContinent": "Micronesia",
+        "timezone": "UTC+12:00",
+        "languages": [
+            "English",
+            "Marshallese"
+        ]
+    },
+    {
+        "name": "Anguilla",
+        "capital": "The Valley",
+        "population": 13452,
+        "populationName": "Anguillan",
+        "currency": "Eastern Caribbean dollar",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Mauritanie",
+        "capital": "Nouakchott",
+        "population": 4649660,
+        "populationName": "Mauritanien",
+        "currency": "Mauritanian ouguiya",
+        "continent": "Africa",
+        "subContinent": "Western Africa",
+        "timezone": "UTC",
+        "languages": [
+            "Arabic"
+        ]
+    },
+    {
+        "name": "Norv\u00e8ge",
+        "capital": "Oslo",
+        "population": 5379475,
+        "populationName": "Norv\u00e9gien",
+        "currency": "Norwegian krone",
+        "continent": "Europe",
+        "subContinent": "Northern Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Norwegian Nynorsk",
+            "Norwegian Bokm\u00e5l",
+            "Sami"
+        ]
+    },
+    {
+        "name": "Martinique",
+        "capital": "Fort-de-France",
+        "population": 378243,
+        "populationName": "Martiniquais",
+        "currency": "Euro",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "Isra\u00ebl",
+        "capital": "Jerusalem",
+        "population": 9216900,
+        "populationName": "Isra\u00e9lien",
+        "currency": "Israeli new shekel",
+        "continent": "Asia",
+        "subContinent": "Western Asia",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "Arabic",
+            "Hebrew"
+        ]
+    },
+    {
+        "name": "Saint-Barth\u00e9lemy",
+        "capital": "Gustavia",
+        "population": 4255,
+        "populationName": "Barth\u00e9lom\u00e9en",
+        "currency": "Euro",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "\u00c9quateur",
+        "capital": "Quito",
+        "population": 17643060,
+        "populationName": "\u00c9quatorien",
+        "currency": "United States dollar",
+        "continent": "Americas",
+        "subContinent": "South America",
+        "timezone": "UTC-06:00",
+        "languages": [
+            "Spanish"
+        ]
+    },
+    {
+        "name": "Grenade",
+        "capital": "St. George's",
+        "population": 112519,
+        "populationName": "Grenadien",
+        "currency": "Eastern Caribbean dollar",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Croatie",
+        "capital": "Zagreb",
+        "population": 4047200,
+        "populationName": "Croate",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Southeast Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Croatian"
+        ]
+    },
+    {
+        "name": "Brunei",
+        "capital": "Bandar Seri Begawan",
+        "population": 437483,
+        "populationName": "Brun\u00e9ien",
+        "currency": "Brunei dollar",
+        "continent": "Asia",
+        "subContinent": "South-Eastern Asia",
+        "timezone": "UTC+08:00",
+        "languages": [
+            "Malay"
+        ]
+    },
+    {
+        "name": "Irak",
+        "capital": "Baghdad",
+        "population": 40222503,
+        "populationName": "Irakien",
+        "currency": "Iraqi dinar",
+        "continent": "Asia",
+        "subContinent": "Western Asia",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "Arabic",
+            "Aramaic",
+            "Sorani"
+        ]
+    },
+    {
+        "name": "Japon",
+        "capital": "Tokyo",
+        "population": 125836021,
+        "populationName": "Japonais",
+        "currency": "Japanese yen",
+        "continent": "Asia",
+        "subContinent": "Eastern Asia",
+        "timezone": "UTC+09:00",
+        "languages": [
+            "Japanese"
+        ]
+    },
+    {
+        "name": "Lesotho",
+        "capital": "Maseru",
+        "population": 2142252,
+        "populationName": "L\u00e9sothien",
+        "currency": "Lesotho loti",
+        "continent": "Africa",
+        "subContinent": "Southern Africa",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "English",
+            "Sotho"
+        ]
+    },
+    {
+        "name": "Tuvalu",
+        "capital": "Funafuti",
+        "population": 11792,
+        "populationName": "Tuvaluan",
+        "currency": "Australian dollar",
+        "continent": "Oceania",
+        "subContinent": "Polynesia",
+        "timezone": "UTC+12:00",
+        "languages": [
+            "English",
+            "Tuvaluan"
+        ]
+    },
+    {
+        "name": "\u00celes Heard-et-MacDonald",
+        "capital": "",
+        "population": 0,
+        "populationName": "Heard and McDonald Islander",
+        "currency": "",
+        "continent": "Antarctic",
+        "subContinent": "",
+        "timezone": "UTC+05:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Finlande",
+        "capital": "Helsinki",
+        "population": 5530719,
+        "populationName": "Finlandais",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Northern Europe",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "Finnish",
+            "Swedish"
+        ]
+    },
+    {
+        "name": "Soudan du Sud",
+        "capital": "Juba",
+        "population": 11193729,
+        "populationName": "Sud-Soudanais",
+        "currency": "South Sudanese pound",
+        "continent": "Africa",
+        "subContinent": "Middle Africa",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "\u00celes mineures \u00e9loign\u00e9es des \u00c9tats-Unis",
+        "capital": "Washington DC",
+        "population": 300,
+        "populationName": "American Islander",
+        "currency": "United States dollar",
+        "continent": "Americas",
+        "subContinent": "North America",
+        "timezone": "UTC-11:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Sainte-H\u00e9l\u00e8ne, Ascension et Tristan da Cunha",
+        "capital": "Jamestown",
+        "population": 53192,
+        "populationName": "Sainte-H\u00e9l\u00e8nois",
+        "currency": "Pound sterling",
+        "continent": "Africa",
+        "subContinent": "Western Africa",
+        "timezone": "UTC+00:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Afghanistan",
+        "capital": "Kabul",
+        "population": 40218234,
+        "populationName": "Afghan",
+        "currency": "Afghan afghani",
+        "continent": "Asia",
+        "subContinent": "Southern Asia",
+        "timezone": "UTC+04:30",
+        "languages": [
+            "Dari",
+            "Pashto",
+            "Turkmen"
+        ]
+    },
+    {
+        "name": "\u00celes Salomon",
+        "capital": "Honiara",
+        "population": 686878,
+        "populationName": "Salomonien",
+        "currency": "Solomon Islands dollar",
+        "continent": "Oceania",
+        "subContinent": "Melanesia",
+        "timezone": "UTC+11:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Chine",
+        "capital": "Beijing",
+        "population": 1402112000,
+        "populationName": "Chinois",
+        "currency": "Chinese yuan",
+        "continent": "Asia",
+        "subContinent": "Eastern Asia",
+        "timezone": "UTC+08:00",
+        "languages": [
+            "Chinese"
+        ]
+    },
+    {
+        "name": "\u00c9rythr\u00e9e",
+        "capital": "Asmara",
+        "population": 5352000,
+        "populationName": "\u00c9rythr\u00e9en",
+        "currency": "Eritrean nakfa",
+        "continent": "Africa",
+        "subContinent": "Eastern Africa",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "Arabic",
+            "English",
+            "Tigrinya"
+        ]
+    },
+    {
+        "name": "Russie",
+        "capital": "Moscow",
+        "population": 144104080,
+        "populationName": "Russe",
+        "currency": "Russian ruble",
+        "continent": "Europe",
+        "subContinent": "Eastern Europe",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "Russian"
+        ]
+    },
+    {
+        "name": "Andorre",
+        "capital": "Andorra la Vella",
+        "population": 77265,
+        "populationName": "Andorran",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Southern Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Catalan"
+        ]
+    },
+    {
+        "name": "Arm\u00e9nie",
+        "capital": "Yerevan",
+        "population": 2963234,
+        "populationName": "Arm\u00e9nien",
+        "currency": "Armenian dram",
+        "continent": "Asia",
+        "subContinent": "Western Asia",
+        "timezone": "UTC+04:00",
+        "languages": [
+            "Armenian"
+        ]
+    },
+    {
+        "name": "Autriche",
+        "capital": "Vienna",
+        "population": 8917205,
+        "populationName": "Autrichien",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Central Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "German"
+        ]
+    },
+    {
+        "name": "Surinam",
+        "capital": "Paramaribo",
+        "population": 586634,
+        "populationName": "Surinamais",
+        "currency": "Surinamese dollar",
+        "continent": "Americas",
+        "subContinent": "South America",
+        "timezone": "UTC-03:00",
+        "languages": [
+            "Dutch"
+        ]
+    },
+    {
+        "name": "Espagne",
+        "capital": "Madrid",
+        "population": 47351567,
+        "populationName": "Espagnol",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Southern Europe",
+        "timezone": "UTC",
+        "languages": [
+            "Spanish",
+            "Catalan",
+            "Basque",
+            "Galician"
+        ]
+    },
+    {
+        "name": "Tokelau",
+        "capital": "Fakaofo",
+        "population": 1411,
+        "populationName": "Tokelauan",
+        "currency": "New Zealand dollar",
+        "continent": "Oceania",
+        "subContinent": "Polynesia",
+        "timezone": "UTC+13:00",
+        "languages": [
+            "English",
+            "Samoan",
+            "Tokelauan"
+        ]
+    },
+    {
+        "name": "Bahamas",
+        "capital": "Nassau",
+        "population": 393248,
+        "populationName": "Bahamien",
+        "currency": "Bahamian dollar",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-05:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Saint-Martin",
+        "capital": "Philipsburg",
+        "population": 40812,
+        "populationName": "Saint-Martinois",
+        "currency": "Netherlands Antillean guilder",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "English",
+            "French",
+            "Dutch"
+        ]
+    },
+    {
+        "name": "Belize",
+        "capital": "Belmopan",
+        "population": 397621,
+        "populationName": "B\u00e9lizien",
+        "currency": "Belize dollar",
+        "continent": "Americas",
+        "subContinent": "Central America",
+        "timezone": "UTC-06:00",
+        "languages": [
+            "Belizean Creole",
+            "English",
+            "Spanish"
+        ]
+    },
+    {
+        "name": "Jersey",
+        "capital": "Saint Helier",
+        "population": 100800,
+        "populationName": "Jersiais",
+        "currency": "British pound",
+        "continent": "Europe",
+        "subContinent": "Northern Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "English",
+            "French",
+            "J\u00e8rriais"
+        ]
+    },
+    {
+        "name": "Su\u00e8de",
+        "capital": "Stockholm",
+        "population": 10353442,
+        "populationName": "Su\u00e9dois",
+        "currency": "Swedish krona",
+        "continent": "Europe",
+        "subContinent": "Northern Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Swedish"
+        ]
+    },
+    {
+        "name": "Botswana",
+        "capital": "Gaborone",
+        "population": 2351625,
+        "populationName": "Botswanais",
+        "currency": "Botswana pula",
+        "continent": "Africa",
+        "subContinent": "Southern Africa",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "English",
+            "Tswana"
+        ]
+    },
+    {
+        "name": "\u00cele de Man",
+        "capital": "Douglas",
+        "population": 85032,
+        "populationName": "Manx",
+        "currency": "British pound",
+        "continent": "Europe",
+        "subContinent": "Northern Europe",
+        "timezone": "UTC+00:00",
+        "languages": [
+            "English",
+            "Manx"
+        ]
+    },
+    {
+        "name": "\u00c9mirats arabes unis",
+        "capital": "Abu Dhabi",
+        "population": 9890400,
+        "populationName": "Emirien",
+        "currency": "United Arab Emirates dirham",
+        "continent": "Asia",
+        "subContinent": "Western Asia",
+        "timezone": "UTC+04:00",
+        "languages": [
+            "Arabic"
+        ]
+    },
+    {
+        "name": "Iran",
+        "capital": "Tehran",
+        "population": 83992953,
+        "populationName": "Iranien",
+        "currency": "Iranian rial",
+        "continent": "Asia",
+        "subContinent": "Southern Asia",
+        "timezone": "UTC+03:30",
+        "languages": [
+            "Persian (Farsi)"
+        ]
+    },
+    {
+        "name": "Gabon",
+        "capital": "Libreville",
+        "population": 2225728,
+        "populationName": "Gabonais",
+        "currency": "Central African CFA franc",
+        "continent": "Africa",
+        "subContinent": "Middle Africa",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "Saint-Christophe-et-Ni\u00e9v\u00e8s",
+        "capital": "Basseterre",
+        "population": 53192,
+        "populationName": "Kittitien-et-nevicien",
+        "currency": "Eastern Caribbean dollar",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Guin\u00e9e \u00e9quatoriale",
+        "capital": "Malabo",
+        "population": 1402985,
+        "populationName": "\u00c9quato-guin\u00e9en",
+        "currency": "Central African CFA franc",
+        "continent": "Africa",
+        "subContinent": "Middle Africa",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "French",
+            "Portuguese",
+            "Spanish"
+        ]
+    },
+    {
+        "name": "S\u00e3o Tom\u00e9 et Pr\u00edncipe",
+        "capital": "S\u00e3o Tom\u00e9",
+        "population": 219161,
+        "populationName": "Santom\u00e9en",
+        "currency": "S\u00e3o Tom\u00e9 and Pr\u00edncipe dobra",
+        "continent": "Africa",
+        "subContinent": "Middle Africa",
+        "timezone": "UTC",
+        "languages": [
+            "Portuguese"
+        ]
+    },
+    {
+        "name": "Groenland",
+        "capital": "Nuuk",
+        "population": 56367,
+        "populationName": "Groenlandais",
+        "currency": "krone",
+        "continent": "Americas",
+        "subContinent": "North America",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "Greenlandic"
+        ]
+    },
+    {
+        "name": "Bangladesh",
+        "capital": "Dhaka",
+        "population": 164689383,
+        "populationName": "Bangladais",
+        "currency": "Bangladeshi taka",
+        "continent": "Asia",
+        "subContinent": "Southern Asia",
+        "timezone": "UTC+06:00",
+        "languages": [
+            "Bengali"
+        ]
+    },
+    {
+        "name": "Roumanie",
+        "capital": "Bucharest",
+        "population": 19286123,
+        "populationName": "Roumain",
+        "currency": "Romanian leu",
+        "continent": "Europe",
+        "subContinent": "Southeast Europe",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "Romanian"
+        ]
+    },
+    {
+        "name": "Territoire britannique de l'oc\u00e9an Indien",
+        "capital": "Diego Garcia",
+        "population": 3000,
+        "populationName": "Indian",
+        "currency": "United States dollar",
+        "continent": "Africa",
+        "subContinent": "Eastern Africa",
+        "timezone": "UTC+06:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Soudan",
+        "capital": "Khartoum",
+        "population": 43849269,
+        "populationName": "Soudanais",
+        "currency": "Sudanese pound",
+        "continent": "Africa",
+        "subContinent": "Northern Africa",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "Arabic",
+            "English"
+        ]
+    },
+    {
+        "name": "Bosnie-Herz\u00e9govine",
+        "capital": "Sarajevo",
+        "population": 3280815,
+        "populationName": "Bosnien",
+        "currency": "Bosnia and Herzegovina convertible mark",
+        "continent": "Europe",
+        "subContinent": "Southeast Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Bosnian",
+            "Croatian",
+            "Serbian"
+        ]
+    },
+    {
+        "name": "Malte",
+        "capital": "Valletta",
+        "population": 525285,
+        "populationName": "Maltais",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Southern Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "English",
+            "Maltese"
+        ]
+    },
+    {
+        "name": "Seychelles",
+        "capital": "Victoria",
+        "population": 98462,
+        "populationName": "Seychellois",
+        "currency": "Seychellois rupee",
+        "continent": "Africa",
+        "subContinent": "Eastern Africa",
+        "timezone": "UTC+04:00",
+        "languages": [
+            "Seychellois Creole",
+            "English",
+            "French"
+        ]
+    },
+    {
+        "name": "Sri Lanka",
+        "capital": "Sri Jayawardenepura Kotte",
+        "population": 21919000,
+        "populationName": "Sri-lankais",
+        "currency": "Sri Lankan rupee",
+        "continent": "Asia",
+        "subContinent": "Southern Asia",
+        "timezone": "UTC+05:30",
+        "languages": [
+            "Sinhala",
+            "Tamil"
+        ]
+    },
+    {
+        "name": "Mexique",
+        "capital": "Mexico City",
+        "population": 128932753,
+        "populationName": "Mexicain",
+        "currency": "Mexican peso",
+        "continent": "Americas",
+        "subContinent": "North America",
+        "timezone": "UTC-08:00",
+        "languages": [
+            "Spanish"
+        ]
+    },
+    {
+        "name": "Y\u00e9men",
+        "capital": "Sana'a",
+        "population": 29825968,
+        "populationName": "Y\u00e9m\u00e9nite",
+        "currency": "Yemeni rial",
+        "continent": "Asia",
+        "subContinent": "Western Asia",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "Arabic"
+        ]
+    },
+    {
+        "name": "\u00celes Vierges britanniques",
+        "capital": "Road Town",
+        "population": 30237,
+        "populationName": "Virgin Islander",
+        "currency": "United States dollar",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Pays-Bas",
+        "capital": "Amsterdam",
+        "population": 16655799,
+        "populationName": "N\u00e9erlandais",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Western Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Dutch"
+        ]
+    },
+    {
+        "name": "Paraguay",
+        "capital": "Asunci\u00f3n",
+        "population": 7132530,
+        "populationName": "Paraguayen",
+        "currency": "Paraguayan guaran\u00ed",
+        "continent": "Americas",
+        "subContinent": "South America",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "Guaran\u00ed",
+            "Spanish"
+        ]
+    },
+    {
+        "name": "Royaume-Uni",
+        "capital": "London",
+        "population": 67215293,
+        "populationName": "Britannique",
+        "currency": "British pound",
+        "continent": "Europe",
+        "subContinent": "Northern Europe",
+        "timezone": "UTC-08:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Venezuela",
+        "capital": "Caracas",
+        "population": 28435943,
+        "populationName": "V\u00e9n\u00e9zu\u00e9lien",
+        "currency": "Venezuelan bol\u00edvar soberano",
+        "continent": "Americas",
+        "subContinent": "South America",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "Spanish"
+        ]
+    },
+    {
+        "name": "\u00cele Bouvet",
+        "capital": "",
+        "population": 0,
+        "populationName": "",
+        "currency": "",
+        "continent": "Antarctic",
+        "subContinent": "",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Norwegian"
+        ]
+    },
+    {
+        "name": "Ukraine",
+        "capital": "Kyiv",
+        "population": 44134693,
+        "populationName": "Ukrainien",
+        "currency": "Ukrainian hryvnia",
+        "continent": "Europe",
+        "subContinent": "Eastern Europe",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "Ukrainian"
+        ]
+    },
+    {
+        "name": "Maroc",
+        "capital": "Rabat",
+        "population": 36910558,
+        "populationName": "Marocain",
+        "currency": "Moroccan dirham",
+        "continent": "Africa",
+        "subContinent": "Northern Africa",
+        "timezone": "UTC",
+        "languages": [
+            "Arabic",
+            "Berber"
+        ]
+    },
+    {
+        "name": "Portugal",
+        "capital": "Lisbon",
+        "population": 10305564,
+        "populationName": "Portugais",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Southern Europe",
+        "timezone": "UTC-01:00",
+        "languages": [
+            "Portuguese"
+        ]
+    },
+    {
+        "name": "Pakistan",
+        "capital": "Islamabad",
+        "population": 220892331,
+        "populationName": "Pakistanais",
+        "currency": "Pakistani rupee",
+        "continent": "Asia",
+        "subContinent": "Southern Asia",
+        "timezone": "UTC+05:00",
+        "languages": [
+            "English",
+            "Urdu"
+        ]
+    },
+    {
+        "name": "Saint-Vincent-et-les-Grenadines",
+        "capital": "Kingstown",
+        "population": 110947,
+        "populationName": "Vincentais",
+        "currency": "Eastern Caribbean dollar",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Cor\u00e9e du Nord",
+        "capital": "Pyongyang",
+        "population": 25778815,
+        "populationName": "Nord-cor\u00e9en",
+        "currency": "North Korean won",
+        "continent": "Asia",
+        "subContinent": "Eastern Asia",
+        "timezone": "UTC+09:00",
+        "languages": [
+            "Korean"
+        ]
+    },
+    {
+        "name": "Slov\u00e9nie",
+        "capital": "Ljubljana",
+        "population": 2100126,
+        "populationName": "Slov\u00e8ne",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Central Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Slovene"
+        ]
+    },
+    {
+        "name": "C\u00f4te d'Ivoire",
+        "capital": "Yamoussoukro",
+        "population": 26378275,
+        "populationName": "Ivoirien",
+        "currency": "West African CFA franc",
+        "continent": "Africa",
+        "subContinent": "Western Africa",
+        "timezone": "UTC",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "Palestine",
+        "capital": "Ramallah",
+        "population": 4803269,
+        "populationName": "Palestinien",
+        "currency": "Egyptian pound",
+        "continent": "Asia",
+        "subContinent": "Western Asia",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "Arabic"
+        ]
+    },
+    {
+        "name": "Pays-Bas carib\u00e9ens",
+        "capital": "Kralendijk",
+        "population": 25987,
+        "populationName": "N\u00e9erlandais",
+        "currency": "United States dollar",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "English",
+            "Dutch",
+            "Papiamento"
+        ]
+    },
+    {
+        "name": "Belgique",
+        "capital": "Brussels",
+        "population": 11555997,
+        "populationName": "Belge",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Western Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "German",
+            "French",
+            "Dutch"
+        ]
+    },
+    {
+        "name": "Zimbabwe",
+        "capital": "Harare",
+        "population": 14862927,
+        "populationName": "Zimbabw\u00e9en",
+        "currency": "Zimbabwean dollar",
+        "continent": "Africa",
+        "subContinent": "Southern Africa",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "Chibarwe",
+            "English",
+            "Kalanga",
+            "Khoisan",
+            "Ndau",
+            "Northern Ndebele",
+            "Chewa",
+            "Shona",
+            "Sotho",
+            "Tonga",
+            "Tswana",
+            "Tsonga",
+            "Venda",
+            "Xhosa",
+            "Zimbabwean Sign Language"
+        ]
+    },
+    {
+        "name": "Tanzanie",
+        "capital": "Dodoma",
+        "population": 59734213,
+        "populationName": "Tanzanien",
+        "currency": "Tanzanian shilling",
+        "continent": "Africa",
+        "subContinent": "Eastern Africa",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "English",
+            "Swahili"
+        ]
+    },
+    {
+        "name": "Togo",
+        "capital": "Lom\u00e9",
+        "population": 8278737,
+        "populationName": "Togolais",
+        "currency": "West African CFA franc",
+        "continent": "Africa",
+        "subContinent": "Western Africa",
+        "timezone": "UTC",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "\u00celes Cook",
+        "capital": "Avarua",
+        "population": 18100,
+        "populationName": "Cookien",
+        "currency": "Cook Islands dollar",
+        "continent": "Oceania",
+        "subContinent": "Polynesia",
+        "timezone": "UTC-10:00",
+        "languages": [
+            "English",
+            "Cook Islands M\u0101ori"
+        ]
+    },
+    {
+        "name": "Guadeloupe",
+        "capital": "Basse-Terre",
+        "population": 400132,
+        "populationName": "Guadeloup\u00e9en",
+        "currency": "Euro",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "Nouvelle-Cal\u00e9donie",
+        "capital": "Noum\u00e9a",
+        "population": 271960,
+        "populationName": "N\u00e9o-Cal\u00e9donien",
+        "currency": "CFP franc",
+        "continent": "Oceania",
+        "subContinent": "Melanesia",
+        "timezone": "UTC+11:00",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "Sainte-Lucie",
+        "capital": "Castries",
+        "population": 183629,
+        "populationName": "Saint-Lucien",
+        "currency": "Eastern Caribbean dollar",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "G\u00e9orgie du Sud-et-les \u00celes Sandwich du Sud",
+        "capital": "King Edward Point",
+        "population": 30,
+        "populationName": "South Georgian South Sandwich Islander",
+        "currency": "Saint Helena pound",
+        "continent": "Antarctic",
+        "subContinent": "",
+        "timezone": "UTC-02:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Pologne",
+        "capital": "Warsaw",
+        "population": 37950802,
+        "populationName": "Polonais",
+        "currency": "Polish z\u0142oty",
+        "continent": "Europe",
+        "subContinent": "Central Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Polish"
+        ]
+    },
+    {
+        "name": "Samoa",
+        "capital": "Apia",
+        "population": 198410,
+        "populationName": "Samoan",
+        "currency": "Samoan t\u0101l\u0101",
+        "continent": "Oceania",
+        "subContinent": "Polynesia",
+        "timezone": "UTC+13:00",
+        "languages": [
+            "English",
+            "Samoan"
+        ]
+    },
+    {
+        "name": "Tch\u00e9quie",
+        "capital": "Prague",
+        "population": 10698896,
+        "populationName": "Tch\u00e8que",
+        "currency": "Czech koruna",
+        "continent": "Europe",
+        "subContinent": "Central Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Czech",
+            "Slovak"
+        ]
+    },
+    {
+        "name": "Indon\u00e9sie",
+        "capital": "Jakarta",
+        "population": 273523621,
+        "populationName": "Indon\u00e9sien",
+        "currency": "Indonesian rupiah",
+        "continent": "Asia",
+        "subContinent": "South-Eastern Asia",
+        "timezone": "UTC+07:00",
+        "languages": [
+            "Indonesian"
+        ]
+    },
+    {
+        "name": "Bolivie",
+        "capital": "Sucre",
+        "population": 11673029,
+        "populationName": "Bolivien",
+        "currency": "Bolivian boliviano",
+        "continent": "Americas",
+        "subContinent": "South America",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "Aymara",
+            "Guaran\u00ed",
+            "Quechua",
+            "Spanish"
+        ]
+    },
+    {
+        "name": "Colombie",
+        "capital": "Bogot\u00e1",
+        "population": 50882884,
+        "populationName": "Colombien",
+        "currency": "Colombian peso",
+        "continent": "Americas",
+        "subContinent": "South America",
+        "timezone": "UTC-05:00",
+        "languages": [
+            "Spanish"
+        ]
+    },
+    {
+        "name": "Honduras",
+        "capital": "Tegucigalpa",
+        "population": 9904608,
+        "populationName": "Hondurien",
+        "currency": "Honduran lempira",
+        "continent": "Americas",
+        "subContinent": "Central America",
+        "timezone": "UTC-06:00",
+        "languages": [
+            "Spanish"
+        ]
+    },
+    {
+        "name": "Danemark",
+        "capital": "Copenhagen",
+        "population": 5831404,
+        "populationName": "Danois",
+        "currency": "Danish krone",
+        "continent": "Europe",
+        "subContinent": "Northern Europe",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "Danish"
+        ]
+    },
+    {
+        "name": "R\u00e9publique centrafricaine",
+        "capital": "Bangui",
+        "population": 4829764,
+        "populationName": "Centrafricain",
+        "currency": "Central African CFA franc",
+        "continent": "Africa",
+        "subContinent": "Middle Africa",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "French",
+            "Sango"
+        ]
+    },
+    {
+        "name": "Libye",
+        "capital": "Tripoli",
+        "population": 6871287,
+        "populationName": "Libyen",
+        "currency": "Libyan dinar",
+        "continent": "Africa",
+        "subContinent": "Northern Africa",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Arabic"
+        ]
+    },
+    {
+        "name": "Guin\u00e9e-Bissau",
+        "capital": "Bissau",
+        "population": 1967998,
+        "populationName": "Bissau-Guin\u00e9en",
+        "currency": "West African CFA franc",
+        "continent": "Africa",
+        "subContinent": "Western Africa",
+        "timezone": "UTC",
+        "languages": [
+            "Portuguese",
+            "Upper Guinea Creole"
+        ]
+    },
+    {
+        "name": "Mongolie",
+        "capital": "Ulan Bator",
+        "population": 3278292,
+        "populationName": "Mongol",
+        "currency": "Mongolian t\u00f6gr\u00f6g",
+        "continent": "Asia",
+        "subContinent": "Eastern Asia",
+        "timezone": "UTC+07:00",
+        "languages": [
+            "Mongolian"
+        ]
+    },
+    {
+        "name": "Congo (R\u00e9p. d\u00e9m.)",
+        "capital": "Kinshasa",
+        "population": 108407721,
+        "populationName": "Congolais",
+        "currency": "Congolese franc",
+        "continent": "Africa",
+        "subContinent": "Middle Africa",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "French",
+            "Kikongo",
+            "Lingala",
+            "Tshiluba",
+            "Swahili"
+        ]
+    },
+    {
+        "name": "\u00celes Malouines",
+        "capital": "Stanley",
+        "population": 2563,
+        "populationName": "Malouin",
+        "currency": "Falkland Islands pound",
+        "continent": "Americas",
+        "subContinent": "South America",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Nauru",
+        "capital": "Yaren",
+        "population": 10834,
+        "populationName": "Nauruan",
+        "currency": "Australian dollar",
+        "continent": "Oceania",
+        "subContinent": "Micronesia",
+        "timezone": "UTC+12:00",
+        "languages": [
+            "English",
+            "Nauru"
+        ]
+    },
+    {
+        "name": "Syrie",
+        "capital": "Damascus",
+        "population": 17500657,
+        "populationName": "Syrien",
+        "currency": "Syrian pound",
+        "continent": "Asia",
+        "subContinent": "Western Asia",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "Arabic"
+        ]
+    },
+    {
+        "name": "Mont\u00e9n\u00e9gro",
+        "capital": "Podgorica",
+        "population": 621718,
+        "populationName": "Mont\u00e9n\u00e9grin",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Southeast Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Montenegrin"
+        ]
+    },
+    {
+        "name": "France",
+        "capital": "Paris",
+        "population": 67391582,
+        "populationName": "Fran\u00e7ais",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Western Europe",
+        "timezone": "UTC-10:00",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "Zambie",
+        "capital": "Lusaka",
+        "population": 18383956,
+        "populationName": "Zambien",
+        "currency": "Zambian kwacha",
+        "continent": "Africa",
+        "subContinent": "Eastern Africa",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Birmanie",
+        "capital": "Naypyidaw",
+        "population": 54409794,
+        "populationName": "Birman",
+        "currency": "Burmese kyat",
+        "continent": "Asia",
+        "subContinent": "South-Eastern Asia",
+        "timezone": "UTC+06:30",
+        "languages": [
+            "Burmese"
+        ]
+    },
+    {
+        "name": "Saint-Pierre-et-Miquelon",
+        "capital": "Saint-Pierre",
+        "population": 6069,
+        "populationName": "Saint-Pierrais, Miquelonais",
+        "currency": "Euro",
+        "continent": "Americas",
+        "subContinent": "North America",
+        "timezone": "UTC-03:00",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "Costa Rica",
+        "capital": "San Jos\u00e9",
+        "population": 5094114,
+        "populationName": "Costaricain",
+        "currency": "Costa Rican col\u00f3n",
+        "continent": "Americas",
+        "subContinent": "Central America",
+        "timezone": "UTC-06:00",
+        "languages": [
+            "Spanish"
+        ]
+    },
+    {
+        "name": "Somalie",
+        "capital": "Mogadishu",
+        "population": 15893219,
+        "populationName": "Somalien",
+        "currency": "Somali shilling",
+        "continent": "Africa",
+        "subContinent": "Eastern Africa",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "Arabic",
+            "Somali"
+        ]
+    },
+    {
+        "name": "Irlande",
+        "capital": "Dublin",
+        "population": 4994724,
+        "populationName": "Irlandais",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Northern Europe",
+        "timezone": "UTC",
+        "languages": [
+            "English",
+            "Irish"
+        ]
+    },
+    {
+        "name": "Polyn\u00e9sie fran\u00e7aise",
+        "capital": "Papeet\u0113",
+        "population": 280904,
+        "populationName": "Polyn\u00e9sien",
+        "currency": "CFP franc",
+        "continent": "Oceania",
+        "subContinent": "Polynesia",
+        "timezone": "UTC-10:00",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "\u00celes Pitcairn",
+        "capital": "Adamstown",
+        "population": 56,
+        "populationName": "Pitcairnais",
+        "currency": "New Zealand dollar",
+        "continent": "Oceania",
+        "subContinent": "Polynesia",
+        "timezone": "UTC-08:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Hongrie",
+        "capital": "Budapest",
+        "population": 9749763,
+        "populationName": "Hongrois",
+        "currency": "Hungarian forint",
+        "continent": "Europe",
+        "subContinent": "Central Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Hungarian"
+        ]
+    },
+    {
+        "name": "Turquie",
+        "capital": "Ankara",
+        "population": 84339067,
+        "populationName": "Turc",
+        "currency": "Turkish lira",
+        "continent": "Asia",
+        "subContinent": "Western Asia",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "Turkish"
+        ]
+    },
+    {
+        "name": "Oman",
+        "capital": "Muscat",
+        "population": 5106622,
+        "populationName": "Omanais",
+        "currency": "Omani rial",
+        "continent": "Asia",
+        "subContinent": "Western Asia",
+        "timezone": "UTC+04:00",
+        "languages": [
+            "Arabic"
+        ]
+    },
+    {
+        "name": "Guam",
+        "capital": "Hag\u00e5t\u00f1a",
+        "population": 168783,
+        "populationName": "Guamanian",
+        "currency": "United States dollar",
+        "continent": "Oceania",
+        "subContinent": "Micronesia",
+        "timezone": "UTC+10:00",
+        "languages": [
+            "Chamorro",
+            "English",
+            "Spanish"
+        ]
+    },
+    {
+        "name": "N\u00e9pal",
+        "capital": "Kathmandu",
+        "population": 29136808,
+        "populationName": "N\u00e9palais",
+        "currency": "Nepalese rupee",
+        "continent": "Asia",
+        "subContinent": "Southern Asia",
+        "timezone": "UTC+05:45",
+        "languages": [
+            "Nepali"
+        ]
+    },
+    {
+        "name": "Liechtenstein",
+        "capital": "Vaduz",
+        "population": 38137,
+        "populationName": "Liechtensteinois",
+        "currency": "Swiss franc",
+        "continent": "Europe",
+        "subContinent": "Western Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "German"
+        ]
+    },
+    {
+        "name": "Madagascar",
+        "capital": "Antananarivo",
+        "population": 27691019,
+        "populationName": "Malgache",
+        "currency": "Malagasy ariary",
+        "continent": "Africa",
+        "subContinent": "Eastern Africa",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "French",
+            "Malagasy"
+        ]
+    },
+    {
+        "name": "Kazakhstan",
+        "capital": "Nur-Sultan",
+        "population": 18754440,
+        "populationName": "Kazakhstanais",
+        "currency": "Kazakhstani tenge",
+        "continent": "Asia",
+        "subContinent": "Central Asia",
+        "timezone": "UTC+05:00",
+        "languages": [
+            "Kazakh",
+            "Russian"
+        ]
+    },
+    {
+        "name": "Djibouti",
+        "capital": "Djibouti",
+        "population": 988002,
+        "populationName": "Djiboutien",
+        "currency": "Djiboutian franc",
+        "continent": "Africa",
+        "subContinent": "Eastern Africa",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "Arabic",
+            "French"
+        ]
+    },
+    {
+        "name": "Gibraltar",
+        "capital": "Gibraltar",
+        "population": 33691,
+        "populationName": "Gibraltarien",
+        "currency": "Gibraltar pound",
+        "continent": "Europe",
+        "subContinent": "Southern Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Guernesey",
+        "capital": "St. Peter Port",
+        "population": 62999,
+        "populationName": "Guernesiais",
+        "currency": "British pound",
+        "continent": "Europe",
+        "subContinent": "Northern Europe",
+        "timezone": "UTC+00:00",
+        "languages": [
+            "English",
+            "French",
+            "Guern\u00e9siais"
+        ]
+    },
+    {
+        "name": "Namibie",
+        "capital": "Windhoek",
+        "population": 2540916,
+        "populationName": "Namibien",
+        "currency": "Namibian dollar",
+        "continent": "Africa",
+        "subContinent": "Southern Africa",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Afrikaans",
+            "German",
+            "English",
+            "Herero",
+            "Khoekhoe",
+            "Kwangali",
+            "Lozi",
+            "Ndonga",
+            "Tswana"
+        ]
+    },
+    {
+        "name": "Congo",
+        "capital": "Brazzaville",
+        "population": 5657000,
+        "populationName": "Congolais",
+        "currency": "Central African CFA franc",
+        "continent": "Africa",
+        "subContinent": "Middle Africa",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "French",
+            "Kikongo",
+            "Lingala"
+        ]
+    },
+    {
+        "name": "Allemagne",
+        "capital": "Berlin",
+        "population": 83240525,
+        "populationName": "Allemand",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Western Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "German"
+        ]
+    },
+    {
+        "name": "Cit\u00e9 du Vatican",
+        "capital": "Vatican City",
+        "population": 451,
+        "populationName": "Vatican",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Southern Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Italian",
+            "Latin"
+        ]
+    },
+    {
+        "name": "Terres australes et antarctiques fran\u00e7aises",
+        "capital": "Port-aux-Fran\u00e7ais",
+        "population": 400,
+        "populationName": "Fran\u00e7ais",
+        "currency": "Euro",
+        "continent": "Antarctic",
+        "subContinent": "",
+        "timezone": "UTC+05:00",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "Albanie",
+        "capital": "Tirana",
+        "population": 2837743,
+        "populationName": "Albanais",
+        "currency": "Albanian lek",
+        "continent": "Europe",
+        "subContinent": "Southeast Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Albanian"
+        ]
+    },
+    {
+        "name": "Alg\u00e9rie",
+        "capital": "Algiers",
+        "population": 44700000,
+        "populationName": "Alg\u00e9rien",
+        "currency": "Algerian dinar",
+        "continent": "Africa",
+        "subContinent": "Northern Africa",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Arabic"
+        ]
+    },
+    {
+        "name": "Mayotte",
+        "capital": "Mamoudzou",
+        "population": 226915,
+        "populationName": "Mahorais",
+        "currency": "Euro",
+        "continent": "Africa",
+        "subContinent": "Eastern Africa",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "Ha\u00efti",
+        "capital": "Port-au-Prince",
+        "population": 11402533,
+        "populationName": "Ha\u00eftien",
+        "currency": "Haitian gourde",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-05:00",
+        "languages": [
+            "French",
+            "Haitian Creole"
+        ]
+    },
+    {
+        "name": "Svalbard et Jan Mayen",
+        "capital": "Longyearbyen",
+        "population": 2562,
+        "populationName": "Norwegian",
+        "currency": "krone",
+        "continent": "Europe",
+        "subContinent": "Northern Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Norwegian"
+        ]
+    },
+    {
+        "name": "Tonga",
+        "capital": "Nuku'alofa",
+        "population": 105697,
+        "populationName": "Tonguien",
+        "currency": "Tongan pa\u02bbanga",
+        "continent": "Oceania",
+        "subContinent": "Polynesia",
+        "timezone": "UTC+13:00",
+        "languages": [
+            "English",
+            "Tongan"
+        ]
+    },
+    {
+        "name": "Hong Kong",
+        "capital": "City of Victoria",
+        "population": 7500700,
+        "populationName": "Hongkongais",
+        "currency": "Hong Kong dollar",
+        "continent": "Asia",
+        "subContinent": "Eastern Asia",
+        "timezone": "UTC+08:00",
+        "languages": [
+            "English",
+            "Chinese"
+        ]
+    },
+    {
+        "name": "Singapour",
+        "capital": "Singapore",
+        "population": 5685807,
+        "populationName": "Singapourien",
+        "currency": "Singapore dollar",
+        "continent": "Asia",
+        "subContinent": "South-Eastern Asia",
+        "timezone": "UTC+08:00",
+        "languages": [
+            "English",
+            "Chinese",
+            "Malay",
+            "Tamil"
+        ]
+    },
+    {
+        "name": "Antigua-et-Barbuda",
+        "capital": "Saint John's",
+        "population": 97928,
+        "populationName": "Antiguaise et barbudien",
+        "currency": "Eastern Caribbean dollar",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Arabie Saoudite",
+        "capital": "Riyadh",
+        "population": 34813867,
+        "populationName": "Saoudien",
+        "currency": "Saudi riyal",
+        "continent": "Asia",
+        "subContinent": "Western Asia",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "Arabic"
+        ]
+    },
+    {
+        "name": "Cuba",
+        "capital": "Havana",
+        "population": 11326616,
+        "populationName": "Cubain",
+        "currency": "Cuban convertible peso",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-05:00",
+        "languages": [
+            "Spanish"
+        ]
+    },
+    {
+        "name": "Panama",
+        "capital": "Panama City",
+        "population": 4314768,
+        "populationName": "Panam\u00e9en",
+        "currency": "Panamanian balboa",
+        "continent": "Americas",
+        "subContinent": "Central America",
+        "timezone": "UTC-05:00",
+        "languages": [
+            "Spanish"
+        ]
+    },
+    {
+        "name": "Liberia",
+        "capital": "Monrovia",
+        "population": 5057677,
+        "populationName": "Lib\u00e9rien",
+        "currency": "Liberian dollar",
+        "continent": "Africa",
+        "subContinent": "Western Africa",
+        "timezone": "UTC",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Azerba\u00efdjan",
+        "capital": "Baku",
+        "population": 10110116,
+        "populationName": "Azerba\u00efdjanais",
+        "currency": "Azerbaijani manat",
+        "continent": "Asia",
+        "subContinent": "Western Asia",
+        "timezone": "UTC+04:00",
+        "languages": [
+            "Azerbaijani"
+        ]
+    },
+    {
+        "name": "Lettonie",
+        "capital": "Riga",
+        "population": 1901548,
+        "populationName": "Letton",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Northern Europe",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "Latvian"
+        ]
+    },
+    {
+        "name": "Antarctique",
+        "capital": "",
+        "population": 1000,
+        "populationName": "Antarcticain",
+        "currency": "",
+        "continent": "Antarctic",
+        "subContinent": "",
+        "timezone": "UTC-03:00",
+        "languages": []
+    },
+    {
+        "name": "Kiribati",
+        "capital": "South Tarawa",
+        "population": 119446,
+        "populationName": "Kiribatien",
+        "currency": "Australian dollar",
+        "continent": "Oceania",
+        "subContinent": "Micronesia",
+        "timezone": "UTC+12:00",
+        "languages": [
+            "English",
+            "Gilbertese"
+        ]
+    },
+    {
+        "name": "\u00c9thiopie",
+        "capital": "Addis Ababa",
+        "population": 114963583,
+        "populationName": "\u00c9thiopien",
+        "currency": "Ethiopian birr",
+        "continent": "Africa",
+        "subContinent": "Eastern Africa",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "Amharic"
+        ]
+    },
+    {
+        "name": "Niger",
+        "capital": "Niamey",
+        "population": 24206636,
+        "populationName": "Nig\u00e9rien",
+        "currency": "West African CFA franc",
+        "continent": "Africa",
+        "subContinent": "Western Africa",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "Trinit\u00e9-et-Tobago",
+        "capital": "Port of Spain",
+        "population": 1399491,
+        "populationName": "Trinidadien",
+        "currency": "Trinidad and Tobago dollar",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Sierra Leone",
+        "capital": "Freetown",
+        "population": 7976985,
+        "populationName": "Sierra-leonais",
+        "currency": "Sierra Leonean leone",
+        "continent": "Africa",
+        "subContinent": "Western Africa",
+        "timezone": "UTC",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Mozambique",
+        "capital": "Maputo",
+        "population": 31255435,
+        "populationName": "Mozambicain",
+        "currency": "Mozambican metical",
+        "continent": "Africa",
+        "subContinent": "Eastern Africa",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "Portuguese"
+        ]
+    },
+    {
+        "name": "Palaos (Palau)",
+        "capital": "Ngerulmud",
+        "population": 18092,
+        "populationName": "Paluan",
+        "currency": "United States dollar",
+        "continent": "Oceania",
+        "subContinent": "Micronesia",
+        "timezone": "UTC+09:00",
+        "languages": [
+            "English",
+            "Palauan"
+        ]
+    },
+    {
+        "name": "Fidji",
+        "capital": "Suva",
+        "population": 896444,
+        "populationName": "Fidjien",
+        "currency": "Fijian dollar",
+        "continent": "Oceania",
+        "subContinent": "Melanesia",
+        "timezone": "UTC+12:00",
+        "languages": [
+            "English",
+            "Fijian",
+            "Fiji Hindi"
+        ]
+    },
+    {
+        "name": "R\u00e9union",
+        "capital": "Saint-Denis",
+        "population": 840974,
+        "populationName": "R\u00e9unionnais",
+        "currency": "Euro",
+        "continent": "Africa",
+        "subContinent": "Eastern Africa",
+        "timezone": "UTC+04:00",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "\u00cele Norfolk",
+        "capital": "Kingston",
+        "population": 2302,
+        "populationName": "Norfolkais",
+        "currency": "Australian dollar",
+        "continent": "Oceania",
+        "subContinent": "Australia and New Zealand",
+        "timezone": "UTC+11:30",
+        "languages": [
+            "English",
+            "Norfuk"
+        ]
+    },
+    {
+        "name": "Turkm\u00e9nistan",
+        "capital": "Ashgabat",
+        "population": 6031187,
+        "populationName": "Turkm\u00e8ne",
+        "currency": "Turkmenistan manat",
+        "continent": "Asia",
+        "subContinent": "Central Asia",
+        "timezone": "UTC+05:00",
+        "languages": [
+            "Russian",
+            "Turkmen"
+        ]
+    },
+    {
+        "name": "Tadjikistan",
+        "capital": "Dushanbe",
+        "population": 9537642,
+        "populationName": "Tadjike",
+        "currency": "Tajikistani somoni",
+        "continent": "Asia",
+        "subContinent": "Central Asia",
+        "timezone": "UTC+05:00",
+        "languages": [
+            "Russian",
+            "Tajik"
+        ]
+    },
+    {
+        "name": "Liban",
+        "capital": "Beirut",
+        "population": 6825442,
+        "populationName": "Libanais",
+        "currency": "Lebanese pound",
+        "continent": "Asia",
+        "subContinent": "Western Asia",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "Arabic",
+            "French"
+        ]
+    },
+    {
+        "name": "Nig\u00e9ria",
+        "capital": "Abuja",
+        "population": 206139587,
+        "populationName": "Nig\u00e9rian",
+        "currency": "Nigerian naira",
+        "continent": "Africa",
+        "subContinent": "Western Africa",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "\u00c9tats-Unis",
+        "capital": "Washington, D.C.",
+        "population": 329484123,
+        "populationName": "Am\u00e9ricain",
+        "currency": "United States dollar",
+        "continent": "Americas",
+        "subContinent": "North America",
+        "timezone": "UTC-12:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Argentine",
+        "capital": "Buenos Aires",
+        "population": 45376763,
+        "populationName": "Argentin",
+        "currency": "Argentine peso",
+        "continent": "Americas",
+        "subContinent": "South America",
+        "timezone": "UTC-03:00",
+        "languages": [
+            "Guaran\u00ed",
+            "Spanish"
+        ]
+    },
+    {
+        "name": "Burkina Faso",
+        "capital": "Ouagadougou",
+        "population": 20903278,
+        "populationName": "Burkinab\u00e9",
+        "currency": "West African CFA franc",
+        "continent": "Africa",
+        "subContinent": "Western Africa",
+        "timezone": "UTC",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "\u00cele Christmas",
+        "capital": "Flying Fish Cove",
+        "population": 2072,
+        "populationName": "Christmas Islander",
+        "currency": "Australian dollar",
+        "continent": "Oceania",
+        "subContinent": "Australia and New Zealand",
+        "timezone": "UTC+07:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Bermudes",
+        "capital": "Hamilton",
+        "population": 63903,
+        "populationName": "Bermudien",
+        "currency": "Bermudian dollar",
+        "continent": "Americas",
+        "subContinent": "North America",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Nicaragua",
+        "capital": "Managua",
+        "population": 6624554,
+        "populationName": "Nicaraguayen",
+        "currency": "Nicaraguan c\u00f3rdoba",
+        "continent": "Americas",
+        "subContinent": "Central America",
+        "timezone": "UTC-06:00",
+        "languages": [
+            "Spanish"
+        ]
+    },
+    {
+        "name": "Swaziland",
+        "capital": "Mbabane",
+        "population": 1160164,
+        "populationName": "Swazie",
+        "currency": "Swazi lilangeni",
+        "continent": "Africa",
+        "subContinent": "Southern Africa",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "English",
+            "Swazi"
+        ]
+    },
+    {
+        "name": "Bahre\u00efn",
+        "capital": "Manama",
+        "population": 1701583,
+        "populationName": "Bahre\u00efnien",
+        "currency": "Bahraini dinar",
+        "continent": "Asia",
+        "subContinent": "Western Asia",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "Arabic"
+        ]
+    },
+    {
+        "name": "Kenya",
+        "capital": "Nairobi",
+        "population": 53771300,
+        "populationName": "K\u00e9nyan",
+        "currency": "Kenyan shilling",
+        "continent": "Africa",
+        "subContinent": "Eastern Africa",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "English",
+            "Swahili"
+        ]
+    },
+    {
+        "name": "Serbie",
+        "capital": "Belgrade",
+        "population": 6908224,
+        "populationName": "Serbe",
+        "currency": "Serbian dinar",
+        "continent": "Europe",
+        "subContinent": "Southeast Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Serbian"
+        ]
+    },
+    {
+        "name": "Timor oriental",
+        "capital": "Dili",
+        "population": 1318442,
+        "populationName": "Est-timorais",
+        "currency": "United States dollar",
+        "continent": "Asia",
+        "subContinent": "South-Eastern Asia",
+        "timezone": "UTC+09:00",
+        "languages": [
+            "Portuguese",
+            "Tetum"
+        ]
+    },
+    {
+        "name": "Dominique",
+        "capital": "Roseau",
+        "population": 71991,
+        "populationName": "Dominiquais",
+        "currency": "Eastern Caribbean dollar",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "\u00celes Mariannes du Nord",
+        "capital": "Saipan",
+        "population": 57557,
+        "populationName": "Am\u00e9rican",
+        "currency": "United States dollar",
+        "continent": "Oceania",
+        "subContinent": "Micronesia",
+        "timezone": "UTC+10:00",
+        "languages": [
+            "Carolinian",
+            "Chamorro",
+            "English"
+        ]
+    },
+    {
+        "name": "Philippines",
+        "capital": "Manila",
+        "population": 109581085,
+        "populationName": "Philippin",
+        "currency": "Philippine peso",
+        "continent": "Asia",
+        "subContinent": "South-Eastern Asia",
+        "timezone": "UTC+08:00",
+        "languages": [
+            "English",
+            "Filipino"
+        ]
+    },
+    {
+        "name": "Kosovo",
+        "capital": "Pristina",
+        "population": 1775378,
+        "populationName": "Kosovar",
+        "currency": "Euro",
+        "continent": "Europe",
+        "subContinent": "Southeast Europe",
+        "timezone": "UTC+01:00",
+        "languages": [
+            "Albanian",
+            "Serbian"
+        ]
+    },
+    {
+        "name": "Kowe\u00eft",
+        "capital": "Kuwait City",
+        "population": 4270563,
+        "populationName": "Kowe\u00eftien",
+        "currency": "Kuwaiti dinar",
+        "continent": "Asia",
+        "subContinent": "Western Asia",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "Arabic"
+        ]
+    },
+    {
+        "name": "Ta\u00efwan",
+        "capital": "Taipei",
+        "population": 23503349,
+        "populationName": "Ta\u00efwanais",
+        "currency": "New Taiwan dollar",
+        "continent": "Asia",
+        "subContinent": "Eastern Asia",
+        "timezone": "UTC+08:00",
+        "languages": [
+            "Chinese"
+        ]
+    },
+    {
+        "name": "Burundi",
+        "capital": "Gitega",
+        "population": 11890781,
+        "populationName": "Burundais",
+        "currency": "Burundian franc",
+        "continent": "Africa",
+        "subContinent": "Eastern Africa",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "French",
+            "Kirundi"
+        ]
+    },
+    {
+        "name": "Samoa am\u00e9ricaines",
+        "capital": "Pago Pago",
+        "population": 55197,
+        "populationName": "Samoan",
+        "currency": "United States dollar",
+        "continent": "Oceania",
+        "subContinent": "Polynesia",
+        "timezone": "UTC-11:00",
+        "languages": [
+            "English",
+            "Samoan"
+        ]
+    },
+    {
+        "name": "Bulgarie",
+        "capital": "Sofia",
+        "population": 6927288,
+        "populationName": "Bulgare",
+        "currency": "Bulgarian lev",
+        "continent": "Europe",
+        "subContinent": "Southeast Europe",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "Bulgarian"
+        ]
+    },
+    {
+        "name": "Afrique du Sud",
+        "capital": "Pretoria",
+        "population": 59308690,
+        "populationName": "Sud-africain",
+        "currency": "South African rand",
+        "continent": "Africa",
+        "subContinent": "Southern Africa",
+        "timezone": "UTC+02:00",
+        "languages": [
+            "Afrikaans",
+            "English",
+            "Southern Ndebele",
+            "Northern Sotho",
+            "Southern Sotho",
+            "Swazi",
+            "Tswana",
+            "Tsonga",
+            "Venda",
+            "Xhosa",
+            "Zulu"
+        ]
+    },
+    {
+        "name": "P\u00e9rou",
+        "capital": "Lima",
+        "population": 32971846,
+        "populationName": "P\u00e9ruvien",
+        "currency": "Peruvian sol",
+        "continent": "Americas",
+        "subContinent": "South America",
+        "timezone": "UTC-05:00",
+        "languages": [
+            "Aymara",
+            "Quechua",
+            "Spanish"
+        ]
+    },
+    {
+        "name": "Aruba",
+        "capital": "Oranjestad",
+        "population": 106766,
+        "populationName": "Arubais",
+        "currency": "Aruban florin",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "Dutch",
+            "Papiamento"
+        ]
+    },
+    {
+        "name": "Ghana",
+        "capital": "Accra",
+        "population": 31072945,
+        "populationName": "Ghan\u00e9en",
+        "currency": "Ghanaian cedi",
+        "continent": "Africa",
+        "subContinent": "Western Africa",
+        "timezone": "UTC",
+        "languages": [
+            "English"
+        ]
+    },
+    {
+        "name": "Saint-Martin",
+        "capital": "Marigot",
+        "population": 38659,
+        "populationName": "Saint-Martinois",
+        "currency": "Euro",
+        "continent": "Americas",
+        "subContinent": "Caribbean",
+        "timezone": "UTC-04:00",
+        "languages": [
+            "French"
+        ]
+    },
+    {
+        "name": "Inde",
+        "capital": "New Delhi",
+        "population": 1380004385,
+        "populationName": "Indien",
+        "currency": "Indian rupee",
+        "continent": "Asia",
+        "subContinent": "Southern Asia",
+        "timezone": "UTC+05:30",
+        "languages": [
+            "English",
+            "Hindi",
+            "Tamil"
+        ]
+    },
+    {
+        "name": "Ouganda",
+        "capital": "Kampala",
+        "population": 45741000,
+        "populationName": "Ougandais",
+        "currency": "Ugandan shilling",
+        "continent": "Africa",
+        "subContinent": "Eastern Africa",
+        "timezone": "UTC+03:00",
+        "languages": [
+            "English",
+            "Swahili"
+        ]
+    }
+]
