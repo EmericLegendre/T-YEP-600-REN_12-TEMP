@@ -2,4 +2,4 @@
 
 flask db migrate
 flask db upgrade
-python populate_db/populate.py
+python populate.py

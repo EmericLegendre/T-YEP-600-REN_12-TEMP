@@ -138,21 +138,21 @@ def insert_cities_to_db(cities_data):
     return f"{success_count} cities created successfully"
 
 def populate_countries_from_json():
-    with open('countries_data.json', 'r') as json_file:
+    with open('populate_db/countries_data.json', 'r') as json_file:
         countries = json.load(json_file)
 
     response = insert_countries_to_db(countries)
     print(response)
 
 def populate_states_from_json():
-    with open('countries_states.json', 'r') as json_file:
+    with open('populate_db/countries_states.json', 'r') as json_file:
         states_data = json.load(json_file)
 
     result = insert_states_to_db(states_data)
     print(result)
 
 def populate_cities_from_json():
-    with open('cities_data.json', 'r') as json_file:
+    with open('populate_db/cities_data.json', 'r') as json_file:
         cities_data = json.load(json_file)
 
     result = insert_cities_to_db(cities_data)
