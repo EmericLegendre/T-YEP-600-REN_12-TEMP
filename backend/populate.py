@@ -29,11 +29,11 @@ def insert_countries_to_db(countries):
                 new_country = Country(
                     name=country_data['name'],
                     continent=country_data['continent'],
-                    subContinent=country_data['subContinent'],
+                    sub_continent=country_data['subContinent'],
                     currency=country_data['currency'],
                     capital=country_data['capital'],
                     population=country_data['population'],
-                    populationName=country_data['populationName'],
+                    population_name=country_data['populationName'],
                     timezone=country_data['timezone'],
                     flag=country_data['flag']
                 )
@@ -78,9 +78,9 @@ def insert_states_to_db(states_data):
             try:
                 new_state = State(
                     name=region_data['name'],
-                    regionalCapital=region_data.get('regionalCapital', ''),
+                    regional_capital=region_data.get('regionalCapital', ''),
                     population=region_data['population'],
-                    populationName=region_data['populationName'],
+                    population_name=region_data['populationName'],
                     countryId=country.id
                 )
                 db.session.add(new_state)
@@ -124,9 +124,9 @@ def insert_cities_to_db(cities_data):
         new_city = City(
             name=city_name,
             population=population,
-            stateId=state.id,
-            countryId=country.id,
-            populationName=population_name
+            state_id=state.id,
+            country_id=country.id,
+            population_name=population_name
         )
         try:
             db.session.add(new_city)
