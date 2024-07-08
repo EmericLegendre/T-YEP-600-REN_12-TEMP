@@ -8,12 +8,15 @@ import { useNavigation } from '@react-navigation/native'
 
 const register = () => {
 
-    const [firstName, setFirstName] = useState('');
+
+      const [firstName, setFirstName] = useState('');
       const [lastName, setLastName] = useState('');
       const [email, setEmail] = useState('');
       const [password, setPassword] = useState('');
       const [confirmPassword, setConfirmPassword] = useState('');
       const [errorMessage, setErrorMessage] = useState('');
+      const [isValidEmail, setIsValidEmail] = useState(true);
+      const [isValidPassword, setIsValidPassword] = useState(true);
 
 
 
@@ -23,6 +26,22 @@ const register = () => {
           return;
         }
 
+        if (!validateEmail(email)) {
+            setIsValidEmail(false);
+            setErrorMessage('Please enter a valid email address.')
+            return;
+            } else {
+                setIsValidEmail(true);
+                }
+
+        if (!validatePassword(password)){
+            setIsValidPassword(false);
+            setErrorMessage('Password must be at least 8 characters long and contain at least one number.')
+            return;
+            } else {
+                setIsValidPassword(true)
+                }
+
         if (password !== confirmPassword) {
           setErrorMessage('Passwords do not match.');
           return;
@@ -31,16 +50,32 @@ const register = () => {
         navigation.navigate('home');
       };
 
+    const validateEmail = (email) => {
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        return emailPattern.test(email);
+      };
+
+    const validatePassword = (password) => {
+        const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+        return passwordPattern.test(password);
+     };
+
     return (
         <View style={styles.container}>
           <Text style={styles.header}>Registration</Text>
 
           {errorMessage ? <Text style={styles.error}>{errorMessage}</Text> : null}
+                {!isValidEmail && (
+                  <Text style={styles.error}>Please enter a valid email address.</Text>
+                )}
+                {!isValidPassword && (
+                    <Text style={styles.error}>Password must be at least 8 characters long and contain at least one number.</Text>
+                  )}
 
 
           <TextInput style={styles.textinput} placeholder="First name" value={firstName} onChangeText={text => setFirstName(text)} underlineColorAndroid={'transparent'}/>
           <TextInput style={styles.textinput} placeholder="Last name" value={lastName} onChangeText={text => setLastName(text)} underlineColorAndroid={'transparent'}/>
-          <TextInput style={styles.textinput} placeholder="Email address" value={email} onChangeText={text => setEmail(text)} underlineColorAndroid={'transparent'}/>
+          <TextInput style={styles.textinput} placeholder="Email address" value={email} onChangeText={text => {setEmail(text);setIsValidEmail(validateEmail(text));}} underlineColorAndroid={'transparent'}/>
           <TextInput style={styles.textinput} placeholder="Password" value={password} onChangeText={text => setPassword(text)} secureTextEntry={true} underlineColorAndroid={'transparent'}/>
           <TextInput style={styles.textinput} placeholder="Confirm password" value={confirmPassword} onChangeText={text => setConfirmPassword(text)} secureTextEntry={true} underlineColorAndroid={'transparent'}/>
 
