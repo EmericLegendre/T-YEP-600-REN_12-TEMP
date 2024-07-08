@@ -1,0 +1,50 @@
+[
+    {
+        "id":1,
+        "name":"France",
+        "continent":"Europe",
+        "flag":"https://flagcdn.com/w320/fr.png"
+    },
+    {
+        "id":2,
+        "name":"Maroc",
+        "continent":"Afrique",
+        "flag":"https://flagcdn.com/w320/ma.png"
+    },
+    {
+        "id":3,
+        "name":"Canada",
+        "continent":"Amérique du Nord",
+        "flag":"https://flagcdn.com/w320/ca.png"
+    },
+    {
+        "id":4,
+        "name":"Australie",
+        "continent":"Océanie",
+        "flag":"https://flagcdn.com/w320/au.png"
+    },
+    {
+        "id":5,
+        "name":"Brésil",
+        "continent":"Amérique du Sud",
+        "flag":"https://flagcdn.com/w320/br.png"
+    },
+    {
+        "id":6,
+        "name":"Allemagne",
+        "continent":"Europe",
+        "flag":"https://flagcdn.com/w320/de.png"
+    },
+    {
+        "id":7,
+        "name":"Japon",
+        "continent":"Asie",
+        "flag":"https://flagcdn.com/w320/jp.png"
+    },
+    {
+        "id":8,
+        "name":"Afrique du sud",
+        "continent":"Afrique",
+        "flag":"https://flagcdn.com/w320/za.png"
+    }
+]

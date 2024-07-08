@@ -3,15 +3,9 @@ import React from 'react'
 
 const profile = () => {
   return (
-    <SafeAreaView style={styles.container}>
-            <Stack.Screen
-                options={{
-                    headerShadowVisible: false,
-                    headerTitle: ""
-                }}
-            />
-          <Text>Profile</Text>
-        </SafeAreaView>
+    <View style={styles.container}>
+      <Text>Profile</Text>
+    </View>
   )
 }
 
