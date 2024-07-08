@@ -1,8 +1,10 @@
 import unittest
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from config.dbConfig import db
+from backend.config.dbConfig import db
 from backend.models import City, BaseMixin  
+from backend.models import City, CityInfos, CategoryEnum  # Assurez-vous d'importer correctement vos modèles
+
 
 class CityModelTestCase(unittest.TestCase):
     def setUp(self):
@@ -38,8 +40,8 @@ class CityModelTestCase(unittest.TestCase):
         self.session.add(city)
         self.session.commit()
 
-        city_info = CityInfos(info='Some info', city_id=city.id)  # Assurez-vous que CityInfos est correctement défini
-        self.session.add(city_info)
+        city_infos = CityInfos(cityId=city.id, category=CategoryEnum.CULTURE, content='Cultural information')
+        self.session.add(city_infos)
         self.session.commit()
 
         retrieved_city = self.session.query(City).filter_by(name='Paris').first()
