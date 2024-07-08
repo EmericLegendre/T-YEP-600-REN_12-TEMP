@@ -1,27 +1,55 @@
-import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Alert } from 'react-native'
 import { Stack, useRouter } from 'expo-router'
 import React from 'react'
+import { useState } from 'react'
+import { useNavigation } from '@react-navigation/native'
+
 
 
 const register = () => {
 
-  const router = useRouter();
-  return (
-    <View style={styles.container}>
-      <Text style={styles.header}>Registration</Text>
+    const [firstName, setFirstName] = useState('');
+      const [lastName, setLastName] = useState('');
+      const [email, setEmail] = useState('');
+      const [password, setPassword] = useState('');
+      const [confirmPassword, setConfirmPassword] = useState('');
+      const [errorMessage, setErrorMessage] = useState('');
 
-      <TextInput style={styles.textinput} placeholder="First name" underlineColorAndroid={'transparent'}/>
-      <TextInput style={styles.textinput} placeholder="Last name" underlineColorAndroid={'transparent'}/>
-      <TextInput style={styles.textinput} placeholder="Email address" underlineColorAndroid={'transparent'}/>
-      <TextInput style={styles.textinput} placeholder="Password" secureTextEntry={true} underlineColorAndroid={'transparent'}/>
-      <TextInput style={styles.textinput} placeholder="Confirm password" secureTextEntry={true} underlineColorAndroid={'transparent'}/>
 
-      <TouchableOpacity style={styles.button}
-      onPress={() => router.push('/home')}>
-          <Text style={styles.btntext}>Sign Up</Text>
-      </TouchableOpacity>
-    </View>
-  );
+
+      const handleSignUp = () => {
+        if (!firstName || !lastName || !email || !password || !confirmPassword) {
+          setErrorMessage('Please fill in all fields.');
+          return;
+        }
+
+        if (password !== confirmPassword) {
+          setErrorMessage('Passwords do not match.');
+          return;
+        }
+
+        navigation.navigate('home');
+      };
+
+    return (
+        <View style={styles.container}>
+          <Text style={styles.header}>Registration</Text>
+
+          {errorMessage ? <Text style={styles.error}>{errorMessage}</Text> : null}
+
+
+          <TextInput style={styles.textinput} placeholder="First name" value={firstName} onChangeText={text => setFirstName(text)} underlineColorAndroid={'transparent'}/>
+          <TextInput style={styles.textinput} placeholder="Last name" value={lastName} onChangeText={text => setLastName(text)} underlineColorAndroid={'transparent'}/>
+          <TextInput style={styles.textinput} placeholder="Email address" value={email} onChangeText={text => setEmail(text)} underlineColorAndroid={'transparent'}/>
+          <TextInput style={styles.textinput} placeholder="Password" value={password} onChangeText={text => setPassword(text)} secureTextEntry={true} underlineColorAndroid={'transparent'}/>
+          <TextInput style={styles.textinput} placeholder="Confirm password" value={confirmPassword} onChangeText={text => setConfirmPassword(text)} secureTextEntry={true} underlineColorAndroid={'transparent'}/>
+
+
+          <TouchableOpacity style={styles.button} onPress={handleSignUp}>
+              <Text style={styles.btntext}>Sign Up</Text>
+          </TouchableOpacity>
+        </View>
+    );
 }
 
 export default register
