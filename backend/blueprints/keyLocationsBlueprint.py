@@ -57,3 +57,19 @@ def delete_key_location(id):
     except SQLAlchemyError as e:
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
+
+
+@keyLocationsBp.route('/get', methods=['GET'])
+@jwt_required()
+def get_key_locations():
+    try:
+        key_locations = KeyLocations.query.all()
+        return jsonify([{
+            'id': key_location.id,
+            'name': key_location.name,
+            'description': key_location.description,
+            'latitude': key_location.latitude,
+            'longitude': key_location.longitude
+        } for key_location in key_locations]), 200
+    except SQLAlchemyError as e:
+        return jsonify({'error': str(e)}), 400
