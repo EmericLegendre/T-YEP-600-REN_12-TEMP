@@ -26,7 +26,7 @@ def addKeyLocation():
 
     existingKeyLocation = KeyLocations.query.filter(KeyLocations.name == name).first()
     if existingKeyLocation:
-        return jsonify({'error': 'Key Location with this email already exists'}), 400
+        return jsonify({'error': 'Key Location with this name already exists'}), 400
 
     newKeyLocation = KeyLocations(
         name=name,
