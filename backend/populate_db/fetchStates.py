@@ -43,6 +43,25 @@ def get_all_country_names():
             
         return country_names
     
+def get_capital_state(country_code, adminCode1):
+    base_url = "http://api.geonames.org/searchJSON"
+    params = {
+        "country": country_code,
+        "adminCode1": adminCode1,
+        "featureCode": "PPLA", 
+        "username": GEONAMES_USERNAME
+    }
+    try:
+        response = requests.get(base_url, params=params)
+        response.raise_for_status()
+        data = response.json()
+        if 'geonames' in data and data['geonames']:
+            capital = data['geonames'][0].get("toponymName")
+            return capital
+    except requests.exceptions.RequestException as e:
+        print(f"An error occurred: {e}")
+        return None
+    
 
 def get_country_id(encoded_country_name):
     base_url = "http://api.geonames.org/searchJSON"
@@ -80,7 +99,7 @@ def get_country_states(country_id, country_name):
             state_population = state.get("population", 0)
             adminCode1 = state["adminCode1"]
             countryCode = state["countryCode"]
-            regional_capital = REGIONAL_DATA.get(country_name, {}).get(state_name, {}).get("capital", "")
+            regional_capital = get_capital_state(countryCode ,adminCode1 )
             population_name = REGIONAL_DATA.get(country_name, {}).get(state_name, {}).get("populationName", "")
             states.append({
                 "name": state_name,
@@ -107,8 +126,9 @@ def main():
                 "countryCode": country_code,
                 "states": states
             })
+            print(f"Found {len(states)} states for {original_name}")
 
-    with open('countries_states.json', 'w', encoding='utf-8') as f:
+    with open('statesData.json', 'w', encoding='utf-8') as f:
         json.dump(all_countries_states, f, indent=2, ensure_ascii=False)
 
 if __name__ == '__main__':
