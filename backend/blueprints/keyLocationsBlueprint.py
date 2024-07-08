@@ -92,3 +92,29 @@ def get_key_location_by_id(id):
         }), 200
     except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400
+
+
+@keyLocationsBp.route('/update/<int:id>', methods=['PUT'])
+@jwt_required()
+def update_key_location(id):
+    data = request.get_json()
+    updatable_fields = ['name', 'description', 'latitude', 'longitude']
+
+    for field in data.keys():
+        if field not in updatable_fields:
+            return jsonify({'error': f'Invalid field: {field}'}), 400
+
+    try:
+        key_location = KeyLocations.query.get(id)
+        if key_location is None:
+            return jsonify({'error': 'Key location not found'}), 404
+
+        for field in updatable_fields:
+            if field in data:
+                setattr(key_location, field, data[field])
+
+        db.session.commit()
+        return jsonify({'message': 'Key location updated successfully'}), 200
+    except SQLAlchemyError as e:
+        db.session.rollback()
+        return jsonify({'error': str(e)}), 400
