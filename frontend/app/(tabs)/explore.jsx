@@ -3,6 +3,8 @@ import React from 'react'
 import { Stack, useRouter } from 'expo-router'
 import Colors from '../../constants/Colors'
 import { Ionicons } from '@expo/vector-icons'
+import Listings from '../../components/Listings'
+import countriesData from '../../data/countries.json'
 
 const explore = () => {
 
@@ -44,6 +46,9 @@ const explore = () => {
           <Ionicons name="options" size={30} />
         </TouchableOpacity>
       </View>
+
+      <Listings listings={countriesData}/>
+
     </View>
   </>
   );
