@@ -13,6 +13,8 @@ const register = () => {
       const [lastName, setLastName] = useState('');
       const [email, setEmail] = useState('');
       const [password, setPassword] = useState('');
+      const [country, setCountry] = useState('');
+      const [city, setCity] = useState('');
       const [confirmPassword, setConfirmPassword] = useState('');
       const [errorMessage, setErrorMessage] = useState('');
       const [isValidEmail, setIsValidEmail] = useState(true);
@@ -20,7 +22,7 @@ const register = () => {
 
 
 
-      const handleSignUp = () => {
+      const handleSignUp = async () => {
         if (!firstName || !lastName || !email || !password || !confirmPassword) {
           setErrorMessage('Please fill in all fields.');
           return;
@@ -48,7 +50,27 @@ const register = () => {
         }
 
         navigation.navigate('home');
+
+          try {
+                  const response = await axios.post('http://localhost:5000/api/users/auth', {
+                      email,
+                      password,
+                      firstName,
+                      lastName,
+                      country: 'YourCountry',
+                      city: 'YourCity'
+                  });
+
+                  if (response.status === 201) {
+                      navigation.navigate('home');
+                  } else {
+                      setErrorMessage('Registration failed. Please try again.');
+                  }
+              } catch (error) {
+                  setErrorMessage('An error occurred. Please try again.');
+              }
       };
+
 
     const validateEmail = (email) => {
         const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
@@ -78,6 +100,8 @@ const register = () => {
           <TextInput style={styles.textinput} placeholder="Email address" value={email} onChangeText={text => {setEmail(text);setIsValidEmail(validateEmail(text));}} underlineColorAndroid={'transparent'}/>
           <TextInput style={styles.textinput} placeholder="Password" value={password} onChangeText={text => setPassword(text)} secureTextEntry={true} underlineColorAndroid={'transparent'}/>
           <TextInput style={styles.textinput} placeholder="Confirm password" value={confirmPassword} onChangeText={text => setConfirmPassword(text)} secureTextEntry={true} underlineColorAndroid={'transparent'}/>
+          <TextInput style={styles.textinput} placeholder="Country" value={country} onChangeText={text => setCountry(text)} underlineColorAndroid={'transparent'}/>
+          <TextInput style={styles.textinput} placeholder="City" value={city} onChangeText={text => setCity(text)} underlineColorAndroid={'transparent'}/>
 
 
           <TouchableOpacity style={styles.button} onPress={handleSignUp}>
