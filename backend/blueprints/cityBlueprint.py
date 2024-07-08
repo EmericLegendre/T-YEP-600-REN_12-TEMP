@@ -104,3 +104,21 @@ def get_cities():
         } for city in cities]), 200
     except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400
+    
+@cityBp.route('/get/<int:id>', methods=['GET'])
+@jwt_required()
+def get_city_by_id(id):
+    try:
+        city = City.query.get(id)
+        if city is None:
+            return jsonify({'error': 'City not found'}), 404
+        return jsonify({
+            'id': city.id,
+            'name': city.name,
+            'country_id': city.country_id,
+            'state_id': city.state_id,
+            'population': city.population,
+            'population_name': city.population_name
+        }), 200
+    except SQLAlchemyError as e:
+        return jsonify({'error': str(e)}), 400
