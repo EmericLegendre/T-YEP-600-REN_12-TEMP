@@ -21,6 +21,7 @@ def fetch_and_save_data():
         country_region = country.get('region', '')
         country_subregion = country.get('subregion', '')
         country_timezones = country.get('timezones', [''])[0]
+        country_flag = country.get('flags', {}).get('png', '')
         if 'languages' in country:
                 country_languages = list(country['languages'].values())
         else:
@@ -35,7 +36,8 @@ def fetch_and_save_data():
             "continent": country_region,
             "subContinent": country_subregion,
             "timezone": country_timezones,
-            "languages": country_languages
+            "languages": country_languages,
+            "flag": country_flag
         }
 
         countries_info.append(country_info)

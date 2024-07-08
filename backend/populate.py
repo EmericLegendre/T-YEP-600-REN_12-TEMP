@@ -34,7 +34,8 @@ def insert_countries_to_db(countries):
                     capital=country_data['capital'],
                     population=country_data['population'],
                     populationName=country_data['populationName'],
-                    timezone=country_data['timezone']
+                    timezone=country_data['timezone'],
+                    flag=country_data['flag']
                 )
                 db.session.add(new_country)
                 db.session.commit()
