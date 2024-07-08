@@ -73,3 +73,22 @@ def get_key_locations():
         } for key_location in key_locations]), 200
     except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400
+
+
+@keyLocationsBp.route('/get/<int:id>', methods=['GET'])
+@jwt_required()
+def get_key_location_by_id(id):
+    key_location = KeyLocations.query.get(id)
+    try:
+        key_location = KeyLocations.query.get(id)
+        if key_location is None:
+            return jsonify({'error': 'Key location not found'}), 404
+        return jsonify({
+            'id': key_location.id,
+            'name': key_location.name,
+            'description': key_location.description,
+            'latitude': key_location.latitude,
+            'longitude': key_location.longitude
+        }), 200
+    except SQLAlchemyError as e:
+        return jsonify({'error': str(e)}), 400
