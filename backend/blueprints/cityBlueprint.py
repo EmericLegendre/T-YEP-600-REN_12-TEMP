@@ -10,6 +10,7 @@ cityBp = Blueprint('cityBlueprint', __name__)
 
 @cityBp.route('/add', methods=['POST'])
 @jwt_required()
+
 def add_city():
     data = request.get_json()
     required_fields = ['name', 'country_id', 'state_id', 'population', 'population_name']
