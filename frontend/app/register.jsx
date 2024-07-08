@@ -12,8 +12,9 @@ const register = () => {
 
       <TextInput style={styles.textinput} placeholder="First name" underlineColorAndroid={'transparent'}/>
       <TextInput style={styles.textinput} placeholder="Last name" underlineColorAndroid={'transparent'}/>
-      <TextInput style={styles.textinput} placeholder="Email adress" underlineColorAndroid={'transparent'}/>
+      <TextInput style={styles.textinput} placeholder="Email address" underlineColorAndroid={'transparent'}/>
       <TextInput style={styles.textinput} placeholder="Password" secureTextEntry={true} underlineColorAndroid={'transparent'}/>
+      <TextInput style={styles.textinput} placeholder="Confirm password" secureTextEntry={true} underlineColorAndroid={'transparent'}/>
 
       <TouchableOpacity style={styles.button}
       onPress={() => router.push('/home')}>
