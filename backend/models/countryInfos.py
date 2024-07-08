@@ -14,6 +14,9 @@ class CountryInfos(db.Model):
     countryId = db.Column(db.Integer, db.ForeignKey('country.id'), nullable=False)
     category = db.Column(db.Enum(CategoryEnum), nullable=False)
     content = db.Column(db.String(255), nullable=False)
+    created_at = db.Column(db.DateTime, default=db.func.current_timestamp())
+    updated_at = db.Column(db.DateTime, default=db.func.current_timestamp(), onupdate=db.func.current_timestamp())
+
 
     def __repr__(self) -> str:
         return (f"CountryInfos(id={self.id!r}, countryId={self.countryId!r}, category={self.category!r}, "
