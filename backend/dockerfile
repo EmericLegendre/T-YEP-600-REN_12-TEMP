@@ -7,5 +7,6 @@ WORKDIR /backend
 COPY requirements.txt /backend
 RUN pip install -r requirements.txt
 
-COPY app.py /backend
-CMD python app.py
+COPY . /backend
+
+CMD flask db upgrade && flask db migrate && python app.py
