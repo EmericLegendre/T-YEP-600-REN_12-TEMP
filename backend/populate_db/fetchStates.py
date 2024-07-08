@@ -1,25 +1,7 @@
 import os
 import json
 import requests
-from sqlalchemy.exc import SQLAlchemyError
-from urllib.parse import quote
-from dotenv import load_dotenv
-from flask import Flask
-from config.dbConfig import db
-from models.country import Country
-from models.state import State
-from models.city import City
-from models.countryInfos import CountryInfos
-from models.stateInfos import StateInfos
-from models.cityInfos import CityInfos
 
-
-load_dotenv()
-
-app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db.init_app(app)
 
 GEONAMES_USERNAME = 'math56'
 
@@ -47,29 +29,27 @@ REGIONAL_DATA = {
 }
 
 def get_all_country_names():
-    try:
-        with app.app_context():
-            countries = Country.query.all()
-            country_names = []
+    with open('countriesData.json', 'r', encoding='utf-8') as file:
+        countries = json.load(file)
+        
+        country_names = []
+        for country in countries:
+            name = country['name']
+            encoded_name = name.replace(' ', '-')
+            country_names.append({
+                "original_name": name,
+                "encoded_name": encoded_name
+            })
             
-            for country in countries:
-                name = country.name
-                encoded_name = name.replace(' ', '-')
-                country_names.append({
-                    "original_name": name,
-                    "encoded_name": encoded_name
-                })
-            return country_names
-    except SQLAlchemyError as e:
-        print(f"Database error: {e}")
-        return []
+        return country_names
+    
 
 def get_country_id(encoded_country_name):
     base_url = "http://api.geonames.org/searchJSON"
     params = {
         "q": encoded_country_name,
-        "featureClass": "A",  # Countries
-        "featureCode": "PCLI",  # Primary country subdivisions
+        "featureClass": "A", 
+        "featureCode": "PCLI", 
         "username": GEONAMES_USERNAME
     }
 
@@ -127,8 +107,6 @@ def main():
                 "countryCode": country_code,
                 "states": states
             })
-        else:
-            print(f"Could not find country ID for {original_name}")
 
     with open('countries_states.json', 'w', encoding='utf-8') as f:
         json.dump(all_countries_states, f, indent=2, ensure_ascii=False)
