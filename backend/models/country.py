@@ -15,9 +15,10 @@ class Country(db.Model):
     country_infos = db.relationship('CountryInfos', backref='country')
     states = db.relationship('State', backref='country')
     cities = db.relationship('City', backref='country')
+    flag = db.Column(db.varchar, nullable=True)
     created_at = db.Column(db.DateTime, default=db.func.current_timestamp())
     updated_at = db.Column(db.DateTime, default=db.func.current_timestamp(), onupdate=db.func.current_timestamp())
-
+    
 
     def __repr__(self) -> str:
         return (f"Country(id={self.id!r}, name={self.name!r}, continent={self.continent!r}, "
