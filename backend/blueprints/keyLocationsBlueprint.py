@@ -12,6 +12,7 @@ keyLocationsBp = Blueprint('keyLocationsBlueprint', __name__)
 # Add new Key Location -> JSON{ name, latitude, longitude, description(optional) }
 
 @keyLocationsBp.route('/add', methods=['POST'])
+@jwt_required()
 def add_key_location():
     data = request.get_json()
 
