@@ -88,3 +88,19 @@ def update_city(id):
     except SQLAlchemyError as e:
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
+
+@cityBp.route('/get', methods=['GET'])
+@jwt_required()
+def get_cities():
+    try:
+        cities = City.query.all()
+        return jsonify([{
+            'id': city.id,
+            'name': city.name,
+            'country_id': city.country_id,
+            'state_id': city.state_id,
+            'population': city.population,
+            'population_name': city.population_name
+        } for city in cities]), 200
+    except SQLAlchemyError as e:
+        return jsonify({'error': str(e)}), 400
