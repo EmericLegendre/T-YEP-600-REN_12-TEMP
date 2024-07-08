@@ -13,7 +13,7 @@ def fetch_and_save_data():
 
     countries_info = []
     for country in data:
-        country_name = country['translations'].get('fra', {}).get('common', '')
+        country_name = country['name'].get('nativeName', {}).get('fra', {}).get('common', country['translations'].get('fra', {}).get('common', ''))
         country_capital = country.get('capital', [''])[0]
         country_population = country.get('population', '')
         country_demonyms = country.get('demonyms', {}).get('fra', {}).get('m', '') or country.get('demonyms', {}).get('eng', {}).get('m', '')
