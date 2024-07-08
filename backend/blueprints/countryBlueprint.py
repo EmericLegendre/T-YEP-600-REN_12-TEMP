@@ -76,6 +76,7 @@ def getCountryById(id):
         return jsonify({'error': str(e)}), 400
     
 @countryBp.route('/update/<int:id>', methods=['PUT'])
+@jwt_required()
 def updateCountry(id):
     data = request.get_json()
     updatable_fields = ['name', 'continent', 'subContinent', 'currency', 'capital', 'population', 'populationName', 'timezone']
