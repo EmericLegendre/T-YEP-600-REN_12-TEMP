@@ -15,7 +15,7 @@ class CityInfos(db.Model):
     """
     __tablename__ = 'cityInfos'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    cityId = db.Column(db.Integer, db.ForeignKey('city.id'), nullable=False)
+    city_id = db.Column(db.Integer, db.ForeignKey('city.id'), nullable=False)
     category = db.Column(db.Enum(CategoryEnum), nullable=False)
     content = db.Column(db.String(255), nullable=False)
     created_at = db.Column(db.DateTime, default=db.func.current_timestamp())
