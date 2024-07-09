@@ -10,7 +10,7 @@ class CategoryEnum(Enum):
 class StateInfos(db.Model):
     __tablename__ = 'stateInfos'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    stateId = db.Column(db.Integer, db.ForeignKey('state.id'), nullable=False)
+    state_id = db.Column(db.Integer, db.ForeignKey('state.id'), nullable=False)
     category = db.Column(db.Enum(CategoryEnum), nullable=False)
     content = db.Column(db.String(255), nullable=False)
     created_at = db.Column(db.DateTime, default=db.func.current_timestamp())
