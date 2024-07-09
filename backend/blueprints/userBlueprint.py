@@ -26,7 +26,7 @@ def authentication():
 
 # Create User -> JSON {email, password, firstName, lastName, country, city}
 @userBp.route('/add', methods=['POST'])
-def addUser():
+def add_user():
     data = request.get_json()
 
     email = data.get('email')
@@ -63,7 +63,7 @@ def addUser():
 # Delete User -> userId in URL
 @userBp.route('/delete/<int:id>', methods=['DELETE'])
 @jwt_required()
-def deleteUser(id):
+def delete_user(id):
     try:
         country = User.query.get(id)
         if country is None:
@@ -80,7 +80,7 @@ def deleteUser(id):
 # Update user infos -> JSON {optionals : email, password, firstName, lastName, country, city}
 @userBp.route('/update/<int:id>', methods=['PUT'])
 @jwt_required()
-def updateUser(id):
+def update_user(id):
     data = request.get_json()
     updatable_fields = ['email', 'password', 'firstName', 'lastName', 'country', 'city']
 
@@ -107,7 +107,7 @@ def updateUser(id):
 # Get User informations -> userId in URL
 @userBp.route('/get/<int:id>', methods=['GET'])
 @jwt_required()
-def getCountryById(id):
+def get_country_by_id(id):
     try:
         user = User.query.get(id)
         if user is None:
