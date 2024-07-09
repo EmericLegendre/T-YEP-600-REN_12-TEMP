@@ -84,7 +84,7 @@ def update_country_info(id):
 
 @countryInfosBp.route('/get/country/<int:country_id>', methods=['GET'])
 @jwt_required()
-def get_country_info_by_country(country_id):
+def get_country_infos_by_country(country_id):
     try:
         country_infos = CountryInfos.query.filter_by(country_id=country_id).all()
         if not country_infos:
