@@ -317,5 +317,17 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: '#59cbbd',
     marginTop: 30,
-  }
+  },
+  picker: {
+      alignSelf: 'stretch',
+      height: 50,
+      width: '100%',
+      borderColor: '#ccc',
+      borderWidth: 1,
+      borderRadius: 8,
+      backgroundColor: '#199187',
+      marginBottom: 20,
+      color: '#333',
+  },
+
 });
