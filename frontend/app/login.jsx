@@ -1,10 +1,29 @@
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native'
 import { Stack, useRouter } from 'expo-router'
 import React from 'react'
+import {useState} from 'react'
+import axios from 'axios';
 
 const login = () => {
 
   const router = useRouter();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
+  const handleLogin = async () => {
+      try {
+        const response = await axios.post('http://localhost:5000/api/users/auth', { email, password });
+        const { token } = response.data;
+
+        localStorage.setItem('token', token);
+
+        router.push('/home');
+      } catch (err) {
+        setError('Invalid email or password');
+      }
+  };
+
   return (
       <View style={styles.container}>
         <Text style={styles.header}>Login</Text>
