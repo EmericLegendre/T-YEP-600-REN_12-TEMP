@@ -50,3 +50,38 @@ def delete_city_info(id):
     except SQLAlchemyError as e:
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
+    
+@cityInfosBp.route('/update/<int:id>', methods=['PUT'])
+@jwt_required()
+def update_city_info(id):
+    data = request.get_json()
+    updatable_fields = ['city_id', 'category', 'content']
+    
+    # Validate that all fields in the request are valid updatable fields
+    for field in data.keys():
+        if field not in updatable_fields:
+            return jsonify({'error': f'Invalid field: {field}'}), 400
+    
+    try:
+        city_info = CityInfos.query.get(id)
+        if city_info is None:
+            return jsonify({'error': 'CityInfo not found'}), 404
+        
+        # Update category if provided
+        if 'category' in data:
+            try:
+                category = CategoryEnum[data['category']]
+                city_info.category = category
+            except KeyError:
+                return jsonify({'error': 'Invalid category'}), 400
+        
+        # Update other fields
+        for field in updatable_fields:
+            if field in data and field != 'category':
+                setattr(city_info, field, data[field])
+
+        db.session.commit()
+        return jsonify({'message': 'CityInfo updated successfully'}), 200
+    except SQLAlchemyError as e:
+        db.session.rollback()
+        return jsonify({'error': str(e)}), 400
