@@ -38,3 +38,19 @@ def add_country_info():
     except SQLAlchemyError as e:
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
+
+
+@countryInfosBp.route('/delete/<int:id>', methods=['DELETE'])
+@jwt_required()
+def delete_country_info(id):
+    try:
+        country_info = CountryInfos.query.get(id)
+        if country_info is None:
+            return jsonify({'error': 'Country info not found'}), 404
+
+        db.session.delete(country_info)
+        db.session.commit()
+        return jsonify({'message': 'Country info deleted successfully'}), 200
+    except SQLAlchemyError as e:
+        db.session.rollback()
+        return jsonify({'error': str(e)}), 400
