@@ -14,6 +14,7 @@ def fetch_and_save_data():
     countries_info = []
     for country in data:
         country_name = country['name'].get('nativeName', {}).get('fra', {}).get('common', country['translations'].get('fra', {}).get('common', ''))
+        country_code = country["cca2"]
         country_capital = country.get('capital', [''])[0]
         country_population = country.get('population', '')
         country_demonyms = country.get('demonyms', {}).get('fra', {}).get('m', '') or country.get('demonyms', {}).get('eng', {}).get('m', '')
@@ -29,6 +30,7 @@ def fetch_and_save_data():
 
         country_info = {
             "name": country_name,
+            "countryCode": country_code,
             "capital": country_capital,
             "population": country_population,
             "populationName": country_demonyms,
@@ -42,7 +44,7 @@ def fetch_and_save_data():
 
         countries_info.append(country_info)
 
-    with open('countries_data.json', 'w') as json_file:
+    with open('countriesData.json', 'w') as json_file:
         json.dump(countries_info, json_file, indent=4)
 
     print("Data saved to countries_data.json")
