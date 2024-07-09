@@ -1,7 +1,15 @@
-import { FlatList, StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native'
-import { Ionicons } from '@expo/vector-icons'
-import Colors from '../constants/Colors'
-import React from 'react'
+import { 
+    FlatList, 
+    StyleSheet, 
+    Text, 
+    View, 
+    TouchableOpacity, 
+    Image 
+} from 'react-native';
+import { Link } from 'expo-router';
+import { Ionicons } from '@expo/vector-icons';
+import Colors from '../constants/Colors';
+import React from 'react';
 
 Props = {
     listings: []
@@ -18,17 +26,19 @@ const Listings = ({listings}) => {
 
     const renderItems = ({ item }) => {
         return (
-          <TouchableOpacity 
-            style={styles.countryCard} 
-            onPress={() => handlePress(item)}
-          >
-            <Image source={{ uri: item.flag }} style={styles.flag} />
-            <View style={styles.textContainer}>
-              <Text style={styles.countryName}>{item.name}</Text>
-              <Text style={styles.continent}>{item.continent}</Text>
-            </View>
-            <Ionicons name="chevron-forward" size={24} color={Colors.gray} />
-          </TouchableOpacity>
+        <Link href={`/listing/${item.id}`} asChild>
+            <TouchableOpacity 
+                style={styles.countryCard} 
+                onPress={() => handlePress(item)}
+            >
+                <Image source={{ uri: item.flag }} style={styles.flag} />
+                <View style={styles.textContainer}>
+                <Text style={styles.countryName}>{item.name}</Text>
+                <Text style={styles.continent}>{item.continent}</Text>
+                </View>
+                <Ionicons name="chevron-forward" size={24} color={Colors.gray} />
+            </TouchableOpacity>
+        </Link>
         )
       }
 
