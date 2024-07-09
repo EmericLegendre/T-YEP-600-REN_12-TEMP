@@ -2,7 +2,7 @@ import unittest
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from backend.config.dbConfig import db
-from backend.models import City, CityInfos, CategoryEnum  # Assurez-vous d'importer correctement vos modèles
+from backend.models.cityInfos import City, CityInfos, CategoryEnum  # Assurez-vous d'importer correctement vos modèles
 
 class CityInfosModelTestCase(unittest.TestCase):
     def setUp(self):

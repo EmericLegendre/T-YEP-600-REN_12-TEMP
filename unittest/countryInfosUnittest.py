@@ -1,6 +1,6 @@
 import unittest
 from backend.config.dbConfig import db
-from backend.models import CountryInfos, CategoryEnum
+from backend.models.countryInfos import CountryInfos, CategoryEnum
 
 class TestCountryInfosModel(unittest.TestCase):
 
