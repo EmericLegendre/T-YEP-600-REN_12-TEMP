@@ -19,17 +19,11 @@ const Listings = ({listings}) => {
 
     const sortedListings = listings.sort((a, b) => a.name.localeCompare(b.name))
 
-    const handlePress = (item) => {
-        
-        console.log('Pays cliqué:', item.name)
-      }
-
     const renderItems = ({ item }) => {
         return (
         <Link href={`/listing/${item.id}`} asChild>
             <TouchableOpacity 
                 style={styles.countryCard} 
-                onPress={() => handlePress(item)}
             >
                 <Image source={{ uri: item.flag }} style={styles.flag} />
                 <View style={styles.textContainer}>
