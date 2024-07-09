@@ -38,7 +38,7 @@ def add_country_info():
     except SQLAlchemyError as e:
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
-
+      
 @stateInfosBp.route('/delete/<int:id>', methods=['DELETE'])
 @jwt_required()
 def delete_state_info(id):
@@ -53,3 +53,4 @@ def delete_state_info(id):
     except SQLAlchemyError as e:
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
+
