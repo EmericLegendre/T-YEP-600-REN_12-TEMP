@@ -9,7 +9,7 @@ stateBp = Blueprint('stateBlueprint', __name__)
 
 @stateBp.route('/add', methods=['POST'])
 @jwt_required()
-def addState():
+def add_state():
     data = request.get_json()
     required_fields = ['name', 'country_id', 'population', 'populationName', 'regionalCapital']
     
@@ -40,7 +40,7 @@ def addState():
 
 @stateBp.route('/get', methods=['GET'])
 @jwt_required()
-def getStates():
+def get_states():
     try:
         states = State.query.all()
         return jsonify([{
@@ -55,7 +55,7 @@ def getStates():
         return jsonify({'error': str(e)}), 400
 
 @stateBp.route('/get/<int:id>', methods=['GET'])
-def getStateById(id):
+def get_state_by_id(id):
     try:
         state = State.query.get(id)
         if state is None:
@@ -73,7 +73,7 @@ def getStateById(id):
 
 @stateBp.route('/update/<int:id>', methods=['PUT'])
 @jwt_required()
-def updateState(id):
+def update_state(id):
     data = request.get_json()
     updatable_fields = ['name', 'country_id', 'population', 'populationName', 'regionalCapital']
     
@@ -107,7 +107,7 @@ def updateState(id):
 
 @stateBp.route('/delete/<int:id>', methods=['DELETE'])
 @jwt_required()
-def deleteState(id):
+def delete_state(id):
     try:
         state = State.query.get(id)
         if state is None:

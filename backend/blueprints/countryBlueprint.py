@@ -8,7 +8,7 @@ countryBp = Blueprint('countryBlueprint', __name__)
 
 @countryBp.route('/add', methods=['POST'])
 @jwt_required()
-def addCountry():
+def add_country():
     data = request.get_json()
     required_fields = ['name', 'continent', 'sub_continent', 'currency', 'capital', 'population', 'population_name', 'timezone']
     
@@ -80,7 +80,7 @@ def get_country_by_id(id):
     
 @countryBp.route('/update/<int:id>', methods=['PUT'])
 @jwt_required()
-def updateCountry(id):
+def update_country(id):
     data = request.get_json()
     updatable_fields = ['name', 'continent', 'sub_continent', 'currency', 'capital', 'population', 'population_name', 'timezone', 'flag']
 
@@ -105,7 +105,7 @@ def updateCountry(id):
 
 @countryBp.route('/delete/<int:id>', methods=['DELETE'])
 @jwt_required()
-def deleteCountry(id):
+def delete_country(id):
     try:
         country = Country.query.get(id)
         if country is None:
