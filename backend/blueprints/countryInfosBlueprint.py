@@ -54,3 +54,29 @@ def delete_country_info(id):
     except SQLAlchemyError as e:
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
+
+
+@countryInfosBp.route('/update/<int:id>', methods=['PUT'])
+@jwt_required()
+def update_country_info(id):
+    data = request.get_json()
+    updatable_fields = ['country_id', 'category', 'content']
+
+    for field in data.keys():
+        if field not in updatable_fields:
+            return jsonify({'error': f'Invalid field: {field}'}), 400
+
+    try:
+        country = CountryInfos.query.get(id)
+        if country is None:
+            return jsonify({'error': 'Country info not found'}), 404
+
+        for field in updatable_fields:
+            if field in data:
+                setattr(country, field, data[field])
+
+        db.session.commit()
+        return jsonify({'message': 'Country info updated successfully'}), 200
+    except SQLAlchemyError as e:
+        db.session.rollback()
+        return jsonify({'error': str(e)}), 400
