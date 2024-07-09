@@ -35,3 +35,18 @@ def add_city_info():
     except SQLAlchemyError as e:
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
+
+@cityInfosBp.route('/delete/<int:id>', methods=['DELETE'])
+@jwt_required()
+def delete_city_info(id):
+    try:
+        city_info = CityInfos.query.get(id)
+        if city_info is None:
+            return jsonify({'error': 'CityInfo not found'}), 404
+
+        db.session.delete(city_info)
+        db.session.commit()
+        return jsonify({'message': 'CityInfo deleted successfully'}), 200
+    except SQLAlchemyError as e:
+        db.session.rollback()
+        return jsonify({'error': str(e)}), 400

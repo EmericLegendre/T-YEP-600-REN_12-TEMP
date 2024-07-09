@@ -11,22 +11,22 @@ stateBp = Blueprint('stateBlueprint', __name__)
 @jwt_required()
 def addState():
     data = request.get_json()
-    required_fields = ['name', 'countryId', 'population', 'populationName', 'regionalCapital']
+    required_fields = ['name', 'country_id', 'population', 'populationName', 'regionalCapital']
     
     # Check for missing fields
     for field in required_fields:
         if field not in data:
             return jsonify({'error': 'Missing required fields'}), 400
     
-    # Check if countryId exists
-    country = Country.query.get(data['countryId'])
+    # Check if country_id exists
+    country = Country.query.get(data['country_id'])
     if country is None:
         return jsonify({'error': 'Country not found'}), 404
     
     try:
         new_state = State(
             name=data['name'],
-            countryId=data['countryId'],
+            country_id=data['country_id'],
             population=data['population'],
             populationName=data['populationName'],
             regionalCapital=data['regionalCapital']
@@ -46,7 +46,7 @@ def getStates():
         return jsonify([{
             'id': state.id,
             'name': state.name,
-            'countryId': state.countryId,
+            'country_id': state.country_id,
             'population': state.population,
             'populationName': state.populationName,
             'regionalCapital': state.regionalCapital
@@ -63,7 +63,7 @@ def getStateById(id):
         return jsonify({
             'id': state.id,
             'name': state.name,
-            'countryId': state.countryId,
+            'country_id': state.country_id,
             'population': state.population,
             'populationName': state.populationName,
             'regionalCapital': state.regionalCapital
@@ -75,7 +75,7 @@ def getStateById(id):
 @jwt_required()
 def updateState(id):
     data = request.get_json()
-    updatable_fields = ['name', 'countryId', 'population', 'populationName', 'regionalCapital']
+    updatable_fields = ['name', 'country_id', 'population', 'populationName', 'regionalCapital']
     
     # Validate that all fields in the request are valid updatable fields
     for field in data.keys():
@@ -87,9 +87,9 @@ def updateState(id):
         if state is None:
             return jsonify({'error': 'State not found'}), 404
         
-        # Check if countryId exists if it is being updated
-        if 'countryId' in data:
-            country = Country.query.get(data['countryId'])
+        # Check if country_id exists if it is being updated
+        if 'country_id' in data:
+            country = Country.query.get(data['country_id'])
             if country is None:
                 return jsonify({'error': 'Country not found'}), 404
 
