@@ -16,6 +16,7 @@ class Country(db.Model):
     states = db.relationship('State', backref='country')
     cities = db.relationship('City', backref='country')
     flag = db.Column(db.String(255), nullable=True)
+    image = db.Column(db.String(255), nullable=True)
     created_at = db.Column(db.DateTime, default=db.func.current_timestamp())
     updated_at = db.Column(db.DateTime, default=db.func.current_timestamp(), onupdate=db.func.current_timestamp())
     

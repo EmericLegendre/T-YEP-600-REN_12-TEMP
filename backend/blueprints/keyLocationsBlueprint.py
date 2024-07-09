@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, request
 from sqlalchemy.exc import SQLAlchemyError
-from flask_jwt_extended import jwt_required, create_access_token
+from flask_jwt_extended import jwt_required
 from models.keyLocations import KeyLocations
 from config.dbConfig import db
 

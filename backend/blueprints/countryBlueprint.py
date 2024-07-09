@@ -2,7 +2,7 @@ from flask import Blueprint, jsonify, request
 from models.country import Country
 from config.dbConfig import db
 from sqlalchemy.exc import SQLAlchemyError
-from flask_jwt_extended import jwt_required, create_access_token
+from flask_jwt_extended import jwt_required
 
 countryBp = Blueprint('countryBlueprint', __name__)
 
@@ -58,7 +58,7 @@ def getCountries():
 
 @countryBp.route('/get/<int:id>', methods=['GET'])
 @jwt_required()
-def getCountryById(id):
+def get_country_by_id(id):
     try:
         country = Country.query.get(id)
         if country is None:
