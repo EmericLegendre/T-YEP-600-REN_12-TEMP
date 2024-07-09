@@ -82,7 +82,7 @@ def update_country_info(id):
         return jsonify({'error': str(e)}), 400
 
 
-@countryInfosBp.route('/get/<int:country_id>', methods=['GET'])
+@countryInfosBp.route('/get/country/<int:country_id>', methods=['GET'])
 @jwt_required()
 def get_country_info_by_country(country_id):
     try:
@@ -95,5 +95,22 @@ def get_country_info_by_country(country_id):
             'category': country_infos.category.name,
             'content': country_infos.content
         } for country_infos in country_infos]), 200
+    except SQLAlchemyError as e:
+        return jsonify({'error': str(e)}), 400
+
+
+@countryInfosBp.route('/get/<int:id>', methods=['GET'])
+@jwt_required()
+def get_country_info_by_id(id):
+    try:
+        country_info = CountryInfos.query.get(id)
+        if country_info is None:
+            return jsonify({'error': 'Country info not found'}), 404
+        return jsonify({
+            'id': country_info.id,
+            'country_id': country_info.country_id,
+            'category': country_info.category.name,
+            'content': country_info.content
+        }), 200
     except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400
