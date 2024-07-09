@@ -58,7 +58,7 @@ def getCountries():
 
 @countryBp.route('/get/<int:id>', methods=['GET'])
 @jwt_required()
-def getCountryById(id):
+def get_country_by_id(id):
     try:
         country = Country.query.get(id)
         if country is None:
