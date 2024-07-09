@@ -2,6 +2,7 @@ import { Image, StyleSheet, Text, View, Dimensions } from 'react-native'
 import React from 'react'
 import { useLocalSearchParams, Stack } from 'expo-router'
 import countriesData from '../../data/countries.json'
+import CategoryButtons from '../../components/CategoryButtons';
 
 const {width} = Dimensions.get('window');
 const IMG_HEIGHT = 300;
@@ -18,14 +19,15 @@ const countryDetails = () => {
         headerTitle:"",
         headerTintColor:"white"
     }} />
-        <View style={styles.container}>
+    <View style={styles.container}>
         <View style={styles.imageContainer}>
           <Image source={{ uri: listing.image }} style={styles.image} />
           <View style={styles.overlay}>
             <Text style={styles.countryName}>{listing.name}</Text>
           </View>
         </View>
-      </View>
+        <CategoryButtons />
+    </View>
     </>
   )
 }
@@ -35,7 +37,6 @@ export default countryDetails
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center',
         justifyContent: 'flex-start'
       },
       imageContainer: {
