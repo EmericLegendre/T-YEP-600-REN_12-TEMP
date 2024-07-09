@@ -80,3 +80,20 @@ def update_country_info(id):
     except SQLAlchemyError as e:
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
+
+
+@countryInfosBp.route('/get/<int:country_id>', methods=['GET'])
+@jwt_required()
+def get_country_info_by_country(country_id):
+    try:
+        country_infos = CountryInfos.query.filter_by(country_id=country_id).all()
+        if not country_infos:
+            return jsonify({'error': 'No Country infos found for the given country_id'}), 404
+        return jsonify([{
+            'id': country_infos.id,
+            'country_id': country_infos.country_id,
+            'category': country_infos.category.name,
+            'content': country_infos.content
+        } for country_infos in country_infos]), 200
+    except SQLAlchemyError as e:
+        return jsonify({'error': str(e)}), 400
