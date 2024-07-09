@@ -80,3 +80,19 @@ def delete_state_info(id):
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
 
+
+@stateInfosBp.route('/get/state/<int:state_id>', methods=['GET'])
+@jwt_required()
+def get_country_infos_by_country(state_id):
+    try:
+        state_infos = StateInfos.query.filter_by(state_id=state_id).all()
+        if not state_infos:
+            return jsonify({'error': 'No State infos found for the given state_id'}), 404
+        return jsonify([{
+            'id': state_infos.id,
+            'state_id': state_infos.state_id,
+            'category': state_infos.category.name,
+            'content': state_infos.content
+        } for state_infos in state_infos]), 200
+    except SQLAlchemyError as e:
+        return jsonify({'error': str(e)}), 400
