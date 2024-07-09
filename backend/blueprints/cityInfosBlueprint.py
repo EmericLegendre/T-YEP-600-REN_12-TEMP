@@ -85,3 +85,21 @@ def update_city_info(id):
     except SQLAlchemyError as e:
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
+    
+@cityInfosBp.route('/getByCity/<int:city_id>', methods=['GET'])
+@jwt_required()
+def get_city_infos_by_city(city_id):
+    try:
+        city_infos = CityInfos.query.filter_by(city_id=city_id).all()
+        if not city_infos:
+            return jsonify({'error': 'No CityInfos found for the given city_id'}), 404
+        return jsonify([{
+            'id': city_info.id,
+            'city_id': city_info.city_id,
+            'category': city_info.category.name,
+            'content': city_info.content,
+            'created_at': city_info.created_at,
+            'updated_at': city_info.updated_at
+        } for city_info in city_infos]), 200
+    except SQLAlchemyError as e:
+        return jsonify({'error': str(e)}), 400
