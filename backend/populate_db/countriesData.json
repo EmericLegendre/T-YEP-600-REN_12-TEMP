@@ -1,6 +1,7 @@
 [
     {
-        "name": "Wallis-et-Futuna",
+        "name": "Wallis et Futuna",
+        "countryCode": "WF",
         "capital": "Mata-Utu",
         "population": 11750,
         "populationName": "Wallis and Futuna Islander",
@@ -10,10 +11,12 @@
         "timezone": "UTC+12:00",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/wf.png"
     },
     {
         "name": "Islande",
+        "countryCode": "IS",
         "capital": "Reykjavik",
         "population": 366425,
         "populationName": "Islandais",
@@ -23,10 +26,12 @@
         "timezone": "UTC",
         "languages": [
             "Icelandic"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/is.png"
     },
     {
         "name": "Luxembourg",
+        "countryCode": "LU",
         "capital": "Luxembourg",
         "population": 632275,
         "populationName": "Luxembourgeois",
@@ -38,10 +43,12 @@
             "German",
             "French",
             "Luxembourgish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/lu.png"
     },
     {
         "name": "Mali",
+        "countryCode": "ML",
         "capital": "Bamako",
         "population": 20250834,
         "populationName": "Malien",
@@ -51,10 +58,12 @@
         "timezone": "UTC",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ml.png"
     },
     {
         "name": "Comores",
+        "countryCode": "KM",
         "capital": "Moroni",
         "population": 869595,
         "populationName": "Comorien",
@@ -66,10 +75,12 @@
             "Arabic",
             "French",
             "Comorian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/km.png"
     },
     {
         "name": "Australie",
+        "countryCode": "AU",
         "capital": "Canberra",
         "population": 25687041,
         "populationName": "Australien",
@@ -79,10 +90,12 @@
         "timezone": "UTC+05:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/au.png"
     },
     {
         "name": "Estonie",
+        "countryCode": "EE",
         "capital": "Tallinn",
         "population": 1331057,
         "populationName": "Estonien",
@@ -92,10 +105,12 @@
         "timezone": "UTC+02:00",
         "languages": [
             "Estonian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ee.png"
     },
     {
         "name": "Canada",
+        "countryCode": "CA",
         "capital": "Ottawa",
         "population": 38005238,
         "populationName": "Canadien",
@@ -106,10 +121,12 @@
         "languages": [
             "English",
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ca.png"
     },
     {
         "name": "Bi\u00e9lorussie",
+        "countryCode": "BY",
         "capital": "Minsk",
         "population": 9398861,
         "populationName": "Bi\u00e9lorusse",
@@ -120,10 +137,12 @@
         "languages": [
             "Belarusian",
             "Russian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/by.png"
     },
     {
         "name": "Guyana",
+        "countryCode": "GY",
         "capital": "Georgetown",
         "population": 786559,
         "populationName": "Guyanien",
@@ -133,10 +152,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/gy.png"
     },
     {
         "name": "Gambie",
+        "countryCode": "GM",
         "capital": "Banjul",
         "population": 2416664,
         "populationName": "Gambien",
@@ -146,10 +167,12 @@
         "timezone": "UTC+00:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/gm.png"
     },
     {
         "name": "Tunisie",
+        "countryCode": "TN",
         "capital": "Tunis",
         "population": 11818618,
         "populationName": "Tunisien",
@@ -159,10 +182,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "Arabic"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/tn.png"
     },
     {
         "name": "Cameroun",
+        "countryCode": "CM",
         "capital": "Yaound\u00e9",
         "population": 26545864,
         "populationName": "Camerounais",
@@ -173,10 +198,12 @@
         "languages": [
             "English",
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/cm.png"
     },
     {
         "name": "Rwanda",
+        "countryCode": "RW",
         "capital": "Kigali",
         "population": 12952209,
         "populationName": "Rwandais",
@@ -188,10 +215,12 @@
             "English",
             "French",
             "Kinyarwanda"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/rw.png"
     },
     {
         "name": "Cambodge",
+        "countryCode": "KH",
         "capital": "Phnom Penh",
         "population": 16718971,
         "populationName": "Cambodgien",
@@ -201,10 +230,12 @@
         "timezone": "UTC+07:00",
         "languages": [
             "Khmer"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/kh.png"
     },
     {
         "name": "B\u00e9nin",
+        "countryCode": "BJ",
         "capital": "Porto-Novo",
         "population": 12123198,
         "populationName": "B\u00e9ninois",
@@ -214,10 +245,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/bj.png"
     },
     {
         "name": "Gr\u00e8ce",
+        "countryCode": "GR",
         "capital": "Athens",
         "population": 10715549,
         "populationName": "Grec",
@@ -227,10 +260,12 @@
         "timezone": "UTC+02:00",
         "languages": [
             "Greek"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/gr.png"
     },
     {
         "name": "Cor\u00e9e du Sud",
+        "countryCode": "KR",
         "capital": "Seoul",
         "population": 51780579,
         "populationName": "Sud-cor\u00e9en",
@@ -240,10 +275,12 @@
         "timezone": "UTC+09:00",
         "languages": [
             "Korean"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/kr.png"
     },
     {
-        "name": "\u00cele Maurice",
+        "name": "Maurice",
+        "countryCode": "MU",
         "capital": "Port Louis",
         "population": 1265740,
         "populationName": "Mauricien",
@@ -255,10 +292,12 @@
             "English",
             "French",
             "Mauritian Creole"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/mu.png"
     },
     {
         "name": "\u00celes Vierges des \u00c9tats-Unis",
+        "countryCode": "VI",
         "capital": "Charlotte Amalie",
         "population": 106290,
         "populationName": "Virgin Islander",
@@ -268,10 +307,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/vi.png"
     },
     {
         "name": "Ahvenanmaa",
+        "countryCode": "AX",
         "capital": "Mariehamn",
         "population": 29458,
         "populationName": "\u00c5landais",
@@ -281,10 +322,12 @@
         "timezone": "UTC+02:00",
         "languages": [
             "Swedish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ax.png"
     },
     {
         "name": "Saint-Marin",
+        "countryCode": "SM",
         "capital": "City of San Marino",
         "population": 33938,
         "populationName": "Saint-Marinais",
@@ -294,10 +337,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "Italian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/sm.png"
     },
     {
         "name": "Maldives",
+        "countryCode": "MV",
         "capital": "Mal\u00e9",
         "population": 540542,
         "populationName": "Maldivien",
@@ -307,10 +352,12 @@
         "timezone": "UTC+05:00",
         "languages": [
             "Maldivian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/mv.png"
     },
     {
         "name": "Vanuatu",
+        "countryCode": "VU",
         "capital": "Port Vila",
         "population": 307150,
         "populationName": "Vanuatuan",
@@ -322,10 +369,12 @@
             "Bislama",
             "English",
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/vu.png"
     },
     {
         "name": "Malawi",
+        "countryCode": "MW",
         "capital": "Lilongwe",
         "population": 19129955,
         "populationName": "Malawien",
@@ -336,10 +385,12 @@
         "languages": [
             "English",
             "Chewa"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/mw.png"
     },
     {
         "name": "\u00c9gypte",
+        "countryCode": "EG",
         "capital": "Cairo",
         "population": 102334403,
         "populationName": "\u00c9gyptien",
@@ -349,10 +400,12 @@
         "timezone": "UTC+02:00",
         "languages": [
             "Arabic"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/eg.png"
     },
     {
         "name": "S\u00e9n\u00e9gal",
+        "countryCode": "SN",
         "capital": "Dakar",
         "population": 16743930,
         "populationName": "S\u00e9n\u00e9galais",
@@ -362,10 +415,12 @@
         "timezone": "UTC",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/sn.png"
     },
     {
         "name": "G\u00e9orgie",
+        "countryCode": "GE",
         "capital": "Tbilisi",
         "population": 3714000,
         "populationName": "G\u00e9orgien",
@@ -375,10 +430,12 @@
         "timezone": "UTC+04:00",
         "languages": [
             "Georgian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ge.png"
     },
     {
         "name": "Nouvelle-Z\u00e9lande",
+        "countryCode": "NZ",
         "capital": "Wellington",
         "population": 5084300,
         "populationName": "Neo-Z\u00e9landais",
@@ -390,10 +447,12 @@
             "English",
             "M\u0101ori",
             "New Zealand Sign Language"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/nz.png"
     },
     {
         "name": "\u00celes du Cap-Vert",
+        "countryCode": "CV",
         "capital": "Praia",
         "population": 555988,
         "populationName": "Cap-verdien",
@@ -403,10 +462,12 @@
         "timezone": "UTC-01:00",
         "languages": [
             "Portuguese"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/cv.png"
     },
     {
         "name": "Italie",
+        "countryCode": "IT",
         "capital": "Rome",
         "population": 59554023,
         "populationName": "Italien",
@@ -416,10 +477,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "Italian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/it.png"
     },
     {
         "name": "Monaco",
+        "countryCode": "MC",
         "capital": "Monaco",
         "population": 39244,
         "populationName": "Mon\u00e9gasque",
@@ -429,10 +492,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/mc.png"
     },
     {
         "name": "Slovaquie",
+        "countryCode": "SK",
         "capital": "Bratislava",
         "population": 5458827,
         "populationName": "Slovaque",
@@ -442,10 +507,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "Slovak"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/sk.png"
     },
     {
         "name": "Uruguay",
+        "countryCode": "UY",
         "capital": "Montevideo",
         "population": 3473727,
         "populationName": "Uruguayen",
@@ -455,10 +522,12 @@
         "timezone": "UTC-03:00",
         "languages": [
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/uy.png"
     },
     {
         "name": "Laos",
+        "countryCode": "LA",
         "capital": "Vientiane",
         "population": 7275556,
         "populationName": "Laotien",
@@ -468,10 +537,12 @@
         "timezone": "UTC+07:00",
         "languages": [
             "Lao"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/la.png"
     },
     {
         "name": "\u00celes F\u00e9ro\u00e9",
+        "countryCode": "FO",
         "capital": "T\u00f3rshavn",
         "population": 48865,
         "populationName": "F\u00e9ro\u00efen",
@@ -482,10 +553,12 @@
         "languages": [
             "Danish",
             "Faroese"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/fo.png"
     },
     {
         "name": "Niue",
+        "countryCode": "NU",
         "capital": "Alofi",
         "population": 1470,
         "populationName": "Niu\u00e9en",
@@ -496,10 +569,12 @@
         "languages": [
             "English",
             "Niuean"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/nu.png"
     },
     {
         "name": "Mac\u00e9doine du Nord",
+        "countryCode": "MK",
         "capital": "Skopje",
         "population": 2077132,
         "populationName": "Mac\u00e9donien",
@@ -509,10 +584,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "Macedonian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/mk.png"
     },
     {
         "name": "Chili",
+        "countryCode": "CL",
         "capital": "Santiago",
         "population": 19116209,
         "populationName": "Chilien",
@@ -522,10 +599,12 @@
         "timezone": "UTC-06:00",
         "languages": [
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/cl.png"
     },
     {
         "name": "Chypre",
+        "countryCode": "CY",
         "capital": "Nicosia",
         "population": 1207361,
         "populationName": "Chypriote",
@@ -536,10 +615,12 @@
         "languages": [
             "Greek",
             "Turkish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/cy.png"
     },
     {
         "name": "Macao",
+        "countryCode": "MO",
         "capital": "",
         "population": 649342,
         "populationName": "Macanais",
@@ -550,10 +631,12 @@
         "languages": [
             "Portuguese",
             "Chinese"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/mo.png"
     },
     {
         "name": "Salvador",
+        "countryCode": "SV",
         "capital": "San Salvador",
         "population": 6486201,
         "populationName": "Salvadorien",
@@ -563,10 +646,12 @@
         "timezone": "UTC-06:00",
         "languages": [
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/sv.png"
     },
     {
         "name": "Jordanie",
+        "countryCode": "JO",
         "capital": "Amman",
         "population": 10203140,
         "populationName": "Jordanien",
@@ -576,10 +661,12 @@
         "timezone": "UTC+03:00",
         "languages": [
             "Arabic"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/jo.png"
     },
     {
         "name": "Jama\u00efque",
+        "countryCode": "JM",
         "capital": "Kingston",
         "population": 2961161,
         "populationName": "Jama\u00efcain",
@@ -590,10 +677,12 @@
         "languages": [
             "English",
             "Jamaican Patois"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/jm.png"
     },
     {
         "name": "Barbade",
+        "countryCode": "BB",
         "capital": "Bridgetown",
         "population": 287371,
         "populationName": "Barbadien",
@@ -603,10 +692,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/bb.png"
     },
     {
         "name": "Sahara Occidental",
+        "countryCode": "EH",
         "capital": "El Aai\u00fan",
         "population": 510713,
         "populationName": "Sahrawi",
@@ -618,10 +709,12 @@
             "Berber",
             "Hassaniya",
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/eh.png"
     },
     {
         "name": "Qatar",
+        "countryCode": "QA",
         "capital": "Doha",
         "population": 2881060,
         "populationName": "Qatarien",
@@ -631,10 +724,12 @@
         "timezone": "UTC+03:00",
         "languages": [
             "Arabic"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/qa.png"
     },
     {
         "name": "Guatemala",
+        "countryCode": "GT",
         "capital": "Guatemala City",
         "population": 16858333,
         "populationName": "Guat\u00e9malt\u00e8que",
@@ -644,10 +739,12 @@
         "timezone": "UTC-06:00",
         "languages": [
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/gt.png"
     },
     {
         "name": "Micron\u00e9sie",
+        "countryCode": "FM",
         "capital": "Palikir",
         "population": 115021,
         "populationName": "Micron\u00e9sien",
@@ -657,10 +754,12 @@
         "timezone": "UTC+10:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/fm.png"
     },
     {
         "name": "Montserrat",
+        "countryCode": "MS",
         "capital": "Plymouth",
         "population": 4922,
         "populationName": "Montserratien",
@@ -670,10 +769,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ms.png"
     },
     {
         "name": "Papouasie-Nouvelle-Guin\u00e9e",
+        "countryCode": "PG",
         "capital": "Port Moresby",
         "population": 8947027,
         "populationName": "Papouasien",
@@ -685,10 +786,12 @@
             "English",
             "Hiri Motu",
             "Tok Pisin"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/pg.png"
     },
     {
         "name": "Br\u00e9sil",
+        "countryCode": "BR",
         "capital": "Bras\u00edlia",
         "population": 212559409,
         "populationName": "Br\u00e9silien",
@@ -698,10 +801,12 @@
         "timezone": "UTC-05:00",
         "languages": [
             "Portuguese"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/br.png"
     },
     {
         "name": "Lituanie",
+        "countryCode": "LT",
         "capital": "Vilnius",
         "population": 2794700,
         "populationName": "Lituanien",
@@ -711,10 +816,12 @@
         "timezone": "UTC+02:00",
         "languages": [
             "Lithuanian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/lt.png"
     },
     {
-        "name": "Guyane",
+        "name": "Guyane fran\u00e7aise",
+        "countryCode": "GF",
         "capital": "Cayenne",
         "population": 254541,
         "populationName": "Guyanais",
@@ -724,10 +831,12 @@
         "timezone": "UTC-03:00",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/gf.png"
     },
     {
         "name": "Moldavie",
+        "countryCode": "MD",
         "capital": "Chi\u0219in\u0103u",
         "population": 2617820,
         "populationName": "Moldave",
@@ -737,10 +846,12 @@
         "timezone": "UTC+02:00",
         "languages": [
             "Romanian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/md.png"
     },
     {
         "name": "Kirghizistan",
+        "countryCode": "KG",
         "capital": "Bishkek",
         "population": 6591600,
         "populationName": "Kirghize",
@@ -751,10 +862,12 @@
         "languages": [
             "Kyrgyz",
             "Russian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/kg.png"
     },
     {
         "name": "Cura\u00e7ao",
+        "countryCode": "CW",
         "capital": "Willemstad",
         "population": 155014,
         "populationName": "Curacien",
@@ -766,10 +879,12 @@
             "English",
             "Dutch",
             "Papiamento"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/cw.png"
     },
     {
         "name": "Vi\u00eat Nam",
+        "countryCode": "VN",
         "capital": "Hanoi",
         "population": 97338583,
         "populationName": "Vietnamien",
@@ -779,10 +894,12 @@
         "timezone": "UTC+07:00",
         "languages": [
             "Vietnamese"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/vn.png"
     },
     {
         "name": "Angola",
+        "countryCode": "AO",
         "capital": "Luanda",
         "population": 32866268,
         "populationName": "Angolais",
@@ -792,10 +909,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "Portuguese"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ao.png"
     },
     {
         "name": "Malaisie",
+        "countryCode": "MY",
         "capital": "Kuala Lumpur",
         "population": 32365998,
         "populationName": "Malaisien",
@@ -806,10 +925,12 @@
         "languages": [
             "English",
             "Malay"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/my.png"
     },
     {
         "name": "Suisse",
+        "countryCode": "CH",
         "capital": "Bern",
         "population": 8654622,
         "populationName": "Suisse",
@@ -822,10 +943,12 @@
             "Swiss German",
             "Italian",
             "Romansh"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ch.png"
     },
     {
         "name": "Tha\u00eflande",
+        "countryCode": "TH",
         "capital": "Bangkok",
         "population": 69799978,
         "populationName": "Tha\u00eflandais",
@@ -835,10 +958,12 @@
         "timezone": "UTC+07:00",
         "languages": [
             "Thai"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/th.png"
     },
     {
         "name": "R\u00e9publique dominicaine",
+        "countryCode": "DO",
         "capital": "Santo Domingo",
         "population": 10847904,
         "populationName": "Dominicain",
@@ -848,10 +973,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/do.png"
     },
     {
         "name": "Ouzb\u00e9kistan",
+        "countryCode": "UZ",
         "capital": "Tashkent",
         "population": 34232050,
         "populationName": "Ouzb\u00e8ke",
@@ -862,10 +989,12 @@
         "languages": [
             "Russian",
             "Uzbek"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/uz.png"
     },
     {
         "name": "Tchad",
+        "countryCode": "TD",
         "capital": "N'Djamena",
         "population": 16425859,
         "populationName": "Tchadien",
@@ -876,10 +1005,12 @@
         "languages": [
             "Arabic",
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/td.png"
     },
     {
         "name": "\u00celes Cocos",
+        "countryCode": "CC",
         "capital": "West Island",
         "population": 544,
         "populationName": "Cocos Islander",
@@ -889,10 +1020,12 @@
         "timezone": "UTC+06:30",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/cc.png"
     },
     {
         "name": "Guin\u00e9e",
+        "countryCode": "GN",
         "capital": "Conakry",
         "population": 13132792,
         "populationName": "Guin\u00e9en",
@@ -902,10 +1035,12 @@
         "timezone": "UTC",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/gn.png"
     },
     {
         "name": "\u00celes Turques-et-Ca\u00efques",
+        "countryCode": "TC",
         "capital": "Cockburn Town",
         "population": 38718,
         "populationName": "Turks and Caicos Islander",
@@ -915,10 +1050,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/tc.png"
     },
     {
         "name": "Porto Rico",
+        "countryCode": "PR",
         "capital": "San Juan",
         "population": 3194034,
         "populationName": "Portoricain",
@@ -929,10 +1066,12 @@
         "languages": [
             "English",
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/pr.png"
     },
     {
         "name": "Bhoutan",
+        "countryCode": "BT",
         "capital": "Thimphu",
         "population": 771612,
         "populationName": "Bhoutanais",
@@ -942,10 +1081,12 @@
         "timezone": "UTC+06:00",
         "languages": [
             "Dzongkha"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/bt.png"
     },
     {
         "name": "\u00celes Ca\u00efmans",
+        "countryCode": "KY",
         "capital": "George Town",
         "population": 65720,
         "populationName": "Ca\u00efmanien",
@@ -955,10 +1096,12 @@
         "timezone": "UTC-05:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ky.png"
     },
     {
         "name": "\u00celes Marshall",
+        "countryCode": "MH",
         "capital": "Majuro",
         "population": 59194,
         "populationName": "Marshallais",
@@ -969,10 +1112,12 @@
         "languages": [
             "English",
             "Marshallese"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/mh.png"
     },
     {
         "name": "Anguilla",
+        "countryCode": "AI",
         "capital": "The Valley",
         "population": 13452,
         "populationName": "Anguillan",
@@ -982,10 +1127,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ai.png"
     },
     {
         "name": "Mauritanie",
+        "countryCode": "MR",
         "capital": "Nouakchott",
         "population": 4649660,
         "populationName": "Mauritanien",
@@ -995,10 +1142,12 @@
         "timezone": "UTC",
         "languages": [
             "Arabic"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/mr.png"
     },
     {
         "name": "Norv\u00e8ge",
+        "countryCode": "NO",
         "capital": "Oslo",
         "population": 5379475,
         "populationName": "Norv\u00e9gien",
@@ -1010,10 +1159,12 @@
             "Norwegian Nynorsk",
             "Norwegian Bokm\u00e5l",
             "Sami"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/no.png"
     },
     {
         "name": "Martinique",
+        "countryCode": "MQ",
         "capital": "Fort-de-France",
         "population": 378243,
         "populationName": "Martiniquais",
@@ -1023,10 +1174,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/mq.png"
     },
     {
         "name": "Isra\u00ebl",
+        "countryCode": "IL",
         "capital": "Jerusalem",
         "population": 9216900,
         "populationName": "Isra\u00e9lien",
@@ -1037,10 +1190,12 @@
         "languages": [
             "Arabic",
             "Hebrew"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/il.png"
     },
     {
         "name": "Saint-Barth\u00e9lemy",
+        "countryCode": "BL",
         "capital": "Gustavia",
         "population": 4255,
         "populationName": "Barth\u00e9lom\u00e9en",
@@ -1050,10 +1205,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/bl.png"
     },
     {
         "name": "\u00c9quateur",
+        "countryCode": "EC",
         "capital": "Quito",
         "population": 17643060,
         "populationName": "\u00c9quatorien",
@@ -1063,10 +1220,12 @@
         "timezone": "UTC-06:00",
         "languages": [
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ec.png"
     },
     {
         "name": "Grenade",
+        "countryCode": "GD",
         "capital": "St. George's",
         "population": 112519,
         "populationName": "Grenadien",
@@ -1076,10 +1235,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/gd.png"
     },
     {
         "name": "Croatie",
+        "countryCode": "HR",
         "capital": "Zagreb",
         "population": 4047200,
         "populationName": "Croate",
@@ -1089,10 +1250,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "Croatian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/hr.png"
     },
     {
         "name": "Brunei",
+        "countryCode": "BN",
         "capital": "Bandar Seri Begawan",
         "population": 437483,
         "populationName": "Brun\u00e9ien",
@@ -1102,10 +1265,12 @@
         "timezone": "UTC+08:00",
         "languages": [
             "Malay"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/bn.png"
     },
     {
         "name": "Irak",
+        "countryCode": "IQ",
         "capital": "Baghdad",
         "population": 40222503,
         "populationName": "Irakien",
@@ -1117,10 +1282,12 @@
             "Arabic",
             "Aramaic",
             "Sorani"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/iq.png"
     },
     {
         "name": "Japon",
+        "countryCode": "JP",
         "capital": "Tokyo",
         "population": 125836021,
         "populationName": "Japonais",
@@ -1130,10 +1297,12 @@
         "timezone": "UTC+09:00",
         "languages": [
             "Japanese"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/jp.png"
     },
     {
         "name": "Lesotho",
+        "countryCode": "LS",
         "capital": "Maseru",
         "population": 2142252,
         "populationName": "L\u00e9sothien",
@@ -1144,10 +1313,12 @@
         "languages": [
             "English",
             "Sotho"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ls.png"
     },
     {
         "name": "Tuvalu",
+        "countryCode": "TV",
         "capital": "Funafuti",
         "population": 11792,
         "populationName": "Tuvaluan",
@@ -1158,10 +1329,12 @@
         "languages": [
             "English",
             "Tuvaluan"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/tv.png"
     },
     {
         "name": "\u00celes Heard-et-MacDonald",
+        "countryCode": "HM",
         "capital": "",
         "population": 0,
         "populationName": "Heard and McDonald Islander",
@@ -1171,10 +1344,12 @@
         "timezone": "UTC+05:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/hm.png"
     },
     {
         "name": "Finlande",
+        "countryCode": "FI",
         "capital": "Helsinki",
         "population": 5530719,
         "populationName": "Finlandais",
@@ -1185,10 +1360,12 @@
         "languages": [
             "Finnish",
             "Swedish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/fi.png"
     },
     {
         "name": "Soudan du Sud",
+        "countryCode": "SS",
         "capital": "Juba",
         "population": 11193729,
         "populationName": "Sud-Soudanais",
@@ -1198,10 +1375,12 @@
         "timezone": "UTC+03:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ss.png"
     },
     {
         "name": "\u00celes mineures \u00e9loign\u00e9es des \u00c9tats-Unis",
+        "countryCode": "UM",
         "capital": "Washington DC",
         "population": 300,
         "populationName": "American Islander",
@@ -1211,10 +1390,12 @@
         "timezone": "UTC-11:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/um.png"
     },
     {
         "name": "Sainte-H\u00e9l\u00e8ne, Ascension et Tristan da Cunha",
+        "countryCode": "SH",
         "capital": "Jamestown",
         "population": 53192,
         "populationName": "Sainte-H\u00e9l\u00e8nois",
@@ -1224,10 +1405,12 @@
         "timezone": "UTC+00:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/sh.png"
     },
     {
         "name": "Afghanistan",
+        "countryCode": "AF",
         "capital": "Kabul",
         "population": 40218234,
         "populationName": "Afghan",
@@ -1239,10 +1422,12 @@
             "Dari",
             "Pashto",
             "Turkmen"
-        ]
+        ],
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_the_Taliban.svg/320px-Flag_of_the_Taliban.svg.png"
     },
     {
         "name": "\u00celes Salomon",
+        "countryCode": "SB",
         "capital": "Honiara",
         "population": 686878,
         "populationName": "Salomonien",
@@ -1252,10 +1437,12 @@
         "timezone": "UTC+11:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/sb.png"
     },
     {
         "name": "Chine",
+        "countryCode": "CN",
         "capital": "Beijing",
         "population": 1402112000,
         "populationName": "Chinois",
@@ -1265,10 +1452,12 @@
         "timezone": "UTC+08:00",
         "languages": [
             "Chinese"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/cn.png"
     },
     {
         "name": "\u00c9rythr\u00e9e",
+        "countryCode": "ER",
         "capital": "Asmara",
         "population": 5352000,
         "populationName": "\u00c9rythr\u00e9en",
@@ -1280,10 +1469,12 @@
             "Arabic",
             "English",
             "Tigrinya"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/er.png"
     },
     {
         "name": "Russie",
+        "countryCode": "RU",
         "capital": "Moscow",
         "population": 144104080,
         "populationName": "Russe",
@@ -1293,10 +1484,12 @@
         "timezone": "UTC+03:00",
         "languages": [
             "Russian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ru.png"
     },
     {
         "name": "Andorre",
+        "countryCode": "AD",
         "capital": "Andorra la Vella",
         "population": 77265,
         "populationName": "Andorran",
@@ -1306,10 +1499,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "Catalan"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ad.png"
     },
     {
         "name": "Arm\u00e9nie",
+        "countryCode": "AM",
         "capital": "Yerevan",
         "population": 2963234,
         "populationName": "Arm\u00e9nien",
@@ -1319,10 +1514,12 @@
         "timezone": "UTC+04:00",
         "languages": [
             "Armenian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/am.png"
     },
     {
         "name": "Autriche",
+        "countryCode": "AT",
         "capital": "Vienna",
         "population": 8917205,
         "populationName": "Autrichien",
@@ -1332,10 +1529,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "German"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/at.png"
     },
     {
         "name": "Surinam",
+        "countryCode": "SR",
         "capital": "Paramaribo",
         "population": 586634,
         "populationName": "Surinamais",
@@ -1345,10 +1544,12 @@
         "timezone": "UTC-03:00",
         "languages": [
             "Dutch"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/sr.png"
     },
     {
         "name": "Espagne",
+        "countryCode": "ES",
         "capital": "Madrid",
         "population": 47351567,
         "populationName": "Espagnol",
@@ -1361,10 +1562,12 @@
             "Catalan",
             "Basque",
             "Galician"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/es.png"
     },
     {
         "name": "Tokelau",
+        "countryCode": "TK",
         "capital": "Fakaofo",
         "population": 1411,
         "populationName": "Tokelauan",
@@ -1376,10 +1579,12 @@
             "English",
             "Samoan",
             "Tokelauan"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/tk.png"
     },
     {
         "name": "Bahamas",
+        "countryCode": "BS",
         "capital": "Nassau",
         "population": 393248,
         "populationName": "Bahamien",
@@ -1389,10 +1594,12 @@
         "timezone": "UTC-05:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/bs.png"
     },
     {
         "name": "Saint-Martin",
+        "countryCode": "SX",
         "capital": "Philipsburg",
         "population": 40812,
         "populationName": "Saint-Martinois",
@@ -1404,10 +1611,12 @@
             "English",
             "French",
             "Dutch"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/sx.png"
     },
     {
         "name": "Belize",
+        "countryCode": "BZ",
         "capital": "Belmopan",
         "population": 397621,
         "populationName": "B\u00e9lizien",
@@ -1419,10 +1628,12 @@
             "Belizean Creole",
             "English",
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/bz.png"
     },
     {
         "name": "Jersey",
+        "countryCode": "JE",
         "capital": "Saint Helier",
         "population": 100800,
         "populationName": "Jersiais",
@@ -1434,10 +1645,12 @@
             "English",
             "French",
             "J\u00e8rriais"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/je.png"
     },
     {
         "name": "Su\u00e8de",
+        "countryCode": "SE",
         "capital": "Stockholm",
         "population": 10353442,
         "populationName": "Su\u00e9dois",
@@ -1447,10 +1660,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "Swedish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/se.png"
     },
     {
         "name": "Botswana",
+        "countryCode": "BW",
         "capital": "Gaborone",
         "population": 2351625,
         "populationName": "Botswanais",
@@ -1461,10 +1676,12 @@
         "languages": [
             "English",
             "Tswana"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/bw.png"
     },
     {
         "name": "\u00cele de Man",
+        "countryCode": "IM",
         "capital": "Douglas",
         "population": 85032,
         "populationName": "Manx",
@@ -1475,10 +1692,12 @@
         "languages": [
             "English",
             "Manx"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/im.png"
     },
     {
         "name": "\u00c9mirats arabes unis",
+        "countryCode": "AE",
         "capital": "Abu Dhabi",
         "population": 9890400,
         "populationName": "Emirien",
@@ -1488,10 +1707,12 @@
         "timezone": "UTC+04:00",
         "languages": [
             "Arabic"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ae.png"
     },
     {
         "name": "Iran",
+        "countryCode": "IR",
         "capital": "Tehran",
         "population": 83992953,
         "populationName": "Iranien",
@@ -1501,10 +1722,12 @@
         "timezone": "UTC+03:30",
         "languages": [
             "Persian (Farsi)"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ir.png"
     },
     {
         "name": "Gabon",
+        "countryCode": "GA",
         "capital": "Libreville",
         "population": 2225728,
         "populationName": "Gabonais",
@@ -1514,10 +1737,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ga.png"
     },
     {
         "name": "Saint-Christophe-et-Ni\u00e9v\u00e8s",
+        "countryCode": "KN",
         "capital": "Basseterre",
         "population": 53192,
         "populationName": "Kittitien-et-nevicien",
@@ -1527,10 +1752,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/kn.png"
     },
     {
         "name": "Guin\u00e9e \u00e9quatoriale",
+        "countryCode": "GQ",
         "capital": "Malabo",
         "population": 1402985,
         "populationName": "\u00c9quato-guin\u00e9en",
@@ -1542,10 +1769,12 @@
             "French",
             "Portuguese",
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/gq.png"
     },
     {
         "name": "S\u00e3o Tom\u00e9 et Pr\u00edncipe",
+        "countryCode": "ST",
         "capital": "S\u00e3o Tom\u00e9",
         "population": 219161,
         "populationName": "Santom\u00e9en",
@@ -1555,10 +1784,12 @@
         "timezone": "UTC",
         "languages": [
             "Portuguese"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/st.png"
     },
     {
         "name": "Groenland",
+        "countryCode": "GL",
         "capital": "Nuuk",
         "population": 56367,
         "populationName": "Groenlandais",
@@ -1568,10 +1799,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "Greenlandic"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/gl.png"
     },
     {
         "name": "Bangladesh",
+        "countryCode": "BD",
         "capital": "Dhaka",
         "population": 164689383,
         "populationName": "Bangladais",
@@ -1581,10 +1814,12 @@
         "timezone": "UTC+06:00",
         "languages": [
             "Bengali"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/bd.png"
     },
     {
         "name": "Roumanie",
+        "countryCode": "RO",
         "capital": "Bucharest",
         "population": 19286123,
         "populationName": "Roumain",
@@ -1594,10 +1829,12 @@
         "timezone": "UTC+02:00",
         "languages": [
             "Romanian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ro.png"
     },
     {
         "name": "Territoire britannique de l'oc\u00e9an Indien",
+        "countryCode": "IO",
         "capital": "Diego Garcia",
         "population": 3000,
         "populationName": "Indian",
@@ -1607,10 +1844,12 @@
         "timezone": "UTC+06:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/io.png"
     },
     {
         "name": "Soudan",
+        "countryCode": "SD",
         "capital": "Khartoum",
         "population": 43849269,
         "populationName": "Soudanais",
@@ -1621,10 +1860,12 @@
         "languages": [
             "Arabic",
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/sd.png"
     },
     {
         "name": "Bosnie-Herz\u00e9govine",
+        "countryCode": "BA",
         "capital": "Sarajevo",
         "population": 3280815,
         "populationName": "Bosnien",
@@ -1636,10 +1877,12 @@
             "Bosnian",
             "Croatian",
             "Serbian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ba.png"
     },
     {
         "name": "Malte",
+        "countryCode": "MT",
         "capital": "Valletta",
         "population": 525285,
         "populationName": "Maltais",
@@ -1650,10 +1893,12 @@
         "languages": [
             "English",
             "Maltese"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/mt.png"
     },
     {
         "name": "Seychelles",
+        "countryCode": "SC",
         "capital": "Victoria",
         "population": 98462,
         "populationName": "Seychellois",
@@ -1665,10 +1910,12 @@
             "Seychellois Creole",
             "English",
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/sc.png"
     },
     {
         "name": "Sri Lanka",
+        "countryCode": "LK",
         "capital": "Sri Jayawardenepura Kotte",
         "population": 21919000,
         "populationName": "Sri-lankais",
@@ -1679,10 +1926,12 @@
         "languages": [
             "Sinhala",
             "Tamil"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/lk.png"
     },
     {
         "name": "Mexique",
+        "countryCode": "MX",
         "capital": "Mexico City",
         "population": 128932753,
         "populationName": "Mexicain",
@@ -1692,10 +1941,12 @@
         "timezone": "UTC-08:00",
         "languages": [
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/mx.png"
     },
     {
         "name": "Y\u00e9men",
+        "countryCode": "YE",
         "capital": "Sana'a",
         "population": 29825968,
         "populationName": "Y\u00e9m\u00e9nite",
@@ -1705,10 +1956,12 @@
         "timezone": "UTC+03:00",
         "languages": [
             "Arabic"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ye.png"
     },
     {
         "name": "\u00celes Vierges britanniques",
+        "countryCode": "VG",
         "capital": "Road Town",
         "population": 30237,
         "populationName": "Virgin Islander",
@@ -1718,10 +1971,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/vg.png"
     },
     {
         "name": "Pays-Bas",
+        "countryCode": "NL",
         "capital": "Amsterdam",
         "population": 16655799,
         "populationName": "N\u00e9erlandais",
@@ -1731,10 +1986,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "Dutch"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/nl.png"
     },
     {
         "name": "Paraguay",
+        "countryCode": "PY",
         "capital": "Asunci\u00f3n",
         "population": 7132530,
         "populationName": "Paraguayen",
@@ -1745,10 +2002,12 @@
         "languages": [
             "Guaran\u00ed",
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/py.png"
     },
     {
         "name": "Royaume-Uni",
+        "countryCode": "GB",
         "capital": "London",
         "population": 67215293,
         "populationName": "Britannique",
@@ -1758,10 +2017,12 @@
         "timezone": "UTC-08:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/gb.png"
     },
     {
         "name": "Venezuela",
+        "countryCode": "VE",
         "capital": "Caracas",
         "population": 28435943,
         "populationName": "V\u00e9n\u00e9zu\u00e9lien",
@@ -1771,10 +2032,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ve.png"
     },
     {
         "name": "\u00cele Bouvet",
+        "countryCode": "BV",
         "capital": "",
         "population": 0,
         "populationName": "",
@@ -1784,10 +2047,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "Norwegian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/bv.png"
     },
     {
         "name": "Ukraine",
+        "countryCode": "UA",
         "capital": "Kyiv",
         "population": 44134693,
         "populationName": "Ukrainien",
@@ -1797,10 +2062,12 @@
         "timezone": "UTC+02:00",
         "languages": [
             "Ukrainian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ua.png"
     },
     {
         "name": "Maroc",
+        "countryCode": "MA",
         "capital": "Rabat",
         "population": 36910558,
         "populationName": "Marocain",
@@ -1811,10 +2078,12 @@
         "languages": [
             "Arabic",
             "Berber"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ma.png"
     },
     {
         "name": "Portugal",
+        "countryCode": "PT",
         "capital": "Lisbon",
         "population": 10305564,
         "populationName": "Portugais",
@@ -1824,10 +2093,12 @@
         "timezone": "UTC-01:00",
         "languages": [
             "Portuguese"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/pt.png"
     },
     {
         "name": "Pakistan",
+        "countryCode": "PK",
         "capital": "Islamabad",
         "population": 220892331,
         "populationName": "Pakistanais",
@@ -1838,10 +2109,12 @@
         "languages": [
             "English",
             "Urdu"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/pk.png"
     },
     {
         "name": "Saint-Vincent-et-les-Grenadines",
+        "countryCode": "VC",
         "capital": "Kingstown",
         "population": 110947,
         "populationName": "Vincentais",
@@ -1851,10 +2124,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/vc.png"
     },
     {
         "name": "Cor\u00e9e du Nord",
+        "countryCode": "KP",
         "capital": "Pyongyang",
         "population": 25778815,
         "populationName": "Nord-cor\u00e9en",
@@ -1864,10 +2139,12 @@
         "timezone": "UTC+09:00",
         "languages": [
             "Korean"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/kp.png"
     },
     {
         "name": "Slov\u00e9nie",
+        "countryCode": "SI",
         "capital": "Ljubljana",
         "population": 2100126,
         "populationName": "Slov\u00e8ne",
@@ -1877,10 +2154,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "Slovene"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/si.png"
     },
     {
         "name": "C\u00f4te d'Ivoire",
+        "countryCode": "CI",
         "capital": "Yamoussoukro",
         "population": 26378275,
         "populationName": "Ivoirien",
@@ -1890,10 +2169,12 @@
         "timezone": "UTC",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ci.png"
     },
     {
         "name": "Palestine",
+        "countryCode": "PS",
         "capital": "Ramallah",
         "population": 4803269,
         "populationName": "Palestinien",
@@ -1903,10 +2184,12 @@
         "timezone": "UTC+02:00",
         "languages": [
             "Arabic"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ps.png"
     },
     {
         "name": "Pays-Bas carib\u00e9ens",
+        "countryCode": "BQ",
         "capital": "Kralendijk",
         "population": 25987,
         "populationName": "N\u00e9erlandais",
@@ -1918,10 +2201,12 @@
             "English",
             "Dutch",
             "Papiamento"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/bq.png"
     },
     {
         "name": "Belgique",
+        "countryCode": "BE",
         "capital": "Brussels",
         "population": 11555997,
         "populationName": "Belge",
@@ -1933,10 +2218,12 @@
             "German",
             "French",
             "Dutch"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/be.png"
     },
     {
         "name": "Zimbabwe",
+        "countryCode": "ZW",
         "capital": "Harare",
         "population": 14862927,
         "populationName": "Zimbabw\u00e9en",
@@ -1960,10 +2247,12 @@
             "Venda",
             "Xhosa",
             "Zimbabwean Sign Language"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/zw.png"
     },
     {
         "name": "Tanzanie",
+        "countryCode": "TZ",
         "capital": "Dodoma",
         "population": 59734213,
         "populationName": "Tanzanien",
@@ -1974,10 +2263,12 @@
         "languages": [
             "English",
             "Swahili"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/tz.png"
     },
     {
         "name": "Togo",
+        "countryCode": "TG",
         "capital": "Lom\u00e9",
         "population": 8278737,
         "populationName": "Togolais",
@@ -1987,10 +2278,12 @@
         "timezone": "UTC",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/tg.png"
     },
     {
         "name": "\u00celes Cook",
+        "countryCode": "CK",
         "capital": "Avarua",
         "population": 18100,
         "populationName": "Cookien",
@@ -2001,10 +2294,12 @@
         "languages": [
             "English",
             "Cook Islands M\u0101ori"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ck.png"
     },
     {
         "name": "Guadeloupe",
+        "countryCode": "GP",
         "capital": "Basse-Terre",
         "population": 400132,
         "populationName": "Guadeloup\u00e9en",
@@ -2014,10 +2309,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/gp.png"
     },
     {
         "name": "Nouvelle-Cal\u00e9donie",
+        "countryCode": "NC",
         "capital": "Noum\u00e9a",
         "population": 271960,
         "populationName": "N\u00e9o-Cal\u00e9donien",
@@ -2027,10 +2324,12 @@
         "timezone": "UTC+11:00",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/nc.png"
     },
     {
         "name": "Sainte-Lucie",
+        "countryCode": "LC",
         "capital": "Castries",
         "population": 183629,
         "populationName": "Saint-Lucien",
@@ -2040,10 +2339,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/lc.png"
     },
     {
         "name": "G\u00e9orgie du Sud-et-les \u00celes Sandwich du Sud",
+        "countryCode": "GS",
         "capital": "King Edward Point",
         "population": 30,
         "populationName": "South Georgian South Sandwich Islander",
@@ -2053,10 +2354,12 @@
         "timezone": "UTC-02:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/gs.png"
     },
     {
         "name": "Pologne",
+        "countryCode": "PL",
         "capital": "Warsaw",
         "population": 37950802,
         "populationName": "Polonais",
@@ -2066,10 +2369,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "Polish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/pl.png"
     },
     {
         "name": "Samoa",
+        "countryCode": "WS",
         "capital": "Apia",
         "population": 198410,
         "populationName": "Samoan",
@@ -2080,10 +2385,12 @@
         "languages": [
             "English",
             "Samoan"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ws.png"
     },
     {
         "name": "Tch\u00e9quie",
+        "countryCode": "CZ",
         "capital": "Prague",
         "population": 10698896,
         "populationName": "Tch\u00e8que",
@@ -2094,10 +2401,12 @@
         "languages": [
             "Czech",
             "Slovak"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/cz.png"
     },
     {
         "name": "Indon\u00e9sie",
+        "countryCode": "ID",
         "capital": "Jakarta",
         "population": 273523621,
         "populationName": "Indon\u00e9sien",
@@ -2107,10 +2416,12 @@
         "timezone": "UTC+07:00",
         "languages": [
             "Indonesian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/id.png"
     },
     {
         "name": "Bolivie",
+        "countryCode": "BO",
         "capital": "Sucre",
         "population": 11673029,
         "populationName": "Bolivien",
@@ -2123,10 +2434,12 @@
             "Guaran\u00ed",
             "Quechua",
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/bo.png"
     },
     {
         "name": "Colombie",
+        "countryCode": "CO",
         "capital": "Bogot\u00e1",
         "population": 50882884,
         "populationName": "Colombien",
@@ -2136,10 +2449,12 @@
         "timezone": "UTC-05:00",
         "languages": [
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/co.png"
     },
     {
         "name": "Honduras",
+        "countryCode": "HN",
         "capital": "Tegucigalpa",
         "population": 9904608,
         "populationName": "Hondurien",
@@ -2149,10 +2464,12 @@
         "timezone": "UTC-06:00",
         "languages": [
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/hn.png"
     },
     {
         "name": "Danemark",
+        "countryCode": "DK",
         "capital": "Copenhagen",
         "population": 5831404,
         "populationName": "Danois",
@@ -2162,10 +2479,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "Danish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/dk.png"
     },
     {
         "name": "R\u00e9publique centrafricaine",
+        "countryCode": "CF",
         "capital": "Bangui",
         "population": 4829764,
         "populationName": "Centrafricain",
@@ -2176,10 +2495,12 @@
         "languages": [
             "French",
             "Sango"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/cf.png"
     },
     {
         "name": "Libye",
+        "countryCode": "LY",
         "capital": "Tripoli",
         "population": 6871287,
         "populationName": "Libyen",
@@ -2189,10 +2510,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "Arabic"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ly.png"
     },
     {
         "name": "Guin\u00e9e-Bissau",
+        "countryCode": "GW",
         "capital": "Bissau",
         "population": 1967998,
         "populationName": "Bissau-Guin\u00e9en",
@@ -2203,10 +2526,12 @@
         "languages": [
             "Portuguese",
             "Upper Guinea Creole"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/gw.png"
     },
     {
         "name": "Mongolie",
+        "countryCode": "MN",
         "capital": "Ulan Bator",
         "population": 3278292,
         "populationName": "Mongol",
@@ -2216,10 +2541,12 @@
         "timezone": "UTC+07:00",
         "languages": [
             "Mongolian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/mn.png"
     },
     {
-        "name": "Congo (R\u00e9p. d\u00e9m.)",
+        "name": "RD Congo",
+        "countryCode": "CD",
         "capital": "Kinshasa",
         "population": 108407721,
         "populationName": "Congolais",
@@ -2233,10 +2560,12 @@
             "Lingala",
             "Tshiluba",
             "Swahili"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/cd.png"
     },
     {
         "name": "\u00celes Malouines",
+        "countryCode": "FK",
         "capital": "Stanley",
         "population": 2563,
         "populationName": "Malouin",
@@ -2246,10 +2575,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/fk.png"
     },
     {
         "name": "Nauru",
+        "countryCode": "NR",
         "capital": "Yaren",
         "population": 10834,
         "populationName": "Nauruan",
@@ -2260,10 +2591,12 @@
         "languages": [
             "English",
             "Nauru"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/nr.png"
     },
     {
         "name": "Syrie",
+        "countryCode": "SY",
         "capital": "Damascus",
         "population": 17500657,
         "populationName": "Syrien",
@@ -2273,10 +2606,12 @@
         "timezone": "UTC+02:00",
         "languages": [
             "Arabic"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/sy.png"
     },
     {
         "name": "Mont\u00e9n\u00e9gro",
+        "countryCode": "ME",
         "capital": "Podgorica",
         "population": 621718,
         "populationName": "Mont\u00e9n\u00e9grin",
@@ -2286,10 +2621,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "Montenegrin"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/me.png"
     },
     {
         "name": "France",
+        "countryCode": "FR",
         "capital": "Paris",
         "population": 67391582,
         "populationName": "Fran\u00e7ais",
@@ -2299,10 +2636,12 @@
         "timezone": "UTC-10:00",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/fr.png"
     },
     {
         "name": "Zambie",
+        "countryCode": "ZM",
         "capital": "Lusaka",
         "population": 18383956,
         "populationName": "Zambien",
@@ -2312,10 +2651,12 @@
         "timezone": "UTC+02:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/zm.png"
     },
     {
         "name": "Birmanie",
+        "countryCode": "MM",
         "capital": "Naypyidaw",
         "population": 54409794,
         "populationName": "Birman",
@@ -2325,10 +2666,12 @@
         "timezone": "UTC+06:30",
         "languages": [
             "Burmese"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/mm.png"
     },
     {
         "name": "Saint-Pierre-et-Miquelon",
+        "countryCode": "PM",
         "capital": "Saint-Pierre",
         "population": 6069,
         "populationName": "Saint-Pierrais, Miquelonais",
@@ -2338,10 +2681,12 @@
         "timezone": "UTC-03:00",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/pm.png"
     },
     {
         "name": "Costa Rica",
+        "countryCode": "CR",
         "capital": "San Jos\u00e9",
         "population": 5094114,
         "populationName": "Costaricain",
@@ -2351,10 +2696,12 @@
         "timezone": "UTC-06:00",
         "languages": [
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/cr.png"
     },
     {
         "name": "Somalie",
+        "countryCode": "SO",
         "capital": "Mogadishu",
         "population": 15893219,
         "populationName": "Somalien",
@@ -2365,10 +2712,12 @@
         "languages": [
             "Arabic",
             "Somali"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/so.png"
     },
     {
         "name": "Irlande",
+        "countryCode": "IE",
         "capital": "Dublin",
         "population": 4994724,
         "populationName": "Irlandais",
@@ -2379,10 +2728,12 @@
         "languages": [
             "English",
             "Irish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ie.png"
     },
     {
         "name": "Polyn\u00e9sie fran\u00e7aise",
+        "countryCode": "PF",
         "capital": "Papeet\u0113",
         "population": 280904,
         "populationName": "Polyn\u00e9sien",
@@ -2392,10 +2743,12 @@
         "timezone": "UTC-10:00",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/pf.png"
     },
     {
         "name": "\u00celes Pitcairn",
+        "countryCode": "PN",
         "capital": "Adamstown",
         "population": 56,
         "populationName": "Pitcairnais",
@@ -2405,10 +2758,12 @@
         "timezone": "UTC-08:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/pn.png"
     },
     {
         "name": "Hongrie",
+        "countryCode": "HU",
         "capital": "Budapest",
         "population": 9749763,
         "populationName": "Hongrois",
@@ -2418,10 +2773,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "Hungarian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/hu.png"
     },
     {
         "name": "Turquie",
+        "countryCode": "TR",
         "capital": "Ankara",
         "population": 84339067,
         "populationName": "Turc",
@@ -2431,10 +2788,12 @@
         "timezone": "UTC+03:00",
         "languages": [
             "Turkish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/tr.png"
     },
     {
         "name": "Oman",
+        "countryCode": "OM",
         "capital": "Muscat",
         "population": 5106622,
         "populationName": "Omanais",
@@ -2444,10 +2803,12 @@
         "timezone": "UTC+04:00",
         "languages": [
             "Arabic"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/om.png"
     },
     {
         "name": "Guam",
+        "countryCode": "GU",
         "capital": "Hag\u00e5t\u00f1a",
         "population": 168783,
         "populationName": "Guamanian",
@@ -2459,10 +2820,12 @@
             "Chamorro",
             "English",
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/gu.png"
     },
     {
         "name": "N\u00e9pal",
+        "countryCode": "NP",
         "capital": "Kathmandu",
         "population": 29136808,
         "populationName": "N\u00e9palais",
@@ -2472,10 +2835,12 @@
         "timezone": "UTC+05:45",
         "languages": [
             "Nepali"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/np.png"
     },
     {
         "name": "Liechtenstein",
+        "countryCode": "LI",
         "capital": "Vaduz",
         "population": 38137,
         "populationName": "Liechtensteinois",
@@ -2485,10 +2850,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "German"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/li.png"
     },
     {
         "name": "Madagascar",
+        "countryCode": "MG",
         "capital": "Antananarivo",
         "population": 27691019,
         "populationName": "Malgache",
@@ -2499,10 +2866,12 @@
         "languages": [
             "French",
             "Malagasy"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/mg.png"
     },
     {
         "name": "Kazakhstan",
+        "countryCode": "KZ",
         "capital": "Nur-Sultan",
         "population": 18754440,
         "populationName": "Kazakhstanais",
@@ -2513,10 +2882,12 @@
         "languages": [
             "Kazakh",
             "Russian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/kz.png"
     },
     {
         "name": "Djibouti",
+        "countryCode": "DJ",
         "capital": "Djibouti",
         "population": 988002,
         "populationName": "Djiboutien",
@@ -2527,10 +2898,12 @@
         "languages": [
             "Arabic",
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/dj.png"
     },
     {
         "name": "Gibraltar",
+        "countryCode": "GI",
         "capital": "Gibraltar",
         "population": 33691,
         "populationName": "Gibraltarien",
@@ -2540,10 +2913,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/gi.png"
     },
     {
         "name": "Guernesey",
+        "countryCode": "GG",
         "capital": "St. Peter Port",
         "population": 62999,
         "populationName": "Guernesiais",
@@ -2555,10 +2930,12 @@
             "English",
             "French",
             "Guern\u00e9siais"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/gg.png"
     },
     {
         "name": "Namibie",
+        "countryCode": "NA",
         "capital": "Windhoek",
         "population": 2540916,
         "populationName": "Namibien",
@@ -2576,10 +2953,12 @@
             "Lozi",
             "Ndonga",
             "Tswana"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/na.png"
     },
     {
-        "name": "Congo",
+        "name": "R\u00e9publique du Congo",
+        "countryCode": "CG",
         "capital": "Brazzaville",
         "population": 5657000,
         "populationName": "Congolais",
@@ -2591,10 +2970,12 @@
             "French",
             "Kikongo",
             "Lingala"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/cg.png"
     },
     {
         "name": "Allemagne",
+        "countryCode": "DE",
         "capital": "Berlin",
         "population": 83240525,
         "populationName": "Allemand",
@@ -2604,10 +2985,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "German"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/de.png"
     },
     {
         "name": "Cit\u00e9 du Vatican",
+        "countryCode": "VA",
         "capital": "Vatican City",
         "population": 451,
         "populationName": "Vatican",
@@ -2618,10 +3001,12 @@
         "languages": [
             "Italian",
             "Latin"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/va.png"
     },
     {
         "name": "Terres australes et antarctiques fran\u00e7aises",
+        "countryCode": "TF",
         "capital": "Port-aux-Fran\u00e7ais",
         "population": 400,
         "populationName": "Fran\u00e7ais",
@@ -2631,10 +3016,12 @@
         "timezone": "UTC+05:00",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/tf.png"
     },
     {
         "name": "Albanie",
+        "countryCode": "AL",
         "capital": "Tirana",
         "population": 2837743,
         "populationName": "Albanais",
@@ -2644,10 +3031,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "Albanian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/al.png"
     },
     {
         "name": "Alg\u00e9rie",
+        "countryCode": "DZ",
         "capital": "Algiers",
         "population": 44700000,
         "populationName": "Alg\u00e9rien",
@@ -2657,10 +3046,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "Arabic"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/dz.png"
     },
     {
         "name": "Mayotte",
+        "countryCode": "YT",
         "capital": "Mamoudzou",
         "population": 226915,
         "populationName": "Mahorais",
@@ -2670,10 +3061,12 @@
         "timezone": "UTC+03:00",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/yt.png"
     },
     {
         "name": "Ha\u00efti",
+        "countryCode": "HT",
         "capital": "Port-au-Prince",
         "population": 11402533,
         "populationName": "Ha\u00eftien",
@@ -2684,10 +3077,12 @@
         "languages": [
             "French",
             "Haitian Creole"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ht.png"
     },
     {
         "name": "Svalbard et Jan Mayen",
+        "countryCode": "SJ",
         "capital": "Longyearbyen",
         "population": 2562,
         "populationName": "Norwegian",
@@ -2697,10 +3092,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "Norwegian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/sj.png"
     },
     {
         "name": "Tonga",
+        "countryCode": "TO",
         "capital": "Nuku'alofa",
         "population": 105697,
         "populationName": "Tonguien",
@@ -2711,10 +3108,12 @@
         "languages": [
             "English",
             "Tongan"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/to.png"
     },
     {
         "name": "Hong Kong",
+        "countryCode": "HK",
         "capital": "City of Victoria",
         "population": 7500700,
         "populationName": "Hongkongais",
@@ -2725,10 +3124,12 @@
         "languages": [
             "English",
             "Chinese"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/hk.png"
     },
     {
         "name": "Singapour",
+        "countryCode": "SG",
         "capital": "Singapore",
         "population": 5685807,
         "populationName": "Singapourien",
@@ -2741,10 +3142,12 @@
             "Chinese",
             "Malay",
             "Tamil"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/sg.png"
     },
     {
         "name": "Antigua-et-Barbuda",
+        "countryCode": "AG",
         "capital": "Saint John's",
         "population": 97928,
         "populationName": "Antiguaise et barbudien",
@@ -2754,10 +3157,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ag.png"
     },
     {
         "name": "Arabie Saoudite",
+        "countryCode": "SA",
         "capital": "Riyadh",
         "population": 34813867,
         "populationName": "Saoudien",
@@ -2767,10 +3172,12 @@
         "timezone": "UTC+03:00",
         "languages": [
             "Arabic"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/sa.png"
     },
     {
         "name": "Cuba",
+        "countryCode": "CU",
         "capital": "Havana",
         "population": 11326616,
         "populationName": "Cubain",
@@ -2780,10 +3187,12 @@
         "timezone": "UTC-05:00",
         "languages": [
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/cu.png"
     },
     {
         "name": "Panama",
+        "countryCode": "PA",
         "capital": "Panama City",
         "population": 4314768,
         "populationName": "Panam\u00e9en",
@@ -2793,10 +3202,12 @@
         "timezone": "UTC-05:00",
         "languages": [
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/pa.png"
     },
     {
         "name": "Liberia",
+        "countryCode": "LR",
         "capital": "Monrovia",
         "population": 5057677,
         "populationName": "Lib\u00e9rien",
@@ -2806,10 +3217,12 @@
         "timezone": "UTC",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/lr.png"
     },
     {
         "name": "Azerba\u00efdjan",
+        "countryCode": "AZ",
         "capital": "Baku",
         "population": 10110116,
         "populationName": "Azerba\u00efdjanais",
@@ -2819,10 +3232,12 @@
         "timezone": "UTC+04:00",
         "languages": [
             "Azerbaijani"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/az.png"
     },
     {
         "name": "Lettonie",
+        "countryCode": "LV",
         "capital": "Riga",
         "population": 1901548,
         "populationName": "Letton",
@@ -2832,10 +3247,12 @@
         "timezone": "UTC+02:00",
         "languages": [
             "Latvian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/lv.png"
     },
     {
         "name": "Antarctique",
+        "countryCode": "AQ",
         "capital": "",
         "population": 1000,
         "populationName": "Antarcticain",
@@ -2843,10 +3260,12 @@
         "continent": "Antarctic",
         "subContinent": "",
         "timezone": "UTC-03:00",
-        "languages": []
+        "languages": [],
+        "flag": "https://flagcdn.com/w320/aq.png"
     },
     {
         "name": "Kiribati",
+        "countryCode": "KI",
         "capital": "South Tarawa",
         "population": 119446,
         "populationName": "Kiribatien",
@@ -2857,10 +3276,12 @@
         "languages": [
             "English",
             "Gilbertese"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ki.png"
     },
     {
         "name": "\u00c9thiopie",
+        "countryCode": "ET",
         "capital": "Addis Ababa",
         "population": 114963583,
         "populationName": "\u00c9thiopien",
@@ -2870,10 +3291,12 @@
         "timezone": "UTC+03:00",
         "languages": [
             "Amharic"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/et.png"
     },
     {
         "name": "Niger",
+        "countryCode": "NE",
         "capital": "Niamey",
         "population": 24206636,
         "populationName": "Nig\u00e9rien",
@@ -2883,10 +3306,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ne.png"
     },
     {
         "name": "Trinit\u00e9-et-Tobago",
+        "countryCode": "TT",
         "capital": "Port of Spain",
         "population": 1399491,
         "populationName": "Trinidadien",
@@ -2896,10 +3321,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/tt.png"
     },
     {
         "name": "Sierra Leone",
+        "countryCode": "SL",
         "capital": "Freetown",
         "population": 7976985,
         "populationName": "Sierra-leonais",
@@ -2909,10 +3336,12 @@
         "timezone": "UTC",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/sl.png"
     },
     {
         "name": "Mozambique",
+        "countryCode": "MZ",
         "capital": "Maputo",
         "population": 31255435,
         "populationName": "Mozambicain",
@@ -2922,10 +3351,12 @@
         "timezone": "UTC+02:00",
         "languages": [
             "Portuguese"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/mz.png"
     },
     {
         "name": "Palaos (Palau)",
+        "countryCode": "PW",
         "capital": "Ngerulmud",
         "population": 18092,
         "populationName": "Paluan",
@@ -2936,10 +3367,12 @@
         "languages": [
             "English",
             "Palauan"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/pw.png"
     },
     {
         "name": "Fidji",
+        "countryCode": "FJ",
         "capital": "Suva",
         "population": 896444,
         "populationName": "Fidjien",
@@ -2951,10 +3384,12 @@
             "English",
             "Fijian",
             "Fiji Hindi"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/fj.png"
     },
     {
-        "name": "R\u00e9union",
+        "name": "La R\u00e9union",
+        "countryCode": "RE",
         "capital": "Saint-Denis",
         "population": 840974,
         "populationName": "R\u00e9unionnais",
@@ -2964,10 +3399,12 @@
         "timezone": "UTC+04:00",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/re.png"
     },
     {
         "name": "\u00cele Norfolk",
+        "countryCode": "NF",
         "capital": "Kingston",
         "population": 2302,
         "populationName": "Norfolkais",
@@ -2978,10 +3415,12 @@
         "languages": [
             "English",
             "Norfuk"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/nf.png"
     },
     {
         "name": "Turkm\u00e9nistan",
+        "countryCode": "TM",
         "capital": "Ashgabat",
         "population": 6031187,
         "populationName": "Turkm\u00e8ne",
@@ -2992,10 +3431,12 @@
         "languages": [
             "Russian",
             "Turkmen"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/tm.png"
     },
     {
         "name": "Tadjikistan",
+        "countryCode": "TJ",
         "capital": "Dushanbe",
         "population": 9537642,
         "populationName": "Tadjike",
@@ -3006,10 +3447,12 @@
         "languages": [
             "Russian",
             "Tajik"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/tj.png"
     },
     {
         "name": "Liban",
+        "countryCode": "LB",
         "capital": "Beirut",
         "population": 6825442,
         "populationName": "Libanais",
@@ -3020,10 +3463,12 @@
         "languages": [
             "Arabic",
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/lb.png"
     },
     {
         "name": "Nig\u00e9ria",
+        "countryCode": "NG",
         "capital": "Abuja",
         "population": 206139587,
         "populationName": "Nig\u00e9rian",
@@ -3033,10 +3478,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ng.png"
     },
     {
         "name": "\u00c9tats-Unis",
+        "countryCode": "US",
         "capital": "Washington, D.C.",
         "population": 329484123,
         "populationName": "Am\u00e9ricain",
@@ -3046,10 +3493,12 @@
         "timezone": "UTC-12:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/us.png"
     },
     {
         "name": "Argentine",
+        "countryCode": "AR",
         "capital": "Buenos Aires",
         "population": 45376763,
         "populationName": "Argentin",
@@ -3060,10 +3509,12 @@
         "languages": [
             "Guaran\u00ed",
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ar.png"
     },
     {
         "name": "Burkina Faso",
+        "countryCode": "BF",
         "capital": "Ouagadougou",
         "population": 20903278,
         "populationName": "Burkinab\u00e9",
@@ -3073,10 +3524,12 @@
         "timezone": "UTC",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/bf.png"
     },
     {
         "name": "\u00cele Christmas",
+        "countryCode": "CX",
         "capital": "Flying Fish Cove",
         "population": 2072,
         "populationName": "Christmas Islander",
@@ -3086,10 +3539,12 @@
         "timezone": "UTC+07:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/cx.png"
     },
     {
         "name": "Bermudes",
+        "countryCode": "BM",
         "capital": "Hamilton",
         "population": 63903,
         "populationName": "Bermudien",
@@ -3099,10 +3554,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/bm.png"
     },
     {
         "name": "Nicaragua",
+        "countryCode": "NI",
         "capital": "Managua",
         "population": 6624554,
         "populationName": "Nicaraguayen",
@@ -3112,10 +3569,12 @@
         "timezone": "UTC-06:00",
         "languages": [
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ni.png"
     },
     {
         "name": "Swaziland",
+        "countryCode": "SZ",
         "capital": "Mbabane",
         "population": 1160164,
         "populationName": "Swazie",
@@ -3126,10 +3585,12 @@
         "languages": [
             "English",
             "Swazi"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/sz.png"
     },
     {
         "name": "Bahre\u00efn",
+        "countryCode": "BH",
         "capital": "Manama",
         "population": 1701583,
         "populationName": "Bahre\u00efnien",
@@ -3139,10 +3600,12 @@
         "timezone": "UTC+03:00",
         "languages": [
             "Arabic"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/bh.png"
     },
     {
         "name": "Kenya",
+        "countryCode": "KE",
         "capital": "Nairobi",
         "population": 53771300,
         "populationName": "K\u00e9nyan",
@@ -3153,10 +3616,12 @@
         "languages": [
             "English",
             "Swahili"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ke.png"
     },
     {
         "name": "Serbie",
+        "countryCode": "RS",
         "capital": "Belgrade",
         "population": 6908224,
         "populationName": "Serbe",
@@ -3166,10 +3631,12 @@
         "timezone": "UTC+01:00",
         "languages": [
             "Serbian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/rs.png"
     },
     {
         "name": "Timor oriental",
+        "countryCode": "TL",
         "capital": "Dili",
         "population": 1318442,
         "populationName": "Est-timorais",
@@ -3180,10 +3647,12 @@
         "languages": [
             "Portuguese",
             "Tetum"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/tl.png"
     },
     {
         "name": "Dominique",
+        "countryCode": "DM",
         "capital": "Roseau",
         "population": 71991,
         "populationName": "Dominiquais",
@@ -3193,10 +3662,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/dm.png"
     },
     {
         "name": "\u00celes Mariannes du Nord",
+        "countryCode": "MP",
         "capital": "Saipan",
         "population": 57557,
         "populationName": "Am\u00e9rican",
@@ -3208,10 +3679,12 @@
             "Carolinian",
             "Chamorro",
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/mp.png"
     },
     {
         "name": "Philippines",
+        "countryCode": "PH",
         "capital": "Manila",
         "population": 109581085,
         "populationName": "Philippin",
@@ -3222,10 +3695,12 @@
         "languages": [
             "English",
             "Filipino"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ph.png"
     },
     {
         "name": "Kosovo",
+        "countryCode": "XK",
         "capital": "Pristina",
         "population": 1775378,
         "populationName": "Kosovar",
@@ -3236,10 +3711,12 @@
         "languages": [
             "Albanian",
             "Serbian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/xk.png"
     },
     {
         "name": "Kowe\u00eft",
+        "countryCode": "KW",
         "capital": "Kuwait City",
         "population": 4270563,
         "populationName": "Kowe\u00eftien",
@@ -3249,10 +3726,12 @@
         "timezone": "UTC+03:00",
         "languages": [
             "Arabic"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/kw.png"
     },
     {
         "name": "Ta\u00efwan",
+        "countryCode": "TW",
         "capital": "Taipei",
         "population": 23503349,
         "populationName": "Ta\u00efwanais",
@@ -3262,10 +3741,12 @@
         "timezone": "UTC+08:00",
         "languages": [
             "Chinese"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/tw.png"
     },
     {
         "name": "Burundi",
+        "countryCode": "BI",
         "capital": "Gitega",
         "population": 11890781,
         "populationName": "Burundais",
@@ -3276,10 +3757,12 @@
         "languages": [
             "French",
             "Kirundi"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/bi.png"
     },
     {
         "name": "Samoa am\u00e9ricaines",
+        "countryCode": "AS",
         "capital": "Pago Pago",
         "population": 55197,
         "populationName": "Samoan",
@@ -3290,10 +3773,12 @@
         "languages": [
             "English",
             "Samoan"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/as.png"
     },
     {
         "name": "Bulgarie",
+        "countryCode": "BG",
         "capital": "Sofia",
         "population": 6927288,
         "populationName": "Bulgare",
@@ -3303,10 +3788,12 @@
         "timezone": "UTC+02:00",
         "languages": [
             "Bulgarian"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/bg.png"
     },
     {
         "name": "Afrique du Sud",
+        "countryCode": "ZA",
         "capital": "Pretoria",
         "population": 59308690,
         "populationName": "Sud-africain",
@@ -3326,10 +3813,12 @@
             "Venda",
             "Xhosa",
             "Zulu"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/za.png"
     },
     {
         "name": "P\u00e9rou",
+        "countryCode": "PE",
         "capital": "Lima",
         "population": 32971846,
         "populationName": "P\u00e9ruvien",
@@ -3341,10 +3830,12 @@
             "Aymara",
             "Quechua",
             "Spanish"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/pe.png"
     },
     {
         "name": "Aruba",
+        "countryCode": "AW",
         "capital": "Oranjestad",
         "population": 106766,
         "populationName": "Arubais",
@@ -3355,10 +3846,12 @@
         "languages": [
             "Dutch",
             "Papiamento"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/aw.png"
     },
     {
         "name": "Ghana",
+        "countryCode": "GH",
         "capital": "Accra",
         "population": 31072945,
         "populationName": "Ghan\u00e9en",
@@ -3368,10 +3861,12 @@
         "timezone": "UTC",
         "languages": [
             "English"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/gh.png"
     },
     {
         "name": "Saint-Martin",
+        "countryCode": "MF",
         "capital": "Marigot",
         "population": 38659,
         "populationName": "Saint-Martinois",
@@ -3381,10 +3876,12 @@
         "timezone": "UTC-04:00",
         "languages": [
             "French"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/mf.png"
     },
     {
         "name": "Inde",
+        "countryCode": "IN",
         "capital": "New Delhi",
         "population": 1380004385,
         "populationName": "Indien",
@@ -3396,10 +3893,12 @@
             "English",
             "Hindi",
             "Tamil"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/in.png"
     },
     {
         "name": "Ouganda",
+        "countryCode": "UG",
         "capital": "Kampala",
         "population": 45741000,
         "populationName": "Ougandais",
@@ -3410,6 +3909,7 @@
         "languages": [
             "English",
             "Swahili"
-        ]
+        ],
+        "flag": "https://flagcdn.com/w320/ug.png"
     }
 ]
