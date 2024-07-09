@@ -53,23 +53,23 @@ const register = () => {
         navigation.navigate('home');
 
           try {
-                  const response = await axios.post('http://localhost:5000/api/users/auth', {
-                      email,
-                      password,
-                      firstName,
-                      lastName,
-                      country: 'YourCountry',
-                      city: 'YourCity'
-                  });
+              const response = await axios.post('http://localhost:5000/api/users/auth', {
+                  email,
+                  password,
+                  firstName,
+                  lastName,
+                  country: 'YourCountry',
+                  city: 'YourCity'
+              });
 
-                  if (response.status === 201) {
-                      navigation.navigate('home');
-                  } else {
-                      setErrorMessage('Registration failed. Please try again.');
-                  }
-              } catch (error) {
-                  setErrorMessage('An error occurred. Please try again.');
+              if (response.status === 201) {
+                  navigation.navigate('home');
+              } else {
+                  setErrorMessage('Registration failed. Please try again.');
               }
+          } catch (error) {
+              setErrorMessage('An error occurred. Please try again.');
+          }
       };
 
 
