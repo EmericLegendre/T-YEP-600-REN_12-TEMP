@@ -96,3 +96,20 @@ def get_country_infos_by_country(state_id):
         } for state_infos in state_infos]), 200
     except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400
+
+
+@stateInfosBp.route('/get/<int:id>', methods=['GET'])
+@jwt_required()
+def get_state_info_by_id(id):
+    try:
+        state_info = StateInfos.query.get(id)
+        if state_info is None:
+            return jsonify({'error': 'State info not found'}), 404
+        return jsonify({
+            'id': state_info.id,
+            'state_id': state_info.state_id,
+            'category': state_info.category.name,
+            'content': state_info.content
+        }), 200
+    except SQLAlchemyError as e:
+        return jsonify({'error': str(e)}), 400
