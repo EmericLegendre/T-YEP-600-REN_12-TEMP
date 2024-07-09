@@ -34,7 +34,33 @@ def add_country_info():
         )
         db.session.add(new_state_info)
         db.session.commit()
-        return jsonify({'message': 'Country info created successfully', 'country_info': new_state_info.id}), 201
+        return jsonify({'message': 'State info created successfully', 'state_info': new_state_info.id}), 201
+    except SQLAlchemyError as e:
+        db.session.rollback()
+        return jsonify({'error': str(e)}), 400
+
+
+@stateInfosBp.route('/update/<int:id>', methods=['PUT'])
+@jwt_required()
+def update_country_info(id):
+    data = request.get_json()
+    updatable_fields = ['state_id', 'category', 'content']
+
+    for field in data.keys():
+        if field not in updatable_fields:
+            return jsonify({'error': f'Invalid field: {field}'}), 400
+
+    try:
+        state = StateInfos.query.get(id)
+        if state is None:
+            return jsonify({'error': 'State info not found'}), 404
+
+        for field in updatable_fields:
+            if field in data:
+                setattr(state, field, data[field])
+
+        db.session.commit()
+        return jsonify({'message': 'State info updated successfully'}), 200
     except SQLAlchemyError as e:
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
