@@ -53,7 +53,7 @@ const register = () => {
         navigation.navigate('home');
 
           try {
-              const response = await axios.post('http://localhost:5000/api/users/auth', {
+              const response = await axios.post('http://localhost:5000/api/users/add', {
                   email,
                   password,
                   firstName,
