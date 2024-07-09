@@ -68,11 +68,9 @@ const register = () => {
               if (response.status === 201) {
                   navigation.navigate('/home');
               } else {
-                  console.log("ca marche pas");
                   setErrorMessage('Registration failed. Please try again.');
               }
           } catch (error) {
-              console.log("c chiant");
               setErrorMessage('An error occurred.');
           }
       };
