@@ -1,5 +1,5 @@
 from flask import Flask
-
+from flask_cors import CORS
 from blueprints.stateBlueprint import stateBp
 from blueprints.countryInfosBlueprint import countryInfosBp
 from blueprints.countryBlueprint import countryBp
@@ -17,6 +17,9 @@ from flask_jwt_extended import JWTManager
 def create_app():
     app = Flask(__name__)
     app.config.from_object(dbConfig)
+
+    # Initialize CORS
+    CORS(app, resources={r"/api/*": {"origins": "*"}})
 
     # init config & migrations
     db.init_app(app)
