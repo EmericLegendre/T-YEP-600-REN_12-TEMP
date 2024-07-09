@@ -4,10 +4,13 @@ import React from 'react'
 import { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { Picker } from '@react-native-picker/picker'
+import axios from 'axios'
 
 
 
 const register = () => {
+
+      const navigation = useNavigation();
 
 
       const [firstName, setFirstName] = useState('');
@@ -24,7 +27,7 @@ const register = () => {
 
 
       const handleSignUp = async () => {
-        if (!firstName || !lastName || !email || !password || !confirmPassword) {
+        if (!firstName || !lastName || !email || !password || !country || !city) {
           setErrorMessage('Please fill in all fields.');
           return;
         }
@@ -50,7 +53,7 @@ const register = () => {
           return;
         }
 
-        navigation.navigate('home');
+        //navigation.navigate('home');
 
           try {
               const response = await axios.post('http://localhost:5000/api/users/add', {
@@ -58,17 +61,19 @@ const register = () => {
                   password,
                   firstName,
                   lastName,
-                  country: 'YourCountry',
-                  city: 'YourCity'
+                  country,
+                  city
               });
 
               if (response.status === 201) {
-                  navigation.navigate('home');
+                  navigation.navigate('/home');
               } else {
+                  console.log("ca marche pas");
                   setErrorMessage('Registration failed. Please try again.');
               }
           } catch (error) {
-              setErrorMessage('An error occurred. Please try again.');
+              console.log("c chiant");
+              setErrorMessage('An error occurred.');
           }
       };
 
