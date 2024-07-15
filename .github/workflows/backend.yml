@@ -46,7 +46,7 @@ jobs:
       env:
         FLASK_ENV: testing
         DATABASE_URL: mysql+pymysql://root:root@localhost/testdb
-        FLASK_APP: ./backend/app.py 
+        FLASK_APP: app:create_app  # Utilise la fonction create_app pour créer l'application Flask
       run: |
         flask db upgrade
         pytest
