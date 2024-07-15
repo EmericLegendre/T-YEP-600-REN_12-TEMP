@@ -21,24 +21,22 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install Expo CLI
-        run: npm install -g expo-cli
+      - name: Install EAS CLI
+        run: npm install -g eas-cli
 
       - name: Install dependencies
         working-directory: ./frontend  # Change this to your frontend directory
         run: npm install
 
-      - name: Prebuild Expo project
+      - name: Authenticate with EAS
         working-directory: ./frontend  # Change this to your frontend directory
-        run: npx expo prebuild
-        env:
-          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+        run: eas login --token ${{ secrets.EXPO_TOKEN }}
 
-      - name: Run Android build
-        working-directory: ./frontend  
-        run: npx react-native run-android --variant=release --no-packager
+      - name: Run EAS Build for Android
+        working-directory: ./frontend  # Change this to your frontend directory
+        run: eas build --platform android --non-interactive
 
       # Optional: Uncomment this section if you need to verify iOS build
-      # - name: Run iOS build
+      # - name: Run EAS Build for iOS
       #   working-directory: ./frontend  # Change this to your frontend directory
-      #   run: npx react-native run-ios --configuration=Release --no-packager
+      #   run: eas build --platform ios --non-interactive
