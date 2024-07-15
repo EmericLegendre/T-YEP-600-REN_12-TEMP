@@ -2,15 +2,15 @@ from flask import Blueprint, jsonify, request
 from models.country import Country
 from config.dbConfig import db
 from sqlalchemy.exc import SQLAlchemyError
-from flask_jwt_extended import jwt_required, create_access_token
+from flask_jwt_extended import jwt_required
 
 countryBp = Blueprint('countryBlueprint', __name__)
 
 @countryBp.route('/add', methods=['POST'])
 @jwt_required()
-def addCountry():
+def add_country():
     data = request.get_json()
-    required_fields = ['name', 'continent', 'subContinent', 'currency', 'capital', 'population', 'populationName', 'timezone']
+    required_fields = ['name', 'continent', 'sub_continent', 'currency', 'capital', 'population', 'population_name', 'timezone']
     
     # Check for missing fields
     for field in required_fields:
@@ -21,12 +21,13 @@ def addCountry():
         new_country = Country(
             name=data['name'],
             continent=data['continent'],
-            subContinent=data['subContinent'],
+            sub_continent=data['sub_continent'],
             currency=data['currency'],
             capital=data['capital'],
             population=data['population'],
-            populationName=data['populationName'],
-            timezone=data['timezone']
+            population_name=data['population_name'],
+            timezone=data['timezone'],
+            flag=data['flag']
         )
         db.session.add(new_country)
         db.session.commit()
@@ -44,19 +45,20 @@ def getCountries():
             'id': country.id,
             'name': country.name,
             'continent': country.continent,
-            'subContinent': country.subContinent,
+            'sub_continent': country.sub_continent,
             'currency': country.currency,
             'capital': country.capital,
             'population': country.population,
-            'populationName': country.populationName,
-            'timezone': country.timezone
+            'population_name': country.population_name,
+            'timezone': country.timezone,
+            'flag' : country.flag
         } for country in countries]), 200
     except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400
 
 @countryBp.route('/get/<int:id>', methods=['GET'])
 @jwt_required()
-def getCountryById(id):
+def get_country_by_id(id):
     try:
         country = Country.query.get(id)
         if country is None:
@@ -65,20 +67,22 @@ def getCountryById(id):
             'id': country.id,
             'name': country.name,
             'continent': country.continent,
-            'subContinent': country.subContinent,
+            'sub_continent': country.sub_continent,
             'currency': country.currency,
             'capital': country.capital,
             'population': country.population,
-            'populationName': country.populationName,
-            'timezone': country.timezone
+            'population_name': country.population_name,
+            'timezone': country.timezone,
+            'flag' : country.flag
         }), 200
     except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400
     
 @countryBp.route('/update/<int:id>', methods=['PUT'])
-def updateCountry(id):
+@jwt_required()
+def update_country(id):
     data = request.get_json()
-    updatable_fields = ['name', 'continent', 'subContinent', 'currency', 'capital', 'population', 'populationName', 'timezone']
+    updatable_fields = ['name', 'continent', 'sub_continent', 'currency', 'capital', 'population', 'population_name', 'timezone', 'flag']
 
     for field in data.keys():
         if field not in updatable_fields:
@@ -101,7 +105,7 @@ def updateCountry(id):
 
 @countryBp.route('/delete/<int:id>', methods=['DELETE'])
 @jwt_required()
-def deleteCountry(id):
+def delete_country(id):
     try:
         country = Country.query.get(id)
         if country is None:

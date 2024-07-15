@@ -26,7 +26,7 @@ def authentication():
 
 # Create User -> JSON {email, password, firstName, lastName, country, city}
 @userBp.route('/add', methods=['POST'])
-def addUser():
+def add_user():
     data = request.get_json()
 
     email = data.get('email')
@@ -63,7 +63,7 @@ def addUser():
 # Delete User -> userId in URL
 @userBp.route('/delete/<int:id>', methods=['DELETE'])
 @jwt_required()
-def deleteUser(id):
+def delete_user(id):
     try:
         country = User.query.get(id)
         if country is None:
@@ -74,4 +74,52 @@ def deleteUser(id):
         return jsonify({'message': 'User deleted successfully'}), 200
     except SQLAlchemyError as e:
         db.session.rollback()
+        return jsonify({'error': str(e)}), 400
+
+
+# Update user infos -> JSON {optionals : email, password, firstName, lastName, country, city}
+@userBp.route('/update/<int:id>', methods=['PUT'])
+@jwt_required()
+def update_user(id):
+    data = request.get_json()
+    updatable_fields = ['email', 'password', 'firstName', 'lastName', 'country', 'city']
+
+    for field in data.keys():
+        if field not in updatable_fields:
+            return jsonify({'error': f'Invalid field: {field}'}), 400
+
+    try:
+        user = User.query.get(id)
+        if user is None:
+            return jsonify({'error': 'Country not found'}), 404
+
+        for field in updatable_fields:
+            if field in data:
+                setattr(user, field, data[field])
+
+        db.session.commit()
+        return jsonify({'message': 'User updated successfully'}), 200
+    except SQLAlchemyError as e:
+        db.session.rollback()
+        return jsonify({'error': str(e)}), 400
+
+
+# Get User informations -> userId in URL
+@userBp.route('/get/<int:id>', methods=['GET'])
+@jwt_required()
+def get_country_by_id(id):
+    try:
+        user = User.query.get(id)
+        if user is None:
+            return jsonify({'error': 'User not found'}), 404
+        return jsonify({
+            'id': user.id,
+            'email': user.email,
+            'firstName': user.firstName,
+            'lastName': user.lastName,
+            'country': user.country,
+            'city': user.city
+
+        }), 200
+    except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400
