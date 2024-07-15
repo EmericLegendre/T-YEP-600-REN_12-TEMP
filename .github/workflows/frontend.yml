@@ -31,4 +31,4 @@ jobs:
     - name: Build Android APK
       working-directory: ./frontend  # Change this to your frontend directory
       run: |
-        eas build --platform android --local
+        npx expo run:android
