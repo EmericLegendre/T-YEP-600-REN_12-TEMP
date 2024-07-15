@@ -1,36 +1,44 @@
-name: update
-on: push
+name: Frontend Build Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  update:
-    name: EAS Update
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Check for EXPO_TOKEN
-        run: |
-          if [ -z "${{ secrets.EXPO_TOKEN }}" ]; then
-            echo "You must provide an EXPO_TOKEN secret linked to this project's Expo account in this repo's secrets. Learn more: https://docs.expo.dev/eas-update/github-actions"
-            exit 1
-          fi
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: 18
+          node-version: '18'
 
-      - name: Setup EAS
-        uses: expo/expo-github-action@v8
-        with:
-          eas-version: latest
-          token: ${{ secrets.EXPO_TOKEN }}
+      - name: Install Expo CLI
+        run: npm install -g expo-cli
 
       - name: Install dependencies
-        working-directory: ./frontend
+        working-directory: ./frontend  # Change this to your frontend directory
         run: npm install
 
-      - name: Publish update
-        working-directory: ./frontend
-        run: eas build -p android
+      - name: Prebuild Expo project
+        working-directory: ./frontend  # Change this to your frontend directory
+        run: npx expo prebuild
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+
+      - name: Run Android build
+        working-directory: ./frontend  
+        run: npx react-native run-android --variant=release --no-packager
+
+      # Optional: Uncomment this section if you need to verify iOS build
+      # - name: Run iOS build
+      #   working-directory: ./frontend  # Change this to your frontend directory
+      #   run: npx react-native run-ios --configuration=Release --no-packager
