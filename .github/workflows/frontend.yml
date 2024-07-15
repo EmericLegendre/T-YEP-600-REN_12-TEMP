@@ -28,4 +28,5 @@ jobs:
       working-directory: ./frontend
       run: |
         npm install
-        CI=false npx expo start -c
+        npm start
+
