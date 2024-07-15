@@ -22,12 +22,16 @@ const login = () => {
       }
       console.log("coucou")
       try {
-        const response = await axios.post('http://localhost:5000/api/users/auth', { email, password });
+          const dataJson = {
+              email: email,
+              password: password
+              }
+        const response = await axios.post('http://localhost:5000/api/users/auth', dataJson );
         const { apiToken } = response.data;
 
         localStorage.setItem('token', token);
 
-        navigation.navigate('/home');
+        navigation.navigate('/tabs/home');
       } catch (err) {
         setError('Invalid email or password');
       }

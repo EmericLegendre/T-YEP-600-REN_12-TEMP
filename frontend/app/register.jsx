@@ -13,8 +13,8 @@ const register = () => {
       const navigation = useNavigation();
 
 
-      const [firstName, setFirstName] = useState('');
-      const [lastName, setLastName] = useState('');
+      const [first_name, setFirstName] = useState('');
+      const [last_name, setLastName] = useState('');
       const [email, setEmail] = useState('');
       const [password, setPassword] = useState('');
       const [country, setCountry] = useState('');
@@ -27,7 +27,7 @@ const register = () => {
 
 
       const handleSignUp = async () => {
-        if (!firstName || !lastName || !email || !password || !country || !city) {
+        if (!first_name || !last_name || !email || !password || !country || !city) {
           setErrorMessage('Please fill in all fields.');
           return;
         }
@@ -59,14 +59,14 @@ const register = () => {
               const response = await axios.post('http://localhost:5000/api/users/add', {
                   email,
                   password,
-                  firstName,
-                  lastName,
+                  first_name,
+                  last_name,
                   country,
                   city
               });
 
               if (response.status === 201) {
-                  navigation.navigate('/home');
+                  navigation.navigate('/tabs/home');
               } else {
                   setErrorMessage('Registration failed. Please try again.');
               }
@@ -270,8 +270,8 @@ const register = () => {
                   )}
 
 
-          <TextInput style={styles.textinput} placeholder="First name" value={firstName} onChangeText={text => setFirstName(text)} underlineColorAndroid={'transparent'}/>
-          <TextInput style={styles.textinput} placeholder="Last name" value={lastName} onChangeText={text => setLastName(text)} underlineColorAndroid={'transparent'}/>
+          <TextInput style={styles.textinput} placeholder="First name" value={first_name} onChangeText={text => setFirstName(text)} underlineColorAndroid={'transparent'}/>
+          <TextInput style={styles.textinput} placeholder="Last name" value={last_name} onChangeText={text => setLastName(text)} underlineColorAndroid={'transparent'}/>
           <TextInput style={styles.textinput} placeholder="Email address" value={email} onChangeText={text => {setEmail(text);setIsValidEmail(validateEmail(text));}} underlineColorAndroid={'transparent'}/>
           <TextInput style={styles.textinput} placeholder="Password" value={password} onChangeText={text => setPassword(text)} secureTextEntry={true} underlineColorAndroid={'transparent'}/>
           <TextInput style={styles.textinput} placeholder="Confirm password" value={confirmPassword} onChangeText={text => setConfirmPassword(text)} secureTextEntry={true} underlineColorAndroid={'transparent'}/>
