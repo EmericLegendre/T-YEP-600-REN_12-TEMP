@@ -18,5 +18,5 @@ class StateInfos(db.Model):
 
 
     def __repr__(self) -> str:
-        return f"StateInfos(id={self.id!r}, stateId={self.stateId!r}, category={self.category!r}, content={self.content!r})"
+        return f"StateInfos(id={self.id!r}, stateId={self.state_id!r}, category={self.category!r}, content={self.content!r})"
 
