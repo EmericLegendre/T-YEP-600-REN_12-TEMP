@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { Stack, useRouter } from 'expo-router';
 import React from 'react';
 import Colors from '../constants/Colors';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const Profile = () => {
   const router = useRouter();
@@ -26,24 +27,28 @@ const Profile = () => {
           onPress={() => router.push('/userInformations')}
         >
           <Text style={styles.listItemText}>Mes informations</Text>
+          <Ionicons name="chevron-forward" size={20} color={Colors.black} />
         </TouchableOpacity>
         <TouchableOpacity 
           style={styles.listItem} 
           onPress={() => router.push('/userStatistics')}
         >
           <Text style={styles.listItemText}>Mes statistiques</Text>
+          <Ionicons name="chevron-forward" size={20} color={Colors.black} />
         </TouchableOpacity>
         <TouchableOpacity 
           style={styles.listItem} 
           onPress={() => router.push('/userHistory')}
         >
           <Text style={styles.listItemText}>Mon historique</Text>
+          <Ionicons name="chevron-forward" size={20} color={Colors.black} />
         </TouchableOpacity>
         <TouchableOpacity 
           style={styles.listItem} 
           onPress={() => router.push('/userTrips')}
         >
           <Text style={styles.listItemText}>Mes voyages</Text>
+          <Ionicons name="chevron-forward" size={20} color={Colors.black} />
         </TouchableOpacity>
       </View>
     </View>
@@ -64,16 +69,20 @@ const styles = StyleSheet.create({
     marginRight: 15,
   },
   list: {
-    marginTop: 20,
+    marginTop: 5,
   },
   listItem: {
-    padding: 15,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: 25,
+    paddingHorizontal: 10,
     backgroundColor: Colors.lightGrey,
-    borderRadius: 5,
-    marginVertical: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.grey,
   },
   listItemText: {
     fontSize: 18,
     color: Colors.black,
-  }
+  },
 });
