@@ -21,12 +21,10 @@ jobs:
       with:
         node-version: '18'
 
-    - name: Install Expo CLI
-      run: npm install -g expo-cli
+    - name: Install dependencies
+      working-directory: ./frontend  # Change this to your frontend directory
+      run: npm install
 
-    - name: Install dependencies and start Expo
-      working-directory: ./frontend
-      run: |
-        npm install
-        npm start
-
+    - name: expo start
+      working-directory: ./frontend  # Change this to your frontend directory
+      run: npm run build
