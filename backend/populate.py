@@ -25,34 +25,31 @@ def insert_countries_to_db(countries):
             existing_country = Country.query.filter_by(name=country_data['name']).first()
             if existing_country:
                 print(f"Country {country_data['name']} already exists in the database.")
-            else:
-                new_country = Country(
-                    name=country_data['name'],
-                    continent=country_data['continent'],
-                    sub_continent=country_data['subContinent'],
-                    currency=country_data['currency'],
-                    capital=country_data['capital'],
-                    population=country_data['population'],
-                    population_name=country_data['populationName'],
-                    timezone=country_data['timezone'],
-                    flag=country_data['flag']
+                continue
+
+            new_country = Country(
+                name=country_data['name'],
+                continent=country_data['continent'],
+                sub_continent=country_data['subContinent'],
+                currency=country_data['currency'],
+                capital=country_data['capital'],
+                population=country_data['population'],
+                population_name=country_data['populationName'],
+                timezone=country_data['timezone'],
+                flag=country_data['flag']
+            )
+            db.session.add(new_country)
+            db.session.commit()
+
+            for language in country_data.get('languages', []):
+
+                country_info = CountryInfos(
+                    country_id=new_country.id,
+                    content=language,
+                    category=CategoryEnum.LANGUAGE
                 )
-                db.session.add(new_country)
+                db.session.add(country_info)
                 db.session.commit()
-                
-                for language in country_data.get('languages', []):
-                    existing_country_info = CountryInfos.query.filter_by(content=language, category=CategoryEnum.LANGUAGE).first()
-                    if existing_country_info:
-                        print(f"Language {language} for country {country_data['name']} already exists in the database.")
-                        continue
-                    
-                    country_info = CountryInfos(
-                        country_id=new_country.id,
-                        content=language,
-                        category=CategoryEnum.LANGUAGE
-                    )
-                    db.session.add(country_info)
-                    db.session.commit()
 
         except SQLAlchemyError as e:
             db.session.rollback()
@@ -69,18 +66,18 @@ def insert_states_to_db(states_data):
             print(f"Country {country_name} not found in the database.")
             continue
 
-        for region_data in region_data['states']:
-            region_name = region_data['name']
-            existing_region = State.query.filter_by(name=region_name, countryId=country.id).first()
-            if existing_region:
-                print(f"Region {region_name} in {country_name} already exists in the database. Skipping insertion.")
+        for state_data in region_data['states']:
+            state_name = state_data['name']
+            existing_state = State.query.filter_by(name=state_name, country_id=country.id).first()
+            if existing_state:
+                print(f"State {state_name} in {country_name} already exists in the database. Skipping insertion.")
                 continue
             try:
                 new_state = State(
-                    name=region_data['name'],
-                    regional_capital=region_data.get('regionalCapital', ''),
-                    population=region_data['population'],
-                    population_name=region_data['populationName'],
+                    name=state_data['name'],
+                    regional_capital=state_data['regionalCapital'],
+                    population=state_data['population'],
+                    population_name=state_data['populationName'],
                     country_id=country.id
                 )
                 db.session.add(new_state)
@@ -102,20 +99,20 @@ def insert_cities_to_db(cities_data):
         population = city_data["population"]
         population_name = city_data["populationName"]
 
-        # Find or create the country
+        # Find the country
         country = Country.query.filter_by(name=country_name).first()
         if not country:
             print(f"Country {country_name} not found in the database. Skipping city {city_name}.")
             continue
 
-        # Find or create the state within the country
-        state = State.query.filter_by(name=state_name, countryId=country.id).first()
+        # Find the state within the country
+        state = State.query.filter_by(name=state_name, country_id=country.id).first()
         if not state:
             print(f"State {state_name} in {country_name} not found in the database. Skipping city {city_name}.")
             continue
 
         # Check if city already exists in the database
-        existing_city = City.query.filter_by(name=city_name, stateId=state.id).first()
+        existing_city = City.query.filter_by(name=city_name, state_id=state.id).first()
         if existing_city:
             print(f"City {city_name} in {state_name}, {country_name} already exists in the database. Skipping insertion.")
             continue
@@ -177,4 +174,3 @@ if __name__ == '__main__':
             populate_countries_from_json()
             populate_states_from_json()
             populate_cities_from_json()
-
