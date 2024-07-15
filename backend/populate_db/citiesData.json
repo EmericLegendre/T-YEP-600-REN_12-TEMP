@@ -1,0 +1,989 @@
+[
+    {
+        "name": "Lyon",
+        "population": 522969,
+        "state_name": "Auvergne-Rhône-Alpes",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Saint-Etienne",
+        "population": 176280,
+        "state_name": "Auvergne-Rhône-Alpes",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Grenoble",
+        "population": 158552,
+        "state_name": "Auvergne-Rhône-Alpes",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Clermont-Ferrand",
+        "population": 147865,
+        "state_name": "Auvergne-Rhône-Alpes",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Valence",
+        "population": 63864,
+        "state_name": "Auvergne-Rhône-Alpes",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Chambéry",
+        "population": 61640,
+        "state_name": "Auvergne-Rhône-Alpes",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Annecy",
+        "population": 49232,
+        "state_name": "Auvergne-Rhône-Alpes",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Bourg-en-Bresse",
+        "population": 45340,
+        "state_name": "Auvergne-Rhône-Alpes",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Aurillac",
+        "population": 34724,
+        "state_name": "Auvergne-Rhône-Alpes",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Moulins",
+        "population": 23095,
+        "state_name": "Auvergne-Rhône-Alpes",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Dijon",
+        "population": 158002,
+        "state_name": "Bourgogne-Franche-Comté",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Besançon",
+        "population": 128426,
+        "state_name": "Bourgogne-Franche-Comté",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Belfort",
+        "population": 54562,
+        "state_name": "Bourgogne-Franche-Comté",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Nevers",
+        "population": 43988,
+        "state_name": "Bourgogne-Franche-Comté",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Auxerre",
+        "population": 41516,
+        "state_name": "Bourgogne-Franche-Comté",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Mâcon",
+        "population": 35484,
+        "state_name": "Bourgogne-Franche-Comté",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Lons-le-Saunier",
+        "population": 20678,
+        "state_name": "Bourgogne-Franche-Comté",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Vesoul",
+        "population": 19892,
+        "state_name": "Bourgogne-Franche-Comté",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Rennes",
+        "population": 220488,
+        "state_name": "Brittany",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Quimper",
+        "population": 63849,
+        "state_name": "Brittany",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Vannes",
+        "population": 54020,
+        "state_name": "Brittany",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Saint-Brieuc",
+        "population": 52774,
+        "state_name": "Brittany",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Orléans",
+        "population": 116269,
+        "state_name": "Centre-Val de Loire",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Tours",
+        "population": 141621,
+        "state_name": "Centre-Val de Loire",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Bourges",
+        "population": 67987,
+        "state_name": "Centre-Val de Loire",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Blois",
+        "population": 53660,
+        "state_name": "Centre-Val de Loire",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Châteauroux",
+        "population": 53301,
+        "state_name": "Centre-Val de Loire",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Chartres",
+        "population": 43838,
+        "state_name": "Centre-Val de Loire",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Ajaccio",
+        "population": 54364,
+        "state_name": "Corsica",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Bastia",
+        "population": 41001,
+        "state_name": "Corsica",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Strasbourg",
+        "population": 274845,
+        "state_name": "Grand Est",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Metz",
+        "population": 123914,
+        "state_name": "Grand Est",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Nancy",
+        "population": 105058,
+        "state_name": "Grand Est",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Colmar",
+        "population": 65405,
+        "state_name": "Grand Est",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Troyes",
+        "population": 60785,
+        "state_name": "Grand Est",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Charleville-Mézières",
+        "population": 52415,
+        "state_name": "Grand Est",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Châlons-en-Champagne",
+        "population": 51257,
+        "state_name": "Grand Est",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Épinal",
+        "population": 39518,
+        "state_name": "Grand Est",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Chaumont",
+        "population": 28981,
+        "state_name": "Grand Est",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Bar-le-Duc",
+        "population": 18595,
+        "state_name": "Grand Est",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Lille",
+        "population": 234475,
+        "state_name": "Hauts-de-France",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Amiens",
+        "population": 143086,
+        "state_name": "Hauts-de-France",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Beauvais",
+        "population": 53393,
+        "state_name": "Hauts-de-France",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Arras",
+        "population": 47052,
+        "state_name": "Hauts-de-France",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Laon",
+        "population": 28688,
+        "state_name": "Hauts-de-France",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Rouen",
+        "population": 234475,
+        "state_name": "Normandy",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Caen",
+        "population": 110624,
+        "state_name": "Normandy",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Évreux",
+        "population": 57795,
+        "state_name": "Normandy",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Alençon",
+        "population": 30786,
+        "state_name": "Normandy",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Saint-Lô",
+        "population": 21722,
+        "state_name": "Normandy",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Bordeaux",
+        "population": 260958,
+        "state_name": "Nouvelle-Aquitaine",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Limoges",
+        "population": 141176,
+        "state_name": "Nouvelle-Aquitaine",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Poitiers",
+        "population": 85960,
+        "state_name": "Nouvelle-Aquitaine",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Pau",
+        "population": 82697,
+        "state_name": "Nouvelle-Aquitaine",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "La Rochelle",
+        "population": 76810,
+        "state_name": "Nouvelle-Aquitaine",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Niort",
+        "population": 54660,
+        "state_name": "Nouvelle-Aquitaine",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Angoulême",
+        "population": 49468,
+        "state_name": "Nouvelle-Aquitaine",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Mont-de-Marsan",
+        "population": 36205,
+        "state_name": "Nouvelle-Aquitaine",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Périgueux",
+        "population": 34770,
+        "state_name": "Nouvelle-Aquitaine",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Agen",
+        "population": 34367,
+        "state_name": "Nouvelle-Aquitaine",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Toulouse",
+        "population": 493465,
+        "state_name": "Occitanie",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Montpellier",
+        "population": 248252,
+        "state_name": "Occitanie",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Nîmes",
+        "population": 148236,
+        "state_name": "Occitanie",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Perpignan",
+        "population": 110706,
+        "state_name": "Occitanie",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Montauban",
+        "population": 52434,
+        "state_name": "Occitanie",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Albi",
+        "population": 52409,
+        "state_name": "Occitanie",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Tarbes",
+        "population": 52106,
+        "state_name": "Occitanie",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Carcassonne",
+        "population": 49600,
+        "state_name": "Occitanie",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Rodez",
+        "population": 28337,
+        "state_name": "Occitanie",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Auch",
+        "population": 24494,
+        "state_name": "Occitanie",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Nantes",
+        "population": 318808,
+        "state_name": "Pays de la Loire",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Angers",
+        "population": 168279,
+        "state_name": "Pays de la Loire",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Le Mans",
+        "population": 144515,
+        "state_name": "Pays de la Loire",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "La Roche-sur-Yon",
+        "population": 59410,
+        "state_name": "Pays de la Loire",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Laval",
+        "population": 50489,
+        "state_name": "Pays de la Loire",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Marseille",
+        "population": 870731,
+        "state_name": "Provence-Alpes-Côte d'Azur",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Nice",
+        "population": 342669,
+        "state_name": "Provence-Alpes-Côte d'Azur",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Toulon",
+        "population": 168701,
+        "state_name": "Provence-Alpes-Côte d'Azur",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Avignon",
+        "population": 89769,
+        "state_name": "Provence-Alpes-Côte d'Azur",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Gap",
+        "population": 42715,
+        "state_name": "Provence-Alpes-Côte d'Azur",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Digne-les-Bains",
+        "population": 18986,
+        "state_name": "Provence-Alpes-Côte d'Azur",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Paris",
+        "population": 2138551,
+        "state_name": "Île-de-France",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Nanterre",
+        "population": 86719,
+        "state_name": "Île-de-France",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Versailles",
+        "population": 85416,
+        "state_name": "Île-de-France",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Créteil",
+        "population": 84833,
+        "state_name": "Île-de-France",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Évry",
+        "population": 51900,
+        "state_name": "Île-de-France",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Bobigny",
+        "population": 44962,
+        "state_name": "Île-de-France",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Melun",
+        "population": 38953,
+        "state_name": "Île-de-France",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Pontoise",
+        "population": 30290,
+        "state_name": "Île-de-France",
+        "country_name": "France",
+        "populationName": ""
+    },
+    {
+        "name": "Seville",
+        "population": 684234,
+        "state_name": "Andalusia",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Málaga",
+        "population": 578460,
+        "state_name": "Andalusia",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Córdoba",
+        "population": 325708,
+        "state_name": "Andalusia",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Granada",
+        "population": 234325,
+        "state_name": "Andalusia",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Almería",
+        "population": 188810,
+        "state_name": "Andalusia",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Huelva",
+        "population": 144258,
+        "state_name": "Andalusia",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Cadiz",
+        "population": 126766,
+        "state_name": "Andalusia",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Jaén",
+        "population": 113457,
+        "state_name": "Andalusia",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Zaragoza",
+        "population": 675301,
+        "state_name": "Aragon",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Huesca",
+        "population": 52059,
+        "state_name": "Aragon",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Teruel",
+        "population": 35396,
+        "state_name": "Aragon",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Oviedo",
+        "population": 220020,
+        "state_name": "Asturias",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Palma",
+        "population": 409661,
+        "state_name": "Balearic Islands",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Vitoria-Gasteiz",
+        "population": 249176,
+        "state_name": "Basque Country",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Bilbao",
+        "population": 345821,
+        "state_name": "Basque Country",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Donostia / San Sebastian",
+        "population": 185357,
+        "state_name": "Basque Country",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Las Palmas de Gran Canaria",
+        "population": 378517,
+        "state_name": "Canary Islands",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Tenerife",
+        "population": 204856,
+        "state_name": "Canary Islands",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Santander",
+        "population": 172044,
+        "state_name": "Cantabria",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Valladolid",
+        "population": 299265,
+        "state_name": "Castille and León",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Burgos",
+        "population": 178966,
+        "state_name": "Castille and León",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Salamanca",
+        "population": 155619,
+        "state_name": "Castille and León",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "León",
+        "population": 134305,
+        "state_name": "Castille and León",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Palencia",
+        "population": 82651,
+        "state_name": "Castille and León",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Zamora",
+        "population": 66293,
+        "state_name": "Castille and León",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Ávila",
+        "population": 56855,
+        "state_name": "Castille and León",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Segovia",
+        "population": 56660,
+        "state_name": "Castille and León",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Soria",
+        "population": 39528,
+        "state_name": "Castille and León",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Toledo",
+        "population": 84282,
+        "state_name": "Castille-La Mancha",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Albacete",
+        "population": 169716,
+        "state_name": "Castille-La Mancha",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Guadalajara",
+        "population": 83039,
+        "state_name": "Castille-La Mancha",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Ciudad Real",
+        "population": 74014,
+        "state_name": "Castille-La Mancha",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Cuenca",
+        "population": 55866,
+        "state_name": "Castille-La Mancha",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Barcelona",
+        "population": 1620343,
+        "state_name": "Catalonia",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Lleida",
+        "population": 137856,
+        "state_name": "Catalonia",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Tarragona",
+        "population": 132299,
+        "state_name": "Catalonia",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Girona",
+        "population": 96188,
+        "state_name": "Catalonia",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Ceuta",
+        "population": 85144,
+        "state_name": "Ceuta",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Mérida",
+        "population": 59352,
+        "state_name": "Extremadura",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Cáceres",
+        "population": 93131,
+        "state_name": "Extremadura",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Santiago de Compostela",
+        "population": 97849,
+        "state_name": "Galicia",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Ourense",
+        "population": 105233,
+        "state_name": "Galicia",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Lugo",
+        "population": 96678,
+        "state_name": "Galicia",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Pontevedra",
+        "population": 81576,
+        "state_name": "Galicia",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Logroño",
+        "population": 152485,
+        "state_name": "La Rioja",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Madrid",
+        "population": 3255944,
+        "state_name": "Madrid",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Melilla",
+        "population": 86384,
+        "state_name": "Melilla",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Murcia",
+        "population": 460349,
+        "state_name": "Murcia",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Pamplona",
+        "population": 209672,
+        "state_name": "Navarre",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Valencia",
+        "population": 792492,
+        "state_name": "Valencia",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Alicante",
+        "population": 334757,
+        "state_name": "Valencia",
+        "country_name": "Espagne",
+        "populationName": ""
+    },
+    {
+        "name": "Castellon",
+        "population": 180005,
+        "state_name": "Valencia",
+        "country_name": "Espagne",
+        "populationName": ""
+    }
+]
