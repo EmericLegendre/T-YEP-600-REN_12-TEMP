@@ -19,14 +19,15 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '18'
+          node-version: '14'
 
       - name: Install dependencies
         run: npm install
         working-directory: ./frontend  # Assurez-vous d'ajuster le chemin selon votre structure de projet
 
       - name: Build Android App
-        run: npm run build:android  # Assurez-vous d'ajuster la commande de build selon votre configuration
+        run: npm run build:android
+        working-directory: ./frontend  # Assurez-vous d'ajuster le chemin selon votre structure de projet
 
-      # Vous pouvez ajouter d'autres étapes ici, comme les tests unitaires, les vérifications de qualité, etc.
+      # Ajoutez d'autres étapes si nécessaire
 
