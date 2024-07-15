@@ -26,7 +26,9 @@ const Layout = () => {
           tabBarLabel: "Map",
           tabBarIcon: ({color}) => (
           <Ionicons name='map' size={28} color={color} />
-  )}} />
+          ),
+          headerShown: false,
+          }} />
         <Tabs.Screen 
         name='home' 
         options={{
