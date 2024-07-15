@@ -19,12 +19,17 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '15'  # Change this to Node.js version 15 or higher
+        node-version: '16'  # Assurez-vous d'utiliser une version compatible avec Expo
 
-    - name: Install dependencies
-      working-directory: ./frontend  # Change this to your frontend directory
-      run: npm install
-      
+    - name: Install Expo CLI
+      run: npm install -g expo-cli
+
+    - name: Install dependencies and build
+      working-directory: ./frontend
+      run: |
+        npm install
+        npx expo build:web
+
     - name: Start Expo
-      working-directory: ./frontend  # Change this to your frontend directory
+      working-directory: ./frontend
       run: npx expo start -c
