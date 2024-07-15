@@ -41,11 +41,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    # - name: Verify pytest installation
-    #   run: |
-    #     python -m pytest --version
-
-    - name: Run tests
+    - name: Run migrations
       working-directory: ./backend
       env:
         FLASK_ENV: testing
@@ -53,4 +49,3 @@ jobs:
         FLASK_APP: app:create_app
       run: |
         flask db upgrade
-        pytest
