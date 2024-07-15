@@ -47,8 +47,8 @@ def add_user():
     new_user = User(
         email=email,
         password=password,
-        firstName=first_name,
-        lastName=last_name,
+        firs_name=first_name,
+        last_name=last_name,
         country=country,
         city=city
     )
