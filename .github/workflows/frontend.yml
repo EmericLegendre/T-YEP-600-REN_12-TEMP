@@ -28,9 +28,12 @@ jobs:
         run: npm install
 
       - name: Prebuild Expo project
+        working-directory: ./frontend
         run: npx expo prebuild
+        
 
       - name: Run Android build
+        working-directory: ./frontend
         run: npx react-native run-android --variant=release --no-packager
 
       # Optional: Uncomment this section if you need to verify iOS build
