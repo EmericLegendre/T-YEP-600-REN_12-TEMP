@@ -41,12 +41,16 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Verify pytest installation
+      run: |
+        python -m pytest --version
+
     - name: Run tests
       working-directory: ./backend
       env:
         FLASK_ENV: testing
         DATABASE_URL: mysql+pymysql://root:root@localhost/testdb
-        FLASK_APP: app:create_app  # Utilise la fonction create_app pour créer l'application Flask
+        FLASK_APP: app:create_app
       run: |
         flask db upgrade
         pytest
