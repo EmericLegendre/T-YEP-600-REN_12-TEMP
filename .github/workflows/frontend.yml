@@ -19,18 +19,13 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '18'  # Assurez-vous d'utiliser une version compatible avec Expo
+        node-version: '18'
 
     - name: Install Expo CLI
       run: npm install -g expo-cli
 
-    - name: Install dependencies
+    - name: Install dependencies and start Expo
       working-directory: ./frontend
       run: |
         npm install
-
-    - name: Start Expo
-      working-directory: ./frontend
-      run: 
-        export CI=false
-        npx expo start -c
+        CI=false npx expo start -c
