@@ -1,4 +1,4 @@
-name: Build Android App
+name: Build and Test React Native App with Expo
 
 on:
   push:
@@ -13,21 +13,34 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v2
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '14' # Use the Node.js version compatible with your project
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./frontend  # Assurez-vous d'ajuster le chemin selon votre structure de projet
 
-      - name: Build Android App
-        run: npm run build:android
-        working-directory: ./frontend  # Assurez-vous d'ajuster le chemin selon votre structure de projet
+      - name: Set up Expo CLI
+        run: npm install -g expo-cli
 
-      # Ajoutez d'autres étapes si nécessaire
+      - name: Build JavaScript bundle
+        run: expo export --public-url http://localhost:8000
 
+      - name: Start Expo server
+        run: |
+          nohup expo start --non-interactive &
+          echo $! > server.pid
+          
+      - name: Stop Expo server
+        run: |
+          kill $(cat server.pid)
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-artifacts
+          path: dist/ # Adjust this path based on where Expo outputs the build artifacts
