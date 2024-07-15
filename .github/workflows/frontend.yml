@@ -28,7 +28,9 @@ jobs:
           token: ${{ secrets.EXPO_TOKEN }}
 
       - name: Install dependencies
+        working-directory: ./frontend
         run: npm install
 
       - name: Publish update
+        working-directory: ./frontend
         run: eas build --local
