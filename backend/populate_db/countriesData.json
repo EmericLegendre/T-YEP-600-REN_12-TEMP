@@ -12,7 +12,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/wf.png"
+        "flag": "https://flagcdn.com/wf.svg"
     },
     {
         "name": "Islande",
@@ -27,7 +27,7 @@
         "languages": [
             "Icelandic"
         ],
-        "flag": "https://flagcdn.com/w320/is.png"
+        "flag": "https://flagcdn.com/is.svg"
     },
     {
         "name": "Luxembourg",
@@ -44,7 +44,7 @@
             "French",
             "Luxembourgish"
         ],
-        "flag": "https://flagcdn.com/w320/lu.png"
+        "flag": "https://flagcdn.com/lu.svg"
     },
     {
         "name": "Mali",
@@ -59,7 +59,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/ml.png"
+        "flag": "https://flagcdn.com/ml.svg"
     },
     {
         "name": "Comores",
@@ -76,7 +76,7 @@
             "French",
             "Comorian"
         ],
-        "flag": "https://flagcdn.com/w320/km.png"
+        "flag": "https://flagcdn.com/km.svg"
     },
     {
         "name": "Australie",
@@ -91,7 +91,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/au.png"
+        "flag": "https://flagcdn.com/au.svg"
     },
     {
         "name": "Estonie",
@@ -106,7 +106,7 @@
         "languages": [
             "Estonian"
         ],
-        "flag": "https://flagcdn.com/w320/ee.png"
+        "flag": "https://flagcdn.com/ee.svg"
     },
     {
         "name": "Canada",
@@ -122,7 +122,7 @@
             "English",
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/ca.png"
+        "flag": "https://flagcdn.com/ca.svg"
     },
     {
         "name": "Bi\u00e9lorussie",
@@ -138,7 +138,7 @@
             "Belarusian",
             "Russian"
         ],
-        "flag": "https://flagcdn.com/w320/by.png"
+        "flag": "https://flagcdn.com/by.svg"
     },
     {
         "name": "Guyana",
@@ -153,7 +153,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/gy.png"
+        "flag": "https://flagcdn.com/gy.svg"
     },
     {
         "name": "Gambie",
@@ -168,7 +168,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/gm.png"
+        "flag": "https://flagcdn.com/gm.svg"
     },
     {
         "name": "Tunisie",
@@ -183,7 +183,7 @@
         "languages": [
             "Arabic"
         ],
-        "flag": "https://flagcdn.com/w320/tn.png"
+        "flag": "https://flagcdn.com/tn.svg"
     },
     {
         "name": "Cameroun",
@@ -199,7 +199,7 @@
             "English",
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/cm.png"
+        "flag": "https://flagcdn.com/cm.svg"
     },
     {
         "name": "Rwanda",
@@ -216,7 +216,7 @@
             "French",
             "Kinyarwanda"
         ],
-        "flag": "https://flagcdn.com/w320/rw.png"
+        "flag": "https://flagcdn.com/rw.svg"
     },
     {
         "name": "Cambodge",
@@ -231,7 +231,7 @@
         "languages": [
             "Khmer"
         ],
-        "flag": "https://flagcdn.com/w320/kh.png"
+        "flag": "https://flagcdn.com/kh.svg"
     },
     {
         "name": "B\u00e9nin",
@@ -246,7 +246,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/bj.png"
+        "flag": "https://flagcdn.com/bj.svg"
     },
     {
         "name": "Gr\u00e8ce",
@@ -261,7 +261,7 @@
         "languages": [
             "Greek"
         ],
-        "flag": "https://flagcdn.com/w320/gr.png"
+        "flag": "https://flagcdn.com/gr.svg"
     },
     {
         "name": "Cor\u00e9e du Sud",
@@ -276,7 +276,7 @@
         "languages": [
             "Korean"
         ],
-        "flag": "https://flagcdn.com/w320/kr.png"
+        "flag": "https://flagcdn.com/kr.svg"
     },
     {
         "name": "Maurice",
@@ -293,7 +293,7 @@
             "French",
             "Mauritian Creole"
         ],
-        "flag": "https://flagcdn.com/w320/mu.png"
+        "flag": "https://flagcdn.com/mu.svg"
     },
     {
         "name": "\u00celes Vierges des \u00c9tats-Unis",
@@ -308,7 +308,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/vi.png"
+        "flag": "https://flagcdn.com/vi.svg"
     },
     {
         "name": "Ahvenanmaa",
@@ -323,7 +323,7 @@
         "languages": [
             "Swedish"
         ],
-        "flag": "https://flagcdn.com/w320/ax.png"
+        "flag": "https://flagcdn.com/ax.svg"
     },
     {
         "name": "Saint-Marin",
@@ -338,7 +338,7 @@
         "languages": [
             "Italian"
         ],
-        "flag": "https://flagcdn.com/w320/sm.png"
+        "flag": "https://flagcdn.com/sm.svg"
     },
     {
         "name": "Maldives",
@@ -353,7 +353,7 @@
         "languages": [
             "Maldivian"
         ],
-        "flag": "https://flagcdn.com/w320/mv.png"
+        "flag": "https://flagcdn.com/mv.svg"
     },
     {
         "name": "Vanuatu",
@@ -370,7 +370,7 @@
             "English",
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/vu.png"
+        "flag": "https://flagcdn.com/vu.svg"
     },
     {
         "name": "Malawi",
@@ -386,7 +386,7 @@
             "English",
             "Chewa"
         ],
-        "flag": "https://flagcdn.com/w320/mw.png"
+        "flag": "https://flagcdn.com/mw.svg"
     },
     {
         "name": "\u00c9gypte",
@@ -401,7 +401,7 @@
         "languages": [
             "Arabic"
         ],
-        "flag": "https://flagcdn.com/w320/eg.png"
+        "flag": "https://flagcdn.com/eg.svg"
     },
     {
         "name": "S\u00e9n\u00e9gal",
@@ -416,7 +416,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/sn.png"
+        "flag": "https://flagcdn.com/sn.svg"
     },
     {
         "name": "G\u00e9orgie",
@@ -431,7 +431,7 @@
         "languages": [
             "Georgian"
         ],
-        "flag": "https://flagcdn.com/w320/ge.png"
+        "flag": "https://flagcdn.com/ge.svg"
     },
     {
         "name": "Nouvelle-Z\u00e9lande",
@@ -448,7 +448,7 @@
             "M\u0101ori",
             "New Zealand Sign Language"
         ],
-        "flag": "https://flagcdn.com/w320/nz.png"
+        "flag": "https://flagcdn.com/nz.svg"
     },
     {
         "name": "\u00celes du Cap-Vert",
@@ -463,7 +463,7 @@
         "languages": [
             "Portuguese"
         ],
-        "flag": "https://flagcdn.com/w320/cv.png"
+        "flag": "https://flagcdn.com/cv.svg"
     },
     {
         "name": "Italie",
@@ -478,7 +478,7 @@
         "languages": [
             "Italian"
         ],
-        "flag": "https://flagcdn.com/w320/it.png"
+        "flag": "https://flagcdn.com/it.svg"
     },
     {
         "name": "Monaco",
@@ -493,7 +493,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/mc.png"
+        "flag": "https://flagcdn.com/mc.svg"
     },
     {
         "name": "Slovaquie",
@@ -508,7 +508,7 @@
         "languages": [
             "Slovak"
         ],
-        "flag": "https://flagcdn.com/w320/sk.png"
+        "flag": "https://flagcdn.com/sk.svg"
     },
     {
         "name": "Uruguay",
@@ -523,7 +523,7 @@
         "languages": [
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/uy.png"
+        "flag": "https://flagcdn.com/uy.svg"
     },
     {
         "name": "Laos",
@@ -538,7 +538,7 @@
         "languages": [
             "Lao"
         ],
-        "flag": "https://flagcdn.com/w320/la.png"
+        "flag": "https://flagcdn.com/la.svg"
     },
     {
         "name": "\u00celes F\u00e9ro\u00e9",
@@ -554,7 +554,7 @@
             "Danish",
             "Faroese"
         ],
-        "flag": "https://flagcdn.com/w320/fo.png"
+        "flag": "https://flagcdn.com/fo.svg"
     },
     {
         "name": "Niue",
@@ -570,7 +570,7 @@
             "English",
             "Niuean"
         ],
-        "flag": "https://flagcdn.com/w320/nu.png"
+        "flag": "https://flagcdn.com/nu.svg"
     },
     {
         "name": "Mac\u00e9doine du Nord",
@@ -585,7 +585,7 @@
         "languages": [
             "Macedonian"
         ],
-        "flag": "https://flagcdn.com/w320/mk.png"
+        "flag": "https://flagcdn.com/mk.svg"
     },
     {
         "name": "Chili",
@@ -600,7 +600,7 @@
         "languages": [
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/cl.png"
+        "flag": "https://flagcdn.com/cl.svg"
     },
     {
         "name": "Chypre",
@@ -616,7 +616,7 @@
             "Greek",
             "Turkish"
         ],
-        "flag": "https://flagcdn.com/w320/cy.png"
+        "flag": "https://flagcdn.com/cy.svg"
     },
     {
         "name": "Macao",
@@ -632,7 +632,7 @@
             "Portuguese",
             "Chinese"
         ],
-        "flag": "https://flagcdn.com/w320/mo.png"
+        "flag": "https://flagcdn.com/mo.svg"
     },
     {
         "name": "Salvador",
@@ -647,7 +647,7 @@
         "languages": [
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/sv.png"
+        "flag": "https://flagcdn.com/sv.svg"
     },
     {
         "name": "Jordanie",
@@ -662,7 +662,7 @@
         "languages": [
             "Arabic"
         ],
-        "flag": "https://flagcdn.com/w320/jo.png"
+        "flag": "https://flagcdn.com/jo.svg"
     },
     {
         "name": "Jama\u00efque",
@@ -678,7 +678,7 @@
             "English",
             "Jamaican Patois"
         ],
-        "flag": "https://flagcdn.com/w320/jm.png"
+        "flag": "https://flagcdn.com/jm.svg"
     },
     {
         "name": "Barbade",
@@ -693,7 +693,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/bb.png"
+        "flag": "https://flagcdn.com/bb.svg"
     },
     {
         "name": "Sahara Occidental",
@@ -710,7 +710,7 @@
             "Hassaniya",
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/eh.png"
+        "flag": "https://flagcdn.com/eh.svg"
     },
     {
         "name": "Qatar",
@@ -725,7 +725,7 @@
         "languages": [
             "Arabic"
         ],
-        "flag": "https://flagcdn.com/w320/qa.png"
+        "flag": "https://flagcdn.com/qa.svg"
     },
     {
         "name": "Guatemala",
@@ -740,7 +740,7 @@
         "languages": [
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/gt.png"
+        "flag": "https://flagcdn.com/gt.svg"
     },
     {
         "name": "Micron\u00e9sie",
@@ -755,7 +755,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/fm.png"
+        "flag": "https://flagcdn.com/fm.svg"
     },
     {
         "name": "Montserrat",
@@ -770,7 +770,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/ms.png"
+        "flag": "https://flagcdn.com/ms.svg"
     },
     {
         "name": "Papouasie-Nouvelle-Guin\u00e9e",
@@ -787,7 +787,7 @@
             "Hiri Motu",
             "Tok Pisin"
         ],
-        "flag": "https://flagcdn.com/w320/pg.png"
+        "flag": "https://flagcdn.com/pg.svg"
     },
     {
         "name": "Br\u00e9sil",
@@ -802,7 +802,7 @@
         "languages": [
             "Portuguese"
         ],
-        "flag": "https://flagcdn.com/w320/br.png"
+        "flag": "https://flagcdn.com/br.svg"
     },
     {
         "name": "Lituanie",
@@ -817,7 +817,7 @@
         "languages": [
             "Lithuanian"
         ],
-        "flag": "https://flagcdn.com/w320/lt.png"
+        "flag": "https://flagcdn.com/lt.svg"
     },
     {
         "name": "Guyane fran\u00e7aise",
@@ -832,7 +832,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/gf.png"
+        "flag": "https://flagcdn.com/gf.svg"
     },
     {
         "name": "Moldavie",
@@ -847,7 +847,7 @@
         "languages": [
             "Romanian"
         ],
-        "flag": "https://flagcdn.com/w320/md.png"
+        "flag": "https://flagcdn.com/md.svg"
     },
     {
         "name": "Kirghizistan",
@@ -863,7 +863,7 @@
             "Kyrgyz",
             "Russian"
         ],
-        "flag": "https://flagcdn.com/w320/kg.png"
+        "flag": "https://flagcdn.com/kg.svg"
     },
     {
         "name": "Cura\u00e7ao",
@@ -880,7 +880,7 @@
             "Dutch",
             "Papiamento"
         ],
-        "flag": "https://flagcdn.com/w320/cw.png"
+        "flag": "https://flagcdn.com/cw.svg"
     },
     {
         "name": "Vi\u00eat Nam",
@@ -895,7 +895,7 @@
         "languages": [
             "Vietnamese"
         ],
-        "flag": "https://flagcdn.com/w320/vn.png"
+        "flag": "https://flagcdn.com/vn.svg"
     },
     {
         "name": "Angola",
@@ -910,7 +910,7 @@
         "languages": [
             "Portuguese"
         ],
-        "flag": "https://flagcdn.com/w320/ao.png"
+        "flag": "https://flagcdn.com/ao.svg"
     },
     {
         "name": "Malaisie",
@@ -926,7 +926,7 @@
             "English",
             "Malay"
         ],
-        "flag": "https://flagcdn.com/w320/my.png"
+        "flag": "https://flagcdn.com/my.svg"
     },
     {
         "name": "Suisse",
@@ -944,7 +944,7 @@
             "Italian",
             "Romansh"
         ],
-        "flag": "https://flagcdn.com/w320/ch.png"
+        "flag": "https://flagcdn.com/ch.svg"
     },
     {
         "name": "Tha\u00eflande",
@@ -959,7 +959,7 @@
         "languages": [
             "Thai"
         ],
-        "flag": "https://flagcdn.com/w320/th.png"
+        "flag": "https://flagcdn.com/th.svg"
     },
     {
         "name": "R\u00e9publique dominicaine",
@@ -974,7 +974,7 @@
         "languages": [
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/do.png"
+        "flag": "https://flagcdn.com/do.svg"
     },
     {
         "name": "Ouzb\u00e9kistan",
@@ -990,7 +990,7 @@
             "Russian",
             "Uzbek"
         ],
-        "flag": "https://flagcdn.com/w320/uz.png"
+        "flag": "https://flagcdn.com/uz.svg"
     },
     {
         "name": "Tchad",
@@ -1006,7 +1006,7 @@
             "Arabic",
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/td.png"
+        "flag": "https://flagcdn.com/td.svg"
     },
     {
         "name": "\u00celes Cocos",
@@ -1021,7 +1021,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/cc.png"
+        "flag": "https://flagcdn.com/cc.svg"
     },
     {
         "name": "Guin\u00e9e",
@@ -1036,7 +1036,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/gn.png"
+        "flag": "https://flagcdn.com/gn.svg"
     },
     {
         "name": "\u00celes Turques-et-Ca\u00efques",
@@ -1051,7 +1051,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/tc.png"
+        "flag": "https://flagcdn.com/tc.svg"
     },
     {
         "name": "Porto Rico",
@@ -1067,7 +1067,7 @@
             "English",
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/pr.png"
+        "flag": "https://flagcdn.com/pr.svg"
     },
     {
         "name": "Bhoutan",
@@ -1082,7 +1082,7 @@
         "languages": [
             "Dzongkha"
         ],
-        "flag": "https://flagcdn.com/w320/bt.png"
+        "flag": "https://flagcdn.com/bt.svg"
     },
     {
         "name": "\u00celes Ca\u00efmans",
@@ -1097,7 +1097,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/ky.png"
+        "flag": "https://flagcdn.com/ky.svg"
     },
     {
         "name": "\u00celes Marshall",
@@ -1113,7 +1113,7 @@
             "English",
             "Marshallese"
         ],
-        "flag": "https://flagcdn.com/w320/mh.png"
+        "flag": "https://flagcdn.com/mh.svg"
     },
     {
         "name": "Anguilla",
@@ -1128,7 +1128,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/ai.png"
+        "flag": "https://flagcdn.com/ai.svg"
     },
     {
         "name": "Mauritanie",
@@ -1143,7 +1143,7 @@
         "languages": [
             "Arabic"
         ],
-        "flag": "https://flagcdn.com/w320/mr.png"
+        "flag": "https://flagcdn.com/mr.svg"
     },
     {
         "name": "Norv\u00e8ge",
@@ -1160,7 +1160,7 @@
             "Norwegian Bokm\u00e5l",
             "Sami"
         ],
-        "flag": "https://flagcdn.com/w320/no.png"
+        "flag": "https://flagcdn.com/no.svg"
     },
     {
         "name": "Martinique",
@@ -1175,7 +1175,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/mq.png"
+        "flag": "https://flagcdn.com/mq.svg"
     },
     {
         "name": "Isra\u00ebl",
@@ -1191,7 +1191,7 @@
             "Arabic",
             "Hebrew"
         ],
-        "flag": "https://flagcdn.com/w320/il.png"
+        "flag": "https://flagcdn.com/il.svg"
     },
     {
         "name": "Saint-Barth\u00e9lemy",
@@ -1206,7 +1206,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/bl.png"
+        "flag": "https://flagcdn.com/bl.svg"
     },
     {
         "name": "\u00c9quateur",
@@ -1221,7 +1221,7 @@
         "languages": [
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/ec.png"
+        "flag": "https://flagcdn.com/ec.svg"
     },
     {
         "name": "Grenade",
@@ -1236,7 +1236,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/gd.png"
+        "flag": "https://flagcdn.com/gd.svg"
     },
     {
         "name": "Croatie",
@@ -1251,7 +1251,7 @@
         "languages": [
             "Croatian"
         ],
-        "flag": "https://flagcdn.com/w320/hr.png"
+        "flag": "https://flagcdn.com/hr.svg"
     },
     {
         "name": "Brunei",
@@ -1266,7 +1266,7 @@
         "languages": [
             "Malay"
         ],
-        "flag": "https://flagcdn.com/w320/bn.png"
+        "flag": "https://flagcdn.com/bn.svg"
     },
     {
         "name": "Irak",
@@ -1283,7 +1283,7 @@
             "Aramaic",
             "Sorani"
         ],
-        "flag": "https://flagcdn.com/w320/iq.png"
+        "flag": "https://flagcdn.com/iq.svg"
     },
     {
         "name": "Japon",
@@ -1298,7 +1298,7 @@
         "languages": [
             "Japanese"
         ],
-        "flag": "https://flagcdn.com/w320/jp.png"
+        "flag": "https://flagcdn.com/jp.svg"
     },
     {
         "name": "Lesotho",
@@ -1314,7 +1314,7 @@
             "English",
             "Sotho"
         ],
-        "flag": "https://flagcdn.com/w320/ls.png"
+        "flag": "https://flagcdn.com/ls.svg"
     },
     {
         "name": "Tuvalu",
@@ -1330,7 +1330,7 @@
             "English",
             "Tuvaluan"
         ],
-        "flag": "https://flagcdn.com/w320/tv.png"
+        "flag": "https://flagcdn.com/tv.svg"
     },
     {
         "name": "\u00celes Heard-et-MacDonald",
@@ -1345,7 +1345,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/hm.png"
+        "flag": "https://flagcdn.com/hm.svg"
     },
     {
         "name": "Finlande",
@@ -1361,7 +1361,7 @@
             "Finnish",
             "Swedish"
         ],
-        "flag": "https://flagcdn.com/w320/fi.png"
+        "flag": "https://flagcdn.com/fi.svg"
     },
     {
         "name": "Soudan du Sud",
@@ -1376,7 +1376,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/ss.png"
+        "flag": "https://flagcdn.com/ss.svg"
     },
     {
         "name": "\u00celes mineures \u00e9loign\u00e9es des \u00c9tats-Unis",
@@ -1391,7 +1391,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/um.png"
+        "flag": "https://flagcdn.com/um.svg"
     },
     {
         "name": "Sainte-H\u00e9l\u00e8ne, Ascension et Tristan da Cunha",
@@ -1406,7 +1406,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/sh.png"
+        "flag": "https://flagcdn.com/sh.svg"
     },
     {
         "name": "Afghanistan",
@@ -1423,7 +1423,7 @@
             "Pashto",
             "Turkmen"
         ],
-        "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_the_Taliban.svg/320px-Flag_of_the_Taliban.svg.png"
+        "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_the_Taliban.svg"
     },
     {
         "name": "\u00celes Salomon",
@@ -1438,7 +1438,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/sb.png"
+        "flag": "https://flagcdn.com/sb.svg"
     },
     {
         "name": "Chine",
@@ -1453,7 +1453,7 @@
         "languages": [
             "Chinese"
         ],
-        "flag": "https://flagcdn.com/w320/cn.png"
+        "flag": "https://flagcdn.com/cn.svg"
     },
     {
         "name": "\u00c9rythr\u00e9e",
@@ -1470,7 +1470,7 @@
             "English",
             "Tigrinya"
         ],
-        "flag": "https://flagcdn.com/w320/er.png"
+        "flag": "https://flagcdn.com/er.svg"
     },
     {
         "name": "Russie",
@@ -1485,7 +1485,7 @@
         "languages": [
             "Russian"
         ],
-        "flag": "https://flagcdn.com/w320/ru.png"
+        "flag": "https://flagcdn.com/ru.svg"
     },
     {
         "name": "Andorre",
@@ -1500,7 +1500,7 @@
         "languages": [
             "Catalan"
         ],
-        "flag": "https://flagcdn.com/w320/ad.png"
+        "flag": "https://flagcdn.com/ad.svg"
     },
     {
         "name": "Arm\u00e9nie",
@@ -1515,7 +1515,7 @@
         "languages": [
             "Armenian"
         ],
-        "flag": "https://flagcdn.com/w320/am.png"
+        "flag": "https://flagcdn.com/am.svg"
     },
     {
         "name": "Autriche",
@@ -1530,7 +1530,7 @@
         "languages": [
             "German"
         ],
-        "flag": "https://flagcdn.com/w320/at.png"
+        "flag": "https://flagcdn.com/at.svg"
     },
     {
         "name": "Surinam",
@@ -1545,7 +1545,7 @@
         "languages": [
             "Dutch"
         ],
-        "flag": "https://flagcdn.com/w320/sr.png"
+        "flag": "https://flagcdn.com/sr.svg"
     },
     {
         "name": "Espagne",
@@ -1563,7 +1563,7 @@
             "Basque",
             "Galician"
         ],
-        "flag": "https://flagcdn.com/w320/es.png"
+        "flag": "https://flagcdn.com/es.svg"
     },
     {
         "name": "Tokelau",
@@ -1580,7 +1580,7 @@
             "Samoan",
             "Tokelauan"
         ],
-        "flag": "https://flagcdn.com/w320/tk.png"
+        "flag": "https://flagcdn.com/tk.svg"
     },
     {
         "name": "Bahamas",
@@ -1595,7 +1595,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/bs.png"
+        "flag": "https://flagcdn.com/bs.svg"
     },
     {
         "name": "Saint-Martin",
@@ -1612,7 +1612,7 @@
             "French",
             "Dutch"
         ],
-        "flag": "https://flagcdn.com/w320/sx.png"
+        "flag": "https://flagcdn.com/sx.svg"
     },
     {
         "name": "Belize",
@@ -1629,7 +1629,7 @@
             "English",
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/bz.png"
+        "flag": "https://flagcdn.com/bz.svg"
     },
     {
         "name": "Jersey",
@@ -1646,7 +1646,7 @@
             "French",
             "J\u00e8rriais"
         ],
-        "flag": "https://flagcdn.com/w320/je.png"
+        "flag": "https://flagcdn.com/je.svg"
     },
     {
         "name": "Su\u00e8de",
@@ -1661,7 +1661,7 @@
         "languages": [
             "Swedish"
         ],
-        "flag": "https://flagcdn.com/w320/se.png"
+        "flag": "https://flagcdn.com/se.svg"
     },
     {
         "name": "Botswana",
@@ -1677,7 +1677,7 @@
             "English",
             "Tswana"
         ],
-        "flag": "https://flagcdn.com/w320/bw.png"
+        "flag": "https://flagcdn.com/bw.svg"
     },
     {
         "name": "\u00cele de Man",
@@ -1693,7 +1693,7 @@
             "English",
             "Manx"
         ],
-        "flag": "https://flagcdn.com/w320/im.png"
+        "flag": "https://flagcdn.com/im.svg"
     },
     {
         "name": "\u00c9mirats arabes unis",
@@ -1708,7 +1708,7 @@
         "languages": [
             "Arabic"
         ],
-        "flag": "https://flagcdn.com/w320/ae.png"
+        "flag": "https://flagcdn.com/ae.svg"
     },
     {
         "name": "Iran",
@@ -1723,7 +1723,7 @@
         "languages": [
             "Persian (Farsi)"
         ],
-        "flag": "https://flagcdn.com/w320/ir.png"
+        "flag": "https://flagcdn.com/ir.svg"
     },
     {
         "name": "Gabon",
@@ -1738,7 +1738,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/ga.png"
+        "flag": "https://flagcdn.com/ga.svg"
     },
     {
         "name": "Saint-Christophe-et-Ni\u00e9v\u00e8s",
@@ -1753,7 +1753,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/kn.png"
+        "flag": "https://flagcdn.com/kn.svg"
     },
     {
         "name": "Guin\u00e9e \u00e9quatoriale",
@@ -1770,7 +1770,7 @@
             "Portuguese",
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/gq.png"
+        "flag": "https://flagcdn.com/gq.svg"
     },
     {
         "name": "S\u00e3o Tom\u00e9 et Pr\u00edncipe",
@@ -1785,7 +1785,7 @@
         "languages": [
             "Portuguese"
         ],
-        "flag": "https://flagcdn.com/w320/st.png"
+        "flag": "https://flagcdn.com/st.svg"
     },
     {
         "name": "Groenland",
@@ -1800,7 +1800,7 @@
         "languages": [
             "Greenlandic"
         ],
-        "flag": "https://flagcdn.com/w320/gl.png"
+        "flag": "https://flagcdn.com/gl.svg"
     },
     {
         "name": "Bangladesh",
@@ -1815,7 +1815,7 @@
         "languages": [
             "Bengali"
         ],
-        "flag": "https://flagcdn.com/w320/bd.png"
+        "flag": "https://flagcdn.com/bd.svg"
     },
     {
         "name": "Roumanie",
@@ -1830,7 +1830,7 @@
         "languages": [
             "Romanian"
         ],
-        "flag": "https://flagcdn.com/w320/ro.png"
+        "flag": "https://flagcdn.com/ro.svg"
     },
     {
         "name": "Territoire britannique de l'oc\u00e9an Indien",
@@ -1845,7 +1845,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/io.png"
+        "flag": "https://flagcdn.com/io.svg"
     },
     {
         "name": "Soudan",
@@ -1861,7 +1861,7 @@
             "Arabic",
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/sd.png"
+        "flag": "https://flagcdn.com/sd.svg"
     },
     {
         "name": "Bosnie-Herz\u00e9govine",
@@ -1878,7 +1878,7 @@
             "Croatian",
             "Serbian"
         ],
-        "flag": "https://flagcdn.com/w320/ba.png"
+        "flag": "https://flagcdn.com/ba.svg"
     },
     {
         "name": "Malte",
@@ -1894,7 +1894,7 @@
             "English",
             "Maltese"
         ],
-        "flag": "https://flagcdn.com/w320/mt.png"
+        "flag": "https://flagcdn.com/mt.svg"
     },
     {
         "name": "Seychelles",
@@ -1911,7 +1911,7 @@
             "English",
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/sc.png"
+        "flag": "https://flagcdn.com/sc.svg"
     },
     {
         "name": "Sri Lanka",
@@ -1927,7 +1927,7 @@
             "Sinhala",
             "Tamil"
         ],
-        "flag": "https://flagcdn.com/w320/lk.png"
+        "flag": "https://flagcdn.com/lk.svg"
     },
     {
         "name": "Mexique",
@@ -1942,7 +1942,7 @@
         "languages": [
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/mx.png"
+        "flag": "https://flagcdn.com/mx.svg"
     },
     {
         "name": "Y\u00e9men",
@@ -1957,7 +1957,7 @@
         "languages": [
             "Arabic"
         ],
-        "flag": "https://flagcdn.com/w320/ye.png"
+        "flag": "https://flagcdn.com/ye.svg"
     },
     {
         "name": "\u00celes Vierges britanniques",
@@ -1972,7 +1972,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/vg.png"
+        "flag": "https://flagcdn.com/vg.svg"
     },
     {
         "name": "Pays-Bas",
@@ -1987,7 +1987,7 @@
         "languages": [
             "Dutch"
         ],
-        "flag": "https://flagcdn.com/w320/nl.png"
+        "flag": "https://flagcdn.com/nl.svg"
     },
     {
         "name": "Paraguay",
@@ -2003,7 +2003,7 @@
             "Guaran\u00ed",
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/py.png"
+        "flag": "https://flagcdn.com/py.svg"
     },
     {
         "name": "Royaume-Uni",
@@ -2018,7 +2018,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/gb.png"
+        "flag": "https://flagcdn.com/gb.svg"
     },
     {
         "name": "Venezuela",
@@ -2033,7 +2033,7 @@
         "languages": [
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/ve.png"
+        "flag": "https://flagcdn.com/ve.svg"
     },
     {
         "name": "\u00cele Bouvet",
@@ -2048,7 +2048,7 @@
         "languages": [
             "Norwegian"
         ],
-        "flag": "https://flagcdn.com/w320/bv.png"
+        "flag": "https://flagcdn.com/bv.svg"
     },
     {
         "name": "Ukraine",
@@ -2063,7 +2063,7 @@
         "languages": [
             "Ukrainian"
         ],
-        "flag": "https://flagcdn.com/w320/ua.png"
+        "flag": "https://flagcdn.com/ua.svg"
     },
     {
         "name": "Maroc",
@@ -2079,7 +2079,7 @@
             "Arabic",
             "Berber"
         ],
-        "flag": "https://flagcdn.com/w320/ma.png"
+        "flag": "https://flagcdn.com/ma.svg"
     },
     {
         "name": "Portugal",
@@ -2094,7 +2094,7 @@
         "languages": [
             "Portuguese"
         ],
-        "flag": "https://flagcdn.com/w320/pt.png"
+        "flag": "https://flagcdn.com/pt.svg"
     },
     {
         "name": "Pakistan",
@@ -2110,7 +2110,7 @@
             "English",
             "Urdu"
         ],
-        "flag": "https://flagcdn.com/w320/pk.png"
+        "flag": "https://flagcdn.com/pk.svg"
     },
     {
         "name": "Saint-Vincent-et-les-Grenadines",
@@ -2125,7 +2125,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/vc.png"
+        "flag": "https://flagcdn.com/vc.svg"
     },
     {
         "name": "Cor\u00e9e du Nord",
@@ -2140,7 +2140,7 @@
         "languages": [
             "Korean"
         ],
-        "flag": "https://flagcdn.com/w320/kp.png"
+        "flag": "https://flagcdn.com/kp.svg"
     },
     {
         "name": "Slov\u00e9nie",
@@ -2155,7 +2155,7 @@
         "languages": [
             "Slovene"
         ],
-        "flag": "https://flagcdn.com/w320/si.png"
+        "flag": "https://flagcdn.com/si.svg"
     },
     {
         "name": "C\u00f4te d'Ivoire",
@@ -2170,7 +2170,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/ci.png"
+        "flag": "https://flagcdn.com/ci.svg"
     },
     {
         "name": "Palestine",
@@ -2185,7 +2185,7 @@
         "languages": [
             "Arabic"
         ],
-        "flag": "https://flagcdn.com/w320/ps.png"
+        "flag": "https://flagcdn.com/ps.svg"
     },
     {
         "name": "Pays-Bas carib\u00e9ens",
@@ -2202,7 +2202,7 @@
             "Dutch",
             "Papiamento"
         ],
-        "flag": "https://flagcdn.com/w320/bq.png"
+        "flag": "https://flagcdn.com/bq.svg"
     },
     {
         "name": "Belgique",
@@ -2219,7 +2219,7 @@
             "French",
             "Dutch"
         ],
-        "flag": "https://flagcdn.com/w320/be.png"
+        "flag": "https://flagcdn.com/be.svg"
     },
     {
         "name": "Zimbabwe",
@@ -2248,7 +2248,7 @@
             "Xhosa",
             "Zimbabwean Sign Language"
         ],
-        "flag": "https://flagcdn.com/w320/zw.png"
+        "flag": "https://flagcdn.com/zw.svg"
     },
     {
         "name": "Tanzanie",
@@ -2264,7 +2264,7 @@
             "English",
             "Swahili"
         ],
-        "flag": "https://flagcdn.com/w320/tz.png"
+        "flag": "https://flagcdn.com/tz.svg"
     },
     {
         "name": "Togo",
@@ -2279,7 +2279,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/tg.png"
+        "flag": "https://flagcdn.com/tg.svg"
     },
     {
         "name": "\u00celes Cook",
@@ -2295,7 +2295,7 @@
             "English",
             "Cook Islands M\u0101ori"
         ],
-        "flag": "https://flagcdn.com/w320/ck.png"
+        "flag": "https://flagcdn.com/ck.svg"
     },
     {
         "name": "Guadeloupe",
@@ -2310,7 +2310,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/gp.png"
+        "flag": "https://flagcdn.com/gp.svg"
     },
     {
         "name": "Nouvelle-Cal\u00e9donie",
@@ -2325,7 +2325,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/nc.png"
+        "flag": "https://flagcdn.com/nc.svg"
     },
     {
         "name": "Sainte-Lucie",
@@ -2340,7 +2340,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/lc.png"
+        "flag": "https://flagcdn.com/lc.svg"
     },
     {
         "name": "G\u00e9orgie du Sud-et-les \u00celes Sandwich du Sud",
@@ -2355,7 +2355,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/gs.png"
+        "flag": "https://flagcdn.com/gs.svg"
     },
     {
         "name": "Pologne",
@@ -2370,7 +2370,7 @@
         "languages": [
             "Polish"
         ],
-        "flag": "https://flagcdn.com/w320/pl.png"
+        "flag": "https://flagcdn.com/pl.svg"
     },
     {
         "name": "Samoa",
@@ -2386,7 +2386,7 @@
             "English",
             "Samoan"
         ],
-        "flag": "https://flagcdn.com/w320/ws.png"
+        "flag": "https://flagcdn.com/ws.svg"
     },
     {
         "name": "Tch\u00e9quie",
@@ -2402,7 +2402,7 @@
             "Czech",
             "Slovak"
         ],
-        "flag": "https://flagcdn.com/w320/cz.png"
+        "flag": "https://flagcdn.com/cz.svg"
     },
     {
         "name": "Indon\u00e9sie",
@@ -2417,7 +2417,7 @@
         "languages": [
             "Indonesian"
         ],
-        "flag": "https://flagcdn.com/w320/id.png"
+        "flag": "https://flagcdn.com/id.svg"
     },
     {
         "name": "Bolivie",
@@ -2435,7 +2435,7 @@
             "Quechua",
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/bo.png"
+        "flag": "https://flagcdn.com/bo.svg"
     },
     {
         "name": "Colombie",
@@ -2450,7 +2450,7 @@
         "languages": [
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/co.png"
+        "flag": "https://flagcdn.com/co.svg"
     },
     {
         "name": "Honduras",
@@ -2465,7 +2465,7 @@
         "languages": [
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/hn.png"
+        "flag": "https://flagcdn.com/hn.svg"
     },
     {
         "name": "Danemark",
@@ -2480,7 +2480,7 @@
         "languages": [
             "Danish"
         ],
-        "flag": "https://flagcdn.com/w320/dk.png"
+        "flag": "https://flagcdn.com/dk.svg"
     },
     {
         "name": "R\u00e9publique centrafricaine",
@@ -2496,7 +2496,7 @@
             "French",
             "Sango"
         ],
-        "flag": "https://flagcdn.com/w320/cf.png"
+        "flag": "https://flagcdn.com/cf.svg"
     },
     {
         "name": "Libye",
@@ -2511,7 +2511,7 @@
         "languages": [
             "Arabic"
         ],
-        "flag": "https://flagcdn.com/w320/ly.png"
+        "flag": "https://flagcdn.com/ly.svg"
     },
     {
         "name": "Guin\u00e9e-Bissau",
@@ -2527,7 +2527,7 @@
             "Portuguese",
             "Upper Guinea Creole"
         ],
-        "flag": "https://flagcdn.com/w320/gw.png"
+        "flag": "https://flagcdn.com/gw.svg"
     },
     {
         "name": "Mongolie",
@@ -2542,7 +2542,7 @@
         "languages": [
             "Mongolian"
         ],
-        "flag": "https://flagcdn.com/w320/mn.png"
+        "flag": "https://flagcdn.com/mn.svg"
     },
     {
         "name": "RD Congo",
@@ -2561,7 +2561,7 @@
             "Tshiluba",
             "Swahili"
         ],
-        "flag": "https://flagcdn.com/w320/cd.png"
+        "flag": "https://flagcdn.com/cd.svg"
     },
     {
         "name": "\u00celes Malouines",
@@ -2576,7 +2576,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/fk.png"
+        "flag": "https://flagcdn.com/fk.svg"
     },
     {
         "name": "Nauru",
@@ -2592,7 +2592,7 @@
             "English",
             "Nauru"
         ],
-        "flag": "https://flagcdn.com/w320/nr.png"
+        "flag": "https://flagcdn.com/nr.svg"
     },
     {
         "name": "Syrie",
@@ -2607,7 +2607,7 @@
         "languages": [
             "Arabic"
         ],
-        "flag": "https://flagcdn.com/w320/sy.png"
+        "flag": "https://flagcdn.com/sy.svg"
     },
     {
         "name": "Mont\u00e9n\u00e9gro",
@@ -2622,7 +2622,7 @@
         "languages": [
             "Montenegrin"
         ],
-        "flag": "https://flagcdn.com/w320/me.png"
+        "flag": "https://flagcdn.com/me.svg"
     },
     {
         "name": "France",
@@ -2637,7 +2637,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/fr.png"
+        "flag": "https://flagcdn.com/fr.svg"
     },
     {
         "name": "Zambie",
@@ -2652,7 +2652,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/zm.png"
+        "flag": "https://flagcdn.com/zm.svg"
     },
     {
         "name": "Birmanie",
@@ -2667,7 +2667,7 @@
         "languages": [
             "Burmese"
         ],
-        "flag": "https://flagcdn.com/w320/mm.png"
+        "flag": "https://flagcdn.com/mm.svg"
     },
     {
         "name": "Saint-Pierre-et-Miquelon",
@@ -2682,7 +2682,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/pm.png"
+        "flag": "https://flagcdn.com/pm.svg"
     },
     {
         "name": "Costa Rica",
@@ -2697,7 +2697,7 @@
         "languages": [
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/cr.png"
+        "flag": "https://flagcdn.com/cr.svg"
     },
     {
         "name": "Somalie",
@@ -2713,7 +2713,7 @@
             "Arabic",
             "Somali"
         ],
-        "flag": "https://flagcdn.com/w320/so.png"
+        "flag": "https://flagcdn.com/so.svg"
     },
     {
         "name": "Irlande",
@@ -2729,7 +2729,7 @@
             "English",
             "Irish"
         ],
-        "flag": "https://flagcdn.com/w320/ie.png"
+        "flag": "https://flagcdn.com/ie.svg"
     },
     {
         "name": "Polyn\u00e9sie fran\u00e7aise",
@@ -2744,7 +2744,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/pf.png"
+        "flag": "https://flagcdn.com/pf.svg"
     },
     {
         "name": "\u00celes Pitcairn",
@@ -2759,7 +2759,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/pn.png"
+        "flag": "https://flagcdn.com/pn.svg"
     },
     {
         "name": "Hongrie",
@@ -2774,7 +2774,7 @@
         "languages": [
             "Hungarian"
         ],
-        "flag": "https://flagcdn.com/w320/hu.png"
+        "flag": "https://flagcdn.com/hu.svg"
     },
     {
         "name": "Turquie",
@@ -2789,7 +2789,7 @@
         "languages": [
             "Turkish"
         ],
-        "flag": "https://flagcdn.com/w320/tr.png"
+        "flag": "https://flagcdn.com/tr.svg"
     },
     {
         "name": "Oman",
@@ -2804,7 +2804,7 @@
         "languages": [
             "Arabic"
         ],
-        "flag": "https://flagcdn.com/w320/om.png"
+        "flag": "https://flagcdn.com/om.svg"
     },
     {
         "name": "Guam",
@@ -2821,7 +2821,7 @@
             "English",
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/gu.png"
+        "flag": "https://flagcdn.com/gu.svg"
     },
     {
         "name": "N\u00e9pal",
@@ -2836,7 +2836,7 @@
         "languages": [
             "Nepali"
         ],
-        "flag": "https://flagcdn.com/w320/np.png"
+        "flag": "https://flagcdn.com/np.svg"
     },
     {
         "name": "Liechtenstein",
@@ -2851,7 +2851,7 @@
         "languages": [
             "German"
         ],
-        "flag": "https://flagcdn.com/w320/li.png"
+        "flag": "https://flagcdn.com/li.svg"
     },
     {
         "name": "Madagascar",
@@ -2867,7 +2867,7 @@
             "French",
             "Malagasy"
         ],
-        "flag": "https://flagcdn.com/w320/mg.png"
+        "flag": "https://flagcdn.com/mg.svg"
     },
     {
         "name": "Kazakhstan",
@@ -2883,7 +2883,7 @@
             "Kazakh",
             "Russian"
         ],
-        "flag": "https://flagcdn.com/w320/kz.png"
+        "flag": "https://flagcdn.com/kz.svg"
     },
     {
         "name": "Djibouti",
@@ -2899,7 +2899,7 @@
             "Arabic",
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/dj.png"
+        "flag": "https://flagcdn.com/dj.svg"
     },
     {
         "name": "Gibraltar",
@@ -2914,7 +2914,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/gi.png"
+        "flag": "https://flagcdn.com/gi.svg"
     },
     {
         "name": "Guernesey",
@@ -2931,7 +2931,7 @@
             "French",
             "Guern\u00e9siais"
         ],
-        "flag": "https://flagcdn.com/w320/gg.png"
+        "flag": "https://flagcdn.com/gg.svg"
     },
     {
         "name": "Namibie",
@@ -2954,7 +2954,7 @@
             "Ndonga",
             "Tswana"
         ],
-        "flag": "https://flagcdn.com/w320/na.png"
+        "flag": "https://flagcdn.com/na.svg"
     },
     {
         "name": "R\u00e9publique du Congo",
@@ -2971,7 +2971,7 @@
             "Kikongo",
             "Lingala"
         ],
-        "flag": "https://flagcdn.com/w320/cg.png"
+        "flag": "https://flagcdn.com/cg.svg"
     },
     {
         "name": "Allemagne",
@@ -2986,7 +2986,7 @@
         "languages": [
             "German"
         ],
-        "flag": "https://flagcdn.com/w320/de.png"
+        "flag": "https://flagcdn.com/de.svg"
     },
     {
         "name": "Cit\u00e9 du Vatican",
@@ -3002,7 +3002,7 @@
             "Italian",
             "Latin"
         ],
-        "flag": "https://flagcdn.com/w320/va.png"
+        "flag": "https://flagcdn.com/va.svg"
     },
     {
         "name": "Terres australes et antarctiques fran\u00e7aises",
@@ -3017,7 +3017,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/tf.png"
+        "flag": "https://flagcdn.com/tf.svg"
     },
     {
         "name": "Albanie",
@@ -3032,7 +3032,7 @@
         "languages": [
             "Albanian"
         ],
-        "flag": "https://flagcdn.com/w320/al.png"
+        "flag": "https://flagcdn.com/al.svg"
     },
     {
         "name": "Alg\u00e9rie",
@@ -3047,7 +3047,7 @@
         "languages": [
             "Arabic"
         ],
-        "flag": "https://flagcdn.com/w320/dz.png"
+        "flag": "https://flagcdn.com/dz.svg"
     },
     {
         "name": "Mayotte",
@@ -3062,7 +3062,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/yt.png"
+        "flag": "https://flagcdn.com/yt.svg"
     },
     {
         "name": "Ha\u00efti",
@@ -3078,7 +3078,7 @@
             "French",
             "Haitian Creole"
         ],
-        "flag": "https://flagcdn.com/w320/ht.png"
+        "flag": "https://flagcdn.com/ht.svg"
     },
     {
         "name": "Svalbard et Jan Mayen",
@@ -3093,7 +3093,7 @@
         "languages": [
             "Norwegian"
         ],
-        "flag": "https://flagcdn.com/w320/sj.png"
+        "flag": "https://flagcdn.com/sj.svg"
     },
     {
         "name": "Tonga",
@@ -3109,7 +3109,7 @@
             "English",
             "Tongan"
         ],
-        "flag": "https://flagcdn.com/w320/to.png"
+        "flag": "https://flagcdn.com/to.svg"
     },
     {
         "name": "Hong Kong",
@@ -3125,7 +3125,7 @@
             "English",
             "Chinese"
         ],
-        "flag": "https://flagcdn.com/w320/hk.png"
+        "flag": "https://flagcdn.com/hk.svg"
     },
     {
         "name": "Singapour",
@@ -3143,7 +3143,7 @@
             "Malay",
             "Tamil"
         ],
-        "flag": "https://flagcdn.com/w320/sg.png"
+        "flag": "https://flagcdn.com/sg.svg"
     },
     {
         "name": "Antigua-et-Barbuda",
@@ -3158,7 +3158,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/ag.png"
+        "flag": "https://flagcdn.com/ag.svg"
     },
     {
         "name": "Arabie Saoudite",
@@ -3173,7 +3173,7 @@
         "languages": [
             "Arabic"
         ],
-        "flag": "https://flagcdn.com/w320/sa.png"
+        "flag": "https://flagcdn.com/sa.svg"
     },
     {
         "name": "Cuba",
@@ -3188,7 +3188,7 @@
         "languages": [
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/cu.png"
+        "flag": "https://flagcdn.com/cu.svg"
     },
     {
         "name": "Panama",
@@ -3203,7 +3203,7 @@
         "languages": [
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/pa.png"
+        "flag": "https://flagcdn.com/pa.svg"
     },
     {
         "name": "Liberia",
@@ -3218,7 +3218,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/lr.png"
+        "flag": "https://flagcdn.com/lr.svg"
     },
     {
         "name": "Azerba\u00efdjan",
@@ -3233,7 +3233,7 @@
         "languages": [
             "Azerbaijani"
         ],
-        "flag": "https://flagcdn.com/w320/az.png"
+        "flag": "https://flagcdn.com/az.svg"
     },
     {
         "name": "Lettonie",
@@ -3248,7 +3248,7 @@
         "languages": [
             "Latvian"
         ],
-        "flag": "https://flagcdn.com/w320/lv.png"
+        "flag": "https://flagcdn.com/lv.svg"
     },
     {
         "name": "Antarctique",
@@ -3261,7 +3261,7 @@
         "subContinent": "",
         "timezone": "UTC-03:00",
         "languages": [],
-        "flag": "https://flagcdn.com/w320/aq.png"
+        "flag": "https://flagcdn.com/aq.svg"
     },
     {
         "name": "Kiribati",
@@ -3277,7 +3277,7 @@
             "English",
             "Gilbertese"
         ],
-        "flag": "https://flagcdn.com/w320/ki.png"
+        "flag": "https://flagcdn.com/ki.svg"
     },
     {
         "name": "\u00c9thiopie",
@@ -3292,7 +3292,7 @@
         "languages": [
             "Amharic"
         ],
-        "flag": "https://flagcdn.com/w320/et.png"
+        "flag": "https://flagcdn.com/et.svg"
     },
     {
         "name": "Niger",
@@ -3307,7 +3307,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/ne.png"
+        "flag": "https://flagcdn.com/ne.svg"
     },
     {
         "name": "Trinit\u00e9-et-Tobago",
@@ -3322,7 +3322,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/tt.png"
+        "flag": "https://flagcdn.com/tt.svg"
     },
     {
         "name": "Sierra Leone",
@@ -3337,7 +3337,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/sl.png"
+        "flag": "https://flagcdn.com/sl.svg"
     },
     {
         "name": "Mozambique",
@@ -3352,7 +3352,7 @@
         "languages": [
             "Portuguese"
         ],
-        "flag": "https://flagcdn.com/w320/mz.png"
+        "flag": "https://flagcdn.com/mz.svg"
     },
     {
         "name": "Palaos (Palau)",
@@ -3368,7 +3368,7 @@
             "English",
             "Palauan"
         ],
-        "flag": "https://flagcdn.com/w320/pw.png"
+        "flag": "https://flagcdn.com/pw.svg"
     },
     {
         "name": "Fidji",
@@ -3385,7 +3385,7 @@
             "Fijian",
             "Fiji Hindi"
         ],
-        "flag": "https://flagcdn.com/w320/fj.png"
+        "flag": "https://flagcdn.com/fj.svg"
     },
     {
         "name": "La R\u00e9union",
@@ -3400,7 +3400,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/re.png"
+        "flag": "https://flagcdn.com/re.svg"
     },
     {
         "name": "\u00cele Norfolk",
@@ -3416,7 +3416,7 @@
             "English",
             "Norfuk"
         ],
-        "flag": "https://flagcdn.com/w320/nf.png"
+        "flag": "https://flagcdn.com/nf.svg"
     },
     {
         "name": "Turkm\u00e9nistan",
@@ -3432,7 +3432,7 @@
             "Russian",
             "Turkmen"
         ],
-        "flag": "https://flagcdn.com/w320/tm.png"
+        "flag": "https://flagcdn.com/tm.svg"
     },
     {
         "name": "Tadjikistan",
@@ -3448,7 +3448,7 @@
             "Russian",
             "Tajik"
         ],
-        "flag": "https://flagcdn.com/w320/tj.png"
+        "flag": "https://flagcdn.com/tj.svg"
     },
     {
         "name": "Liban",
@@ -3464,7 +3464,7 @@
             "Arabic",
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/lb.png"
+        "flag": "https://flagcdn.com/lb.svg"
     },
     {
         "name": "Nig\u00e9ria",
@@ -3479,7 +3479,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/ng.png"
+        "flag": "https://flagcdn.com/ng.svg"
     },
     {
         "name": "\u00c9tats-Unis",
@@ -3494,7 +3494,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/us.png"
+        "flag": "https://flagcdn.com/us.svg"
     },
     {
         "name": "Argentine",
@@ -3510,7 +3510,7 @@
             "Guaran\u00ed",
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/ar.png"
+        "flag": "https://flagcdn.com/ar.svg"
     },
     {
         "name": "Burkina Faso",
@@ -3525,7 +3525,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/bf.png"
+        "flag": "https://flagcdn.com/bf.svg"
     },
     {
         "name": "\u00cele Christmas",
@@ -3540,7 +3540,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/cx.png"
+        "flag": "https://flagcdn.com/cx.svg"
     },
     {
         "name": "Bermudes",
@@ -3555,7 +3555,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/bm.png"
+        "flag": "https://flagcdn.com/bm.svg"
     },
     {
         "name": "Nicaragua",
@@ -3570,7 +3570,7 @@
         "languages": [
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/ni.png"
+        "flag": "https://flagcdn.com/ni.svg"
     },
     {
         "name": "Swaziland",
@@ -3586,7 +3586,7 @@
             "English",
             "Swazi"
         ],
-        "flag": "https://flagcdn.com/w320/sz.png"
+        "flag": "https://flagcdn.com/sz.svg"
     },
     {
         "name": "Bahre\u00efn",
@@ -3601,7 +3601,7 @@
         "languages": [
             "Arabic"
         ],
-        "flag": "https://flagcdn.com/w320/bh.png"
+        "flag": "https://flagcdn.com/bh.svg"
     },
     {
         "name": "Kenya",
@@ -3617,7 +3617,7 @@
             "English",
             "Swahili"
         ],
-        "flag": "https://flagcdn.com/w320/ke.png"
+        "flag": "https://flagcdn.com/ke.svg"
     },
     {
         "name": "Serbie",
@@ -3632,7 +3632,7 @@
         "languages": [
             "Serbian"
         ],
-        "flag": "https://flagcdn.com/w320/rs.png"
+        "flag": "https://flagcdn.com/rs.svg"
     },
     {
         "name": "Timor oriental",
@@ -3648,7 +3648,7 @@
             "Portuguese",
             "Tetum"
         ],
-        "flag": "https://flagcdn.com/w320/tl.png"
+        "flag": "https://flagcdn.com/tl.svg"
     },
     {
         "name": "Dominique",
@@ -3663,7 +3663,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/dm.png"
+        "flag": "https://flagcdn.com/dm.svg"
     },
     {
         "name": "\u00celes Mariannes du Nord",
@@ -3680,7 +3680,7 @@
             "Chamorro",
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/mp.png"
+        "flag": "https://flagcdn.com/mp.svg"
     },
     {
         "name": "Philippines",
@@ -3696,7 +3696,7 @@
             "English",
             "Filipino"
         ],
-        "flag": "https://flagcdn.com/w320/ph.png"
+        "flag": "https://flagcdn.com/ph.svg"
     },
     {
         "name": "Kosovo",
@@ -3712,7 +3712,7 @@
             "Albanian",
             "Serbian"
         ],
-        "flag": "https://flagcdn.com/w320/xk.png"
+        "flag": "https://flagcdn.com/xk.svg"
     },
     {
         "name": "Kowe\u00eft",
@@ -3727,7 +3727,7 @@
         "languages": [
             "Arabic"
         ],
-        "flag": "https://flagcdn.com/w320/kw.png"
+        "flag": "https://flagcdn.com/kw.svg"
     },
     {
         "name": "Ta\u00efwan",
@@ -3742,7 +3742,7 @@
         "languages": [
             "Chinese"
         ],
-        "flag": "https://flagcdn.com/w320/tw.png"
+        "flag": "https://flagcdn.com/tw.svg"
     },
     {
         "name": "Burundi",
@@ -3758,7 +3758,7 @@
             "French",
             "Kirundi"
         ],
-        "flag": "https://flagcdn.com/w320/bi.png"
+        "flag": "https://flagcdn.com/bi.svg"
     },
     {
         "name": "Samoa am\u00e9ricaines",
@@ -3774,7 +3774,7 @@
             "English",
             "Samoan"
         ],
-        "flag": "https://flagcdn.com/w320/as.png"
+        "flag": "https://flagcdn.com/as.svg"
     },
     {
         "name": "Bulgarie",
@@ -3789,7 +3789,7 @@
         "languages": [
             "Bulgarian"
         ],
-        "flag": "https://flagcdn.com/w320/bg.png"
+        "flag": "https://flagcdn.com/bg.svg"
     },
     {
         "name": "Afrique du Sud",
@@ -3814,7 +3814,7 @@
             "Xhosa",
             "Zulu"
         ],
-        "flag": "https://flagcdn.com/w320/za.png"
+        "flag": "https://flagcdn.com/za.svg"
     },
     {
         "name": "P\u00e9rou",
@@ -3831,7 +3831,7 @@
             "Quechua",
             "Spanish"
         ],
-        "flag": "https://flagcdn.com/w320/pe.png"
+        "flag": "https://flagcdn.com/pe.svg"
     },
     {
         "name": "Aruba",
@@ -3847,7 +3847,7 @@
             "Dutch",
             "Papiamento"
         ],
-        "flag": "https://flagcdn.com/w320/aw.png"
+        "flag": "https://flagcdn.com/aw.svg"
     },
     {
         "name": "Ghana",
@@ -3862,7 +3862,7 @@
         "languages": [
             "English"
         ],
-        "flag": "https://flagcdn.com/w320/gh.png"
+        "flag": "https://flagcdn.com/gh.svg"
     },
     {
         "name": "Saint-Martin",
@@ -3877,7 +3877,7 @@
         "languages": [
             "French"
         ],
-        "flag": "https://flagcdn.com/w320/mf.png"
+        "flag": "https://flagcdn.com/mf.svg"
     },
     {
         "name": "Inde",
@@ -3894,7 +3894,7 @@
             "Hindi",
             "Tamil"
         ],
-        "flag": "https://flagcdn.com/w320/in.png"
+        "flag": "https://flagcdn.com/in.svg"
     },
     {
         "name": "Ouganda",
@@ -3910,6 +3910,6 @@
             "English",
             "Swahili"
         ],
-        "flag": "https://flagcdn.com/w320/ug.png"
+        "flag": "https://flagcdn.com/ug.svg"
     }
 ]
