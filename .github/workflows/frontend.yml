@@ -1,4 +1,4 @@
-name: Frontend CI/CD
+name: Build Android App
 
 on:
   push:
@@ -13,22 +13,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '18'
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
 
-    - name: Install EAS CLI
-      run: npm install -g eas-cli
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./frontend  # Assurez-vous d'ajuster le chemin selon votre structure de projet
 
-    - name: Install dependencies
-      working-directory: ./frontend  # Change this to your frontend directory
-      run: npm install
+      - name: Build Android App
+        run: npm run build:android  # Assurez-vous d'ajuster la commande de build selon votre configuration
 
-    - name: Build Android APK
-      working-directory: ./frontend  # Change this to your frontend directory
-      run: |
-        eas build -p android --non-interactive
+      # Vous pouvez ajouter d'autres étapes ici, comme les tests unitaires, les vérifications de qualité, etc.
+
