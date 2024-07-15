@@ -31,4 +31,6 @@ jobs:
 
     - name: Start Expo
       working-directory: ./frontend
-      run: npx expo start -c
+      run: 
+        export CI=false
+        npx expo start -c
