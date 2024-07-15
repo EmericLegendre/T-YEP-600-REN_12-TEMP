@@ -1,5 +1,5 @@
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import { Stack, useRouter } from 'expo-router'
 import Colors from '../../constants/Colors'
 import { Ionicons } from '@expo/vector-icons'
@@ -9,6 +9,21 @@ import countriesData from '../../data/countries.json'
 const explore = () => {
 
   const router = useRouter();
+
+    const [searchTerm, setSearchTerm] = useState('');
+    const [filteredData, setFilteredData] = useState(countriesData);
+  
+    const handleSearch = (text) => {
+      setSearchTerm(text);
+      if (text) {
+        const filtered = countriesData.filter(country =>
+          country.name.toLowerCase().includes(text.toLowerCase())
+        );
+        setFilteredData(filtered);
+      } else {
+        setFilteredData(countriesData);
+      }
+    };
 
   return (
     <>
@@ -40,14 +55,18 @@ const explore = () => {
           size={18}
           style={{ marginRight: 5}}
           color={Colors.black} />
-          <TextInput placeholder='Search...' />
+          <TextInput 
+          placeholder='Search...' 
+          value={searchTerm}
+          onChangeText={handleSearch}
+          />
         </View>
         <TouchableOpacity onPress={() => {}} style={styles.filterBtn}>
           <Ionicons name="options" size={30} />
         </TouchableOpacity>
       </View>
 
-      <Listings listings={countriesData}/>
+      <Listings listings={filteredData}/>
 
     </View>
   </>

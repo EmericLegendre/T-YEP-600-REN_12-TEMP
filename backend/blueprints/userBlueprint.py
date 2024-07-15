@@ -24,46 +24,46 @@ def authentication():
         return jsonify({'error': 'Invalid username or password'}), 401
 
 
-# Create User -> JSON {email, password, firstName, lastName, country, city}
+# Create User -> JSON {email, password, first_name, last_name, country, city}
 @userBp.route('/add', methods=['POST'])
-def addUser():
+def add_user():
     data = request.get_json()
 
     email = data.get('email')
     password = data.get('password')
-    firstName = data.get('firstName')
-    lastName = data.get('lastName')
+    first_name = data.get('first_name')
+    last_name = data.get('last_name')
     country = data.get('country')
     city = data.get('city')
 
-    required_fields = ['email', 'password', 'firstName', 'lastName', 'country', 'city']
+    required_fields = ['email', 'password', 'first_name', 'last_name', 'country', 'city']
     if not all(data.get(field) for field in required_fields):
         return jsonify({'error': 'Missing required fields'}), 400
 
-    existingUser = User.query.filter(User.email == email).first()
-    if existingUser:
+    existing_user = User.query.filter(User.email == email).first()
+    if existing_user:
         return jsonify({'error': 'User with this email already exists'}), 400
 
-    newUser = User(
+    new_user = User(
         email=email,
         password=password,
-        firstName=firstName,
-        lastName=lastName,
+        firstName=first_name,
+        lastName=last_name,
         country=country,
         city=city
     )
 
-    db.session.add(newUser)
+    db.session.add(new_user)
     db.session.commit()
 
     return jsonify({'message': 'User created successfully',
-                    'user': {'id': newUser.id, 'email': newUser.email}}), 201
+                    'user': {'id': new_user.id, 'email': new_user.email}}), 201
 
 
 # Delete User -> userId in URL
 @userBp.route('/delete/<int:id>', methods=['DELETE'])
 @jwt_required()
-def deleteUser(id):
+def delete_user(id):
     try:
         country = User.query.get(id)
         if country is None:
@@ -77,12 +77,12 @@ def deleteUser(id):
         return jsonify({'error': str(e)}), 400
 
 
-# Update user infos -> JSON {optionals : email, password, firstName, lastName, country, city}
+# Update user infos -> JSON {optionals : email, password, first_name, last_name, country, city}
 @userBp.route('/update/<int:id>', methods=['PUT'])
 @jwt_required()
-def updateUser(id):
+def update_user(id):
     data = request.get_json()
-    updatable_fields = ['email', 'password', 'firstName', 'lastName', 'country', 'city']
+    updatable_fields = ['email', 'password', 'first_name', 'last_name', 'country', 'city']
 
     for field in data.keys():
         if field not in updatable_fields:
@@ -107,7 +107,7 @@ def updateUser(id):
 # Get User informations -> userId in URL
 @userBp.route('/get/<int:id>', methods=['GET'])
 @jwt_required()
-def getCountryById(id):
+def get_country_by_id(id):
     try:
         user = User.query.get(id)
         if user is None:
@@ -115,8 +115,8 @@ def getCountryById(id):
         return jsonify({
             'id': user.id,
             'email': user.email,
-            'firstName': user.firstName,
-            'lastName': user.lastName,
+            'first_name': user.first_name,
+            'last_name': user.last_name,
             'country': user.country,
             'city': user.city
 

@@ -7,4 +7,5 @@ Flask-Migrate
 cryptography
 werkzeug
 flask_jwt_extended
+requests
 flask-cors
