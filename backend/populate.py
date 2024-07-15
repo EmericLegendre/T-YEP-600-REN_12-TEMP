@@ -6,7 +6,7 @@ from sqlalchemy.exc import SQLAlchemyError
 from dotenv import load_dotenv
 from config.dbConfig import db
 from models.country import Country
-from models.countryInfos import CountryInfos
+from models.countryInfos import CountryInfos, CategoryEnum
 from models.state import State
 from models.city import City
 from models.stateInfos import StateInfos
@@ -41,7 +41,7 @@ def insert_countries_to_db(countries):
                 db.session.commit()
                 
                 for language in country_data.get('languages', []):
-                    existing_country_info = CountryInfos.query.filter_by(content=language, category='Language').first()
+                    existing_country_info = CountryInfos.query.filter_by(content=language, category=CategoryEnum.LANGUAGE).first()
                     if existing_country_info:
                         print(f"Language {language} for country {country_data['name']} already exists in the database.")
                         continue
@@ -49,7 +49,7 @@ def insert_countries_to_db(countries):
                     country_info = CountryInfos(
                         country_id=new_country.id,
                         content=language,
-                        category='Language'
+                        category=CategoryEnum.LANGUAGE
                     )
                     db.session.add(country_info)
                     db.session.commit()
