@@ -28,13 +28,15 @@ jobs:
         run: npm install -g expo-cli
 
       - name: Build JavaScript bundle
+        working-directory: ./frontend
         run: expo export --public-url http://localhost:8000
 
       - name: Start Expo server
+        working-directory: ./frontend
         run: |
           nohup expo start --non-interactive &
           echo $! > server.pid
-          
+
       - name: Stop Expo server
         run: |
           kill $(cat server.pid)
