@@ -11,7 +11,7 @@ stateBp = Blueprint('stateBlueprint', __name__)
 @jwt_required()
 def add_state():
     data = request.get_json()
-    required_fields = ['name', 'country_id', 'population', 'populationName', 'regionalCapital']
+    required_fields = ['name', 'country_id', 'population', 'population_name', 'regional_capital']
     
     # Check for missing fields
     for field in required_fields:
@@ -28,8 +28,8 @@ def add_state():
             name=data['name'],
             country_id=data['country_id'],
             population=data['population'],
-            populationName=data['populationName'],
-            regionalCapital=data['regionalCapital']
+            population_name=data['population_name'],
+            regional_capital=data['regional_capital']
         )
         db.session.add(new_state)
         db.session.commit()
@@ -48,8 +48,8 @@ def get_states():
             'name': state.name,
             'country_id': state.country_id,
             'population': state.population,
-            'populationName': state.populationName,
-            'regionalCapital': state.regionalCapital
+            'population_name': state.populationName,
+            'regional_capital': state.regionalCapital
         } for state in states]), 200
     except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400
@@ -65,8 +65,8 @@ def get_state_by_id(id):
             'name': state.name,
             'country_id': state.country_id,
             'population': state.population,
-            'populationName': state.populationName,
-            'regionalCapital': state.regionalCapital
+            'population_name': state.populationName,
+            'regional_capital': state.regionalCapital
         }), 200
     except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400
@@ -75,7 +75,7 @@ def get_state_by_id(id):
 @jwt_required()
 def update_state(id):
     data = request.get_json()
-    updatable_fields = ['name', 'country_id', 'population', 'populationName', 'regionalCapital']
+    updatable_fields = ['name', 'country_id', 'population', 'population_name', 'regional_capital']
     
     # Validate that all fields in the request are valid updatable fields
     for field in data.keys():
