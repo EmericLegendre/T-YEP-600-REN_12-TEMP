@@ -28,8 +28,5 @@ jobs:
     - name: expo start
       working-directory: ./frontend  # Change this to your frontend directory
       run: 
-        npm run start
+        expo build:android --non-interactive
       
-    - name: End Expo
-      working-directory: ./frontend
-      run: npm run end
