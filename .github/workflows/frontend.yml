@@ -27,4 +27,9 @@ jobs:
 
     - name: expo start
       working-directory: ./frontend  # Change this to your frontend directory
-      run: npm run start
+      run: 
+        npm run start
+      
+    - name: End Expo
+      working-directory: ./frontend
+      run: npm run end
