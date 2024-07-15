@@ -33,4 +33,4 @@ jobs:
 
       - name: Publish update
         working-directory: ./frontend
-        run: eas build --local
+        run: eas build -p android
