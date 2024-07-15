@@ -1,4 +1,5 @@
 name: Build App
+
 on:
   workflow_dispatch:
     inputs:
@@ -22,9 +23,16 @@ on:
         description: Whether to perform the submit step
         required: true
         default: false
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
   build:
-    runs-on: ${{ github.event.inputs.os }}
+    runs-on: ${{ github.event.inputs.os || 'ubuntu-latest' }}
     strategy:
       matrix:
         node: [18.x]
@@ -56,9 +64,9 @@ jobs:
         eas build --local \
           --non-interactive \
           --output=./app-build \
-          --platform=${{ github.event.inputs.platform }} \
-          --profile=${{ github.event.inputs.profile }}
+          --platform=${{ github.event.inputs.platform || 'android' }} \
+          --profile=${{ github.event.inputs.profile || 'development' }}
 
     - name: 🚢 Submit
       if: ${{ github.event.inputs.should_submit }}
-      run: eas submit -p ${{ github.event.inputs.platform }} --profile ${{ github.event.inputs.profile }} --path app-build
+      run: eas submit -p ${{ github.event.inputs.platform || 'android' }} --profile ${{ github.event.inputs.profile || 'development' }} --path app-build
