@@ -24,11 +24,10 @@ jobs:
     - name: Install Expo CLI
       run: npm install -g expo-cli
 
-    - name: Install dependencies and build
+    - name: Install dependencies
       working-directory: ./frontend
       run: |
         npm install
-        npx expo build:android 
 
     - name: Start Expo
       working-directory: ./frontend
