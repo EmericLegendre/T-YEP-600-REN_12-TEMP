@@ -107,6 +107,9 @@ def main():
 
     with open('statesData.json', 'w', encoding='utf-8') as f:
         json.dump(all_countries_states, f, indent=2, ensure_ascii=False)
+
+    with open('citiesData.json', 'w', encoding='utf-8') as f:
+        json.dump(all_cities, f, indent=2, ensure_ascii=False)
     
     
 
