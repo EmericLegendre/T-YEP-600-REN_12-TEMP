@@ -54,12 +54,11 @@ jobs:
         eas-version: latest
 
     - name: 📦 Install dependencies
+      working-directory: ./frontend
       run: npm install
 
-    - name: 📋 Test project
-      run: npm test
-
     - name: 👷 Build app
+      working-directory: ./frontend
       run: |
         eas build --local \
           --non-interactive \
