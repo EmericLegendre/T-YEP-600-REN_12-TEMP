@@ -21,12 +21,15 @@ jobs:
       with:
         node-version: '18'
 
+    - name: Install Expo CLI
+      run: npm install -g expo-cli
+
     - name: Install dependencies
       working-directory: ./frontend  # Change this to your frontend directory
       run: npm install
 
-    - name: expo start
+    - name: Build Android APK
       working-directory: ./frontend  # Change this to your frontend directory
-      run: 
+      run: |
+        npm run start  # Ensure your start script runs the Expo development server
         expo build:android --non-interactive
-      
