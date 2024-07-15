@@ -28,15 +28,15 @@ jobs:
         working-directory: ./frontend  # Change this to your frontend directory
         run: npm install
 
-      - name: Authenticate with EAS
-        working-directory: ./frontend  # Change this to your frontend directory
-        run: eas login --token ${{ secrets.EXPO_TOKEN }}
-
       - name: Run EAS Build for Android
         working-directory: ./frontend  # Change this to your frontend directory
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
         run: eas build --platform android --non-interactive
 
       # Optional: Uncomment this section if you need to verify iOS build
       # - name: Run EAS Build for iOS
       #   working-directory: ./frontend  # Change this to your frontend directory
+      #   env:
+      #     EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
       #   run: eas build --platform ios --non-interactive
