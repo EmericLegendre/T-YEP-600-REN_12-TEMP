@@ -25,6 +25,9 @@ jobs:
       working-directory: ./frontend  # Change this to your frontend directory
       run: npm install
 
-    - name: Build
+    - name: Verify Expo CLI installation
+      run: npx expo --version
+
+    - name: Start Expo
       working-directory: ./frontend  # Change this to your frontend directory
-      run: npm run build
+      run: npx expo start -c
