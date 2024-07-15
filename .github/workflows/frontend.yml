@@ -28,7 +28,7 @@ jobs:
       working-directory: ./frontend
       run: |
         npm install
-        npx expo build:web
+        npx expo build:android 
 
     - name: Start Expo
       working-directory: ./frontend
