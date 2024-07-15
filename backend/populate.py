@@ -29,13 +29,13 @@ def insert_countries_to_db(countries):
                 new_country = Country(
                     name=country_data['name'],
                     continent=country_data['continent'],
-                    sub_continent=country_data['subContinent'],
+                    subContinent=country_data['subContinent'],
                     currency=country_data['currency'],
                     capital=country_data['capital'],
                     population=country_data['population'],
-                    population_name=country_data['populationName'],
+                    populationName=country_data['populationName'],
                     timezone=country_data['timezone'],
-                    flag=country_data['flag']
+                    # flag=country_data['flag']
                 )
                 db.session.add(new_country)
                 db.session.commit()
@@ -78,9 +78,9 @@ def insert_states_to_db(states_data):
             try:
                 new_state = State(
                     name=region_data['name'],
-                    regional_capital=region_data.get('regionalCapital', ''),
+                    regionalCapital=region_data.get('regionalCapital', ''),
                     population=region_data['population'],
-                    population_name=region_data['populationName'],
+                    populationName=region_data['populationName'],
                     countryId=country.id
                 )
                 db.session.add(new_state)
@@ -124,8 +124,8 @@ def insert_cities_to_db(cities_data):
         new_city = City(
             name=city_name,
             population=population,
-            state_id=state.id,
-            country_id=country.id,
+            stateId=state.id,
+            countryId=country.id,
             population_name=population_name
         )
         try:
@@ -139,21 +139,21 @@ def insert_cities_to_db(cities_data):
     return f"{success_count} cities created successfully"
 
 def populate_countries_from_json():
-    with open('populate_db/countries_data.json', 'r') as json_file:
+    with open('populate_db/countriesData.json', 'r') as json_file:
         countries = json.load(json_file)
 
     response = insert_countries_to_db(countries)
     print(response)
 
 def populate_states_from_json():
-    with open('populate_db/countries_states.json', 'r') as json_file:
+    with open('populate_db/statesData.json', 'r') as json_file:
         states_data = json.load(json_file)
 
     result = insert_states_to_db(states_data)
     print(result)
 
 def populate_cities_from_json():
-    with open('populate_db/cities_data.json', 'r') as json_file:
+    with open('populate_db/citiesData.json', 'r') as json_file:
         cities_data = json.load(json_file)
 
     result = insert_cities_to_db(cities_data)
