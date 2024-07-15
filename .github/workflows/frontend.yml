@@ -1,4 +1,4 @@
-name: Build and Test React Native App with Expo
+name: Frontend CI/CD
 
 on:
   push:
@@ -13,36 +13,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14' # Use the Node.js version compatible with your project
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'
 
-      - name: Install dependencies
-        run: npm install
+    - name: Install EAS CLI
+      run: npm install -g eas-cli
 
-      - name: Set up Expo CLI
-        run: npm install -g expo-cli
+    - name: Install dependencies
+      working-directory: ./frontend  # Change this to your frontend directory
+      run: npm install
 
-      - name: Build JavaScript bundle
-        working-directory: ./frontend
-        run: expo export --public-url http://localhost:8000
-
-      - name: Start Expo server
-        working-directory: ./frontend
-        run: |
-          nohup expo start --non-interactive &
-          echo $! > server.pid
-
-      - name: Stop Expo server
-        run: |
-          kill $(cat server.pid)
-
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: build-artifacts
-          path: dist/ # Adjust this path based on where Expo outputs the build artifacts
+    - name: Build Android APK
+      working-directory: ./frontend  # Change this to your frontend directory
+      run: |
+        eas build --platform android --local
