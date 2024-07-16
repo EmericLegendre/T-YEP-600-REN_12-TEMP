@@ -6,6 +6,7 @@ import { Ionicons } from '@expo/vector-icons'
 import Listings from '../../components/Listings'
 // import countriesData from '../../data/countries.json'
 import axios from 'axios';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 const explore = () => {
@@ -19,17 +20,29 @@ const explore = () => {
   useEffect(() => {
     const fetchCountriesData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/country/get');
+
+        const token = await AsyncStorage.getItem('token');
+        console.log('Token:', token);
+
+        const config = {
+          headers: { Authorization: `Bearer ${token}` }
+        };
+
+        const response = await axios.get('http://localhost:5000/api/country/get', config);
         setCountriesData(response.data);
         setFilteredData(response.data);
-        console.log(countriesData);
       } catch (error) {
-        console.log(error);
+        if (error.response) {
+          console.log('Error Response:', error.response.data);
+        } else {
+          console.log('Error:', error.message);
+        }
       }
     };
 
     fetchCountriesData();
   }, []);
+
   
     const handleSearch = (text) => {
       setSearchTerm(text);
