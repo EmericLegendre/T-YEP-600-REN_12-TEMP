@@ -1,989 +1,6757 @@
 [
-    {
-        "name": "Lyon",
-        "population": 522969,
-        "state_name": "Auvergne-Rhône-Alpes",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Saint-Etienne",
-        "population": 176280,
-        "state_name": "Auvergne-Rhône-Alpes",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Grenoble",
-        "population": 158552,
-        "state_name": "Auvergne-Rhône-Alpes",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Clermont-Ferrand",
-        "population": 147865,
-        "state_name": "Auvergne-Rhône-Alpes",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Valence",
-        "population": 63864,
-        "state_name": "Auvergne-Rhône-Alpes",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Chambéry",
-        "population": 61640,
-        "state_name": "Auvergne-Rhône-Alpes",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Annecy",
-        "population": 49232,
-        "state_name": "Auvergne-Rhône-Alpes",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Bourg-en-Bresse",
-        "population": 45340,
-        "state_name": "Auvergne-Rhône-Alpes",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Aurillac",
-        "population": 34724,
-        "state_name": "Auvergne-Rhône-Alpes",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Moulins",
-        "population": 23095,
-        "state_name": "Auvergne-Rhône-Alpes",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Dijon",
-        "population": 158002,
-        "state_name": "Bourgogne-Franche-Comté",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Besançon",
-        "population": 128426,
-        "state_name": "Bourgogne-Franche-Comté",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Belfort",
-        "population": 54562,
-        "state_name": "Bourgogne-Franche-Comté",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Nevers",
-        "population": 43988,
-        "state_name": "Bourgogne-Franche-Comté",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Auxerre",
-        "population": 41516,
-        "state_name": "Bourgogne-Franche-Comté",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Mâcon",
-        "population": 35484,
-        "state_name": "Bourgogne-Franche-Comté",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Lons-le-Saunier",
-        "population": 20678,
-        "state_name": "Bourgogne-Franche-Comté",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Vesoul",
-        "population": 19892,
-        "state_name": "Bourgogne-Franche-Comté",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Rennes",
-        "population": 220488,
-        "state_name": "Brittany",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Quimper",
-        "population": 63849,
-        "state_name": "Brittany",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Vannes",
-        "population": 54020,
-        "state_name": "Brittany",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Saint-Brieuc",
-        "population": 52774,
-        "state_name": "Brittany",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Orléans",
-        "population": 116269,
-        "state_name": "Centre-Val de Loire",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Tours",
-        "population": 141621,
-        "state_name": "Centre-Val de Loire",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Bourges",
-        "population": 67987,
-        "state_name": "Centre-Val de Loire",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Blois",
-        "population": 53660,
-        "state_name": "Centre-Val de Loire",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Châteauroux",
-        "population": 53301,
-        "state_name": "Centre-Val de Loire",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Chartres",
-        "population": 43838,
-        "state_name": "Centre-Val de Loire",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Ajaccio",
-        "population": 54364,
-        "state_name": "Corsica",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Bastia",
-        "population": 41001,
-        "state_name": "Corsica",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Strasbourg",
-        "population": 274845,
-        "state_name": "Grand Est",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Metz",
-        "population": 123914,
-        "state_name": "Grand Est",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Nancy",
-        "population": 105058,
-        "state_name": "Grand Est",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Colmar",
-        "population": 65405,
-        "state_name": "Grand Est",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Troyes",
-        "population": 60785,
-        "state_name": "Grand Est",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Charleville-Mézières",
-        "population": 52415,
-        "state_name": "Grand Est",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Châlons-en-Champagne",
-        "population": 51257,
-        "state_name": "Grand Est",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Épinal",
-        "population": 39518,
-        "state_name": "Grand Est",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Chaumont",
-        "population": 28981,
-        "state_name": "Grand Est",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Bar-le-Duc",
-        "population": 18595,
-        "state_name": "Grand Est",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Lille",
-        "population": 234475,
-        "state_name": "Hauts-de-France",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Amiens",
-        "population": 143086,
-        "state_name": "Hauts-de-France",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Beauvais",
-        "population": 53393,
-        "state_name": "Hauts-de-France",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Arras",
-        "population": 47052,
-        "state_name": "Hauts-de-France",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Laon",
-        "population": 28688,
-        "state_name": "Hauts-de-France",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Rouen",
-        "population": 234475,
-        "state_name": "Normandy",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Caen",
-        "population": 110624,
-        "state_name": "Normandy",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Évreux",
-        "population": 57795,
-        "state_name": "Normandy",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Alençon",
-        "population": 30786,
-        "state_name": "Normandy",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Saint-Lô",
-        "population": 21722,
-        "state_name": "Normandy",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Bordeaux",
-        "population": 260958,
-        "state_name": "Nouvelle-Aquitaine",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Limoges",
-        "population": 141176,
-        "state_name": "Nouvelle-Aquitaine",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Poitiers",
-        "population": 85960,
-        "state_name": "Nouvelle-Aquitaine",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Pau",
-        "population": 82697,
-        "state_name": "Nouvelle-Aquitaine",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "La Rochelle",
-        "population": 76810,
-        "state_name": "Nouvelle-Aquitaine",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Niort",
-        "population": 54660,
-        "state_name": "Nouvelle-Aquitaine",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Angoulême",
-        "population": 49468,
-        "state_name": "Nouvelle-Aquitaine",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Mont-de-Marsan",
-        "population": 36205,
-        "state_name": "Nouvelle-Aquitaine",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Périgueux",
-        "population": 34770,
-        "state_name": "Nouvelle-Aquitaine",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Agen",
-        "population": 34367,
-        "state_name": "Nouvelle-Aquitaine",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Toulouse",
-        "population": 493465,
-        "state_name": "Occitanie",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Montpellier",
-        "population": 248252,
-        "state_name": "Occitanie",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Nîmes",
-        "population": 148236,
-        "state_name": "Occitanie",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Perpignan",
-        "population": 110706,
-        "state_name": "Occitanie",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Montauban",
-        "population": 52434,
-        "state_name": "Occitanie",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Albi",
-        "population": 52409,
-        "state_name": "Occitanie",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Tarbes",
-        "population": 52106,
-        "state_name": "Occitanie",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Carcassonne",
-        "population": 49600,
-        "state_name": "Occitanie",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Rodez",
-        "population": 28337,
-        "state_name": "Occitanie",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Auch",
-        "population": 24494,
-        "state_name": "Occitanie",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Nantes",
-        "population": 318808,
-        "state_name": "Pays de la Loire",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Angers",
-        "population": 168279,
-        "state_name": "Pays de la Loire",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Le Mans",
-        "population": 144515,
-        "state_name": "Pays de la Loire",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "La Roche-sur-Yon",
-        "population": 59410,
-        "state_name": "Pays de la Loire",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Laval",
-        "population": 50489,
-        "state_name": "Pays de la Loire",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Marseille",
-        "population": 870731,
-        "state_name": "Provence-Alpes-Côte d'Azur",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Nice",
-        "population": 342669,
-        "state_name": "Provence-Alpes-Côte d'Azur",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Toulon",
-        "population": 168701,
-        "state_name": "Provence-Alpes-Côte d'Azur",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Avignon",
-        "population": 89769,
-        "state_name": "Provence-Alpes-Côte d'Azur",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Gap",
-        "population": 42715,
-        "state_name": "Provence-Alpes-Côte d'Azur",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Digne-les-Bains",
-        "population": 18986,
-        "state_name": "Provence-Alpes-Côte d'Azur",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Paris",
-        "population": 2138551,
-        "state_name": "Île-de-France",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Nanterre",
-        "population": 86719,
-        "state_name": "Île-de-France",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Versailles",
-        "population": 85416,
-        "state_name": "Île-de-France",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Créteil",
-        "population": 84833,
-        "state_name": "Île-de-France",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Évry",
-        "population": 51900,
-        "state_name": "Île-de-France",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Bobigny",
-        "population": 44962,
-        "state_name": "Île-de-France",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Melun",
-        "population": 38953,
-        "state_name": "Île-de-France",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Pontoise",
-        "population": 30290,
-        "state_name": "Île-de-France",
-        "country_name": "France",
-        "populationName": ""
-    },
-    {
-        "name": "Seville",
-        "population": 684234,
-        "state_name": "Andalusia",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Málaga",
-        "population": 578460,
-        "state_name": "Andalusia",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Córdoba",
-        "population": 325708,
-        "state_name": "Andalusia",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Granada",
-        "population": 234325,
-        "state_name": "Andalusia",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Almería",
-        "population": 188810,
-        "state_name": "Andalusia",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Huelva",
-        "population": 144258,
-        "state_name": "Andalusia",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Cadiz",
-        "population": 126766,
-        "state_name": "Andalusia",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Jaén",
-        "population": 113457,
-        "state_name": "Andalusia",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Zaragoza",
-        "population": 675301,
-        "state_name": "Aragon",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Huesca",
-        "population": 52059,
-        "state_name": "Aragon",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Teruel",
-        "population": 35396,
-        "state_name": "Aragon",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Oviedo",
-        "population": 220020,
-        "state_name": "Asturias",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Palma",
-        "population": 409661,
-        "state_name": "Balearic Islands",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Vitoria-Gasteiz",
-        "population": 249176,
-        "state_name": "Basque Country",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Bilbao",
-        "population": 345821,
-        "state_name": "Basque Country",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Donostia / San Sebastian",
-        "population": 185357,
-        "state_name": "Basque Country",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Las Palmas de Gran Canaria",
-        "population": 378517,
-        "state_name": "Canary Islands",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Tenerife",
-        "population": 204856,
-        "state_name": "Canary Islands",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Santander",
-        "population": 172044,
-        "state_name": "Cantabria",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Valladolid",
-        "population": 299265,
-        "state_name": "Castille and León",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Burgos",
-        "population": 178966,
-        "state_name": "Castille and León",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Salamanca",
-        "population": 155619,
-        "state_name": "Castille and León",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "León",
-        "population": 134305,
-        "state_name": "Castille and León",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Palencia",
-        "population": 82651,
-        "state_name": "Castille and León",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Zamora",
-        "population": 66293,
-        "state_name": "Castille and León",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Ávila",
-        "population": 56855,
-        "state_name": "Castille and León",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Segovia",
-        "population": 56660,
-        "state_name": "Castille and León",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Soria",
-        "population": 39528,
-        "state_name": "Castille and León",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Toledo",
-        "population": 84282,
-        "state_name": "Castille-La Mancha",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Albacete",
-        "population": 169716,
-        "state_name": "Castille-La Mancha",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Guadalajara",
-        "population": 83039,
-        "state_name": "Castille-La Mancha",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Ciudad Real",
-        "population": 74014,
-        "state_name": "Castille-La Mancha",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Cuenca",
-        "population": 55866,
-        "state_name": "Castille-La Mancha",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Barcelona",
-        "population": 1620343,
-        "state_name": "Catalonia",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Lleida",
-        "population": 137856,
-        "state_name": "Catalonia",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Tarragona",
-        "population": 132299,
-        "state_name": "Catalonia",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Girona",
-        "population": 96188,
-        "state_name": "Catalonia",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Ceuta",
-        "population": 85144,
-        "state_name": "Ceuta",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Mérida",
-        "population": 59352,
-        "state_name": "Extremadura",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Cáceres",
-        "population": 93131,
-        "state_name": "Extremadura",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Santiago de Compostela",
-        "population": 97849,
-        "state_name": "Galicia",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Ourense",
-        "population": 105233,
-        "state_name": "Galicia",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Lugo",
-        "population": 96678,
-        "state_name": "Galicia",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Pontevedra",
-        "population": 81576,
-        "state_name": "Galicia",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Logroño",
-        "population": 152485,
-        "state_name": "La Rioja",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Madrid",
-        "population": 3255944,
-        "state_name": "Madrid",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Melilla",
-        "population": 86384,
-        "state_name": "Melilla",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Murcia",
-        "population": 460349,
-        "state_name": "Murcia",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Pamplona",
-        "population": 209672,
-        "state_name": "Navarre",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Valencia",
-        "population": 792492,
-        "state_name": "Valencia",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Alicante",
-        "population": 334757,
-        "state_name": "Valencia",
-        "country_name": "Espagne",
-        "populationName": ""
-    },
-    {
-        "name": "Castellon",
-        "population": 180005,
-        "state_name": "Valencia",
-        "country_name": "Espagne",
-        "populationName": ""
-    }
+  {
+    "name": "Mata-Utu",
+    "population": 1200,
+    "state_name": "Uvea",
+    "country_name": "Wallis et Futuna",
+    "populationName": ""
+  },
+  {
+    "name": "Leava",
+    "population": 480,
+    "state_name": "Sigave",
+    "country_name": "Wallis et Futuna",
+    "populationName": ""
+  },
+  {
+    "name": "Alo",
+    "population": 239,
+    "state_name": "Alo",
+    "country_name": "Wallis et Futuna",
+    "populationName": ""
+  },
+  {
+    "name": "Borgarnes",
+    "population": 1875,
+    "state_name": "West",
+    "country_name": "Islande",
+    "populationName": ""
+  },
+  {
+    "name": "Isafjordur",
+    "population": 2736,
+    "state_name": "Westfjords",
+    "country_name": "Islande",
+    "populationName": ""
+  },
+  {
+    "name": "Sauðarkrokur",
+    "population": 2614,
+    "state_name": "Northwest",
+    "country_name": "Islande",
+    "populationName": ""
+  },
+  {
+    "name": "Akureyri",
+    "population": 19219,
+    "state_name": "Northeast",
+    "country_name": "Islande",
+    "populationName": ""
+  },
+  {
+    "name": "Egilsstaðir",
+    "population": 2572,
+    "state_name": "East",
+    "country_name": "Islande",
+    "populationName": ""
+  },
+  {
+    "name": "Selfoss",
+    "population": 9000,
+    "state_name": "South",
+    "country_name": "Islande",
+    "populationName": ""
+  },
+  {
+    "name": "Reykjavik",
+    "population": 118918,
+    "state_name": "Capital Region",
+    "country_name": "Islande",
+    "populationName": ""
+  },
+  {
+    "name": "Keflavik",
+    "population": 15930,
+    "state_name": "Southern Peninsula",
+    "country_name": "Islande",
+    "populationName": ""
+  },
+  {
+    "name": "Wiltz",
+    "population": 4816,
+    "state_name": "Wiltz",
+    "country_name": "Luxembourg",
+    "populationName": ""
+  },
+  {
+    "name": "Redange",
+    "population": 1164,
+    "state_name": "Redange",
+    "country_name": "Luxembourg",
+    "populationName": ""
+  },
+  {
+    "name": "Mersch",
+    "population": 3464,
+    "state_name": "Mersch",
+    "country_name": "Luxembourg",
+    "populationName": ""
+  },
+  {
+    "name": "Luxembourg",
+    "population": 76684,
+    "state_name": "Luxembourg",
+    "country_name": "Luxembourg",
+    "populationName": ""
+  },
+  {
+    "name": "Grevenmacher",
+    "population": 4921,
+    "state_name": "Grevenmacher",
+    "country_name": "Luxembourg",
+    "populationName": ""
+  },
+  {
+    "name": "Diekirch",
+    "population": 6756,
+    "state_name": "Diekirch",
+    "country_name": "Luxembourg",
+    "populationName": ""
+  },
+  {
+    "name": "Gao",
+    "population": 133110,
+    "state_name": "Gao",
+    "country_name": "Mali",
+    "populationName": ""
+  },
+  {
+    "name": "Mopti",
+    "population": 186187,
+    "state_name": "Mopti",
+    "country_name": "Mali",
+    "populationName": ""
+  },
+  {
+    "name": "Kayes",
+    "population": 194716,
+    "state_name": "Kayes",
+    "country_name": "Mali",
+    "populationName": ""
+  },
+  {
+    "name": "Timbuktu",
+    "population": 84208,
+    "state_name": "Tombouctou",
+    "country_name": "Mali",
+    "populationName": ""
+  },
+  {
+    "name": "Sikasso",
+    "population": 349324,
+    "state_name": "Sikasso",
+    "country_name": "Mali",
+    "populationName": ""
+  },
+  {
+    "name": "Kidal",
+    "population": 40030,
+    "state_name": "Kidal",
+    "country_name": "Mali",
+    "populationName": ""
+  },
+  {
+    "name": "Taoudenni",
+    "population": 3019,
+    "state_name": "Taoudénit",
+    "country_name": "Mali",
+    "populationName": ""
+  },
+  {
+    "name": "Koulikoro",
+    "population": 64128,
+    "state_name": "Koulikoro",
+    "country_name": "Mali",
+    "populationName": ""
+  },
+  {
+    "name": "Ségou",
+    "population": 205787,
+    "state_name": "Ségou",
+    "country_name": "Mali",
+    "populationName": ""
+  },
+  {
+    "name": "Ménaka",
+    "population": 14085,
+    "state_name": "Ménaka",
+    "country_name": "Mali",
+    "populationName": ""
+  },
+  {
+    "name": "Bamako",
+    "population": 4227569,
+    "state_name": "Bamako",
+    "country_name": "Mali",
+    "populationName": ""
+  },
+  {
+    "name": "Fomboni",
+    "population": 17291,
+    "state_name": "Mohéli",
+    "country_name": "Comores",
+    "populationName": ""
+  },
+  {
+    "name": "Moroni",
+    "population": 74749,
+    "state_name": "Grande Comore",
+    "country_name": "Comores",
+    "populationName": ""
+  },
+  {
+    "name": "Moutsamoudou",
+    "population": 26313,
+    "state_name": "Anjouan",
+    "country_name": "Comores",
+    "populationName": ""
+  },
+  {
+    "name": "Brisbane",
+    "population": 2582007,
+    "state_name": "Queensland",
+    "country_name": "Australie",
+    "populationName": ""
+  },
+  {
+    "name": "Sydney",
+    "population": 5231147,
+    "state_name": "New South Wales",
+    "country_name": "Australie",
+    "populationName": ""
+  },
+  {
+    "name": "Melbourne",
+    "population": 4917750,
+    "state_name": "Victoria",
+    "country_name": "Australie",
+    "populationName": ""
+  },
+  {
+    "name": "Hobart",
+    "population": 247086,
+    "state_name": "Tasmania",
+    "country_name": "Australie",
+    "populationName": ""
+  },
+  {
+    "name": "Perth",
+    "population": 2192229,
+    "state_name": "Western Australia",
+    "country_name": "Australie",
+    "populationName": ""
+  },
+  {
+    "name": "Adelaide",
+    "population": 1387290,
+    "state_name": "South Australia",
+    "country_name": "Australie",
+    "populationName": ""
+  },
+  {
+    "name": "Darwin",
+    "population": 147255,
+    "state_name": "Northern Territory",
+    "country_name": "Australie",
+    "populationName": ""
+  },
+  {
+    "name": "Canberra",
+    "population": 367752,
+    "state_name": "Australian Capital Territory",
+    "country_name": "Australie",
+    "populationName": ""
+  },
+  {
+    "name": "Võru",
+    "population": 12367,
+    "state_name": "Võrumaa",
+    "country_name": "Estonie",
+    "populationName": ""
+  },
+  {
+    "name": "Viljandi",
+    "population": 17407,
+    "state_name": "Viljandimaa",
+    "country_name": "Estonie",
+    "populationName": ""
+  },
+  {
+    "name": "Valga",
+    "population": 11792,
+    "state_name": "Valgamaa",
+    "country_name": "Estonie",
+    "populationName": ""
+  },
+  {
+    "name": "Tartu",
+    "population": 91407,
+    "state_name": "Tartu",
+    "country_name": "Estonie",
+    "populationName": ""
+  },
+  {
+    "name": "Kuressaare",
+    "population": 12698,
+    "state_name": "Saare",
+    "country_name": "Estonie",
+    "populationName": ""
+  },
+  {
+    "name": "Rapla",
+    "population": 5132,
+    "state_name": "Raplamaa",
+    "country_name": "Estonie",
+    "populationName": ""
+  },
+  {
+    "name": "Põlva",
+    "population": 5115,
+    "state_name": "Põlvamaa",
+    "country_name": "Estonie",
+    "populationName": ""
+  },
+  {
+    "name": "Pärnu",
+    "population": 40228,
+    "state_name": "Pärnumaa",
+    "country_name": "Estonie",
+    "populationName": ""
+  },
+  {
+    "name": "Rakvere",
+    "population": 14984,
+    "state_name": "Lääne-Virumaa",
+    "country_name": "Estonie",
+    "populationName": ""
+  },
+  {
+    "name": "Haapsalu",
+    "population": 11805,
+    "state_name": "Lääne",
+    "country_name": "Estonie",
+    "populationName": ""
+  },
+  {
+    "name": "Jõgeva",
+    "population": 6396,
+    "state_name": "Jõgevamaa",
+    "country_name": "Estonie",
+    "populationName": ""
+  },
+  {
+    "name": "Paide",
+    "population": 7793,
+    "state_name": "Järvamaa",
+    "country_name": "Estonie",
+    "populationName": ""
+  },
+  {
+    "name": "Jõhvi",
+    "population": 10130,
+    "state_name": "Ida-Virumaa",
+    "country_name": "Estonie",
+    "populationName": ""
+  },
+  {
+    "name": "Kärdla",
+    "population": 3160,
+    "state_name": "Hiiumaa",
+    "country_name": "Estonie",
+    "populationName": ""
+  },
+  {
+    "name": "Tallinn",
+    "population": 394024,
+    "state_name": "Harjumaa",
+    "country_name": "Estonie",
+    "populationName": ""
+  },
+  {
+    "name": "Victoria",
+    "population": 289625,
+    "state_name": "British Columbia",
+    "country_name": "Canada",
+    "populationName": ""
+  },
+  {
+    "name": "Edmonton",
+    "population": 1010899,
+    "state_name": "Alberta",
+    "country_name": "Canada",
+    "populationName": ""
+  },
+  {
+    "name": "Québec",
+    "population": 531902,
+    "state_name": "Quebec",
+    "country_name": "Canada",
+    "populationName": ""
+  },
+  {
+    "name": "Regina",
+    "population": 176183,
+    "state_name": "Saskatchewan",
+    "country_name": "Canada",
+    "populationName": ""
+  },
+  {
+    "name": "Winnipeg",
+    "population": 749607,
+    "state_name": "Manitoba",
+    "country_name": "Canada",
+    "populationName": ""
+  },
+  {
+    "name": "Yellowknife",
+    "population": 20340,
+    "state_name": "Northwest Territories",
+    "country_name": "Canada",
+    "populationName": ""
+  },
+  {
+    "name": "Halifax",
+    "population": 439819,
+    "state_name": "Nova Scotia",
+    "country_name": "Canada",
+    "populationName": ""
+  },
+  {
+    "name": "Ottawa",
+    "population": 812129,
+    "state_name": "Ontario",
+    "country_name": "Canada",
+    "populationName": ""
+  },
+  {
+    "name": "Toronto",
+    "population": 2600000,
+    "state_name": "Ontario",
+    "country_name": "Canada",
+    "populationName": ""
+  },
+  {
+    "name": "Whitehorse",
+    "population": 28201,
+    "state_name": "Yukon",
+    "country_name": "Canada",
+    "populationName": ""
+  },
+  {
+    "name": "St. John's",
+    "population": 110525,
+    "state_name": "Newfoundland and Labrador",
+    "country_name": "Canada",
+    "populationName": ""
+  },
+  {
+    "name": "Fredericton",
+    "population": 63116,
+    "state_name": "New Brunswick",
+    "country_name": "Canada",
+    "populationName": ""
+  },
+  {
+    "name": "Charlottetown",
+    "population": 38809,
+    "state_name": "Prince Edward Island",
+    "country_name": "Canada",
+    "populationName": ""
+  },
+  {
+    "name": "Iqaluit",
+    "population": 7429,
+    "state_name": "Nunavut",
+    "country_name": "Canada",
+    "populationName": ""
+  },
+  {
+    "name": "Hrodna",
+    "population": 373547,
+    "state_name": "Grodnenskaya",
+    "country_name": "Biélorussie",
+    "populationName": ""
+  },
+  {
+    "name": "Homyel",
+    "population": 526872,
+    "state_name": "Homyel’ Voblasc’",
+    "country_name": "Biélorussie",
+    "populationName": ""
+  },
+  {
+    "name": "Vitebsk",
+    "population": 342700,
+    "state_name": "Vitebsk",
+    "country_name": "Biélorussie",
+    "populationName": ""
+  },
+  {
+    "name": "Mogilev",
+    "population": 369200,
+    "state_name": "Mogilev",
+    "country_name": "Biélorussie",
+    "populationName": ""
+  },
+  {
+    "name": "Brest",
+    "population": 362641,
+    "state_name": "Brest",
+    "country_name": "Biélorussie",
+    "populationName": ""
+  },
+  {
+    "name": "Minsk",
+    "population": 1742124,
+    "state_name": "Minsk City",
+    "country_name": "Biélorussie",
+    "populationName": ""
+  },
+  {
+    "name": "New Amsterdam",
+    "population": 35039,
+    "state_name": "East Berbice-Corentyne",
+    "country_name": "Guyana",
+    "populationName": ""
+  },
+  {
+    "name": "Lethem",
+    "population": 716,
+    "state_name": "Upper Takutu-Upper Essequibo",
+    "country_name": "Guyana",
+    "populationName": ""
+  },
+  {
+    "name": "Linden",
+    "population": 44690,
+    "state_name": "Upper Demerara-Berbice",
+    "country_name": "Guyana",
+    "populationName": ""
+  },
+  {
+    "name": "Mahdia",
+    "population": 4200,
+    "state_name": "Potaro-Siparuni",
+    "country_name": "Guyana",
+    "populationName": ""
+  },
+  {
+    "name": "Bartica",
+    "population": 11157,
+    "state_name": "Cuyuni-Mazaruni",
+    "country_name": "Guyana",
+    "populationName": ""
+  },
+  {
+    "name": "Mabaruma",
+    "population": 717,
+    "state_name": "Barima-Waini",
+    "country_name": "Guyana",
+    "populationName": ""
+  },
+  {
+    "name": "Anna Regina",
+    "population": 12448,
+    "state_name": "Pomeroon-Supenaam",
+    "country_name": "Guyana",
+    "populationName": ""
+  },
+  {
+    "name": "Fort Wellington",
+    "population": 0,
+    "state_name": "Mahaica-Berbice",
+    "country_name": "Guyana",
+    "populationName": ""
+  },
+  {
+    "name": "Vreed-en-Hoop",
+    "population": 3073,
+    "state_name": "Essequibo Islands-West Demerara",
+    "country_name": "Guyana",
+    "populationName": ""
+  },
+  {
+    "name": "Georgetown",
+    "population": 235017,
+    "state_name": "Demerara-Mahaica",
+    "country_name": "Guyana",
+    "populationName": ""
+  },
+  {
+    "name": "Brikama",
+    "population": 97233,
+    "state_name": "Western",
+    "country_name": "Gambie",
+    "populationName": ""
+  },
+  {
+    "name": "Basse Santa Su",
+    "population": 14380,
+    "state_name": "Upper River",
+    "country_name": "Gambie",
+    "populationName": ""
+  },
+  {
+    "name": "Kerewan",
+    "population": 5485,
+    "state_name": "North Bank",
+    "country_name": "Gambie",
+    "populationName": ""
+  },
+  {
+    "name": "Janjanbureh",
+    "population": 4547,
+    "state_name": "Central River",
+    "country_name": "Gambie",
+    "populationName": ""
+  },
+  {
+    "name": "Mansa Konko",
+    "population": 1978,
+    "state_name": "Lower River",
+    "country_name": "Gambie",
+    "populationName": ""
+  },
+  {
+    "name": "Banjul",
+    "population": 37274,
+    "state_name": "Banjul",
+    "country_name": "Gambie",
+    "populationName": ""
+  },
+  {
+    "name": "Tataouine",
+    "population": 62577,
+    "state_name": "Tataouine",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Ben Arous",
+    "population": 74932,
+    "state_name": "Ben Arous Governorate",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Bizerte",
+    "population": 115268,
+    "state_name": "Bizerte Governorate",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Béja",
+    "population": 57233,
+    "state_name": "Béja Governorate",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Aryanah",
+    "population": 97687,
+    "state_name": "Ariana Governorate",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Kairouan",
+    "population": 119794,
+    "state_name": "Kairouan",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Kasserine",
+    "population": 81987,
+    "state_name": "Kasserine Governorate",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Monastir",
+    "population": 71546,
+    "state_name": "Monastir Governorate",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Mahdia",
+    "population": 45977,
+    "state_name": "Mahdia Governorate",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "El Kef",
+    "population": 47979,
+    "state_name": "Kef Governorate",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Zaghouan",
+    "population": 16911,
+    "state_name": "Zaghouan Governorate",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Tunis",
+    "population": 693210,
+    "state_name": "Tunis Governorate",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Sousse",
+    "population": 164123,
+    "state_name": "Sousse Governorate",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Siliana",
+    "population": 26960,
+    "state_name": "Siliana Governorate",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Sidi Bouzid",
+    "population": 42098,
+    "state_name": "Sidi Bouzid Governorate",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Sfax",
+    "population": 277278,
+    "state_name": "Sfax Governorate",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Kebili",
+    "population": 19875,
+    "state_name": "Kebili Governorate",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Gafsa",
+    "population": 81232,
+    "state_name": "Gafsa",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Gabès",
+    "population": 110075,
+    "state_name": "Gabès Governorate",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Nabeul",
+    "population": 56387,
+    "state_name": "Nabeul Governorate",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Medenine",
+    "population": 61705,
+    "state_name": "Medenine Governorate",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Jendouba",
+    "population": 51408,
+    "state_name": "Jendouba Governorate",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Manouba",
+    "population": 24948,
+    "state_name": "Manouba",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Tozeur",
+    "population": 34943,
+    "state_name": "Tozeur Governorate",
+    "country_name": "Tunisie",
+    "populationName": ""
+  },
+  {
+    "name": "Bertoua",
+    "population": 137993,
+    "state_name": "East",
+    "country_name": "Cameroun",
+    "populationName": ""
+  },
+  {
+    "name": "Douala",
+    "population": 1338082,
+    "state_name": "Littoral",
+    "country_name": "Cameroun",
+    "populationName": ""
+  },
+  {
+    "name": "Maroua",
+    "population": 314122,
+    "state_name": "Far North",
+    "country_name": "Cameroun",
+    "populationName": ""
+  },
+  {
+    "name": "Yaoundé",
+    "population": 1299369,
+    "state_name": "Centre",
+    "country_name": "Cameroun",
+    "populationName": ""
+  },
+  {
+    "name": "Ngaoundéré",
+    "population": 238196,
+    "state_name": "Adamaoua",
+    "country_name": "Cameroun",
+    "populationName": ""
+  },
+  {
+    "name": "Buea",
+    "population": 140533,
+    "state_name": "South-West",
+    "country_name": "Cameroun",
+    "populationName": ""
+  },
+  {
+    "name": "Ébolowa",
+    "population": 101363,
+    "state_name": "South",
+    "country_name": "Cameroun",
+    "populationName": ""
+  },
+  {
+    "name": "Garoua",
+    "population": 34957,
+    "state_name": "North",
+    "country_name": "Cameroun",
+    "populationName": ""
+  },
+  {
+    "name": "Bafoussam",
+    "population": 373268,
+    "state_name": "West",
+    "country_name": "Cameroun",
+    "populationName": ""
+  },
+  {
+    "name": "Bamenda",
+    "population": 420445,
+    "state_name": "North-West",
+    "country_name": "Cameroun",
+    "populationName": ""
+  },
+  {
+    "name": "Rwamagana",
+    "population": 47203,
+    "state_name": "Eastern Province",
+    "country_name": "Rwanda",
+    "populationName": ""
+  },
+  {
+    "name": "Kigali",
+    "population": 1132686,
+    "state_name": "Kigali",
+    "country_name": "Rwanda",
+    "populationName": ""
+  },
+  {
+    "name": "Byumba",
+    "population": 70593,
+    "state_name": "Northern Province",
+    "country_name": "Rwanda",
+    "populationName": ""
+  },
+  {
+    "name": "Kibuye",
+    "population": 48024,
+    "state_name": "Western Province",
+    "country_name": "Rwanda",
+    "populationName": ""
+  },
+  {
+    "name": "Nyanza",
+    "population": 32016,
+    "state_name": "Southern Province",
+    "country_name": "Rwanda",
+    "populationName": ""
+  },
+  {
+    "name": "Phnom Penh",
+    "population": 1573544,
+    "state_name": "Phnom Penh",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Pailin",
+    "population": 17850,
+    "state_name": "Pailin",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Takeo",
+    "population": 843931,
+    "state_name": "Takeo",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Svay Rieng",
+    "population": 23956,
+    "state_name": "Svay Rieng",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Stung Treng",
+    "population": 25000,
+    "state_name": "Stung Treng",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Samraong",
+    "population": 18694,
+    "state_name": "Ŏtâr Méanchey",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Siem Reap",
+    "population": 139458,
+    "state_name": "Siem Reap",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Banlung",
+    "population": 17000,
+    "state_name": "Ratanakiri",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Prey Veng",
+    "population": 33079,
+    "state_name": "Prey Veng",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Tbeng Meanchey",
+    "population": 24380,
+    "state_name": "Preah Vihear",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Sen Moronom",
+    "population": 7944,
+    "state_name": "Mondolkiri",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Kratié",
+    "population": 19975,
+    "state_name": "Kratie",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Krong Kep",
+    "population": 11658,
+    "state_name": "Kep",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Koh Kong",
+    "population": 33134,
+    "state_name": "Koh Kong",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Ta Khmau",
+    "population": 52066,
+    "state_name": "Kandal",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Kampot",
+    "population": 22691,
+    "state_name": "Kampot",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Kampong Thom",
+    "population": 19951,
+    "state_name": "Kampong Thom",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Kampong Speu",
+    "population": 33231,
+    "state_name": "Kampong Speu Province",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Kampong Chhnang",
+    "population": 75244,
+    "state_name": "Kampong Chhnang",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Kampong Cham",
+    "population": 61750,
+    "state_name": "Kampong Cham",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Sihanoukville",
+    "population": 73036,
+    "state_name": "Preah Sihanouk",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Sisophon",
+    "population": 23218,
+    "state_name": "Banteay Meanchey",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Pursat",
+    "population": 52476,
+    "state_name": "Pursat",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Battambang",
+    "population": 119251,
+    "state_name": "Battambang",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Suong",
+    "population": 30000,
+    "state_name": "Tboung Khmum",
+    "country_name": "Cambodge",
+    "populationName": ""
+  },
+  {
+    "name": "Kandi",
+    "population": 56043,
+    "state_name": "Alibori",
+    "country_name": "Bénin",
+    "populationName": ""
+  },
+  {
+    "name": "Parakou",
+    "population": 255478,
+    "state_name": "Borgou",
+    "country_name": "Bénin",
+    "populationName": ""
+  },
+  {
+    "name": "Savalou",
+    "population": 38162,
+    "state_name": "Collines",
+    "country_name": "Bénin",
+    "populationName": ""
+  },
+  {
+    "name": "Dogbo",
+    "population": 41341,
+    "state_name": "Kouffo",
+    "country_name": "Bénin",
+    "populationName": ""
+  },
+  {
+    "name": "Djougou",
+    "population": 94773,
+    "state_name": "Donga",
+    "country_name": "Bénin",
+    "populationName": ""
+  },
+  {
+    "name": "Sakété",
+    "population": 43541,
+    "state_name": "Plateau",
+    "country_name": "Bénin",
+    "populationName": ""
+  },
+  {
+    "name": "Ouidah",
+    "population": 47616,
+    "state_name": "Atlantique",
+    "country_name": "Bénin",
+    "populationName": ""
+  },
+  {
+    "name": "Natitingou",
+    "population": 53284,
+    "state_name": "Atakora",
+    "country_name": "Bénin",
+    "populationName": ""
+  },
+  {
+    "name": "Abomey",
+    "population": 117824,
+    "state_name": "Zou",
+    "country_name": "Bénin",
+    "populationName": ""
+  },
+  {
+    "name": "Porto-Novo",
+    "population": 264320,
+    "state_name": "Ouémé",
+    "country_name": "Bénin",
+    "populationName": ""
+  },
+  {
+    "name": "Lokossa",
+    "population": 47246,
+    "state_name": "Mono",
+    "country_name": "Bénin",
+    "populationName": ""
+  },
+  {
+    "name": "Lamia",
+    "population": 52006,
+    "state_name": "Central Greece",
+    "country_name": "Grèce",
+    "populationName": ""
+  },
+  {
+    "name": "Corfu",
+    "population": 27003,
+    "state_name": "Ionian Islands",
+    "country_name": "Grèce",
+    "populationName": ""
+  },
+  {
+    "name": "Mytilene",
+    "population": 28322,
+    "state_name": "North Aegean",
+    "country_name": "Grèce",
+    "populationName": ""
+  },
+  {
+    "name": "Ermoupoli",
+    "population": 11351,
+    "state_name": "South Aegean",
+    "country_name": "Grèce",
+    "populationName": ""
+  },
+  {
+    "name": "Karyes",
+    "population": 237,
+    "state_name": "Mount Athos",
+    "country_name": "Grèce",
+    "populationName": ""
+  },
+  {
+    "name": "Kozani",
+    "population": 36481,
+    "state_name": "West Macedonia",
+    "country_name": "Grèce",
+    "populationName": ""
+  },
+  {
+    "name": "Athens",
+    "population": 664046,
+    "state_name": "Attica",
+    "country_name": "Grèce",
+    "populationName": ""
+  },
+  {
+    "name": "Thessaloniki",
+    "population": 317778,
+    "state_name": "Central Macedonia",
+    "country_name": "Grèce",
+    "populationName": ""
+  },
+  {
+    "name": "Heraklion",
+    "population": 137154,
+    "state_name": "Crete",
+    "country_name": "Grèce",
+    "populationName": ""
+  },
+  {
+    "name": "Komotini",
+    "population": 45631,
+    "state_name": "East Macedonia and Thrace",
+    "country_name": "Grèce",
+    "populationName": ""
+  },
+  {
+    "name": "Ioannina",
+    "population": 65574,
+    "state_name": "Epirus",
+    "country_name": "Grèce",
+    "populationName": ""
+  },
+  {
+    "name": "Tripoli",
+    "population": 26561,
+    "state_name": "Peloponnese",
+    "country_name": "Grèce",
+    "populationName": ""
+  },
+  {
+    "name": "Larissa",
+    "population": 146926,
+    "state_name": "Thessaly",
+    "country_name": "Grèce",
+    "populationName": ""
+  },
+  {
+    "name": "Pátrai",
+    "population": 168034,
+    "state_name": "West Greece",
+    "country_name": "Grèce",
+    "populationName": ""
+  },
+  {
+    "name": "Andong",
+    "population": 158765,
+    "state_name": "Gyeongsangbuk-do",
+    "country_name": "Corée du Sud",
+    "populationName": ""
+  },
+  {
+    "name": "Muan",
+    "population": 75718,
+    "state_name": "Jeollanam-do",
+    "country_name": "Corée du Sud",
+    "populationName": ""
+  },
+  {
+    "name": "Changwon",
+    "population": 1025702,
+    "state_name": "Gyeongsangnam-do",
+    "country_name": "Corée du Sud",
+    "populationName": ""
+  },
+  {
+    "name": "Suwon",
+    "population": 1241311,
+    "state_name": "Gyeonggi-do",
+    "country_name": "Corée du Sud",
+    "populationName": ""
+  },
+  {
+    "name": "Gwangju",
+    "population": 1490092,
+    "state_name": "Gwangju",
+    "country_name": "Corée du Sud",
+    "populationName": ""
+  },
+  {
+    "name": "Chuncheon",
+    "population": 209746,
+    "state_name": "Gangwon-do",
+    "country_name": "Corée du Sud",
+    "populationName": ""
+  },
+  {
+    "name": "Hongseong",
+    "population": 89174,
+    "state_name": "Chungcheongnam-do",
+    "country_name": "Corée du Sud",
+    "populationName": ""
+  },
+  {
+    "name": "Cheongju-si",
+    "population": 846291,
+    "state_name": "North Chungcheong",
+    "country_name": "Corée du Sud",
+    "populationName": ""
+  },
+  {
+    "name": "Jeonju",
+    "population": 652392,
+    "state_name": "Jeollabuk-do",
+    "country_name": "Corée du Sud",
+    "populationName": ""
+  },
+  {
+    "name": "Sejong",
+    "population": 351007,
+    "state_name": "Sejong-si",
+    "country_name": "Corée du Sud",
+    "populationName": ""
+  },
+  {
+    "name": "Busan",
+    "population": 3678555,
+    "state_name": "Busan",
+    "country_name": "Corée du Sud",
+    "populationName": ""
+  },
+  {
+    "name": "Ulsan",
+    "population": 962865,
+    "state_name": "Ulsan",
+    "country_name": "Corée du Sud",
+    "populationName": ""
+  },
+  {
+    "name": "Daejeon",
+    "population": 1469543,
+    "state_name": "Daejeon",
+    "country_name": "Corée du Sud",
+    "populationName": ""
+  },
+  {
+    "name": "Daegu",
+    "population": 2566540,
+    "state_name": "Daegu",
+    "country_name": "Corée du Sud",
+    "populationName": ""
+  },
+  {
+    "name": "Seoul",
+    "population": 10349312,
+    "state_name": "Seoul",
+    "country_name": "Corée du Sud",
+    "populationName": ""
+  },
+  {
+    "name": "Incheon",
+    "population": 2954955,
+    "state_name": "Incheon",
+    "country_name": "Corée du Sud",
+    "populationName": ""
+  },
+  {
+    "name": "Jeju City",
+    "population": 486306,
+    "state_name": "Jeju-do",
+    "country_name": "Corée du Sud",
+    "populationName": ""
+  },
+  {
+    "name": "Cargados Carajos",
+    "population": 63,
+    "state_name": "Cargados Carajos",
+    "country_name": "Maurice",
+    "populationName": ""
+  },
+  {
+    "name": "Port Mathurin",
+    "population": 8350,
+    "state_name": "Rodrigues",
+    "country_name": "Maurice",
+    "populationName": ""
+  },
+  {
+    "name": "Pamplemousses",
+    "population": 9682,
+    "state_name": "Pamplemousses",
+    "country_name": "Maurice",
+    "populationName": ""
+  },
+  {
+    "name": "Quartier Militaire",
+    "population": 6424,
+    "state_name": "Moka",
+    "country_name": "Maurice",
+    "populationName": ""
+  },
+  {
+    "name": "Rose Belle",
+    "population": 12619,
+    "state_name": "Grand Port",
+    "country_name": "Maurice",
+    "populationName": ""
+  },
+  {
+    "name": "Centre de Flacq",
+    "population": 17710,
+    "state_name": "Flacq",
+    "country_name": "Maurice",
+    "populationName": ""
+  },
+  {
+    "name": "Tamarin",
+    "population": 4371,
+    "state_name": "Black River",
+    "country_name": "Maurice",
+    "populationName": ""
+  },
+  {
+    "name": "Souillac",
+    "population": 4434,
+    "state_name": "Savanne",
+    "country_name": "Maurice",
+    "populationName": ""
+  },
+  {
+    "name": "Rivière du Rempart",
+    "population": 11675,
+    "state_name": "Rivière du Rempart",
+    "country_name": "Maurice",
+    "populationName": ""
+  },
+  {
+    "name": "Port Louis",
+    "population": 155226,
+    "state_name": "Port Louis",
+    "country_name": "Maurice",
+    "populationName": ""
+  },
+  {
+    "name": "Beau Bassin-Rose Hill",
+    "population": 111355,
+    "state_name": "Plaines Wilhems",
+    "country_name": "Maurice",
+    "populationName": ""
+  },
+  {
+    "name": "Vingt Cinq",
+    "population": 250,
+    "state_name": "Agalega Islands",
+    "country_name": "Maurice",
+    "populationName": ""
+  },
+  {
+    "name": "St Croix",
+    "population": 50601,
+    "state_name": "Saint Croix Island",
+    "country_name": "Îles Vierges des États-Unis",
+    "populationName": ""
+  },
+  {
+    "name": "Cruz Bay",
+    "population": 2743,
+    "state_name": "Saint John Island",
+    "country_name": "Îles Vierges des États-Unis",
+    "populationName": ""
+  },
+  {
+    "name": "Charlotte Amalie",
+    "population": 20000,
+    "state_name": "Saint Thomas Island",
+    "country_name": "Îles Vierges des États-Unis",
+    "populationName": ""
+  },
+  {
+    "name": "Mariehamn",
+    "population": 10682,
+    "state_name": "Mariehamns stad",
+    "country_name": "Ahvenanmaa",
+    "populationName": ""
+  },
+  {
+    "name": "San Marino",
+    "population": 4500,
+    "state_name": "San Marino",
+    "country_name": "Saint-Marin",
+    "populationName": ""
+  },
+  {
+    "name": "Acquaviva",
+    "population": 1530,
+    "state_name": "Acquaviva",
+    "country_name": "Saint-Marin",
+    "populationName": ""
+  },
+  {
+    "name": "Borgo Maggiore",
+    "population": 6424,
+    "state_name": "Borgo Maggiore",
+    "country_name": "Saint-Marin",
+    "populationName": ""
+  },
+  {
+    "name": "Domagnano",
+    "population": 3161,
+    "state_name": "Domagnano",
+    "country_name": "Saint-Marin",
+    "populationName": ""
+  },
+  {
+    "name": "Faetano",
+    "population": 1177,
+    "state_name": "Faetano",
+    "country_name": "Saint-Marin",
+    "populationName": ""
+  },
+  {
+    "name": "Fiorentino",
+    "population": 2510,
+    "state_name": "Fiorentino",
+    "country_name": "Saint-Marin",
+    "populationName": ""
+  },
+  {
+    "name": "Montegiardino",
+    "population": 910,
+    "state_name": "Montegiardino",
+    "country_name": "Saint-Marin",
+    "populationName": ""
+  },
+  {
+    "name": "Serravalle",
+    "population": 9258,
+    "state_name": "Serravalle",
+    "country_name": "Saint-Marin",
+    "populationName": ""
+  },
+  {
+    "name": "Chiesanuova",
+    "population": 951,
+    "state_name": "Chiesanuova",
+    "country_name": "Saint-Marin",
+    "populationName": ""
+  },
+  {
+    "name": "Felidhoo",
+    "population": 541,
+    "state_name": "Vaavu Atholhu",
+    "country_name": "Maldives",
+    "populationName": ""
+  },
+  {
+    "name": "Veymandoo",
+    "population": 1100,
+    "state_name": "Thaa Atholhu",
+    "country_name": "Maldives",
+    "populationName": ""
+  },
+  {
+    "name": "Funadhoo",
+    "population": 2900,
+    "state_name": "Shaviyani Atholhu",
+    "country_name": "Maldives",
+    "populationName": ""
+  },
+  {
+    "name": "Hithadhoo",
+    "population": 9927,
+    "state_name": "Seenu",
+    "country_name": "Maldives",
+    "populationName": ""
+  },
+  {
+    "name": "Un’goofaaru",
+    "population": 1575,
+    "state_name": "Raa Atoll",
+    "country_name": "Maldives",
+    "populationName": ""
+  },
+  {
+    "name": "Manadhoo",
+    "population": 1580,
+    "state_name": "Noonu Atoll",
+    "country_name": "Maldives",
+    "populationName": ""
+  },
+  {
+    "name": "Fuvahmulah",
+    "population": 11140,
+    "state_name": "Gnyaviyani Atoll",
+    "country_name": "Maldives",
+    "populationName": ""
+  },
+  {
+    "name": "Muli",
+    "population": 1008,
+    "state_name": "Meemu Atholhu",
+    "country_name": "Maldives",
+    "populationName": ""
+  },
+  {
+    "name": "Naifaru",
+    "population": 5044,
+    "state_name": "Faadhippolhu Atoll",
+    "country_name": "Maldives",
+    "populationName": ""
+  },
+  {
+    "name": "Fonadhoo",
+    "population": 1773,
+    "state_name": "Laamu",
+    "country_name": "Maldives",
+    "populationName": ""
+  },
+  {
+    "name": "Malé",
+    "population": 103693,
+    "state_name": "Kaafu Atoll",
+    "country_name": "Maldives",
+    "populationName": ""
+  },
+  {
+    "name": "Kulhudhuffushi",
+    "population": 9500,
+    "state_name": "Haa Dhaalu Atholhu",
+    "country_name": "Maldives",
+    "populationName": ""
+  },
+  {
+    "name": "Dhihdhoo",
+    "population": 3039,
+    "state_name": "Haa Alifu Atholhu",
+    "country_name": "Maldives",
+    "populationName": ""
+  },
+  {
+    "name": "Thinadhoo",
+    "population": 6376,
+    "state_name": "Gaafu Dhaalu Atoll",
+    "country_name": "Maldives",
+    "populationName": ""
+  },
+  {
+    "name": "Viligili",
+    "population": 2925,
+    "state_name": "Gaafu Alif Atoll",
+    "country_name": "Maldives",
+    "populationName": ""
+  },
+  {
+    "name": "Nilandhoo",
+    "population": 0,
+    "state_name": "Faafu Atholhu",
+    "country_name": "Maldives",
+    "populationName": ""
+  },
+  {
+    "name": "Kudahuvadhoo",
+    "population": 1562,
+    "state_name": "Dhaalu Atholhu",
+    "country_name": "Maldives",
+    "populationName": ""
+  },
+  {
+    "name": "Eydhafushi",
+    "population": 2808,
+    "state_name": "Baa Atholhu",
+    "country_name": "Maldives",
+    "populationName": ""
+  },
+  {
+    "name": "Mahibadhoo",
+    "population": 2156,
+    "state_name": "Southern Ari Atoll",
+    "country_name": "Maldives",
+    "populationName": ""
+  },
+  {
+    "name": "Sola",
+    "population": 1171,
+    "state_name": "Torba",
+    "country_name": "Vanuatu",
+    "populationName": ""
+  },
+  {
+    "name": "Lakatoro",
+    "population": 705,
+    "state_name": "Malampa",
+    "country_name": "Vanuatu",
+    "populationName": ""
+  },
+  {
+    "name": "Isangel",
+    "population": 1437,
+    "state_name": "Tafea",
+    "country_name": "Vanuatu",
+    "populationName": ""
+  },
+  {
+    "name": "Luganville",
+    "population": 13397,
+    "state_name": "Sanma",
+    "country_name": "Vanuatu",
+    "populationName": ""
+  },
+  {
+    "name": "Saratamata",
+    "population": 0,
+    "state_name": "Penama",
+    "country_name": "Vanuatu",
+    "populationName": ""
+  },
+  {
+    "name": "Port Vila",
+    "population": 35901,
+    "state_name": "Shefa",
+    "country_name": "Vanuatu",
+    "populationName": ""
+  },
+  {
+    "name": "Mzuzu",
+    "population": 249564,
+    "state_name": "Northern Region",
+    "country_name": "Malawi",
+    "populationName": ""
+  },
+  {
+    "name": "Blantyre",
+    "population": 902588,
+    "state_name": "Southern Region",
+    "country_name": "Malawi",
+    "populationName": ""
+  },
+  {
+    "name": "Lilongwe",
+    "population": 1115815,
+    "state_name": "Central Region",
+    "country_name": "Malawi",
+    "populationName": ""
+  },
+  {
+    "name": "Hurghada",
+    "population": 207132,
+    "state_name": "Red Sea",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Al Khārjah",
+    "population": 83108,
+    "state_name": "New Valley",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Marsá Maţrūḩ",
+    "population": 176498,
+    "state_name": "Matruh",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "El-Tor",
+    "population": 38285,
+    "state_name": "South Sinai",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Aswān",
+    "population": 379774,
+    "state_name": "Aswan",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Giza",
+    "population": 4367343,
+    "state_name": "Giza",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Al ‘Arīsh",
+    "population": 199243,
+    "state_name": "North Sinai",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Damietta",
+    "population": 305920,
+    "state_name": "Damietta",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Tanta",
+    "population": 576648,
+    "state_name": "Gharbia",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Al Fayyum",
+    "population": 519047,
+    "state_name": "Faiyum",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Damanhur",
+    "population": 318207,
+    "state_name": "Beheira",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Al Mansurah",
+    "population": 621953,
+    "state_name": "Dakahlia",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Port Said",
+    "population": 780515,
+    "state_name": "Port Said",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Banī Suwayf",
+    "population": 273151,
+    "state_name": "Beni Suweif",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Asyut",
+    "population": 528669,
+    "state_name": "Asyut",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Suez",
+    "population": 699541,
+    "state_name": "Suez",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Zagazig",
+    "population": 430445,
+    "state_name": "Sharqia",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Banhā",
+    "population": 182254,
+    "state_name": "Qalyubia",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Cairo",
+    "population": 9606916,
+    "state_name": "Cairo",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Minya",
+    "population": 283605,
+    "state_name": "Minya",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Shibīn al Kawm",
+    "population": 267945,
+    "state_name": "Monufia",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Ismailia",
+    "population": 429465,
+    "state_name": "Ismailia",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Alexandria",
+    "population": 5263542,
+    "state_name": "Alexandria",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Sohag",
+    "population": 266944,
+    "state_name": "Sohag",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Qina",
+    "population": 252883,
+    "state_name": "Qena",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Kafr ash Shaykh",
+    "population": 194569,
+    "state_name": "Kafr el-Sheikh",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Luxor",
+    "population": 422407,
+    "state_name": "Luxor",
+    "country_name": "Égypte",
+    "populationName": ""
+  },
+  {
+    "name": "Tambacounda",
+    "population": 107293,
+    "state_name": "Tambacounda",
+    "country_name": "Sénégal",
+    "populationName": ""
+  },
+  {
+    "name": "Matam",
+    "population": 17218,
+    "state_name": "Matam",
+    "country_name": "Sénégal",
+    "populationName": ""
+  },
+  {
+    "name": "Louga",
+    "population": 104349,
+    "state_name": "Louga",
+    "country_name": "Sénégal",
+    "populationName": ""
+  },
+  {
+    "name": "Saint-Louis",
+    "population": 209752,
+    "state_name": "Saint-Louis",
+    "country_name": "Sénégal",
+    "populationName": ""
+  },
+  {
+    "name": "Kolda",
+    "population": 81098,
+    "state_name": "Kolda",
+    "country_name": "Sénégal",
+    "populationName": ""
+  },
+  {
+    "name": "Kaolack",
+    "population": 233708,
+    "state_name": "Kaolack",
+    "country_name": "Sénégal",
+    "populationName": ""
+  },
+  {
+    "name": "Ziguinchor",
+    "population": 205294,
+    "state_name": "Ziguinchor",
+    "country_name": "Sénégal",
+    "populationName": ""
+  },
+  {
+    "name": "Fatick",
+    "population": 28276,
+    "state_name": "Fatick",
+    "country_name": "Sénégal",
+    "populationName": ""
+  },
+  {
+    "name": "Diourbel",
+    "population": 133705,
+    "state_name": "Diourbel Region",
+    "country_name": "Sénégal",
+    "populationName": ""
+  },
+  {
+    "name": "Dakar",
+    "population": 2646503,
+    "state_name": "Dakar",
+    "country_name": "Sénégal",
+    "populationName": ""
+  },
+  {
+    "name": "Kaffrine",
+    "population": 39537,
+    "state_name": "Kaffrine",
+    "country_name": "Sénégal",
+    "populationName": ""
+  },
+  {
+    "name": "Kédougou",
+    "population": 30051,
+    "state_name": "Kédougou",
+    "country_name": "Sénégal",
+    "populationName": ""
+  },
+  {
+    "name": "Sédhiou",
+    "population": 24213,
+    "state_name": "Sédhiou",
+    "country_name": "Sénégal",
+    "populationName": ""
+  },
+  {
+    "name": "Rustavi",
+    "population": 130100,
+    "state_name": "Kvemo Kartli",
+    "country_name": "Géorgie",
+    "populationName": ""
+  },
+  {
+    "name": "Telavi",
+    "population": 19599,
+    "state_name": "Kakheti",
+    "country_name": "Géorgie",
+    "populationName": ""
+  },
+  {
+    "name": "Ozurget'i",
+    "population": 14672,
+    "state_name": "Guria",
+    "country_name": "Géorgie",
+    "populationName": ""
+  },
+  {
+    "name": "Kutaisi",
+    "population": 135201,
+    "state_name": "Imereti",
+    "country_name": "Géorgie",
+    "populationName": ""
+  },
+  {
+    "name": "Gori",
+    "population": 45557,
+    "state_name": "Shida Kartli",
+    "country_name": "Géorgie",
+    "populationName": ""
+  },
+  {
+    "name": "Mtskheta",
+    "population": 7584,
+    "state_name": "Mtskheta-Mtianeti",
+    "country_name": "Géorgie",
+    "populationName": ""
+  },
+  {
+    "name": "Zugdidi",
+    "population": 41494,
+    "state_name": "Samegrelo and Zemo Svaneti",
+    "country_name": "Géorgie",
+    "populationName": ""
+  },
+  {
+    "name": "Akhalts'ikhe",
+    "population": 16943,
+    "state_name": "Samtskhe-Javakheti",
+    "country_name": "Géorgie",
+    "populationName": ""
+  },
+  {
+    "name": "Sukhumi",
+    "population": 65439,
+    "state_name": "Abkhazia",
+    "country_name": "Géorgie",
+    "populationName": ""
+  },
+  {
+    "name": "Tbilisi",
+    "population": 1049498,
+    "state_name": "Tbilisi",
+    "country_name": "Géorgie",
+    "populationName": ""
+  },
+  {
+    "name": "Batumi",
+    "population": 172100,
+    "state_name": "Adjara",
+    "country_name": "Géorgie",
+    "populationName": ""
+  },
+  {
+    "name": "Whangarei",
+    "population": 50900,
+    "state_name": "Northland",
+    "country_name": "Nouvelle-Zélande",
+    "populationName": ""
+  },
+  {
+    "name": "Palmerston North",
+    "population": 90500,
+    "state_name": "Manawatu-Wanganui",
+    "country_name": "Nouvelle-Zélande",
+    "populationName": ""
+  },
+  {
+    "name": "Hamilton",
+    "population": 178500,
+    "state_name": "Waikato Region",
+    "country_name": "Nouvelle-Zélande",
+    "populationName": ""
+  },
+  {
+    "name": "Invercargill",
+    "population": 57000,
+    "state_name": "Southland",
+    "country_name": "Nouvelle-Zélande",
+    "populationName": ""
+  },
+  {
+    "name": "Christchurch",
+    "population": 363926,
+    "state_name": "Canterbury",
+    "country_name": "Nouvelle-Zélande",
+    "populationName": ""
+  },
+  {
+    "name": "Dunedin",
+    "population": 133300,
+    "state_name": "Otago",
+    "country_name": "Nouvelle-Zélande",
+    "populationName": ""
+  },
+  {
+    "name": "Greymouth",
+    "population": 9419,
+    "state_name": "West Coast",
+    "country_name": "Nouvelle-Zélande",
+    "populationName": ""
+  },
+  {
+    "name": "Waitangi",
+    "population": 300,
+    "state_name": "Chatham Islands",
+    "country_name": "Nouvelle-Zélande",
+    "populationName": ""
+  },
+  {
+    "name": "Blenheim",
+    "population": 28800,
+    "state_name": "Marlborough",
+    "country_name": "Nouvelle-Zélande",
+    "populationName": ""
+  },
+  {
+    "name": "Napier City",
+    "population": 66700,
+    "state_name": "Hawke's Bay Region",
+    "country_name": "Nouvelle-Zélande",
+    "populationName": ""
+  },
+  {
+    "name": "Gisborne",
+    "population": 37300,
+    "state_name": "Gisborne",
+    "country_name": "Nouvelle-Zélande",
+    "populationName": ""
+  },
+  {
+    "name": "Wellington",
+    "population": 381900,
+    "state_name": "Wellington Region",
+    "country_name": "Nouvelle-Zélande",
+    "populationName": ""
+  },
+  {
+    "name": "Richmond",
+    "population": 18000,
+    "state_name": "Tasman District",
+    "country_name": "Nouvelle-Zélande",
+    "populationName": ""
+  },
+  {
+    "name": "New Plymouth",
+    "population": 87300,
+    "state_name": "Taranaki Region",
+    "country_name": "Nouvelle-Zélande",
+    "populationName": ""
+  },
+  {
+    "name": "Whakatane",
+    "population": 18602,
+    "state_name": "Bay of Plenty",
+    "country_name": "Nouvelle-Zélande",
+    "populationName": ""
+  },
+  {
+    "name": "Auckland",
+    "population": 417910,
+    "state_name": "Auckland",
+    "country_name": "Nouvelle-Zélande",
+    "populationName": ""
+  },
+  {
+    "name": "Nelson",
+    "population": 54700,
+    "state_name": "Nelson Region",
+    "country_name": "Nouvelle-Zélande",
+    "populationName": ""
+  },
+  {
+    "name": "Assomada",
+    "population": 21297,
+    "state_name": "Santa Catarina",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "Espargos",
+    "population": 24500,
+    "state_name": "Sal",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "Ribeira Grande",
+    "population": 3000,
+    "state_name": "Ribeira Grande",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "Praia",
+    "population": 137868,
+    "state_name": "Praia",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "Pombas",
+    "population": 1429,
+    "state_name": "Paul",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "Vila do Maio",
+    "population": 4472,
+    "state_name": "Maio",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "Nova Sintra",
+    "population": 2225,
+    "state_name": "Brava",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "Sal Rei",
+    "population": 10936,
+    "state_name": "Boa Vista",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "Pedra Badejo",
+    "population": 10038,
+    "state_name": "Santa Cruz",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "São Domingos",
+    "population": 2960,
+    "state_name": "São Domingos",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "São Filipe",
+    "population": 10097,
+    "state_name": "São Filipe",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "Calheta",
+    "population": 6329,
+    "state_name": "São Miguel",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "Tarrafal",
+    "population": 13483,
+    "state_name": "Tarrafal",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "Mindelo",
+    "population": 69013,
+    "state_name": "São Vicente",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "Porto Novo",
+    "population": 11138,
+    "state_name": "Porto Novo",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "Ribeira Brava",
+    "population": 2851,
+    "state_name": "Ribeira Brava",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "Cova Figueira",
+    "population": 720,
+    "state_name": "Santa Catarina do Fogo",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "Picos",
+    "population": 2040,
+    "state_name": "São Salvador do Mundo",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "Tarrafal de São Nicolau",
+    "population": 4371,
+    "state_name": "Tarrafal de São Nicolau",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "João Teves",
+    "population": 627,
+    "state_name": "São Lourenço dos Órgãos",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "Cidade Velha",
+    "population": 3319,
+    "state_name": "Ribeira Grande de Santiago",
+    "country_name": "Îles du Cap-Vert",
+    "populationName": ""
+  },
+  {
+    "name": "Palermo",
+    "population": 648260,
+    "state_name": "Sicily",
+    "country_name": "Italie",
+    "populationName": ""
+  },
+  {
+    "name": "Bari",
+    "population": 316491,
+    "state_name": "Apulia",
+    "country_name": "Italie",
+    "populationName": ""
+  },
+  {
+    "name": "Venice",
+    "population": 51298,
+    "state_name": "Veneto",
+    "country_name": "Italie",
+    "populationName": ""
+  },
+  {
+    "name": "Florence",
+    "population": 367150,
+    "state_name": "Tuscany",
+    "country_name": "Italie",
+    "populationName": ""
+  },
+  {
+    "name": "Turin",
+    "population": 847287,
+    "state_name": "Piedmont",
+    "country_name": "Italie",
+    "populationName": ""
+  },
+  {
+    "name": "Milan",
+    "population": 1371498,
+    "state_name": "Lombardy",
+    "country_name": "Italie",
+    "populationName": ""
+  },
+  {
+    "name": "Rome",
+    "population": 2318895,
+    "state_name": "Lazio",
+    "country_name": "Italie",
+    "populationName": ""
+  },
+  {
+    "name": "Bologna",
+    "population": 394843,
+    "state_name": "Emilia-Romagna",
+    "country_name": "Italie",
+    "populationName": ""
+  },
+  {
+    "name": "Cagliari",
+    "population": 149257,
+    "state_name": "Sardinia",
+    "country_name": "Italie",
+    "populationName": ""
+  },
+  {
+    "name": "Catanzaro",
+    "population": 78970,
+    "state_name": "Calabria",
+    "country_name": "Italie",
+    "populationName": ""
+  },
+  {
+    "name": "Aosta",
+    "population": 35261,
+    "state_name": "Aosta Valley",
+    "country_name": "Italie",
+    "populationName": ""
+  },
+  {
+    "name": "Perugia",
+    "population": 120137,
+    "state_name": "Umbria",
+    "country_name": "Italie",
+    "populationName": ""
+  },
+  {
+    "name": "Trento",
+    "population": 120709,
+    "state_name": "Trentino-Alto Adige",
+    "country_name": "Italie",
+    "populationName": ""
+  },
+  {
+    "name": "Naples",
+    "population": 909048,
+    "state_name": "Campania",
+    "country_name": "Italie",
+    "populationName": ""
+  },
+  {
+    "name": "Campobasso",
+    "population": 49230,
+    "state_name": "Molise",
+    "country_name": "Italie",
+    "populationName": ""
+  },
+  {
+    "name": "Ancona",
+    "population": 89994,
+    "state_name": "The Marches",
+    "country_name": "Italie",
+    "populationName": ""
+  },
+  {
+    "name": "Genoa",
+    "population": 580097,
+    "state_name": "Liguria",
+    "country_name": "Italie",
+    "populationName": ""
+  },
+  {
+    "name": "Trieste",
+    "population": 204338,
+    "state_name": "Friuli Venezia Giulia",
+    "country_name": "Italie",
+    "populationName": ""
+  },
+  {
+    "name": "Potenza",
+    "population": 56433,
+    "state_name": "Basilicate",
+    "country_name": "Italie",
+    "populationName": ""
+  },
+  {
+    "name": "L’Aquila",
+    "population": 33691,
+    "state_name": "Abruzzo",
+    "country_name": "Italie",
+    "populationName": ""
+  },
+  {
+    "name": "Monaco",
+    "population": 32965,
+    "state_name": "",
+    "country_name": "Monaco",
+    "populationName": ""
+  },
+  {
+    "name": "Banská Bystrica",
+    "population": 75317,
+    "state_name": "Banská Bystrica Region",
+    "country_name": "Slovaquie",
+    "populationName": ""
+  },
+  {
+    "name": "Nitra",
+    "population": 86329,
+    "state_name": "Nitra Region",
+    "country_name": "Slovaquie",
+    "populationName": ""
+  },
+  {
+    "name": "Trenčín",
+    "population": 58278,
+    "state_name": "Trenčín Region",
+    "country_name": "Slovaquie",
+    "populationName": ""
+  },
+  {
+    "name": "Trnava",
+    "population": 63194,
+    "state_name": "Trnava Region",
+    "country_name": "Slovaquie",
+    "populationName": ""
+  },
+  {
+    "name": "Košice",
+    "population": 228249,
+    "state_name": "Košice Region",
+    "country_name": "Slovaquie",
+    "populationName": ""
+  },
+  {
+    "name": "Bratislava",
+    "population": 423737,
+    "state_name": "Bratislava Region",
+    "country_name": "Slovaquie",
+    "populationName": ""
+  },
+  {
+    "name": "Žilina",
+    "population": 81940,
+    "state_name": "Žilina Region",
+    "country_name": "Slovaquie",
+    "populationName": ""
+  },
+  {
+    "name": "Prešov",
+    "population": 83897,
+    "state_name": "Prešov Region",
+    "country_name": "Slovaquie",
+    "populationName": ""
+  },
+  {
+    "name": "Tacuarembó",
+    "population": 51854,
+    "state_name": "Tacuarembó Department",
+    "country_name": "Uruguay",
+    "populationName": ""
+  },
+  {
+    "name": "Mercedes",
+    "population": 42359,
+    "state_name": "Soriano",
+    "country_name": "Uruguay",
+    "populationName": ""
+  },
+  {
+    "name": "San José de Mayo",
+    "population": 36529,
+    "state_name": "San José Department",
+    "country_name": "Uruguay",
+    "populationName": ""
+  },
+  {
+    "name": "Salto",
+    "population": 99823,
+    "state_name": "Salto Department",
+    "country_name": "Uruguay",
+    "populationName": ""
+  },
+  {
+    "name": "Rocha",
+    "population": 25515,
+    "state_name": "Rocha Department",
+    "country_name": "Uruguay",
+    "populationName": ""
+  },
+  {
+    "name": "Rivera",
+    "population": 64631,
+    "state_name": "Rivera Department",
+    "country_name": "Uruguay",
+    "populationName": ""
+  },
+  {
+    "name": "Fray Bentos",
+    "population": 23279,
+    "state_name": "Río Negro Department",
+    "country_name": "Uruguay",
+    "populationName": ""
+  },
+  {
+    "name": "Paysandú",
+    "population": 73249,
+    "state_name": "Paysandú Department",
+    "country_name": "Uruguay",
+    "populationName": ""
+  },
+  {
+    "name": "Montevideo",
+    "population": 1270737,
+    "state_name": "Montevideo Department",
+    "country_name": "Uruguay",
+    "populationName": ""
+  },
+  {
+    "name": "Maldonado",
+    "population": 55478,
+    "state_name": "Maldonado",
+    "country_name": "Uruguay",
+    "populationName": ""
+  },
+  {
+    "name": "Minas",
+    "population": 38025,
+    "state_name": "Lavalleja",
+    "country_name": "Uruguay",
+    "populationName": ""
+  },
+  {
+    "name": "Florida",
+    "population": 32234,
+    "state_name": "Florida",
+    "country_name": "Uruguay",
+    "populationName": ""
+  },
+  {
+    "name": "Trinidad",
+    "population": 21429,
+    "state_name": "Flores Department",
+    "country_name": "Uruguay",
+    "populationName": ""
+  },
+  {
+    "name": "Durazno",
+    "population": 33926,
+    "state_name": "Durazno Department",
+    "country_name": "Uruguay",
+    "populationName": ""
+  },
+  {
+    "name": "Colonia del Sacramento",
+    "population": 21714,
+    "state_name": "Colonia",
+    "country_name": "Uruguay",
+    "populationName": ""
+  },
+  {
+    "name": "Melo",
+    "population": 51023,
+    "state_name": "Cerro Largo",
+    "country_name": "Uruguay",
+    "populationName": ""
+  },
+  {
+    "name": "Canelones",
+    "population": 19698,
+    "state_name": "Canelones",
+    "country_name": "Uruguay",
+    "populationName": ""
+  },
+  {
+    "name": "Artigas",
+    "population": 41909,
+    "state_name": "Artigas",
+    "country_name": "Uruguay",
+    "populationName": ""
+  },
+  {
+    "name": "Treinta y Tres",
+    "population": 25653,
+    "state_name": "Treinta y Tres Department",
+    "country_name": "Uruguay",
+    "populationName": ""
+  },
+  {
+    "name": "Luang Prabang",
+    "population": 47378,
+    "state_name": "Luang Prabang Province",
+    "country_name": "Laos",
+    "populationName": ""
+  },
+  {
+    "name": "Sainyabuli",
+    "population": 13500,
+    "state_name": "Xiagnabouli",
+    "country_name": "Laos",
+    "populationName": ""
+  },
+  {
+    "name": "Savannakhet",
+    "population": 125760,
+    "state_name": "Savannakhet Province",
+    "country_name": "Laos",
+    "populationName": ""
+  },
+  {
+    "name": "Salavan",
+    "population": 5521,
+    "state_name": "Salavan Province",
+    "country_name": "Laos",
+    "populationName": ""
+  },
+  {
+    "name": "Phôngsali",
+    "population": 13500,
+    "state_name": "Phôngsali",
+    "country_name": "Laos",
+    "populationName": ""
+  },
+  {
+    "name": "Muang Xay",
+    "population": 25000,
+    "state_name": "Oudômxai",
+    "country_name": "Laos",
+    "populationName": ""
+  },
+  {
+    "name": "Luang Namtha",
+    "population": 3225,
+    "state_name": "Loungnamtha",
+    "country_name": "Laos",
+    "populationName": ""
+  },
+  {
+    "name": "Thakhek",
+    "population": 85000,
+    "state_name": "Khammouane Province",
+    "country_name": "Laos",
+    "populationName": ""
+  },
+  {
+    "name": "Xam Nua",
+    "population": 46800,
+    "state_name": "Houaphan",
+    "country_name": "Laos",
+    "populationName": ""
+  },
+  {
+    "name": "Pakse",
+    "population": 88332,
+    "state_name": "Champasak Province",
+    "country_name": "Laos",
+    "populationName": ""
+  },
+  {
+    "name": "Attopu",
+    "population": 4297,
+    "state_name": "Attapu",
+    "country_name": "Laos",
+    "populationName": ""
+  },
+  {
+    "name": "Muang Phônsavan",
+    "population": 37507,
+    "state_name": "Xiangkhoang",
+    "country_name": "Laos",
+    "populationName": ""
+  },
+  {
+    "name": "Muang Phôn-Hông",
+    "population": 10112,
+    "state_name": "Vientiane",
+    "country_name": "Laos",
+    "populationName": ""
+  },
+  {
+    "name": "Sekong",
+    "population": 0,
+    "state_name": "Xékong",
+    "country_name": "Laos",
+    "populationName": ""
+  },
+  {
+    "name": "Ban Houayxay",
+    "population": 12500,
+    "state_name": "Bokeo",
+    "country_name": "Laos",
+    "populationName": ""
+  },
+  {
+    "name": "Pakxan",
+    "population": 21967,
+    "state_name": "Bolikhamsai",
+    "country_name": "Laos",
+    "populationName": ""
+  },
+  {
+    "name": "Vientiane",
+    "population": 196731,
+    "state_name": "Vientiane Prefecture",
+    "country_name": "Laos",
+    "populationName": ""
+  },
+  {
+    "name": "Fuglafjørður",
+    "population": 1542,
+    "state_name": "Eysturoy",
+    "country_name": "Îles Féroé",
+    "populationName": ""
+  },
+  {
+    "name": "Miðvágur",
+    "population": 1040,
+    "state_name": "Vágar",
+    "country_name": "Îles Féroé",
+    "populationName": ""
+  },
+  {
+    "name": "Tvøroyri",
+    "population": 862,
+    "state_name": "Suðuroy",
+    "country_name": "Îles Féroé",
+    "populationName": ""
+  },
+  {
+    "name": "Tórshavn",
+    "population": 13200,
+    "state_name": "Streymoy",
+    "country_name": "Îles Féroé",
+    "populationName": ""
+  },
+  {
+    "name": "Sandur",
+    "population": 608,
+    "state_name": "Sandoy",
+    "country_name": "Îles Féroé",
+    "populationName": ""
+  },
+  {
+    "name": "Klaksvík",
+    "population": 5013,
+    "state_name": "Norðoyar",
+    "country_name": "Îles Féroé",
+    "populationName": ""
+  },
+  {
+    "name": "Арачиново",
+    "population": 12800,
+    "state_name": "Arachinovo",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Bogovinje",
+    "population": 15166,
+    "state_name": "Bogovinje",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Brvenica",
+    "population": 16267,
+    "state_name": "Brvenica",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Čaška",
+    "population": 2878,
+    "state_name": "Chashka",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Centar Župa",
+    "population": 45412,
+    "state_name": "Centar Zhupa",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Чучер - Сандево",
+    "population": 8646,
+    "state_name": "Chucher Sandevo",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Debar",
+    "population": 18074,
+    "state_name": "Debar",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Delcevo",
+    "population": 17415,
+    "state_name": "Delchevo",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Demir Hisar",
+    "population": 2283,
+    "state_name": "Demir Hisar",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Dolneni",
+    "population": 11534,
+    "state_name": "Dolneni",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Gevgelija",
+    "population": 20664,
+    "state_name": "Gevgelija",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Gostivar",
+    "population": 50974,
+    "state_name": "Gostivar",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Ilinden",
+    "population": 16406,
+    "state_name": "Ilinden",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Jegunovce",
+    "population": 7313,
+    "state_name": "Jegunovce",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Kavadarci",
+    "population": 38799,
+    "state_name": "Kavadarci",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Kičevo",
+    "population": 31123,
+    "state_name": "Kichevo",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Kočani",
+    "population": 34258,
+    "state_name": "Kochani",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Kriva Palanka",
+    "population": 20820,
+    "state_name": "Kriva Palanka",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Krivogastani",
+    "population": 5899,
+    "state_name": "Krivogashtani",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Krusevo",
+    "population": 5211,
+    "state_name": "Krushevo",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Kumanovo",
+    "population": 75051,
+    "state_name": "Kumanovo",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Lipkovo",
+    "population": 28102,
+    "state_name": "Lipkovo",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Makedonski Brod",
+    "population": 5607,
+    "state_name": "Makedonski Brod",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Negotino",
+    "population": 19515,
+    "state_name": "Negotino",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Ohrid",
+    "population": 42033,
+    "state_name": "Ohrid",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Петровец",
+    "population": 8298,
+    "state_name": "Petrovec",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Plasnica",
+    "population": 4574,
+    "state_name": "Plasnica",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Prilep",
+    "population": 73814,
+    "state_name": "Prilep",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Probistip",
+    "population": 12702,
+    "state_name": "Probishtip",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Radovis",
+    "population": 24984,
+    "state_name": "Radovish",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Rankovce",
+    "population": 4071,
+    "state_name": "Rankovce",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Rostusa",
+    "population": 9147,
+    "state_name": "Mavrovo and Rostuša",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Sopište",
+    "population": 9460,
+    "state_name": "Sopište",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Старо Нагоричане",
+    "population": 4112,
+    "state_name": "Staro Nagorichane",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Shtip",
+    "population": 48279,
+    "state_name": "Shtip",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Struga",
+    "population": 37387,
+    "state_name": "Struga",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Strumica",
+    "population": 33825,
+    "state_name": "Strumica",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Studeničani",
+    "population": 18219,
+    "state_name": "Studenichani",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Sveti Nikole",
+    "population": 13292,
+    "state_name": "Sveti Nikole",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Tearce",
+    "population": 23096,
+    "state_name": "Tearce",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Tetovo",
+    "population": 63176,
+    "state_name": "Tetovo",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Veles",
+    "population": 57873,
+    "state_name": "Veles",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Vevčani",
+    "population": 2429,
+    "state_name": "Vevchani",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Vinica",
+    "population": 18218,
+    "state_name": "Vinica",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Vrapčište",
+    "population": 8652,
+    "state_name": "Vrapchishte",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Zelenikovo",
+    "population": 4020,
+    "state_name": "Zelenikovo",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Zelino",
+    "population": 25422,
+    "state_name": "Zhelino",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Pehčevo",
+    "population": 2440,
+    "state_name": "Pehchevo",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Novo Selo",
+    "population": 11818,
+    "state_name": "Novo Selo",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Bosilovo",
+    "population": 12447,
+    "state_name": "Bosilovo",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Vasilevo",
+    "population": 12382,
+    "state_name": "Vasilevo",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Star Dojran",
+    "population": 3348,
+    "state_name": "Dojran",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Bogdanci",
+    "population": 8636,
+    "state_name": "Bogdanci",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Konče",
+    "population": 3475,
+    "state_name": "Konche",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Makedonska Kamenica",
+    "population": 8114,
+    "state_name": "Makedonska Kamenica",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Zrnovci",
+    "population": 3236,
+    "state_name": "Zrnovci",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Karbinci",
+    "population": 3900,
+    "state_name": "Karbinci",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Demir Kapija",
+    "population": 4451,
+    "state_name": "Demir Kapija",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Rosoman",
+    "population": 4106,
+    "state_name": "Rosoman",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Gradsko",
+    "population": 3737,
+    "state_name": "Gradsko",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Lozovo",
+    "population": 2836,
+    "state_name": "Lozovo",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Novaci Municipality",
+    "population": 2357,
+    "state_name": "Novaci",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Berovo",
+    "population": 13847,
+    "state_name": "Berovo",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Bitola",
+    "population": 69287,
+    "state_name": "Bitola",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Mogila",
+    "population": 4392,
+    "state_name": "Mogila",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Valandovo",
+    "population": 3798,
+    "state_name": "Valandovo",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Kratovo",
+    "population": 10288,
+    "state_name": "Kratovo",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Resen",
+    "population": 16539,
+    "state_name": "Resen",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Belčišta",
+    "population": 2804,
+    "state_name": "Debarca",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Skopje",
+    "population": 474889,
+    "state_name": "Grad Skopje",
+    "country_name": "Macédoine du Nord",
+    "populationName": ""
+  },
+  {
+    "name": "Antofagasta",
+    "population": 352638,
+    "state_name": "Antofagasta",
+    "country_name": "Chili",
+    "populationName": ""
+  },
+  {
+    "name": "Coyhaique",
+    "population": 45787,
+    "state_name": "Aysén",
+    "country_name": "Chili",
+    "populationName": ""
+  },
+  {
+    "name": "Valparaíso",
+    "population": 282448,
+    "state_name": "Valparaíso",
+    "country_name": "Chili",
+    "populationName": ""
+  },
+  {
+    "name": "Punta Arenas",
+    "population": 117430,
+    "state_name": "Region of Magallanes",
+    "country_name": "Chili",
+    "populationName": ""
+  },
+  {
+    "name": "La Serena",
+    "population": 154521,
+    "state_name": "Coquimbo Region",
+    "country_name": "Chili",
+    "populationName": ""
+  },
+  {
+    "name": "Copiapó",
+    "population": 129280,
+    "state_name": "Atacama",
+    "country_name": "Chili",
+    "populationName": ""
+  },
+  {
+    "name": "Temuco",
+    "population": 238129,
+    "state_name": "Araucanía",
+    "country_name": "Chili",
+    "populationName": ""
+  },
+  {
+    "name": "Concepción",
+    "population": 223574,
+    "state_name": "Biobío",
+    "country_name": "Chili",
+    "populationName": ""
+  },
+  {
+    "name": "Talca",
+    "population": 197479,
+    "state_name": "Maule Region",
+    "country_name": "Chili",
+    "populationName": ""
+  },
+  {
+    "name": "Port Montt",
+    "population": 245902,
+    "state_name": "Los Lagos Region",
+    "country_name": "Chili",
+    "populationName": ""
+  },
+  {
+    "name": "Iquique",
+    "population": 191468,
+    "state_name": "Tarapacá",
+    "country_name": "Chili",
+    "populationName": ""
+  },
+  {
+    "name": "Rancagua",
+    "population": 212695,
+    "state_name": "O'Higgins Region",
+    "country_name": "Chili",
+    "populationName": ""
+  },
+  {
+    "name": "Santiago",
+    "population": 4837295,
+    "state_name": "Santiago Metropolitan",
+    "country_name": "Chili",
+    "populationName": ""
+  },
+  {
+    "name": "Arica",
+    "population": 221364,
+    "state_name": "Arica y Parinacota Region",
+    "country_name": "Chili",
+    "populationName": ""
+  },
+  {
+    "name": "Valdivia",
+    "population": 133419,
+    "state_name": "Los Ríos Region",
+    "country_name": "Chili",
+    "populationName": ""
+  },
+  {
+    "name": "Chillán",
+    "population": 150396,
+    "state_name": "Ñuble",
+    "country_name": "Chili",
+    "populationName": ""
+  },
+  {
+    "name": "Paphos",
+    "population": 35961,
+    "state_name": "Pafos",
+    "country_name": "Chypre",
+    "populationName": ""
+  },
+  {
+    "name": "Nicosia",
+    "population": 200452,
+    "state_name": "Nicosia",
+    "country_name": "Chypre",
+    "populationName": ""
+  },
+  {
+    "name": "Limassol",
+    "population": 154000,
+    "state_name": "Limassol",
+    "country_name": "Chypre",
+    "populationName": ""
+  },
+  {
+    "name": "Larnaca",
+    "population": 72000,
+    "state_name": "Larnaka",
+    "country_name": "Chypre",
+    "populationName": ""
+  },
+  {
+    "name": "Kyrenia",
+    "population": 26701,
+    "state_name": "Keryneia",
+    "country_name": "Chypre",
+    "populationName": ""
+  },
+  {
+    "name": "Famagusta",
+    "population": 42526,
+    "state_name": "Ammochostos",
+    "country_name": "Chypre",
+    "populationName": ""
+  },
+  {
+    "name": "Usulután",
+    "population": 51910,
+    "state_name": "Usulután",
+    "country_name": "Salvador",
+    "populationName": ""
+  },
+  {
+    "name": "Sonsonate",
+    "population": 59468,
+    "state_name": "Sonsonate Department",
+    "country_name": "Salvador",
+    "populationName": ""
+  },
+  {
+    "name": "San Vicente",
+    "population": 41504,
+    "state_name": "San Vicente Department",
+    "country_name": "Salvador",
+    "populationName": ""
+  },
+  {
+    "name": "Santa Ana",
+    "population": 176661,
+    "state_name": "Santa Ana Department",
+    "country_name": "Salvador",
+    "populationName": ""
+  },
+  {
+    "name": "San Salvador",
+    "population": 525990,
+    "state_name": "San Salvador Department",
+    "country_name": "Salvador",
+    "populationName": ""
+  },
+  {
+    "name": "San Miguel",
+    "population": 247126,
+    "state_name": "San Miguel Department",
+    "country_name": "Salvador",
+    "populationName": ""
+  },
+  {
+    "name": "San Francisco",
+    "population": 16152,
+    "state_name": "Morazán",
+    "country_name": "Salvador",
+    "populationName": ""
+  },
+  {
+    "name": "La Unión",
+    "population": 26807,
+    "state_name": "La Unión",
+    "country_name": "Salvador",
+    "populationName": ""
+  },
+  {
+    "name": "Zacatecoluca",
+    "population": 39613,
+    "state_name": "La Paz Department",
+    "country_name": "Salvador",
+    "populationName": ""
+  },
+  {
+    "name": "Santa Tecla",
+    "population": 124694,
+    "state_name": "La Libertad Department",
+    "country_name": "Salvador",
+    "populationName": ""
+  },
+  {
+    "name": "Cojutepeque",
+    "population": 48411,
+    "state_name": "Cuscatlán",
+    "country_name": "Salvador",
+    "populationName": ""
+  },
+  {
+    "name": "Chalatenango",
+    "population": 19364,
+    "state_name": "Chalatenango Department",
+    "country_name": "Salvador",
+    "populationName": ""
+  },
+  {
+    "name": "Sensuntepeque",
+    "population": 20386,
+    "state_name": "Cabañas",
+    "country_name": "Salvador",
+    "populationName": ""
+  },
+  {
+    "name": "Ahuachapán",
+    "population": 34102,
+    "state_name": "Ahuachapán",
+    "country_name": "Salvador",
+    "populationName": ""
+  },
+  {
+    "name": "Ma'an",
+    "population": 50350,
+    "state_name": "Ma’an",
+    "country_name": "Jordanie",
+    "populationName": ""
+  },
+  {
+    "name": "Al Mafraq",
+    "population": 57118,
+    "state_name": "Mafraq",
+    "country_name": "Jordanie",
+    "populationName": ""
+  },
+  {
+    "name": "Irbid",
+    "population": 569068,
+    "state_name": "Irbid",
+    "country_name": "Jordanie",
+    "populationName": ""
+  },
+  {
+    "name": "Zarqa",
+    "population": 792665,
+    "state_name": "Zarqa",
+    "country_name": "Jordanie",
+    "populationName": ""
+  },
+  {
+    "name": "Aţ Ţafīlah",
+    "population": 25429,
+    "state_name": "Tafielah",
+    "country_name": "Jordanie",
+    "populationName": ""
+  },
+  {
+    "name": "Amman",
+    "population": 1275857,
+    "state_name": "Amman",
+    "country_name": "Jordanie",
+    "populationName": ""
+  },
+  {
+    "name": "Karak",
+    "population": 21678,
+    "state_name": "Karak",
+    "country_name": "Jordanie",
+    "populationName": ""
+  },
+  {
+    "name": "Salt",
+    "population": 107874,
+    "state_name": "Balqa",
+    "country_name": "Jordanie",
+    "populationName": ""
+  },
+  {
+    "name": "Ajloun",
+    "population": 125557,
+    "state_name": "Ajloun",
+    "country_name": "Jordanie",
+    "populationName": ""
+  },
+  {
+    "name": "Jerash",
+    "population": 27046,
+    "state_name": "Jerash",
+    "country_name": "Jordanie",
+    "populationName": ""
+  },
+  {
+    "name": "Aqaba",
+    "population": 95048,
+    "state_name": "Aqaba",
+    "country_name": "Jordanie",
+    "populationName": ""
+  },
+  {
+    "name": "Madaba",
+    "population": 82335,
+    "state_name": "Madaba",
+    "country_name": "Jordanie",
+    "populationName": ""
+  },
+  {
+    "name": "Savanna-la-Mar",
+    "population": 16553,
+    "state_name": "Westmoreland",
+    "country_name": "Jamaïque",
+    "populationName": ""
+  },
+  {
+    "name": "Falmouth",
+    "population": 7779,
+    "state_name": "Trelawny Parish",
+    "country_name": "Jamaïque",
+    "populationName": ""
+  },
+  {
+    "name": "Morant Bay",
+    "population": 9368,
+    "state_name": "Saint Thomas Parish",
+    "country_name": "Jamaïque",
+    "populationName": ""
+  },
+  {
+    "name": "Port Maria",
+    "population": 7906,
+    "state_name": "Saint Mary Parish",
+    "country_name": "Jamaïque",
+    "populationName": ""
+  },
+  {
+    "name": "Montego Bay",
+    "population": 82867,
+    "state_name": "Saint James Parish",
+    "country_name": "Jamaïque",
+    "populationName": ""
+  },
+  {
+    "name": "Black River",
+    "population": 4229,
+    "state_name": "St. Elizabeth",
+    "country_name": "Jamaïque",
+    "populationName": ""
+  },
+  {
+    "name": "Spanish Town",
+    "population": 145018,
+    "state_name": "Saint Catherine Parish",
+    "country_name": "Jamaïque",
+    "populationName": ""
+  },
+  {
+    "name": "St Ann's Bay",
+    "population": 13671,
+    "state_name": "Saint Ann Parish",
+    "country_name": "Jamaïque",
+    "populationName": ""
+  },
+  {
+    "name": "Half Way Tree",
+    "population": 18552,
+    "state_name": "Saint Andrew Parish",
+    "country_name": "Jamaïque",
+    "populationName": ""
+  },
+  {
+    "name": "Port Antonio",
+    "population": 14400,
+    "state_name": "Portland Parish",
+    "country_name": "Jamaïque",
+    "populationName": ""
+  },
+  {
+    "name": "Mandeville",
+    "population": 47115,
+    "state_name": "Manchester",
+    "country_name": "Jamaïque",
+    "populationName": ""
+  },
+  {
+    "name": "Kingston",
+    "population": 937700,
+    "state_name": "Kingston",
+    "country_name": "Jamaïque",
+    "populationName": ""
+  },
+  {
+    "name": "Lucea",
+    "population": 6289,
+    "state_name": "Hanover",
+    "country_name": "Jamaïque",
+    "populationName": ""
+  },
+  {
+    "name": "May Pen",
+    "population": 44755,
+    "state_name": "Clarendon",
+    "country_name": "Jamaïque",
+    "populationName": ""
+  },
+  {
+    "name": "Welchman Hall",
+    "population": 0,
+    "state_name": "Saint Thomas",
+    "country_name": "Barbade",
+    "populationName": ""
+  },
+  {
+    "name": "Crane",
+    "population": 935,
+    "state_name": "Saint Philip",
+    "country_name": "Barbade",
+    "populationName": ""
+  },
+  {
+    "name": "Speightstown",
+    "population": 3634,
+    "state_name": "Saint Peter",
+    "country_name": "Barbade",
+    "populationName": ""
+  },
+  {
+    "name": "Bridgetown",
+    "population": 98511,
+    "state_name": "Saint Michael",
+    "country_name": "Barbade",
+    "populationName": ""
+  },
+  {
+    "name": "Checker Hall",
+    "population": 0,
+    "state_name": "Saint Lucy",
+    "country_name": "Barbade",
+    "populationName": ""
+  },
+  {
+    "name": "Bathsheba",
+    "population": 1765,
+    "state_name": "Saint Joseph",
+    "country_name": "Barbade",
+    "populationName": ""
+  },
+  {
+    "name": "Four Cross Roads",
+    "population": 0,
+    "state_name": "Saint John",
+    "country_name": "Barbade",
+    "populationName": ""
+  },
+  {
+    "name": "Holetown",
+    "population": 1350,
+    "state_name": "Saint James",
+    "country_name": "Barbade",
+    "populationName": ""
+  },
+  {
+    "name": "Greenland",
+    "population": 623,
+    "state_name": "Saint Andrew",
+    "country_name": "Barbade",
+    "populationName": ""
+  },
+  {
+    "name": "Oistins",
+    "population": 2285,
+    "state_name": "Christ Church",
+    "country_name": "Barbade",
+    "populationName": ""
+  },
+  {
+    "name": "Madīnat ash Shamāl",
+    "population": 5267,
+    "state_name": "Madīnat ash Shamāl",
+    "country_name": "Qatar",
+    "populationName": ""
+  },
+  {
+    "name": "Al Khor",
+    "population": 18923,
+    "state_name": "Al Khor",
+    "country_name": "Qatar",
+    "populationName": ""
+  },
+  {
+    "name": "Umm Şalāl ‘Alī",
+    "population": 0,
+    "state_name": "Umm Salal",
+    "country_name": "Qatar",
+    "populationName": ""
+  },
+  {
+    "name": "Ar Rayyan",
+    "population": 272465,
+    "state_name": "Baladīyat ar Rayyān",
+    "country_name": "Qatar",
+    "populationName": ""
+  },
+  {
+    "name": "Doha",
+    "population": 344939,
+    "state_name": "Baladīyat ad Dawḩah",
+    "country_name": "Qatar",
+    "populationName": ""
+  },
+  {
+    "name": "Al Wakrah",
+    "population": 26436,
+    "state_name": "Al Wakrah",
+    "country_name": "Qatar",
+    "populationName": ""
+  },
+  {
+    "name": "Az̧ Z̧a‘āyin",
+    "population": 0,
+    "state_name": "Al Daayen",
+    "country_name": "Qatar",
+    "populationName": ""
+  },
+  {
+    "name": "Ash Shīḩānīyah",
+    "population": 8380,
+    "state_name": "Al-Shahaniya",
+    "country_name": "Qatar",
+    "populationName": ""
+  },
+  {
+    "name": "Flores",
+    "population": 20464,
+    "state_name": "Petén",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Chiquimula",
+    "population": 111505,
+    "state_name": "Chiquimula",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Chimaltenango",
+    "population": 96985,
+    "state_name": "Chimaltenango",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Salamá",
+    "population": 65275,
+    "state_name": "Baja Verapaz",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Cobán",
+    "population": 212047,
+    "state_name": "Alta Verapaz",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Zacapa",
+    "population": 60424,
+    "state_name": "Zacapa",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Jutiapa",
+    "population": 145880,
+    "state_name": "Jutiapa",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Jalapa",
+    "population": 159840,
+    "state_name": "Jalapa",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Puerto Barrios",
+    "population": 100593,
+    "state_name": "Izabal Department",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Huehuetenango",
+    "population": 79426,
+    "state_name": "Huehuetenango",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Guatemala City",
+    "population": 994938,
+    "state_name": "Guatemala",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Escuintla",
+    "population": 156313,
+    "state_name": "Escuintla",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Guastatoya",
+    "population": 24831,
+    "state_name": "El Progreso",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Totonicapán",
+    "population": 103952,
+    "state_name": "Totonicapán",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Mazatenango",
+    "population": 77431,
+    "state_name": "Suchitepeque",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Sololá",
+    "population": 45373,
+    "state_name": "Sololá",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Cuilapa",
+    "population": 41359,
+    "state_name": "Santa Rosa Department",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "San Marcos",
+    "population": 47063,
+    "state_name": "San Marcos",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Antigua Guatemala",
+    "population": 46054,
+    "state_name": "Sacatepéquez",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Retalhuleu",
+    "population": 90505,
+    "state_name": "Retalhuleu",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Santa Cruz del Quiché",
+    "population": 78279,
+    "state_name": "Quiché",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Quetzaltenango",
+    "population": 180706,
+    "state_name": "Quetzaltenango",
+    "country_name": "Guatemala",
+    "populationName": ""
+  },
+  {
+    "name": "Colonia",
+    "population": 7371,
+    "state_name": "Yap State",
+    "country_name": "Micronésie",
+    "populationName": ""
+  },
+  {
+    "name": "Palikir",
+    "population": 0,
+    "state_name": "Pohnpei State",
+    "country_name": "Micronésie",
+    "populationName": ""
+  },
+  {
+    "name": "Kolonia",
+    "population": 6074,
+    "state_name": "Pohnpei State",
+    "country_name": "Micronésie",
+    "populationName": ""
+  },
+  {
+    "name": "Weno",
+    "population": 13856,
+    "state_name": "Chuuk",
+    "country_name": "Micronésie",
+    "populationName": ""
+  },
+  {
+    "name": "Tofol",
+    "population": 9686,
+    "state_name": "Kosrae",
+    "country_name": "Micronésie",
+    "populationName": ""
+  },
+  {
+    "name": "Saint Peters",
+    "population": 0,
+    "state_name": "Saint Peter",
+    "country_name": "Montserrat",
+    "populationName": ""
+  },
+  {
+    "name": "Plymouth",
+    "population": 0,
+    "state_name": "Saint Anthony",
+    "country_name": "Montserrat",
+    "populationName": ""
+  },
+  {
+    "name": "Alotau",
+    "population": 10025,
+    "state_name": "Milne Bay Province",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Kavieng",
+    "population": 14490,
+    "state_name": "New Ireland",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Buka",
+    "population": 0,
+    "state_name": "Bougainville",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Daru",
+    "population": 15214,
+    "state_name": "Western Province",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Lae",
+    "population": 76255,
+    "state_name": "Morobe Province",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Lorengau",
+    "population": 5806,
+    "state_name": "Manus Province",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Madang",
+    "population": 27419,
+    "state_name": "Madang Province",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Mendi",
+    "population": 26252,
+    "state_name": "Southern Highlands Province",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Vanimo",
+    "population": 11204,
+    "state_name": "Sandaun Province",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Popondetta",
+    "population": 28198,
+    "state_name": "Oro Province",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Kerema",
+    "population": 5646,
+    "state_name": "Gulf Province",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Wewak",
+    "population": 18230,
+    "state_name": "East Sepik Province",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Kokopo",
+    "population": 26273,
+    "state_name": "East New Britain Province",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Kimbe",
+    "population": 18847,
+    "state_name": "West New Britain Province",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Port Moresby",
+    "population": 283733,
+    "state_name": "National Capital",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Wabag",
+    "population": 3958,
+    "state_name": "Enga Province",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Goroka",
+    "population": 18503,
+    "state_name": "Eastern Highlands Province",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Kundiawa",
+    "population": 9383,
+    "state_name": "Chimbu Province",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Mt Hagen",
+    "population": 33623,
+    "state_name": "Western Highlands Province",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Tari",
+    "population": 8186,
+    "state_name": "Hela Province",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Kurumul",
+    "population": 0,
+    "state_name": "Jiwaka Province",
+    "country_name": "Papouasie-Nouvelle-Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Fortaleza",
+    "population": 2400000,
+    "state_name": "Ceará",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Teresina",
+    "population": 871126,
+    "state_name": "Piauí",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Recife",
+    "population": 1653461,
+    "state_name": "Pernambuco",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Salvador",
+    "population": 2711840,
+    "state_name": "Bahia",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Porto Alegre",
+    "population": 1488252,
+    "state_name": "Rio Grande do Sul",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Curitiba",
+    "population": 1948626,
+    "state_name": "Paraná",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "São Paulo",
+    "population": 12400232,
+    "state_name": "São Paulo",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Florianópolis",
+    "population": 508826,
+    "state_name": "Santa Catarina",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Belo Horizonte",
+    "population": 2721564,
+    "state_name": "Minas Gerais",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Campo Grande",
+    "population": 906092,
+    "state_name": "Mato Grosso do Sul",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Cuiabá",
+    "population": 618124,
+    "state_name": "Mato Grosso",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Vitória",
+    "population": 312656,
+    "state_name": "Espírito Santo",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Palmas",
+    "population": 306296,
+    "state_name": "Tocantins",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Macapá",
+    "population": 512902,
+    "state_name": "Amapá",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Boa Vista",
+    "population": 419652,
+    "state_name": "Roraima",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Rio Branco",
+    "population": 419452,
+    "state_name": "Acre",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Porto Velho",
+    "population": 548952,
+    "state_name": "Rondônia",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Natal",
+    "population": 896708,
+    "state_name": "Rio Grande do Norte",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Rio de Janeiro",
+    "population": 6747815,
+    "state_name": "Rio de Janeiro",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Aracaju",
+    "population": 664908,
+    "state_name": "Sergipe",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Maceió",
+    "population": 1031597,
+    "state_name": "Alagoas",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Brasília",
+    "population": 2207718,
+    "state_name": "Federal District",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "João Pessoa",
+    "population": 817511,
+    "state_name": "Paraíba",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Belém",
+    "population": 1499641,
+    "state_name": "Pará",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "São Luís",
+    "population": 917237,
+    "state_name": "Maranhão",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Goiânia",
+    "population": 1536097,
+    "state_name": "Goiás",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Manaus",
+    "population": 2219580,
+    "state_name": "Amazonas",
+    "country_name": "Brésil",
+    "populationName": ""
+  },
+  {
+    "name": "Alytus",
+    "population": 49195,
+    "state_name": "Alytus",
+    "country_name": "Lituanie",
+    "populationName": ""
+  },
+  {
+    "name": "Kaunas",
+    "population": 289380,
+    "state_name": "Kaunas",
+    "country_name": "Lituanie",
+    "populationName": ""
+  },
+  {
+    "name": "Klaipėda",
+    "population": 172292,
+    "state_name": "Klaipėda County",
+    "country_name": "Lituanie",
+    "populationName": ""
+  },
+  {
+    "name": "Marijampolė",
+    "population": 34975,
+    "state_name": "Marijampolė County",
+    "country_name": "Lituanie",
+    "populationName": ""
+  },
+  {
+    "name": "Panevezys",
+    "population": 85885,
+    "state_name": "Panevėžys",
+    "country_name": "Lituanie",
+    "populationName": ""
+  },
+  {
+    "name": "Šiauliai",
+    "population": 99462,
+    "state_name": "Siauliai",
+    "country_name": "Lituanie",
+    "populationName": ""
+  },
+  {
+    "name": "Tauragė",
+    "population": 21203,
+    "state_name": "Tauragė County",
+    "country_name": "Lituanie",
+    "populationName": ""
+  },
+  {
+    "name": "Telšiai",
+    "population": 21294,
+    "state_name": "Telsiai",
+    "country_name": "Lituanie",
+    "populationName": ""
+  },
+  {
+    "name": "Utena",
+    "population": 25397,
+    "state_name": "Utena",
+    "country_name": "Lituanie",
+    "populationName": ""
+  },
+  {
+    "name": "Vilnius",
+    "population": 542366,
+    "state_name": "Vilnius",
+    "country_name": "Lituanie",
+    "populationName": ""
+  },
+  {
+    "name": "Cayenne",
+    "population": 61550,
+    "state_name": "Guyane",
+    "country_name": "Guyane française",
+    "populationName": ""
+  },
+  {
+    "name": "Bălţi",
+    "population": 125000,
+    "state_name": "Bălţi",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Tighina",
+    "population": 110175,
+    "state_name": "Bender Municipality",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Hînceşti",
+    "population": 16900,
+    "state_name": "Hînceşti",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Şoldăneşti",
+    "population": 6160,
+    "state_name": "Şoldăneşti",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Taraclia",
+    "population": 13512,
+    "state_name": "Taraclia",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Ştefan Vodă",
+    "population": 7700,
+    "state_name": "Ştefan-Vodă",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Strășeni",
+    "population": 19225,
+    "state_name": "Strășeni",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Soroca",
+    "population": 27423,
+    "state_name": "Soroca District",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Rîşcani",
+    "population": 12893,
+    "state_name": "Rîşcani",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Rezina",
+    "population": 9806,
+    "state_name": "Rezina",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Orhei",
+    "population": 24918,
+    "state_name": "Orhei",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Ocniţa",
+    "population": 9325,
+    "state_name": "Raionul Ocniţa",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Anenii Noi",
+    "population": 8250,
+    "state_name": "Anenii Noi",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Nisporeni",
+    "population": 11718,
+    "state_name": "Nisporeni",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Leova",
+    "population": 14301,
+    "state_name": "Leova",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Sîngerei",
+    "population": 14600,
+    "state_name": "Sîngerei",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Criuleni",
+    "population": 6932,
+    "state_name": "Criuleni",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Ialoveni",
+    "population": 14915,
+    "state_name": "Ialoveni",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Chisinau",
+    "population": 635994,
+    "state_name": "Chișinău Municipality",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Căușeni",
+    "population": 21690,
+    "state_name": "Căuşeni",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Cantemir",
+    "population": 3829,
+    "state_name": "Cantemir",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Călăraşi",
+    "population": 14066,
+    "state_name": "Călăraşi",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Cahul",
+    "population": 34492,
+    "state_name": "Cahul",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Glodeni",
+    "population": 10146,
+    "state_name": "Glodeni",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Floreşti",
+    "population": 16759,
+    "state_name": "Floreşti",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Fălești",
+    "population": 14377,
+    "state_name": "Fălești",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Drochia",
+    "population": 16080,
+    "state_name": "Drochia",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Donduşeni",
+    "population": 9435,
+    "state_name": "Donduşeni",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Cimişlia",
+    "population": 12464,
+    "state_name": "Cimişlia",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Briceni",
+    "population": 9900,
+    "state_name": "Briceni",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Basarabeasca",
+    "population": 10809,
+    "state_name": "Basarabeasca",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Edineţ",
+    "population": 22872,
+    "state_name": "Raionul Edineţ",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Ungheni",
+    "population": 34422,
+    "state_name": "Ungheni",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Teleneşti",
+    "population": 6633,
+    "state_name": "Teleneşti",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Tiraspol",
+    "population": 157000,
+    "state_name": "Transnistria",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Comrat",
+    "population": 22911,
+    "state_name": "Gagauzia",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Cocieri",
+    "population": 4151,
+    "state_name": "Dubăsari District",
+    "country_name": "Moldavie",
+    "populationName": ""
+  },
+  {
+    "name": "Osh",
+    "population": 322164,
+    "state_name": "Osh Region",
+    "country_name": "Kirghizistan",
+    "populationName": ""
+  },
+  {
+    "name": "Jalal-Abad",
+    "population": 123239,
+    "state_name": "Jalal-Abad Region",
+    "country_name": "Kirghizistan",
+    "populationName": ""
+  },
+  {
+    "name": "Naryn",
+    "population": 41178,
+    "state_name": "Naryn Region",
+    "country_name": "Kirghizistan",
+    "populationName": ""
+  },
+  {
+    "name": "Karakol",
+    "population": 84351,
+    "state_name": "Issyk-Kul",
+    "country_name": "Kirghizistan",
+    "populationName": ""
+  },
+  {
+    "name": "Batken",
+    "population": 27730,
+    "state_name": "Batken",
+    "country_name": "Kirghizistan",
+    "populationName": ""
+  },
+  {
+    "name": "Talas",
+    "population": 40308,
+    "state_name": "Talas Region",
+    "country_name": "Kirghizistan",
+    "populationName": ""
+  },
+  {
+    "name": "Bishkek",
+    "population": 900000,
+    "state_name": "Bishkek",
+    "country_name": "Kirghizistan",
+    "populationName": ""
+  },
+  {
+    "name": "Tân An",
+    "population": 215250,
+    "state_name": "Long An Povince",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Lang Son",
+    "population": 55981,
+    "state_name": "Lạng Sơn Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Ho Chi Minh City",
+    "population": 8993082,
+    "state_name": "Ho Chi Minh",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Hà Giang",
+    "population": 32690,
+    "state_name": "Hà Giang Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Can Tho",
+    "population": 812088,
+    "state_name": "Can Tho",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Biên Hòa",
+    "population": 830829,
+    "state_name": "Đồng Nai Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Phan Rang",
+    "population": 91520,
+    "state_name": "Ninh Thuận Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Yên Bái",
+    "population": 96540,
+    "state_name": "Yên Bái Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Kon Tum",
+    "population": 172712,
+    "state_name": "Kon Tum",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Hải Dương",
+    "population": 58030,
+    "state_name": "Hải Dương Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Vĩnh Yên",
+    "population": 17876,
+    "state_name": "Vĩnh Phúc Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Vị Thanh",
+    "population": 24477,
+    "state_name": "Hậu Giang",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Da Lat",
+    "population": 197000,
+    "state_name": "Lâm Đồng Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Lai Châu",
+    "population": 0,
+    "state_name": "Lai Châu Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Rach Gia",
+    "population": 228356,
+    "state_name": "Kiên Giang Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Nha Trang",
+    "population": 283441,
+    "state_name": "Khánh Hòa Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Hà Tĩnh",
+    "population": 27728,
+    "state_name": "Hà Tĩnh Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Qui Nhon",
+    "population": 210338,
+    "state_name": "ình Định Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Bến Tre",
+    "population": 124449,
+    "state_name": "Bến Tre Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Long Xuyen",
+    "population": 272365,
+    "state_name": "An Giang Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Thanh Hóa",
+    "population": 112473,
+    "state_name": "Thanh Hóa Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Thái Bình",
+    "population": 53071,
+    "state_name": "Thái Bình Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Tây Ninh",
+    "population": 135254,
+    "state_name": "Tây Ninh Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Sơn La",
+    "population": 19054,
+    "state_name": "Sơn La Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Đông Hà",
+    "population": 17662,
+    "state_name": "Quảng Trị Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Ha Long",
+    "population": 148066,
+    "state_name": "Quảng Ninh",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Quảng Ngãi",
+    "population": 32992,
+    "state_name": "Quảng Ngãi Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Dong Hoi",
+    "population": 169000,
+    "state_name": "Quảng Bình Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Tuy Hoa",
+    "population": 69596,
+    "state_name": "Phú Yên Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Hòa Bình",
+    "population": 105260,
+    "state_name": "Hòa Bình Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Pleiku",
+    "population": 114225,
+    "state_name": "Gia Lai Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Hanoi",
+    "population": 8053663,
+    "state_name": "Hanoi",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Haiphong",
+    "population": 841520,
+    "state_name": "Haiphong",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Phan Thiết",
+    "population": 160652,
+    "state_name": "Bình Thuận Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Cao Lanh",
+    "population": 63770,
+    "state_name": "Đồng Tháp Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Buon Ma Thuot",
+    "population": 146975,
+    "state_name": "Đắk Lắk",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Thành Phố Bà Rịa",
+    "population": 0,
+    "state_name": "Bà Rịa–Vũng Tàu Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Cao Bằng",
+    "population": 73549,
+    "state_name": "Cao Bằng Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Vinh",
+    "population": 163759,
+    "state_name": "Nghệ An Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Ninh Bình",
+    "population": 36864,
+    "state_name": "Ninh Bình Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Sóc Trăng",
+    "population": 114453,
+    "state_name": "Sóc Trăng Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Trà Vinh",
+    "population": 57408,
+    "state_name": "Trà Vinh Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Tuyên Quang",
+    "population": 36430,
+    "state_name": "Tuyên Quang Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Vĩnh Long",
+    "population": 137870,
+    "state_name": "Vĩnh Long Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Lào Cai",
+    "population": 36502,
+    "state_name": "Lào Cai Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Mỹ Tho",
+    "population": 122310,
+    "state_name": "Tiền Giang",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Huế",
+    "population": 351456,
+    "state_name": "Thừa Thiên Huế Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Bắc Ninh",
+    "population": 43564,
+    "state_name": "Bắc Ninh Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Bắc Giang",
+    "population": 53728,
+    "state_name": "Bắc Giang Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Da Nang",
+    "population": 988561,
+    "state_name": "Da Nang",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Thu Dau Mot",
+    "population": 91009,
+    "state_name": "Bình Dương Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Dong Xoai",
+    "population": 23978,
+    "state_name": "Bình Phước Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Thái Nguyên",
+    "population": 249004,
+    "state_name": "Thái Nguyên Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Tam Kỳ",
+    "population": 165240,
+    "state_name": "Quảng Nam Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Việt Trì",
+    "population": 140935,
+    "state_name": "Phú Thọ Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Nam Định",
+    "population": 193499,
+    "state_name": "Nam Định Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Phủ Lý",
+    "population": 31801,
+    "state_name": "Hà Nam Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Bac Kan",
+    "population": 17701,
+    "state_name": "Bắc Kạn Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Bạc Liêu",
+    "population": 107911,
+    "state_name": "Bạc Liêu Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Cà Mau",
+    "population": 111894,
+    "state_name": "Cà Mau Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Hưng Yên",
+    "population": 40273,
+    "state_name": "Hưng Yên Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Gia Nghĩa",
+    "population": 61413,
+    "state_name": "Đăk Nông Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Dien Bien Phu",
+    "population": 40282,
+    "state_name": "Điện Biên Province",
+    "country_name": "Viêt Nam",
+    "populationName": ""
+  },
+  {
+    "name": "Dundo",
+    "population": 177604,
+    "state_name": "Luanda Norte",
+    "country_name": "Angola",
+    "populationName": ""
+  },
+  {
+    "name": "Malanje",
+    "population": 455000,
+    "state_name": "Malanje",
+    "country_name": "Angola",
+    "populationName": ""
+  },
+  {
+    "name": "Menongue",
+    "population": 251178,
+    "state_name": "Cuando Cobango",
+    "country_name": "Angola",
+    "populationName": ""
+  },
+  {
+    "name": "Luena",
+    "population": 273675,
+    "state_name": "Moxico",
+    "country_name": "Angola",
+    "populationName": ""
+  },
+  {
+    "name": "Lubango",
+    "population": 600751,
+    "state_name": "Huíla",
+    "country_name": "Angola",
+    "populationName": ""
+  },
+  {
+    "name": "Huambo",
+    "population": 595304,
+    "state_name": "Huambo",
+    "country_name": "Angola",
+    "populationName": ""
+  },
+  {
+    "name": "Ondjiva",
+    "population": 121537,
+    "state_name": "Cunene",
+    "country_name": "Angola",
+    "populationName": ""
+  },
+  {
+    "name": "Sumbe",
+    "population": 205832,
+    "state_name": "Kwanza Sul",
+    "country_name": "Angola",
+    "populationName": ""
+  },
+  {
+    "name": "Cuito",
+    "population": 355423,
+    "state_name": "Bíe",
+    "country_name": "Angola",
+    "populationName": ""
+  },
+  {
+    "name": "Benguela",
+    "population": 555124,
+    "state_name": "Benguela",
+    "country_name": "Angola",
+    "populationName": ""
+  },
+  {
+    "name": "Mossamedes",
+    "population": 255000,
+    "state_name": "Namibe",
+    "country_name": "Angola",
+    "populationName": ""
+  },
+  {
+    "name": "Saurimo",
+    "population": 393000,
+    "state_name": "Lunda Sul",
+    "country_name": "Angola",
+    "populationName": ""
+  },
+  {
+    "name": "Mbanza Congo",
+    "population": 148000,
+    "state_name": "Zaire",
+    "country_name": "Angola",
+    "populationName": ""
+  },
+  {
+    "name": "Uíge",
+    "population": 322531,
+    "state_name": "Uíge",
+    "country_name": "Angola",
+    "populationName": ""
+  },
+  {
+    "name": "Caxito",
+    "population": 55000,
+    "state_name": "Bengo",
+    "country_name": "Angola",
+    "populationName": ""
+  },
+  {
+    "name": "Luanda",
+    "population": 2776168,
+    "state_name": "Luanda",
+    "country_name": "Angola",
+    "populationName": ""
+  },
+  {
+    "name": "N'dalatando",
+    "population": 161584,
+    "state_name": "Cuanza Norte",
+    "country_name": "Angola",
+    "populationName": ""
+  },
+  {
+    "name": "Cabinda",
+    "population": 550000,
+    "state_name": "Cabinda",
+    "country_name": "Angola",
+    "populationName": ""
+  },
+  {
+    "name": "Kuching",
+    "population": 402738,
+    "state_name": "Sarawak",
+    "country_name": "Malaisie",
+    "populationName": ""
+  },
+  {
+    "name": "Kota Kinabalu",
+    "population": 500421,
+    "state_name": "Sabah",
+    "country_name": "Malaisie",
+    "populationName": ""
+  },
+  {
+    "name": "Ipoh",
+    "population": 840000,
+    "state_name": "Perak",
+    "country_name": "Malaisie",
+    "populationName": ""
+  },
+  {
+    "name": "Kuantan",
+    "population": 548014,
+    "state_name": "Pahang",
+    "country_name": "Malaisie",
+    "populationName": ""
+  },
+  {
+    "name": "Johor Bahru",
+    "population": 858118,
+    "state_name": "Johor",
+    "country_name": "Malaisie",
+    "populationName": ""
+  },
+  {
+    "name": "Malacca",
+    "population": 579000,
+    "state_name": "Melaka",
+    "country_name": "Malaisie",
+    "populationName": ""
+  },
+  {
+    "name": "Kuala Terengganu",
+    "population": 426500,
+    "state_name": "Terengganu",
+    "country_name": "Malaisie",
+    "populationName": ""
+  },
+  {
+    "name": "Kangar",
+    "population": 63869,
+    "state_name": "Perlis",
+    "country_name": "Malaisie",
+    "populationName": ""
+  },
+  {
+    "name": "Seremban",
+    "population": 372917,
+    "state_name": "Negeri Sembilan",
+    "country_name": "Malaisie",
+    "populationName": ""
+  },
+  {
+    "name": "Kota Bharu",
+    "population": 568900,
+    "state_name": "Kelantan",
+    "country_name": "Malaisie",
+    "populationName": ""
+  },
+  {
+    "name": "Kuala Lumpur",
+    "population": 1453975,
+    "state_name": "Kuala Lumpur",
+    "country_name": "Malaisie",
+    "populationName": ""
+  },
+  {
+    "name": "George Town",
+    "population": 158336,
+    "state_name": "Penang",
+    "country_name": "Malaisie",
+    "populationName": ""
+  },
+  {
+    "name": "Alor Star",
+    "population": 417800,
+    "state_name": "Kedah",
+    "country_name": "Malaisie",
+    "populationName": ""
+  },
+  {
+    "name": "Labuan",
+    "population": 95120,
+    "state_name": "Labuan",
+    "country_name": "Malaisie",
+    "populationName": ""
+  },
+  {
+    "name": "Bern",
+    "population": 121631,
+    "state_name": "Bern",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Basel",
+    "population": 164488,
+    "state_name": "Basel-City",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Liestal",
+    "population": 12832,
+    "state_name": "Basel-Landschaft",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Herisau",
+    "population": 15438,
+    "state_name": "Appenzell Ausserrhoden",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Appenzell",
+    "population": 5649,
+    "state_name": "Appenzell Innerrhoden",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Aarau",
+    "population": 15501,
+    "state_name": "Aargau",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Zurich",
+    "population": 341730,
+    "state_name": "Zurich",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Zug",
+    "population": 23435,
+    "state_name": "Zug",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Lucerne",
+    "population": 81691,
+    "state_name": "Lucerne",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Delémont",
+    "population": 11315,
+    "state_name": "Jura",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Chur",
+    "population": 32429,
+    "state_name": "Grisons",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Glarus",
+    "population": 5681,
+    "state_name": "Glarus",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Geneva",
+    "population": 183981,
+    "state_name": "Geneva",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Fribourg",
+    "population": 32827,
+    "state_name": "Fribourg",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Lausanne",
+    "population": 139111,
+    "state_name": "Vaud",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Sion",
+    "population": 28045,
+    "state_name": "Valais",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Altdorf",
+    "population": 8678,
+    "state_name": "Uri",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Bellinzona",
+    "population": 16572,
+    "state_name": "Ticino",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Frauenfeld",
+    "population": 21979,
+    "state_name": "Thurgau",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Solothurn",
+    "population": 14853,
+    "state_name": "Solothurn",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Schwyz",
+    "population": 14177,
+    "state_name": "Schwyz",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Schaffhausen",
+    "population": 33863,
+    "state_name": "Schaffhausen",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "St. Gallen",
+    "population": 70572,
+    "state_name": "Saint Gallen",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Sarnen",
+    "population": 9410,
+    "state_name": "Obwalden",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Stans",
+    "population": 7475,
+    "state_name": "Nidwalden",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Neuchâtel",
+    "population": 31270,
+    "state_name": "Neuchâtel",
+    "country_name": "Suisse",
+    "populationName": ""
+  },
+  {
+    "name": "Tak",
+    "population": 24149,
+    "state_name": "Tak",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Kanchanaburi",
+    "population": 63699,
+    "state_name": "Kanchanaburi",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Yasothon",
+    "population": 21643,
+    "state_name": "Yasothon",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Nong Khai",
+    "population": 63609,
+    "state_name": "Nong Khai",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Narathiwat",
+    "population": 47771,
+    "state_name": "Narathiwat",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Nan",
+    "population": 24670,
+    "state_name": "Nan",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Nakhon Si Thammarat",
+    "population": 102152,
+    "state_name": "Nakhon Si Thammarat",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Nakhon Sawan",
+    "population": 82305,
+    "state_name": "Nakhon Sawan",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Nakhon Ratchasima",
+    "population": 126391,
+    "state_name": "Nakhon Ratchasima",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Nakhon Phanom",
+    "population": 34595,
+    "state_name": "Nakhon Phanom",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Nakhon Pathom",
+    "population": 117927,
+    "state_name": "Nakhon Pathom",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Nakhon Nayok",
+    "population": 21309,
+    "state_name": "Nakhon Nayok",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Mukdahan",
+    "population": 40480,
+    "state_name": "Mukdahan",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Maha Sarakham",
+    "population": 51584,
+    "state_name": "Maha Sarakham",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Lopburi",
+    "population": 57761,
+    "state_name": "Lopburi",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Loei",
+    "population": 35273,
+    "state_name": "Loei",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Bangkok",
+    "population": 5104476,
+    "state_name": "Bangkok",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Khon Kaen",
+    "population": 114459,
+    "state_name": "Khon Kaen",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Kalasin",
+    "population": 55102,
+    "state_name": "Kalasin",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Chon Buri",
+    "population": 219164,
+    "state_name": "Chon Buri",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Chanthaburi",
+    "population": 99819,
+    "state_name": "Chanthaburi",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Chaiyaphum",
+    "population": 58350,
+    "state_name": "Chaiyaphum",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Chainat",
+    "population": 15469,
+    "state_name": "Chai Nat",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Chachoengsao",
+    "population": 49741,
+    "state_name": "Chachoengsao",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Buriram",
+    "population": 28283,
+    "state_name": "Buriram",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Yala",
+    "population": 93558,
+    "state_name": "Yala",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Uttaradit",
+    "population": 58313,
+    "state_name": "Uttaradit",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Trat",
+    "population": 21590,
+    "state_name": "Trat",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Surin",
+    "population": 46673,
+    "state_name": "Surin",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Suphan Buri",
+    "population": 53399,
+    "state_name": "Suphan Buri",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Songkhla",
+    "population": 61758,
+    "state_name": "Songkhla",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Si Sa Ket",
+    "population": 44751,
+    "state_name": "Si Sa Ket",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Sing Buri",
+    "population": 20046,
+    "state_name": "Sing Buri",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Satun",
+    "population": 34544,
+    "state_name": "Satun",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Changwat Sara Buri",
+    "population": 67763,
+    "state_name": "Saraburi",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Samut Songkhram",
+    "population": 35065,
+    "state_name": "Samut Songkhram",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Samut Sakhon",
+    "population": 63498,
+    "state_name": "Samut Sakhon",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Mueang Samut Prakan",
+    "population": 388920,
+    "state_name": "Samut Prakan",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Sakon Nakhon",
+    "population": 76237,
+    "state_name": "Sakon Nakhon",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Roi Et",
+    "population": 39328,
+    "state_name": "Roi Et",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Rayong",
+    "population": 106737,
+    "state_name": "Rayong",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Phra Nakhon Si Ayutthaya",
+    "population": 50830,
+    "state_name": "Phra Nakhon Si Ayutthaya",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Phrae",
+    "population": 38538,
+    "state_name": "Phrae",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Phitsanulok",
+    "population": 62584,
+    "state_name": "Phitsanulok",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Phichit",
+    "population": 35760,
+    "state_name": "Phichit",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Phetchabun",
+    "population": 50656,
+    "state_name": "Phetchabun",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Phayao",
+    "population": 21058,
+    "state_name": "Phayao",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Phatthalung",
+    "population": 43522,
+    "state_name": "Phatthalung",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Pattani",
+    "population": 43690,
+    "state_name": "Pattani",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Pathum Thani",
+    "population": 24547,
+    "state_name": "Pathum Thani",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Nonthaburi",
+    "population": 254375,
+    "state_name": "Nonthaburi",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Ang Thong",
+    "population": 13738,
+    "state_name": "Ang Thong",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Udon Thani",
+    "population": 130531,
+    "state_name": "Udon Thani",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Prachin Buri",
+    "population": 32600,
+    "state_name": "Prachin Buri",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Ubon Ratchathani",
+    "population": 122533,
+    "state_name": "Ubon Ratchathani",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Amnat Charoen",
+    "population": 34769,
+    "state_name": "Amnat Charoen",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Nong Bua Lamphu",
+    "population": 34401,
+    "state_name": "Nong Bua Lamphu",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Sa Kaeo",
+    "population": 28497,
+    "state_name": "Sa Kaeo",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Chumphon",
+    "population": 55835,
+    "state_name": "Chumphon",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Chiang Rai",
+    "population": 78756,
+    "state_name": "Chiang Rai",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Uthai Thani",
+    "population": 22219,
+    "state_name": "Uthai Thani",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Trang",
+    "population": 66713,
+    "state_name": "Trang",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Surat Thani",
+    "population": 132040,
+    "state_name": "Surat Thani",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Sukhothai Thani",
+    "population": 37000,
+    "state_name": "Sukhothai",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Ratchaburi",
+    "population": 92448,
+    "state_name": "Ratchaburi",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Ranong",
+    "population": 24561,
+    "state_name": "Ranong province",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Prachuap Khiri Khan",
+    "population": 33521,
+    "state_name": "Prachuap Khiri Khan",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Phuket",
+    "population": 79308,
+    "state_name": "Phuket",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Phetchaburi",
+    "population": 46601,
+    "state_name": "Phetchaburi",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Phang Nga",
+    "population": 9676,
+    "state_name": "Phang Nga",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Mae Hong Son",
+    "population": 9109,
+    "state_name": "Mae Hong Son",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Lamphun",
+    "population": 43196,
+    "state_name": "Lamphun",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Lampang",
+    "population": 156139,
+    "state_name": "Lampang",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Krabi",
+    "population": 31219,
+    "state_name": "Krabi",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Kamphaeng Phet",
+    "population": 58787,
+    "state_name": "Kamphaeng Phet",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Bueng Kan",
+    "population": 9712,
+    "state_name": "Bueng Kan",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Chiang Mai",
+    "population": 127240,
+    "state_name": "Chiang Mai",
+    "country_name": "Thaïlande",
+    "populationName": ""
+  },
+  {
+    "name": "Sabaneta",
+    "population": 16380,
+    "state_name": "Santiago Rodríguez",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Santiago",
+    "population": 1200000,
+    "state_name": "Santiago Province",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "San Pedro de Macorís",
+    "population": 217899,
+    "state_name": "San Pedro de Macorís",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "San Juan",
+    "population": 72950,
+    "state_name": "San Juan Province",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "San Cristóbal",
+    "population": 154040,
+    "state_name": "San Cristóbal",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Cotuí",
+    "population": 41641,
+    "state_name": "Sánchez Ramírez",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Samaná",
+    "population": 11432,
+    "state_name": "Samaná",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Salcedo",
+    "population": 45299,
+    "state_name": "Hermanas Mirabal",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Puerto Plata",
+    "population": 146000,
+    "state_name": "Puerto Plata",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Baní",
+    "population": 66709,
+    "state_name": "Peravia",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Pedernales",
+    "population": 11072,
+    "state_name": "Pedernales Province",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Santo Domingo",
+    "population": 2201941,
+    "state_name": "Nacional",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Monte Plata",
+    "population": 15532,
+    "state_name": "Monte Plata Province",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Monte Cristo",
+    "population": 17001,
+    "state_name": "Monte Cristi Province",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Bonao",
+    "population": 73269,
+    "state_name": "Monseñor Nouel",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Nagua",
+    "population": 33862,
+    "state_name": "María Trinidad Sánchez",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Concepción de la Vega",
+    "population": 102426,
+    "state_name": "La Vega",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "La Romana",
+    "population": 208437,
+    "state_name": "La Romana",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Salvaleón de Higüey",
+    "population": 123787,
+    "state_name": "La Altagracia Province",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Jimaní",
+    "population": 6567,
+    "state_name": "Independencia",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Hato Mayor del Rey",
+    "population": 35999,
+    "state_name": "Hato Mayor Province",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Moca",
+    "population": 61834,
+    "state_name": "Espaillat Province",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Santa Cruz de El Seibo",
+    "population": 23547,
+    "state_name": "El Seíbo",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Comendador",
+    "population": 12070,
+    "state_name": "Elías Piña",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "San Francisco de Macorís",
+    "population": 124763,
+    "state_name": "Duarte Province",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Dajabón",
+    "population": 16398,
+    "state_name": "Dajabón",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Santa Cruz de Barahona",
+    "population": 77160,
+    "state_name": "Barahona Province",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Neiba",
+    "population": 18670,
+    "state_name": "Baoruco Province",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Azua",
+    "population": 59139,
+    "state_name": "Azua Province",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Mao",
+    "population": 48297,
+    "state_name": "Valverde Province",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "San José de Ocoa",
+    "population": 21148,
+    "state_name": "San José de Ocoa",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Santo Domingo Este",
+    "population": 700000,
+    "state_name": "Santo Domingo Province",
+    "country_name": "République dominicaine",
+    "populationName": ""
+  },
+  {
+    "name": "Navoiy",
+    "population": 144158,
+    "state_name": "Navoiy Region",
+    "country_name": "Ouzbékistan",
+    "populationName": ""
+  },
+  {
+    "name": "Nukus",
+    "population": 332500,
+    "state_name": "Karakalpakstan",
+    "country_name": "Ouzbékistan",
+    "populationName": ""
+  },
+  {
+    "name": "Qarshi",
+    "population": 278300,
+    "state_name": "Qashqadaryo",
+    "country_name": "Ouzbékistan",
+    "populationName": ""
+  },
+  {
+    "name": "Amir Timur",
+    "population": 0,
+    "state_name": "Tashkent Region",
+    "country_name": "Ouzbékistan",
+    "populationName": ""
+  },
+  {
+    "name": "Termez",
+    "population": 182800,
+    "state_name": "Surxondaryo Region",
+    "country_name": "Ouzbékistan",
+    "populationName": ""
+  },
+  {
+    "name": "Samarkand",
+    "population": 513572,
+    "state_name": "Samarqand Region",
+    "country_name": "Ouzbékistan",
+    "populationName": ""
+  },
+  {
+    "name": "Tashkent",
+    "population": 1978028,
+    "state_name": "Tashkent",
+    "country_name": "Ouzbékistan",
+    "populationName": ""
+  },
+  {
+    "name": "Guliston",
+    "population": 90398,
+    "state_name": "Sirdaryo Region",
+    "country_name": "Ouzbékistan",
+    "populationName": ""
+  },
+  {
+    "name": "Namangan",
+    "population": 1010000,
+    "state_name": "Namangan",
+    "country_name": "Ouzbékistan",
+    "populationName": ""
+  },
+  {
+    "name": "Urgench",
+    "population": 145000,
+    "state_name": "Xorazm Region",
+    "country_name": "Ouzbékistan",
+    "populationName": ""
+  },
+  {
+    "name": "Fergana",
+    "population": 299200,
+    "state_name": "Fergana",
+    "country_name": "Ouzbékistan",
+    "populationName": ""
+  },
+  {
+    "name": "Andijan",
+    "population": 447800,
+    "state_name": "Andijan Region",
+    "country_name": "Ouzbékistan",
+    "populationName": ""
+  },
+  {
+    "name": "Bukhara",
+    "population": 280187,
+    "state_name": "Bukhara",
+    "country_name": "Ouzbékistan",
+    "populationName": ""
+  },
+  {
+    "name": "Jizzakh",
+    "population": 179200,
+    "state_name": "Jizzakh Region",
+    "country_name": "Ouzbékistan",
+    "populationName": ""
+  },
+  {
+    "name": "Ati",
+    "population": 29867,
+    "state_name": "Batha",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Faya-Largeau",
+    "population": 44011,
+    "state_name": "Borkou",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Bardaï",
+    "population": 4078,
+    "state_name": "Tibesti",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Fada",
+    "population": 17240,
+    "state_name": "Ennedi-Ouest",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Doba",
+    "population": 70942,
+    "state_name": "Logone Oriental",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Bol",
+    "population": 51389,
+    "state_name": "Lac",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Mao",
+    "population": 50681,
+    "state_name": "Kanem",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Mongo",
+    "population": 53768,
+    "state_name": "Guéra",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Massenya",
+    "population": 4611,
+    "state_name": "Chari-Baguirmi",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Sarh",
+    "population": 138928,
+    "state_name": "Moyen-Chari",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Am Timan",
+    "population": 74691,
+    "state_name": "Salamat",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Abéché",
+    "population": 139983,
+    "state_name": "Ouadaï",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Biltine",
+    "population": 33540,
+    "state_name": "Wadi Fira",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Massakory",
+    "population": 39944,
+    "state_name": "Hadjer-Lamis",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Moussoro",
+    "population": 35100,
+    "state_name": "Barh el Gazel",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Goz Beida",
+    "population": 58941,
+    "state_name": "Sila",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Amdjarass",
+    "population": 29793,
+    "state_name": "Ennedi-Est",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Moundou",
+    "population": 196124,
+    "state_name": "Logone Occidental",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Laï",
+    "population": 27071,
+    "state_name": "Tandjilé",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Bongor",
+    "population": 63699,
+    "state_name": "Mayo-Kebbi Est",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Koumra",
+    "population": 54109,
+    "state_name": "Mandoul",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Pala",
+    "population": 70677,
+    "state_name": "Mayo-Kebbi Ouest",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "N'Djamena",
+    "population": 1359526,
+    "state_name": "N’Djaména",
+    "country_name": "Tchad",
+    "populationName": ""
+  },
+  {
+    "name": "Boké",
+    "population": 63736,
+    "state_name": "Boké Region",
+    "country_name": "Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Faranah",
+    "population": 70181,
+    "state_name": "Faranah",
+    "country_name": "Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Kankan",
+    "population": 221428,
+    "state_name": "Kankan Region",
+    "country_name": "Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Kindia",
+    "population": 161024,
+    "state_name": "Kindia",
+    "country_name": "Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Nzérékoré",
+    "population": 226426,
+    "state_name": "Nzérékoré Region",
+    "country_name": "Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Conakry",
+    "population": 1928389,
+    "state_name": "Conakry",
+    "country_name": "Guinée",
+    "populationName": ""
+  },
+  {
+    "name": "Mamou",
+    "population": 79109,
+    "state_name": "Mamou Region",
+    "country_name": "Guinée",
+    "populationName": ""
+  }
 ]

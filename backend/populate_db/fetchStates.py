@@ -1,7 +1,6 @@
 import json
 import requests
 from urllib.parse import urlencode
-import sys
 
 GEONAMES_USERNAME = 'math56'
 
@@ -48,7 +47,7 @@ def get_other_cities(country_code):
     }
     return make_geonames_request(base_url, params)
 
-def get_country_states(country_code):
+def get_country_states(country_code, country_name):
     base_url = "http://api.geonames.org/searchJSON"
     params = {
         "country": country_code,
@@ -73,7 +72,7 @@ def get_country_states(country_code):
         # Handle case where adminCode1 might be missing
         regional_capital = ""
         if adminCode1:
-            regional_capital = next((city.get("name", "") for city in capital_cities if city.get("adminCode1") == adminCode1), "")
+            regional_capital = next((city.get("name", "") for city in all_cities if city.get("adminCode1") == adminCode1), "")
 
         population_name = ""
         
@@ -92,7 +91,7 @@ def get_country_states(country_code):
                     "name": city.get("name", ""),
                     "population": city.get("population", 0),
                     "state_name": state_name,
-                    "country_name": city,
+                    "country_name": country_name,
                     "populationName": ""
                 }
                 all_country_cities.append(city_data)
@@ -103,25 +102,19 @@ def main():
     input_countries_file = 'countriesData.json'
     output_states_file = 'statesData.json'
     output_cities_file = 'citiesData.json'
-    for arg in sys.argv[1:]:
-        if 'Test' in arg:
-            input_countries_file = input_countries_file.replace('Data', 'Test')
-            output_states_file = output_states_file.replace('Data', 'Test')
-            output_cities_file = output_cities_file.replace('Data', 'Test')
-            break
 
     country_infos = get_all_country_names(input_countries_file)
     all_countries_states = []
     all_cities = []
 
     for country_info in country_infos:
-        original_name = country_info['original_name']
+        country_name = country_info['original_name']
         country_code = country_info['countryCode']
         
-        states, countries_cities = get_country_states(country_code)
+        states, countries_cities = get_country_states(country_code, country_name)
         
         all_countries_states.append({
-            "country": original_name,
+            "country": country_name,
             "countryCode": country_code,
             "states": states
         })
