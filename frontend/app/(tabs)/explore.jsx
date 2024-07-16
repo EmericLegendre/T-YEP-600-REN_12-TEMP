@@ -1,17 +1,35 @@
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Stack, useRouter } from 'expo-router'
 import Colors from '../../constants/Colors'
 import { Ionicons } from '@expo/vector-icons'
 import Listings from '../../components/Listings'
-import countriesData from '../../data/countries.json'
+// import countriesData from '../../data/countries.json'
+import axios from 'axios';
+
 
 const explore = () => {
 
   const router = useRouter();
 
-    const [searchTerm, setSearchTerm] = useState('');
-    const [filteredData, setFilteredData] = useState(countriesData);
+  const [countriesData, setCountriesData] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filteredData, setFilteredData] = useState([]);
+
+  useEffect(() => {
+    const fetchCountriesData = async () => {
+      try {
+        const response = await axios.get('http://localhost:5000/api/country/get');
+        setCountriesData(response.data);
+        setFilteredData(response.data);
+        console.log(countriesData);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchCountriesData();
+  }, []);
   
     const handleSearch = (text) => {
       setSearchTerm(text);
