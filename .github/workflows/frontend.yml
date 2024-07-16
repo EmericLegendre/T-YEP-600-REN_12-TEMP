@@ -1,71 +1,45 @@
-name: Build App
-
+name: EAS PIPELINE
 on:
-  workflow_dispatch:
-    inputs:
-      os:
-        type: choice
-        description: OS to build on. Ubuntu is faster, MacOS supports iOS builds
-        options:
-          - ubuntu-latest
-      platform:
-        type: choice
-        description: Platform to build for
-        options:
-          - android
-      profile:
-        type: choice
-        description: Build profile to use
-        options:
-          - development
-      should_submit:
-        type: boolean
-        description: Whether to perform the submit step
-        required: true
-        default: false
   push:
     branches:
-      - main
-  pull_request:
-    branches:
-      - main
+      - development
+  workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ${{ github.event.inputs.os || 'ubuntu-latest' }}
-    strategy:
-      matrix:
-        node: [18.x]
+    name: Install and build
+    runs-on: ubuntu-latest
     steps:
-    - name: 🏗 Setup repo
-      uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
 
-    - name: 🏗 Setup Node
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node }}
-        cache: 'npm'
+      - name: Reconfigure git to use HTTP authentication
+        run: >
+          git config --global url."https://github.com/".insteadOf
+          ssh://git@github.com/
 
-    - name: 🏗 Setup Expo and EAS
-      uses: expo/expo-github-action@v7
-      with:
-        token: ${{ secrets.EXPO_TOKEN }}
-        expo-version: latest
-        eas-version: latest
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
 
-    - name: 📦 Install dependencies
-      working-directory: ./frontend
-      run: npm install
+      - name: Setup Expo
+        uses: expo/expo-github-action@v6
+        with:
+          expo-version: 4.x
+          token: ${{ secrets.EXPO_TOKEN }}
+          expo-cache: true
 
-    - name: 👷 Build app
-      working-directory: ./frontend
-      run: |
-        eas build --local \
-          --non-interactive \
-          --output=./app-build \
-          --platform=${{ github.event.inputs.platform || 'android' }} \
-          --profile=${{ github.event.inputs.profile || 'development' }}
+      - name: Install dependencies
+        run: npm ci
 
-    - name: 🚢 Submit
-      if: ${{ github.event.inputs.should_submit }}
-      run: eas submit -p ${{ github.event.inputs.platform || 'android' }} --profile ${{ github.event.inputs.profile || 'development' }} --path app-build
+      - name: Authenticate git name
+        run: git config --global user.name "Sakshya Arora"
+
+      - name: Authenticate git email
+        run: git config --global user.email "sakshya@geekyants.com"
+
+      - name: Build on EAS
+        run: EAS_BUILD_AUTOCOMMIT=${{1}} npx eas-cli build --platform all --non-interactive
