@@ -54,8 +54,6 @@ const register = () => {
           return;
         }
 
-        //navigation.navigate('home');
-
           try {
               const response = await axios.post('http://localhost:5000/api/users/add', {
                   email,
