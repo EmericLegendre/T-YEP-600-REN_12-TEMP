@@ -1,45 +1,44 @@
-name: EAS PIPELINE
+name: Build Expo Project with EAS
+
 on:
   push:
     branches:
-      - development
-  workflow_dispatch:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
-    name: Install and build
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v2
-        with:
-          persist-credentials: false
 
-      - name: Reconfigure git to use HTTP authentication
-        run: >
-          git config --global url."https://github.com/".insteadOf
-          ssh://git@github.com/
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v1
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: 14.x
+          node-version: 18.x
 
-      - name: Setup Expo
-        uses: expo/expo-github-action@v6
-        with:
-          expo-version: 4.x
-          token: ${{ secrets.EXPO_TOKEN }}
-          expo-cache: true
+      - name: Install Expo CLI
+        working-directory: ./frontend
+        run: npm install -g expo-cli
+
+      - name: Install EAS CLI
+        working-directory: ./frontend
+        run: npm install -g eas-cli
 
       - name: Install dependencies
-        run: npm ci
+        working-directory: ./frontend
+        run: npm install
 
-      - name: Authenticate git name
-        run: git config --global user.name "Sakshya Arora"
+      - name: Login to Expo
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+        run: expo login --token $EXPO_TOKEN
 
-      - name: Authenticate git email
-        run: git config --global user.email "sakshya@geekyants.com"
+      - name: Build project for Android
+        working-directory: ./frontend
+        run: eas build --platform android --non-interactive
 
-      - name: Build on EAS
-        run: EAS_BUILD_AUTOCOMMIT=${{1}} npx eas-cli build --platform all --non-interactive
