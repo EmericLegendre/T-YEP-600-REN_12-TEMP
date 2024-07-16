@@ -66,7 +66,7 @@ const register = () => {
               });
 
               if (response.status === 201) {
-                  navigation.navigate('/tabs/home');
+                  router.push('/home');
               } else {
                   setErrorMessage('Registration failed. Please try again.');
               }
@@ -283,7 +283,11 @@ const register = () => {
           <TouchableOpacity style={styles.button} onPress={handleSignUp}>
               <Text style={styles.btntext}>Sign Up</Text>
           </TouchableOpacity>
-        </View>
+
+          <TouchableOpacity style={styles.signInButton} onPress={() => navigation.navigate('signIn')}>
+              <Text style={styles.signInText}>Already have an account?{' '}<Text style={styles.signInLink}>Sign in</Text></Text>
+          </TouchableOpacity>
+</View>
     );
 }
 
@@ -331,6 +335,17 @@ const styles = StyleSheet.create({
       backgroundColor: '#199187',
       marginBottom: 20,
       color: '#333',
+  },
+  signInButton: {
+      marginTop: 20,
+  },
+  signInText: {
+      color: '#fff',
+      textAlign: 'center',
+  },
+  signInLink: {
+      color: '#59cbbd',
+      fontWeight: 'bold',
   },
 
 });
