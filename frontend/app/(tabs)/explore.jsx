@@ -4,7 +4,6 @@ import { Stack, useRouter } from 'expo-router'
 import Colors from '../../constants/Colors'
 import { Ionicons } from '@expo/vector-icons'
 import Listings from '../../components/Listings'
-// import countriesData from '../../data/countries.json'
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
