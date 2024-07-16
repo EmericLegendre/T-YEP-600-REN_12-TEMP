@@ -3,12 +3,13 @@ import { Stack, useRouter } from 'expo-router';
 import React from 'react';
 import Colors from '../constants/Colors';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Profile = () => {
   const router = useRouter();
 
      const logOut = () => {
-         localStorage.clear();
+         AsyncStorage.setItem();
          router.push('/register');
     }
 
