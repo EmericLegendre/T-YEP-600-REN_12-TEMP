@@ -19,26 +19,23 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 18.x
+          node-version: 16.x
 
       - name: Install Expo CLI
         working-directory: ./frontend
-        run: npm install -g expo-cli
+        run: npm install --global expo-cli
 
       - name: Install EAS CLI
         working-directory: ./frontend
-        run: npm install -g eas-cli
+        run: npm install --global eas-cli
 
       - name: Install dependencies
         working-directory: ./frontend
         run: npm install
 
-      - name: Login to Expo
-        env:
-          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
-        run: expo login --token $EXPO_TOKEN
+      - name: Configure Expo authentication
+        run: npx expo login --username ${{ secrets.EXPO_USERNAME }} --password ${{ secrets.EXPO_PASSWORD }}
 
       - name: Build project for Android
         working-directory: ./frontend
         run: eas build --platform android --non-interactive
-
