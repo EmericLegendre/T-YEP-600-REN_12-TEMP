@@ -36,6 +36,10 @@ jobs:
       - name: Configure Expo authentication
         run: npx expo login --username ${{ secrets.EXPO_USERNAME }} --password ${{ secrets.EXPO_PASSWORD }}
 
+      - name: Initialize EAS project
+        working-directory: ./frontend
+        run: eas init --id ${{ secrets.EAS_PROJECT_ID }} --non-interactive
+
       - name: Build project for Android
         working-directory: ./frontend
         run: eas build --platform android --non-interactive
