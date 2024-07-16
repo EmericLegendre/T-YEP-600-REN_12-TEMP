@@ -1,17 +1,47 @@
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Stack, useRouter } from 'expo-router'
 import Colors from '../../constants/Colors'
 import { Ionicons } from '@expo/vector-icons'
 import Listings from '../../components/Listings'
-import countriesData from '../../data/countries.json'
+import axios from 'axios';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
 
 const explore = () => {
 
   const router = useRouter();
 
-    const [searchTerm, setSearchTerm] = useState('');
-    const [filteredData, setFilteredData] = useState(countriesData);
+  const [countriesData, setCountriesData] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filteredData, setFilteredData] = useState([]);
+
+  useEffect(() => {
+    const fetchCountriesData = async () => {
+      try {
+
+        const token = await AsyncStorage.getItem('token');
+        console.log('Token:', token);
+
+        const config = {
+          headers: { Authorization: `Bearer ${token}` }
+        };
+
+        const response = await axios.get('http://localhost:5000/api/country/get', config);
+        setCountriesData(response.data);
+        setFilteredData(response.data);
+      } catch (error) {
+        if (error.response) {
+          console.log('Error Response:', error.response.data);
+        } else {
+          console.log('Error:', error.message);
+        }
+      }
+    };
+
+    fetchCountriesData();
+  }, []);
+
   
     const handleSearch = (text) => {
       setSearchTerm(text);
