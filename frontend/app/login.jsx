@@ -4,7 +4,6 @@ import React from 'react'
 import {useState} from 'react'
 import axios from 'axios'
 import { useNavigation } from '@react-navigation/native'
-import { AsyncStorage } from '@react-native-async-storage/async-storage';
 
 const login = () => {
   const navigation = useNavigation();
