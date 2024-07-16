@@ -67,7 +67,7 @@ const register = () => {
               });
 
               if (response.status === 201) {
-                  router.push('/home');
+                  router.push('/login');
               } else {
                   setErrorMessage('Registration failed. Please try again.');
               }
