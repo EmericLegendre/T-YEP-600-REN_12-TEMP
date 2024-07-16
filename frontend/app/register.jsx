@@ -11,6 +11,7 @@ import axios from 'axios'
 const register = () => {
 
       const navigation = useNavigation();
+      const router = useRouter();
 
 
       const [first_name, setFirstName] = useState('');
@@ -284,7 +285,7 @@ const register = () => {
               <Text style={styles.btntext}>Sign Up</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.signInButton} onPress={() => navigation.navigate('signIn')}>
+          <TouchableOpacity style={styles.signInButton} onPress={() => router.push('/login')}>
               <Text style={styles.signInText}>Already have an account?{' '}<Text style={styles.signInLink}>Sign in</Text></Text>
           </TouchableOpacity>
 </View>
