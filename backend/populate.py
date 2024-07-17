@@ -6,11 +6,11 @@ from sqlalchemy.exc import SQLAlchemyError
 from dotenv import load_dotenv
 from config.dbConfig import db
 from models.country import Country
-from models.countryInfos import CountryInfos, CategoryEnum
 from models.state import State
 from models.city import City
-from models.stateInfos import StateInfos
-from models.cityInfos import CityInfos
+from models.countryInfos import CountryInfos, CategoryEnum as CountryEnum
+from models.stateInfos import StateInfos, CategoryEnum as StateEnum
+from models.cityInfos import CityInfos, CategoryEnum as CityEnum
 
 load_dotenv()
 
@@ -46,7 +46,7 @@ def insert_countries_to_db(countries):
                 country_info = CountryInfos(
                     country_id=new_country.id,
                     content=language,
-                    category=CategoryEnum.LANGUAGE
+                    category=CountryEnum.LANGUAGE
                 )
                 db.session.add(country_info)
                 db.session.commit()
@@ -135,6 +135,71 @@ def insert_cities_to_db(cities_data):
 
     return f"{success_count} cities created successfully"
 
+def insert_country_infos_to_db():
+    country_infos = [
+        {"country_id": 224, "category": CountryEnum.LANGUAGE, "content": "English is the primary language spoken in the USA."},
+        {"country_id": 224, "category": CountryEnum.CULTURE, "content": "The USA is known for its diverse culture, including Hollywood and music festivals."},
+        {"country_id": 224, "category": CountryEnum.LAW, "content": "The USA has a federal legal system with state-specific laws."},
+        {"country_id": 224, "category": CountryEnum.COOKING, "content": "The USA is famous for its fast food and diverse culinary offerings."},
+        {"country_id": 224, "category": CountryEnum.HEALTH, "content": "Healthcare in the USA is expensive; travelers should have insurance."},
+        {"country_id": 130, "category": CountryEnum.LANGUAGE, "content": "English is the primary language spoken in the UK."},
+        {"country_id": 130, "category": CountryEnum.CULTURE, "content": "The UK has a rich historical culture with landmarks like Big Ben and Buckingham Palace."},
+        {"country_id": 130, "category": CountryEnum.LAW, "content": "The UK has a common law legal system."},
+        {"country_id": 130, "category": CountryEnum.COOKING, "content": "British cuisine includes fish and chips, Sunday roast, and afternoon tea."},
+        {"country_id": 130, "category": CountryEnum.HEALTH, "content": "The NHS provides healthcare in the UK; it is free at the point of use for residents."}
+    ]
+
+    for info in country_infos:
+        try:
+            country_info = CountryInfos(**info)
+            db.session.add(country_info)
+            db.session.commit()
+        except SQLAlchemyError as e:
+            db.session.rollback()
+            print(f"Error inserting country info: {e}")
+
+def insert_state_infos_to_db():
+    state_infos = [
+        {"state_id": 3486, "category": StateEnum.CULTURE, "content": "California is known for its tech industry in Silicon Valley."},
+        {"state_id": 3486, "category": StateEnum.LAW, "content": "California has progressive environmental and labor laws."},
+        {"state_id": 3486, "category": StateEnum.COOKING, "content": "California cuisine includes fresh produce and fusion dishes."},
+        {"state_id": 3486, "category": StateEnum.HEALTH, "content": "California has a strong healthcare system with many top-rated hospitals."},
+        {"state_id": 3478, "category": StateEnum.CULTURE, "content": "New York is known for its cultural diversity and Broadway shows."},
+        {"state_id": 3478, "category": StateEnum.LAW, "content": "New York has strict gun control laws."},
+        {"state_id": 3478, "category": StateEnum.COOKING, "content": "New York is famous for its pizza and bagels."},
+        {"state_id": 3478, "category": StateEnum.HEALTH, "content": "New York City has a comprehensive public health system."}
+    ]
+
+    for info in state_infos:
+        try:
+            state_info = StateInfos(**info)
+            db.session.add(state_info)
+            db.session.commit()
+        except SQLAlchemyError as e:
+            db.session.rollback()
+            print(f"Error inserting state info: {e}")
+
+def insert_city_infos_to_db():
+    city_infos = [
+        {"city_id": 1, "category": CityEnum.CULTURE, "content": "Los Angeles is known for its entertainment industry and beaches."},
+        {"city_id": 1, "category": CityEnum.TRANSPORT, "content": "Los Angeles has a widespread car culture and traffic congestion."},
+        {"city_id": 1, "category": CityEnum.COOKING, "content": "Los Angeles offers diverse food options from around the world."},
+        {"city_id": 1, "category": CityEnum.HEALTH, "content": "Los Angeles has many fitness centers and health-conscious restaurants."},
+        {"city_id": 2, "category": CityEnum.CULTURE, "content": "New York City is known for its museums and cultural landmarks."},
+        {"city_id": 2, "category": CityEnum.TRANSPORT, "content": "New York City has an extensive subway system."},
+        {"city_id": 2, "category": CityEnum.COOKING, "content": "New York City is famous for its street food and high-end restaurants."},
+        {"city_id": 2, "category": CityEnum.HEALTH, "content": "New York City offers a range of healthcare services and facilities."}
+    ]
+
+    for info in city_infos:
+        try:
+            city_info = CityInfos(**info)
+            db.session.add(city_info)
+            db.session.commit()
+        except SQLAlchemyError as e:
+            db.session.rollback()
+            print(f"Error inserting city info: {e}")
+
 def populate_countries_from_json():
     with open('populate_db/countriesData.json', 'r') as json_file:
         countries = json.load(json_file)
@@ -158,7 +223,7 @@ def populate_cities_from_json():
 
 if __name__ == '__main__':
     if len(sys.argv) > 2:
-        print("Usage: python script.py [countries|states|cities]")
+        print("Usage: python script.py [countries|states|cities|json|infos]")
         sys.exit(1)
 
     option = sys.argv[1] if len(sys.argv) > 1 else ""
@@ -170,7 +235,18 @@ if __name__ == '__main__':
             populate_states_from_json()
         elif option == "cities":
             populate_cities_from_json()
+        elif option == "json":
+            populate_countries_from_json()
+            populate_states_from_json()
+            populate_cities_from_json()
+        elif option == "infos":
+            insert_country_infos_to_db()
+            insert_state_infos_to_db()
+            insert_city_infos_to_db()
         else:
             populate_countries_from_json()
             populate_states_from_json()
             populate_cities_from_json()
+            insert_country_infos_to_db()
+            insert_state_infos_to_db()
+            insert_city_infos_to_db()
