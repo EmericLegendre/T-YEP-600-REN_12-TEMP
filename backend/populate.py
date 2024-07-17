@@ -166,14 +166,14 @@ def insert_country_infos_to_db():
 
 def insert_state_infos_to_db():
     state_infos = [
-        {"state_id": 3486, "category": StateEnum.CULTURE, "content": "California is known for its tech industry in Silicon Valley."},
-        {"state_id": 3486, "category": StateEnum.LAW, "content": "California has progressive environmental and labor laws."},
-        {"state_id": 3486, "category": StateEnum.COOKING, "content": "California cuisine includes fresh produce and fusion dishes."},
-        {"state_id": 3486, "category": StateEnum.HEALTH, "content": "California has a strong healthcare system with many top-rated hospitals."},
-        {"state_id": 3478, "category": StateEnum.CULTURE, "content": "New York is known for its cultural diversity and Broadway shows."},
-        {"state_id": 3478, "category": StateEnum.LAW, "content": "New York has strict gun control laws."},
-        {"state_id": 3478, "category": StateEnum.COOKING, "content": "New York is famous for its pizza and bagels."},
-        {"state_id": 3478, "category": StateEnum.HEALTH, "content": "New York City has a comprehensive public health system."}
+        {"state_id": 3477, "category": StateEnum.CULTURE, "content": "California is known for its tech industry in Silicon Valley."},
+        {"state_id": 3477, "category": StateEnum.LAW, "content": "California has progressive environmental and labor laws."},
+        {"state_id": 3477, "category": StateEnum.COOKING, "content": "California cuisine includes fresh produce and fusion dishes."},
+        {"state_id": 3477, "category": StateEnum.HEALTH, "content": "California has a strong healthcare system with many top-rated hospitals."},
+        {"state_id": 3485, "category": StateEnum.CULTURE, "content": "New York is known for its cultural diversity and Broadway shows."},
+        {"state_id": 3485, "category": StateEnum.LAW, "content": "New York has strict gun control laws."},
+        {"state_id": 3485, "category": StateEnum.COOKING, "content": "New York is famous for its pizza and bagels."},
+        {"state_id": 3485, "category": StateEnum.HEALTH, "content": "New York City has a comprehensive public health system."}
     ]
 
     for info in state_infos:
@@ -187,14 +187,14 @@ def insert_state_infos_to_db():
 
 def insert_city_infos_to_db():
     city_infos = [
-        {"city_id": 1, "category": CityEnum.CULTURE, "content": "Los Angeles is known for its entertainment industry and beaches."},
-        {"city_id": 1, "category": CityEnum.TRANSPORT, "content": "Los Angeles has a widespread car culture and traffic congestion."},
-        {"city_id": 1, "category": CityEnum.COOKING, "content": "Los Angeles offers diverse food options from around the world."},
-        {"city_id": 1, "category": CityEnum.HEALTH, "content": "Los Angeles has many fitness centers and health-conscious restaurants."},
-        {"city_id": 2, "category": CityEnum.CULTURE, "content": "New York City is known for its museums and cultural landmarks."},
-        {"city_id": 2, "category": CityEnum.TRANSPORT, "content": "New York City has an extensive subway system."},
-        {"city_id": 2, "category": CityEnum.COOKING, "content": "New York City is famous for its street food and high-end restaurants."},
-        {"city_id": 2, "category": CityEnum.HEALTH, "content": "New York City offers a range of healthcare services and facilities."}
+        {"city_id": 5106, "category": CityEnum.CULTURE, "content": "Los Angeles is known for its entertainment industry and beaches."},
+        {"city_id": 5106, "category": CityEnum.TRANSPORT, "content": "Los Angeles has a widespread car culture and traffic congestion."},
+        {"city_id": 5106, "category": CityEnum.COOKING, "content": "Los Angeles offers diverse food options from around the world."},
+        {"city_id": 5106, "category": CityEnum.HEALTH, "content": "Los Angeles has many fitness centers and health-conscious restaurants."},
+        {"city_id": 5116, "category": CityEnum.CULTURE, "content": "New York City is known for its museums and cultural landmarks."},
+        {"city_id": 5116, "category": CityEnum.TRANSPORT, "content": "New York City has an extensive subway system."},
+        {"city_id": 5116, "category": CityEnum.COOKING, "content": "New York City is famous for its street food and high-end restaurants."},
+        {"city_id": 5116, "category": CityEnum.HEALTH, "content": "New York City offers a range of healthcare services and facilities."}
     ]
 
     for info in city_infos:
