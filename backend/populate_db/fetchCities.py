@@ -46,7 +46,7 @@ def main():
         print(f"Fetching cities for {country['country']} : {len(cities)} cities found")
         for state in country['states']:
             for city in cities:
-                if city.get('adminCode1','') == state['adminCode1']:
+                if city.get('adminCode1','') == state['adminCode1'] and city["population"] > 100000:
                     city_name = city['name']
                     city_population = city.get('population', '')
                     city_country = country['country']
