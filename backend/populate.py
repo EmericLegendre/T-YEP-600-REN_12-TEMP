@@ -3,6 +3,7 @@ import os
 import sys
 from flask import Flask, jsonify
 from sqlalchemy.exc import SQLAlchemyError
+from sqlalchemy import and_
 from dotenv import load_dotenv
 from config.dbConfig import db
 from models.country import Country
@@ -24,7 +25,7 @@ def insert_countries_to_db(countries):
         try:
             existing_country = Country.query.filter_by(name=country_data['name']).first()
             if existing_country:
-                print(f"Country {country_data['name']} already exists in the database.")
+                # print(f"Country {country_data['name']} already exists in the database.")
                 continue
 
             new_country = Country(
@@ -68,9 +69,14 @@ def insert_states_to_db(states_data):
 
         for state_data in region_data['states']:
             state_name = state_data['name']
-            existing_state = State.query.filter_by(name=state_name, country_id=country.id).first()
+            existing_state = State.query.filter(
+                and_(
+                    State.name == state_name,
+                    State.country_id == country.id
+                )
+            ).first()
             if existing_state:
-                print(f"State {state_name} in {country_name} already exists in the database. Skipping insertion.")
+                # print(f"State {state_name} in {country_name} already exists in the database. Skipping insertion.")
                 continue
             try:
                 new_state = State(
@@ -114,7 +120,7 @@ def insert_cities_to_db(cities_data):
         # Check if city already exists in the database
         existing_city = City.query.filter_by(name=city_name, state_id=state.id).first()
         if existing_city:
-            print(f"City {city_name} in {state_name}, {country_name} already exists in the database. Skipping insertion.")
+            # print(f"City {city_name} in {state_name}, {country_name} already exists in the database. Skipping insertion.")
             continue
 
         # Create a new City object and add it to the session
