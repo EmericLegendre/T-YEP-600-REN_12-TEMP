@@ -1,0 +1,80 @@
+[
+    {
+        "country": "Saint-Marin",
+        "countryCode": "SM",
+        "states": [
+          {
+            "name": "San Marino",
+            "regionalCapital": "San Marino",
+            "population": 4044,
+            "populationName": "",
+            "adminCode1": "07",
+            "countryCode": "SM"
+          },
+          {
+            "name": "Acquaviva",
+            "regionalCapital": "Acquaviva",
+            "population": 1578,
+            "populationName": "",
+            "adminCode1": "01",
+            "countryCode": "SM"
+          },
+          {
+            "name": "Borgo Maggiore",
+            "regionalCapital": "Borgo Maggiore",
+            "population": 6424,
+            "populationName": "",
+            "adminCode1": "06",
+            "countryCode": "SM"
+          },
+          {
+            "name": "Domagnano",
+            "regionalCapital": "Domagnano",
+            "population": 2808,
+            "populationName": "",
+            "adminCode1": "03",
+            "countryCode": "SM"
+          },
+          {
+            "name": "Faetano",
+            "regionalCapital": "Faetano",
+            "population": 1010,
+            "populationName": "",
+            "adminCode1": "04",
+            "countryCode": "SM"
+          },
+          {
+            "name": "Fiorentino",
+            "regionalCapital": "Fiorentino",
+            "population": 2510,
+            "populationName": "",
+            "adminCode1": "05",
+            "countryCode": "SM"
+          },
+          {
+            "name": "Montegiardino",
+            "regionalCapital": "Montegiardino",
+            "population": 910,
+            "populationName": "",
+            "adminCode1": "08",
+            "countryCode": "SM"
+          },
+          {
+            "name": "Serravalle",
+            "regionalCapital": "Serravalle",
+            "population": 9566,
+            "populationName": "",
+            "adminCode1": "09",
+            "countryCode": "SM"
+          },
+          {
+            "name": "Chiesanuova",
+            "regionalCapital": "Chiesanuova",
+            "population": 981,
+            "populationName": "",
+            "adminCode1": "02",
+            "countryCode": "SM"
+          }
+        ]
+      }
+]
