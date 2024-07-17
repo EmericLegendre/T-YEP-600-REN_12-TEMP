@@ -22,7 +22,7 @@ def get_PPL_cities(country_code):
     base_url = "http://api.geonames.org/searchJSON"
     params = {
         "country": country_code,
-        "featureCode": "PPL",
+        "featureClass": "p",
         "username": GEONAMES_USERNAME,
     }
     return make_geonames_request(base_url, params)
