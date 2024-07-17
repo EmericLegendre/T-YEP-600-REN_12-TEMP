@@ -54,8 +54,8 @@ def main():
                     city_info = {
                         "name": city_name,
                         "population": city_population,
-                        "country": city_country,
-                        "state": city_state,
+                        "country_name": city_country,
+                        "state_name": city_state,
                         "populationName": ""
                     }
                     all_cities.append(city_info)
