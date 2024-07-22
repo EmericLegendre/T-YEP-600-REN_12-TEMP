@@ -1,11 +1,30 @@
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Pressable } from 'react-native';
 import { Stack, useRouter } from 'expo-router';
 import React from 'react';
 import Colors from '../constants/Colors';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Profile = () => {
   const router = useRouter();
+
+  let response = {
+      data: {
+          apiToken: 'token'
+      }
+  };
+     const logOut = () => {
+         try {
+             const { apiToken } = response.data;
+
+             AsyncStorage.removeItem(apiToken);
+             router.push('/register');
+             console.log('Token removed successfully');
+         } catch (error) {
+             console.error('Failed to remove the token:', error);
+         }
+     };
+
 
   return (
     <View style={styles.container}>
@@ -49,6 +68,9 @@ const Profile = () => {
         >
           <Text style={styles.listItemText}>Mes voyages</Text>
           <Ionicons name="chevron-forward" size={20} color={Colors.black} />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.listItem} onPress={logOut}>
+            <Text style={styles.listItemText}>Log out</Text>
         </TouchableOpacity>
       </View>
     </View>

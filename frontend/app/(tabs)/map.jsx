@@ -38,7 +38,7 @@ const map = () => {
 
   return (
     <View style={styles.container}>
-      <MapView 
+      <MapView
         style={styles.map}
         initialRegion={location}
         showsUserLocation
