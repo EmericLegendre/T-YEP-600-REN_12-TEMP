@@ -19,7 +19,7 @@ const StartPage = () => {
         if (apiToken) {
           router.push('/home');
         } else {
-          router.push('/register');
+          router.push('/login');
         }
       } catch (error) {
         console.error('Error checking login status:', error);

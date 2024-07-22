@@ -51,6 +51,14 @@ const login = () => {
             <Text style={styles.btntext}>Sign in</Text>
         </Pressable>
 
+        <TouchableOpacity style={styles.button} onPress={handleSignUp}>
+            <Text style={styles.btntext}>Sign Up</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.signUpButton} onPress={() => router.push('/register')}><Text style={styles.signUpText}>Don't have an account?{' '}
+            <Text style={styles.signUpLink}>Sign up</Text></Text>
+        </TouchableOpacity>
+
       </View>
     );
 }
@@ -92,4 +100,15 @@ const styles = StyleSheet.create({
       backgroundColor: '#FD00CF',
       marginTop: 30,
   },
+  signInButton: {
+        marginTop: 20,
+    },
+    signInText: {
+        color: '#fff',
+        textAlign: 'center',
+    },
+    signInLink: {
+        color: '#59cbbd',
+        fontWeight: 'bold',
+    },
 });
