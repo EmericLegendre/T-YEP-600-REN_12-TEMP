@@ -54,7 +54,7 @@ const register = () => {
         }
 
           try {
-              const response = await axios.post('http://localhost:5000/api/users/add', {
+              const response = await axios.post('http://192.168.56.1:5000/api/users/add', {
                   email,
                   password,
                   first_name,
@@ -64,7 +64,7 @@ const register = () => {
               });
 
               if (response.status === 201) {
-                  router.push('/home');
+                  router.push('/login');
               } else {
                   setErrorMessage('Registration failed. Please try again.');
               }
