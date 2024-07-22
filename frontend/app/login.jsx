@@ -96,10 +96,10 @@ const styles = StyleSheet.create({
       backgroundColor: '#FD00CF',
       marginTop: 30,
   },
-  signInButton: {
+  signUpButton: {
         marginTop: 20,
     },
-    signInText: {
+    signUpText: {
         color: '#fff',
         textAlign: 'center',
     },
