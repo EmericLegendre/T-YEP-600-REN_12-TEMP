@@ -259,36 +259,38 @@ const register = () => {
 
 
     return (
-        <View style={styles.container}>
-          <Text style={styles.header}>Registration</Text>
+        <ScrollView contentContainerStyle={styles.container}>
+            <View style={styles.container}>
+              <Text style={styles.header}>Registration</Text>
 
-          {errorMessage ? <Text style={styles.error}>{errorMessage}</Text> : null}
-                {!isValidEmail && (
-                  <Text style={styles.error}>Please enter a valid email address.</Text>
-                )}
-                {!isValidPassword && (
-                    <Text style={styles.error}>Password must be at least 8 characters long and contain at least one number.</Text>
-                  )}
-
-
-          <TextInput style={styles.textinput} placeholder="First name" value={first_name} onChangeText={text => setFirstName(text)} underlineColorAndroid={'transparent'}/>
-          <TextInput style={styles.textinput} placeholder="Last name" value={last_name} onChangeText={text => setLastName(text)} underlineColorAndroid={'transparent'}/>
-          <TextInput style={styles.textinput} placeholder="Email address" value={email} onChangeText={text => {setEmail(text);setIsValidEmail(validateEmail(text));}} underlineColorAndroid={'transparent'}/>
-          <TextInput style={styles.textinput} placeholder="Password" value={password} onChangeText={text => setPassword(text)} secureTextEntry={true} underlineColorAndroid={'transparent'}/>
-          <TextInput style={styles.textinput} placeholder="Confirm password" value={confirmPassword} onChangeText={text => setConfirmPassword(text)} secureTextEntry={true} underlineColorAndroid={'transparent'}/>
-          <Picker selectedValue={country} style={styles.picker} onValueChange={(itemValue, itemIndex) => setCountry(itemValue)}>
-          <Picker.Item label="Select country" value="" />{countries.map((country, index) => (<Picker.Item key={index} label={country} value={country} />))}</Picker>
-          <TextInput style={styles.textinput} placeholder="City" value={city} onChangeText={text => setCity(text)} underlineColorAndroid={'transparent'}/>
+              {errorMessage ? <Text style={styles.error}>{errorMessage}</Text> : null}
+                    {!isValidEmail && (
+                      <Text style={styles.error}>Please enter a valid email address.</Text>
+                    )}
+                    {!isValidPassword && (
+                        <Text style={styles.error}>Password must be at least 8 characters long and contain at least one number.</Text>
+                      )}
 
 
-          <TouchableOpacity style={styles.button} onPress={handleSignUp}>
-              <Text style={styles.btntext}>Sign Up</Text>
-          </TouchableOpacity>
+              <TextInput style={styles.textinput} placeholder="First name" value={first_name} onChangeText={text => setFirstName(text)} underlineColorAndroid={'transparent'}/>
+              <TextInput style={styles.textinput} placeholder="Last name" value={last_name} onChangeText={text => setLastName(text)} underlineColorAndroid={'transparent'}/>
+              <TextInput style={styles.textinput} placeholder="Email address" value={email} onChangeText={text => {setEmail(text);setIsValidEmail(validateEmail(text));}} underlineColorAndroid={'transparent'}/>
+              <TextInput style={styles.textinput} placeholder="Password" value={password} onChangeText={text => setPassword(text)} secureTextEntry={true} underlineColorAndroid={'transparent'}/>
+              <TextInput style={styles.textinput} placeholder="Confirm password" value={confirmPassword} onChangeText={text => setConfirmPassword(text)} secureTextEntry={true} underlineColorAndroid={'transparent'}/>
+              <Picker selectedValue={country} style={styles.picker} onValueChange={(itemValue, itemIndex) => setCountry(itemValue)}>
+              <Picker.Item label="Select country" value="" />{countries.map((country, index) => (<Picker.Item key={index} label={country} value={country} />))}</Picker>
+              <TextInput style={styles.textinput} placeholder="City" value={city} onChangeText={text => setCity(text)} underlineColorAndroid={'transparent'}/>
 
-          <TouchableOpacity style={styles.signInButton} onPress={() => router.push('/login')}>
-              <Text style={styles.signInText}>Already have an account?{' '}<Text style={styles.signInLink}>Sign in</Text></Text>
-          </TouchableOpacity>
-</View>
+
+              <TouchableOpacity style={styles.button} onPress={handleSignUp}>
+                  <Text style={styles.btntext}>Sign Up</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity style={styles.signInButton} onPress={() => router.push('/login')}>
+                  <Text style={styles.signInText}>Already have an account?{' '}<Text style={styles.signInLink}>Sign in</Text></Text>
+              </TouchableOpacity>
+            </View>
+        </ScrollView>
     );
 }
 
