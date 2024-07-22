@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, Pressable } from 'react-native'
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Pressable, ScrollView } from 'react-native'
 import { Stack, useRouter } from 'expo-router'
 import React from 'react'
 import {useState} from 'react'
@@ -41,17 +41,23 @@ const login = () => {
   };
 
   return (
+  <>
+      <Stack.Screen options={{ headerShown: false }} />
       <View style={styles.container}>
-        <Text style={styles.header}>Login</Text>
+          <ScrollView contentContainerStyle={styles.scrollContainer}>
+              <View style={styles.innerContainer}>
+                <Text style={styles.header}>Login</Text>
 
-        <TextInput style={styles.textinput} placeholder="Email address" value={email} onChangeText={setEmail} underlineColorAndroid={'transparent'}/>
-        <TextInput style={styles.textinput} placeholder="Password" svalue={password}  onChangeText={setPassword} secureTextEntry={true} underlineColorAndroid={'transparent'}/>
+                <TextInput style={styles.textinput} placeholder="Email address" value={email} onChangeText={setEmail} underlineColorAndroid={'transparent'}/>
+                <TextInput style={styles.textinput} placeholder="Password" svalue={password}  onChangeText={setPassword} secureTextEntry={true} underlineColorAndroid={'transparent'}/>
 
-        <Pressable style={styles.button} onPress={handleLogin}>
-            <Text style={styles.btntext}>Sign in</Text>
-        </Pressable>
-
+                <Pressable style={styles.button} onPress={handleLogin}>
+                    <Text style={styles.btntext}>Sign in</Text>
+                </Pressable>
+              </View>
+          </ScrollView>
       </View>
+  </>
     );
 }
 
@@ -65,6 +71,15 @@ const styles = StyleSheet.create({
     backgroundColor:'#73FD00',
     paddingLeft: 60,
     paddingRight: 60,
+  },
+  scrollContainer: {
+    flexGrow: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  innerContainer: {
+    width: '100%',
+    alignItems: 'center',
   },
   header: {
     fontSize: 24,

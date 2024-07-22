@@ -10,9 +10,7 @@ import axios from 'axios'
 
 const register = () => {
 
-      const navigation = useNavigation();
       const router = useRouter();
-      const [showheader, setShowHeader] = useState(false);
 
 
       const [first_name, setFirstName] = useState('');
@@ -54,8 +52,6 @@ const register = () => {
           setErrorMessage('Passwords do not match.');
           return;
         }
-
-        //navigation.navigate('home');
 
           try {
               const response = await axios.post('http://localhost:5000/api/users/add', {
@@ -260,38 +256,43 @@ const register = () => {
 
 
     return (
-        <ScrollView contentContainerStyle={styles.container}>
-            <View style={styles.container}>
-              <Text style={styles.header}>Registration</Text>
+      <>
+        <Stack.Screen options={{ headerShown: false }} />
+        <View style={styles.container}>
+            <ScrollView contentContainerStyle={styles.scrollContainer}>
+                <View style={styles.innerContainer}>
+                  <Text style={styles.header}>Registration</Text>
 
-              {errorMessage ? <Text style={styles.error}>{errorMessage}</Text> : null}
-                    {!isValidEmail && (
-                      <Text style={styles.error}>Please enter a valid email address.</Text>
-                    )}
-                    {!isValidPassword && (
-                        <Text style={styles.error}>Password must be at least 8 characters long and contain at least one number.</Text>
-                      )}
-
-
-              <TextInput style={styles.textinput} placeholder="First name" value={first_name} onChangeText={text => setFirstName(text)} underlineColorAndroid={'transparent'}/>
-              <TextInput style={styles.textinput} placeholder="Last name" value={last_name} onChangeText={text => setLastName(text)} underlineColorAndroid={'transparent'}/>
-              <TextInput style={styles.textinput} placeholder="Email address" value={email} onChangeText={text => {setEmail(text);setIsValidEmail(validateEmail(text));}} underlineColorAndroid={'transparent'}/>
-              <TextInput style={styles.textinput} placeholder="Password" value={password} onChangeText={text => setPassword(text)} secureTextEntry={true} underlineColorAndroid={'transparent'}/>
-              <TextInput style={styles.textinput} placeholder="Confirm password" value={confirmPassword} onChangeText={text => setConfirmPassword(text)} secureTextEntry={true} underlineColorAndroid={'transparent'}/>
-              <Picker selectedValue={country} style={styles.picker} onValueChange={(itemValue, itemIndex) => setCountry(itemValue)}>
-              <Picker.Item label="Select country" value="" />{countries.map((country, index) => (<Picker.Item key={index} label={country} value={country} />))}</Picker>
-              <TextInput style={styles.textinput} placeholder="City" value={city} onChangeText={text => setCity(text)} underlineColorAndroid={'transparent'}/>
+                  {errorMessage ? <Text style={styles.error}>{errorMessage}</Text> : null}
+                        {!isValidEmail && (
+                          <Text style={styles.error}>Please enter a valid email address.</Text>
+                        )}
+                        {!isValidPassword && (
+                            <Text style={styles.error}>Password must be at least 8 characters long and contain at least one number.</Text>
+                          )}
 
 
-              <TouchableOpacity style={styles.button} onPress={handleSignUp}>
-                  <Text style={styles.btntext}>Sign Up</Text>
-              </TouchableOpacity>
+                  <TextInput style={styles.textinput} placeholder="First name" value={first_name} onChangeText={text => setFirstName(text)} underlineColorAndroid={'transparent'}/>
+                  <TextInput style={styles.textinput} placeholder="Last name" value={last_name} onChangeText={text => setLastName(text)} underlineColorAndroid={'transparent'}/>
+                  <TextInput style={styles.textinput} placeholder="Email address" value={email} onChangeText={text => {setEmail(text);setIsValidEmail(validateEmail(text));}} underlineColorAndroid={'transparent'}/>
+                  <TextInput style={styles.textinput} placeholder="Password" value={password} onChangeText={text => setPassword(text)} secureTextEntry={true} underlineColorAndroid={'transparent'}/>
+                  <TextInput style={styles.textinput} placeholder="Confirm password" value={confirmPassword} onChangeText={text => setConfirmPassword(text)} secureTextEntry={true} underlineColorAndroid={'transparent'}/>
+                  <Picker selectedValue={country} style={styles.picker} onValueChange={(itemValue, itemIndex) => setCountry(itemValue)}>
+                  <Picker.Item label="Select country" value="" />{countries.map((country, index) => (<Picker.Item key={index} label={country} value={country} />))}</Picker>
+                  <TextInput style={styles.textinput} placeholder="City" value={city} onChangeText={text => setCity(text)} underlineColorAndroid={'transparent'}/>
 
-              <TouchableOpacity style={styles.signInButton} onPress={() => router.push('/login')}>
-                  <Text style={styles.signInText}>Already have an account?{' '}<Text style={styles.signInLink}>Sign in</Text></Text>
-              </TouchableOpacity>
-            </View>
-        </ScrollView>
+
+                  <TouchableOpacity style={styles.button} onPress={handleSignUp}>
+                      <Text style={styles.btntext}>Sign Up</Text>
+                  </TouchableOpacity>
+
+                  <TouchableOpacity style={styles.signInButton} onPress={() => router.push('/login')}>
+                      <Text style={styles.signInText}>Already have an account?{' '}<Text style={styles.signInLink}>Sign in</Text></Text>
+                  </TouchableOpacity>
+                </View>
+            </ScrollView>
+        </View>
+      </>
     );
 }
 
@@ -306,6 +307,15 @@ const styles = StyleSheet.create({
     paddingLeft: 60,
     paddingRight: 60,
   },
+  scrollContainer: {
+      flexGrow: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+  innerContainer: {
+      width: '100%',
+      alignItems: 'center',
+    },
   header: {
     fontSize: 24,
     color: '#fff',
