@@ -1,20 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity, TextInput, Button } from 'react-native';
 import { Stack } from 'expo-router';
 import { Entypo } from '@expo/vector-icons';
 import Colors from '../constants/Colors';
+import axios from 'axios'
 
-const UserInformations = () => {
+const UserInformations = ({userId}) => {
   const initialUserData = {
-    firstName: 'Mehdi',
-    lastName: 'Sabir',
-    email: 'mehdi3601@hotmail.fr',
-    city: 'Rennes',
-    country: 'France',
-    password: '********',
+    firstName: '',
+    lastName: '',
+    email: '',
+    city: '',
+    country: '',
+    password: '',
   };
 
   const [userData, setUserData] = useState(initialUserData);
+  const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(true);
 
   const [isEditing, setIsEditing] = useState({
     firstName: false,
@@ -24,8 +27,20 @@ const UserInformations = () => {
     country: false,
     password: false,
   });
+  useEffect(() => {
+      axios.get('http://10.0.2.2:5000/api/users/get/${UserId}', userData)
+        .then(response => {
+          setUserData(response.data);
+          setIsLoading(false);
+        })
+        .catch(error => {
+          setError(error);
+          setIsLoading(false);
+        });
+    }, []);
 
   const handleSave = () => {
+    axios.put('http://10.0.2.2:5000/api/users/update/${UserId}', userData)
     console.log("Saved user data: ", userData);
     setIsEditing({
       firstName: false,
@@ -63,6 +78,10 @@ const UserInformations = () => {
         </TouchableOpacity>
       );
     }
+
+    const handlePassword = () => {
+
+    };
   };
 
   return (
@@ -117,7 +136,7 @@ const UserInformations = () => {
         </View>
 
         <View style={styles.saveButtonContainer}>
-          <Button title="Enregistrer" onPress={handleSave} />
+          <Button title="Enregistrer les modifications" onPress={handleSave} />
         </View>
       </ScrollView>
     </>

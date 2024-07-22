@@ -4,6 +4,7 @@ import React from 'react';
 import Colors from '../constants/Colors';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import axios from 'axios'
 
 const Profile = () => {
   const router = useRouter();
@@ -35,6 +36,7 @@ const Profile = () => {
         },
         headerRight: () => (
           <Text style={styles.headerTitle}>Mon profil</Text>
+          // mon profil = nom du user connecté
         ),
         headerTintColor: Colors.white
       }}
