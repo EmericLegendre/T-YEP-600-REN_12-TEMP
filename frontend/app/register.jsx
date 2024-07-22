@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, Alert } from 'react-native'
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Alert, ScrollView } from 'react-native'
 import { Stack, useRouter } from 'expo-router'
 import React from 'react'
 import { useState } from 'react'
@@ -12,6 +12,7 @@ const register = () => {
 
       const navigation = useNavigation();
       const router = useRouter();
+      const [showheader, setShowHeader] = useState(false);
 
 
       const [first_name, setFirstName] = useState('');
