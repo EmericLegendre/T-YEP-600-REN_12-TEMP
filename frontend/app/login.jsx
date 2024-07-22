@@ -51,10 +51,6 @@ const login = () => {
             <Text style={styles.btntext}>Sign in</Text>
         </Pressable>
 
-        <TouchableOpacity style={styles.button} onPress={handleSignUp}>
-            <Text style={styles.btntext}>Sign Up</Text>
-        </TouchableOpacity>
-
         <TouchableOpacity style={styles.signUpButton} onPress={() => router.push('/register')}><Text style={styles.signUpText}>Don't have an account?{' '}
             <Text style={styles.signUpLink}>Sign up</Text></Text>
         </TouchableOpacity>
