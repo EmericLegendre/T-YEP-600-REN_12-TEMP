@@ -39,4 +39,4 @@ jobs:
 
       - name: Build project for Android
         working-directory: ./frontend
-        run: eas build --platform android --profile development
+        run: EAS_NO_INTERACTIVE=1 eas build --platform android --profile development
