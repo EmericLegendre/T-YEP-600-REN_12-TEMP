@@ -25,7 +25,9 @@ jobs:
           token: ${{ secrets.EXPO_TOKEN }}
 
       - name: 📦 Install dependencies
+        working-directory: ./frontend
         run: yarn install
 
       - name: 🚀 Build app
+        working-directory: ./frontend
         run: eas build --non-interactive
