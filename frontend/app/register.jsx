@@ -287,8 +287,9 @@ const register = () => {
               <TouchableOpacity style={styles.signInButton} onPress={() => router.push('/login')}>
                   <Text style={styles.signInText}>Already have an account?{' '}<Text style={styles.signInLink}>Sign in</Text></Text>
               </TouchableOpacity>
+            </View>
         </ScrollView>
-</View>
+
     );
 }
 
