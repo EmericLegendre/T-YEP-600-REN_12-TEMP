@@ -16,7 +16,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.example.app",
+      "package": "com.tripmate.app",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
