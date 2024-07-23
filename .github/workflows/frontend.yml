@@ -34,4 +34,4 @@ jobs:
 
       - name: 🚀 Build app
         working-directory: ./frontend
-        run: eas build --non-interactive --platform android
+        run: eas build --local --non-interactive --platform android
