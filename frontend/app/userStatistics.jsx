@@ -18,15 +18,15 @@ const userStatistics = () => {
 
 <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.section}>
-        <Text style={styles.title}>You've seen</Text>
+        <Text style={styles.title}>Vous avez vu</Text>
         <View style={styles.statsContainer}>
           <View style={styles.stat}>
             {/* <Image source={require('./assets/images/mountains.png')} style={styles.icon} /> */}
-            <Text style={styles.statText}>4{'\n'}Countries</Text>
+            <Text style={styles.statText}>4{'\n'}Pays</Text>
           </View>
           <View style={styles.stat}>
             {/* <Image source={require('./assets/images/globe.png')} style={styles.icon} /> */}
-            <Text style={styles.statText}>10%{'\n'}of the world</Text>
+            <Text style={styles.statText}>10%{'\n'}Du monde</Text>
           </View>
         </View>
       </View>
