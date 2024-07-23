@@ -15,12 +15,14 @@ jobs:
       - name: 🏗 Setup Node
         uses: actions/setup-node@v3
         with:
+          working-directory: ./frontend
           node-version: 18.x
           cache: yarn
 
       - name: 🏗 Setup EAS
         uses: expo/expo-github-action@v8
         with:
+          working-directory: ./frontend
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
 
