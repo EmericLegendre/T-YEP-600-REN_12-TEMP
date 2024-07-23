@@ -69,9 +69,10 @@ const styles = StyleSheet.create({
     flex:1,
     justifyContent: 'center',
     alignItems:'center',
-    backgroundColor:'#73FD00',
+    backgroundColor:'#c7522a',
     paddingLeft: 60,
     paddingRight: 60,
+    width: '100%'
   },
   header: {
     fontSize: 24,
@@ -88,6 +89,7 @@ const styles = StyleSheet.create({
     color: '#fff',
     borderBottomColor: '#f8f8f8',
     borderBottomWidth: 1,
+     width: '100%',
   },
   placeholder: {
     color: '#fff',
@@ -96,7 +98,7 @@ const styles = StyleSheet.create({
       alignSelf: 'stretch',
       alignItems: 'center',
       padding: 20,
-      backgroundColor: '#FD00CF',
+      backgroundColor: '#dda15e',
       marginTop: 30,
   },
   signUpButton: {
@@ -106,8 +108,8 @@ const styles = StyleSheet.create({
         color: '#fff',
         textAlign: 'center',
     },
-    signInLink: {
-        color: '#59cbbd',
+    signUpLink: {
+        color: '#dda15e',
         fontWeight: 'bold',
     },
 });
