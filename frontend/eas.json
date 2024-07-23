@@ -1,21 +1,18 @@
 {
-    "build": {
-      "development": {
-        "android": {
-          "buildType": "apk"
-        },
-        "ios": {
-          "simulator": true
-        }
+  "cli": {
+    "version": ">= 0.52.0"
+  },
+  "build": {
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
       },
-      "production": {
-        "android": {
-          "buildType": "apk"
-        },
-        "ios": {
-          "simulator": false
-        }
-      }
-    }
+      "credentialsSource": "remote"
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {}
   }
-  
+}
