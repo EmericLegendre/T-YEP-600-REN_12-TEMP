@@ -21,7 +21,7 @@ const countryDetails = () => {
     }} />
     <View style={styles.container}>
         <View style={styles.imageContainer}>
-          <Image source={{ uri: listing.image }} style={styles.image} />
+          {/* <Image source={{ uri: listing.image }} style={styles.image} /> */}
           <View style={styles.overlay}>
             <Text style={styles.countryName}>{listing.name}</Text>
           </View>

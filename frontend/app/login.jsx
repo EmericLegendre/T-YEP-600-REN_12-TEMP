@@ -28,7 +28,7 @@ const login = () => {
           }
 
         console.log("je suis dans le try");
-        const response = await axios.post('http://192.168.56.1:5000/api/users/auth', dataJson );
+        const response = await axios.post('http:///10.19.255.166:5000/api/users/auth', dataJson );
         console.log("Response from server:", response.data);
         const { apiToken } = response.data;
         await AsyncStorage.setItem('token', apiToken);
