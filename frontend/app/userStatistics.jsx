@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, Image, FlatList, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, Image, FlatList, ScrollView, SafeAreaView } from 'react-native';
 import { Stack } from 'expo-router';
 import Colors from '../constants/Colors';
 import axios from 'axios';
@@ -34,34 +34,7 @@ async function getFlag() {
 const UserStatistics = () => {
   const [worldpercent, setWorldPercent] = useState(0);
   const [countries, setCountries] = useState(0);
-  const [flagData, setFlagData] = useState(["../assets/images/fr.png"]);
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const flagList = ['us', 'fr', 'de', 'es', 'it'];
-  //       const urls = await getFlagsUrls(flagList);
-  //       setFlagData(urls);
-  //     } catch (error) {
-  //       console.error('Failed to fetch flags:', error);
-  //     }
-  //   };
-
-  //   fetchData();
-  // }, []);
-
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const flag = await getFlag();
-  //       setFlagData(flag);
-  //     } catch (error) {
-  //       console.error('Failed to fetch flags:', error);
-  //     }
-  //   };
-
-  //   fetchData();
-  // }, []);
+  const [flagData, setFlagData] = useState([]);
 
   const renderFlagItem = ({ item }) => (
     <Image source={{ uri: item }} style={styles.flag} />
@@ -79,7 +52,16 @@ const UserStatistics = () => {
         }}
       />
       <View style={styles.container}>
-        <View style={styles.section}>
+      <SafeAreaView style={styles.container}>
+      <Text style={styles.title}>Drapeau collecter</Text>
+      <View style={styles.imageContainer}>
+        <Image
+          source={{ uri: 'https://flagcdn.com/w320/fr.png' }}
+          style={styles.image}
+        />
+      </View>
+    </SafeAreaView>
+        {/* <View style={styles.section}>
           <Text style={styles.title}>Vous avez vu</Text>
           <View style={styles.statsContainer}>
             <View style={styles.stat}>
@@ -106,7 +88,9 @@ const UserStatistics = () => {
             keyExtractor={(item, index) => index.toString()}
             numColumns={4}
           />
-          {/* <Image  source={flagData} style={styles.flag} /> */}
+          <Image  source={{
+            uri: 'https://flagcdn.com/w320/fr.png',
+          }}/>
         </View>
 
         <View style={styles.section}>
@@ -134,7 +118,7 @@ const UserStatistics = () => {
               <Text style={styles.legendText}>Antarctica</Text>
             </View>
           </View>
-        </View>
+        </View> */}
       </View>
     </>
   );
