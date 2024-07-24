@@ -1,28 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, Image, FlatList, ScrollView, SafeAreaView } from 'react-native';
+import { View, Text, StyleSheet, Image, ScrollView } from 'react-native';
 import { Stack } from 'expo-router';
 import Colors from '../constants/Colors';
 import axios from 'axios';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
-async function getFlagsUrls(flags) {
-  const results = [];
-
-  for (const flag of flags) {
-    try {
-      const url = `https://flagcdn.com/w320/fr.png`;
-      const response = await axios.get(url, { responseType: 'arraybuffer' });
-      if (response.status === 200) {
-        results.push(url);
-      } else {
-        throw new Error(`Error fetching flag URL for: ${flag}`);
-      }
-    } catch (error) {
-      console.error(error.message);
-    }
-  }
-
-  return results;
-}
 
 async function getFlag() {
   return fetch('https://flagcdn.com/w320/fr.png')
@@ -31,15 +13,40 @@ async function getFlag() {
   })
 }
 
+
 const UserStatistics = () => {
-  const [worldpercent, setWorldPercent] = useState(0);
-  const [countries, setCountries] = useState(0);
-  const [flagData, setFlagData] = useState([]);
-
-  const renderFlagItem = ({ item }) => (
-    <Image source={{ uri: item }} style={styles.flag} />
-  );
-
+  const [flagData, setFlagData] = useState([
+    { uri: 'https://flagcdn.com/w320/fr.png' }
+  ]);
+  const [countriesVisited, setCountriesVisited] = useState(flagData.length);
+  const [worldpercent, setWorldPercent] = useState((countriesVisited / 245 * 100).toFixed(2));
+  
+  useEffect(() => {
+    const fetchCountriesData = async () => {
+      try {
+  
+        const token = await AsyncStorage.getItem('token');
+        console.log('Token:', token);
+  
+        const config = {
+          headers: { Authorization: `Bearer ${token}` }
+        };
+  
+        const response = await axios.get('http://localhost:5000/api/country/get', config);
+        setCountriesData(response.data);
+        setFilteredData(response.data);
+      } catch (error) {
+        if (error.response) {
+          console.log('Error Response:', error.response.data);
+        } else {
+          console.log('Error:', error.message);
+        }
+      }
+    };
+  
+    fetchCountriesData();
+  }, []);
+  
   return (
     <>
       <Stack.Screen
@@ -51,23 +58,15 @@ const UserStatistics = () => {
           headerTintColor: Colors.white,
         }}
       />
+      <ScrollView>
       <View style={styles.container}>
-      <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>Drapeau collecter</Text>
-      <View style={styles.imageContainer}>
-        <Image
-          source={{ uri: 'https://flagcdn.com/w320/fr.png' }}
-          style={styles.image}
-        />
-      </View>
-    </SafeAreaView>
-        {/* <View style={styles.section}>
+        <View style={styles.section}>
           <Text style={styles.title}>Vous avez vu</Text>
           <View style={styles.statsContainer}>
             <View style={styles.stat}>
               <Image source={require('../assets/images/mountains.png')} style={styles.icon} />
               <View style={styles.overlay}>
-                <Text style={styles.statTextCountries}>{countries}</Text>
+                <Text style={styles.statTextCountries}>{countriesVisited}</Text>
                 <Text style={styles.statText}>{'\n'}Pays</Text>
               </View>
             </View>
@@ -82,15 +81,7 @@ const UserStatistics = () => {
 
         <View style={styles.section}>
           <Text style={styles.title}>Drapeau collecter</Text>
-          <FlatList
-            data={flagData}
-            renderItem={renderFlagItem}
-            keyExtractor={(item, index) => index.toString()}
-            numColumns={4}
-          />
-          <Image  source={{
-            uri: 'https://flagcdn.com/w320/fr.png',
-          }}/>
+          <Image source={require("../assets/images/flags/fr.png")} style={styles.flag} />
         </View>
 
         <View style={styles.section}>
@@ -118,8 +109,9 @@ const UserStatistics = () => {
               <Text style={styles.legendText}>Antarctica</Text>
             </View>
           </View>
-        </View> */}
+        </View>
       </View>
+      </ScrollView>
     </>
   );
 };
@@ -130,7 +122,7 @@ const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
     padding: 20,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.white,
   },
   section: {
     marginBottom: 20,
@@ -174,10 +166,17 @@ const styles = StyleSheet.create({
     fontSize: 35,
     fontWeight: 'bold',
   },
+  list: {
+    justifyContent: 'center',
+    alignItems: 'left',
+  },
+  flagContainer: {
+    margin: 10,
+  },
   flag: {
-    width: 50,
-    height: 30,
-    margin: 5,
+    width: 100,
+    height: 60,
+    resizeMode: 'contain',
   },
   map: {
     width: '100%',
