@@ -77,6 +77,27 @@ const UserStatistics = () => {
     </View>
   );
 
+  const renderContinents = () => {
+    const continents = [
+      { name: 'Europe', color: 'purple' },
+      { name: 'Africa', color: 'red' },
+      { name: 'North-America', color: 'blue' },
+      { name: 'Asia', color: 'orange' },
+      { name: 'Oceania', color: 'yellow' },
+      { name: 'South-America', color: 'green' },
+      { name: 'Antarctica', color: 'gray' }
+    ];
+
+    return continents
+      .filter(continent => continentVisited.includes(continent.name))
+      .map(continent => (
+        <View key={continent.name} style={styles.legendRow}>
+          <View style={[styles.legendItem, { backgroundColor: continent.color }]} />
+          <Text style={styles.legendText}>{continent.name}</Text>
+        </View>
+      ));
+  };
+
   return (
     <>
       <Stack.Screen
@@ -126,7 +147,21 @@ const UserStatistics = () => {
                 contentContainerStyle={styles.list}
               />
             );
-          } 
+          } else if (section.title === 'Continents visités') {
+            return (
+              <View>
+                <Image source={require('../assets/images/world_map.png')} style={styles.map} />
+                <View style={styles.legend}>
+                  {renderContinents()}
+                </View>
+              </View>
+            );
+          }
+        }}
+        keyExtractor={(item, index) => index.toString()}
+        contentContainerStyle={styles.container}
+      />
+    </>
   );
 };
 
