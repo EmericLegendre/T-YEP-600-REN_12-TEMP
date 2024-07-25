@@ -204,8 +204,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   icon: {
-    width: 170,
-    height: 170,
+    width: Dimensions.get('window').width / 3 + 30,
+    height: Dimensions.get('window').width / 3 + 30,
     borderRadius: 10,
   },
   overlay: {
