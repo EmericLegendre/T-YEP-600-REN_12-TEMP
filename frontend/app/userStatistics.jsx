@@ -94,19 +94,19 @@ const UserStatistics = () => {
 
   const renderContinents = () => {
     const continents = [
-      { name: 'Europe', color: 'purple' },
-      { name: 'Africa', color: 'red' },
-      { name: 'North-America', color: 'blue' },
-      { name: 'Asia', color: 'orange' },
-      { name: 'Oceania', color: 'yellow' },
-      { name: 'South-America', color: 'green' },
-      { name: 'Antarctica', color: 'gray' }
+      { name: 'Europe', color: 'purple', slug: 'Europe' },
+      { name: 'Afrique', color: 'red', slug: 'Africa' },
+      { name: 'North-America', color: 'blue', slug: 'North-America' },
+      { name: 'Asie', color: 'orange', slug: 'Asia' },
+      { name: 'Oceanie', color: 'yellow', slug: 'Oceania' },
+      { name: 'South-America', color: 'green', slug: 'South-America' },
+      { name: 'Antarctique', color: 'gray', slug: 'Antarctic' },
     ];
 
     return continents
       .filter(continent => continentVisited.includes(continent.name))
       .map(continent => (
-        <View key={continent.name} style={styles.legendRow}>
+        <View key={continent.slug} style={styles.legendRow}>
           <View style={[styles.legendItem, { backgroundColor: continent.color }]} />
           <Text style={styles.legendText}>{continent.name}</Text>
         </View>
@@ -173,7 +173,7 @@ const UserStatistics = () => {
             );
           }
         }}
-        keyExtractor={(item, index) => index.toString()}
+        keyExtractor={(index) => index.toString()}
         contentContainerStyle={styles.container}
       />
     </>
