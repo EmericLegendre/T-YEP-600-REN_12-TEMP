@@ -1,29 +1,31 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, Image, FlatList, SectionList, Dimensions } from 'react-native';
-import { Stack } from 'expo-router';
+import { View, Text, StyleSheet, Image, FlatList, SectionList, Dimensions, TouchableOpacity } from 'react-native';
+import { Stack, useRouter } from 'expo-router';
 import Colors from '../constants/Colors';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useNavigation } from '@react-navigation/native'; // Importer useNavigation
 
 const UserStatistics = () => {
-  const [countriesIdVisited, setCountriesIdVisited] = useState([]);
+  const [countriesIdVisited, setCountriesIdVisited] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
   const [countriesVisited, setCountriesVisited] = useState(0);
   const [continentVisited, setContinentVisited] = useState([]);
   const [worldpercent, setWorldPercent] = useState(0);
   const [flags, setFlags] = useState([]);
-
+  const router = useRouter(); 
+  
   useEffect(() => {
     const fetchCountriesVisited = async () => {
       try {
-        // const token = await AsyncStorage.getItem('token');
-        // console.log('Token:', token);
+        const token = await AsyncStorage.getItem('token');
+        console.log('Token:', token);
 
-        // const config = {
-        //   headers: { Authorization: `Bearer ${token}` }
-        // };
+        const config = {
+          headers: { Authorization: `Bearer ${token}` }
+        };
 
-        // const response = await axios.get('http://192.168.250.111:5000/api/travel/get/', config);
-        // setCountriesIdVisited(response.data);
+        const response = await axios.get('http://192.168.250.111:5000/api/travel/get/', config);
+        setCountriesIdVisited(response.data);
       } catch (error) {
         if (error.response) {
           console.log('Error Response:', error.response.data);
@@ -32,8 +34,7 @@ const UserStatistics = () => {
         }
       }
     };
-    fetchCountriesVisited();
-    setCountriesIdVisited([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+    // fetchCountriesVisited();
   }, []);
 
   useEffect(() => {
@@ -46,23 +47,31 @@ const UserStatistics = () => {
     const fetchCountriesData = async () => {
       try {
         const token = await AsyncStorage.getItem('token');
-        console.log('Token:', token);
-
         const config = {
           headers: { Authorization: `Bearer ${token}` }
         };
 
-        const requests = countriesIdVisited.map(id => axios.get(`http://192.168.250.111:5000/api/country/get/${id}`, config));
+        const fetchWithRetry = async (url, config, retries = 3) => {
+          try {
+            return await axios.get(url, config);
+          } catch (error) {
+            if (retries > 0) {
+              await new Promise(resolve => setTimeout(resolve, 1000));
+              return fetchWithRetry(url, config, retries - 1);
+            } else {
+              throw error;
+            }
+          }
+        };
+
+        const requests = countriesIdVisited.map(id => fetchWithRetry(`http://192.168.250.111:5000/api/country/get/${id}`, config));
         const responses = await Promise.all(requests);
-        setFlags(responses.map(response => response.data.flag));
+
+        setFlags(responses.map(response => ({ url: response.data.flag, id: response.data.id })));
         setContinentVisited(responses.map(response => response.data.continent));
-        ;
+
       } catch (error) {
-        if (error.response) {
-          console.log('Error Response:', error.response.data);
-        } else {
-          console.log('Error flag:', error.message);
-        }
+        console.error('Error:', error);
       }
     };
 
@@ -71,10 +80,17 @@ const UserStatistics = () => {
     }
   }, [countriesIdVisited]);
 
+  const handleFlagPress = (id) => {
+    router.push(`/listing/${id}`); // Navigate to the dynamic route
+  };
+
   const renderItem = ({ item }) => (
-    <View style={styles.flagContainer}>
-      <Image source={{ uri: item }} style={styles.flag} />
-    </View>
+    <TouchableOpacity
+      style={styles.flagContainer}
+      onPress={() => handleFlagPress(item.id)} // Handle press event
+    >
+      <Image source={{ uri: item.url }} style={styles.flag} />
+    </TouchableOpacity>
   );
 
   const renderContinents = () => {
@@ -142,7 +158,7 @@ const UserStatistics = () => {
               <FlatList
                 data={item}
                 renderItem={renderItem}
-                keyExtractor={(index) => index.toString()}
+                keyExtractor={(item) => item.id.toString()}
                 numColumns={4}
                 contentContainerStyle={styles.list}
               />
@@ -238,15 +254,15 @@ const styles = StyleSheet.create({
   legendRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 10,
+    marginBottom: 5,
   },
   legendItem: {
     width: 20,
     height: 20,
     borderRadius: 10,
-    marginRight: 5,
+    marginRight: 10,
   },
   legendText: {
-    marginRight: 15,  // Adjust spacing as needed
+    fontSize: 16,
   },
 });
