@@ -1,40 +1,29 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, Image, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, Image, FlatList, SectionList, Dimensions } from 'react-native';
 import { Stack } from 'expo-router';
 import Colors from '../constants/Colors';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-
-async function getFlag() {
-  return fetch('https://flagcdn.com/w320/fr.png')
-  .then((response) => {
-    return response.json();
-  })
-}
-
-
 const UserStatistics = () => {
-  const [flagData, setFlagData] = useState([
-    { uri: 'https://flagcdn.com/w320/fr.png' }
-  ]);
-  const [countriesVisited, setCountriesVisited] = useState(flagData.length);
-  const [worldpercent, setWorldPercent] = useState((countriesVisited / 245 * 100).toFixed(2));
-  
+  const [countriesIdVisited, setCountriesIdVisited] = useState([]);
+  const [countriesVisited, setCountriesVisited] = useState(0);
+  const [continentVisited, setContinentVisited] = useState([]);
+  const [worldpercent, setWorldPercent] = useState(0);
+  const [flags, setFlags] = useState([]);
+
   useEffect(() => {
-    const fetchCountriesData = async () => {
+    const fetchCountriesVisited = async () => {
       try {
-  
-        const token = await AsyncStorage.getItem('token');
-        console.log('Token:', token);
-  
-        const config = {
-          headers: { Authorization: `Bearer ${token}` }
-        };
-  
-        const response = await axios.get('http://localhost:5000/api/country/get', config);
-        setCountriesData(response.data);
-        setFilteredData(response.data);
+        // const token = await AsyncStorage.getItem('token');
+        // console.log('Token:', token);
+
+        // const config = {
+        //   headers: { Authorization: `Bearer ${token}` }
+        // };
+
+        // const response = await axios.get('http://192.168.250.111:5000/api/travel/get/', config);
+        // setCountriesIdVisited(response.data);
       } catch (error) {
         if (error.response) {
           console.log('Error Response:', error.response.data);
@@ -43,10 +32,51 @@ const UserStatistics = () => {
         }
       }
     };
-  
-    fetchCountriesData();
+    fetchCountriesVisited();
+    setCountriesIdVisited([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
   }, []);
-  
+
+  useEffect(() => {
+    setCountriesVisited(countriesIdVisited.length);
+    const percent = (countriesIdVisited.length / 249) * 100;
+    setWorldPercent(percent % 1 === 0 ? percent.toFixed(0) : percent.toFixed(1));
+  }, [countriesIdVisited]);
+
+  useEffect(() => {
+    const fetchCountriesData = async () => {
+      try {
+        const token = await AsyncStorage.getItem('token');
+        console.log('Token:', token);
+
+        const config = {
+          headers: { Authorization: `Bearer ${token}` }
+        };
+
+        const requests = countriesIdVisited.map(id => axios.get(`http://192.168.250.111:5000/api/country/get/${id}`, config));
+        const responses = await Promise.all(requests);
+        setFlags(responses.map(response => response.data.flag));
+        setContinentVisited(responses.map(response => response.data.continent));
+        ;
+      } catch (error) {
+        if (error.response) {
+          console.log('Error Response:', error.response.data);
+        } else {
+          console.log('Error flag:', error.message);
+        }
+      }
+    };
+
+    if (countriesIdVisited.length > 0) {
+      fetchCountriesData();
+    }
+  }, [countriesIdVisited]);
+
+  const renderItem = ({ item }) => (
+    <View style={styles.flagContainer}>
+      <Image source={{ uri: item }} style={styles.flag} />
+    </View>
+  );
+
   return (
     <>
       <Stack.Screen
@@ -58,61 +88,45 @@ const UserStatistics = () => {
           headerTintColor: Colors.white,
         }}
       />
-      <ScrollView>
-      <View style={styles.container}>
-        <View style={styles.section}>
-          <Text style={styles.title}>Vous avez vu</Text>
-          <View style={styles.statsContainer}>
-            <View style={styles.stat}>
-              <Image source={require('../assets/images/mountains.png')} style={styles.icon} />
-              <View style={styles.overlay}>
-                <Text style={styles.statTextCountries}>{countriesVisited}</Text>
-                <Text style={styles.statText}>{'\n'}Pays</Text>
+      <SectionList
+        sections={[
+          { title: 'Vous avez vu', data: [{ countriesVisited, worldpercent }] },
+          { title: 'Drapeau collecter', data: [flags] },
+          { title: 'Continents visités', data: [continentVisited] },
+        ]}
+        renderSectionHeader={({ section: { title } }) => (
+          <Text style={styles.title}>{title}</Text>
+        )}
+        renderItem={({ item, section }) => {
+          if (section.title === 'Vous avez vu') {
+            return (
+              <View style={styles.statsContainer}>
+                <View style={styles.stat}>
+                  <Image source={require('../assets/images/mountains.png')} style={styles.icon} />
+                  <View style={styles.overlay}>
+                    <Text style={styles.statTextCountries}>{item.countriesVisited}</Text>
+                    <Text style={styles.statText}>{'\n'}Pays</Text>
+                  </View>
+                </View>
+                <View style={styles.stat}>
+                  <Image source={require('../assets/images/globe.png')} style={styles.icon} />
+                  <View style={styles.overlay}>
+                    <Text style={styles.statText}>{item.worldpercent}%{'\n'}Du monde</Text>
+                  </View>
+                </View>
               </View>
-            </View>
-            <View style={styles.stat}>
-              <Image source={require('../assets/images/globe.png')} style={styles.icon} />
-              <View style={styles.overlay}>
-                <Text style={styles.statText}>{worldpercent}%{'\n'}Du monde</Text>
-              </View>
-            </View>
-          </View>
-        </View>
-
-        <View style={styles.section}>
-          <Text style={styles.title}>Drapeau collecter</Text>
-          <Image source={require("../assets/images/flags/fr.png")} style={styles.flag} />
-        </View>
-
-        <View style={styles.section}>
-          <Text style={styles.title}>Continents visités</Text>
-          <Image source={require('../assets/images/world_map.png')} style={styles.map} />
-          <View style={styles.legend}>
-            <View style={styles.legendRow}>
-              <View style={[styles.legendItem, { backgroundColor: 'purple' }]} />
-              <Text style={styles.legendText}>Europe</Text>
-              <View style={[styles.legendItem, { backgroundColor: 'red' }]} />
-              <Text style={styles.legendText}>Africa</Text>
-              <View style={[styles.legendItem, { backgroundColor: 'blue' }]} />
-              <Text style={styles.legendText}>North-America</Text>
-            </View>
-            <View style={styles.legendRow}>
-              <View style={[styles.legendItem, { backgroundColor: 'orange' }]} />
-              <Text style={styles.legendText}>Asia</Text>
-              <View style={[styles.legendItem, { backgroundColor: 'yellow' }]} />
-              <Text style={styles.legendText}>Oceania</Text>
-              <View style={[styles.legendItem, { backgroundColor: 'green' }]} />
-              <Text style={styles.legendText}>South-America</Text>
-            </View>
-            <View style={styles.legendRow}>
-              <View style={[styles.legendItem, { backgroundColor: 'gray' }]} />
-              <Text style={styles.legendText}>Antarctica</Text>
-            </View>
-          </View>
-        </View>
-      </View>
-      </ScrollView>
-    </>
+            );
+          } else if (section.title === 'Drapeau collecter') {
+            return (
+              <FlatList
+                data={item}
+                renderItem={renderItem}
+                keyExtractor={(index) => index.toString()}
+                numColumns={4}
+                contentContainerStyle={styles.list}
+              />
+            );
+          } 
   );
 };
 
@@ -124,9 +138,6 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: Colors.white,
   },
-  section: {
-    marginBottom: 20,
-  },
   title: {
     fontSize: 28,
     fontWeight: 'bold',
@@ -136,6 +147,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
+    marginBottom: 20,
   },
   stat: {
     position: 'relative',
@@ -168,14 +180,15 @@ const styles = StyleSheet.create({
   },
   list: {
     justifyContent: 'center',
-    alignItems: 'left',
   },
   flagContainer: {
-    margin: 10,
+    margin: 5,
+    width: Dimensions.get('window').width / 4 - 10,
+    alignItems: 'center',
   },
   flag: {
-    width: 100,
-    height: 60,
+    width: '100%',
+    height: 100,
     resizeMode: 'contain',
   },
   map: {
