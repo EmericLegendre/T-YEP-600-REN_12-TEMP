@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, memo } from 'react';
 import { View, Text, StyleSheet, Image, FlatList, SectionList, Dimensions, TouchableOpacity } from 'react-native';
 import { Stack, useRouter } from 'expo-router';
 import Colors from '../constants/Colors';
@@ -83,14 +83,14 @@ const UserStatistics = () => {
     router.push(`/listing/${id}`);
   };
 
-  const renderItem = ({ item }) => (
+  const MemoizedFlagItem = memo(({ item }) => (
     <TouchableOpacity
       style={styles.flagContainer}
       onPress={() => handleFlagPress(item.id)}
     >
       <Image source={{ uri: item.url }} style={styles.flag} />
     </TouchableOpacity>
-  );
+  ));
 
   const renderContinents = () => {
     const continents = [
@@ -104,7 +104,7 @@ const UserStatistics = () => {
     ];
 
     return continents
-      .filter(continent => continentVisited.includes(continent.name))
+      .filter(continent => continentVisited.includes(continent.slug))
       .map(continent => (
         <View key={continent.slug} style={styles.legendRow}>
           <View style={[styles.legendItem, { backgroundColor: continent.color }]} />
@@ -156,10 +156,13 @@ const UserStatistics = () => {
             return (
               <FlatList
                 data={item}
-                renderItem={renderItem}
+                renderItem={({ item }) => <MemoizedFlagItem item={item} />}
                 keyExtractor={(item) => item.id.toString()}
                 numColumns={5}
                 contentContainerStyle={styles.list}
+                initialNumToRender={20}
+                maxToRenderPerBatch={10}
+                windowSize={21}
               />
             );
           } else if (section.title === 'Continents visités') {
