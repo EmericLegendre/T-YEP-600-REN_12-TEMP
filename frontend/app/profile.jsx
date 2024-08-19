@@ -8,10 +8,22 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const Profile = () => {
   const router = useRouter();
 
+  let response = {
+      data: {
+          apiToken: 'token'
+      }
+  };
      const logOut = () => {
-         AsyncStorage.setItem();
-         router.push('/register');
-    }
+         try {
+             const { apiToken } = response.data;
+
+             AsyncStorage.removeItem(apiToken);
+             router.push('/register');
+             console.log('Token removed successfully');
+         } catch (error) {
+             console.error('Failed to remove the token:', error);
+         }
+     };
 
 
   return (

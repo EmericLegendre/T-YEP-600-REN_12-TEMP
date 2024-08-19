@@ -9,3 +9,4 @@ werkzeug
 flask_jwt_extended
 requests
 flask-cors
+pytest
