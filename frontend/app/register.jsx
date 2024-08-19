@@ -55,7 +55,7 @@ const register = () => {
         }
 
           try {
-              const response = await axios.post('http://10.19.255.166:5000/api/users/add', {
+              const response = await axios.post('http://10.19.255.233:5000/api/users/add', {
                   email,
                   password,
                   first_name,
