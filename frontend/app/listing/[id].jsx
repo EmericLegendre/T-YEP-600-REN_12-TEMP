@@ -11,7 +11,6 @@ const IMG_HEIGHT = 300;
 const formatPopulation = (population) => {
     if (!population) return 'N/A habitants';
 
-    // Convert population to a string and add spaces every three digits
     const populationString = population.toString();
     const formatted = populationString.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
 
@@ -21,6 +20,7 @@ const formatPopulation = (population) => {
 const CountryDetails = () => {
     const { id } = useLocalSearchParams();
     const [listing, setListing] = useState(null);
+    const [languages, setLanguages] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [selectedCategory, setSelectedCategory] = useState('Général');
@@ -41,6 +41,16 @@ const CountryDetails = () => {
                 });
 
                 setListing(response.data);
+
+                const responseLanguages = await axios.get(`http://10.19.255.233:5000/api/countryInfos/get/country/${id}/category/LANGUAGE`, {
+                  headers: {
+                      Authorization: `Bearer ${token}`
+                  }
+              });
+  
+              const extractedLanguages = responseLanguages.data.map(lang => lang.content);
+              setLanguages(extractedLanguages);
+
             } catch (err) {
                 console.log('Erreur capturée:', err.response ? err.response.data : err.message);
                 setError(err.response ? err.response.data : err.message);
@@ -93,6 +103,10 @@ const CountryDetails = () => {
                   <Text style={styles.infoText}>{listing.continent || 'N/A'}</Text>
               </View>
               <View style={styles.infoRow}>
+                        <Text style={styles.infoTitle}>Langues :</Text>
+                        <Text style={styles.infoText}>{languages.length > 0 ? languages.join(', ') : 'N/A'}</Text>
+                    </View>
+              <View style={styles.infoRow}>
                   <Text style={styles.infoTitle}>Monnaie :</Text>
                   <Text style={styles.infoText}>{listing.currency || 'N/A'}</Text>
               </View>
@@ -107,7 +121,7 @@ const CountryDetails = () => {
           </View>
             );
         }
-        return null; // Return null if the selected category is not "Général"
+        return null;
     };
 
     return (
