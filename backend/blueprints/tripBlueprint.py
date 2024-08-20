@@ -33,3 +33,24 @@ def add_trip():
     db.session.commit()
 
     return jsonify({'message': 'Trip created successfully'}), 201
+
+
+@tripBp.route('/archive/<int:id>', methods=['PUT'])
+@jwt_required()
+def archive_trip(id):
+
+    try:
+        trip = Trip.query.get(id)
+        if trip is None:
+            return jsonify({'error': 'Trip not found'}), 404
+        if trip.archived:
+            return jsonify({'error': 'Trip already archived'}), 400
+
+        setattr(trip, 'archived', True)
+
+        db.session.commit()
+        return jsonify({'message': 'Trip archived successfully'}), 200
+    except SQLAlchemyError as e:
+        db.session.rollback()
+        return jsonify({'error': str(e)}), 400
+
