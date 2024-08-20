@@ -22,7 +22,7 @@ def add_trip():
 
     not_archived_trip = Trip.query.filter(Trip.user_id == user_id).filter(Trip.archived == False).first()
     if not_archived_trip:
-        return jsonify({'error': 'Non archived trip found'}), 400
+        return jsonify({'error': 'Founded not archived trip'}), 400
 
     new_trip = Trip(
         user_id = user_id,
@@ -120,6 +120,25 @@ def update_trip(id):
 
         db.session.commit()
         return jsonify({'message': 'Trip updated successfully'}), 200
+    except SQLAlchemyError as e:
+        db.session.rollback()
+        return jsonify({'error': str(e)}), 400
+
+
+@tripBp.route('/delete/archived/<int:id>', methods=['DELETE'])
+@jwt_required()
+def delete_archived_trip(id):
+    try:
+        trip = Trip.query.get(id)
+        if trip is None:
+            return jsonify({'error': 'Trip not found'}), 404
+
+        if not trip.archived:
+            return jsonify({'error': 'Trip not archived, cannot delete'}), 400
+
+        db.session.delete(trip)
+        db.session.commit()
+        return jsonify({'message': 'Trip deleted successfully'}), 200
     except SQLAlchemyError as e:
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
