@@ -78,7 +78,7 @@ def get_key_locations():
 @keyLocationsBp.route('/get/<int:id>', methods=['GET'])
 @jwt_required()
 def get_key_location_by_id(id):
-    key_location = KeyLocations.query.get(id)
+    #key_location = KeyLocations.query.get(id)
     try:
         key_location = KeyLocations.query.get(id)
         if key_location is None:
