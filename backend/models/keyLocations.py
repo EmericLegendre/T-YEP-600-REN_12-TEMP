@@ -5,7 +5,7 @@ class KeyLocations(db.Model):
     __tablename__ = 'keyLocations'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(50), nullable=False)
-    place_id = db.Column(db.String, nullable=False)
+    place_id = db.Column(db.String(255), nullable=False)
 
     tripKeyLocations = db.relationship('TripKeyLocations', backref='keyLocations', lazy=True)
 

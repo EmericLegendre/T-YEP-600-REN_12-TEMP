@@ -4,7 +4,7 @@ from config.dbConfig import db
 class TripKeyLocations(db.Model):
     __tablename__ = 'trip_keyLocations'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    keyLocations_id = db.Column(db.Integer, db.ForeignKey('keyLocations.id'))
+    key_locations_id = db.Column(db.Integer, db.ForeignKey('keyLocations.id'))
     trip_id = db.Column(db.Integer, db.ForeignKey('trip.id'))
 
     created_at = db.Column(db.DateTime, default=db.func.current_timestamp())
