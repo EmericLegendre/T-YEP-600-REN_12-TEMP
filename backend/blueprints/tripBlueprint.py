@@ -82,3 +82,19 @@ def get_archived_trips():
     except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400
 
+
+@tripBp.route('/get/<int:id>', methods=['GET'])
+@jwt_required()
+def get_trip_by_id(id):
+    try:
+        trip = Trip.query.get(id)
+        if trip is None:
+            return jsonify({'error': 'Trip not found'}), 404
+        return jsonify({
+            'id': trip.id,
+            'user_id': trip.user_id,
+            'archived': trip.archived
+        }), 200
+    except SQLAlchemyError as e:
+        return jsonify({'error': str(e)}), 400
+
