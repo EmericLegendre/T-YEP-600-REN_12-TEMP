@@ -15,6 +15,9 @@ class User(db.Model):
     city = db.Column(db.String(50), nullable=True)
     postal_code = db.Column(db.String(50), nullable=True)
     country = db.Column(db.String(50), nullable=True)
+
+    trips = db.relationship('Trip', backref='user', lazy=True)
+
     created_at = db.Column(db.DateTime, default=db.func.current_timestamp())
     updated_at = db.Column(db.DateTime, default=db.func.current_timestamp(), onupdate=db.func.current_timestamp())
 
