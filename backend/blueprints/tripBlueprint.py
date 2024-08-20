@@ -54,3 +54,17 @@ def archive_trip(id):
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
 
+
+@tripBp.route('/get', methods=['GET'])
+@jwt_required()
+def get_trips():
+    try:
+        trips = Trip.query.all()
+        return jsonify([{
+            'id': trip.id,
+            'user_id': trip.user_id,
+            'archived': trip.archived
+        } for trip in trips]), 200
+    except SQLAlchemyError as e:
+        return jsonify({'error': str(e)}), 400
+
