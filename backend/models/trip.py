@@ -7,6 +7,8 @@ class Trip(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     archived = db.Column(db.Boolean, default=False)
 
+    tripKeyLocations = db.relationship('TripKeyLocations', backref='trip', lazy='dynamic')
+
     created_at = db.Column(db.DateTime, default=db.func.current_timestamp())
     updated_at = db.Column(db.DateTime, default=db.func.current_timestamp(), onupdate=db.func.current_timestamp())
 

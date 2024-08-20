@@ -8,6 +8,9 @@ class KeyLocations(db.Model):
     description = db.Column(db.String(500), nullable=False)
     latitude = db.Column(db.Float, nullable=False)
     longitude = db.Column(db.Float, nullable=False)
+
+    tripKeyLocations = db.relationship('TripKeyLocations', backref='keyLocations', lazy=True)
+
     created_at = db.Column(db.DateTime, default=db.func.current_timestamp())
     updated_at = db.Column(db.DateTime, default=db.func.current_timestamp(), onupdate=db.func.current_timestamp())
 
