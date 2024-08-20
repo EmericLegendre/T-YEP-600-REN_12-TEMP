@@ -98,3 +98,29 @@ def get_trip_by_id(id):
     except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400
 
+
+@tripBp.route('/update/<int:id>', methods=['PUT'])
+@jwt_required()
+def update_trip(id):
+    data = request.get_json()
+    updatable_fields = ['user_id', 'archived']
+
+    for field in data.keys():
+        if field not in updatable_fields:
+            return jsonify({'error': f'Invalid field: {field}'}), 400
+
+    try:
+        trip = Trip.query.get(id)
+        if trip is None:
+            return jsonify({'error': 'Trip not found'}), 404
+
+        for field in updatable_fields:
+            if field in data:
+                setattr(trip, field, data[field])
+
+        db.session.commit()
+        return jsonify({'message': 'Trip updated successfully'}), 200
+    except SQLAlchemyError as e:
+        db.session.rollback()
+        return jsonify({'error': str(e)}), 400
+
