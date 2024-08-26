@@ -6,7 +6,7 @@ import { Ionicons } from '@expo/vector-icons';
 import Listings from '../../components/Listings';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import FilterModal from '../../components/filterModal';
+import FilterModal from '../../components/FilterModal';
 
 const Explore = () => {
   const router = useRouter();
@@ -57,7 +57,7 @@ const Explore = () => {
   };
 
   const handleFilter = (continent) => {
-    if (continent === 'None') {
+    if (continent === 'Tous') {
       setFilteredData(countriesData);
     } else if (continent) {
       const filtered = countriesData.filter(country =>
@@ -105,7 +105,7 @@ const Explore = () => {
             onPress={() => setModalVisible(true)} 
             style={styles.filterBtn}
           >
-            <Ionicons name="options" size={30} color={Colors.white} />
+            <Ionicons name="options" size={30} color={Colors.grey} />
           </TouchableOpacity>
         </View>
 
