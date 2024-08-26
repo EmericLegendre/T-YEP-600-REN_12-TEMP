@@ -58,3 +58,17 @@ def delete_trip_key_location(id):
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
 
+
+@tripKeyLocationsBp.route('/get', methods=['GET'])
+@jwt_required()
+def get_trip_key_locations():
+    try:
+        trip_key_locations = TripKeyLocations.query.all()
+        return jsonify([{
+            'key_location_id': trip_key_location.key_locations_id,
+            'trip_id': trip_key_location.trip_id,
+            'position': trip_key_location.position
+        } for trip_key_location in trip_key_locations]), 200
+    except SQLAlchemyError as e:
+        return jsonify({'error': str(e)}), 400
+
