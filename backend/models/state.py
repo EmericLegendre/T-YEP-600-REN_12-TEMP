@@ -4,7 +4,7 @@ from config.dbConfig import db
 class State(db.Model):
     __tablename__ = 'state'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    name = db.Column(db.String(255), nullable=False, unique=True)
+    name = db.Column(db.String(255), nullable=False)
     country_id = db.Column(db.Integer, db.ForeignKey('country.id'), nullable=False)
     population = db.Column(db.Integer, nullable=False)  # Changed to Integer
     population_name = db.Column(db.String(255), nullable=False)
