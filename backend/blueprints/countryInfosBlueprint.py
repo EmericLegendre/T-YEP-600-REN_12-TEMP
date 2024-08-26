@@ -131,3 +131,18 @@ def get_country_infos_by_category(country_id, category):
         } for country_infos in country_infos]), 200
     except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400
+
+
+@countryInfosBp.route('/get/languages', methods=['GET'])
+@jwt_required()
+def get_countries_languages():
+    try:
+        country_infos = CountryInfos.query.filter_by(category=CategoryEnum['LANGUAGE']).all()
+        if not country_infos:
+            return jsonify({'error': 'No Languages found'}), 404
+        return jsonify([{
+            'content': country_infos.content,
+            'country': country_infos.country.name,
+        } for country_infos in country_infos]), 200
+    except SQLAlchemyError as e:
+        return jsonify({'error': str(e)}), 400
