@@ -6,6 +6,7 @@ import { Ionicons } from '@expo/vector-icons';
 import Listings from '../../components/Listings';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import FilterModal from '../../components/filterModal';
 
 const Explore = () => {
   const router = useRouter();
@@ -13,6 +14,7 @@ const Explore = () => {
   const [countriesData, setCountriesData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredData, setFilteredData] = useState([]);
+  const [modalVisible, setModalVisible] = useState(false);
 
   useEffect(() => {
     const fetchCountriesData = async () => {
@@ -54,6 +56,17 @@ const Explore = () => {
     }
   };
 
+  const handleFilter = (continent) => {
+    if (continent === 'None') {
+      setFilteredData(countriesData);
+    } else if (continent) {
+      const filtered = countriesData.filter(country =>
+        country.continent === continent
+      );
+      setFilteredData(filtered);
+    }
+  };
+
   return (
     <>
       <Stack.Screen options={{
@@ -88,12 +101,25 @@ const Explore = () => {
               onChangeText={handleSearch}
             />
           </View>
-          <TouchableOpacity onPress={() => {}} style={styles.filterBtn}>
-            <Ionicons name="options" size={30} />
+          <TouchableOpacity 
+            onPress={() => setModalVisible(true)} 
+            style={styles.filterBtn}
+          >
+            <Ionicons name="options" size={30} color={Colors.white} />
           </TouchableOpacity>
         </View>
 
         <Listings listings={filteredData} />
+
+        <FilterModal
+          visible={modalVisible}
+          onClose={() => setModalVisible(false)}
+          onSelect={(continent) => {
+            handleFilter(continent);
+            setModalVisible(false);
+          }}
+        />
+
       </View>
     </>
   );
