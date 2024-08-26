@@ -24,33 +24,48 @@ const CountryDetails = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [selectedCategory, setSelectedCategory] = useState('Général');
+    const [categoryInfo, setCategoryInfo] = useState(null);
 
     useEffect(() => {
         const fetchCountryData = async () => {
             try {
                 const token = await AsyncStorage.getItem('token');
-
-                if (!token) {
-                    throw new Error('Token non trouvé');
-                }
-
+    
+                if (!token) throw new Error('Token non trouvé');
+    
+                // Requête pour les détails généraux du pays
                 const response = await axios.get(`http://10.19.255.211:5000/api/country/get/${id}`, {
-                    headers: {
-                        Authorization: `Bearer ${token}`
-                    }
+                    headers: { Authorization: `Bearer ${token}` }
                 });
-                
                 setListing(response.data);
-
+    
+                // Requête pour les langues
                 const responseLanguages = await axios.get(`http://10.19.255.211:5000/api/countryInfos/get/country/${id}/category/LANGUAGE`, {
-                  headers: {
-                      Authorization: `Bearer ${token}`
-                  }
-              });
-  
-              const extractedLanguages = responseLanguages.data.map(lang => lang.content);
-              setLanguages(extractedLanguages);
-
+                    headers: { Authorization: `Bearer ${token}` }
+                });
+                const extractedLanguages = responseLanguages.data.map(lang => lang.content);
+                setLanguages(extractedLanguages);
+    
+                // Requête pour les informations de la catégorie sélectionnée
+                const categoryMappings = {
+                    'Général': '',
+                    'Cuisine': 'COOKING',
+                    'Culture': 'CULTURE',
+                    'Santé': 'HEALTH',
+                    'Loi': 'LAW'
+                };
+    
+                const categoryCode = categoryMappings[selectedCategory];
+    
+                if (categoryCode && selectedCategory !== 'Général') {
+                    const responseCategory = await axios.get(`http://10.19.255.211:5000/api/countryInfos/get/country/${id}/category/${categoryCode}`, {
+                        headers: { Authorization: `Bearer ${token}` }
+                    });
+                    setCategoryInfo(responseCategory.data);
+                } else {
+                    setCategoryInfo(null);
+                }
+    
             } catch (err) {
                 console.log('Erreur capturée:', err.response ? err.response.data : err.message);
                 setError(err.response ? err.response.data : err.message);
@@ -58,9 +73,10 @@ const CountryDetails = () => {
                 setLoading(false);
             }
         };
-
+    
         fetchCountryData();
-    }, [id]);
+    }, [id, selectedCategory]);  // Ajout de selectedCategory dans les dépendances
+    
 
     const handleCategorySelect = (category) => {
         setSelectedCategory(category);
@@ -90,70 +106,69 @@ const CountryDetails = () => {
         );
     }
 
-    const renderGeneralInfo = () => {
-        switch (selectedCategory) {
-            case 'Général':
-                return (
-                    <View style={styles.infoContainer}>
-                        <View style={styles.infoRow}>
-                            <Text style={styles.infoTitle}>Capitale :</Text>
-                            <Text style={styles.infoText}>{listing.capital || 'N/A'}</Text>
-                        </View>
-                        <View style={styles.infoRow}>
-                            <Text style={styles.infoTitle}>Continent :</Text>
-                            <Text style={styles.infoText}>{listing.continent || 'N/A'}</Text>
-                        </View>
-                        <View style={styles.infoRow}>
-                            <Text style={styles.infoTitle}>Monnaie :</Text>
-                            <Text style={styles.infoText}>{listing.currency || 'N/A'}</Text>
-                        </View>
-                        <View style={styles.infoRow}>
-                            <Text style={styles.infoTitle}>Population :</Text>
-                            <Text style={styles.infoText}>{formatPopulation(listing.population)}</Text>
-                        </View>
-                        <View style={styles.infoRow}>
-                            <Text style={styles.infoTitle}>Nom de la population :</Text>
-                            <Text style={styles.infoText}>{listing.population_name || 'N/A'}</Text>
-                        </View>
+    const renderCategoryInfo = () => {
+        if (selectedCategory === 'Général') {
+            return (
+                <View style={styles.infoContainer}>
+                    <View style={styles.infoRow}>
+                        <Text style={styles.infoTitle}>Capitale :</Text>
+                        <Text style={styles.infoText}>{listing.capital || 'N/A'}</Text>
                     </View>
-                );
-    
-            case 'Cuisine':
-                return (
-                    <View style={styles.infoContainer}>
-                        <Text style={styles.infoTitle}>Cuisine :</Text>
-                        <Text style={styles.infoText}>{listing.cuisine || 'Informations culinaires indisponibles'}</Text>
+                    <View style={styles.infoRow}>
+                        <Text style={styles.infoTitle}>Continent :</Text>
+                        <Text style={styles.infoText}>{listing.continent || 'N/A'}</Text>
                     </View>
-                );
-    
-            case 'Culture':
-                return (
-                    <View style={styles.infoContainer}>
-                        <Text style={styles.infoTitle}>Culture :</Text>
-                        <Text style={styles.infoText}>{listing.culture || 'Informations culturelles indisponibles'}</Text>
+                    <View style={styles.infoRow}>
+                        <Text style={styles.infoTitle}>Langues :</Text>
+                        <Text style={styles.infoText}>{languages.length > 0 ? languages.join(', ') : 'N/A'}</Text>
                     </View>
-                );
-    
-            case 'Santé':
-                return (
-                    <View style={styles.infoContainer}>
-                        <Text style={styles.infoTitle}>Santé :</Text>
-                        <Text style={styles.infoText}>{listing.health || 'Informations sanitaires indisponibles'}</Text>
+                    <View style={styles.infoRow}>
+                        <Text style={styles.infoTitle}>Monnaie :</Text>
+                        <Text style={styles.infoText}>{listing.currency || 'N/A'}</Text>
                     </View>
-                );
-    
-            case 'Loi':
-                return (
-                    <View style={styles.infoContainer}>
-                        <Text style={styles.infoTitle}>Loi :</Text>
-                        <Text style={styles.infoText}>{listing.law || 'Informations juridiques indisponibles'}</Text>
+                    <View style={styles.infoRow}>
+                        <Text style={styles.infoTitle}>Population :</Text>
+                        <Text style={styles.infoText}>{formatPopulation(listing.population)}</Text>
                     </View>
-                );
-    
-            default:
-                return null;
+                    <View style={styles.infoRow}>
+                        <Text style={styles.infoTitle}>Nom de la population :</Text>
+                        <Text style={styles.infoText}>{listing.population_name || 'N/A'}</Text>
+                    </View>
+                </View>
+            );
+        } else if (selectedCategory === 'Cuisine' && categoryInfo) {
+            return (
+                <View style={styles.infoContainer}>
+                    <Text style={styles.infoTitle}>Spécialités culinaires :</Text>
+                    <Text style={styles.infoText}>{categoryInfo.map(info => info.content).join(', ') || 'Informations sur la cuisine indisponibles'}</Text>
+                </View>
+            );
+        } else if (selectedCategory === 'Culture' && categoryInfo) {
+            return (
+                <View style={styles.infoContainer}>
+                    <Text style={styles.infoTitle}>Culture :</Text>
+                    <Text style={styles.infoText}>{categoryInfo.map(info => info.content).join(', ') || 'Informations sur la culture indisponibles'}</Text>
+                </View>
+            );
+        } else if (selectedCategory === 'Santé' && categoryInfo) {
+            return (
+                <View style={styles.infoContainer}>
+                    <Text style={styles.infoTitle}>Santé :</Text>
+                    <Text style={styles.infoText}>{categoryInfo.map(info => info.content).join(', ') || 'Informations sur la santé indisponibles'}</Text>
+                </View>
+            );
+        } else if (selectedCategory === 'Loi' && categoryInfo) {
+            return (
+                <View style={styles.infoContainer}>
+                    <Text style={styles.infoTitle}>Loi :</Text>
+                    <Text style={styles.infoText}>{categoryInfo.map(info => info.content).join(', ') || 'Informations sur les lois indisponibles'}</Text>
+                </View>
+            );
         }
+        return null;
     };
+    
+    
 
     return (
         <>
@@ -170,7 +185,7 @@ const CountryDetails = () => {
                     </View>
                 </View>
                 <CategoryButtons onCategorySelect={handleCategorySelect} />
-                {renderGeneralInfo()}
+                {renderCategoryInfo()}
             </View>
         </>
     );
