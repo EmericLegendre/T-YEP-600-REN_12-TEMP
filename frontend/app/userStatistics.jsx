@@ -23,7 +23,7 @@ const UserStatistics = () => {
           headers: { Authorization: `Bearer ${token}` }
         };
 
-        const response = await axios.get('http://192.168.250.111:5000/api/travel/get/', config);
+        const response = await axios.get('http://10.19.255.193:5000/api/travel/get/', config);
         setCountriesIdVisited(response.data);
       } catch (error) {
         if (error.response) {
@@ -63,7 +63,7 @@ const UserStatistics = () => {
           }
         };
 
-        const requests = countriesIdVisited.map(id => fetchWithRetry(`http://192.168.250.111:5000/api/country/get/${id}`, config));
+        const requests = countriesIdVisited.map(id => fetchWithRetry(`http://10.19.255.193:5000/api/country/get/${id}`, config));
         const responses = await Promise.all(requests);
 
         setFlags(responses.map(response => ({ url: response.data.flag, id: response.data.id })));
