@@ -34,15 +34,15 @@ const CountryDetails = () => {
                     throw new Error('Token non trouvé');
                 }
 
-                const response = await axios.get(`http://10.19.255.233:5000/api/country/get/${id}`, {
+                const response = await axios.get(`http://10.19.255.211:5000/api/country/get/${id}`, {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
                 });
-
+                
                 setListing(response.data);
 
-                const responseLanguages = await axios.get(`http://10.19.255.233:5000/api/countryInfos/get/country/${id}/category/LANGUAGE`, {
+                const responseLanguages = await axios.get(`http://10.19.255.211:5000/api/countryInfos/get/country/${id}/category/LANGUAGE`, {
                   headers: {
                       Authorization: `Bearer ${token}`
                   }
@@ -91,37 +91,68 @@ const CountryDetails = () => {
     }
 
     const renderGeneralInfo = () => {
-        if (selectedCategory === 'Général') {
-            return (
-              <View style={styles.infoContainer}>
-              <View style={styles.infoRow}>
-                  <Text style={styles.infoTitle}>Capitale :</Text>
-                  <Text style={styles.infoText}>{listing.capital || 'N/A'}</Text>
-              </View>
-              <View style={styles.infoRow}>
-                  <Text style={styles.infoTitle}>Continent :</Text>
-                  <Text style={styles.infoText}>{listing.continent || 'N/A'}</Text>
-              </View>
-              <View style={styles.infoRow}>
-                        <Text style={styles.infoTitle}>Langues :</Text>
-                        <Text style={styles.infoText}>{languages.length > 0 ? languages.join(', ') : 'N/A'}</Text>
+        switch (selectedCategory) {
+            case 'Général':
+                return (
+                    <View style={styles.infoContainer}>
+                        <View style={styles.infoRow}>
+                            <Text style={styles.infoTitle}>Capitale :</Text>
+                            <Text style={styles.infoText}>{listing.capital || 'N/A'}</Text>
+                        </View>
+                        <View style={styles.infoRow}>
+                            <Text style={styles.infoTitle}>Continent :</Text>
+                            <Text style={styles.infoText}>{listing.continent || 'N/A'}</Text>
+                        </View>
+                        <View style={styles.infoRow}>
+                            <Text style={styles.infoTitle}>Monnaie :</Text>
+                            <Text style={styles.infoText}>{listing.currency || 'N/A'}</Text>
+                        </View>
+                        <View style={styles.infoRow}>
+                            <Text style={styles.infoTitle}>Population :</Text>
+                            <Text style={styles.infoText}>{formatPopulation(listing.population)}</Text>
+                        </View>
+                        <View style={styles.infoRow}>
+                            <Text style={styles.infoTitle}>Nom de la population :</Text>
+                            <Text style={styles.infoText}>{listing.population_name || 'N/A'}</Text>
+                        </View>
                     </View>
-              <View style={styles.infoRow}>
-                  <Text style={styles.infoTitle}>Monnaie :</Text>
-                  <Text style={styles.infoText}>{listing.currency || 'N/A'}</Text>
-              </View>
-              <View style={styles.infoRow}>
-                  <Text style={styles.infoTitle}>Population :</Text>
-                  <Text style={styles.infoText}>{formatPopulation(listing.population)}</Text>
-              </View>
-              <View style={styles.infoRow}>
-                  <Text style={styles.infoTitle}>Nom de la population :</Text>
-                  <Text style={styles.infoText}>{listing.population_name || 'N/A'}</Text>
-              </View>
-          </View>
-            );
+                );
+    
+            case 'Cuisine':
+                return (
+                    <View style={styles.infoContainer}>
+                        <Text style={styles.infoTitle}>Cuisine :</Text>
+                        <Text style={styles.infoText}>{listing.cuisine || 'Informations culinaires indisponibles'}</Text>
+                    </View>
+                );
+    
+            case 'Culture':
+                return (
+                    <View style={styles.infoContainer}>
+                        <Text style={styles.infoTitle}>Culture :</Text>
+                        <Text style={styles.infoText}>{listing.culture || 'Informations culturelles indisponibles'}</Text>
+                    </View>
+                );
+    
+            case 'Santé':
+                return (
+                    <View style={styles.infoContainer}>
+                        <Text style={styles.infoTitle}>Santé :</Text>
+                        <Text style={styles.infoText}>{listing.health || 'Informations sanitaires indisponibles'}</Text>
+                    </View>
+                );
+    
+            case 'Loi':
+                return (
+                    <View style={styles.infoContainer}>
+                        <Text style={styles.infoTitle}>Loi :</Text>
+                        <Text style={styles.infoText}>{listing.law || 'Informations juridiques indisponibles'}</Text>
+                    </View>
+                );
+    
+            default:
+                return null;
         }
-        return null;
     };
 
     return (
@@ -133,7 +164,7 @@ const CountryDetails = () => {
             }} />
             <View style={styles.container}>
                 <View style={styles.imageContainer}>
-                    {/* <Image source={{ uri: listing.image }} style={styles.image} /> */}
+                    {<Image source={{ uri: listing.image }} style={styles.image} />}
                     <View style={styles.overlay}>
                         <Text style={styles.countryName}>{listing.name}</Text>
                     </View>
