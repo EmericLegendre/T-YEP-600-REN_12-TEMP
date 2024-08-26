@@ -23,7 +23,7 @@ const Explore = () => {
           headers: { Authorization: `Bearer ${token}` }
         };
 
-        const response = await axios.get('http://10.19.255.233:5000/api/country/get', config);
+        const response = await axios.get('http://10.19.255.211:5000/api/country/get', config);
 
         setCountriesData(response.data);
         setFilteredData(response.data); 
