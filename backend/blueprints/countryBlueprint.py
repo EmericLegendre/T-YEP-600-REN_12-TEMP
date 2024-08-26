@@ -73,7 +73,8 @@ def get_country_by_id(id):
             'population': country.population,
             'population_name': country.population_name,
             'timezone': country.timezone,
-            'flag' : country.flag
+            'flag' : country.flag,
+            'image' : country.image
         }), 200
     except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400

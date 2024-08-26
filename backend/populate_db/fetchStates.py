@@ -69,10 +69,7 @@ def get_country_states(country_code, country_name):
         adminCode1 = state.get("adminCode1", "")  # Ensure adminCode1 is available or default to empty string
         countryCode = state["countryCode"]
         
-        # Handle case where adminCode1 might be missing
-        regional_capital = ""
-        if adminCode1:
-            regional_capital = next((city.get("name", "") for city in all_cities if city.get("adminCode1") == adminCode1), "")
+        regional_capital = next((city.get("name", "") for city in all_cities if city.get("adminCode1") == adminCode1), "")
 
         population_name = ""
         

@@ -4,14 +4,17 @@ import Colors from '../constants/Colors'
 import informationCategories from '../data/categories'
 import { Entypo } from '@expo/vector-icons';
 
-const CategoryButtons = () => {
+const CategoryButtons = ({ onCategorySelect }) => {
 
     const itemRef = useRef([]);
     const [activeIndex, setActiveIndex] = useState(0);
 
-    const handleSelectCategory = (index) => {
-        setActiveIndex(index);
-    }
+    const handleSelectCategory = (index, category) => {
+      setActiveIndex(index);
+      if (onCategorySelect) {
+          onCategorySelect(category);  // Passer la catégorie sélectionnée
+      }
+  }
 
   return (
     <View>
@@ -22,7 +25,7 @@ const CategoryButtons = () => {
           ref={(el) => (itemRef.current[index] == el)}
           style={styles.categoryContainer}>
             <TouchableOpacity 
-            onPress={() => handleSelectCategory(index)} 
+            onPress={() => handleSelectCategory(index, item.title)} 
             style={styles.categoryBtn}>
               <View style={activeIndex == index ? styles.categoryBtnActive : styles.categoryIcon}>
                 <Entypo 

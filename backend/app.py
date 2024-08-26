@@ -1,5 +1,8 @@
 from flask import Flask
 from flask_cors import CORS
+
+from blueprints.tripBlueprint import tripBp
+from blueprints.tripKeyLocationsBlueprint import tripKeyLocationsBp
 from blueprints.stateBlueprint import stateBp
 from blueprints.countryInfosBlueprint import countryInfosBp
 from blueprints.countryBlueprint import countryBp
@@ -37,7 +40,9 @@ def create_app():
     app.register_blueprint(cityInfosBp, url_prefix='/api/cityInfos')
     app.register_blueprint(stateInfosBp, url_prefix='/api/stateInfos')
     app.register_blueprint(stateBp, url_prefix='/api/state')
-    
+    app.register_blueprint(tripBp, url_prefix='/api/trip')
+    app.register_blueprint(tripKeyLocationsBp, url_prefix='/api/tripKeyLocations')
+
     return app
 
 

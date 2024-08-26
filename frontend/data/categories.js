@@ -4,10 +4,6 @@ const informationCategories = [
         iconName: "info"
     },
     {
-        title: "Langage",
-        iconName: "language"
-    },
-    {
         title: "Cuisine",
         iconName: "bowl"
     },
