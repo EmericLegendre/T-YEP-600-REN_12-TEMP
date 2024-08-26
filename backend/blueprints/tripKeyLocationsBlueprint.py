@@ -20,7 +20,7 @@ def add_trip_KeyLocations():
     trip_id = data.get('trip_id')
     position = data.get('position')
 
-    required_fields = ['key_location_id', 'trip_id', 'position']
+    required_fields = ['keyLocation_id', 'trip_id', 'position']
     if not all(data.get(field) for field in required_fields):
         return jsonify({'error': 'Missing required fields'}), 400
 
@@ -41,4 +41,20 @@ def add_trip_KeyLocations():
     db.session.commit()
 
     return jsonify({'message': 'Trip created successfully'}), 201
+
+
+@tripKeyLocationsBp.route('/delete/<int:id>', methods=['DELETE'])
+@jwt_required()
+def delete_trip_key_location(id):
+    try:
+        trip_key_location = TripKeyLocations.query.get(id)
+        if trip_key_location is None:
+            return jsonify({'error': 'Trip key location not found'}), 404
+
+        db.session.delete(trip_key_location)
+        db.session.commit()
+        return jsonify({'message': 'Trip key location deleted successfully'}), 200
+    except SQLAlchemyError as e:
+        db.session.rollback()
+        return jsonify({'error': str(e)}), 400
 
