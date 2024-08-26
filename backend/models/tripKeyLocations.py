@@ -12,5 +12,4 @@ class TripKeyLocations(db.Model):
 
 
     def __repr__(self) -> str:
-        return (f"TripKeyLocations(id={self.id!r}, keyLocations_id={self.keyLocations_id!r}, "
-                f"trip_id={self.trip_id!r})")
+        return f"TripKeyLocations(id={self.id!r}, keyLocations_id={self.keyLocations_id!r}, trip_id={self.trip_id!r})"
