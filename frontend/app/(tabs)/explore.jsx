@@ -15,6 +15,7 @@ const Explore = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredData, setFilteredData] = useState([]);
   const [modalVisible, setModalVisible] = useState(false);
+  const [languagesData, setLanguagesData] = useState({});
 
   useEffect(() => {
     const fetchCountriesData = async () => {
@@ -29,6 +30,20 @@ const Explore = () => {
 
         setCountriesData(response.data);
         setFilteredData(response.data); 
+
+        const languagesResponse = await axios.get('http://10.19.255.211:5000/api/countryInfos/get/languages', config);
+
+        const languagesByCountry = {};
+        languagesResponse.data.forEach(item => {
+          if (!languagesByCountry[item.country]) {
+            languagesByCountry[item.country] = [];
+          }
+          languagesByCountry[item.country].push(item.content);
+        });
+
+        setLanguagesData(languagesByCountry);
+
+        // console.log(languagesData);
 
       } catch (error) {
         if (error.response) {
@@ -56,15 +71,20 @@ const Explore = () => {
     }
   };
 
-  const handleFilter = (continent) => {
-    if (continent === 'Tous') {
-      setFilteredData(countriesData);
-    } else if (continent) {
-      const filtered = countriesData.filter(country =>
-        country.continent === continent
-      );
-      setFilteredData(filtered);
+  const handleFilter = ({ continent, language }) => {
+    let filtered = countriesData;
+
+    if (continent !== 'Tous') {
+      filtered = filtered.filter(country => country.continent === continent);
     }
+
+    if (language !== 'Tous') {
+      filtered = filtered.filter(country => 
+        languagesData[country.name] && languagesData[country.name].includes(language)
+      );
+    }
+
+    setFilteredData(filtered);
   };
 
   return (
