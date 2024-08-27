@@ -3,10 +3,13 @@ import { View, Text, ActivityIndicator } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from '@react-navigation/native';
 import { Stack, useRouter } from 'expo-router'
+import axios from "axios";
 
 const StartPage = () => {
   const navigation = useNavigation();
   const router = useRouter();
+
+  global.currentUserId = null;
 
   useEffect(() => {
     checkLoggedIn();
@@ -17,10 +20,22 @@ const StartPage = () => {
         const apiToken = await AsyncStorage.getItem('token');
 
         if (apiToken) {
-          router.push('/home');
-        } else {
-          router.push('/register');
+
+            try {
+                const response = await axios.post('http://10.19.255.180:5000/api/users/verify',
+                    {token: apiToken}
+                );
+                global.currentUserId = response.data.user.id;
+                router.push('/home');
+            } catch (e) {
+                console.log('Cannot verify API token');
+                router.push('/login');
+            }
         }
+        else {
+            router.push('/login')
+        }
+
       } catch (error) {
         console.error('Error checking login status:', error);
       }
