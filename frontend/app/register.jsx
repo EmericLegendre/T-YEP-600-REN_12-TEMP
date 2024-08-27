@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, Alert, ScrollView } from 'react-native'
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Alert } from 'react-native'
 import { Stack, useRouter } from 'expo-router'
 import React from 'react'
 import { useState } from 'react'
@@ -55,7 +55,7 @@ const register = () => {
         }
 
           try {
-              const response = await axios.post('http://10.0.2.2:5000/api/users/add', {
+              const response = await axios.post('http://10.19.255.233:5000/api/users/add', {
                   email,
                   password,
                   first_name,
@@ -306,6 +306,15 @@ const styles = StyleSheet.create({
     paddingLeft: 60,
     paddingRight: 60,
   },
+  scrollContainer: {
+      flexGrow: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+  innerContainer: {
+      width: '100%',
+      alignItems: 'center',
+    },
   header: {
     fontSize: 24,
     color: '#fff',

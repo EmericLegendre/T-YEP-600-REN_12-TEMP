@@ -17,30 +17,26 @@ def add_key_location():
     data = request.get_json()
 
     name = data.get('name')
-    description = data.get('description')
-    latitude = data.get('latitude')
-    longitude = data.get('longitude')
+    place_id = data.get('place_id')
 
-    required_fields = ['name', 'description', 'latitude', 'longitude']
+    required_fields = ['name', 'place_id']
     if not all(data.get(field) for field in required_fields):
         return jsonify({'error': 'Missing required fields'}), 400
 
-    existing_key_location = KeyLocations.query.filter(KeyLocations.name == name).first()
+    existing_key_location = KeyLocations.query.filter(KeyLocations.place_id == place_id).first()
     if existing_key_location:
-        return jsonify({'error': 'Key Location with this name already exists'}), 400
+        return jsonify({'error': 'Key Location with this place_id already exists'}), 400
 
     new_key_location = KeyLocations(
         name=name,
-        description=description,
-        latitude=latitude,
-        longitude=longitude,
+        place_id=place_id
     )
 
     db.session.add(new_key_location)
     db.session.commit()
 
     return jsonify({'message': 'Key Location created successfully',
-                    'user': {'id': new_key_location.id, 'email': new_key_location.name}}), 201
+                    'KeyLocation': {'place_id': new_key_location.place_id, 'name': new_key_location.name}}), 201
 
 
 @keyLocationsBp.route('/delete/<int:id>', methods=['DELETE'])
@@ -67,9 +63,7 @@ def get_key_locations():
         return jsonify([{
             'id': key_location.id,
             'name': key_location.name,
-            'description': key_location.description,
-            'latitude': key_location.latitude,
-            'longitude': key_location.longitude
+            'place_id': key_location.place_id
         } for key_location in key_locations]), 200
     except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400
@@ -78,7 +72,6 @@ def get_key_locations():
 @keyLocationsBp.route('/get/<int:id>', methods=['GET'])
 @jwt_required()
 def get_key_location_by_id(id):
-    key_location = KeyLocations.query.get(id)
     try:
         key_location = KeyLocations.query.get(id)
         if key_location is None:
@@ -86,9 +79,7 @@ def get_key_location_by_id(id):
         return jsonify({
             'id': key_location.id,
             'name': key_location.name,
-            'description': key_location.description,
-            'latitude': key_location.latitude,
-            'longitude': key_location.longitude
+            'place_id': key_location.place_id
         }), 200
     except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400
@@ -98,7 +89,7 @@ def get_key_location_by_id(id):
 @jwt_required()
 def update_key_location(id):
     data = request.get_json()
-    updatable_fields = ['name', 'description', 'latitude', 'longitude']
+    updatable_fields = ['name', 'place_id']
 
     for field in data.keys():
         if field not in updatable_fields:

@@ -38,7 +38,7 @@ const Listings = ({listings}) => {
 
       return (
         <View style={styles.container}>
-          <FlatList 
+          <FlatList  
             data={listings} 
             renderItem={renderItems} 
             keyExtractor={(item, index) => index.toString()}

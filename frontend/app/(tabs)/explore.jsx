@@ -1,15 +1,13 @@
-import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
-import React, { useState, useEffect } from 'react'
-import { Stack, useRouter } from 'expo-router'
-import Colors from '../../constants/Colors'
-import { Ionicons } from '@expo/vector-icons'
-import Listings from '../../components/Listings'
+import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { Stack, useRouter } from 'expo-router';
+import Colors from '../../constants/Colors';
+import { Ionicons } from '@expo/vector-icons';
+import Listings from '../../components/Listings';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-
-const explore = () => {
-
+const Explore = () => {
   const router = useRouter();
 
   const [countriesData, setCountriesData] = useState([]);
@@ -19,17 +17,17 @@ const explore = () => {
   useEffect(() => {
     const fetchCountriesData = async () => {
       try {
-
         const token = await AsyncStorage.getItem('token');
-        console.log('Token:', token);
 
         const config = {
           headers: { Authorization: `Bearer ${token}` }
         };
 
-        const response = await axios.get('http://localhost:5000/api/country/get', config);
+        const response = await axios.get('http://10.19.255.211:5000/api/country/get', config);
+
         setCountriesData(response.data);
-        setFilteredData(response.data);
+        setFilteredData(response.data); 
+
       } catch (error) {
         if (error.response) {
           console.log('Error Response:', error.response.data);
@@ -42,68 +40,66 @@ const explore = () => {
     fetchCountriesData();
   }, []);
 
-  
-    const handleSearch = (text) => {
-      setSearchTerm(text);
-      if (text) {
-        const filtered = countriesData.filter(country =>
-          country.name.toLowerCase().includes(text.toLowerCase())
-        );
-        setFilteredData(filtered);
-      } else {
-        setFilteredData(countriesData);
-      }
-    };
+  const handleSearch = (text) => {
+    setSearchTerm(text);
+    console.log('Search Term:', text);
+    if (text) {
+      const filtered = countriesData.filter(country =>
+        country.name.toLowerCase().includes(text.toLowerCase())
+      );
+      console.log('Filtered Data:', filtered);
+      setFilteredData(filtered);
+    } else {
+      setFilteredData(countriesData);
+    }
+  };
 
   return (
     <>
-    <Stack.Screen options={{
-      headerTitle: '',
-      headerStyle: {
-        backgroundColor: Colors.grey,
-      },
-      headerLeft: () => (
-        <Text style={styles.headerTitle}>Explore</Text>
-      ),
-      headerRight: () => (
-        <TouchableOpacity 
-          onPress={() => router.push('/profile')}        
-          style={styles.headerRight}
-        >
-          <Ionicons name="person-sharp" size={30} color={Colors.white} />
-        </TouchableOpacity>
-      ),
-      
-    }}
-    />
+      <Stack.Screen options={{
+        headerTitle: '',
+        headerStyle: {
+          backgroundColor: Colors.grey,
+        },
+        headerLeft: () => (
+          <Text style={styles.headerTitle}>Explore</Text>
+        ),
+        headerRight: () => (
+          <TouchableOpacity 
+            onPress={() => router.push('/profile')}        
+            style={styles.headerRight}
+          >
+            <Ionicons name="person-sharp" size={30} color={Colors.white} />
+          </TouchableOpacity>
+        ),
+      }}/>
 
-    <View style={styles.container}>
-      <View style={styles.searchSectionWrapper}>
-        <View style={styles.searchBar}>
-          <Ionicons 
-          name="search" 
-          size={18}
-          style={{ marginRight: 5}}
-          color={Colors.black} />
-          <TextInput 
-          placeholder='Search...' 
-          value={searchTerm}
-          onChangeText={handleSearch}
-          />
+      <View style={styles.container}>
+        <View style={styles.searchSectionWrapper}>
+          <View style={styles.searchBar}>
+            <Ionicons 
+              name="search" 
+              size={18}
+              style={{ marginRight: 5 }}
+              color={Colors.black} />
+            <TextInput 
+              placeholder='Search...' 
+              value={searchTerm}
+              onChangeText={handleSearch}
+            />
+          </View>
+          <TouchableOpacity onPress={() => {}} style={styles.filterBtn}>
+            <Ionicons name="options" size={30} />
+          </TouchableOpacity>
         </View>
-        <TouchableOpacity onPress={() => {}} style={styles.filterBtn}>
-          <Ionicons name="options" size={30} />
-        </TouchableOpacity>
+
+        <Listings listings={filteredData} />
       </View>
-
-      <Listings listings={filteredData}/>
-
-    </View>
-  </>
+    </>
   );
 };
 
-export default explore
+export default Explore;
 
 const styles = StyleSheet.create({
   container: {
@@ -132,7 +128,7 @@ const styles = StyleSheet.create({
   filterBtn: {
     backgroundColor: Colors.primaryColor,
     padding: 15,
-    borderRadius:10,
+    borderRadius: 10,
     marginLeft: 5
   }
-})
+});

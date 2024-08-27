@@ -27,26 +27,16 @@ const login = () => {
         password: password
       };
 
-      console.log("ca passe pas");
-      const response = await axios.post('http://10.19.255.212:5000/api/users/auth', dataJson);
-      console.log("Response from server:", response.data);
-
-      const { apiToken, userId } = response.data;
-      console.log("Retrieved token:", apiToken);
-      console.log("Retrieved userId:", userId);
-
-      if (apiToken && userId) {
-        await AsyncStorage.setItem('apiToken', apiToken);
-        await AsyncStorage.setItem('userId', userId.toString());
-
-      console.log('Stored token:', storedToken);
-      console.log('Stored userId:', storedUserId);
+        console.log("je suis dans le try");
+        const response = await axios.post('http://192.168.56.1:5000/api/users/auth', dataJson );
+        console.log("Response from server:", response.data);
+        const { apiToken } = response.data;
+        await AsyncStorage.setItem('token', apiToken);
 
         console.log("Login successful, navigating to home...");
         router.push('/home');
-      }
-    } catch (err) {
-      setError('Invalid email or password');
+      } catch (err) {
+        setError('Invalid email or password');
     }
   };
 
