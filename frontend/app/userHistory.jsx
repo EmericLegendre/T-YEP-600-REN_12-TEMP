@@ -15,6 +15,8 @@ const userHistory = () => {
     { id: 2, name: 'Bowl Skatepark', imageUrl: 'https://skateparks.fr/wp-content/uploads/2021/08/image.jpg' },
     { id: 3, name: 'La cavale', imageUrl: 'https://atelier-lanoe.fr/wp-content/uploads/2021/11/cavale-1-1_1365.jpeg' },
     { id: 4, name: 'Cathédrale Saint-Pierre', imageUrl: 'https://i.pinimg.com/originals/ec/1f/77/ec1f77ca36d3227f98741a4102a24ddd.jpg' },
+    { id: 5, name: 'La Bamboche du Béret', imageUrl: 'https://www.le-beret.fr/wp-content/uploads/2021/12/Le-Beret-Restaurant-Rennes-Page-interne-2.png' },
+
   ];
 
   const fakeTrips = [
