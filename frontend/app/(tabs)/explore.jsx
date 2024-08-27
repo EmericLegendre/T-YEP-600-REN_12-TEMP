@@ -16,6 +16,10 @@ const Explore = () => {
   const [filteredData, setFilteredData] = useState([]);
   const [modalVisible, setModalVisible] = useState(false);
   const [languagesData, setLanguagesData] = useState({});
+  const [appliedFilters, setAppliedFilters] = useState({
+    continent: 'All',
+    language: 'All',
+  });
 
   useEffect(() => {
     const fetchCountriesData = async () => {
@@ -56,16 +60,26 @@ const Explore = () => {
 
   const handleSearch = (text) => {
     setSearchTerm(text);
-    console.log('Search Term:', text);
+
+    let filtered = countriesData;
+
+    if (appliedFilters.continent !== 'All') {
+      filtered = filtered.filter(country => country.continent === appliedFilters.continent);
+    }
+
+    if (appliedFilters.language !== 'All') {
+      filtered = filtered.filter(country =>
+        languagesData[country.name] && languagesData[country.name].includes(appliedFilters.language)
+      );
+    }
+
     if (text) {
-      const filtered = countriesData.filter(country =>
+      filtered = filtered.filter(country =>
         country.name.toLowerCase().includes(text.toLowerCase())
       );
-      console.log('Filtered Data:', filtered);
-      setFilteredData(filtered);
-    } else {
-      setFilteredData(countriesData);
     }
+
+    setFilteredData(filtered);
   };
 
   const handleFilter = ({ continent, language }) => {
@@ -76,12 +90,13 @@ const Explore = () => {
     }
 
     if (language !== 'All') {
-      filtered = filtered.filter(country => 
+      filtered = filtered.filter(country =>
         languagesData[country.name] && languagesData[country.name].includes(language)
       );
     }
 
     setFilteredData(filtered);
+    setAppliedFilters({ continent, language });
   };
 
   return (
@@ -131,8 +146,8 @@ const Explore = () => {
         <FilterModal
           visible={modalVisible}
           onClose={() => setModalVisible(false)}
-          onSelect={(continent) => {
-            handleFilter(continent);
+          onSelect={(filters) => {
+            handleFilter(filters);
             setModalVisible(false);
           }}
         />
