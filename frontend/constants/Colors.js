@@ -1,7 +1,7 @@
 export default {
-  white: '#cfddb1',
-  grey: '#444c3c',
-  black: '#00000',
-  bgColor: '#FEFAE0',
-  primaryColor: '#fb4e05'
+  black: '#131114',
+  white: '#FDFEFB',
+  secondColor: '#2E714A',
+  primaryColor: '#4F996D',
+  lightGrey: '#E8EDDF'
 }
