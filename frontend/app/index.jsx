@@ -8,6 +8,8 @@ const StartPage = () => {
   const navigation = useNavigation();
   const router = useRouter();
 
+  global.apiToken = null;
+
   useEffect(() => {
     checkLoggedIn();
   }, []);
