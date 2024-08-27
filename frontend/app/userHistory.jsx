@@ -21,7 +21,7 @@ const userHistory = () => {
 
   const fakeTrips = [
     { id: 1, name: 'Trip to Paris', imageUrl: 'https://a.eu.mktgcdn.com/f/100004519/N2BB4ohwclor2uLoZ7XMHgJmxOZaMOokMdQqqXQAq3s.jpg' },
-    { id: 2, name: 'Weekend in Rome', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8zlN2MynhkvSeX452Oxe-heMUuK_3iJMPcQ&s' },
+    { id: 2, name: 'Weekend in Rome', imageUrl: 'https://www.turismoroma.it/sites/default/files/Roma%20in%20breve.jpg' },
     { id: 3, name: 'Hiking in the Alps', imageUrl: 'https://www.civitatis.com/blog/wp-content/uploads/2023/01/panoramica-mont-blanc-francia.jpg' },
     { id: 4, name: 'Surfing in hawai', imageUrl: 'https://media.tacdn.com/media/attractions-content--1x-1/12/3f/37/b6.jpg' },
   ];
