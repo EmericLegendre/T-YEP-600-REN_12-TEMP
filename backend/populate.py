@@ -3,15 +3,14 @@ import os
 import sys
 from flask import Flask, jsonify
 from sqlalchemy.exc import SQLAlchemyError
-from sqlalchemy import and_
 from dotenv import load_dotenv
 from config.dbConfig import db
 from models.country import Country
+from models.countryInfos import CountryInfos, CategoryEnum
 from models.state import State
 from models.city import City
-from models.countryInfos import CountryInfos, CategoryEnum as CountryEnum
-from models.stateInfos import StateInfos, CategoryEnum as StateEnum
-from models.cityInfos import CityInfos, CategoryEnum as CityEnum
+from models.stateInfos import StateInfos
+from models.cityInfos import CityInfos
 
 load_dotenv()
 
@@ -21,11 +20,17 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 
 def insert_countries_to_db(countries):
+    try:
+        with open('image_links.json', 'r') as image_file:
+            image_links = json.load(image_file)
+    except FileNotFoundError:
+        print("Image links file not found.")
+        return
     for country_data in countries:
         try:
             existing_country = Country.query.filter_by(name=country_data['name']).first()
             if existing_country:
-                # print(f"Country {country_data['name']} already exists in the database.")
+                print(f"Country {country_data['name']} already exists in the database.")
                 continue
 
             new_country = Country(
@@ -37,7 +42,8 @@ def insert_countries_to_db(countries):
                 population=country_data['population'],
                 population_name=country_data['populationName'],
                 timezone=country_data['timezone'],
-                flag=country_data['flag']
+                flag=country_data['flag'],
+                image = image_links.get(country_data['countryCode'], '')
             )
             db.session.add(new_country)
             db.session.commit()
@@ -47,7 +53,7 @@ def insert_countries_to_db(countries):
                 country_info = CountryInfos(
                     country_id=new_country.id,
                     content=language,
-                    category=CountryEnum.LANGUAGE
+                    category=CategoryEnum.LANGUAGE
                 )
                 db.session.add(country_info)
                 db.session.commit()
@@ -69,14 +75,9 @@ def insert_states_to_db(states_data):
 
         for state_data in region_data['states']:
             state_name = state_data['name']
-            existing_state = State.query.filter(
-                and_(
-                    State.name == state_name,
-                    State.country_id == country.id
-                )
-            ).first()
+            existing_state = State.query.filter_by(name=state_name, country_id=country.id).first()
             if existing_state:
-                # print(f"State {state_name} in {country_name} already exists in the database. Skipping insertion.")
+                print(f"State {state_name} in {country_name} already exists in the database. Skipping insertion.")
                 continue
             try:
                 new_state = State(
@@ -120,7 +121,7 @@ def insert_cities_to_db(cities_data):
         # Check if city already exists in the database
         existing_city = City.query.filter_by(name=city_name, state_id=state.id).first()
         if existing_city:
-            # print(f"City {city_name} in {state_name}, {country_name} already exists in the database. Skipping insertion.")
+            print(f"City {city_name} in {state_name}, {country_name} already exists in the database. Skipping insertion.")
             continue
 
         # Create a new City object and add it to the session
@@ -140,71 +141,6 @@ def insert_cities_to_db(cities_data):
             print(f"Error inserting city {city_name}: {e}")
 
     return f"{success_count} cities created successfully"
-
-def insert_country_infos_to_db():
-    country_infos = [
-        {"country_id": 224, "category": CountryEnum.LANGUAGE, "content": "English is the primary language spoken in the USA."},
-        {"country_id": 224, "category": CountryEnum.CULTURE, "content": "The USA is known for its diverse culture, including Hollywood and music festivals."},
-        {"country_id": 224, "category": CountryEnum.LAW, "content": "The USA has a federal legal system with state-specific laws."},
-        {"country_id": 224, "category": CountryEnum.COOKING, "content": "The USA is famous for its fast food and diverse culinary offerings."},
-        {"country_id": 224, "category": CountryEnum.HEALTH, "content": "Healthcare in the USA is expensive; travelers should have insurance."},
-        {"country_id": 130, "category": CountryEnum.LANGUAGE, "content": "English is the primary language spoken in the UK."},
-        {"country_id": 130, "category": CountryEnum.CULTURE, "content": "The UK has a rich historical culture with landmarks like Big Ben and Buckingham Palace."},
-        {"country_id": 130, "category": CountryEnum.LAW, "content": "The UK has a common law legal system."},
-        {"country_id": 130, "category": CountryEnum.COOKING, "content": "British cuisine includes fish and chips, Sunday roast, and afternoon tea."},
-        {"country_id": 130, "category": CountryEnum.HEALTH, "content": "The NHS provides healthcare in the UK; it is free at the point of use for residents."}
-    ]
-
-    for info in country_infos:
-        try:
-            country_info = CountryInfos(**info)
-            db.session.add(country_info)
-            db.session.commit()
-        except SQLAlchemyError as e:
-            db.session.rollback()
-            print(f"Error inserting country info: {e}")
-
-def insert_state_infos_to_db():
-    state_infos = [
-        {"state_id": 3477, "category": StateEnum.CULTURE, "content": "California is known for its tech industry in Silicon Valley."},
-        {"state_id": 3477, "category": StateEnum.LAW, "content": "California has progressive environmental and labor laws."},
-        {"state_id": 3477, "category": StateEnum.COOKING, "content": "California cuisine includes fresh produce and fusion dishes."},
-        {"state_id": 3477, "category": StateEnum.HEALTH, "content": "California has a strong healthcare system with many top-rated hospitals."},
-        {"state_id": 3485, "category": StateEnum.CULTURE, "content": "New York is known for its cultural diversity and Broadway shows."},
-        {"state_id": 3485, "category": StateEnum.LAW, "content": "New York has strict gun control laws."},
-        {"state_id": 3485, "category": StateEnum.COOKING, "content": "New York is famous for its pizza and bagels."},
-        {"state_id": 3485, "category": StateEnum.HEALTH, "content": "New York City has a comprehensive public health system."}
-    ]
-
-    for info in state_infos:
-        try:
-            state_info = StateInfos(**info)
-            db.session.add(state_info)
-            db.session.commit()
-        except SQLAlchemyError as e:
-            db.session.rollback()
-            print(f"Error inserting state info: {e}")
-
-def insert_city_infos_to_db():
-    city_infos = [
-        {"city_id": 5106, "category": CityEnum.CULTURE, "content": "Los Angeles is known for its entertainment industry and beaches."},
-        {"city_id": 5106, "category": CityEnum.TRANSPORT, "content": "Los Angeles has a widespread car culture and traffic congestion."},
-        {"city_id": 5106, "category": CityEnum.COOKING, "content": "Los Angeles offers diverse food options from around the world."},
-        {"city_id": 5106, "category": CityEnum.HEALTH, "content": "Los Angeles has many fitness centers and health-conscious restaurants."},
-        {"city_id": 5116, "category": CityEnum.CULTURE, "content": "New York City is known for its museums and cultural landmarks."},
-        {"city_id": 5116, "category": CityEnum.TRANSPORT, "content": "New York City has an extensive subway system."},
-        {"city_id": 5116, "category": CityEnum.COOKING, "content": "New York City is famous for its street food and high-end restaurants."},
-        {"city_id": 5116, "category": CityEnum.HEALTH, "content": "New York City offers a range of healthcare services and facilities."}
-    ]
-
-    for info in city_infos:
-        try:
-            city_info = CityInfos(**info)
-            db.session.add(city_info)
-            db.session.commit()
-        except SQLAlchemyError as e:
-            db.session.rollback()
-            print(f"Error inserting city info: {e}")
 
 def populate_countries_from_json():
     with open('populate_db/countriesData.json', 'r') as json_file:
@@ -229,7 +165,7 @@ def populate_cities_from_json():
 
 if __name__ == '__main__':
     if len(sys.argv) > 2:
-        print("Usage: python script.py [countries|states|cities|json|infos]")
+        print("Usage: python script.py [countries|states|cities]")
         sys.exit(1)
 
     option = sys.argv[1] if len(sys.argv) > 1 else ""
@@ -241,18 +177,7 @@ if __name__ == '__main__':
             populate_states_from_json()
         elif option == "cities":
             populate_cities_from_json()
-        elif option == "json":
-            populate_countries_from_json()
-            populate_states_from_json()
-            populate_cities_from_json()
-        elif option == "infos":
-            insert_country_infos_to_db()
-            insert_state_infos_to_db()
-            insert_city_infos_to_db()
         else:
             populate_countries_from_json()
             populate_states_from_json()
             populate_cities_from_json()
-            insert_country_infos_to_db()
-            insert_state_infos_to_db()
-            insert_city_infos_to_db()
