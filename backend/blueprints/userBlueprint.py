@@ -106,7 +106,7 @@ def update_user(id):
 # Get User informations -> userId in URL
 @userBp.route('/get/<int:id>', methods=['GET'])
 @jwt_required()
-def get_country_by_id(id):
+def get_user_by_id(id):
     try:
         user = User.query.get(id)
         if user is None:
@@ -136,7 +136,7 @@ def verify_token():
     existing_user = User.query.filter(User.email == decoded_token['sub']).first()
 
     if not existing_user:
-        return jsonify({'error': 'User email not found'}), 404
+        return jsonify({'error': 'User not found'}), 404
 
-    return jsonify({'message': 'Token verified', 'user': {'id': existing_user.id}})
+    return jsonify({'message': 'Token verified', 'user': {'id': existing_user.id}}), 200
 
