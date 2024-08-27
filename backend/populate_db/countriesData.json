@@ -1,6 +1,6 @@
 [
     {
-        "name": "G\u00e9orgie du Sud-et-les \u00celes Sandwich du Sud",
+        "name": "South Georgia",
         "countryCode": "GS",
         "capital": "King Edward Point",
         "population": 30,
@@ -15,11 +15,11 @@
         "flag": "https://flagcdn.com/w320/gs.png"
     },
     {
-        "name": "Grenade",
+        "name": "Grenada",
         "countryCode": "GD",
         "capital": "St. George's",
         "population": 112519,
-        "populationName": "Grenadien",
+        "populationName": "Grenadian",
         "currency": "Eastern Caribbean dollar",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -30,11 +30,11 @@
         "flag": "https://flagcdn.com/w320/gd.png"
     },
     {
-        "name": "Suisse",
+        "name": "Switzerland",
         "countryCode": "CH",
         "capital": "Bern",
         "population": 8654622,
-        "populationName": "Suisse",
+        "populationName": "Swiss",
         "currency": "Swiss franc",
         "continent": "Europe",
         "subContinent": "Western Europe",
@@ -52,7 +52,7 @@
         "countryCode": "SL",
         "capital": "Freetown",
         "population": 7976985,
-        "populationName": "Sierra-leonais",
+        "populationName": "Sierra Leonean",
         "currency": "Sierra Leonean leone",
         "continent": "Africa",
         "subContinent": "Western Africa",
@@ -63,11 +63,11 @@
         "flag": "https://flagcdn.com/w320/sl.png"
     },
     {
-        "name": "Hongrie",
+        "name": "Hungary",
         "countryCode": "HU",
         "capital": "Budapest",
         "population": 9749763,
-        "populationName": "Hongrois",
+        "populationName": "Hungarian",
         "currency": "Hungarian forint",
         "continent": "Europe",
         "subContinent": "Central Europe",
@@ -78,11 +78,11 @@
         "flag": "https://flagcdn.com/w320/hu.png"
     },
     {
-        "name": "Ta\u00efwan",
+        "name": "Taiwan",
         "countryCode": "TW",
         "capital": "Taipei",
         "population": 23503349,
-        "populationName": "Ta\u00efwanais",
+        "populationName": "Taiwanese",
         "currency": "New Taiwan dollar",
         "continent": "Asia",
         "subContinent": "Eastern Asia",
@@ -93,7 +93,7 @@
         "flag": "https://flagcdn.com/w320/tw.png"
     },
     {
-        "name": "Wallis et Futuna",
+        "name": "Wallis and Futuna",
         "countryCode": "WF",
         "capital": "Mata-Utu",
         "population": 11750,
@@ -108,11 +108,11 @@
         "flag": "https://flagcdn.com/w320/wf.png"
     },
     {
-        "name": "Barbade",
+        "name": "Barbados",
         "countryCode": "BB",
         "capital": "Bridgetown",
         "population": 287371,
-        "populationName": "Barbadien",
+        "populationName": "Barbadian",
         "currency": "Barbadian dollar",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -123,11 +123,11 @@
         "flag": "https://flagcdn.com/w320/bb.png"
     },
     {
-        "name": "\u00celes Pitcairn",
+        "name": "Pitcairn Islands",
         "countryCode": "PN",
         "capital": "Adamstown",
         "population": 56,
-        "populationName": "Pitcairnais",
+        "populationName": "Pitcairn Islander",
         "currency": "New Zealand dollar",
         "continent": "Oceania",
         "subContinent": "Polynesia",
@@ -138,11 +138,11 @@
         "flag": "https://flagcdn.com/w320/pn.png"
     },
     {
-        "name": "C\u00f4te d'Ivoire",
+        "name": "Ivory Coast",
         "countryCode": "CI",
         "capital": "Yamoussoukro",
         "population": 26378275,
-        "populationName": "Ivoirien",
+        "populationName": "Ivorian",
         "currency": "West African CFA franc",
         "continent": "Africa",
         "subContinent": "Western Africa",
@@ -153,11 +153,11 @@
         "flag": "https://flagcdn.com/w320/ci.png"
     },
     {
-        "name": "Tunisie",
+        "name": "Tunisia",
         "countryCode": "TN",
         "capital": "Tunis",
         "population": 11818618,
-        "populationName": "Tunisien",
+        "populationName": "Tunisian",
         "currency": "Tunisian dinar",
         "continent": "Africa",
         "subContinent": "Northern Africa",
@@ -168,11 +168,11 @@
         "flag": "https://flagcdn.com/w320/tn.png"
     },
     {
-        "name": "Italie",
+        "name": "Italy",
         "countryCode": "IT",
         "capital": "Rome",
         "population": 59554023,
-        "populationName": "Italien",
+        "populationName": "Italian",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Southern Europe",
@@ -183,11 +183,11 @@
         "flag": "https://flagcdn.com/w320/it.png"
     },
     {
-        "name": "B\u00e9nin",
+        "name": "Benin",
         "countryCode": "BJ",
         "capital": "Porto-Novo",
         "population": 12123198,
-        "populationName": "B\u00e9ninois",
+        "populationName": "Beninese",
         "currency": "West African CFA franc",
         "continent": "Africa",
         "subContinent": "Western Africa",
@@ -198,11 +198,11 @@
         "flag": "https://flagcdn.com/w320/bj.png"
     },
     {
-        "name": "Indon\u00e9sie",
+        "name": "Indonesia",
         "countryCode": "ID",
         "capital": "Jakarta",
         "population": 273523621,
-        "populationName": "Indon\u00e9sien",
+        "populationName": "Indonesian",
         "currency": "Indonesian rupiah",
         "continent": "Asia",
         "subContinent": "South-Eastern Asia",
@@ -213,11 +213,11 @@
         "flag": "https://flagcdn.com/w320/id.png"
     },
     {
-        "name": "\u00celes du Cap-Vert",
+        "name": "Cape Verde",
         "countryCode": "CV",
         "capital": "Praia",
         "population": 555988,
-        "populationName": "Cap-verdien",
+        "populationName": "Cape Verdian",
         "currency": "Cape Verdean escudo",
         "continent": "Africa",
         "subContinent": "Western Africa",
@@ -228,11 +228,11 @@
         "flag": "https://flagcdn.com/w320/cv.png"
     },
     {
-        "name": "Saint-Christophe-et-Ni\u00e9v\u00e8s",
+        "name": "Saint Kitts and Nevis",
         "countryCode": "KN",
         "capital": "Basseterre",
         "population": 53192,
-        "populationName": "Kittitien-et-nevicien",
+        "populationName": "Kittitian or Nevisian",
         "currency": "Eastern Caribbean dollar",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -247,7 +247,7 @@
         "countryCode": "LA",
         "capital": "Vientiane",
         "population": 7275556,
-        "populationName": "Laotien",
+        "populationName": "Laotian",
         "currency": "Lao kip",
         "continent": "Asia",
         "subContinent": "South-Eastern Asia",
@@ -258,11 +258,11 @@
         "flag": "https://flagcdn.com/w320/la.png"
     },
     {
-        "name": "Pays-Bas carib\u00e9ens",
+        "name": "Caribbean Netherlands",
         "countryCode": "BQ",
         "capital": "Kralendijk",
         "population": 25987,
-        "populationName": "N\u00e9erlandais",
+        "populationName": "Dutch",
         "currency": "United States dollar",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -275,11 +275,11 @@
         "flag": "https://flagcdn.com/w320/bq.png"
     },
     {
-        "name": "Ouganda",
+        "name": "Uganda",
         "countryCode": "UG",
         "capital": "Kampala",
         "population": 45741000,
-        "populationName": "Ougandais",
+        "populationName": "Ugandan",
         "currency": "Ugandan shilling",
         "continent": "Africa",
         "subContinent": "Eastern Africa",
@@ -291,7 +291,7 @@
         "flag": "https://flagcdn.com/w320/ug.png"
     },
     {
-        "name": "Andorre",
+        "name": "Andorra",
         "countryCode": "AD",
         "capital": "Andorra la Vella",
         "population": 77265,
@@ -310,7 +310,7 @@
         "countryCode": "BI",
         "capital": "Gitega",
         "population": 11890781,
-        "populationName": "Burundais",
+        "populationName": "Burundian",
         "currency": "Burundian franc",
         "continent": "Africa",
         "subContinent": "Eastern Africa",
@@ -322,11 +322,11 @@
         "flag": "https://flagcdn.com/w320/bi.png"
     },
     {
-        "name": "Afrique du Sud",
+        "name": "South Africa",
         "countryCode": "ZA",
         "capital": "Pretoria",
         "population": 59308690,
-        "populationName": "Sud-africain",
+        "populationName": "South African",
         "currency": "South African rand",
         "continent": "Africa",
         "subContinent": "Southern Africa",
@@ -351,7 +351,7 @@
         "countryCode": "FR",
         "capital": "Paris",
         "population": 67391582,
-        "populationName": "Fran\u00e7ais",
+        "populationName": "French",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Western Europe",
@@ -362,11 +362,11 @@
         "flag": "https://flagcdn.com/w320/fr.png"
     },
     {
-        "name": "Libye",
+        "name": "Libya",
         "countryCode": "LY",
         "capital": "Tripoli",
         "population": 6871287,
-        "populationName": "Libyen",
+        "populationName": "Libyan",
         "currency": "Libyan dinar",
         "continent": "Africa",
         "subContinent": "Northern Africa",
@@ -377,11 +377,11 @@
         "flag": "https://flagcdn.com/w320/ly.png"
     },
     {
-        "name": "Mexique",
+        "name": "Mexico",
         "countryCode": "MX",
         "capital": "Mexico City",
         "population": 128932753,
-        "populationName": "Mexicain",
+        "populationName": "Mexican",
         "currency": "Mexican peso",
         "continent": "Americas",
         "subContinent": "North America",
@@ -396,7 +396,7 @@
         "countryCode": "GA",
         "capital": "Libreville",
         "population": 2225728,
-        "populationName": "Gabonais",
+        "populationName": "Gabonese",
         "currency": "Central African CFA franc",
         "continent": "Africa",
         "subContinent": "Middle Africa",
@@ -407,11 +407,11 @@
         "flag": "https://flagcdn.com/w320/ga.png"
     },
     {
-        "name": "\u00celes Mariannes du Nord",
+        "name": "Northern Mariana Islands",
         "countryCode": "MP",
         "capital": "Saipan",
         "population": 57557,
-        "populationName": "Am\u00e9rican",
+        "populationName": "American",
         "currency": "United States dollar",
         "continent": "Oceania",
         "subContinent": "Micronesia",
@@ -424,11 +424,11 @@
         "flag": "https://flagcdn.com/w320/mp.png"
     },
     {
-        "name": "Mac\u00e9doine du Nord",
+        "name": "North Macedonia",
         "countryCode": "MK",
         "capital": "Skopje",
         "population": 2077132,
-        "populationName": "Mac\u00e9donien",
+        "populationName": "Macedonian",
         "currency": "denar",
         "continent": "Europe",
         "subContinent": "Southeast Europe",
@@ -439,11 +439,11 @@
         "flag": "https://flagcdn.com/w320/mk.png"
     },
     {
-        "name": "Chine",
+        "name": "China",
         "countryCode": "CN",
         "capital": "Beijing",
         "population": 1402112000,
-        "populationName": "Chinois",
+        "populationName": "Chinese",
         "currency": "Chinese yuan",
         "continent": "Asia",
         "subContinent": "Eastern Asia",
@@ -454,11 +454,11 @@
         "flag": "https://flagcdn.com/w320/cn.png"
     },
     {
-        "name": "Y\u00e9men",
+        "name": "Yemen",
         "countryCode": "YE",
         "capital": "Sana'a",
         "population": 29825968,
-        "populationName": "Y\u00e9m\u00e9nite",
+        "populationName": "Yemeni",
         "currency": "Yemeni rial",
         "continent": "Asia",
         "subContinent": "Western Asia",
@@ -469,11 +469,11 @@
         "flag": "https://flagcdn.com/w320/ye.png"
     },
     {
-        "name": "Saint-Barth\u00e9lemy",
+        "name": "Saint Barth\u00e9lemy",
         "countryCode": "BL",
         "capital": "Gustavia",
         "population": 4255,
-        "populationName": "Barth\u00e9lom\u00e9en",
+        "populationName": "Saint Barth\u00e9lemy Islander",
         "currency": "Euro",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -484,11 +484,11 @@
         "flag": "https://flagcdn.com/w320/bl.png"
     },
     {
-        "name": "Guernesey",
+        "name": "Guernsey",
         "countryCode": "GG",
         "capital": "St. Peter Port",
         "population": 62999,
-        "populationName": "Guernesiais",
+        "populationName": "Channel Islander",
         "currency": "British pound",
         "continent": "Europe",
         "subContinent": "Northern Europe",
@@ -501,11 +501,11 @@
         "flag": "https://flagcdn.com/w320/gg.png"
     },
     {
-        "name": "\u00celes Salomon",
+        "name": "Solomon Islands",
         "countryCode": "SB",
         "capital": "Honiara",
         "population": 686878,
-        "populationName": "Salomonien",
+        "populationName": "Solomon Islander",
         "currency": "Solomon Islands dollar",
         "continent": "Oceania",
         "subContinent": "Melanesia",
@@ -516,7 +516,7 @@
         "flag": "https://flagcdn.com/w320/sb.png"
     },
     {
-        "name": "Svalbard et Jan Mayen",
+        "name": "Svalbard and Jan Mayen",
         "countryCode": "SJ",
         "capital": "Longyearbyen",
         "population": 2562,
@@ -531,11 +531,11 @@
         "flag": "https://flagcdn.com/w320/sj.png"
     },
     {
-        "name": "\u00celes F\u00e9ro\u00e9",
+        "name": "Faroe Islands",
         "countryCode": "FO",
         "capital": "T\u00f3rshavn",
         "population": 48865,
-        "populationName": "F\u00e9ro\u00efen",
+        "populationName": "Faroese",
         "currency": "Danish krone",
         "continent": "Europe",
         "subContinent": "Northern Europe",
@@ -547,11 +547,11 @@
         "flag": "https://flagcdn.com/w320/fo.png"
     },
     {
-        "name": "Ouzb\u00e9kistan",
+        "name": "Uzbekistan",
         "countryCode": "UZ",
         "capital": "Tashkent",
         "population": 34232050,
-        "populationName": "Ouzb\u00e8ke",
+        "populationName": "Uzbekistani",
         "currency": "Uzbekistani so\u02bbm",
         "continent": "Asia",
         "subContinent": "Central Asia",
@@ -563,11 +563,11 @@
         "flag": "https://flagcdn.com/w320/uz.png"
     },
     {
-        "name": "\u00c9gypte",
+        "name": "Egypt",
         "countryCode": "EG",
         "capital": "Cairo",
         "population": 102334403,
-        "populationName": "\u00c9gyptien",
+        "populationName": "Egyptian",
         "currency": "Egyptian pound",
         "continent": "Africa",
         "subContinent": "Northern Africa",
@@ -578,11 +578,11 @@
         "flag": "https://flagcdn.com/w320/eg.png"
     },
     {
-        "name": "S\u00e9n\u00e9gal",
+        "name": "Senegal",
         "countryCode": "SN",
         "capital": "Dakar",
         "population": 16743930,
-        "populationName": "S\u00e9n\u00e9galais",
+        "populationName": "Senegalese",
         "currency": "West African CFA franc",
         "continent": "Africa",
         "subContinent": "Western Africa",
@@ -597,7 +597,7 @@
         "countryCode": "LK",
         "capital": "Sri Jayawardenepura Kotte",
         "population": 21919000,
-        "populationName": "Sri-lankais",
+        "populationName": "Sri Lankan",
         "currency": "Sri Lankan rupee",
         "continent": "Asia",
         "subContinent": "Southern Asia",
@@ -613,7 +613,7 @@
         "countryCode": "PS",
         "capital": "Ramallah",
         "population": 4803269,
-        "populationName": "Palestinien",
+        "populationName": "Palestinian",
         "currency": "Egyptian pound",
         "continent": "Asia",
         "subContinent": "Western Asia",
@@ -628,7 +628,7 @@
         "countryCode": "BD",
         "capital": "Dhaka",
         "population": 164689383,
-        "populationName": "Bangladais",
+        "populationName": "Bangladeshi",
         "currency": "Bangladeshi taka",
         "continent": "Asia",
         "subContinent": "Southern Asia",
@@ -639,11 +639,11 @@
         "flag": "https://flagcdn.com/w320/bd.png"
     },
     {
-        "name": "P\u00e9rou",
+        "name": "Peru",
         "countryCode": "PE",
         "capital": "Lima",
         "population": 32971846,
-        "populationName": "P\u00e9ruvien",
+        "populationName": "Peruvian",
         "currency": "Peruvian sol",
         "continent": "Americas",
         "subContinent": "South America",
@@ -656,11 +656,11 @@
         "flag": "https://flagcdn.com/w320/pe.png"
     },
     {
-        "name": "Singapour",
+        "name": "Singapore",
         "countryCode": "SG",
         "capital": "Singapore",
         "population": 5685807,
-        "populationName": "Singapourien",
+        "populationName": "Singaporean",
         "currency": "Singapore dollar",
         "continent": "Asia",
         "subContinent": "South-Eastern Asia",
@@ -674,11 +674,11 @@
         "flag": "https://flagcdn.com/w320/sg.png"
     },
     {
-        "name": "Turquie",
+        "name": "Turkey",
         "countryCode": "TR",
         "capital": "Ankara",
         "population": 84339067,
-        "populationName": "Turc",
+        "populationName": "Turkish",
         "currency": "Turkish lira",
         "continent": "Asia",
         "subContinent": "Western Asia",
@@ -710,7 +710,7 @@
         "countryCode": "AW",
         "capital": "Oranjestad",
         "population": 106766,
-        "populationName": "Arubais",
+        "populationName": "Aruban",
         "currency": "Aruban florin",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -722,11 +722,11 @@
         "flag": "https://flagcdn.com/w320/aw.png"
     },
     {
-        "name": "\u00celes Cook",
+        "name": "Cook Islands",
         "countryCode": "CK",
         "capital": "Avarua",
         "population": 18100,
-        "populationName": "Cookien",
+        "populationName": "Cook Islander",
         "currency": "Cook Islands dollar",
         "continent": "Oceania",
         "subContinent": "Polynesia",
@@ -738,11 +738,11 @@
         "flag": "https://flagcdn.com/w320/ck.png"
     },
     {
-        "name": "Royaume-Uni",
+        "name": "United Kingdom",
         "countryCode": "GB",
         "capital": "London",
         "population": 67215293,
-        "populationName": "Britannique",
+        "populationName": "British",
         "currency": "British pound",
         "continent": "Europe",
         "subContinent": "Northern Europe",
@@ -753,11 +753,11 @@
         "flag": "https://flagcdn.com/w320/gb.png"
     },
     {
-        "name": "Zambie",
+        "name": "Zambia",
         "countryCode": "ZM",
         "capital": "Lusaka",
         "population": 18383956,
-        "populationName": "Zambien",
+        "populationName": "Zambian",
         "currency": "Zambian kwacha",
         "continent": "Africa",
         "subContinent": "Eastern Africa",
@@ -768,11 +768,11 @@
         "flag": "https://flagcdn.com/w320/zm.png"
     },
     {
-        "name": "Finlande",
+        "name": "Finland",
         "countryCode": "FI",
         "capital": "Helsinki",
         "population": 5530719,
-        "populationName": "Finlandais",
+        "populationName": "Finnish",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Northern Europe",
@@ -788,7 +788,7 @@
         "countryCode": "NE",
         "capital": "Niamey",
         "population": 24206636,
-        "populationName": "Nig\u00e9rien",
+        "populationName": "Nigerien",
         "currency": "West African CFA franc",
         "continent": "Africa",
         "subContinent": "Western Africa",
@@ -799,7 +799,7 @@
         "flag": "https://flagcdn.com/w320/ne.png"
     },
     {
-        "name": "\u00cele Christmas",
+        "name": "Christmas Island",
         "countryCode": "CX",
         "capital": "Flying Fish Cove",
         "population": 2072,
@@ -831,11 +831,11 @@
         "flag": "https://flagcdn.com/w320/tk.png"
     },
     {
-        "name": "Guin\u00e9e-Bissau",
+        "name": "Guinea-Bissau",
         "countryCode": "GW",
         "capital": "Bissau",
         "population": 1967998,
-        "populationName": "Bissau-Guin\u00e9en",
+        "populationName": "Guinea-Bissauan",
         "currency": "West African CFA franc",
         "continent": "Africa",
         "subContinent": "Western Africa",
@@ -847,11 +847,11 @@
         "flag": "https://flagcdn.com/w320/gw.png"
     },
     {
-        "name": "Azerba\u00efdjan",
+        "name": "Azerbaijan",
         "countryCode": "AZ",
         "capital": "Baku",
         "population": 10110116,
-        "populationName": "Azerba\u00efdjanais",
+        "populationName": "Azerbaijani",
         "currency": "Azerbaijani manat",
         "continent": "Asia",
         "subContinent": "Western Asia",
@@ -862,11 +862,11 @@
         "flag": "https://flagcdn.com/w320/az.png"
     },
     {
-        "name": "La R\u00e9union",
+        "name": "R\u00e9union",
         "countryCode": "RE",
         "capital": "Saint-Denis",
         "population": 840974,
-        "populationName": "R\u00e9unionnais",
+        "populationName": "R\u00e9unionese",
         "currency": "Euro",
         "continent": "Africa",
         "subContinent": "Eastern Africa",
@@ -881,7 +881,7 @@
         "countryCode": "DJ",
         "capital": "Djibouti",
         "population": 988002,
-        "populationName": "Djiboutien",
+        "populationName": "Djibouti",
         "currency": "Djiboutian franc",
         "continent": "Africa",
         "subContinent": "Eastern Africa",
@@ -893,11 +893,11 @@
         "flag": "https://flagcdn.com/w320/dj.png"
     },
     {
-        "name": "Cor\u00e9e du Nord",
+        "name": "North Korea",
         "countryCode": "KP",
         "capital": "Pyongyang",
         "population": 25778815,
-        "populationName": "Nord-cor\u00e9en",
+        "populationName": "North Korean",
         "currency": "North Korean won",
         "continent": "Asia",
         "subContinent": "Eastern Asia",
@@ -908,11 +908,11 @@
         "flag": "https://flagcdn.com/w320/kp.png"
     },
     {
-        "name": "Maurice",
+        "name": "Mauritius",
         "countryCode": "MU",
         "capital": "Port Louis",
         "population": 1265740,
-        "populationName": "Mauricien",
+        "populationName": "Mauritian",
         "currency": "Mauritian rupee",
         "continent": "Africa",
         "subContinent": "Eastern Africa",
@@ -929,7 +929,7 @@
         "countryCode": "MS",
         "capital": "Plymouth",
         "population": 4922,
-        "populationName": "Montserratien",
+        "populationName": "Montserratian",
         "currency": "Eastern Caribbean dollar",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -940,7 +940,7 @@
         "flag": "https://flagcdn.com/w320/ms.png"
     },
     {
-        "name": "\u00celes Vierges des \u00c9tats-Unis",
+        "name": "United States Virgin Islands",
         "countryCode": "VI",
         "capital": "Charlotte Amalie",
         "population": 106290,
@@ -955,11 +955,11 @@
         "flag": "https://flagcdn.com/w320/vi.png"
     },
     {
-        "name": "Colombie",
+        "name": "Colombia",
         "countryCode": "CO",
         "capital": "Bogot\u00e1",
         "population": 50882884,
-        "populationName": "Colombien",
+        "populationName": "Colombian",
         "currency": "Colombian peso",
         "continent": "Americas",
         "subContinent": "South America",
@@ -970,11 +970,11 @@
         "flag": "https://flagcdn.com/w320/co.png"
     },
     {
-        "name": "Gr\u00e8ce",
+        "name": "Greece",
         "countryCode": "GR",
         "capital": "Athens",
         "population": 10715549,
-        "populationName": "Grec",
+        "populationName": "Greek",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Southern Europe",
@@ -985,11 +985,11 @@
         "flag": "https://flagcdn.com/w320/gr.png"
     },
     {
-        "name": "Croatie",
+        "name": "Croatia",
         "countryCode": "HR",
         "capital": "Zagreb",
         "population": 4047200,
-        "populationName": "Croate",
+        "populationName": "Croatian",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Southeast Europe",
@@ -1000,11 +1000,11 @@
         "flag": "https://flagcdn.com/w320/hr.png"
     },
     {
-        "name": "Maroc",
+        "name": "Morocco",
         "countryCode": "MA",
         "capital": "Rabat",
         "population": 36910558,
-        "populationName": "Marocain",
+        "populationName": "Moroccan",
         "currency": "Moroccan dirham",
         "continent": "Africa",
         "subContinent": "Northern Africa",
@@ -1016,11 +1016,11 @@
         "flag": "https://flagcdn.com/w320/ma.png"
     },
     {
-        "name": "Alg\u00e9rie",
+        "name": "Algeria",
         "countryCode": "DZ",
         "capital": "Algiers",
         "population": 44700000,
-        "populationName": "Alg\u00e9rien",
+        "populationName": "Algerian",
         "currency": "Algerian dinar",
         "continent": "Africa",
         "subContinent": "Northern Africa",
@@ -1031,11 +1031,11 @@
         "flag": "https://flagcdn.com/w320/dz.png"
     },
     {
-        "name": "Antarctique",
+        "name": "Antarctica",
         "countryCode": "AQ",
         "capital": "",
         "population": 1000,
-        "populationName": "Antarcticain",
+        "populationName": "Antarctican",
         "currency": "",
         "continent": "Antarctic",
         "subContinent": "",
@@ -1044,11 +1044,11 @@
         "flag": "https://flagcdn.com/w320/aq.png"
     },
     {
-        "name": "Pays-Bas",
+        "name": "Netherlands",
         "countryCode": "NL",
         "capital": "Amsterdam",
         "population": 16655799,
-        "populationName": "N\u00e9erlandais",
+        "populationName": "Dutch",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Western Europe",
@@ -1059,11 +1059,11 @@
         "flag": "https://flagcdn.com/w320/nl.png"
     },
     {
-        "name": "Soudan",
+        "name": "Sudan",
         "countryCode": "SD",
         "capital": "Khartoum",
         "population": 43849269,
-        "populationName": "Soudanais",
+        "populationName": "Sudanese",
         "currency": "Sudanese pound",
         "continent": "Africa",
         "subContinent": "Northern Africa",
@@ -1075,11 +1075,11 @@
         "flag": "https://flagcdn.com/w320/sd.png"
     },
     {
-        "name": "Fidji",
+        "name": "Fiji",
         "countryCode": "FJ",
         "capital": "Suva",
         "population": 896444,
-        "populationName": "Fidjien",
+        "populationName": "Fijian",
         "currency": "Fijian dollar",
         "continent": "Oceania",
         "subContinent": "Melanesia",
@@ -1096,7 +1096,7 @@
         "countryCode": "LI",
         "capital": "Vaduz",
         "population": 38137,
-        "populationName": "Liechtensteinois",
+        "populationName": "Liechtensteiner",
         "currency": "Swiss franc",
         "continent": "Europe",
         "subContinent": "Western Europe",
@@ -1107,11 +1107,11 @@
         "flag": "https://flagcdn.com/w320/li.png"
     },
     {
-        "name": "N\u00e9pal",
+        "name": "Nepal",
         "countryCode": "NP",
         "capital": "Kathmandu",
         "population": 29136808,
-        "populationName": "N\u00e9palais",
+        "populationName": "Nepalese",
         "currency": "Nepalese rupee",
         "continent": "Asia",
         "subContinent": "Southern Asia",
@@ -1122,11 +1122,11 @@
         "flag": "https://flagcdn.com/w320/np.png"
     },
     {
-        "name": "Porto Rico",
+        "name": "Puerto Rico",
         "countryCode": "PR",
         "capital": "San Juan",
         "population": 3194034,
-        "populationName": "Portoricain",
+        "populationName": "Puerto Rican",
         "currency": "United States dollar",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -1138,11 +1138,11 @@
         "flag": "https://flagcdn.com/w320/pr.png"
     },
     {
-        "name": "G\u00e9orgie",
+        "name": "Georgia",
         "countryCode": "GE",
         "capital": "Tbilisi",
         "population": 3714000,
-        "populationName": "G\u00e9orgien",
+        "populationName": "Georgian",
         "currency": "lari",
         "continent": "Asia",
         "subContinent": "Western Asia",
@@ -1157,7 +1157,7 @@
         "countryCode": "PK",
         "capital": "Islamabad",
         "population": 220892331,
-        "populationName": "Pakistanais",
+        "populationName": "Pakistani",
         "currency": "Pakistani rupee",
         "continent": "Asia",
         "subContinent": "Southern Asia",
@@ -1173,7 +1173,7 @@
         "countryCode": "MC",
         "capital": "Monaco",
         "population": 39244,
-        "populationName": "Mon\u00e9gasque",
+        "populationName": "Monegasque",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Western Europe",
@@ -1188,7 +1188,7 @@
         "countryCode": "BW",
         "capital": "Gaborone",
         "population": 2351625,
-        "populationName": "Botswanais",
+        "populationName": "Motswana",
         "currency": "Botswana pula",
         "continent": "Africa",
         "subContinent": "Southern Africa",
@@ -1200,11 +1200,11 @@
         "flag": "https://flagcdn.com/w320/bw.png"
     },
     {
-        "name": "Liban",
+        "name": "Lebanon",
         "countryCode": "LB",
         "capital": "Beirut",
         "population": 6825442,
-        "populationName": "Libanais",
+        "populationName": "Lebanese",
         "currency": "Lebanese pound",
         "continent": "Asia",
         "subContinent": "Western Asia",
@@ -1216,11 +1216,11 @@
         "flag": "https://flagcdn.com/w320/lb.png"
     },
     {
-        "name": "Papouasie-Nouvelle-Guin\u00e9e",
+        "name": "Papua New Guinea",
         "countryCode": "PG",
         "capital": "Port Moresby",
         "population": 8947027,
-        "populationName": "Papouasien",
+        "populationName": "Papua New Guinean",
         "currency": "Papua New Guinean kina",
         "continent": "Oceania",
         "subContinent": "Melanesia",
@@ -1237,7 +1237,7 @@
         "countryCode": "YT",
         "capital": "Mamoudzou",
         "population": 226915,
-        "populationName": "Mahorais",
+        "populationName": "Mahoran",
         "currency": "Euro",
         "continent": "Africa",
         "subContinent": "Eastern Africa",
@@ -1248,11 +1248,11 @@
         "flag": "https://flagcdn.com/w320/yt.png"
     },
     {
-        "name": "R\u00e9publique dominicaine",
+        "name": "Dominican Republic",
         "countryCode": "DO",
         "capital": "Santo Domingo",
         "population": 10847904,
-        "populationName": "Dominicain",
+        "populationName": "Dominican",
         "currency": "Dominican peso",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -1263,11 +1263,11 @@
         "flag": "https://flagcdn.com/w320/do.png"
     },
     {
-        "name": "\u00cele Norfolk",
+        "name": "Norfolk Island",
         "countryCode": "NF",
         "capital": "Kingston",
         "population": 2302,
-        "populationName": "Norfolkais",
+        "populationName": "Norfolk Islander",
         "currency": "Australian dollar",
         "continent": "Oceania",
         "subContinent": "Australia and New Zealand",
@@ -1279,7 +1279,7 @@
         "flag": "https://flagcdn.com/w320/nf.png"
     },
     {
-        "name": "\u00cele Bouvet",
+        "name": "Bouvet Island",
         "countryCode": "BV",
         "capital": "",
         "population": 0,
@@ -1298,7 +1298,7 @@
         "countryCode": "QA",
         "capital": "Doha",
         "population": 2881060,
-        "populationName": "Qatarien",
+        "populationName": "Qatari",
         "currency": "Qatari riyal",
         "continent": "Asia",
         "subContinent": "Western Asia",
@@ -1313,7 +1313,7 @@
         "countryCode": "MG",
         "capital": "Antananarivo",
         "population": 27691019,
-        "populationName": "Malgache",
+        "populationName": "Malagasy",
         "currency": "Malagasy ariary",
         "continent": "Africa",
         "subContinent": "Eastern Africa",
@@ -1325,11 +1325,11 @@
         "flag": "https://flagcdn.com/w320/mg.png"
     },
     {
-        "name": "Inde",
+        "name": "India",
         "countryCode": "IN",
         "capital": "New Delhi",
         "population": 1380004385,
-        "populationName": "Indien",
+        "populationName": "Indian",
         "currency": "Indian rupee",
         "continent": "Asia",
         "subContinent": "Southern Asia",
@@ -1342,11 +1342,11 @@
         "flag": "https://flagcdn.com/w320/in.png"
     },
     {
-        "name": "Syrie",
+        "name": "Syria",
         "countryCode": "SY",
         "capital": "Damascus",
         "population": 17500657,
-        "populationName": "Syrien",
+        "populationName": "Syrian",
         "currency": "Syrian pound",
         "continent": "Asia",
         "subContinent": "Western Asia",
@@ -1357,11 +1357,11 @@
         "flag": "https://flagcdn.com/w320/sy.png"
     },
     {
-        "name": "Mont\u00e9n\u00e9gro",
+        "name": "Montenegro",
         "countryCode": "ME",
         "capital": "Podgorica",
         "population": 621718,
-        "populationName": "Mont\u00e9n\u00e9grin",
+        "populationName": "Montenegrin",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Southeast Europe",
@@ -1372,11 +1372,11 @@
         "flag": "https://flagcdn.com/w320/me.png"
     },
     {
-        "name": "Swaziland",
+        "name": "Eswatini",
         "countryCode": "SZ",
         "capital": "Mbabane",
         "population": 1160164,
-        "populationName": "Swazie",
+        "populationName": "Swazi",
         "currency": "Swazi lilangeni",
         "continent": "Africa",
         "subContinent": "Southern Africa",
@@ -1392,7 +1392,7 @@
         "countryCode": "PY",
         "capital": "Asunci\u00f3n",
         "population": 7132530,
-        "populationName": "Paraguayen",
+        "populationName": "Paraguayan",
         "currency": "Paraguayan guaran\u00ed",
         "continent": "Americas",
         "subContinent": "South America",
@@ -1404,11 +1404,11 @@
         "flag": "https://flagcdn.com/w320/py.png"
     },
     {
-        "name": "Salvador",
+        "name": "El Salvador",
         "countryCode": "SV",
         "capital": "San Salvador",
         "population": 6486201,
-        "populationName": "Salvadorien",
+        "populationName": "Salvadoran",
         "currency": "United States dollar",
         "continent": "Americas",
         "subContinent": "Central America",
@@ -1423,7 +1423,7 @@
         "countryCode": "UA",
         "capital": "Kyiv",
         "population": 44134693,
-        "populationName": "Ukrainien",
+        "populationName": "Ukrainian",
         "currency": "Ukrainian hryvnia",
         "continent": "Europe",
         "subContinent": "Eastern Europe",
@@ -1434,7 +1434,7 @@
         "flag": "https://flagcdn.com/w320/ua.png"
     },
     {
-        "name": "\u00cele de Man",
+        "name": "Isle of Man",
         "countryCode": "IM",
         "capital": "Douglas",
         "population": 85032,
@@ -1450,11 +1450,11 @@
         "flag": "https://flagcdn.com/w320/im.png"
     },
     {
-        "name": "Namibie",
+        "name": "Namibia",
         "countryCode": "NA",
         "capital": "Windhoek",
         "population": 2540916,
-        "populationName": "Namibien",
+        "populationName": "Namibian",
         "currency": "Namibian dollar",
         "continent": "Africa",
         "subContinent": "Southern Africa",
@@ -1473,11 +1473,11 @@
         "flag": "https://flagcdn.com/w320/na.png"
     },
     {
-        "name": "\u00c9mirats arabes unis",
+        "name": "United Arab Emirates",
         "countryCode": "AE",
         "capital": "Abu Dhabi",
         "population": 9890400,
-        "populationName": "Emirien",
+        "populationName": "Emirati",
         "currency": "United Arab Emirates dirham",
         "continent": "Asia",
         "subContinent": "Western Asia",
@@ -1488,11 +1488,11 @@
         "flag": "https://flagcdn.com/w320/ae.png"
     },
     {
-        "name": "Bulgarie",
+        "name": "Bulgaria",
         "countryCode": "BG",
         "capital": "Sofia",
         "population": 6927288,
-        "populationName": "Bulgare",
+        "populationName": "Bulgarian",
         "currency": "Bulgarian lev",
         "continent": "Europe",
         "subContinent": "Southeast Europe",
@@ -1503,11 +1503,11 @@
         "flag": "https://flagcdn.com/w320/bg.png"
     },
     {
-        "name": "Groenland",
+        "name": "Greenland",
         "countryCode": "GL",
         "capital": "Nuuk",
         "population": 56367,
-        "populationName": "Groenlandais",
+        "populationName": "Greenlandic",
         "currency": "krone",
         "continent": "Americas",
         "subContinent": "North America",
@@ -1518,11 +1518,11 @@
         "flag": "https://flagcdn.com/w320/gl.png"
     },
     {
-        "name": "Allemagne",
+        "name": "Germany",
         "countryCode": "DE",
         "capital": "Berlin",
         "population": 83240525,
-        "populationName": "Allemand",
+        "populationName": "German",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Western Europe",
@@ -1533,11 +1533,11 @@
         "flag": "https://flagcdn.com/w320/de.png"
     },
     {
-        "name": "Cambodge",
+        "name": "Cambodia",
         "countryCode": "KH",
         "capital": "Phnom Penh",
         "population": 16718971,
-        "populationName": "Cambodgien",
+        "populationName": "Cambodian",
         "currency": "Cambodian riel",
         "continent": "Asia",
         "subContinent": "South-Eastern Asia",
@@ -1548,11 +1548,11 @@
         "flag": "https://flagcdn.com/w320/kh.png"
     },
     {
-        "name": "Irak",
+        "name": "Iraq",
         "countryCode": "IQ",
         "capital": "Baghdad",
         "population": 40222503,
-        "populationName": "Irakien",
+        "populationName": "Iraqi",
         "currency": "Iraqi dinar",
         "continent": "Asia",
         "subContinent": "Western Asia",
@@ -1565,11 +1565,11 @@
         "flag": "https://flagcdn.com/w320/iq.png"
     },
     {
-        "name": "Terres australes et antarctiques fran\u00e7aises",
+        "name": "French Southern and Antarctic Lands",
         "countryCode": "TF",
         "capital": "Port-aux-Fran\u00e7ais",
         "population": 400,
-        "populationName": "Fran\u00e7ais",
+        "populationName": "French",
         "currency": "Euro",
         "continent": "Antarctic",
         "subContinent": "",
@@ -1580,11 +1580,11 @@
         "flag": "https://flagcdn.com/w320/tf.png"
     },
     {
-        "name": "Su\u00e8de",
+        "name": "Sweden",
         "countryCode": "SE",
         "capital": "Stockholm",
         "population": 10353442,
-        "populationName": "Su\u00e9dois",
+        "populationName": "Swedish",
         "currency": "Swedish krona",
         "continent": "Europe",
         "subContinent": "Northern Europe",
@@ -1599,7 +1599,7 @@
         "countryCode": "CU",
         "capital": "Havana",
         "population": 11326616,
-        "populationName": "Cubain",
+        "populationName": "Cuban",
         "currency": "Cuban convertible peso",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -1610,11 +1610,11 @@
         "flag": "https://flagcdn.com/w320/cu.png"
     },
     {
-        "name": "Kirghizistan",
+        "name": "Kyrgyzstan",
         "countryCode": "KG",
         "capital": "Bishkek",
         "population": 6591600,
-        "populationName": "Kirghize",
+        "populationName": "Kirghiz",
         "currency": "Kyrgyzstani som",
         "continent": "Asia",
         "subContinent": "Central Asia",
@@ -1626,11 +1626,11 @@
         "flag": "https://flagcdn.com/w320/kg.png"
     },
     {
-        "name": "Russie",
+        "name": "Russia",
         "countryCode": "RU",
         "capital": "Moscow",
         "population": 144104080,
-        "populationName": "Russe",
+        "populationName": "Russian",
         "currency": "Russian ruble",
         "continent": "Europe",
         "subContinent": "Eastern Europe",
@@ -1641,11 +1641,11 @@
         "flag": "https://flagcdn.com/w320/ru.png"
     },
     {
-        "name": "Malaisie",
+        "name": "Malaysia",
         "countryCode": "MY",
         "capital": "Kuala Lumpur",
         "population": 32365998,
-        "populationName": "Malaisien",
+        "populationName": "Malaysian",
         "currency": "Malaysian ringgit",
         "continent": "Asia",
         "subContinent": "South-Eastern Asia",
@@ -1657,11 +1657,11 @@
         "flag": "https://flagcdn.com/w320/my.png"
     },
     {
-        "name": "S\u00e3o Tom\u00e9 et Pr\u00edncipe",
+        "name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
         "countryCode": "ST",
         "capital": "S\u00e3o Tom\u00e9",
         "population": 219161,
-        "populationName": "Santom\u00e9en",
+        "populationName": "Sao Tomean",
         "currency": "S\u00e3o Tom\u00e9 and Pr\u00edncipe dobra",
         "continent": "Africa",
         "subContinent": "Middle Africa",
@@ -1672,11 +1672,11 @@
         "flag": "https://flagcdn.com/w320/st.png"
     },
     {
-        "name": "Chypre",
+        "name": "Cyprus",
         "countryCode": "CY",
         "capital": "Nicosia",
         "population": 1207361,
-        "populationName": "Chypriote",
+        "populationName": "Cypriot",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Southern Europe",
@@ -1692,7 +1692,7 @@
         "countryCode": "CA",
         "capital": "Ottawa",
         "population": 38005238,
-        "populationName": "Canadien",
+        "populationName": "Canadian",
         "currency": "Canadian dollar",
         "continent": "Americas",
         "subContinent": "North America",
@@ -1708,7 +1708,7 @@
         "countryCode": "MW",
         "capital": "Lilongwe",
         "population": 19129955,
-        "populationName": "Malawien",
+        "populationName": "Malawian",
         "currency": "Malawian kwacha",
         "continent": "Africa",
         "subContinent": "Eastern Africa",
@@ -1720,11 +1720,11 @@
         "flag": "https://flagcdn.com/w320/mw.png"
     },
     {
-        "name": "Arabie Saoudite",
+        "name": "Saudi Arabia",
         "countryCode": "SA",
         "capital": "Riyadh",
         "population": 34813867,
-        "populationName": "Saoudien",
+        "populationName": "Saudi Arabian",
         "currency": "Saudi riyal",
         "continent": "Asia",
         "subContinent": "Western Asia",
@@ -1735,11 +1735,11 @@
         "flag": "https://flagcdn.com/w320/sa.png"
     },
     {
-        "name": "Bosnie-Herz\u00e9govine",
+        "name": "Bosnia and Herzegovina",
         "countryCode": "BA",
         "capital": "Sarajevo",
         "population": 3280815,
-        "populationName": "Bosnien",
+        "populationName": "Bosnian, Herzegovinian",
         "currency": "Bosnia and Herzegovina convertible mark",
         "continent": "Europe",
         "subContinent": "Southeast Europe",
@@ -1752,11 +1752,11 @@
         "flag": "https://flagcdn.com/w320/ba.png"
     },
     {
-        "name": "\u00c9thiopie",
+        "name": "Ethiopia",
         "countryCode": "ET",
         "capital": "Addis Ababa",
         "population": 114963583,
-        "populationName": "\u00c9thiopien",
+        "populationName": "Ethiopian",
         "currency": "Ethiopian birr",
         "continent": "Africa",
         "subContinent": "Eastern Africa",
@@ -1767,11 +1767,11 @@
         "flag": "https://flagcdn.com/w320/et.png"
     },
     {
-        "name": "Espagne",
+        "name": "Spain",
         "countryCode": "ES",
         "capital": "Madrid",
         "population": 47351567,
-        "populationName": "Espagnol",
+        "populationName": "Spanish",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Southern Europe",
@@ -1785,11 +1785,11 @@
         "flag": "https://flagcdn.com/w320/es.png"
     },
     {
-        "name": "Slov\u00e9nie",
+        "name": "Slovenia",
         "countryCode": "SI",
         "capital": "Ljubljana",
         "population": 2100126,
-        "populationName": "Slov\u00e8ne",
+        "populationName": "Slovene",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Central Europe",
@@ -1804,7 +1804,7 @@
         "countryCode": "OM",
         "capital": "Muscat",
         "population": 5106622,
-        "populationName": "Omanais",
+        "populationName": "Omani",
         "currency": "Omani rial",
         "continent": "Asia",
         "subContinent": "Western Asia",
@@ -1815,11 +1815,11 @@
         "flag": "https://flagcdn.com/w320/om.png"
     },
     {
-        "name": "Saint-Pierre-et-Miquelon",
+        "name": "Saint Pierre and Miquelon",
         "countryCode": "PM",
         "capital": "Saint-Pierre",
         "population": 6069,
-        "populationName": "Saint-Pierrais, Miquelonais",
+        "populationName": "Saint-Pierrais, Miquelonnais",
         "currency": "Euro",
         "continent": "Americas",
         "subContinent": "North America",
@@ -1830,11 +1830,11 @@
         "flag": "https://flagcdn.com/w320/pm.png"
     },
     {
-        "name": "Macao",
+        "name": "Macau",
         "countryCode": "MO",
         "capital": "",
         "population": 649342,
-        "populationName": "Macanais",
+        "populationName": "Macanese",
         "currency": "Macanese pataca",
         "continent": "Asia",
         "subContinent": "Eastern Asia",
@@ -1846,11 +1846,11 @@
         "flag": "https://flagcdn.com/w320/mo.png"
     },
     {
-        "name": "Saint-Marin",
+        "name": "San Marino",
         "countryCode": "SM",
         "capital": "City of San Marino",
         "population": 33938,
-        "populationName": "Saint-Marinais",
+        "populationName": "Sammarinese",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Southern Europe",
@@ -1865,7 +1865,7 @@
         "countryCode": "LS",
         "capital": "Maseru",
         "population": 2142252,
-        "populationName": "L\u00e9sothien",
+        "populationName": "Mosotho",
         "currency": "Lesotho loti",
         "continent": "Africa",
         "subContinent": "Southern Africa",
@@ -1877,11 +1877,11 @@
         "flag": "https://flagcdn.com/w320/ls.png"
     },
     {
-        "name": "\u00celes Marshall",
+        "name": "Marshall Islands",
         "countryCode": "MH",
         "capital": "Majuro",
         "population": 59194,
-        "populationName": "Marshallais",
+        "populationName": "Marshallese",
         "currency": "United States dollar",
         "continent": "Oceania",
         "subContinent": "Micronesia",
@@ -1893,11 +1893,11 @@
         "flag": "https://flagcdn.com/w320/mh.png"
     },
     {
-        "name": "Saint-Martin",
+        "name": "Sint Maarten",
         "countryCode": "SX",
         "capital": "Philipsburg",
         "population": 40812,
-        "populationName": "Saint-Martinois",
+        "populationName": "St. Maartener",
         "currency": "Netherlands Antillean guilder",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -1910,11 +1910,11 @@
         "flag": "https://flagcdn.com/w320/sx.png"
     },
     {
-        "name": "Islande",
+        "name": "Iceland",
         "countryCode": "IS",
         "capital": "Reykjavik",
         "population": 366425,
-        "populationName": "Islandais",
+        "populationName": "Icelander",
         "currency": "Icelandic kr\u00f3na",
         "continent": "Europe",
         "subContinent": "Northern Europe",
@@ -1929,7 +1929,7 @@
         "countryCode": "LU",
         "capital": "Luxembourg",
         "population": 632275,
-        "populationName": "Luxembourgeois",
+        "populationName": "Luxembourger",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Western Europe",
@@ -1942,11 +1942,11 @@
         "flag": "https://flagcdn.com/w320/lu.png"
     },
     {
-        "name": "Argentine",
+        "name": "Argentina",
         "countryCode": "AR",
         "capital": "Buenos Aires",
         "population": 45376763,
-        "populationName": "Argentin",
+        "populationName": "Argentine",
         "currency": "Argentine peso",
         "continent": "Americas",
         "subContinent": "South America",
@@ -1958,7 +1958,7 @@
         "flag": "https://flagcdn.com/w320/ar.png"
     },
     {
-        "name": "\u00celes Turques-et-Ca\u00efques",
+        "name": "Turks and Caicos Islands",
         "countryCode": "TC",
         "capital": "Cockburn Town",
         "population": 38718,
@@ -1989,7 +1989,7 @@
         "flag": "https://flagcdn.com/w320/nr.png"
     },
     {
-        "name": "\u00celes Cocos",
+        "name": "Cocos (Keeling) Islands",
         "countryCode": "CC",
         "capital": "West Island",
         "population": 544,
@@ -2004,7 +2004,7 @@
         "flag": "https://flagcdn.com/w320/cc.png"
     },
     {
-        "name": "Sahara Occidental",
+        "name": "Western Sahara",
         "countryCode": "EH",
         "capital": "El Aai\u00fan",
         "population": 510713,
@@ -2021,11 +2021,11 @@
         "flag": "https://flagcdn.com/w320/eh.png"
     },
     {
-        "name": "Dominique",
+        "name": "Dominica",
         "countryCode": "DM",
         "capital": "Roseau",
         "population": 71991,
-        "populationName": "Dominiquais",
+        "populationName": "Dominican",
         "currency": "Eastern Caribbean dollar",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -2040,7 +2040,7 @@
         "countryCode": "CR",
         "capital": "San Jos\u00e9",
         "population": 5094114,
-        "populationName": "Costaricain",
+        "populationName": "Costa Rican",
         "currency": "Costa Rican col\u00f3n",
         "continent": "Americas",
         "subContinent": "Central America",
@@ -2051,11 +2051,11 @@
         "flag": "https://flagcdn.com/w320/cr.png"
     },
     {
-        "name": "Australie",
+        "name": "Australia",
         "countryCode": "AU",
         "capital": "Canberra",
         "population": 25687041,
-        "populationName": "Australien",
+        "populationName": "Australian",
         "currency": "Australian dollar",
         "continent": "Oceania",
         "subContinent": "Australia and New Zealand",
@@ -2066,11 +2066,11 @@
         "flag": "https://flagcdn.com/w320/au.png"
     },
     {
-        "name": "Tha\u00eflande",
+        "name": "Thailand",
         "countryCode": "TH",
         "capital": "Bangkok",
         "population": 69799978,
-        "populationName": "Tha\u00eflandais",
+        "populationName": "Thai",
         "currency": "Thai baht",
         "continent": "Asia",
         "subContinent": "South-Eastern Asia",
@@ -2081,11 +2081,11 @@
         "flag": "https://flagcdn.com/w320/th.png"
     },
     {
-        "name": "Ha\u00efti",
+        "name": "Haiti",
         "countryCode": "HT",
         "capital": "Port-au-Prince",
         "population": 11402533,
-        "populationName": "Ha\u00eftien",
+        "populationName": "Haitian",
         "currency": "Haitian gourde",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -2117,7 +2117,7 @@
         "countryCode": "HN",
         "capital": "Tegucigalpa",
         "population": 9904608,
-        "populationName": "Hondurien",
+        "populationName": "Honduran",
         "currency": "Honduran lempira",
         "continent": "Americas",
         "subContinent": "Central America",
@@ -2128,11 +2128,11 @@
         "flag": "https://flagcdn.com/w320/hn.png"
     },
     {
-        "name": "Guin\u00e9e \u00e9quatoriale",
+        "name": "Equatorial Guinea",
         "countryCode": "GQ",
         "capital": "Malabo",
         "population": 1402985,
-        "populationName": "\u00c9quato-guin\u00e9en",
+        "populationName": "Equatorial Guinean",
         "currency": "Central African CFA franc",
         "continent": "Africa",
         "subContinent": "Middle Africa",
@@ -2145,11 +2145,11 @@
         "flag": "https://flagcdn.com/w320/gq.png"
     },
     {
-        "name": "Sainte-Lucie",
+        "name": "Saint Lucia",
         "countryCode": "LC",
         "capital": "Castries",
         "population": 183629,
-        "populationName": "Saint-Lucien",
+        "populationName": "Saint Lucian",
         "currency": "Eastern Caribbean dollar",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -2160,11 +2160,11 @@
         "flag": "https://flagcdn.com/w320/lc.png"
     },
     {
-        "name": "Polyn\u00e9sie fran\u00e7aise",
+        "name": "French Polynesia",
         "countryCode": "PF",
         "capital": "Papeet\u0113",
         "population": 280904,
-        "populationName": "Polyn\u00e9sien",
+        "populationName": "French Polynesian",
         "currency": "CFP franc",
         "continent": "Oceania",
         "subContinent": "Polynesia",
@@ -2175,11 +2175,11 @@
         "flag": "https://flagcdn.com/w320/pf.png"
     },
     {
-        "name": "Bi\u00e9lorussie",
+        "name": "Belarus",
         "countryCode": "BY",
         "capital": "Minsk",
         "population": 9398861,
-        "populationName": "Bi\u00e9lorusse",
+        "populationName": "Belarusian",
         "currency": "Belarusian ruble",
         "continent": "Europe",
         "subContinent": "Eastern Europe",
@@ -2191,11 +2191,11 @@
         "flag": "https://flagcdn.com/w320/by.png"
     },
     {
-        "name": "Lettonie",
+        "name": "Latvia",
         "countryCode": "LV",
         "capital": "Riga",
         "population": 1901548,
-        "populationName": "Letton",
+        "populationName": "Latvian",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Northern Europe",
@@ -2206,11 +2206,11 @@
         "flag": "https://flagcdn.com/w320/lv.png"
     },
     {
-        "name": "Palaos (Palau)",
+        "name": "Palau",
         "countryCode": "PW",
         "capital": "Ngerulmud",
         "population": 18092,
-        "populationName": "Paluan",
+        "populationName": "Palauan",
         "currency": "United States dollar",
         "continent": "Oceania",
         "subContinent": "Micronesia",
@@ -2226,7 +2226,7 @@
         "countryCode": "GP",
         "capital": "Basse-Terre",
         "population": 400132,
-        "populationName": "Guadeloup\u00e9en",
+        "populationName": "Guadeloupian",
         "currency": "Euro",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -2241,7 +2241,7 @@
         "countryCode": "PH",
         "capital": "Manila",
         "population": 109581085,
-        "populationName": "Philippin",
+        "populationName": "Filipino",
         "currency": "Philippine peso",
         "continent": "Asia",
         "subContinent": "South-Eastern Asia",
@@ -2257,7 +2257,7 @@
         "countryCode": "GI",
         "capital": "Gibraltar",
         "population": 33691,
-        "populationName": "Gibraltarien",
+        "populationName": "Gibraltar",
         "currency": "Gibraltar pound",
         "continent": "Europe",
         "subContinent": "Southern Europe",
@@ -2268,11 +2268,11 @@
         "flag": "https://flagcdn.com/w320/gi.png"
     },
     {
-        "name": "Danemark",
+        "name": "Denmark",
         "countryCode": "DK",
         "capital": "Copenhagen",
         "population": 5831404,
-        "populationName": "Danois",
+        "populationName": "Danish",
         "currency": "Danish krone",
         "continent": "Europe",
         "subContinent": "Northern Europe",
@@ -2283,11 +2283,11 @@
         "flag": "https://flagcdn.com/w320/dk.png"
     },
     {
-        "name": "Cameroun",
+        "name": "Cameroon",
         "countryCode": "CM",
         "capital": "Yaound\u00e9",
         "population": 26545864,
-        "populationName": "Camerounais",
+        "populationName": "Cameroonian",
         "currency": "Central African CFA franc",
         "continent": "Africa",
         "subContinent": "Middle Africa",
@@ -2299,11 +2299,11 @@
         "flag": "https://flagcdn.com/w320/cm.png"
     },
     {
-        "name": "Guin\u00e9e",
+        "name": "Guinea",
         "countryCode": "GN",
         "capital": "Conakry",
         "population": 13132792,
-        "populationName": "Guin\u00e9en",
+        "populationName": "Guinean",
         "currency": "Guinean franc",
         "continent": "Africa",
         "subContinent": "Western Africa",
@@ -2314,11 +2314,11 @@
         "flag": "https://flagcdn.com/w320/gn.png"
     },
     {
-        "name": "Bahre\u00efn",
+        "name": "Bahrain",
         "countryCode": "BH",
         "capital": "Manama",
         "population": 1701583,
-        "populationName": "Bahre\u00efnien",
+        "populationName": "Bahraini",
         "currency": "Bahraini dinar",
         "continent": "Asia",
         "subContinent": "Western Asia",
@@ -2329,11 +2329,11 @@
         "flag": "https://flagcdn.com/w320/bh.png"
     },
     {
-        "name": "Surinam",
+        "name": "Suriname",
         "countryCode": "SR",
         "capital": "Paramaribo",
         "population": 586634,
-        "populationName": "Surinamais",
+        "populationName": "Surinamer",
         "currency": "Surinamese dollar",
         "continent": "Americas",
         "subContinent": "South America",
@@ -2344,11 +2344,11 @@
         "flag": "https://flagcdn.com/w320/sr.png"
     },
     {
-        "name": "RD Congo",
+        "name": "DR Congo",
         "countryCode": "CD",
         "capital": "Kinshasa",
         "population": 108407721,
-        "populationName": "Congolais",
+        "populationName": "Congolese",
         "currency": "Congolese franc",
         "continent": "Africa",
         "subContinent": "Middle Africa",
@@ -2363,11 +2363,11 @@
         "flag": "https://flagcdn.com/w320/cd.png"
     },
     {
-        "name": "Somalie",
+        "name": "Somalia",
         "countryCode": "SO",
         "capital": "Mogadishu",
         "population": 15893219,
-        "populationName": "Somalien",
+        "populationName": "Somali",
         "currency": "Somali shilling",
         "continent": "Africa",
         "subContinent": "Eastern Africa",
@@ -2379,11 +2379,11 @@
         "flag": "https://flagcdn.com/w320/so.png"
     },
     {
-        "name": "Tch\u00e9quie",
+        "name": "Czechia",
         "countryCode": "CZ",
         "capital": "Prague",
         "population": 10698896,
-        "populationName": "Tch\u00e8que",
+        "populationName": "Czech",
         "currency": "Czech koruna",
         "continent": "Europe",
         "subContinent": "Central Europe",
@@ -2395,11 +2395,11 @@
         "flag": "https://flagcdn.com/w320/cz.png"
     },
     {
-        "name": "Nouvelle-Cal\u00e9donie",
+        "name": "New Caledonia",
         "countryCode": "NC",
         "capital": "Noum\u00e9a",
         "population": 271960,
-        "populationName": "N\u00e9o-Cal\u00e9donien",
+        "populationName": "New Caledonian",
         "currency": "CFP franc",
         "continent": "Oceania",
         "subContinent": "Melanesia",
@@ -2414,7 +2414,7 @@
         "countryCode": "VU",
         "capital": "Port Vila",
         "population": 307150,
-        "populationName": "Vanuatuan",
+        "populationName": "Ni-Vanuatu",
         "currency": "Vanuatu vatu",
         "continent": "Oceania",
         "subContinent": "Melanesia",
@@ -2427,11 +2427,11 @@
         "flag": "https://flagcdn.com/w320/vu.png"
     },
     {
-        "name": "Sainte-H\u00e9l\u00e8ne, Ascension et Tristan da Cunha",
+        "name": "Saint Helena, Ascension and Tristan da Cunha",
         "countryCode": "SH",
         "capital": "Jamestown",
         "population": 53192,
-        "populationName": "Sainte-H\u00e9l\u00e8nois",
+        "populationName": "Saint Helenian",
         "currency": "Pound sterling",
         "continent": "Africa",
         "subContinent": "Western Africa",
@@ -2446,7 +2446,7 @@
         "countryCode": "TG",
         "capital": "Lom\u00e9",
         "population": 8278737,
-        "populationName": "Togolais",
+        "populationName": "Togolese",
         "currency": "West African CFA franc",
         "continent": "Africa",
         "subContinent": "Western Africa",
@@ -2457,7 +2457,7 @@
         "flag": "https://flagcdn.com/w320/tg.png"
     },
     {
-        "name": "\u00celes Vierges britanniques",
+        "name": "British Virgin Islands",
         "countryCode": "VG",
         "capital": "Road Town",
         "population": 30237,
@@ -2476,7 +2476,7 @@
         "countryCode": "KE",
         "capital": "Nairobi",
         "population": 53771300,
-        "populationName": "K\u00e9nyan",
+        "populationName": "Kenyan",
         "currency": "Kenyan shilling",
         "continent": "Africa",
         "subContinent": "Eastern Africa",
@@ -2492,7 +2492,7 @@
         "countryCode": "NU",
         "capital": "Alofi",
         "population": 1470,
-        "populationName": "Niu\u00e9en",
+        "populationName": "Niuean",
         "currency": "New Zealand dollar",
         "continent": "Oceania",
         "subContinent": "Polynesia",
@@ -2504,7 +2504,7 @@
         "flag": "https://flagcdn.com/w320/nu.png"
     },
     {
-        "name": "\u00celes Heard-et-MacDonald",
+        "name": "Heard Island and McDonald Islands",
         "countryCode": "HM",
         "capital": "",
         "population": 0,
@@ -2523,7 +2523,7 @@
         "countryCode": "RW",
         "capital": "Kigali",
         "population": 12952209,
-        "populationName": "Rwandais",
+        "populationName": "Rwandan",
         "currency": "Rwandan franc",
         "continent": "Africa",
         "subContinent": "Eastern Africa",
@@ -2536,11 +2536,11 @@
         "flag": "https://flagcdn.com/w320/rw.png"
     },
     {
-        "name": "Estonie",
+        "name": "Estonia",
         "countryCode": "EE",
         "capital": "Tallinn",
         "population": 1331057,
-        "populationName": "Estonien",
+        "populationName": "Estonian",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Northern Europe",
@@ -2551,11 +2551,11 @@
         "flag": "https://flagcdn.com/w320/ee.png"
     },
     {
-        "name": "Roumanie",
+        "name": "Romania",
         "countryCode": "RO",
         "capital": "Bucharest",
         "population": 19286123,
-        "populationName": "Roumain",
+        "populationName": "Romanian",
         "currency": "Romanian leu",
         "continent": "Europe",
         "subContinent": "Southeast Europe",
@@ -2566,11 +2566,11 @@
         "flag": "https://flagcdn.com/w320/ro.png"
     },
     {
-        "name": "Trinit\u00e9-et-Tobago",
+        "name": "Trinidad and Tobago",
         "countryCode": "TT",
         "capital": "Port of Spain",
         "population": 1399491,
-        "populationName": "Trinidadien",
+        "populationName": "Trinidadian",
         "currency": "Trinidad and Tobago dollar",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -2585,7 +2585,7 @@
         "countryCode": "GY",
         "capital": "Georgetown",
         "population": 786559,
-        "populationName": "Guyanien",
+        "populationName": "Guyanese",
         "currency": "Guyanese dollar",
         "continent": "Americas",
         "subContinent": "South America",
@@ -2596,11 +2596,11 @@
         "flag": "https://flagcdn.com/w320/gy.png"
     },
     {
-        "name": "Timor oriental",
+        "name": "Timor-Leste",
         "countryCode": "TL",
         "capital": "Dili",
         "population": 1318442,
-        "populationName": "Est-timorais",
+        "populationName": "East Timorese",
         "currency": "United States dollar",
         "continent": "Asia",
         "subContinent": "South-Eastern Asia",
@@ -2612,11 +2612,11 @@
         "flag": "https://flagcdn.com/w320/tl.png"
     },
     {
-        "name": "Vi\u00eat Nam",
+        "name": "Vietnam",
         "countryCode": "VN",
         "capital": "Hanoi",
         "population": 97338583,
-        "populationName": "Vietnamien",
+        "populationName": "Vietnamese",
         "currency": "Vietnamese \u0111\u1ed3ng",
         "continent": "Asia",
         "subContinent": "South-Eastern Asia",
@@ -2631,7 +2631,7 @@
         "countryCode": "UY",
         "capital": "Montevideo",
         "population": 3473727,
-        "populationName": "Uruguayen",
+        "populationName": "Uruguayan",
         "currency": "Uruguayan peso",
         "continent": "Americas",
         "subContinent": "South America",
@@ -2642,7 +2642,7 @@
         "flag": "https://flagcdn.com/w320/uy.png"
     },
     {
-        "name": "Cit\u00e9 du Vatican",
+        "name": "Vatican City",
         "countryCode": "VA",
         "capital": "Vatican City",
         "population": 451,
@@ -2662,7 +2662,7 @@
         "countryCode": "HK",
         "capital": "City of Victoria",
         "population": 7500700,
-        "populationName": "Hongkongais",
+        "populationName": "Hong Konger",
         "currency": "Hong Kong dollar",
         "continent": "Asia",
         "subContinent": "Eastern Asia",
@@ -2674,11 +2674,11 @@
         "flag": "https://flagcdn.com/w320/hk.png"
     },
     {
-        "name": "Autriche",
+        "name": "Austria",
         "countryCode": "AT",
         "capital": "Vienna",
         "population": 8917205,
-        "populationName": "Autrichien",
+        "populationName": "Austrian",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Central Europe",
@@ -2689,11 +2689,11 @@
         "flag": "https://flagcdn.com/w320/at.png"
     },
     {
-        "name": "Antigua-et-Barbuda",
+        "name": "Antigua and Barbuda",
         "countryCode": "AG",
         "capital": "Saint John's",
         "population": 97928,
-        "populationName": "Antiguaise et barbudien",
+        "populationName": "Antiguan, Barbudan",
         "currency": "Eastern Caribbean dollar",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -2704,11 +2704,11 @@
         "flag": "https://flagcdn.com/w320/ag.png"
     },
     {
-        "name": "Turkm\u00e9nistan",
+        "name": "Turkmenistan",
         "countryCode": "TM",
         "capital": "Ashgabat",
         "population": 6031187,
-        "populationName": "Turkm\u00e8ne",
+        "populationName": "Turkmen",
         "currency": "Turkmenistan manat",
         "continent": "Asia",
         "subContinent": "Central Asia",
@@ -2724,7 +2724,7 @@
         "countryCode": "MZ",
         "capital": "Maputo",
         "population": 31255435,
-        "populationName": "Mozambicain",
+        "populationName": "Mozambican",
         "currency": "Mozambican metical",
         "continent": "Africa",
         "subContinent": "Eastern Africa",
@@ -2739,7 +2739,7 @@
         "countryCode": "PA",
         "capital": "Panama City",
         "population": 4314768,
-        "populationName": "Panam\u00e9en",
+        "populationName": "Panamanian",
         "currency": "Panamanian balboa",
         "continent": "Americas",
         "subContinent": "Central America",
@@ -2750,11 +2750,11 @@
         "flag": "https://flagcdn.com/w320/pa.png"
     },
     {
-        "name": "Micron\u00e9sie",
+        "name": "Micronesia",
         "countryCode": "FM",
         "capital": "Palikir",
         "population": 115021,
-        "populationName": "Micron\u00e9sien",
+        "populationName": "Micronesian",
         "currency": "United States dollar",
         "continent": "Oceania",
         "subContinent": "Micronesia",
@@ -2765,11 +2765,11 @@
         "flag": "https://flagcdn.com/w320/fm.png"
     },
     {
-        "name": "Irlande",
+        "name": "Ireland",
         "countryCode": "IE",
         "capital": "Dublin",
         "population": 4994724,
-        "populationName": "Irlandais",
+        "populationName": "Irish",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Northern Europe",
@@ -2785,7 +2785,7 @@
         "countryCode": "CW",
         "capital": "Willemstad",
         "population": 155014,
-        "populationName": "Curacien",
+        "populationName": "Cura\u00e7aoan",
         "currency": "Netherlands Antillean guilder",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -2798,11 +2798,11 @@
         "flag": "https://flagcdn.com/w320/cw.png"
     },
     {
-        "name": "Guyane fran\u00e7aise",
+        "name": "French Guiana",
         "countryCode": "GF",
         "capital": "Cayenne",
         "population": 254541,
-        "populationName": "Guyanais",
+        "populationName": "Guianan",
         "currency": "Euro",
         "continent": "Americas",
         "subContinent": "South America",
@@ -2813,11 +2813,11 @@
         "flag": "https://flagcdn.com/w320/gf.png"
     },
     {
-        "name": "Norv\u00e8ge",
+        "name": "Norway",
         "countryCode": "NO",
         "capital": "Oslo",
         "population": 5379475,
-        "populationName": "Norv\u00e9gien",
+        "populationName": "Norwegian",
         "currency": "Norwegian krone",
         "continent": "Europe",
         "subContinent": "Northern Europe",
@@ -2830,11 +2830,11 @@
         "flag": "https://flagcdn.com/w320/no.png"
     },
     {
-        "name": "Ahvenanmaa",
+        "name": "\u00c5land Islands",
         "countryCode": "AX",
         "capital": "Mariehamn",
         "population": 29458,
-        "populationName": "\u00c5landais",
+        "populationName": "\u00c5landish",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Northern Europe",
@@ -2845,11 +2845,11 @@
         "flag": "https://flagcdn.com/w320/ax.png"
     },
     {
-        "name": "R\u00e9publique centrafricaine",
+        "name": "Central African Republic",
         "countryCode": "CF",
         "capital": "Bangui",
         "population": 4829764,
-        "populationName": "Centrafricain",
+        "populationName": "Central African",
         "currency": "Central African CFA franc",
         "continent": "Africa",
         "subContinent": "Middle Africa",
@@ -2865,7 +2865,7 @@
         "countryCode": "BF",
         "capital": "Ouagadougou",
         "population": 20903278,
-        "populationName": "Burkinab\u00e9",
+        "populationName": "Burkinabe",
         "currency": "West African CFA franc",
         "continent": "Africa",
         "subContinent": "Western Africa",
@@ -2876,11 +2876,11 @@
         "flag": "https://flagcdn.com/w320/bf.png"
     },
     {
-        "name": "\u00c9rythr\u00e9e",
+        "name": "Eritrea",
         "countryCode": "ER",
         "capital": "Asmara",
         "population": 5352000,
-        "populationName": "\u00c9rythr\u00e9en",
+        "populationName": "Eritrean",
         "currency": "Eritrean nakfa",
         "continent": "Africa",
         "subContinent": "Eastern Africa",
@@ -2893,11 +2893,11 @@
         "flag": "https://flagcdn.com/w320/er.png"
     },
     {
-        "name": "Tanzanie",
+        "name": "Tanzania",
         "countryCode": "TZ",
         "capital": "Dodoma",
         "population": 59734213,
-        "populationName": "Tanzanien",
+        "populationName": "Tanzanian",
         "currency": "Tanzanian shilling",
         "continent": "Africa",
         "subContinent": "Eastern Africa",
@@ -2909,11 +2909,11 @@
         "flag": "https://flagcdn.com/w320/tz.png"
     },
     {
-        "name": "Cor\u00e9e du Sud",
+        "name": "South Korea",
         "countryCode": "KR",
         "capital": "Seoul",
         "population": 51780579,
-        "populationName": "Sud-cor\u00e9en",
+        "populationName": "South Korean",
         "currency": "South Korean won",
         "continent": "Asia",
         "subContinent": "Eastern Asia",
@@ -2924,11 +2924,11 @@
         "flag": "https://flagcdn.com/w320/kr.png"
     },
     {
-        "name": "Jordanie",
+        "name": "Jordan",
         "countryCode": "JO",
         "capital": "Amman",
         "population": 10203140,
-        "populationName": "Jordanien",
+        "populationName": "Jordanian",
         "currency": "Jordanian dinar",
         "continent": "Asia",
         "subContinent": "Western Asia",
@@ -2939,11 +2939,11 @@
         "flag": "https://flagcdn.com/w320/jo.png"
     },
     {
-        "name": "Mauritanie",
+        "name": "Mauritania",
         "countryCode": "MR",
         "capital": "Nouakchott",
         "population": 4649660,
-        "populationName": "Mauritanien",
+        "populationName": "Mauritanian",
         "currency": "Mauritanian ouguiya",
         "continent": "Africa",
         "subContinent": "Western Africa",
@@ -2954,11 +2954,11 @@
         "flag": "https://flagcdn.com/w320/mr.png"
     },
     {
-        "name": "Lituanie",
+        "name": "Lithuania",
         "countryCode": "LT",
         "capital": "Vilnius",
         "population": 2794700,
-        "populationName": "Lituanien",
+        "populationName": "Lithuanian",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Northern Europe",
@@ -2969,7 +2969,7 @@
         "flag": "https://flagcdn.com/w320/lt.png"
     },
     {
-        "name": "\u00celes mineures \u00e9loign\u00e9es des \u00c9tats-Unis",
+        "name": "United States Minor Outlying Islands",
         "countryCode": "UM",
         "capital": "Washington DC",
         "population": 300,
@@ -2984,11 +2984,11 @@
         "flag": "https://flagcdn.com/w320/um.png"
     },
     {
-        "name": "Slovaquie",
+        "name": "Slovakia",
         "countryCode": "SK",
         "capital": "Bratislava",
         "population": 5458827,
-        "populationName": "Slovaque",
+        "populationName": "Slovak",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Central Europe",
@@ -3003,7 +3003,7 @@
         "countryCode": "AO",
         "capital": "Luanda",
         "population": 32866268,
-        "populationName": "Angolais",
+        "populationName": "Angolan",
         "currency": "Angolan kwanza",
         "continent": "Africa",
         "subContinent": "Middle Africa",
@@ -3018,7 +3018,7 @@
         "countryCode": "KZ",
         "capital": "Nur-Sultan",
         "population": 18754440,
-        "populationName": "Kazakhstanais",
+        "populationName": "Kazakhstani",
         "currency": "Kazakhstani tenge",
         "continent": "Asia",
         "subContinent": "Central Asia",
@@ -3030,11 +3030,11 @@
         "flag": "https://flagcdn.com/w320/kz.png"
     },
     {
-        "name": "Moldavie",
+        "name": "Moldova",
         "countryCode": "MD",
         "capital": "Chi\u0219in\u0103u",
         "population": 2617820,
-        "populationName": "Moldave",
+        "populationName": "Moldovan",
         "currency": "Moldovan leu",
         "continent": "Europe",
         "subContinent": "Eastern Europe",
@@ -3049,7 +3049,7 @@
         "countryCode": "ML",
         "capital": "Bamako",
         "population": 20250834,
-        "populationName": "Malien",
+        "populationName": "Malian",
         "currency": "West African CFA franc",
         "continent": "Africa",
         "subContinent": "Western Africa",
@@ -3060,11 +3060,11 @@
         "flag": "https://flagcdn.com/w320/ml.png"
     },
     {
-        "name": "\u00celes Malouines",
+        "name": "Falkland Islands",
         "countryCode": "FK",
         "capital": "Stanley",
         "population": 2563,
-        "populationName": "Malouin",
+        "populationName": "Falkland Islander",
         "currency": "Falkland Islands pound",
         "continent": "Americas",
         "subContinent": "South America",
@@ -3075,11 +3075,11 @@
         "flag": "https://flagcdn.com/w320/fk.png"
     },
     {
-        "name": "Arm\u00e9nie",
+        "name": "Armenia",
         "countryCode": "AM",
         "capital": "Yerevan",
         "population": 2963234,
-        "populationName": "Arm\u00e9nien",
+        "populationName": "Armenian",
         "currency": "Armenian dram",
         "continent": "Asia",
         "subContinent": "Western Asia",
@@ -3110,7 +3110,7 @@
         "countryCode": "JE",
         "capital": "Saint Helier",
         "population": 100800,
-        "populationName": "Jersiais",
+        "populationName": "Channel Islander",
         "currency": "British pound",
         "continent": "Europe",
         "subContinent": "Northern Europe",
@@ -3123,11 +3123,11 @@
         "flag": "https://flagcdn.com/w320/je.png"
     },
     {
-        "name": "Japon",
+        "name": "Japan",
         "countryCode": "JP",
         "capital": "Tokyo",
         "population": 125836021,
-        "populationName": "Japonais",
+        "populationName": "Japanese",
         "currency": "Japanese yen",
         "continent": "Asia",
         "subContinent": "Eastern Asia",
@@ -3138,11 +3138,11 @@
         "flag": "https://flagcdn.com/w320/jp.png"
     },
     {
-        "name": "Bolivie",
+        "name": "Bolivia",
         "countryCode": "BO",
         "capital": "Sucre",
         "population": 11673029,
-        "populationName": "Bolivien",
+        "populationName": "Bolivian",
         "currency": "Bolivian boliviano",
         "continent": "Americas",
         "subContinent": "South America",
@@ -3156,11 +3156,11 @@
         "flag": "https://flagcdn.com/w320/bo.png"
     },
     {
-        "name": "Chili",
+        "name": "Chile",
         "countryCode": "CL",
         "capital": "Santiago",
         "population": 19116209,
-        "populationName": "Chilien",
+        "populationName": "Chilean",
         "currency": "Chilean peso",
         "continent": "Americas",
         "subContinent": "South America",
@@ -3171,11 +3171,11 @@
         "flag": "https://flagcdn.com/w320/cl.png"
     },
     {
-        "name": "\u00c9tats-Unis",
+        "name": "United States",
         "countryCode": "US",
         "capital": "Washington, D.C.",
         "population": 329484123,
-        "populationName": "Am\u00e9ricain",
+        "populationName": "American",
         "currency": "United States dollar",
         "continent": "Americas",
         "subContinent": "North America",
@@ -3186,11 +3186,11 @@
         "flag": "https://flagcdn.com/w320/us.png"
     },
     {
-        "name": "Saint-Vincent-et-les-Grenadines",
+        "name": "Saint Vincent and the Grenadines",
         "countryCode": "VC",
         "capital": "Kingstown",
         "population": 110947,
-        "populationName": "Vincentais",
+        "populationName": "Saint Vincentian",
         "currency": "Eastern Caribbean dollar",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -3201,11 +3201,11 @@
         "flag": "https://flagcdn.com/w320/vc.png"
     },
     {
-        "name": "Bermudes",
+        "name": "Bermuda",
         "countryCode": "BM",
         "capital": "Hamilton",
         "population": 63903,
-        "populationName": "Bermudien",
+        "populationName": "Bermudian",
         "currency": "Bermudian dollar",
         "continent": "Americas",
         "subContinent": "North America",
@@ -3233,7 +3233,7 @@
         "flag": "https://flagcdn.com/w320/sc.png"
     },
     {
-        "name": "Territoire britannique de l'oc\u00e9an Indien",
+        "name": "British Indian Ocean Territory",
         "countryCode": "IO",
         "capital": "Diego Garcia",
         "population": 3000,
@@ -3252,7 +3252,7 @@
         "countryCode": "GT",
         "capital": "Guatemala City",
         "population": 16858333,
-        "populationName": "Guat\u00e9malt\u00e8que",
+        "populationName": "Guatemalan",
         "currency": "Guatemalan quetzal",
         "continent": "Americas",
         "subContinent": "Central America",
@@ -3263,11 +3263,11 @@
         "flag": "https://flagcdn.com/w320/gt.png"
     },
     {
-        "name": "\u00c9quateur",
+        "name": "Ecuador",
         "countryCode": "EC",
         "capital": "Quito",
         "population": 17643060,
-        "populationName": "\u00c9quatorien",
+        "populationName": "Ecuadorean",
         "currency": "United States dollar",
         "continent": "Americas",
         "subContinent": "South America",
@@ -3282,7 +3282,7 @@
         "countryCode": "MQ",
         "capital": "Fort-de-France",
         "population": 378243,
-        "populationName": "Martiniquais",
+        "populationName": "Martinican",
         "currency": "Euro",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -3293,11 +3293,11 @@
         "flag": "https://flagcdn.com/w320/mq.png"
     },
     {
-        "name": "Tadjikistan",
+        "name": "Tajikistan",
         "countryCode": "TJ",
         "capital": "Dushanbe",
         "population": 9537642,
-        "populationName": "Tadjike",
+        "populationName": "Tadzhik",
         "currency": "Tajikistani somoni",
         "continent": "Asia",
         "subContinent": "Central Asia",
@@ -3309,11 +3309,11 @@
         "flag": "https://flagcdn.com/w320/tj.png"
     },
     {
-        "name": "Malte",
+        "name": "Malta",
         "countryCode": "MT",
         "capital": "Valletta",
         "population": 525285,
-        "populationName": "Maltais",
+        "populationName": "Maltese",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Southern Europe",
@@ -3325,11 +3325,11 @@
         "flag": "https://flagcdn.com/w320/mt.png"
     },
     {
-        "name": "Gambie",
+        "name": "Gambia",
         "countryCode": "GM",
         "capital": "Banjul",
         "population": 2416664,
-        "populationName": "Gambien",
+        "populationName": "Gambian",
         "currency": "dalasi",
         "continent": "Africa",
         "subContinent": "Western Africa",
@@ -3340,11 +3340,11 @@
         "flag": "https://flagcdn.com/w320/gm.png"
     },
     {
-        "name": "Nig\u00e9ria",
+        "name": "Nigeria",
         "countryCode": "NG",
         "capital": "Abuja",
         "population": 206139587,
-        "populationName": "Nig\u00e9rian",
+        "populationName": "Nigerian",
         "currency": "Nigerian naira",
         "continent": "Africa",
         "subContinent": "Western Africa",
@@ -3359,7 +3359,7 @@
         "countryCode": "BS",
         "capital": "Nassau",
         "population": 393248,
-        "populationName": "Bahamien",
+        "populationName": "Bahamian",
         "currency": "Bahamian dollar",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -3386,11 +3386,11 @@
         "flag": "https://flagcdn.com/w320/xk.png"
     },
     {
-        "name": "Kowe\u00eft",
+        "name": "Kuwait",
         "countryCode": "KW",
         "capital": "Kuwait City",
         "population": 4270563,
-        "populationName": "Kowe\u00eftien",
+        "populationName": "Kuwaiti",
         "currency": "Kuwaiti dinar",
         "continent": "Asia",
         "subContinent": "Western Asia",
@@ -3405,7 +3405,7 @@
         "countryCode": "MV",
         "capital": "Mal\u00e9",
         "population": 540542,
-        "populationName": "Maldivien",
+        "populationName": "Maldivan",
         "currency": "Maldivian rufiyaa",
         "continent": "Asia",
         "subContinent": "Southern Asia",
@@ -3416,11 +3416,11 @@
         "flag": "https://flagcdn.com/w320/mv.png"
     },
     {
-        "name": "Soudan du Sud",
+        "name": "South Sudan",
         "countryCode": "SS",
         "capital": "Juba",
         "population": 11193729,
-        "populationName": "Sud-Soudanais",
+        "populationName": "South Sudanese",
         "currency": "South Sudanese pound",
         "continent": "Africa",
         "subContinent": "Middle Africa",
@@ -3435,7 +3435,7 @@
         "countryCode": "IR",
         "capital": "Tehran",
         "population": 83992953,
-        "populationName": "Iranien",
+        "populationName": "Iranian",
         "currency": "Iranian rial",
         "continent": "Asia",
         "subContinent": "Southern Asia",
@@ -3446,11 +3446,11 @@
         "flag": "https://flagcdn.com/w320/ir.png"
     },
     {
-        "name": "Albanie",
+        "name": "Albania",
         "countryCode": "AL",
         "capital": "Tirana",
         "population": 2837743,
-        "populationName": "Albanais",
+        "populationName": "Albanian",
         "currency": "Albanian lek",
         "continent": "Europe",
         "subContinent": "Southeast Europe",
@@ -3461,11 +3461,11 @@
         "flag": "https://flagcdn.com/w320/al.png"
     },
     {
-        "name": "Br\u00e9sil",
+        "name": "Brazil",
         "countryCode": "BR",
         "capital": "Bras\u00edlia",
         "population": 212559409,
-        "populationName": "Br\u00e9silien",
+        "populationName": "Brazilian",
         "currency": "Brazilian real",
         "continent": "Americas",
         "subContinent": "South America",
@@ -3476,11 +3476,11 @@
         "flag": "https://flagcdn.com/w320/br.png"
     },
     {
-        "name": "Serbie",
+        "name": "Serbia",
         "countryCode": "RS",
         "capital": "Belgrade",
         "population": 6908224,
-        "populationName": "Serbe",
+        "populationName": "Serbian",
         "currency": "Serbian dinar",
         "continent": "Europe",
         "subContinent": "Southeast Europe",
@@ -3495,7 +3495,7 @@
         "countryCode": "BZ",
         "capital": "Belmopan",
         "population": 397621,
-        "populationName": "B\u00e9lizien",
+        "populationName": "Belizean",
         "currency": "Belize dollar",
         "continent": "Americas",
         "subContinent": "Central America",
@@ -3508,11 +3508,11 @@
         "flag": "https://flagcdn.com/w320/bz.png"
     },
     {
-        "name": "Birmanie",
+        "name": "Myanmar",
         "countryCode": "MM",
         "capital": "Naypyidaw",
         "population": 54409794,
-        "populationName": "Birman",
+        "populationName": "Burmese",
         "currency": "Burmese kyat",
         "continent": "Asia",
         "subContinent": "South-Eastern Asia",
@@ -3523,11 +3523,11 @@
         "flag": "https://flagcdn.com/w320/mm.png"
     },
     {
-        "name": "Bhoutan",
+        "name": "Bhutan",
         "countryCode": "BT",
         "capital": "Thimphu",
         "population": 771612,
-        "populationName": "Bhoutanais",
+        "populationName": "Bhutanese",
         "currency": "Bhutanese ngultrum",
         "continent": "Asia",
         "subContinent": "Southern Asia",
@@ -3542,7 +3542,7 @@
         "countryCode": "VE",
         "capital": "Caracas",
         "population": 28435943,
-        "populationName": "V\u00e9n\u00e9zu\u00e9lien",
+        "populationName": "Venezuelan",
         "currency": "Venezuelan bol\u00edvar soberano",
         "continent": "Americas",
         "subContinent": "South America",
@@ -3557,7 +3557,7 @@
         "countryCode": "LR",
         "capital": "Monrovia",
         "population": 5057677,
-        "populationName": "Lib\u00e9rien",
+        "populationName": "Liberian",
         "currency": "Liberian dollar",
         "continent": "Africa",
         "subContinent": "Western Africa",
@@ -3568,11 +3568,11 @@
         "flag": "https://flagcdn.com/w320/lr.png"
     },
     {
-        "name": "Jama\u00efque",
+        "name": "Jamaica",
         "countryCode": "JM",
         "capital": "Kingston",
         "population": 2961161,
-        "populationName": "Jama\u00efcain",
+        "populationName": "Jamaican",
         "currency": "Jamaican dollar",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -3584,11 +3584,11 @@
         "flag": "https://flagcdn.com/w320/jm.png"
     },
     {
-        "name": "Pologne",
+        "name": "Poland",
         "countryCode": "PL",
         "capital": "Warsaw",
         "population": 37950802,
-        "populationName": "Polonais",
+        "populationName": "Polish",
         "currency": "Polish z\u0142oty",
         "continent": "Europe",
         "subContinent": "Central Europe",
@@ -3599,11 +3599,11 @@
         "flag": "https://flagcdn.com/w320/pl.png"
     },
     {
-        "name": "\u00celes Ca\u00efmans",
+        "name": "Cayman Islands",
         "countryCode": "KY",
         "capital": "George Town",
         "population": 65720,
-        "populationName": "Ca\u00efmanien",
+        "populationName": "Caymanian",
         "currency": "Cayman Islands dollar",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -3618,7 +3618,7 @@
         "countryCode": "BN",
         "capital": "Bandar Seri Begawan",
         "population": 437483,
-        "populationName": "Brun\u00e9ien",
+        "populationName": "Bruneian",
         "currency": "Brunei dollar",
         "continent": "Asia",
         "subContinent": "South-Eastern Asia",
@@ -3629,11 +3629,11 @@
         "flag": "https://flagcdn.com/w320/bn.png"
     },
     {
-        "name": "Comores",
+        "name": "Comoros",
         "countryCode": "KM",
         "capital": "Moroni",
         "population": 869595,
-        "populationName": "Comorien",
+        "populationName": "Comoran",
         "currency": "Comorian franc",
         "continent": "Africa",
         "subContinent": "Eastern Africa",
@@ -3667,7 +3667,7 @@
         "countryCode": "TO",
         "capital": "Nuku'alofa",
         "population": 105697,
-        "populationName": "Tonguien",
+        "populationName": "Tongan",
         "currency": "Tongan pa\u02bbanga",
         "continent": "Oceania",
         "subContinent": "Polynesia",
@@ -3683,7 +3683,7 @@
         "countryCode": "KI",
         "capital": "South Tarawa",
         "population": 119446,
-        "populationName": "Kiribatien",
+        "populationName": "I-Kiribati",
         "currency": "Australian dollar",
         "continent": "Oceania",
         "subContinent": "Micronesia",
@@ -3699,7 +3699,7 @@
         "countryCode": "GH",
         "capital": "Accra",
         "population": 31072945,
-        "populationName": "Ghan\u00e9en",
+        "populationName": "Ghanaian",
         "currency": "Ghanaian cedi",
         "continent": "Africa",
         "subContinent": "Western Africa",
@@ -3710,11 +3710,11 @@
         "flag": "https://flagcdn.com/w320/gh.png"
     },
     {
-        "name": "Tchad",
+        "name": "Chad",
         "countryCode": "TD",
         "capital": "N'Djamena",
         "population": 16425859,
-        "populationName": "Tchadien",
+        "populationName": "Chadian",
         "currency": "Central African CFA franc",
         "continent": "Africa",
         "subContinent": "Middle Africa",
@@ -3730,7 +3730,7 @@
         "countryCode": "ZW",
         "capital": "Harare",
         "population": 14862927,
-        "populationName": "Zimbabw\u00e9en",
+        "populationName": "Zimbabwean",
         "currency": "Zimbabwean dollar",
         "continent": "Africa",
         "subContinent": "Southern Africa",
@@ -3755,11 +3755,11 @@
         "flag": "https://flagcdn.com/w320/zw.png"
     },
     {
-        "name": "Saint-Martin",
+        "name": "Saint Martin",
         "countryCode": "MF",
         "capital": "Marigot",
         "population": 38659,
-        "populationName": "Saint-Martinois",
+        "populationName": "Saint Martin Islander",
         "currency": "Euro",
         "continent": "Americas",
         "subContinent": "Caribbean",
@@ -3770,11 +3770,11 @@
         "flag": "https://flagcdn.com/w320/mf.png"
     },
     {
-        "name": "Mongolie",
+        "name": "Mongolia",
         "countryCode": "MN",
         "capital": "Ulan Bator",
         "population": 3278292,
-        "populationName": "Mongol",
+        "populationName": "Mongolian",
         "currency": "Mongolian t\u00f6gr\u00f6g",
         "continent": "Asia",
         "subContinent": "Eastern Asia",
@@ -3789,7 +3789,7 @@
         "countryCode": "PT",
         "capital": "Lisbon",
         "population": 10305564,
-        "populationName": "Portugais",
+        "populationName": "Portuguese",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Southern Europe",
@@ -3800,11 +3800,11 @@
         "flag": "https://flagcdn.com/w320/pt.png"
     },
     {
-        "name": "Samoa am\u00e9ricaines",
+        "name": "American Samoa",
         "countryCode": "AS",
         "capital": "Pago Pago",
         "population": 55197,
-        "populationName": "Samoan",
+        "populationName": "American Samoan",
         "currency": "United States dollar",
         "continent": "Oceania",
         "subContinent": "Polynesia",
@@ -3816,11 +3816,11 @@
         "flag": "https://flagcdn.com/w320/as.png"
     },
     {
-        "name": "R\u00e9publique du Congo",
+        "name": "Republic of the Congo",
         "countryCode": "CG",
         "capital": "Brazzaville",
         "population": 5657000,
-        "populationName": "Congolais",
+        "populationName": "Congolese",
         "currency": "Central African CFA franc",
         "continent": "Africa",
         "subContinent": "Middle Africa",
@@ -3833,11 +3833,11 @@
         "flag": "https://flagcdn.com/w320/cg.png"
     },
     {
-        "name": "Belgique",
+        "name": "Belgium",
         "countryCode": "BE",
         "capital": "Brussels",
         "population": 11555997,
-        "populationName": "Belge",
+        "populationName": "Belgian",
         "currency": "Euro",
         "continent": "Europe",
         "subContinent": "Western Europe",
@@ -3850,11 +3850,11 @@
         "flag": "https://flagcdn.com/w320/be.png"
     },
     {
-        "name": "Isra\u00ebl",
+        "name": "Israel",
         "countryCode": "IL",
         "capital": "Jerusalem",
         "population": 9216900,
-        "populationName": "Isra\u00e9lien",
+        "populationName": "Israeli",
         "currency": "Israeli new shekel",
         "continent": "Asia",
         "subContinent": "Western Asia",
@@ -3866,11 +3866,11 @@
         "flag": "https://flagcdn.com/w320/il.png"
     },
     {
-        "name": "Nouvelle-Z\u00e9lande",
+        "name": "New Zealand",
         "countryCode": "NZ",
         "capital": "Wellington",
         "population": 5084300,
-        "populationName": "Neo-Z\u00e9landais",
+        "populationName": "New Zealander",
         "currency": "New Zealand dollar",
         "continent": "Oceania",
         "subContinent": "Australia and New Zealand",
@@ -3887,7 +3887,7 @@
         "countryCode": "NI",
         "capital": "Managua",
         "population": 6624554,
-        "populationName": "Nicaraguayen",
+        "populationName": "Nicaraguan",
         "currency": "Nicaraguan c\u00f3rdoba",
         "continent": "Americas",
         "subContinent": "Central America",
@@ -3902,7 +3902,7 @@
         "countryCode": "AI",
         "capital": "The Valley",
         "population": 13452,
-        "populationName": "Anguillan",
+        "populationName": "Anguillian",
         "currency": "Eastern Caribbean dollar",
         "continent": "Americas",
         "subContinent": "Caribbean",
