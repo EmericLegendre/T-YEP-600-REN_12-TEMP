@@ -27,6 +27,7 @@ const login = () => {
           }
 
         const response = await axios.post('http://10.19.255.180:5000/api/users/auth', dataJson );
+        
         console.log("Response from server:", response.data);
         const { apiToken } = response.data;
         await AsyncStorage.setItem('token', apiToken);

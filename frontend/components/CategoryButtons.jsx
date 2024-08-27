@@ -12,7 +12,7 @@ const CategoryButtons = ({ onCategorySelect }) => {
     const handleSelectCategory = (index, category) => {
       setActiveIndex(index);
       if (onCategorySelect) {
-          onCategorySelect(category);  // Passer la catégorie sélectionnée
+          onCategorySelect(category);
       }
   }
 
