@@ -27,7 +27,6 @@ const Explore = () => {
         };
 
         const response = await axios.get('http://10.19.255.221:5000/api/country/get', config);
-
         setCountriesData(response.data);
         setFilteredData(response.data); 
 

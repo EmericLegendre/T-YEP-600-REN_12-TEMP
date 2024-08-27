@@ -13,11 +13,11 @@ def fetch_and_save_data():
 
     countries_info = []
     for country in data:
-        country_name = country['name'].get('nativeName', {}).get('fra', {}).get('common', country['translations'].get('fra', {}).get('common', ''))
+        country_name = country['name'].get('common', country['translations'].get('eng', {}).get('common', ''))
         country_code = country["cca2"]
         country_capital = country.get('capital', [''])[0]
         country_population = country.get('population', '')
-        country_demonyms = country.get('demonyms', {}).get('fra', {}).get('m', '') or country.get('demonyms', {}).get('eng', {}).get('m', '')
+        country_demonyms = country.get('demonyms', {}).get('eng', {}).get('m', '') or country.get('demonyms', {}).get('eng', {}).get('m', '')
         country_currency = next(iter([currency_info['name'] for currency_info in country.get('currencies', {}).values()]), '')
         country_region = country.get('region', '')
         country_subregion = country.get('subregion', '')
