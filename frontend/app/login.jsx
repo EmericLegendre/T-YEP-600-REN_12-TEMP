@@ -31,10 +31,9 @@ const login = () => {
 
         const response = await axios.post('http://10.19.255.212:5000/api/users/auth', dataJson );
         console.log("Response from server:", response.data);
-
         const { apiToken } = response.data;
+
         await AsyncStorage.setItem('token', apiToken);
-        global.apiToken = userId;
 
         console.log("Login successful, navigating to home...");
         router.push('/home');

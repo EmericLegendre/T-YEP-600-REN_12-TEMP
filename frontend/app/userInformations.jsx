@@ -4,8 +4,10 @@ import { Stack } from 'expo-router';
 import { Entypo } from '@expo/vector-icons';
 import Colors from '../constants/Colors';
 import axios from 'axios'
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const UserInformations = ({userId}) => {
+
+const UserInformations = () => {
   const initialUserData = {
     firstName: '',
     lastName: '',
@@ -18,7 +20,6 @@ const UserInformations = ({userId}) => {
   const [userData, setUserData] = useState(initialUserData);
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(true);
-
   const [isEditing, setIsEditing] = useState({
     firstName: false,
     lastName: false,
@@ -28,61 +29,87 @@ const UserInformations = ({userId}) => {
     password: false,
   });
   useEffect(() => {
-      axios.get('http://10.0.2.2:5000/api/users/get/${UserId}', userData)
-        .then(response => {
+      const fetchUserData = async () => {
+        try {
+          const token = await AsyncStorage.getItem('token');
+          if (!token) {
+            setError('No token found, please log in.');
+            setIsLoading(false);
+            return;
+          }
+
+          const response = await axios.get(`http://10.19.255.212:5000/api/users/get/${userId}`, {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          });
+
           setUserData(response.data);
+        } catch (error) {
+          setError('Failed to fetch user data.');
+        } finally {
           setIsLoading(false);
-        })
-        .catch(error => {
-          setError(error);
-          setIsLoading(false);
+        }
+      };
+
+      fetchUserData();
+    }, [userId]);
+
+  const handleSave = async () => {
+      try {
+        const token = await AsyncStorage.getItem('token');
+        if (!token) {
+          setError('No token found, please log in.');
+          return;
+        }
+
+        await axios.put(`http://10.19.255.212:5000/api/users/update/${userId}`, userData, {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
         });
-    }, []);
 
-  const handleSave = () => {
-    axios.put('http://10.0.2.2:5000/api/users/update/${UserId}', userData)
-    console.log("Saved user data: ", userData);
-    setIsEditing({
-      firstName: false,
-      lastName: false,
-      email: false,
-      city: false,
-      country: false,
-      password: false,
-    });
-  };
-
-  const handleEdit = (field) => {
-    setIsEditing({ ...isEditing, [field]: true });
-  };
-
-  const handleChangeText = (text, field) => {
-    setUserData({ ...userData, [field]: text });
-  };
-
-  const renderValueOrInput = (field) => {
-    if (isEditing[field]) {
-      return (
-        <TextInput
-          style={styles.input}
-          value={userData[field]}
-          onChangeText={(text) => handleChangeText(text, field)}
-          onBlur={() => setIsEditing({ ...isEditing, [field]: false })}
-          autoFocus={true}
-        />
-      );
-    } else {
-      return (
-        <TouchableOpacity onPress={() => handleEdit(field)}>
-          <Text style={styles.value}>{userData[field]}</Text>
-        </TouchableOpacity>
-      );
-    }
-
-    const handlePassword = () => {
-
+        console.log("Saved user data: ", userData);
+        setIsEditing({
+          firstName: false,
+          lastName: false,
+          email: false,
+          city: false,
+          country: false,
+          password: false,
+        });
+      } catch (error) {
+        setError('Failed to save user data.');
+      }
     };
-  };
+
+    const handleEdit = (field) => {
+      setIsEditing({ ...isEditing, [field]: true });
+    };
+
+    const handleChangeText = (text, field) => {
+      setUserData({ ...userData, [field]: text });
+    };
+
+    const renderValueOrInput = (field) => {
+      if (isEditing[field]) {
+        return (
+          <TextInput
+            style={styles.input}
+            value={userData[field]}
+            onChangeText={(text) => handleChangeText(text, field)}
+            onBlur={() => setIsEditing({ ...isEditing, [field]: false })}
+            autoFocus={true}
+          />
+        );
+      } else {
+        return (
+          <TouchableOpacity onPress={() => handleEdit(field)}>
+            <Text style={styles.value}>{userData[field]}</Text>
+          </TouchableOpacity>
+        );
+      }
+    };
 
   return (
     <>
