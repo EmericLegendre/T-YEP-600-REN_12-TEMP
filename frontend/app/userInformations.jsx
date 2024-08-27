@@ -132,7 +132,7 @@ const UserInformations = () => {
     <>
       <Stack.Screen
         options={{
-          headerTitle: 'Mes informations',
+          headerTitle: 'My information',
           headerStyle: {
             backgroundColor: Colors.grey,
           },
