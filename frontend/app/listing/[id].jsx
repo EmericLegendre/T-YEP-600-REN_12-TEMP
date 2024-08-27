@@ -4,6 +4,7 @@ import { useLocalSearchParams, Stack } from 'expo-router';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import CategoryButtons from '../../components/CategoryButtons';
+import Colors from '../../constants/Colors'
 
 const { width } = Dimensions.get('window');
 const IMG_HEIGHT = 300;
@@ -182,6 +183,7 @@ const CountryDetails = () => {
                     </View>
                 </View>
                 <CategoryButtons onCategorySelect={handleCategorySelect} />
+                <View style={styles.separator} />
                 {renderCategoryInfo()}
             </View>
         </>
@@ -194,6 +196,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'flex-start',
+        backgroundColor : Colors.white
     },
     imageContainer: {
         position: 'relative',
@@ -216,12 +219,17 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: 'white'
     },
+    separator: {
+        height: 2,
+        backgroundColor: Colors.lightGrey,
+        marginTop: 20,
+    },
     infoContainer: {
       padding: 20,
       borderRadius: 8,
       marginHorizontal: 15,
       marginBottom: 20,
-      marginTop: 30,
+      marginTop: 20,
   },
   infoRow: {
       flexDirection: 'row',

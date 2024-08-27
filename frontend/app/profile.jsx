@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TouchableOpacity, Pressable } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { Stack, useRouter } from 'expo-router';
 import React from 'react';
 import Colors from '../constants/Colors';
@@ -13,28 +13,28 @@ const Profile = () => {
           apiToken: 'token'
       }
   };
-     const logOut = () => {
-         try {
-             const { apiToken } = response.data;
 
-             AsyncStorage.removeItem(apiToken);
-             router.push('/register');
-             console.log('Token removed successfully');
-         } catch (error) {
-             console.error('Failed to remove the token:', error);
-         }
-     };
+  const logOut = () => {
+    try {
+      const { apiToken } = response.data;
 
+      AsyncStorage.removeItem(apiToken);
+      router.push('/register');
+      console.log('Token removed successfully');
+    } catch (error) {
+      console.error('Failed to remove the token:', error);
+    }
+  };
 
   return (
     <View style={styles.container}>
       <Stack.Screen options={{
         headerTitle: '',
         headerStyle: {
-          backgroundColor: Colors.grey,
+          backgroundColor: Colors.secondColor,
         },
         headerRight: () => (
-          <Text style={styles.headerTitle}>Mon profil</Text>
+          <Text style={styles.headerTitle}>Profile</Text>
         ),
         headerTintColor: Colors.white
       }}
@@ -45,32 +45,32 @@ const Profile = () => {
           style={styles.listItem} 
           onPress={() => router.push('/userInformations')}
         >
-          <Text style={styles.listItemText}>Mes informations</Text>
+          <Text style={styles.listItemText}>Informations</Text>
           <Ionicons name="chevron-forward" size={20} color={Colors.black} />
         </TouchableOpacity>
         <TouchableOpacity 
           style={styles.listItem} 
           onPress={() => router.push('/userStatistics')}
         >
-          <Text style={styles.listItemText}>Mes statistiques</Text>
+          <Text style={styles.listItemText}>Statistics</Text>
           <Ionicons name="chevron-forward" size={20} color={Colors.black} />
         </TouchableOpacity>
         <TouchableOpacity 
           style={styles.listItem} 
           onPress={() => router.push('/userHistory')}
         >
-          <Text style={styles.listItemText}>Mon historique</Text>
+          <Text style={styles.listItemText}>History</Text>
           <Ionicons name="chevron-forward" size={20} color={Colors.black} />
         </TouchableOpacity>
         <TouchableOpacity 
           style={styles.listItem} 
           onPress={() => router.push('/userTrips')}
         >
-          <Text style={styles.listItemText}>Mes voyages</Text>
+          <Text style={styles.listItemText}>Trips</Text>
           <Ionicons name="chevron-forward" size={20} color={Colors.black} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.listItem} onPress={logOut}>
-            <Text style={styles.listItemText}>Log out</Text>
+          <Text style={styles.listItemText}>Logout</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -99,9 +99,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: 25,
     paddingHorizontal: 10,
-    backgroundColor: Colors.lightGrey,
+    backgroundColor: Colors.white,
     borderBottomWidth: 1,
-    borderBottomColor: Colors.grey,
+    borderBottomColor: Colors.lightGrey,
   },
   listItemText: {
     fontSize: 18,
