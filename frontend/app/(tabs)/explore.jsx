@@ -26,12 +26,12 @@ const Explore = () => {
           headers: { Authorization: `Bearer ${token}` }
         };
 
-        const response = await axios.get('http://10.19.255.211:5000/api/country/get', config);
+        const response = await axios.get('http://10.19.255.221:5000/api/country/get', config);
 
         setCountriesData(response.data);
         setFilteredData(response.data); 
 
-        const languagesResponse = await axios.get('http://10.19.255.211:5000/api/countryInfos/get/languages', config);
+        const languagesResponse = await axios.get('http://10.19.255.221:5000/api/countryInfos/get/languages', config);
 
         const languagesByCountry = {};
         languagesResponse.data.forEach(item => {
@@ -42,8 +42,6 @@ const Explore = () => {
         });
 
         setLanguagesData(languagesByCountry);
-
-        // console.log(languagesData);
 
       } catch (error) {
         if (error.response) {
@@ -74,11 +72,11 @@ const Explore = () => {
   const handleFilter = ({ continent, language }) => {
     let filtered = countriesData;
 
-    if (continent !== 'Tous') {
+    if (continent !== 'All') {
       filtered = filtered.filter(country => country.continent === continent);
     }
 
-    if (language !== 'Tous') {
+    if (language !== 'All') {
       filtered = filtered.filter(country => 
         languagesData[country.name] && languagesData[country.name].includes(language)
       );
