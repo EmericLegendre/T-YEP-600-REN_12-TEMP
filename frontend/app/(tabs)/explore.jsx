@@ -6,6 +6,7 @@ import { Ionicons } from '@expo/vector-icons';
 import Listings from '../../components/Listings';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import FilterModal from '../../components/FilterModal';
 
 const Explore = () => {
   const router = useRouter();
@@ -13,6 +14,8 @@ const Explore = () => {
   const [countriesData, setCountriesData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredData, setFilteredData] = useState([]);
+  const [modalVisible, setModalVisible] = useState(false);
+  const [languagesData, setLanguagesData] = useState({});
 
   useEffect(() => {
     const fetchCountriesData = async () => {
@@ -27,6 +30,20 @@ const Explore = () => {
 
         setCountriesData(response.data);
         setFilteredData(response.data); 
+
+        const languagesResponse = await axios.get('http://10.19.255.211:5000/api/countryInfos/get/languages', config);
+
+        const languagesByCountry = {};
+        languagesResponse.data.forEach(item => {
+          if (!languagesByCountry[item.country]) {
+            languagesByCountry[item.country] = [];
+          }
+          languagesByCountry[item.country].push(item.content);
+        });
+
+        setLanguagesData(languagesByCountry);
+
+        // console.log(languagesData);
 
       } catch (error) {
         if (error.response) {
@@ -52,6 +69,22 @@ const Explore = () => {
     } else {
       setFilteredData(countriesData);
     }
+  };
+
+  const handleFilter = ({ continent, language }) => {
+    let filtered = countriesData;
+
+    if (continent !== 'Tous') {
+      filtered = filtered.filter(country => country.continent === continent);
+    }
+
+    if (language !== 'Tous') {
+      filtered = filtered.filter(country => 
+        languagesData[country.name] && languagesData[country.name].includes(language)
+      );
+    }
+
+    setFilteredData(filtered);
   };
 
   return (
@@ -88,12 +121,25 @@ const Explore = () => {
               onChangeText={handleSearch}
             />
           </View>
-          <TouchableOpacity onPress={() => {}} style={styles.filterBtn}>
-            <Ionicons name="options" size={30} />
+          <TouchableOpacity 
+            onPress={() => setModalVisible(true)} 
+            style={styles.filterBtn}
+          >
+            <Ionicons name="options" size={30} color={Colors.grey} />
           </TouchableOpacity>
         </View>
 
         <Listings listings={filteredData} />
+
+        <FilterModal
+          visible={modalVisible}
+          onClose={() => setModalVisible(false)}
+          onSelect={(continent) => {
+            handleFilter(continent);
+            setModalVisible(false);
+          }}
+        />
+
       </View>
     </>
   );
