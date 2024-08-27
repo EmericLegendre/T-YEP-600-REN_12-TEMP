@@ -8,13 +8,13 @@ const Layout = () => {
   return (
     <Tabs screenOptions={{
       tabBarStyle: {
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.white,
         borderTopWidth: 0,
         padding: 0,
         height: 60
       },
       tabBarActiveTintColor: Colors.primaryColor,
-      tabBarInactiveTintColor: Colors.white,
+      tabBarInactiveTintColor: Colors.black,
       tabBarLabelStyle: {
         fontSize: 14,
         marginBottom: 5
