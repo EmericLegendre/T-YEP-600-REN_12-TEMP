@@ -17,6 +17,7 @@ const UserInformations = () => {
     password: '',
   };
 
+
   const [userData, setUserData] = useState(initialUserData);
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(true);
@@ -31,11 +32,20 @@ const UserInformations = () => {
   useEffect(() => {
       const fetchUserData = async () => {
         try {
+
           const token = await AsyncStorage.getItem('token');
+          const userId = await AsyncStorage.getItem('userId');
+
           if (!token) {
-            setError('No token found, please log in.');
-            setIsLoading(false);
-            return;
+              setError('No token found, please log in.');
+              setIsLoading(false);
+              return;
+          }
+
+          if (!userId) {
+              setError('No user Id found, please log in.');
+              setIsLoading(false);
+              return;
           }
 
           const response = await axios.get(`http://10.19.255.212:5000/api/users/get/${userId}`, {
@@ -53,14 +63,21 @@ const UserInformations = () => {
       };
 
       fetchUserData();
-    }, [userId]);
+    },[]);
 
   const handleSave = async () => {
       try {
         const token = await AsyncStorage.getItem('token');
+        const userId = await AsyncStorage.getItem('userId');
+
         if (!token) {
           setError('No token found, please log in.');
           return;
+        }
+
+        if (!userId) {
+            setError('No user ID found, unable to update.');
+            return;
         }
 
         await axios.put(`http://10.19.255.212:5000/api/users/update/${userId}`, userData, {
@@ -127,10 +144,10 @@ const UserInformations = () => {
         <View style={styles.section}>
           <Entypo name="info" size={30} color={Colors.black} style={styles.icon} />
           <View style={styles.infoContainer}>
-            <Text style={styles.label}>Prénom</Text>
+            <Text style={styles.label}>Firstname</Text>
             {renderValueOrInput('firstName')}
 
-            <Text style={styles.label}>Nom</Text>
+            <Text style={styles.label}>Lastname</Text>
             {renderValueOrInput('lastName')}
           </View>
         </View>
@@ -138,7 +155,7 @@ const UserInformations = () => {
         <View style={styles.section}>
           <Entypo name="mail" size={30} color={Colors.black} style={styles.icon} />
           <View style={styles.infoContainer}>
-            <Text style={styles.label}>Email</Text>
+            <Text style={styles.label}>Email address</Text>
             {renderValueOrInput('email')}
           </View>
         </View>
@@ -146,10 +163,10 @@ const UserInformations = () => {
         <View style={styles.section}>
           <Entypo name="home" size={30} color={Colors.black} style={styles.icon} />
           <View style={styles.infoContainer}>
-            <Text style={styles.label}>Ville</Text>
+            <Text style={styles.label}>City</Text>
             {renderValueOrInput('city')}
 
-            <Text style={styles.label}>Pays</Text>
+            <Text style={styles.label}>Country</Text>
             {renderValueOrInput('country')}
           </View>
         </View>
@@ -157,13 +174,13 @@ const UserInformations = () => {
         <View style={styles.section}>
           <Entypo name="lock" size={30} color={Colors.black} style={styles.icon} />
           <View style={styles.infoContainer}>
-            <Text style={styles.label}>Mot de passe</Text>
+            <Text style={styles.label}>Password</Text>
             {renderValueOrInput('password')}
           </View>
         </View>
 
         <View style={styles.saveButtonContainer}>
-          <Button title="Enregistrer les modifications" onPress={handleSave} />
+          <Button title="Save" onPress={handleSave} />
         </View>
       </ScrollView>
     </>
