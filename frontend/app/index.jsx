@@ -8,7 +8,7 @@ const StartPage = () => {
   const navigation = useNavigation();
   const router = useRouter();
 
-  global.apiToken = null;
+  global.userId = null;
 
   useEffect(() => {
     checkLoggedIn();
@@ -17,6 +17,7 @@ const StartPage = () => {
   const checkLoggedIn = async () => {
       try {
         const apiToken = await AsyncStorage.getItem('token');
+
 
         if (apiToken) {
           router.push('/home');
