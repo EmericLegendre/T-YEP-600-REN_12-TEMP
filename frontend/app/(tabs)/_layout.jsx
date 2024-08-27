@@ -6,7 +6,9 @@ import Colors from "../../constants/Colors"
 
 const Layout = () => {
   return (
-    <Tabs screenOptions={{
+    <Tabs 
+      initialRouteName="home"
+      screenOptions={{
       tabBarStyle: {
         backgroundColor: Colors.grey,
         borderTopWidth: 0,
