@@ -22,7 +22,8 @@ db.init_app(app)
 def insert_countries_to_db(countries):
     try:
         with open('image_links.json', 'r') as image_file:
-            image_links = json.load(image_file)
+            image_list = json.load(image_file)
+        image_links = {list(item.keys())[0]: list(item.values())[0] for item in image_list}
     except FileNotFoundError:
         print("Image links file not found.")
         return
@@ -43,7 +44,7 @@ def insert_countries_to_db(countries):
                 population_name=country_data['populationName'],
                 timezone=country_data['timezone'],
                 flag=country_data['flag'],
-                image = image_links.get(country_data['countryCode'], '')
+                image=image_links.get(country_data['countryCode'], None)
             )
             db.session.add(new_country)
             db.session.commit()
