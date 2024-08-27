@@ -16,19 +16,19 @@ const login = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleLogin = async () => {
-    if (!email || !password) {
-      setErrorMessage('Please fill in all fields.');
-      return;
-    }
-    console.log("coucou");
-    try {
-      const dataJson = {
-        email: email,
-        password: password
-      };
+      if (!email || !password) {
+            setErrorMessage('Please fill in all fields.');
+            return;
+      }
+      console.log("coucou")
+      try {
+          const dataJson = {
+              email: email,
+              password: password
+          }
 
         console.log("je suis dans le try");
-        const response = await axios.post('http://192.168.56.1:5000/api/users/auth', dataJson );
+        const response = await axios.post('http:///10.19.255.233:5000/api/users/auth', dataJson );
         console.log("Response from server:", response.data);
         const { apiToken } = response.data;
         await AsyncStorage.setItem('token', apiToken);
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
       alignSelf: 'stretch',
       alignItems: 'center',
       padding: 20,
-      backgroundColor: '#dda15e',
+      backgroundColor: '#FD00CF',
       marginTop: 30,
   },
   signUpButton: {

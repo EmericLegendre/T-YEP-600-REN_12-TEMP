@@ -1,10 +1,10 @@
 const informationCategories = [
     {
-        title: "Général",
+        title: "General",
         iconName: "info"
     },
     {
-        title: "Cuisine",
+        title: "Cooking",
         iconName: "bowl"
     },
     {
@@ -12,11 +12,11 @@ const informationCategories = [
         iconName: "book"
     },
     {
-        title: "Santé",
+        title: "Health",
         iconName: "heart"
     },
     {
-        title: "Loi",
+        title: "Law",
         iconName: "text-document-inverted"
     },
 ]
