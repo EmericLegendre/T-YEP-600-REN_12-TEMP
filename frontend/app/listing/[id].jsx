@@ -9,12 +9,12 @@ const { width } = Dimensions.get('window');
 const IMG_HEIGHT = 300;
 
 const formatPopulation = (population) => {
-    if (!population) return 'N/A habitants';
+    if (!population) return 'N/A inhabitants';
 
     const populationString = population.toString();
     const formatted = populationString.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
 
-    return `${formatted} habitants`;
+    return `${formatted} inhabitants`;
 };
 
 const CountryDetails = () => {
@@ -23,7 +23,7 @@ const CountryDetails = () => {
     const [languages, setLanguages] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const [selectedCategory, setSelectedCategory] = useState('Général');
+    const [selectedCategory, setSelectedCategory] = useState('General');
     const [categoryInfo, setCategoryInfo] = useState(null);
 
     useEffect(() => {
@@ -33,32 +33,29 @@ const CountryDetails = () => {
     
                 if (!token) throw new Error('Token non trouvé');
     
-                // Requête pour les détails généraux du pays
-                const response = await axios.get(`http://10.19.255.211:5000/api/country/get/${id}`, {
+                const response = await axios.get(`http://10.19.255.221:5000/api/country/get/${id}`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 setListing(response.data);
     
-                // Requête pour les langues
-                const responseLanguages = await axios.get(`http://10.19.255.211:5000/api/countryInfos/get/country/${id}/category/LANGUAGE`, {
+                const responseLanguages = await axios.get(`http://10.19.255.221:5000/api/countryInfos/get/country/${id}/category/LANGUAGE`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 const extractedLanguages = responseLanguages.data.map(lang => lang.content);
                 setLanguages(extractedLanguages);
     
-                // Requête pour les informations de la catégorie sélectionnée
                 const categoryMappings = {
-                    'Général': '',
-                    'Cuisine': 'COOKING',
+                    'General': '',
+                    'Cooking': 'COOKING',
                     'Culture': 'CULTURE',
-                    'Santé': 'HEALTH',
-                    'Loi': 'LAW'
+                    'Health': 'HEALTH',
+                    'Law': 'LAW'
                 };
     
                 const categoryCode = categoryMappings[selectedCategory];
     
-                if (categoryCode && selectedCategory !== 'Général') {
-                    const responseCategory = await axios.get(`http://10.19.255.211:5000/api/countryInfos/get/country/${id}/category/${categoryCode}`, {
+                if (categoryCode && selectedCategory !== 'General') {
+                    const responseCategory = await axios.get(`http://10.19.255.221:5000/api/countryInfos/get/country/${id}/category/${categoryCode}`, {
                         headers: { Authorization: `Bearer ${token}` }
                     });
                     setCategoryInfo(responseCategory.data);
@@ -75,7 +72,7 @@ const CountryDetails = () => {
         };
     
         fetchCountryData();
-    }, [id, selectedCategory]);  // Ajout de selectedCategory dans les dépendances
+    }, [id, selectedCategory]);
     
 
     const handleCategorySelect = (category) => {
@@ -101,17 +98,17 @@ const CountryDetails = () => {
     if (!listing) {
         return (
             <View style={styles.container}>
-                <Text style={{ color: 'red', fontSize: 18 }}>Pays non trouvé</Text>
+                <Text style={{ color: 'red', fontSize: 18 }}>Country not found</Text>
             </View>
         );
     }
 
     const renderCategoryInfo = () => {
-        if (selectedCategory === 'Général') {
+        if (selectedCategory === 'General') {
             return (
                 <View style={styles.infoContainer}>
                     <View style={styles.infoRow}>
-                        <Text style={styles.infoTitle}>Capitale :</Text>
+                        <Text style={styles.infoTitle}>Capital :</Text>
                         <Text style={styles.infoText}>{listing.capital || 'N/A'}</Text>
                     </View>
                     <View style={styles.infoRow}>
@@ -119,11 +116,11 @@ const CountryDetails = () => {
                         <Text style={styles.infoText}>{listing.continent || 'N/A'}</Text>
                     </View>
                     <View style={styles.infoRow}>
-                        <Text style={styles.infoTitle}>Langues :</Text>
+                        <Text style={styles.infoTitle}>Languages :</Text>
                         <Text style={styles.infoText}>{languages.length > 0 ? languages.join(', ') : 'N/A'}</Text>
                     </View>
                     <View style={styles.infoRow}>
-                        <Text style={styles.infoTitle}>Monnaie :</Text>
+                        <Text style={styles.infoTitle}>Currency :</Text>
                         <Text style={styles.infoText}>{listing.currency || 'N/A'}</Text>
                     </View>
                     <View style={styles.infoRow}>
@@ -131,37 +128,37 @@ const CountryDetails = () => {
                         <Text style={styles.infoText}>{formatPopulation(listing.population)}</Text>
                     </View>
                     <View style={styles.infoRow}>
-                        <Text style={styles.infoTitle}>Nom de la population :</Text>
+                        <Text style={styles.infoTitle}>Population name :</Text>
                         <Text style={styles.infoText}>{listing.population_name || 'N/A'}</Text>
                     </View>
                 </View>
             );
-        } else if (selectedCategory === 'Cuisine' && categoryInfo) {
+        } else if (selectedCategory === 'Cooking' && categoryInfo) {
             return (
                 <View style={styles.infoContainer}>
-                    <Text style={styles.infoTitle}>Spécialités culinaires :</Text>
-                    <Text style={styles.infoText}>{categoryInfo.map(info => info.content).join(', ') || 'Informations sur la cuisine indisponibles'}</Text>
+                    <Text style={styles.infoTitle}>Culinary Specialties :</Text>
+                    <Text style={styles.infoText}>{categoryInfo.map(info => info.content).join(', ') || 'Cooking information unavailable'}</Text>
                 </View>
             );
         } else if (selectedCategory === 'Culture' && categoryInfo) {
             return (
                 <View style={styles.infoContainer}>
-                    <Text style={styles.infoTitle}>Culture :</Text>
-                    <Text style={styles.infoText}>{categoryInfo.map(info => info.content).join(', ') || 'Informations sur la culture indisponibles'}</Text>
+                    <Text style={styles.infoTitle}>Culture:</Text>
+                    <Text style={styles.infoText}>{categoryInfo.map(info => info.content).join(', ') || 'Cultural information unavailable'}</Text>
                 </View>
             );
-        } else if (selectedCategory === 'Santé' && categoryInfo) {
+        } else if (selectedCategory === 'Health' && categoryInfo) {
             return (
                 <View style={styles.infoContainer}>
-                    <Text style={styles.infoTitle}>Santé :</Text>
-                    <Text style={styles.infoText}>{categoryInfo.map(info => info.content).join(', ') || 'Informations sur la santé indisponibles'}</Text>
+                    <Text style={styles.infoTitle}>Health:</Text>
+                    <Text style={styles.infoText}>{categoryInfo.map(info => info.content).join(', ') || 'Health information unavailable'}</Text>
                 </View>
             );
-        } else if (selectedCategory === 'Loi' && categoryInfo) {
+        } else if (selectedCategory === 'Law' && categoryInfo) {
             return (
                 <View style={styles.infoContainer}>
-                    <Text style={styles.infoTitle}>Loi :</Text>
-                    <Text style={styles.infoText}>{categoryInfo.map(info => info.content).join(', ') || 'Informations sur les lois indisponibles'}</Text>
+                    <Text style={styles.infoTitle}>Law:</Text>
+                    <Text style={styles.infoText}>{categoryInfo.map(info => info.content).join(', ') || 'Law information unavailable'}</Text>
                 </View>
             );
         }
