@@ -41,7 +41,7 @@ def add_trip_key_locations():
     db.session.add(new_trip_key_location)
     db.session.commit()
 
-    return jsonify({'message': 'Trip created successfully'}), 201
+    return jsonify({'message': 'Trip keyLocation created successfully'}), 201
 
 
 @tripKeyLocationsBp.route('/delete/<int:id>', methods=['DELETE'])
