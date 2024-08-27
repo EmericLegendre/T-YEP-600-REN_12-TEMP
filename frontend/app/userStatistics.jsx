@@ -6,7 +6,7 @@ import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const UserStatistics = () => {
-  const [countriesIdVisited, setCountriesIdVisited] = useState([132]);
+  const [countriesIdVisited, setCountriesIdVisited] = useState([13,20,22,23,29,55,65,66,96,98,99,109,112,125,132,147,172,193,201,202,216,222,223,245]);
   const [countriesVisited, setCountriesVisited] = useState(0);
   const [continentVisited, setContinentVisited] = useState([]);
   const [worldpercent, setWorldPercent] = useState(0);
