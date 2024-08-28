@@ -1,14 +1,18 @@
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import conf from '../config/config.json';
+export const { API_URL, OPENCAGE_API_KEY } = conf;
 
 export const getUserData = async () => {
   try {
     const token = await AsyncStorage.getItem('token');
+    const id = await AsyncStorage.getItem('id');
+    
     const config = {
       headers: { Authorization: `Bearer ${token}` }
     };
 
-    const response = await axios.get(`http://192.168.250.111:5000/api/users/get/1`, config);
+    const response = await axios.get(`${API_URL}/api/users/get/${id}`, config);
     return response.data;
   } catch (error) {
     if (error.response) {
@@ -21,8 +25,7 @@ export const getUserData = async () => {
 };
 
 export const getLocationDetails = async (latitude, longitude) => {
-  const apiKey = "52a567c2c8bc4be3a2137fb4bc8e6f36"
-  const url = `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${apiKey}`;
+  const url = `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${OPENCAGE_API_KEY}`;
 
   try {
     const response = await fetch(url);
@@ -45,8 +48,7 @@ export const getLocationDetails = async (latitude, longitude) => {
 };
 
 export const getTimezoneFromLocation = async (country, city) => {
-  const apiKey = "52a567c2c8bc4be3a2137fb4bc8e6f36"
-  const url = `https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(city)},${encodeURIComponent(country)}&key=${apiKey}`;
+  const url = `https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(city)},${encodeURIComponent(country)}&key=${OPENCAGE_API_KEY}`;
 
   try {
     const response = await fetch(url);
@@ -54,7 +56,6 @@ export const getTimezoneFromLocation = async (country, city) => {
 
     if (data && data.results && data.results.length > 0) {
       const timezone = data.results[0].annotations.timezone.name;
-      console.log('Timezone:', data.results);
       return timezone;
     } else {
       console.error('No timezone data found');

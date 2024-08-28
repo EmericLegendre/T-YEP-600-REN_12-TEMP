@@ -2,3 +2,4 @@ node_modules
 *.pyc
 */migrations/versions
 .env
+frontend/config/config.json
