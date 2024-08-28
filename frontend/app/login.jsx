@@ -31,6 +31,7 @@ const login = () => {
         console.log("Response from server:", response.data);
         const { apiToken } = response.data;
         await AsyncStorage.setItem('token', apiToken);
+        await AsyncStorage.setItem('id', JSON.stringify(response.data['user']['id']));
 
         try {
             const tripData = {
