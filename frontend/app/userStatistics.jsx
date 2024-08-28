@@ -75,7 +75,7 @@ const UserStatistics = () => {
     };
 
     if (countriesIdVisited.length > 0) {
-      // fetchCountriesData();
+      fetchCountriesData();
     }
   }, [countriesIdVisited]);
 
