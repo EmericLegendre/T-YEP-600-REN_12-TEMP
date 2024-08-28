@@ -1,20 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image, Dimensions, ScrollView } from 'react-native';
 import { Stack, useRouter } from 'expo-router';
 import moment from 'moment-timezone';
 import { Ionicons } from '@expo/vector-icons';
 import Colors from '../../constants/Colors';
 import * as Location from 'expo-location';
 
+const { width } = Dimensions.get('window');
+
 const Home = () => {
   const router = useRouter();
-  const [userTimezone, setUserTimezone] = useState('America/New_York'); // Assume this is predefined
+  const [userTimezone, setUserTimezone] = useState('America/New_York');
   const [tripTimezone, setTripTimezone] = useState(null);
   const [userTime, setUserTime] = useState('');
   const [tripTime, setTripTime] = useState('');
+  const [locationPermission, setLocationPermission] = useState(null);
 
   const getCurrentTime = (timezone) => {
-    if (!timezone) return 'Loading...'; // Return a placeholder if timezone is not set
     try {
       return moment().tz(timezone).format('HH:mm:ss');
     } catch (error) {
@@ -32,45 +34,84 @@ const Home = () => {
     return () => clearInterval(timer);
   }, [userTimezone, tripTimezone]);
 
-  const fetchTripTimezone = async () => {
+  const fetchUserTimezone = async () => {
     let { status } = await Location.requestForegroundPermissionsAsync();
+    setLocationPermission(status === 'granted');
+
     if (status === 'granted') {
       let location = await Location.getCurrentPositionAsync({});
-      const timezone = moment.tz.guess(); // Using moment.tz.guess() for the timezone based on location
+      const timezone = moment.tz.guess(); // This may not be always accurate
       setTripTimezone(timezone);
     }
   };
 
   useEffect(() => {
-    fetchTripTimezone();
+    fetchUserTimezone();
   }, []);
 
   return (
-    <View style={styles.container}>
+    <ScrollView contentContainerStyle={styles.scrollContainer} style={styles.scrollView}>
+
+      {/* Timezones Block */}
       <View style={styles.timezoneContainer}>
-        <Text style={styles.sectionTitle}>Time Zones</Text>
-        <View style={styles.timezoneRow}>
-          <Text style={styles.timezoneText}>Your Time: {userTime}</Text>
-        </View>
-        {tripTimezone && (
-          <View style={styles.timezoneRow}>
-            <Text style={styles.timezoneText}>Trip Time: {tripTime}</Text>
+        <View style={styles.timezoneContent}>
+          <View style={styles.timezoneItem}>
+            <Image 
+              source={{ uri: 'https://t4.ftcdn.net/jpg/03/08/62/45/360_F_308624523_KKYtC0SZZqFyPHtF2MhBzlaBZZw00IaA.jpg' }} 
+              style={styles.clockImage} 
+            />
+            <Text style={styles.timezoneText}>{userTime}</Text>
+            <Text style={styles.timezoneLabel}>Your Time</Text>
           </View>
-        )}
+          {tripTimezone && (
+            <View style={styles.timezoneItem}>
+              <Image 
+                source={{ uri: 'https://store-images.s-microsoft.com/image/apps.14783.14399867284918662.1ed3b2f0-79ad-4226-9bf5-81fd9dc40eae.37586b11-bfde-4aaa-a14d-c6663a2e7119' }} 
+                style={styles.clockImage} 
+              />
+              <Text style={styles.timezoneText}>{tripTime}</Text>
+              <Text style={styles.timezoneLabel}>Trip Time</Text>
+            </View>
+          )}
+        </View>
       </View>
 
-      <View style={styles.buttonsContainer}>
-        <TouchableOpacity style={styles.button} onPress={() => router.push('/userTrip')}>
-          <Text style={styles.buttonText}>Go to Trips</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button} onPress={() => router.push('/places')}>
-          <Text style={styles.buttonText}>Go to Places</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button} onPress={() => router.push('/statistics')}>
-          <Text style={styles.buttonText}>View Statistics</Text>
-        </TouchableOpacity>
+      {/* Grid of Blocks */}
+      <View style={styles.grid}>
+        <View style={styles.gridRow}>
+          <TouchableOpacity 
+            style={styles.gridItem} 
+            onPress={() => router.push('/userInformations')}
+          >
+            <Image source={{ uri: 'https://cdn-icons-png.flaticon.com/512/665/665049.png' }} style={styles.image} />
+            <Text style={styles.gridItemText}>Mes informations</Text>
+          </TouchableOpacity>
+          <TouchableOpacity 
+            style={styles.gridItem} 
+            onPress={() => router.push('/userStatistics')}
+          >
+            <Image source={{ uri: 'https://static-00.iconduck.com/assets.00/increase-stats-icon-2021x2048-87in2u2l.png' }} style={styles.image} />
+            <Text style={styles.gridItemText}>Mes statistiques</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.gridRow}>
+          <TouchableOpacity 
+            style={styles.gridItem} 
+            onPress={() => router.push('/userHistory')}
+          >
+            <Image source={{ uri: 'https://static-00.iconduck.com/assets.00/history-icon-2048x1863-258qellh.png' }} style={styles.image} />
+            <Text style={styles.gridItemText}>Mon historique</Text>
+          </TouchableOpacity>
+          <TouchableOpacity 
+            style={styles.gridItem} 
+            onPress={() => router.push('/userTrips')}
+          >
+            <Image source={{ uri: 'https://cdn-icons-png.flaticon.com/512/776/776541.png' }} style={styles.image} />
+            <Text style={styles.gridItemText}>Mes voyages</Text>
+          </TouchableOpacity>
+        </View>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 
@@ -104,55 +145,84 @@ export default function HomePage() {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  scrollView: {
     flex: 1,
+  },
+  scrollContainer: {
     padding: 20,
     backgroundColor: Colors.white,
   },
-  title: {
-    fontSize: 32,
-    fontWeight: '700',
-    color: Colors.primary,
-    marginBottom: 20,
-    textAlign: 'center',
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.secondary,
-    marginBottom: 15,
-  },
   timezoneContainer: {
+    width: '100%',
     marginBottom: 30,
-  },
-  timezoneRow: {
-    marginBottom: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: Colors.lightGrey,
-    paddingBottom: 10,
-  },
-  timezoneText: {
-    fontSize: 20,
-    color: Colors.darkGrey,
-  },
-  buttonsContainer: {
+    backgroundColor: Colors.cardBackground,
+    borderRadius: 10,
+    padding: 20,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginTop: 20,
-  },
-  button: {
-    backgroundColor: Colors.primary,
-    paddingVertical: 12,
-    paddingHorizontal: 20,
-    borderRadius: 10,
     alignItems: 'center',
-    flex: 1,
-    marginHorizontal: 5,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 10,
+    elevation: 4,
   },
-  buttonText: {
-    color: Colors.white,
+  timezoneContent: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '100%',
+  },
+  timezoneItem: {
+    flex: 1,
+    alignItems: 'center',
+    marginHorizontal: 10,
+  },
+  clockImage: {
+    width: 100,
+    height: 100,
+    borderRadius: 50,
+    marginBottom: 10,
+  },
+  timezoneText: {
+    fontSize: 24,
+    fontWeight: '700',
+    color: Colors.text,
+    marginBottom: 5,
+  },
+  timezoneLabel: {
+    fontSize: 16,
+    color: Colors.textLight,
+  },
+  grid: {
+    flex: 1,
+  },
+  gridRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 20,
+  },
+  gridItem: {
+    width: (width - 40) / 2,
+    backgroundColor: Colors.cardBackground,
+    borderRadius: 10,
+    padding: 20,
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 10,
+    elevation: 4,
+  },
+  image: {
+    width: 120,
+    height: 120,
+    borderRadius: 10,
+    marginBottom: 10,
+  },
+  gridItemText: {
     fontSize: 16,
     fontWeight: '600',
+    color: Colors.text,
   },
   headerTitle: {
     color: Colors.white,

@@ -63,7 +63,7 @@ const UserStatistics = () => {
           }
         };
 
-        const requests = countriesIdVisited.map(id => fetchWithRetry(`http://192.168.250.254:5000/api/country/get/${id}`, config));
+        const requests = countriesIdVisited.map(id => fetchWithRetry(`http://192.168.250.111:5000/api/country/get/${id}`, config));
         const responses = await Promise.all(requests);
 
         setFlags(responses.map(response => ({ url: response.data.flag, id: response.data.id })));
@@ -75,7 +75,7 @@ const UserStatistics = () => {
     };
 
     if (countriesIdVisited.length > 0) {
-      fetchCountriesData();
+      // fetchCountriesData();
     }
   }, [countriesIdVisited]);
 
