@@ -26,7 +26,7 @@ const login = () => {
               password: password
           }
 
-        const response = await axios.post('http://10.19.255.180:5000/api/users/auth', dataJson );
+        const response = await axios.post('http://192.168.250.254:5000/api/users/auth', dataJson );
         
         console.log("Response from server:", response.data);
         const { apiToken } = response.data;
