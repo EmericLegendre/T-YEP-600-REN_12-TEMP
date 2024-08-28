@@ -12,6 +12,7 @@ import { Stack, useRouter } from "expo-router";
 import moment from "moment-timezone";
 import { Ionicons } from "@expo/vector-icons";
 import Colors from "../../constants/Colors";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Location from "expo-location";
 import {
   getUserData,
@@ -59,10 +60,7 @@ const Home = () => {
     if (status === "granted") {
       let location = await Location.getCurrentPositionAsync({});
       const { latitude, longitude } = location.coords;
-      const locationDetails = await getLocationDetails(
-        latitude,
-        longitude
-      );
+      const locationDetails = await getLocationDetails(latitude, longitude);
       if (locationDetails) {
         setTripCity(locationDetails.city);
         setTripCountry(locationDetails.country);
@@ -112,7 +110,6 @@ const Home = () => {
           </View>
           {tripTimezone && (
             <View style={styles.timezoneItem}>
-              
               <Image
                 source={{
                   uri: "https://cdn-icons-png.flaticon.com/512/5219/5219577.png",
@@ -131,15 +128,15 @@ const Home = () => {
         <View style={styles.gridRow}>
           <TouchableOpacity
             style={styles.gridItem}
-            onPress={() => router.push("/userInformations")}
+            onPress={() => router.push("/userTrips")}
           >
             <Image
               source={{
-                uri: "https://cdn-icons-png.flaticon.com/512/665/665049.png",
+                uri: "https://cdn-icons-png.flaticon.com/512/776/776541.png",
               }}
               style={styles.image}
             />
-            <Text style={styles.gridItemText}>Mes informations</Text>
+            <Text style={styles.gridItemText}>Mes voyages</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.gridItem}
@@ -147,7 +144,7 @@ const Home = () => {
           >
             <Image
               source={{
-                uri: "https://static-00.iconduck.com/assets.00/increase-stats-icon-2021x2048-87in2u2l.png",
+                uri: "https://cdn-icons-png.flaticon.com/512/9746/9746676.png",
               }}
               style={styles.image}
             />
@@ -161,7 +158,7 @@ const Home = () => {
           >
             <Image
               source={{
-                uri: "https://static-00.iconduck.com/assets.00/history-icon-2048x1863-258qellh.png",
+                uri: "https://cdn-icons-png.flaticon.com/512/3286/3286370.png",
               }}
               style={styles.image}
             />
@@ -169,15 +166,15 @@ const Home = () => {
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.gridItem}
-            onPress={() => router.push("/userTrips")}
+            onPress={() => router.push("/userInformations")}
           >
             <Image
               source={{
-                uri: "https://cdn-icons-png.flaticon.com/512/776/776541.png",
+                uri: "https://cdn-icons-png.flaticon.com/512/8863/8863767.png",
               }}
               style={styles.image}
             />
-            <Text style={styles.gridItemText}>Mes voyages</Text>
+            <Text style={styles.gridItemText}>Mes informations</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -187,10 +184,25 @@ const Home = () => {
 
 export default function HomePage() {
   const router = useRouter();
+  let response = {
+    data: {
+        apiToken: 'token'
+    }
+};
+   const logOut = () => {
+       try {
+           const { apiToken } = response.data;
+
+           AsyncStorage.removeItem(apiToken);
+           router.push('/register');
+           console.log('Token removed successfully');
+       } catch (error) {
+           console.error('Failed to remove the token:', error);
+       }
+   };
 
   return (
     <>
-      
       <Stack.Screen
         options={{
           headerTitle: "",
@@ -198,15 +210,10 @@ export default function HomePage() {
           headerLeft: () => <Text style={styles.headerTitle}>Home</Text>,
           headerRight: () => (
             <TouchableOpacity
-              onPress={() => router.push("/profile")}
+              onPress={logOut}
               style={styles.headerRight}
             >
-              
-              <Ionicons
-                name="person-sharp"
-                size={30}
-                color={Colors.white}
-              />
+              <Ionicons name="log-out" size={30} color={Colors.white} />
             </TouchableOpacity>
           ),
         }}
