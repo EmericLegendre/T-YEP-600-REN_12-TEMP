@@ -30,9 +30,9 @@ const CategoryButtons = ({ onCategorySelect }) => {
               <View style={activeIndex == index ? styles.categoryBtnActive : styles.categoryIcon}>
                 <Entypo 
                   name={item.iconName}
-                  size={25}
-                  color={Colors.black}
-                />
+                  size={29}
+                  color={activeIndex == index ? Colors.white : Colors.black}
+                  />
               </View>
             </TouchableOpacity>
             <Text style={styles.categoryTitle}>{item.title}</Text>
@@ -49,7 +49,8 @@ const styles = StyleSheet.create({
     categoryContainer: {
         alignItems: 'center',
         marginHorizontal: 15,
-        marginTop: 20
+        marginTop: 20,
+        backgroundColor : Colors.white
       },
       categoryBtn: {
         alignItems: 'center',
@@ -66,15 +67,13 @@ const styles = StyleSheet.create({
         marginBottom: 5
       },
       categoryBtnActive: {
-        width: 60,
-        height: 60,
+        width: 61,
+        height: 61,
         borderRadius: 40,
         backgroundColor: Colors.primaryColor,
         justifyContent: 'center',
         alignItems: 'center',
-        borderWidth: 2,
-        borderColor: Colors.black,
-        marginBottom: 5
+        marginBottom: 5,
       },
       categoryTitle: {
         textAlign: 'center',

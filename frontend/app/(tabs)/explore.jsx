@@ -89,7 +89,7 @@ const Explore = () => {
       <Stack.Screen options={{
         headerTitle: '',
         headerStyle: {
-          backgroundColor: Colors.grey,
+          backgroundColor: Colors.secondColor,
         },
         headerLeft: () => (
           <Text style={styles.headerTitle}>Explore</Text>
@@ -122,7 +122,7 @@ const Explore = () => {
             onPress={() => setModalVisible(true)} 
             style={styles.filterBtn}
           >
-            <Ionicons name="options" size={30} color={Colors.grey} />
+            <Ionicons name="options" size={30} color={Colors.white} />
           </TouchableOpacity>
         </View>
 
