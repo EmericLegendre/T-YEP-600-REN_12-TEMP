@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Text, View, Dimensions, ActivityIndicator } from 'react-native';
+import { Image, StyleSheet, Text, View, Dimensions, ActivityIndicator, ScrollView } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import { useLocalSearchParams, Stack } from 'expo-router';
 import axios from 'axios';
@@ -117,9 +117,17 @@ const CountryDetails = () => {
                         <Text style={styles.infoText}>{listing.continent || 'N/A'}</Text>
                     </View>
                     <View style={styles.infoRow}>
-                        <Text style={styles.infoTitle}>Languages :</Text>
+                    <Text style={styles.infoTitle}>Languages :</Text>
+                    {languages.length > 2 ? (
+                        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+                            {languages.map((language, index) => (
+                                <Text key={index} style={styles.infoText}>{language}{index < languages.length - 1 ? ', ' : ''}</Text>
+                            ))}
+                        </ScrollView>
+                    ) : (
                         <Text style={styles.infoText}>{languages.length > 0 ? languages.join(', ') : 'N/A'}</Text>
-                    </View>
+                    )}
+                </View>
                     <View style={styles.infoRow}>
                         <Text style={styles.infoTitle}>Currency :</Text>
                         <Text style={styles.infoText}>{listing.currency || 'N/A'}</Text>
@@ -166,8 +174,6 @@ const CountryDetails = () => {
         return null;
     };
     
-    
-
     return (
         <>
             <Stack.Screen options={{
@@ -241,9 +247,23 @@ const styles = StyleSheet.create({
       fontSize: 18,
       fontWeight: 'bold',
       color: '#333',
+      marginRight: 10
   },
   infoText: {
       fontSize: 16,
       color: '#333',
-  }
+  },
+  languageRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    flexWrap: 'wrap',
+},
+languageScrollContainer: {
+    flexDirection: 'row',
+},
+languageText: {
+    fontSize: 16,
+    color: '#333',
+    marginRight: 10,
+}
 });
