@@ -1,0 +1,49 @@
+import React from "react";
+import { Text, TouchableOpacity, StyleSheet } from "react-native";
+import { Stack, useRouter } from "expo-router";
+import { Ionicons } from "@expo/vector-icons";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import Colors from "../../constants/Colors";
+import Home from "../../components/home";
+
+export default function HomePage() {
+  const router = useRouter();
+
+  const logOut = async () => {
+    try {
+      await AsyncStorage.removeItem("token");
+      router.push("/register");
+      console.log("Token removed successfully");
+    } catch (error) {
+      console.error("Failed to remove the token:", error);
+    }
+  };
+
+  return (
+    <>
+      <Stack.Screen
+        options={{
+          headerTitle: "",
+          headerStyle: { backgroundColor: Colors.grey },
+          headerLeft: () => <Text style={styles.headerTitle}>Home</Text>,
+          headerRight: () => (
+            <TouchableOpacity onPress={logOut} style={styles.headerRight}>
+              <Ionicons name="log-out" size={30} color={Colors.white} />
+            </TouchableOpacity>
+          ),
+        }}
+      />
+      <Home />
+    </>
+  );
+}
+
+const styles = StyleSheet.create({
+  headerTitle: {
+    color: Colors.white,
+    fontSize: 24,
+    fontWeight: "700",
+    marginLeft: 15,
+  },
+  headerRight: { marginRight: 15 },
+});

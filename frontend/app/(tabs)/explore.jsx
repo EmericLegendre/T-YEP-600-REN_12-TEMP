@@ -26,11 +26,11 @@ const Explore = () => {
           headers: { Authorization: `Bearer ${token}` }
         };
 
-        const response = await axios.get('http://192.168.250.254:5000/api/country/get', config);
+        const response = await axios.get('http://192.168.250.111:5000/api/country/get', config);
         setCountriesData(response.data);
         setFilteredData(response.data); 
 
-        const languagesResponse = await axios.get('http://192.168.250.254:5000/api/countryInfos/get/languages', config);
+        const languagesResponse = await axios.get('http://192.168.250.111:5000/api/countryInfos/get/languages', config);
 
         const languagesByCountry = {};
         languagesResponse.data.forEach(item => {

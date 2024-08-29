@@ -32,7 +32,7 @@ const Layout = () => {
           headerShown: false,
           }} />
         <Tabs.Screen 
-        name='home' 
+        name='homePage' 
         options={{
           tabBarLabel: "Home",
           tabBarIcon: ({color}) => (

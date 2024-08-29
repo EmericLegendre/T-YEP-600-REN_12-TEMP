@@ -17,7 +17,7 @@ const StartPage = () => {
         const apiToken = await AsyncStorage.getItem('token');
 
         if (apiToken) {
-          router.push('/home');
+          router.push('/homePage');
         } else {
           router.push('/register');
         }
