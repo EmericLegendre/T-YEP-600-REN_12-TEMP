@@ -20,7 +20,7 @@ const UserTrip = () => {
   }, []);
 
   const handleTripPress = (id) => {
-    router.push(`/trips/${id}`);
+    router.push(`/trip/${id}`);
   };
 
   const handleCreateTrip = () => {
