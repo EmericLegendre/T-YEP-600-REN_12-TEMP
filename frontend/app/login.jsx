@@ -27,8 +27,6 @@ const login = () => {
           }
 
         const response = await axios.post(`http://${global.local_ip}:5000/api/users/auth`, dataJson );
-        
-        console.log("Response from server:", response.data);
         const { apiToken } = response.data;
         await AsyncStorage.setItem('token', apiToken);
         await AsyncStorage.setItem('id', JSON.stringify(response.data['user']['id']));

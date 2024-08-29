@@ -39,9 +39,7 @@ const userHistory = () => {
 
           const response = await axios.get(`http://${global.local_ip}:5000//api/keyLocations/get`, {
               headers: { Authorization: `Bearer ${token}` }
-          });
-          console.log(response.data);
-          
+          });          
           if (!response.data) throw new Error('KeyLocations not found');
 
           setPlaces(response.data);

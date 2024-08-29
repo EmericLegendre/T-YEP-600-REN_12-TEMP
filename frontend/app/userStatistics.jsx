@@ -17,13 +17,13 @@ const UserStatistics = () => {
     const fetchCountriesVisited = async () => {
       try {
         const token = await AsyncStorage.getItem('token');
-        console.log('Token:', token);
 
         const config = {
           headers: { Authorization: `Bearer ${token}` }
         };
 
         const response = await axios.get(`http://${global.local_ip}:5000/api/travel/get/`, config);
+        // get the countries id visited by the user
         setCountriesIdVisited(response.data);
       } catch (error) {
         if (error.response) {
