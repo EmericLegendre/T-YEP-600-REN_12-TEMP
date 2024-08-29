@@ -6,7 +6,7 @@ import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const UserStatistics = () => {
-  const [countriesIdVisited, setCountriesIdVisited] = useState([132]);
+  const [countriesIdVisited, setCountriesIdVisited] = useState([13,20,22,23,29,55,65,66,96,98,99,109,112,125,132,147,172,193,201,202,216,222,223,245]);
   const [countriesVisited, setCountriesVisited] = useState(0);
   const [continentVisited, setContinentVisited] = useState([]);
   const [worldpercent, setWorldPercent] = useState(0);
@@ -17,13 +17,13 @@ const UserStatistics = () => {
     const fetchCountriesVisited = async () => {
       try {
         const token = await AsyncStorage.getItem('token');
-        console.log('Token:', token);
 
         const config = {
           headers: { Authorization: `Bearer ${token}` }
         };
 
-        const response = await axios.get('http://10.19.255.193:5000/api/travel/get/', config);
+        const response = await axios.get(`http://${global.local_ip}:5000/api/travel/get/`, config);
+        // get the countries id visited by the user
         setCountriesIdVisited(response.data);
       } catch (error) {
         if (error.response) {
@@ -38,7 +38,7 @@ const UserStatistics = () => {
 
   useEffect(() => {
     setCountriesVisited(countriesIdVisited.length);
-    const percent = (countriesIdVisited.length / 249) * 100;
+    const percent = (countriesIdVisited.length / 250) * 100;
     setWorldPercent(Number.isInteger(percent) ? percent.toFixed(0) : percent.toFixed(1));
   }, [countriesIdVisited]);
 
@@ -63,7 +63,7 @@ const UserStatistics = () => {
           }
         };
 
-        const requests = countriesIdVisited.map(id => fetchWithRetry(`http://10.19.255.193:5000/api/country/get/${id}`, config));
+        const requests = countriesIdVisited.map(id => fetchWithRetry(`http://192.168.250.111:5000/api/country/get/${id}`, config));
         const responses = await Promise.all(requests);
 
         setFlags(responses.map(response => ({ url: response.data.flag, id: response.data.id })));
@@ -119,7 +119,7 @@ const UserStatistics = () => {
         options={{
           headerTitle: 'Mes statistiques',
           headerStyle: {
-            backgroundColor: Colors.grey,
+            backgroundColor: Colors.secondColor,
           },
           headerTintColor: Colors.white,
         }}
@@ -189,7 +189,7 @@ const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
     padding: 20,
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.lightGrey,
   },
   title: {
     fontSize: 28,

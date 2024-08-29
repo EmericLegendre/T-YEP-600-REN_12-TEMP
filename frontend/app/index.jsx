@@ -4,12 +4,16 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from '@react-navigation/native';
 import { Stack, useRouter } from 'expo-router'
 import axios from "axios";
+import conf from '../config/config.json';
+export const { IP_ADDR, OPENCAGE_API_KEY } = conf;
 
 const StartPage = () => {
   const navigation = useNavigation();
   const router = useRouter();
 
   global.currentUserId = null;
+  global.local_ip = IP_ADDR;
+  global.opencagekey = OPENCAGE_API_KEY;
 
   useEffect(() => {
     checkLoggedIn();
@@ -22,18 +26,18 @@ const StartPage = () => {
         if (apiToken) {
 
             try {
-                const response = await axios.post('http://10.19.255.180:5000/api/users/verify',
+                const response = await axios.post(`http://${global.local_ip}:5000/api/users/verify`,
                     {token: apiToken}
                 );
                 global.currentUserId = response.data.user.id;
-                router.push('/home');
+                router.push('/homePage');
             } catch (e) {
                 console.log('Cannot verify API token');
-                router.push('/login');
+                router.push('/register');
             }
         }
         else {
-            router.push('/login')
+            router.push('/register');
         }
 
       } catch (error) {

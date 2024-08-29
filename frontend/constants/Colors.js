@@ -3,5 +3,6 @@ export default {
   white: '#FDFEFB',
   secondColor: '#2E714A',
   primaryColor: '#4F996D',
-  lightGrey: '#E8EDDF'
+  lightGrey: '#E8EDDF',
+  red: '#FF0000',
 }

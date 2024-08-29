@@ -30,11 +30,11 @@ const Explore = () => {
           headers: { Authorization: `Bearer ${token}` }
         };
 
-        const response = await axios.get('http://10.19.255.221:5000/api/country/get', config);
+        const response = await axios.get(`http://${global.local_ip}:5000/api/country/get`, config);
         setCountriesData(response.data);
         setFilteredData(response.data); 
 
-        const languagesResponse = await axios.get('http://10.19.255.221:5000/api/countryInfos/get/languages', config);
+        const languagesResponse = await axios.get(`http://${global.local_ip}:5000/api/countryInfos/get/languages`, config);
 
         const languagesByCountry = {};
         languagesResponse.data.forEach(item => {
@@ -111,7 +111,7 @@ const Explore = () => {
         ),
         headerRight: () => (
           <TouchableOpacity 
-            onPress={() => router.push('/profile')}        
+            onPress={() => router.push('/userInformations')}        
             style={styles.headerRight}
           >
             <Ionicons name="person-sharp" size={30} color={Colors.white} />

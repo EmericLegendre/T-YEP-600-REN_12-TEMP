@@ -34,12 +34,12 @@ const CountryDetails = () => {
     
                 if (!token) throw new Error('Token non trouvé');
     
-                const response = await axios.get(`http://10.19.255.221:5000/api/country/get/${id}`, {
+                const response = await axios.get(`http://${global.local_ip}:5000/api/country/get/${id}`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 setListing(response.data);
     
-                const responseLanguages = await axios.get(`http://10.19.255.221:5000/api/countryInfos/get/country/${id}/category/LANGUAGE`, {
+                const responseLanguages = await axios.get(`http://${global.local_ip}:5000/api/countryInfos/get/country/${id}/category/LANGUAGE`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 const extractedLanguages = responseLanguages.data.map(lang => lang.content);
@@ -56,7 +56,7 @@ const CountryDetails = () => {
                 const categoryCode = categoryMappings[selectedCategory];
     
                 if (categoryCode && selectedCategory !== 'General') {
-                    const responseCategory = await axios.get(`http://10.19.255.221:5000/api/countryInfos/get/country/${id}/category/${categoryCode}`, {
+                    const responseCategory = await axios.get(`http://${global.local_ip}:5000/api/countryInfos/get/country/${id}/category/${categoryCode}`, {
                         headers: { Authorization: `Bearer ${token}` }
                     });
                     setCategoryInfo(responseCategory.data);
