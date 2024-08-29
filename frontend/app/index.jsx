@@ -5,14 +5,14 @@ import { useNavigation } from '@react-navigation/native';
 import { Stack, useRouter } from 'expo-router'
 import axios from "axios";
 import conf from '../config/config.json';
-export const { API_URL, OPENCAGE_API_KEY } = conf;
+export const { IP_ADDR, OPENCAGE_API_KEY } = conf;
 
 const StartPage = () => {
   const navigation = useNavigation();
   const router = useRouter();
 
   global.currentUserId = null;
-  global.local_ip = API_URL;
+  global.local_ip = IP_ADDR;
   global.opencagekey = OPENCAGE_API_KEY;
 
   useEffect(() => {
