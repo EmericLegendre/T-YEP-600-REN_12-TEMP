@@ -1,7 +1,5 @@
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import conf from '../config/config.json';
-export const { API_URL, OPENCAGE_API_KEY } = conf;
 
 export const getUserData = async () => {
   try {
@@ -12,7 +10,7 @@ export const getUserData = async () => {
       headers: { Authorization: `Bearer ${token}` }
     };
 
-    const response = await axios.get(`${API_URL}/api/users/get/${id}`, config);
+    const response = await axios.get(`http://${global.local_ip}:5000/api/users/get/${id}`, config);
     return response.data;
   } catch (error) {
     if (error.response) {
@@ -25,7 +23,7 @@ export const getUserData = async () => {
 };
 
 export const getLocationDetails = async (latitude, longitude) => {
-  const url = `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${OPENCAGE_API_KEY}`;
+  const url = `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${global.opencagekey}`;
 
   try {
     const response = await fetch(url);
@@ -48,7 +46,7 @@ export const getLocationDetails = async (latitude, longitude) => {
 };
 
 export const getTimezoneFromLocation = async (country, city) => {
-  const url = `https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(city)},${encodeURIComponent(country)}&key=${OPENCAGE_API_KEY}`;
+  const url = `https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(city)},${encodeURIComponent(country)}&key=${global.opencagekey}`;
 
   try {
     const response = await fetch(url);

@@ -8,15 +8,22 @@ import Home from "../../components/home";
 
 export default function HomePage() {
   const router = useRouter();
+  let response = {
+      data: {
+          apiToken: 'token'
+      }
+  };
+  const logOut = () => {
+      try {
+          const { apiToken } = response.data;
 
-  const logOut = async () => {
-    try {
-      await AsyncStorage.removeItem("token");
-      router.push("/register");
-      console.log("Token removed successfully");
-    } catch (error) {
-      console.error("Failed to remove the token:", error);
-    }
+          global.currentUserId = null;
+          AsyncStorage.removeItem(apiToken);
+          router.push('/register');
+          console.log('Token removed successfully');
+      } catch (error) {
+          console.error('Failed to remove the token:', error);
+      }
   };
 
   return (
@@ -24,7 +31,7 @@ export default function HomePage() {
       <Stack.Screen
         options={{
           headerTitle: "",
-          headerStyle: { backgroundColor: Colors.grey },
+          headerStyle: { backgroundColor: Colors.secondColor },
           headerLeft: () => <Text style={styles.headerTitle}>Home</Text>,
           headerRight: () => (
             <TouchableOpacity onPress={logOut} style={styles.headerRight}>

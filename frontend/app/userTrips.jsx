@@ -70,7 +70,7 @@ const UserTrip = () => {
         options={{
           headerTitle: 'My Trips',
           headerStyle: {
-            backgroundColor: Colors.grey,
+            backgroundColor: Colors.secondColor,
           },
           headerTintColor: Colors.white,
         }}

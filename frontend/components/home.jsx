@@ -152,13 +152,13 @@ const GridMenu = ({ router }) => (
         router={router}
         route="/userTrips"
         imageUri="https://cdn-icons-png.flaticon.com/512/776/776541.png"
-        label="Mes voyages"
+        label="My Trips"
       />
       <GridItem
         router={router}
         route="/userStatistics"
         imageUri="https://cdn-icons-png.flaticon.com/512/9746/9746676.png"
-        label="Mes statistiques"
+        label="My Stats"
       />
     </View>
     <View style={styles.gridRow}>
@@ -166,13 +166,13 @@ const GridMenu = ({ router }) => (
         router={router}
         route="/userHistory"
         imageUri="https://cdn-icons-png.flaticon.com/512/3286/3286370.png"
-        label="Mon historique"
+        label="My History"
       />
       <GridItem
         router={router}
         route="/userInformations"
         imageUri="https://cdn-icons-png.flaticon.com/512/8863/8863767.png"
-        label="Mes informations"
+        label="My Profile"
       />
     </View>
   </View>
@@ -193,7 +193,7 @@ const styles = StyleSheet.create({
   timezoneContainer: {
     width: "100%",
     marginBottom: 30,
-    backgroundColor: Colors.cardBackground,
+    backgroundColor: Colors.primaryColor,
     borderRadius: 10,
     padding: 20,
     flexDirection: "row",
@@ -226,8 +226,8 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   gridItem: {
-    width: (width - 40) / 2,
-    backgroundColor: Colors.cardBackground,
+    width: (width - 60) / 2,
+    backgroundColor: Colors.primaryColor,
     borderRadius: 10,
     padding: 20,
     alignItems: "center",

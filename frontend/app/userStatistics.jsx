@@ -23,7 +23,7 @@ const UserStatistics = () => {
           headers: { Authorization: `Bearer ${token}` }
         };
 
-        const response = await axios.get('http://192.168.250.254:5000/api/travel/get/', config);
+        const response = await axios.get(`http://${global.local_ip}:5000/api/travel/get/`, config);
         setCountriesIdVisited(response.data);
       } catch (error) {
         if (error.response) {
@@ -119,7 +119,7 @@ const UserStatistics = () => {
         options={{
           headerTitle: 'Mes statistiques',
           headerStyle: {
-            backgroundColor: Colors.grey,
+            backgroundColor: Colors.secondColor,
           },
           headerTintColor: Colors.white,
         }}

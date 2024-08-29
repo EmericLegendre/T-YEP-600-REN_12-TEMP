@@ -72,7 +72,7 @@ const userHistory = () => {
         options={{
           headerTitle: activeTab === 'Lieux' ? 'Places' : 'Trips',
           headerStyle: {
-            backgroundColor: Colors.grey,
+            backgroundColor: Colors.secondColor,
           },
           headerTintColor: Colors.white,
         }}
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
   tabsContainer: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    backgroundColor: Colors.lightGrey,
+    backgroundColor: Colors.primaryColor,
     paddingVertical: 10,
   },
   tab: {
@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
   },
   activeTab: {
     textShadowColor: Colors.white,
-    backgroundColor: Colors.grey,
+    backgroundColor: Colors.lightGrey,
   },
   tabText: {
     color: Colors.black,
