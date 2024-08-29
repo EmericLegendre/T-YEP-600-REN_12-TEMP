@@ -1,22 +1,39 @@
-import React, { useState, useEffect, memo } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, Image, FlatList, Dimensions, TouchableOpacity } from 'react-native';
 import { Stack, useRouter } from 'expo-router';
 import Colors from '../constants/Colors';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import axios from 'axios';
+import tripImages from '../constants/tripImages';
 
 const UserTrip = () => {
   const [ongoingTrips, setOngoingTrips] = useState([]);
+  const [error, setError] = useState(null); // Added state for error handling
   const router = useRouter(); 
 
-  // Fake data for testing
-  const fakeOngoingTrips = [
-    { id: 1, name: 'Trip to Paris', imageUrl: 'https://a.eu.mktgcdn.com/f/100004519/N2BB4ohwclor2uLoZ7XMHgJmxOZaMOokMdQqqXQAq3s.jpg' },
-    { id: 2, name: 'Weekend in Rome', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8zlN2MynhkvSeX452Oxe-heMUuK_3iJMPcQ&s' },
-    { id: 3, name: 'Hiking in the Alps', imageUrl: 'https://www.civitatis.com/blog/wp-content/uploads/2023/01/panoramica-mont-blanc-francia.jpg' },
-    { id: 4, name: 'Surfing in hawai', imageUrl: 'https://media.tacdn.com/media/attractions-content--1x-1/12/3f/37/b6.jpg' },
-  ];
-
   useEffect(() => {
-    setOngoingTrips(fakeOngoingTrips); // Set ongoing trips
+    const fetchTrip = async () => {
+        try {
+            const token = await AsyncStorage.getItem('token');
+            if (!token) throw new Error('Token non trouvé');
+
+            const tripResponse = await axios.get(`http://${global.local_ip}:5000/api/trip/get`, {
+                headers: { Authorization: `Bearer ${token}` }
+            });
+
+            if (!tripResponse.data) throw new Error('Trip non trouvé');
+
+            const relevantTrips = tripResponse.data.filter(trip => trip.archived === false);
+
+            setOngoingTrips(relevantTrips);
+        } catch (err) {
+            console.log(err);
+            setError('Trip not found');
+        }
+    };
+
+    fetchTrip();
+    
   }, []);
 
   const handleTripPress = (id) => {
@@ -24,42 +41,44 @@ const UserTrip = () => {
   };
 
   const handleCreateTrip = () => {
-    router.push('/(tabs)/map'); // Navigate to the create trip screen
+    router.push('/(tabs)/map');
   };
 
-  const MemoizedTripItem = memo(({ item }) => (
+  const TripItem = ({ item }) => (
     <TouchableOpacity
       style={styles.itemContainer}
       onPress={() => handleTripPress(item.id)}
     >
-      <Image source={{ uri: item.imageUrl }} style={styles.itemImage} />
+      <Image
+        source={{ uri: tripImages[item.id] || 'https://example.com/default-image.jpg' }}
+        style={styles.itemImage}
+      />
       <View style={styles.overlay}>
-        <Text style={styles.itemText}>{item.name}</Text>
+        <Text style={styles.itemText}>Trip {item.id}</Text>
       </View>
     </TouchableOpacity>
-  ));
-
-  const renderItem = ({ item }) => <MemoizedTripItem item={item} />;
+  );
 
   const ListHeaderComponent = () => (
     <View>
       {/* Create Trip Box */}
-      
-        <TouchableOpacity style={styles.createTripBox} onPress={handleCreateTrip}>
-          <Text style={styles.createTripText}>Create New Trip</Text>
-        </TouchableOpacity>
+      <TouchableOpacity style={styles.createTripBox} onPress={handleCreateTrip}>
+        <Text style={styles.createTripText}>Create New Trip</Text>
+      </TouchableOpacity>
       
       {/* Ongoing Trips Section */}
-      {ongoingTrips.length > 0 && (
+      {ongoingTrips.length > 0 ? (
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Ongoing Trips</Text>
           <FlatList
             data={ongoingTrips}
-            renderItem={renderItem}
+            renderItem={({ item }) => <TripItem item={item} />}
             keyExtractor={(item) => item.id.toString()}
             contentContainerStyle={styles.list}
           />
         </View>
+      ) : (
+        <Text style={styles.emptyText}>No ongoing trips</Text>
       )}
     </View>
   );
@@ -79,7 +98,8 @@ const UserTrip = () => {
       <FlatList
         ListHeaderComponent={ListHeaderComponent}
         data={[]}
-        renderItem={() => null} // FlatList needs a data prop, but we use ListHeaderComponent for rendering
+        style={styles.container}
+        renderItem={() => null}
         keyExtractor={() => 'dummy'}
         contentContainerStyle={styles.container}
       />
@@ -92,7 +112,7 @@ export default UserTrip;
 const styles = StyleSheet.create({
   container: {
     padding: 10,
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.lightGrey,
   },
   section: {
     marginBottom: 20,
@@ -137,7 +157,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderWidth: 1,
-    borderColor: Colors.grey,
   },
   createTripText: {
     color: Colors.primary,
