@@ -33,11 +33,11 @@ const StartPage = () => {
                 router.push('/homePage');
             } catch (e) {
                 console.log('Cannot verify API token');
-                router.push('/login');
+                router.push('/register');
             }
         }
         else {
-            router.push('/login')
+            router.push('/register');
         }
 
       } catch (error) {
