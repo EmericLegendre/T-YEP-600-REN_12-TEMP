@@ -189,7 +189,7 @@ export default Home;
 
 const styles = StyleSheet.create({
   scrollView: { flex: 1 },
-  scrollContainer: { padding: 20, backgroundColor: Colors.white },
+  scrollContainer: { padding: 20, backgroundColor: Colors.lightGrey },
   timezoneContainer: {
     width: "100%",
     marginBottom: 30,

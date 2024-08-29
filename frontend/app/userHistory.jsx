@@ -4,7 +4,7 @@ import { Stack, useRouter } from 'expo-router';
 import Colors from '../constants/Colors';
 
 const userHistory = () => {
-  const [activeTab, setActiveTab] = useState('Lieux'); // Initial tab is "Lieux" (Places)
+  const [activeTab, setActiveTab] = useState('Places'); // Initial tab is "Places" (Places)
   const [places, setPlaces] = useState([]);
   const [trips, setTrips] = useState([]);
   const router = useRouter(); 
@@ -27,7 +27,7 @@ const userHistory = () => {
   ];
 
   useEffect(() => {
-    if (activeTab === 'Lieux') {
+    if (activeTab === 'Places') {
       setPlaces(fakePlaces);
     } else {
       setTrips(fakeTrips);
@@ -39,7 +39,7 @@ const userHistory = () => {
   };
 
   const handleTripPress = (id) => {
-    router.push(`/trips/${id}`);
+    router.push(`/trip/${id}`);
   };
 
   const MemoizedPlaceItem = memo(({ item }) => (
@@ -70,7 +70,7 @@ const userHistory = () => {
     <>
       <Stack.Screen
         options={{
-          headerTitle: activeTab === 'Lieux' ? 'Places' : 'Trips',
+          headerTitle: 'My History',
           headerStyle: {
             backgroundColor: Colors.secondColor,
           },
@@ -79,10 +79,10 @@ const userHistory = () => {
       />
       <View style={styles.tabsContainer}>
         <TouchableOpacity
-          style={[styles.tab, activeTab === 'Lieux' && styles.activeTab]}
-          onPress={() => setActiveTab('Lieux')}
+          style={[styles.tab, activeTab === 'Places' && styles.activeTab]}
+          onPress={() => setActiveTab('Places')}
         >
-          <Text style={styles.tabText}>Lieux</Text>
+          <Text style={styles.tabText}>Places</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[styles.tab, activeTab === 'Trip' && styles.activeTab]}
@@ -92,7 +92,7 @@ const userHistory = () => {
         </TouchableOpacity>
       </View>
 
-      {activeTab === 'Lieux' ? (
+      {activeTab === 'Places' ? (
         <FlatList
           data={places}
           renderItem={({ item }) => <MemoizedPlaceItem item={item} />}
@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
   },
   list: {
     padding: 10,
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.lightGrey,
   },
   itemContainer: {
     marginBottom: 15,
