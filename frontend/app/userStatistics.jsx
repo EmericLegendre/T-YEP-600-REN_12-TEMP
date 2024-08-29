@@ -38,7 +38,7 @@ const UserStatistics = () => {
 
   useEffect(() => {
     setCountriesVisited(countriesIdVisited.length);
-    const percent = (countriesIdVisited.length / 249) * 100;
+    const percent = (countriesIdVisited.length / 250) * 100;
     setWorldPercent(Number.isInteger(percent) ? percent.toFixed(0) : percent.toFixed(1));
   }, [countriesIdVisited]);
 
