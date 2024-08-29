@@ -7,7 +7,7 @@ import Colors from "../../constants/Colors"
 const Layout = () => {
   return (
     <Tabs 
-      initialRouteName="home"
+      initialRouteName="homePage"
       screenOptions={{
       tabBarStyle: {
         backgroundColor: Colors.white,
@@ -32,7 +32,7 @@ const Layout = () => {
           headerShown: false,
           }} />
         <Tabs.Screen 
-        name='homePage' 
+        name='homePage'
         options={{
           tabBarLabel: "Home",
           tabBarIcon: ({color}) => (
