@@ -2,6 +2,10 @@ import React, { useState, useEffect, memo } from 'react';
 import { View, Text, StyleSheet, Image, FlatList, Dimensions, TouchableOpacity } from 'react-native';
 import { Stack, useRouter } from 'expo-router';
 import Colors from '../constants/Colors';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import axios from 'axios';
+import tripImages from '../constants/tripImages';
+
 
 const userHistory = () => {
   const [activeTab, setActiveTab] = useState('Places'); // Initial tab is "Places" (Places)
@@ -9,33 +13,50 @@ const userHistory = () => {
   const [trips, setTrips] = useState([]);
   const router = useRouter(); 
 
-  // Fake data for testing
-  const fakePlaces = [
-    { id: 1, name: 'Tribunal - Cité Judiciaire', imageUrl: 'https://locations.filmfrance.net/sites/default/files/styles/colorbox_location_photo_zoomed/public/photos/tribunal-cite-judiciaire-rennes-121357/tribunalrennesdelphinejouan2.jpg?itok=CAX4FOln' },
-    { id: 2, name: 'Bowl Skatepark', imageUrl: 'https://skateparks.fr/wp-content/uploads/2021/08/image.jpg' },
-    { id: 3, name: 'La cavale', imageUrl: 'https://atelier-lanoe.fr/wp-content/uploads/2021/11/cavale-1-1_1365.jpeg' },
-    { id: 4, name: 'Cathédrale Saint-Pierre', imageUrl: 'https://i.pinimg.com/originals/ec/1f/77/ec1f77ca36d3227f98741a4102a24ddd.jpg' },
-    { id: 5, name: 'La Bamboche du Béret', imageUrl: 'https://www.le-beret.fr/wp-content/uploads/2021/12/Le-Beret-Restaurant-Rennes-Page-interne-2.png' },
-
-  ];
-
-  const fakeTrips = [
-    { id: 1, name: 'Trip to Paris', imageUrl: 'https://a.eu.mktgcdn.com/f/100004519/N2BB4ohwclor2uLoZ7XMHgJmxOZaMOokMdQqqXQAq3s.jpg' },
-    { id: 2, name: 'Weekend in Rome', imageUrl: 'https://www.turismoroma.it/sites/default/files/Roma%20in%20breve.jpg' },
-    { id: 3, name: 'Hiking in the Alps', imageUrl: 'https://www.civitatis.com/blog/wp-content/uploads/2023/01/panoramica-mont-blanc-francia.jpg' },
-    { id: 4, name: 'Surfing in hawai', imageUrl: 'https://media.tacdn.com/media/attractions-content--1x-1/12/3f/37/b6.jpg' },
-  ];
-
   useEffect(() => {
-    if (activeTab === 'Places') {
-      setPlaces(fakePlaces);
-    } else {
-      setTrips(fakeTrips);
-    }
-  }, [activeTab]);
+    const fetchTrip = async () => {
+        try {
+            const token = await AsyncStorage.getItem('token');
+            if (!token) throw new Error('Token non trouvé');
+
+            const response = await axios.get(`http://${global.local_ip}:5000/api/trip/get/archived`, {
+                headers: { Authorization: `Bearer ${token}` }
+            });
+
+            if (!response.data) throw new Error('Trip not found');
+
+            setTrips(response.data);
+        } catch (err) {
+            console.log(err);
+            setError('Trip not found');
+        }
+    };
+
+    const fetchKeyLocations = async () => {
+      try {
+          const token = await AsyncStorage.getItem('token');
+          if (!token) throw new Error('Token non trouvé');
+
+          const response = await axios.get(`http://${global.local_ip}:5000//api/keyLocations/get`, {
+              headers: { Authorization: `Bearer ${token}` }
+          });
+          console.log(response.data);
+          
+          if (!response.data) throw new Error('KeyLocations not found');
+
+          setPlaces(response.data);
+      } catch (err) {
+          console.log(err);
+          setError('KeyLocations not found');
+      }
+  };
+
+    fetchTrip();
+    fetchKeyLocations();
+  }, []);
 
   const handlePlacePress = (id) => {
-    router.push(`/places/${id}`);
+    router.push(`/map`);
   };
 
   const handleTripPress = (id) => {
@@ -59,9 +80,12 @@ const userHistory = () => {
       style={styles.itemContainer}
       onPress={() => handleTripPress(item.id)}
     >
-      <Image source={{ uri: item.imageUrl }} style={styles.itemImage} />
+      <Image
+        source={{ uri: tripImages[item.id] || 'https://example.com/default-image.jpg' }}
+        style={styles.itemImage}
+      />
       <View style={styles.overlay}>
-        <Text style={styles.itemText}>{item.name}</Text>
+        <Text style={styles.itemText}>Trip {item.id}</Text>
       </View>
     </TouchableOpacity>
   ));
@@ -127,7 +151,6 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.bgColor,
   },
   activeTab: {
-    textShadowColor: Colors.white,
     backgroundColor: Colors.lightGrey,
   },
   tabText: {
