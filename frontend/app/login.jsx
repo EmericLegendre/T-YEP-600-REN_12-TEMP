@@ -16,29 +16,39 @@ const login = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleLogin = async () => {
-      if (!email || !password) {
-            setErrorMessage('Please fill in all fields.');
-            return;
-      }
-      console.log("coucou")
-      try {
-          const dataJson = {
-              email: email,
-              password: password
-          }
+    if (!email || !password) {
+      setError('Please fill in all fields.');
+      return;
+    }
 
-        console.log("je suis dans le try");
+    try {
+      const dataJson = {
+        email,
+        password,
+      };
 
-        const response = await axios.post('http://10.19.255.212:5000/api/users/auth', dataJson );
-        console.log("Response from server:", response.data);
-        const { apiToken } = response.data;
+      console.log('Attempting login with:', dataJson);
 
+
+      const response = await axios.post('http://192.168.1.23:5000/api/users/auth', dataJson);
+      console.log('Response from server:', response.data);
+
+
+      const { apiToken, user } = response.data;
+
+      if (apiToken && user && user.id) {
         await AsyncStorage.setItem('token', apiToken);
+        await AsyncStorage.setItem('userId', user.id.toString());
 
-        console.log("Login successful, navigating to home...");
+        console.log('Login successful, navigating to home...');
+
         router.push('/home');
-      } catch (err) {
-        setError('Invalid email or password');
+      } else {
+        throw new Error('Token or user ID is missing in the response');
+      }
+    } catch (err) {
+      console.error('Login error:', err.message || err);
+      setError('Invalid email or password');
     }
   };
 
@@ -100,7 +110,7 @@ const styles = StyleSheet.create({
       alignSelf: 'stretch',
       alignItems: 'center',
       padding: 20,
-      backgroundColor: '#FD00CF',
+      backgroundColor: '#dda15e',
       marginTop: 30,
   },
   signUpButton: {
