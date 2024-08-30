@@ -1,233 +1,144 @@
-import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity, TextInput, Button } from 'react-native';
-import { Stack } from 'expo-router';
-import { Entypo } from '@expo/vector-icons';
-import Colors from '../constants/Colors';
-import axios from 'axios'
+import React, { useEffect, useState } from 'react';
+import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import axios from 'axios';
 
+const UserProfile = () => {
+  const [userInfo, setUserInfo] = useState({});
+  const [editable, setEditable] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-const UserInformations = () => {
-  const initialUserData = {
-    firstName: '',
-    lastName: '',
-    email: '',
-    city: '',
-    country: '',
-    password: '',
+  useEffect(() => {
+    const fetchTokenAndUserData = async () => {
+      try {
+        const token = await AsyncStorage.getItem('apiToken');
+        const userId = await AsyncStorage.getItem('userId');
+        console.log('Stored Token:', token);
+        console.log('Stored User ID:', userId);
+        if (token && userId) {
+          fetchUserData(token, userId);
+        } else {
+          console.log("Token or User ID not found in AsyncStorage.");
+        }
+      } catch (error) {
+        console.error("Error fetching token or user ID from AsyncStorage:", error);
+      }
+    };
+
+    fetchTokenAndUserData();
+  }, []);
+
+  const fetchUserData = async (token, userId) => {
+    try {
+      console.log("Fetching user data with token:", token, "and userId:", userId);
+
+      const response = await axios.get(`http://192.168.1.23:5000/api/users/get/${userId}`, {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      });
+
+      console.log("User data fetched:", response.data);
+      setUserInfo(response.data);
+    } catch (error) {
+      console.error('Error fetching user data:', error);
+      Alert.alert('Error', 'Failed to fetch user data');
+    }
   };
 
+  const handleUpdate = async () => {
+    setLoading(true);
+    try {
+      const token = await AsyncStorage.getItem('userToken');
+      console.log("Updating user data with token:", token, "and userInfo:", userInfo);
 
-  const [userData, setUserData] = useState(initialUserData);
-  const [error, setError] = useState('');
-  const [isLoading, setIsLoading] = useState(true);
-  const [isEditing, setIsEditing] = useState({
-    firstName: false,
-    lastName: false,
-    email: false,
-    city: false,
-    country: false,
-    password: false,
-  });
-  useEffect(() => {
-      const fetchUserData = async () => {
-        try {
-
-          const token = await AsyncStorage.getItem('token');
-          const userId = await AsyncStorage.getItem('userId');
-
-          if (!token) {
-              setError('No token found, please log in.');
-              setIsLoading(false);
-              return;
-          }
-
-          if (!userId) {
-              setError('No user Id found, please log in.');
-              setIsLoading(false);
-              return;
-          }
-
-          const response = await axios.get(`http://10.19.255.212:5000/api/users/get/${userId}`, {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          });
-
-          setUserData(response.data);
-        } catch (error) {
-          setError('Failed to fetch user data.');
-        } finally {
-          setIsLoading(false);
+      const response = await axios.put(`http://192.168.1.23:5000/api/users/update/${userInfo.id}`, userInfo, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'application/json'
         }
-      };
+      });
 
-      fetchUserData();
-    },[]);
-
-  const handleSave = async () => {
-      try {
-        const token = await AsyncStorage.getItem('token');
-        const userId = await AsyncStorage.getItem('userId');
-
-        if (!token) {
-          setError('No token found, please log in.');
-          return;
-        }
-
-        if (!userId) {
-            setError('No user ID found, unable to update.');
-            return;
-        }
-
-        await axios.put(`http://10.19.255.212:5000/api/users/update/${userId}`, userData, {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
-
-        console.log("Saved user data: ", userData);
-        setIsEditing({
-          firstName: false,
-          lastName: false,
-          email: false,
-          city: false,
-          country: false,
-          password: false,
-        });
-      } catch (error) {
-        setError('Failed to save user data.');
+      if (response.status === 200) {
+        Alert.alert('Success', 'User updated successfully');
+        setEditable(false);
       }
-    };
+    } catch (error) {
+      console.error('Error updating user data:', error);
+      Alert.alert('Error', 'Failed to update user data');
+    } finally {
+      setLoading(false);
+    }
+  };
 
-    const handleEdit = (field) => {
-      setIsEditing({ ...isEditing, [field]: true });
-    };
-
-    const handleChangeText = (text, field) => {
-      setUserData({ ...userData, [field]: text });
-    };
-
-    const renderValueOrInput = (field) => {
-      if (isEditing[field]) {
-        return (
-          <TextInput
-            style={styles.input}
-            value={userData[field]}
-            onChangeText={(text) => handleChangeText(text, field)}
-            onBlur={() => setIsEditing({ ...isEditing, [field]: false })}
-            autoFocus={true}
-          />
-        );
-      } else {
-        return (
-          <TouchableOpacity onPress={() => handleEdit(field)}>
-            <Text style={styles.value}>{userData[field]}</Text>
-          </TouchableOpacity>
-        );
-      }
-    };
+  const handleChange = (field, value) => {
+    setUserInfo({ ...userInfo, [field]: value });
+  };
 
   return (
-    <>
-      <Stack.Screen
-        options={{
-          headerTitle: 'My information',
-          headerStyle: {
-            backgroundColor: Colors.grey,
-          },
-          headerTintColor: Colors.white,
-        }}
+    <View style={styles.container}>
+      <Text style={styles.header}>User Profile</Text>
+      <TextInput
+        style={styles.input}
+        value={userInfo.first_name || ''}
+        editable={editable}
+        onChangeText={(text) => handleChange('first_name', text)}
+        placeholder="First Name"
+      />
+      <TextInput
+        style={styles.input}
+        value={userInfo.last_name || ''}
+        editable={editable}
+        onChangeText={(text) => handleChange('last_name', text)}
+        placeholder="Last Name"
+      />
+      <TextInput
+        style={styles.input}
+        value={userInfo.email || ''}
+        editable={editable}
+        onChangeText={(text) => handleChange('email', text)}
+        placeholder="Email"
+      />
+      <TextInput
+        style={styles.input}
+        value={userInfo.country || ''}
+        editable={editable}
+        onChangeText={(text) => handleChange('country', text)}
+        placeholder="Country"
+      />
+      <TextInput
+        style={styles.input}
+        value={userInfo.city || ''}
+        editable={editable}
+        onChangeText={(text) => handleChange('city', text)}
+        placeholder="City"
       />
 
-      <ScrollView contentContainerStyle={styles.container}>
-        <View style={styles.section}>
-          <Entypo name="info" size={30} color={Colors.black} style={styles.icon} />
-          <View style={styles.infoContainer}>
-            <Text style={styles.label}>Firstname</Text>
-            {renderValueOrInput('firstName')}
-
-            <Text style={styles.label}>Lastname</Text>
-            {renderValueOrInput('lastName')}
-          </View>
-        </View>
-
-        <View style={styles.section}>
-          <Entypo name="mail" size={30} color={Colors.black} style={styles.icon} />
-          <View style={styles.infoContainer}>
-            <Text style={styles.label}>Email address</Text>
-            {renderValueOrInput('email')}
-          </View>
-        </View>
-
-        <View style={styles.section}>
-          <Entypo name="home" size={30} color={Colors.black} style={styles.icon} />
-          <View style={styles.infoContainer}>
-            <Text style={styles.label}>City</Text>
-            {renderValueOrInput('city')}
-
-            <Text style={styles.label}>Country</Text>
-            {renderValueOrInput('country')}
-          </View>
-        </View>
-
-        <View style={styles.section}>
-          <Entypo name="lock" size={30} color={Colors.black} style={styles.icon} />
-          <View style={styles.infoContainer}>
-            <Text style={styles.label}>Password</Text>
-            {renderValueOrInput('password')}
-          </View>
-        </View>
-
-        <View style={styles.saveButtonContainer}>
-          <Button title="Save" onPress={handleSave} />
-        </View>
-      </ScrollView>
-    </>
+      {editable ? (
+        <Button title="Save" onPress={handleUpdate} disabled={loading} />
+      ) : (
+        <Button title="Edit" onPress={() => setEditable(true)} />
+      )}
+    </View>
   );
 };
 
-export default UserInformations;
-
 const styles = StyleSheet.create({
   container: {
-    flexGrow: 1,
+    flex: 1,
     padding: 20,
-    backgroundColor: Colors.white,
   },
-  section: {
-    flexDirection: 'row',
-    alignItems: 'flex-start',
+  header: {
+    fontSize: 24,
+    fontWeight: 'bold',
     marginBottom: 20,
   },
-  icon: {
-    marginRight: 30,
-    marginTop: 5,
-  },
-  infoContainer: {
-    flex: 1,
-  },
-  label: {
-    fontSize: 14,
-    fontWeight: 'bold',
-    color: Colors.grey,
-    marginBottom: 5,
-  },
-  value: {
-    fontSize: 20,
-    color: Colors.black,
-    marginBottom: 12,
-  },
   input: {
-    fontSize: 20,
-    color: Colors.black,
-    marginBottom: 12,
-    borderBottomWidth: 1,
-    borderBottomColor: Colors.grey,
-  },
-  saveButtonContainer: {
-    alignSelf: 'center',
-    width: '50%',
-    marginTop: 20,
+    borderWidth: 1,
+    borderColor: '#ddd',
+    padding: 10,
+    marginVertical: 5,
   },
 });
+
+export default UserProfile;
