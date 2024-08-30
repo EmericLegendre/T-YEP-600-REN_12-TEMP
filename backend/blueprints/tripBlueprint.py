@@ -143,3 +143,23 @@ def delete_archived_trip(id):
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
 
+@tripBp.route('/get/currenttrip', methods=['POST'])
+@jwt_required()
+def get_currenttrip_by_user_id():
+    data = request.get_json()
+
+    if not data or "user_id" not in data:
+        return jsonify({"error" : "User ID is required"}), 400
+    
+    user_id = data['user_id']
+
+    try:
+        current_trip = Trip.query.filter_by(user_id=user_id, archived=False).first()
+
+        if current_trip:
+            return jsonify({"trip_id": current_trip.id}), 200
+        else:
+            return jsonify({"message": "No current trip fround"}), 404
+        
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400
