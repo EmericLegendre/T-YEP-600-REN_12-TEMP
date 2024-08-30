@@ -106,7 +106,7 @@ def update_user(id):
 # Get User informations -> userId in URL
 @userBp.route('/get/<int:id>', methods=['GET'])
 @jwt_required()
-def get_country_by_id(id):
+def get_user_by_id(id):
     try:
         user = User.query.get(id)
         if user is None:
