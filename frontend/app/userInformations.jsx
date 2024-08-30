@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
+import Colors from '../constants/Colors';
 
 const UserProfile = () => {
   const [userInfo, setUserInfo] = useState({});
@@ -49,7 +50,7 @@ const UserProfile = () => {
   const handleUpdate = async () => {
     setLoading(true);
     try {
-      const token = await AsyncStorage.getItem('userToken');
+      const token = await AsyncStorage.getItem('apiToken');
       console.log("Updating user data with token:", token, "and userInfo:", userInfo);
 
       const response = await axios.put(`http://192.168.1.23:5000/api/users/update/${userInfo.id}`, userInfo, {
@@ -126,18 +127,51 @@ const UserProfile = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 20,
+    paddingHorizontal: 5,
+    backgroundColor: Colors.white,
   },
-  header: {
-    fontSize: 24,
-    fontWeight: 'bold',
+  headerContainer: {
+    marginBottom: 20,
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.grey,
+    paddingBottom: 10,
+  },
+  headerTitle: {
+    color: Colors.white,
+    fontSize: 20,
+    marginRight: 15,
+  },
+  form: {
     marginBottom: 20,
   },
   input: {
     borderWidth: 1,
-    borderColor: '#ddd',
+    borderColor: Colors.grey,
+    borderRadius: 5,
     padding: 10,
-    marginVertical: 5,
+    marginVertical: 10,
+    backgroundColor: Colors.lightGrey,
+  },
+  buttonContainer: {
+    marginTop: 20,
+    alignItems: 'center',
+  },
+  button: {
+    width: '100%',
+    paddingVertical: 10,
+    borderRadius: 5,
+    alignItems: 'center',
+  },
+  saveButton: {
+    backgroundColor: Colors.primary,
+  },
+  editButton: {
+    backgroundColor: Colors.secondary,
+  },
+  buttonText: {
+    color: Colors.white,
+    fontSize: 16,
+    fontWeight: 'bold',
   },
 });
 
