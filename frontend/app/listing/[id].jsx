@@ -223,7 +223,7 @@ const styles = StyleSheet.create({
     countryName: {
         fontSize: 24,
         fontWeight: 'bold',
-        color: 'white'
+        color: Colors.white
     },
     separator: {
         height: 2,
