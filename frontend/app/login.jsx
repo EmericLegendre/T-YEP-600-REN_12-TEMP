@@ -20,24 +20,39 @@ const login = () => {
             setErrorMessage('Please fill in all fields.');
             return;
       }
-      console.log("coucou")
       try {
           const dataJson = {
               email: email,
               password: password
           }
 
-        console.log("je suis dans le try");
-        const response = await axios.post('http://10.19.255.193:5000/api/users/auth', dataJson );
-        console.log("Response from server:", response.data);
+        const response = await axios.post(`http://${global.local_ip}:5000/api/users/auth`, dataJson );
         const { apiToken } = response.data;
         await AsyncStorage.setItem('token', apiToken);
+        await AsyncStorage.setItem('id', JSON.stringify(response.data['user']['id']));
 
-        console.log("Login successful, navigating to home...");
-        router.push('/home');
+        try {
+            const tripData = {
+                user_id: response.data['user']['id']
+            }
+            const tripConfig = {
+                headers: { Authorization: `Bearer ${apiToken}` }
+            }
+
+            const tripResponse = await axios.post(`http://${global.local_ip}:5000/api/trip/add`, tripData, tripConfig);
+            router.push('/homePage');
+
+        } catch (e) {
+            if (e.response.data.notArchivedTrip) {
+                router.push('/homePage')
+            } else {
+                setErrorMessage(e.message);
+            }
+        }
+
       } catch (err) {
         setError('Invalid email or password');
-    }
+      }
   };
 
   return (

@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from flask_jwt_extended import jwt_required, create_access_token
+from flask_jwt_extended import jwt_required, create_access_token, decode_token
 from models.user import User
 from config.dbConfig import db
 from sqlalchemy.exc import SQLAlchemyError
@@ -19,7 +19,7 @@ def authentication():
 
     if user and user.verify_password(password):
         token = create_access_token(identity=user.email)
-        return jsonify({'apiToken': token}), 200
+        return jsonify({'apiToken': token, 'user': {'id': user.id}}), 200
     else:
         return jsonify({'error': 'Invalid username or password'}), 401
 
@@ -56,8 +56,7 @@ def add_user():
     db.session.add(new_user)
     db.session.commit()
 
-    return jsonify({'message': 'User created successfully',
-                    'user': {'id': new_user.id, 'email': new_user.email}}), 201
+    return jsonify({'message': 'User created successfully', 'user': {'id': new_user.id}}), 201
 
 
 # Delete User -> userId in URL
@@ -107,7 +106,7 @@ def update_user(id):
 # Get User informations -> userId in URL
 @userBp.route('/get/<int:id>', methods=['GET'])
 @jwt_required()
-def get_country_by_id(id):
+def get_user_by_id(id):
     try:
         user = User.query.get(id)
         if user is None:
@@ -123,3 +122,21 @@ def get_country_by_id(id):
         }), 200
     except SQLAlchemyError as e:
         return jsonify({'error': str(e)}), 400
+
+
+@userBp.route('/verify', methods=['POST'])
+def verify_token():
+    data = request.get_json()
+    token = data.get('token')
+
+    if not token:
+        return jsonify({'error': 'Missing token'}), 400
+
+    decoded_token = decode_token(token)
+    existing_user = User.query.filter(User.email == decoded_token['sub']).first()
+
+    if not existing_user:
+        return jsonify({'error': 'User not found'}), 404
+
+    return jsonify({'message': 'Token verified', 'user': {'id': existing_user.id}}), 200
+

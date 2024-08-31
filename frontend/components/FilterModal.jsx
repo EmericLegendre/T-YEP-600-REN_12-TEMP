@@ -126,14 +126,14 @@ const styles = StyleSheet.create({
   },
   closeIconText: {
     fontSize: 20,
-    color: Colors.grey,
+    color: Colors.black,
   },
   mainTitle: {
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
     textAlign: 'center',
-    color: Colors.grey,
+    color: Colors.black,
   },
   filterTitle: {
     fontSize: 18,
@@ -142,7 +142,6 @@ const styles = StyleSheet.create({
   },
   pickerWrapper: {
     borderWidth: 1,
-    borderColor: Colors.grey,
     borderRadius: 10,
     marginBottom: 20,
   },
@@ -164,12 +163,12 @@ const styles = StyleSheet.create({
   },
   resetButton: {
     padding: 15,
+    borderWidth: 1,
     borderRadius: 5,
     alignItems: 'center',
-    backgroundColor: Colors.grey,
+    backgroundColor: Colors.white,
   },
   resetButtonText: {
-    color: Colors.white,
     fontSize: 16,
   },
 });

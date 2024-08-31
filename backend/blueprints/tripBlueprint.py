@@ -22,7 +22,7 @@ def add_trip():
 
     not_archived_trip = Trip.query.filter(Trip.user_id == user_id).filter(Trip.archived == False).first()
     if not_archived_trip:
-        return jsonify({'error': 'Founded not archived trip'}), 400
+        return jsonify({'notArchivedTrip': 'Founded not archived trip'}), 400
 
     new_trip = Trip(
         user_id = user_id,

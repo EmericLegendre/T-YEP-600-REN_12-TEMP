@@ -54,7 +54,7 @@ const register = () => {
         }
 
           try {
-              const response = await axios.post('http://10.19.255.193:5000/api/users/add', {
+              const response = await axios.post(`http://${global.local_ip}:5000/api/users/add`, {
                   email,
                   password,
                   first_name,

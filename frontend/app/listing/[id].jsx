@@ -1,9 +1,10 @@
-import { Image, StyleSheet, Text, View, Dimensions, ActivityIndicator } from 'react-native';
+import { Image, StyleSheet, Text, View, Dimensions, ActivityIndicator, ScrollView } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import { useLocalSearchParams, Stack } from 'expo-router';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import CategoryButtons from '../../components/CategoryButtons';
+import Colors from '../../constants/Colors'
 
 const { width } = Dimensions.get('window');
 const IMG_HEIGHT = 300;
@@ -33,12 +34,12 @@ const CountryDetails = () => {
     
                 if (!token) throw new Error('Token non trouvé');
     
-                const response = await axios.get(`http://10.19.255.221:5000/api/country/get/${id}`, {
+                const response = await axios.get(`http://${global.local_ip}:5000/api/country/get/${id}`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 setListing(response.data);
     
-                const responseLanguages = await axios.get(`http://10.19.255.221:5000/api/countryInfos/get/country/${id}/category/LANGUAGE`, {
+                const responseLanguages = await axios.get(`http://${global.local_ip}:5000/api/countryInfos/get/country/${id}/category/LANGUAGE`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 const extractedLanguages = responseLanguages.data.map(lang => lang.content);
@@ -55,7 +56,7 @@ const CountryDetails = () => {
                 const categoryCode = categoryMappings[selectedCategory];
     
                 if (categoryCode && selectedCategory !== 'General') {
-                    const responseCategory = await axios.get(`http://10.19.255.221:5000/api/countryInfos/get/country/${id}/category/${categoryCode}`, {
+                    const responseCategory = await axios.get(`http://${global.local_ip}:5000/api/countryInfos/get/country/${id}/category/${categoryCode}`, {
                         headers: { Authorization: `Bearer ${token}` }
                     });
                     setCategoryInfo(responseCategory.data);
@@ -116,9 +117,17 @@ const CountryDetails = () => {
                         <Text style={styles.infoText}>{listing.continent || 'N/A'}</Text>
                     </View>
                     <View style={styles.infoRow}>
-                        <Text style={styles.infoTitle}>Languages :</Text>
+                    <Text style={styles.infoTitle}>Languages :</Text>
+                    {languages.length > 2 ? (
+                        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+                            {languages.map((language, index) => (
+                                <Text key={index} style={styles.infoText}>{language}{index < languages.length - 1 ? ', ' : ''}</Text>
+                            ))}
+                        </ScrollView>
+                    ) : (
                         <Text style={styles.infoText}>{languages.length > 0 ? languages.join(', ') : 'N/A'}</Text>
-                    </View>
+                    )}
+                </View>
                     <View style={styles.infoRow}>
                         <Text style={styles.infoTitle}>Currency :</Text>
                         <Text style={styles.infoText}>{listing.currency || 'N/A'}</Text>
@@ -165,8 +174,6 @@ const CountryDetails = () => {
         return null;
     };
     
-    
-
     return (
         <>
             <Stack.Screen options={{
@@ -182,6 +189,7 @@ const CountryDetails = () => {
                     </View>
                 </View>
                 <CategoryButtons onCategorySelect={handleCategorySelect} />
+                <View style={styles.separator} />
                 {renderCategoryInfo()}
             </View>
         </>
@@ -194,6 +202,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'flex-start',
+        backgroundColor : Colors.white
     },
     imageContainer: {
         position: 'relative',
@@ -216,12 +225,17 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: 'white'
     },
+    separator: {
+        height: 2,
+        backgroundColor: Colors.lightGrey,
+        marginTop: 20,
+    },
     infoContainer: {
       padding: 20,
       borderRadius: 8,
       marginHorizontal: 15,
       marginBottom: 20,
-      marginTop: 30,
+      marginTop: 20,
   },
   infoRow: {
       flexDirection: 'row',
@@ -233,9 +247,23 @@ const styles = StyleSheet.create({
       fontSize: 18,
       fontWeight: 'bold',
       color: '#333',
+      marginRight: 10
   },
   infoText: {
       fontSize: 16,
       color: '#333',
-  }
+  },
+  languageRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    flexWrap: 'wrap',
+},
+languageScrollContainer: {
+    flexDirection: 'row',
+},
+languageText: {
+    fontSize: 16,
+    color: '#333',
+    marginRight: 10,
+}
 });
