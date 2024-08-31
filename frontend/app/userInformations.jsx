@@ -71,7 +71,7 @@ const UserInformations = () => {
         options={{
           headerTitle: 'Mes informations',
           headerStyle: {
-            backgroundColor: Colors.grey,
+            backgroundColor: Colors.secondColor,
           },
           headerTintColor: Colors.white,
         }}
@@ -165,6 +165,6 @@ const styles = StyleSheet.create({
   saveButtonContainer: {
     alignSelf: 'center',
     width: '50%',
-    marginTop: 20,
+    marginTop: 20
   },
 });

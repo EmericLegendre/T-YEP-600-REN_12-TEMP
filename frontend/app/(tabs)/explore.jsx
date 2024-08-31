@@ -108,15 +108,7 @@ const Explore = () => {
         },
         headerLeft: () => (
           <Text style={styles.headerTitle}>Explore</Text>
-        ),
-        headerRight: () => (
-          <TouchableOpacity 
-            onPress={() => router.push('/userInformations')}        
-            style={styles.headerRight}
-          >
-            <Ionicons name="person-sharp" size={30} color={Colors.white} />
-          </TouchableOpacity>
-        ),
+        )
       }}/>
 
       <View style={styles.container}>
