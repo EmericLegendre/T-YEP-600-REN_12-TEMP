@@ -47,11 +47,7 @@ const Explore = () => {
         setLanguagesData(languagesByCountry);
 
       } catch (error) {
-        if (error.response) {
-          console.log('Error Response:', error.response.data);
-        } else {
-          console.log('Error:', error.message);
-        }
+        // add setErrorMessage ?
       }
     };
 

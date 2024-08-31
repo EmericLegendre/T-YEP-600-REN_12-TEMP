@@ -32,7 +32,6 @@ const StartPage = () => {
                 global.currentUserId = response.data.user.id;
                 router.push('/homePage');
             } catch (e) {
-                console.log('Cannot verify API token');
                 router.push('/register');
             }
         }

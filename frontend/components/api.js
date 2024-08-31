@@ -13,11 +13,6 @@ export const getUserData = async () => {
     const response = await axios.get(`http://${global.local_ip}:5000/api/users/get/${id}`, config);
     return response.data;
   } catch (error) {
-    if (error.response) {
-      console.log('Error Response:', error.response.data);
-    } else {
-      console.log('Error:', error.message);
-    }
     throw error;
   }
 };

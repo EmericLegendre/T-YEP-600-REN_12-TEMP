@@ -29,7 +29,6 @@ const TripDetails = () => {
 
                 setTrip(tripResponse.data);
             } catch (err) {
-                console.log(err);
                 setError('Trip not found');
             } finally {
                 setLoading(false);
@@ -100,7 +99,6 @@ const TripDetails = () => {
             setTrip({ ...trip, archived: true });
             Alert.alert('Success', 'Trip marked as finished');
         } catch (err) {
-            console.log(err);
             Alert.alert('Error', 'Failed to mark trip as finished');
         }
     };
@@ -117,7 +115,6 @@ const TripDetails = () => {
             Alert.alert('Success', 'Trip deleted');
             router.push('/');  // Navigate to the home or trip list screen after deletion
         } catch (err) {
-            console.log(err);
             Alert.alert('Error', 'Failed to delete trip');
         }
     };
