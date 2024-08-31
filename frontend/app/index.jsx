@@ -32,11 +32,11 @@ const StartPage = () => {
                 global.currentUserId = response.data.user.id;
                 router.push('/homePage');
             } catch (e) {
-                router.push('/register');
+                router.push('/login');
             }
         }
         else {
-            router.push('/register');
+            router.push('/login');
         }
 
       } catch (error) {

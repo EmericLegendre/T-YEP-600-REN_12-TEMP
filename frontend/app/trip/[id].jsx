@@ -19,13 +19,13 @@ const TripDetails = () => {
         const fetchTrip = async () => {
             try {
                 const token = await AsyncStorage.getItem('token');
-                if (!token) throw new Error('Token non trouvé');
+                if (!token) throw new Error('Token not found');
 
                 const tripResponse = await axios.get(`http://${global.local_ip}:5000/api/trip/get/${id}`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
 
-                if (!tripResponse.data) throw new Error('Trip non trouvé');
+                if (!tripResponse.data) throw new Error('Trip not found');
 
                 setTrip(tripResponse.data);
             } catch (err) {
@@ -38,7 +38,7 @@ const TripDetails = () => {
         const fetchKeyLocations = async () => {
             try {
                 const token = await AsyncStorage.getItem('token');
-                if (!token) throw new Error('Token non trouvé');
+                if (!token) throw new Error('Token not found');
 
                 const TripkeyLocationsResponse = await axios.get(`http://${global.local_ip}:5000/api/tripKeyLocations/get`, {
                     headers: { Authorization: `Bearer ${token}` }

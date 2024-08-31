@@ -18,8 +18,7 @@ export default function HomePage() {
           const { apiToken } = response.data;
 
           global.currentUserId = null;
-          AsyncStorage.removeItem(apiToken);
-          router.push('/register');
+          AsyncStorage.removeItem(apiToken).then(r => router.push('/login'));
       } catch (error) {
           console.error('Failed to remove the token:', error);
       }

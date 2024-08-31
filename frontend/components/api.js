@@ -4,8 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 export const getUserData = async () => {
   try {
     const token = await AsyncStorage.getItem('token');
-    const id = await AsyncStorage.getItem('id');
-    
+    const id = global.currentUserId;
     const config = {
       headers: { Authorization: `Bearer ${token}` }
     };
@@ -21,8 +20,8 @@ export const getLocationDetails = async (latitude, longitude) => {
   const url = `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${global.opencagekey}`;
 
   try {
-    const response = await fetch(url);
-    const data = await response.json();
+    const response = await axios.get(url);
+    const data = response.data;
 
     if (data && data.results && data.results.length > 0) {
       const location = data.results[0];
@@ -44,8 +43,8 @@ export const getTimezoneFromLocation = async (country, city) => {
   const url = `https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(city)},${encodeURIComponent(country)}&key=${global.opencagekey}`;
 
   try {
-    const response = await fetch(url);
-    const data = await response.json();
+    const response = await axios.get(url);
+    const data = response.data;
 
     if (data && data.results && data.results.length > 0) {
       const timezone = data.results[0].annotations.timezone.name;
