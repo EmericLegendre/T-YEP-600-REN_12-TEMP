@@ -2,6 +2,9 @@ from flask import Blueprint, jsonify, request
 from sqlalchemy.exc import SQLAlchemyError
 from flask_jwt_extended import jwt_required
 from models.keyLocations import KeyLocations
+from models.trip import Trip
+from models.tripKeyLocations import TripKeyLocations
+from models.keyLocations import KeyLocations
 from config.dbConfig import db
 
 keyLocationsBp = Blueprint('keyLocationsBlueprint', __name__)
@@ -25,7 +28,7 @@ def add_key_location():
 
     existing_key_location = KeyLocations.query.filter(KeyLocations.place_id == place_id).first()
     if existing_key_location:
-        return jsonify({'error': 'Key Location with this place_id already exists'}), 400
+        return jsonify({'alreadyExist': 'Key Location with this place_id already exists', 'keyLocation' : {'id' : existing_key_location.id}}), 400
 
     new_key_location = KeyLocations(
         name=name,
@@ -36,7 +39,7 @@ def add_key_location():
     db.session.commit()
 
     return jsonify({'message': 'Key Location created successfully',
-                    'KeyLocation': {'place_id': new_key_location.place_id, 'name': new_key_location.name}}), 201
+                    'keyLocation': {'id': new_key_location.id, 'place_id': new_key_location.place_id, 'name': new_key_location.name}}), 201
 
 
 @keyLocationsBp.route('/delete/<int:id>', methods=['DELETE'])
@@ -109,3 +112,42 @@ def update_key_location(id):
     except SQLAlchemyError as e:
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
+    
+
+@keyLocationsBp.route('/get/currentkeylocation', methods=['POST'])
+@jwt_required()
+def get_current_key_location_by_user_id():
+    data = request.get_json()
+
+    if not data or "user_id" not in data:
+        return jsonify({"error" : "User ID is required"}), 400
+    
+    user_id= data['user_id']
+
+    try:
+        current_trip = Trip.query.filter_by(user_id=user_id, archived=False).first()
+
+        if current_trip:
+            trip_key_locations = TripKeyLocations.query.filter_by(trip_id=current_trip.id).all()
+
+            if trip_key_locations:
+                key_location_info = []
+
+                for trip_key_location in trip_key_locations:
+                    key_location = KeyLocations.query.get(trip_key_location.key_locations_id)
+
+                    if key_location:
+                        key_location_info.append({
+                            "trip_key_location_id": trip_key_location.id,
+                            "name" : key_location.name,
+                            "place_id" : key_location.place_id
+                        })
+                return jsonify({"key_locations": key_location_info}), 200
+        
+            else:
+                return jsonify({"message": "No current trip_key_locations"}), 404
+        else:
+            return jsonify({"message": "No current trip fround"}), 404
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 400

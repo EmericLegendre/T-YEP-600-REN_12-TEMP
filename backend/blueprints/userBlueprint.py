@@ -124,6 +124,7 @@ def get_user_by_id(id):
         return jsonify({'error': str(e)}), 400
 
 
+
 @userBp.route('/verify', methods=['POST'])
 def verify_token():
     data = request.get_json()

@@ -41,8 +41,8 @@ def add_trip_key_locations():
     db.session.add(new_trip_key_location)
     db.session.commit()
 
-    return jsonify({'message': 'Trip keyLocation created successfully'}), 201
-
+    return jsonify({'message': 'Trip keyLocation created successfully', "tripKeyLocationId": new_trip_key_location.id }), 201
+    
 
 @tripKeyLocationsBp.route('/delete/<int:id>', methods=['DELETE'])
 @jwt_required()
@@ -114,4 +114,5 @@ def update_trip_key_location(id):
     except SQLAlchemyError as e:
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
+
 
