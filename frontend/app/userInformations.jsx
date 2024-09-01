@@ -35,7 +35,7 @@ const UserProfile = () => {
     try {
       console.log("Fetching user data with token:", token, "and userId:", userId);
 
-      const response = await axios.get(`http://192.168.1.23:5000/api/users/get/${userId}`, {
+      const response = await axios.get(`http://${global.local_ip}:5000/api/users/get/${userId}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -68,7 +68,7 @@ const UserProfile = () => {
         console.log("Updating user data with token:", token, "and userInfo:", userInfo);
 
         const response = await axios.put(
-          `http://192.168.1.23:5000/api/users/update/${userInfo.id}`,
+          `http://${global.local_ip}:5000/api/users/update/${userInfo.id}`,
           userInfo,
           {
             headers: {
@@ -104,7 +104,7 @@ const UserProfile = () => {
               return;
             }
 
-            const response = await axios.delete(`http://192.168.1.23:5000/api/users/delete/${userId}`, {
+            const response = await axios.delete(`http://${global.local_ip}:5000/api/users/delete/${userId}`, {
               headers: {
                 Authorization: `Bearer ${token}`
               }
