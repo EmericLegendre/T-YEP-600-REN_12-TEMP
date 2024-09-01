@@ -1,169 +1,234 @@
-import React, { useState } from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity, TextInput, Button } from 'react-native';
-import { Stack } from 'expo-router';
-import { Entypo } from '@expo/vector-icons';
+import React, { useEffect, useState } from 'react';
+import { View, Text, TextInput, Button, StyleSheet, Alert, TouchableOpacity, activityIndicator } from 'react-native';
+import { Stack, useRouter } from 'expo-router';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import axios from 'axios';
 import Colors from '../constants/Colors';
 
-const UserInformations = () => {
-  const initialUserData = {
-    firstName: 'Mehdi',
-    lastName: 'Sabir',
-    email: 'mehdi3601@hotmail.fr',
-    city: 'Rennes',
-    country: 'France',
-    password: '********',
+const UserProfile = () => {
+  const [userInfo, setUserInfo] = useState({});
+  const [editable, setEditable] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    const fetchTokenAndUserData = async () => {
+      try {
+        const token = await AsyncStorage.getItem('token');
+        const userId = await AsyncStorage.getItem('id');
+        console.log('Stored Token:', token);
+        console.log('Stored User ID:', userId);
+        if (token && userId) {
+          fetchUserData(token, userId);
+        } else {
+          console.log("Token or User ID not found in AsyncStorage.");
+        }
+      } catch (error) {
+        console.error("Error fetching token or user ID from AsyncStorage:", error);
+      }
+    };
+
+    fetchTokenAndUserData();
+  }, []);
+
+  const fetchUserData = async (token, userId) => {
+    try {
+      console.log("Fetching user data with token:", token, "and userId:", userId);
+
+      const response = await axios.get(`http://192.168.1.23:5000/api/users/get/${userId}`, {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      });
+
+      console.log("User data fetched:", response.data);
+      setUserInfo(response.data);
+    } catch (error) {
+      console.error('Error fetching user data:', error);
+      Alert.alert('Error', 'Failed to fetch user data');
+    }
+
   };
 
-  const [userData, setUserData] = useState(initialUserData);
+  const handleUpdate = async () => {
+    setLoading(true);
+    try {
+        const token = await AsyncStorage.getItem('token');
 
-  const [isEditing, setIsEditing] = useState({
-    firstName: false,
-    lastName: false,
-    email: false,
-    city: false,
-    country: false,
-    password: false,
-  });
 
-  const handleSave = () => {
-    setIsEditing({
-      firstName: false,
-      lastName: false,
-      email: false,
-      city: false,
-      country: false,
-      password: false,
-    });
-  };
+        const requiredFields = ['id', 'first_name', 'last_name', 'email', 'country', 'city'];
+        const missingFields = requiredFields.filter(field => !userInfo[field]);
+        if (missingFields.length > 0) {
+          console.log('Missing fields:', missingFields);
+          Alert.alert('Error', `Missing required fields: ${missingFields.join(', ')}`);
+          setLoading(false);
+          return;
+        }
 
-  const handleEdit = (field) => {
-    setIsEditing({ ...isEditing, [field]: true });
-  };
+        console.log("Updating user data with token:", token, "and userInfo:", userInfo);
 
-  const handleChangeText = (text, field) => {
-    setUserData({ ...userData, [field]: text });
-  };
+        const response = await axios.put(
+          `http://192.168.1.23:5000/api/users/update/${userInfo.id}`,
+          userInfo,
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+              'Content-Type': 'application/json',
+            },
+          }
+        );
 
-  const renderValueOrInput = (field) => {
-    if (isEditing[field]) {
-      return (
-        <TextInput
-          style={styles.input}
-          value={userData[field]}
-          onChangeText={(text) => handleChangeText(text, field)}
-          onBlur={() => setIsEditing({ ...isEditing, [field]: false })}
-          autoFocus={true}
-        />
-      );
-    } else {
-      return (
-        <TouchableOpacity onPress={() => handleEdit(field)}>
-          <Text style={styles.value}>{userData[field]}</Text>
-        </TouchableOpacity>
-      );
+      if (response.status === 200) {
+        Alert.alert('Success', 'User updated successfully');
+        setEditable(false);
+      }
+    } catch (error) {
+      console.error('Error updating user data:', error);
+      Alert.alert('Error', 'Failed to update user data');
+    } finally {
+      setLoading(false);
     }
   };
 
+  const handleChange = (field, value) => {
+    setUserInfo((prevUserInfo) => ({ ...prevUserInfo, [field]: value }));
+  };
+
   return (
-    <>
-      <Stack.Screen
-        options={{
-          headerTitle: 'Mes informations',
-          headerStyle: {
-            backgroundColor: Colors.secondColor,
-          },
-          headerTintColor: Colors.white,
-        }}
+
+    <View style={styles.container}>
+        <Stack.Screen options={{
+                headerTitle: '',
+                headerStyle: {
+                  backgroundColor: Colors.grey,
+                },
+                headerRight: () => (
+                  <Text style={styles.headerTitle}>Hello, {userInfo.first_name}</Text>
+
+                ),
+                headerTintColor: Colors.white
+              }}
+              />
+        <View style={styles.headerContainer}>
+            <Text style={styles.headerTitle}>Personal information</Text>
+        </View>
+      <TextInput
+        style={styles.input}
+        value={userInfo.first_name || ''}
+        editable={editable}
+        onChangeText={(text) => handleChange('first_name', text)}
+        placeholder="First Name"
+      />
+      <TextInput
+        style={styles.input}
+        value={userInfo.last_name || ''}
+        editable={editable}
+        onChangeText={(text) => handleChange('last_name', text)}
+        placeholder="Last Name"
+      />
+      <TextInput
+        style={styles.input}
+        value={userInfo.email || ''}
+        editable={editable}
+        onChangeText={(text) => handleChange('email', text)}
+        placeholder="Email"
+      />
+      <TextInput
+        style={styles.input}
+        value={userInfo.country || ''}
+        editable={editable}
+        onChangeText={(text) => handleChange('country', text)}
+        placeholder="Country"
+      />
+      <TextInput
+        style={styles.input}
+        value={userInfo.city || ''}
+        editable={editable}
+        onChangeText={(text) => handleChange('city', text)}
+        placeholder="City"
       />
 
-      <ScrollView contentContainerStyle={styles.container}>
-        <View style={styles.section}>
-          <Entypo name="info" size={30} color={Colors.black} style={styles.icon} />
-          <View style={styles.infoContainer}>
-            <Text style={styles.label}>Prénom</Text>
-            {renderValueOrInput('firstName')}
-
-            <Text style={styles.label}>Nom</Text>
-            {renderValueOrInput('lastName')}
-          </View>
-        </View>
-
-        <View style={styles.section}>
-          <Entypo name="mail" size={30} color={Colors.black} style={styles.icon} />
-          <View style={styles.infoContainer}>
-            <Text style={styles.label}>Email</Text>
-            {renderValueOrInput('email')}
-          </View>
-        </View>
-
-        <View style={styles.section}>
-          <Entypo name="home" size={30} color={Colors.black} style={styles.icon} />
-          <View style={styles.infoContainer}>
-            <Text style={styles.label}>Ville</Text>
-            {renderValueOrInput('city')}
-
-            <Text style={styles.label}>Pays</Text>
-            {renderValueOrInput('country')}
-          </View>
-        </View>
-
-        <View style={styles.section}>
-          <Entypo name="lock" size={30} color={Colors.black} style={styles.icon} />
-          <View style={styles.infoContainer}>
-            <Text style={styles.label}>Mot de passe</Text>
-            {renderValueOrInput('password')}
-          </View>
-        </View>
-
-        <View style={styles.saveButtonContainer}>
-          <Button title="Enregistrer" onPress={handleSave} />
-        </View>
-      </ScrollView>
-    </>
+      {editable ? (
+      <TouchableOpacity
+          onPress={handleUpdate}
+          style={[styles.button, styles.saveButton]}
+          disabled={loading}
+        >
+          {loading ? <ActivityIndicator color={Colors.white} /> : <Text style={styles.buttonText}>Save</Text>}
+        </TouchableOpacity>
+      ) : (
+        <TouchableOpacity
+          onPress={() => setEditable(true)}
+          style={[styles.button, styles.editButton]}
+        >
+          <Text style={styles.buttonText}>Edit</Text>
+        </TouchableOpacity>
+      )}
+    </View>
   );
 };
 
-export default UserInformations;
-
 const styles = StyleSheet.create({
   container: {
-    flexGrow: 1,
-    padding: 20,
+    flex: 1,
+    justifyContent: 'center',
+    paddingHorizontal: 20,
     backgroundColor: Colors.white,
   },
-  section: {
-    flexDirection: 'row',
-    alignItems: 'flex-start',
+  headerContainer: {
     marginBottom: 20,
-  },
-  icon: {
-    marginRight: 30,
-    marginTop: 5,
-  },
-  infoContainer: {
-    flex: 1,
-  },
-  label: {
-    fontSize: 14,
-    fontWeight: 'bold',
-    color: Colors.grey,
-    marginBottom: 5,
-  },
-  value: {
-    fontSize: 20,
-    color: Colors.black,
-    marginBottom: 12,
-  },
-  input: {
-    fontSize: 20,
-    color: Colors.black,
-    marginBottom: 12,
     borderBottomWidth: 1,
     borderBottomColor: Colors.grey,
+    paddingBottom: 10,
+    flexDirection: 'row',
+    alignItems:'center',
   },
-  saveButtonContainer: {
-    alignSelf: 'center',
-    width: '50%',
-    marginTop: 20
+  headerTitle: {
+    color: Colors.black,
+    fontSize: 20,
+    marginRight: 15,
+  },
+  form: {
+    marginBottom: 20,
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: Colors.grey,
+    borderRadius: 5,
+    padding: 10,
+    marginVertical: 10,
+    backgroundColor: Colors.lightGrey,
+  },
+  buttonContainer: {
+    marginTop: 20,
+    alignItems: 'center',
+  },
+  button: {
+    width: '100%',
+    paddingVertical: 10,
+    borderRadius: 5,
+    alignItems: 'center',
+  },
+  saveButton: {
+    backgroundColor: '#c7522a',
+  },
+  editButton: {
+    backgroundColor: '#dda15e',
+  },
+  buttonText: {
+    color: Colors.white,
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  backButton: {
+      marginBottom: 20,
+      padding: 10,
+      alignItems:'center',
+  },
+  backButtonText:{
+    fontSize: 16,
+    color: Colors.primary,
   },
 });
+
+export default UserProfile;
