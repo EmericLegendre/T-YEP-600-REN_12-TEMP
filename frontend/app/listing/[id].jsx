@@ -143,14 +143,12 @@ const CountryDetails = () => {
             if (categoryInfo.error) {
                 return (
                     <View style={styles.infoContainer}>
-                        <Text style={styles.infoTitle}>{selectedCategory} :</Text>
                         <Text style={styles.infoText}>{categoryInfo.error}</Text>
                     </View>
                 );
             } else if (Array.isArray(categoryInfo) && categoryInfo.length > 0) {
                 return (
                     <View style={styles.infoContainer}>
-                        <Text style={styles.infoTitle}>{selectedCategory} :</Text>
                         <Text style={styles.infoText}>{categoryInfo.map(info => info.content).join(', ')}</Text>
                     </View>
                 );
