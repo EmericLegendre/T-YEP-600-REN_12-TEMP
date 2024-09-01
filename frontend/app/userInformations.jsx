@@ -94,12 +94,8 @@ const UserProfile = () => {
               }}
               />
         <View style={styles.headerContainer}>
-            <TouchableOpacity onPress={() => router.push('/profile')} style={styles.backButton}>
-                <Text style={styles.backButtonText}>← Back</Text>
-            </TouchableOpacity>
-            <Text style={styles.headerTitle}>User Profile</Text>
+            <Text style={styles.headerTitle}>Personal information</Text>
         </View>
-      <Text style={styles.header}>User Profile</Text>
       <TextInput
         style={styles.input}
         value={userInfo.first_name || ''}
