@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet, Alert, TouchableOpacity } from 'react-native';
+import { View, Text, TextInput, Button, StyleSheet, Alert, TouchableOpacity, activityIndicator } from 'react-native';
 import { Stack, useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
@@ -52,15 +52,30 @@ const UserProfile = () => {
   const handleUpdate = async () => {
     setLoading(true);
     try {
-      const token = await AsyncStorage.getItem('token');
-      console.log("Updating user data with token:", token, "and userInfo:", userInfo);
+        const token = await AsyncStorage.getItem('token');
 
-      const response = await axios.put(`http://192.168.1.23:5000/api/users/update/${userInfo.id}`, userInfo, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-          'Content-Type': 'application/json'
+        // Check for missing fields
+        const requiredFields = ['id', 'first_name', 'last_name', 'email', 'country', 'city'];
+        const missingFields = requiredFields.filter(field => !userInfo[field]);
+        if (missingFields.length > 0) {
+          console.log('Missing fields:', missingFields);
+          Alert.alert('Error', `Missing required fields: ${missingFields.join(', ')}`);
+          setLoading(false);
+          return;
         }
-      });
+
+        console.log("Updating user data with token:", token, "and userInfo:", userInfo);
+
+        const response = await axios.put(
+          `http://192.168.1.23:5000/api/users/update/${userInfo.id}`,
+          userInfo,
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+              'Content-Type': 'application/json',
+            },
+          }
+        );
 
       if (response.status === 200) {
         Alert.alert('Success', 'User updated successfully');
@@ -75,7 +90,7 @@ const UserProfile = () => {
   };
 
   const handleChange = (field, value) => {
-    setUserInfo({ ...userInfo, [field]: value });
+    setUserInfo((prevUserInfo) => ({ ...prevUserInfo, [field]: value }));
   };
 
   return (
