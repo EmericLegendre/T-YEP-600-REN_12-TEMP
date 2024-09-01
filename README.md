@@ -76,7 +76,6 @@ Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce proje
 5. Ouvrez une Pull Request.
 
 ## Auteurs
-## Auteurs
 - **Emeric Legendre** - [https://github.com/EmericLegendre](https://github.com/EmericLegendre)
 - **Camille Kershero** - [https://github.com/Camserho](https://github.com/Camserho)
 - **Nathan Cahaigne** - [https://github.com/nathanCahgn](https://github.com/nathanCahgn)
