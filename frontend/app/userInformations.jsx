@@ -54,7 +54,7 @@ const UserProfile = () => {
     try {
         const token = await AsyncStorage.getItem('token');
 
-        // Check for missing fields
+
         const requiredFields = ['id', 'first_name', 'last_name', 'email', 'country', 'city'];
         const missingFields = requiredFields.filter(field => !userInfo[field]);
         if (missingFields.length > 0) {
