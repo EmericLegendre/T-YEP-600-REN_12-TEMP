@@ -87,7 +87,7 @@ const UserTrip = () => {
     <>
       <Stack.Screen
         options={{
-          headerTitle: 'My Trips',
+          headerTitle: 'Trips',
           headerStyle: {
             backgroundColor: Colors.secondColor,
           },
