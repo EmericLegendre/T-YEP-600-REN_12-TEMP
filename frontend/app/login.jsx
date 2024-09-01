@@ -27,21 +27,13 @@ const login = () => {
         password,
       };
 
-      console.log('Attempting login with:', dataJson);
-
-
       const response = await axios.post('http://192.168.1.23:5000/api/users/auth', dataJson);
-      console.log('Response from server:', response.data);
-
 
       const { apiToken, user } = response.data;
 
       if (apiToken && user && user.id) {
         await AsyncStorage.setItem('token', apiToken);
         await AsyncStorage.setItem('userId', user.id.toString());
-
-        console.log('Login successful, navigating to home...');
-
         router.push('/home');
       } else {
         throw new Error('Token or user ID is missing in the response');

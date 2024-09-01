@@ -35,8 +35,8 @@ const Profile = () => {
           backgroundColor: Colors.grey,
         },
         headerRight: () => (
-          <Text style={styles.headerTitle}>Mon profil</Text>
-          // mon profil = nom du user connecté
+          <Text style={styles.headerTitle}>My profile</Text>
+
         ),
         headerTintColor: Colors.white
       }}
@@ -47,28 +47,28 @@ const Profile = () => {
           style={styles.listItem} 
           onPress={() => router.push('/userInformations')}
         >
-          <Text style={styles.listItemText}>Mes informations</Text>
+          <Text style={styles.listItemText}>My information</Text>
           <Ionicons name="chevron-forward" size={20} color={Colors.black} />
         </TouchableOpacity>
         <TouchableOpacity 
           style={styles.listItem} 
           onPress={() => router.push('/userStatistics')}
         >
-          <Text style={styles.listItemText}>Mes statistiques</Text>
+          <Text style={styles.listItemText}>My statistics</Text>
           <Ionicons name="chevron-forward" size={20} color={Colors.black} />
         </TouchableOpacity>
         <TouchableOpacity 
           style={styles.listItem} 
           onPress={() => router.push('/userHistory')}
         >
-          <Text style={styles.listItemText}>Mon historique</Text>
+          <Text style={styles.listItemText}>My historic</Text>
           <Ionicons name="chevron-forward" size={20} color={Colors.black} />
         </TouchableOpacity>
         <TouchableOpacity 
           style={styles.listItem} 
           onPress={() => router.push('/userTrips')}
         >
-          <Text style={styles.listItemText}>Mes voyages</Text>
+          <Text style={styles.listItemText}>My travels</Text>
           <Ionicons name="chevron-forward" size={20} color={Colors.black} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.listItem} onPress={logOut}>

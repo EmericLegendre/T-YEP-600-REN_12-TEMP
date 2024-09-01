@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, Alert } from 'react-native'
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, Alert, ScrollView } from 'react-native'
 import { Stack, useRouter } from 'expo-router'
 import React from 'react'
 import { useState } from 'react'
@@ -55,7 +55,7 @@ const register = () => {
         }
 
           try {
-              const response = await axios.post('http://10.19.255.193:5000/api/users/add', {
+              const response = await axios.post('http://192.168.1.23:5000/api/users/add', {
                   email,
                   password,
                   first_name,
