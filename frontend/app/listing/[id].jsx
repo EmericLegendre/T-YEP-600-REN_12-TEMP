@@ -71,8 +71,7 @@ const CountryDetails = () => {
                 }
         
             } catch (err) {
-                console.log('Captured error:', err.response ? err.response.data : err.message);
-                setError(err.response ? err.response.data.message || 'An error occurred' : err.message);
+                setError(err.response ? err.response.data : err.message);
             } finally {
                 setLoading(false);
             }

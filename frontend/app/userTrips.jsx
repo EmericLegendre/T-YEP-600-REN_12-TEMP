@@ -27,7 +27,6 @@ const UserTrip = () => {
 
             setOngoingTrips(relevantTrips);
         } catch (err) {
-            console.log(err);
             setError('Trip not found');
         }
     };

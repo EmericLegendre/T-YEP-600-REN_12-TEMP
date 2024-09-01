@@ -26,7 +26,6 @@ const UserInformations = () => {
   });
 
   const handleSave = () => {
-    console.log("Saved user data: ", userData);
     setIsEditing({
       firstName: false,
       lastName: false,

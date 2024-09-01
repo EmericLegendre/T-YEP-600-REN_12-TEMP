@@ -26,12 +26,9 @@ const UserStatistics = () => {
         // get the countries id visited by the user
         setCountriesIdVisited(response.data);
       } catch (error) {
-        if (error.response) {
-          console.log('Error Response:', error.response.data);
-        } else {
-          console.log('Error:', error.message);
-        }
+        // add setErrorMessage ?
       }
+
     };
     // fetchCountriesVisited();
   }, []);
