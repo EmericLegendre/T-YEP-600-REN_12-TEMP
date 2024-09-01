@@ -15,7 +15,7 @@ const UserProfile = () => {
     const fetchTokenAndUserData = async () => {
       try {
         const token = await AsyncStorage.getItem('token');
-        const userId = await AsyncStorage.getItem('id');
+        const userId = global.currentUserId;
         console.log('Stored Token:', token);
         console.log('Stored User ID:', userId);
         if (token && userId) {
@@ -94,6 +94,47 @@ const UserProfile = () => {
     setUserInfo((prevUserInfo) => ({ ...prevUserInfo, [field]: value }));
   };
 
+  const handleDelete = async () => {
+          setLoading(true);
+          try {
+            const token = await AsyncStorage.getItem('apiToken');
+            const userId = await AsyncStorage.getItem('userId');
+            if (!token || !userId) {
+              Alert.alert('Error', 'Missing token or user ID');
+              return;
+            }
+
+            const response = await axios.delete(`http://192.168.1.23:5000/api/users/delete/${userId}`, {
+              headers: {
+                Authorization: `Bearer ${token}`
+              }
+            });
+
+            if (response.status === 200) {
+              await AsyncStorage.removeItem('apiToken');
+              await AsyncStorage.removeItem('userId');
+              Alert.alert('Success', 'Account deleted successfully');
+              router.push('/register');
+            }
+          } catch (error) {
+            console.error('Error deleting account:', error);
+            Alert.alert('Error', 'Failed to delete account');
+          } finally {
+            setLoading(false);
+          }
+        };
+
+        const confirmDelete = () => {
+          Alert.alert(
+            'Delete Account',
+            'Are you sure you want to delete your account?',
+            [
+              { text: 'Cancel', style: 'cancel' },
+              { text: 'OK', onPress: handleDelete },
+            ]
+          );
+        };
+
   return (
 
     <View style={styles.container}>
@@ -164,6 +205,16 @@ const UserProfile = () => {
           <Text style={styles.buttonText}>Edit</Text>
         </TouchableOpacity>
       )}
+      <View style={styles.deleteButtonContainer}>
+                  <TouchableOpacity
+                    onPress={confirmDelete}
+                    style={[styles.button, styles.deleteButton]}
+                    disabled={loading}
+                  >
+                    {loading ? <ActivityIndicator color={Colors.white} /> : <Text style={styles.deleteButtonText}>Delete Account</Text>}
+                  </TouchableOpacity>
+          </View>
+
     </View>
   );
 };
@@ -215,6 +266,18 @@ const styles = StyleSheet.create({
   editButton: {
     backgroundColor: '#dda15e',
   },
+  deleteButtonContainer: {
+      paddingHorizontal: 20,
+      paddingBottom: 20,
+  },
+  deleteButton: {
+      backgroundColor: Colors.primary,
+  },
+  deleteButtonText: {
+      color: Colors.black,
+      fontSize: 16,
+      fontWeight: 'bold',
+    },
   buttonText: {
     color: Colors.white,
     fontSize: 16,

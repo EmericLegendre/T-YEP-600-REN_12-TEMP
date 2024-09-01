@@ -30,7 +30,6 @@ const login = () => {
         const { apiToken } = response.data;
         const userId = response.data.user.id
         await AsyncStorage.setItem('token', apiToken);
-        await AsyncStorage.setItem('id', userId.toString());
         global.currentUserId = response.data.user.id;
         try {
             const tripData = {
