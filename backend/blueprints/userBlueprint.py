@@ -90,7 +90,7 @@ def update_user(id):
     try:
         user = User.query.get(id)
         if user is None:
-            return jsonify({'error': 'Country not found'}), 404
+            return jsonify({'error': 'User not found'}), 404
 
         for field in updatable_fields:
             if field in data:

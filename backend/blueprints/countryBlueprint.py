@@ -38,7 +38,7 @@ def add_country():
 
 @countryBp.route('/get', methods=['GET'])
 @jwt_required()
-def getCountries():
+def get_countries():
     try:
         countries = Country.query.all()
         return jsonify([{

@@ -8,7 +8,7 @@ import tripImages from '../constants/tripImages';
 
 const UserTrip = () => {
   const [ongoingTrips, setOngoingTrips] = useState([]);
-  const [error, setError] = useState(null); // Added state for error handling
+  const [error, setError] = useState(null);
   const router = useRouter(); 
 
   useEffect(() => {
@@ -27,7 +27,6 @@ const UserTrip = () => {
 
             setOngoingTrips(relevantTrips);
         } catch (err) {
-            console.log(err);
             setError('Trip not found');
         }
     };
@@ -87,7 +86,7 @@ const UserTrip = () => {
     <>
       <Stack.Screen
         options={{
-          headerTitle: 'My Trips',
+          headerTitle: 'Trips',
           headerStyle: {
             backgroundColor: Colors.secondColor,
           },

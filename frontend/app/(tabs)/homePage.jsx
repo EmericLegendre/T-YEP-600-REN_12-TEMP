@@ -18,9 +18,7 @@ export default function HomePage() {
           const { apiToken } = response.data;
 
           global.currentUserId = null;
-          AsyncStorage.removeItem(apiToken);
-          router.push('/register');
-          console.log('Token removed successfully');
+          AsyncStorage.removeItem(apiToken).then(r => router.push('/login'));
       } catch (error) {
           console.error('Failed to remove the token:', error);
       }
@@ -48,8 +46,7 @@ export default function HomePage() {
 const styles = StyleSheet.create({
   headerTitle: {
     color: Colors.white,
-    fontSize: 24,
-    fontWeight: "700",
+    fontSize: 20,
     marginLeft: 15,
   },
   headerRight: { marginRight: 15 },

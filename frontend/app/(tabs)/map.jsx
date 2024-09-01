@@ -169,7 +169,6 @@ export default function App() {
 
     // Vérification du zoom : on bloque l'appel si le dézoom est trop important
     if (newRegion.latitudeDelta > MAX_LATITUDE_DELTA) {
-      console.log('Le dézoom est trop important, pas de requête envoyée');
       return;
     }
 
