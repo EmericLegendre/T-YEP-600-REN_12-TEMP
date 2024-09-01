@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet, Alert, TouchableOpacity } from 'react-native';
+import { View, Text, TextInput, Button, StyleSheet, Alert, TouchableOpacity, ActivityIndicator } from 'react-native';
 import { Stack, useRouter } from 'expo-router'
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
@@ -133,9 +133,20 @@ const UserProfile = () => {
       />
 
       {editable ? (
-        <Button title="Save" onPress={handleUpdate} disabled={loading} />
+      <TouchableOpacity
+          onPress={handleUpdate}
+          style={[styles.button, styles.saveButton]}
+          disabled={loading}
+        >
+          {loading ? <ActivityIndicator color={Colors.white} /> : <Text style={styles.buttonText}>Save</Text>}
+        </TouchableOpacity>
       ) : (
-        <Button title="Edit" onPress={() => setEditable(true)} />
+        <TouchableOpacity
+          onPress={() => setEditable(true)}
+          style={[styles.button, styles.editButton]}
+        >
+          <Text style={styles.buttonText}>Edit</Text>
+        </TouchableOpacity>
       )}
     </View>
   );
@@ -183,10 +194,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   saveButton: {
-    backgroundColor: Colors.primary,
+    backgroundColor: '#c7522a',
   },
   editButton: {
-    backgroundColor: Colors.secondary,
+    backgroundColor: '#dda15e',
   },
   buttonText: {
     color: Colors.white,
