@@ -4,7 +4,7 @@ import { useLocalSearchParams, Stack } from 'expo-router';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import CategoryButtons from '../../components/CategoryButtons';
-import Colors from '../../constants/Colors'
+import Colors from '../../constants/Colors';
 
 const { width } = Dimensions.get('window');
 const IMG_HEIGHT = 300;
@@ -31,20 +31,19 @@ const CountryDetails = () => {
         const fetchCountryData = async () => {
             try {
                 const token = await AsyncStorage.getItem('token');
-    
                 if (!token) throw new Error('Token non trouvé');
-    
+        
                 const response = await axios.get(`http://${global.local_ip}:5000/api/country/get/${id}`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 setListing(response.data);
-    
+        
                 const responseLanguages = await axios.get(`http://${global.local_ip}:5000/api/countryInfos/get/country/${id}/category/LANGUAGE`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 const extractedLanguages = responseLanguages.data.map(lang => lang.content);
                 setLanguages(extractedLanguages);
-    
+        
                 const categoryMappings = {
                     'General': '',
                     'Cooking': 'COOKING',
@@ -52,28 +51,34 @@ const CountryDetails = () => {
                     'Health': 'HEALTH',
                     'Law': 'LAW'
                 };
-    
+        
                 const categoryCode = categoryMappings[selectedCategory];
-    
                 if (categoryCode && selectedCategory !== 'General') {
                     const responseCategory = await axios.get(`http://${global.local_ip}:5000/api/countryInfos/get/country/${id}/category/${categoryCode}`, {
                         headers: { Authorization: `Bearer ${token}` }
                     });
-                    setCategoryInfo(responseCategory.data);
+        
+                    if (responseCategory.data.error) {
+                        console.log('Error in category response:', responseCategory.data.error);
+                        setCategoryInfo({ error: 'Pas d\'informations disponibles' });
+                    } else if (Array.isArray(responseCategory.data) && responseCategory.data.length > 0) {
+                        setCategoryInfo(responseCategory.data);
+                    } else {
+                        setCategoryInfo({ error: 'Pas d\'informations disponibles' });
+                    }
                 } else {
                     setCategoryInfo(null);
                 }
-    
+        
             } catch (err) {
                 setError(err.response ? err.response.data : err.message);
             } finally {
                 setLoading(false);
             }
         };
-    
+        
         fetchCountryData();
     }, [id, selectedCategory]);
-    
 
     const handleCategorySelect = (category) => {
         setSelectedCategory(category);
@@ -83,14 +88,6 @@ const CountryDetails = () => {
         return (
             <View style={styles.container}>
                 <ActivityIndicator size="large" color="#0000ff" />
-            </View>
-        );
-    }
-
-    if (error) {
-        return (
-            <View style={styles.container}>
-                <Text style={{ color: 'red', fontSize: 18 }}>Erreur: {error}</Text>
             </View>
         );
     }
@@ -116,17 +113,17 @@ const CountryDetails = () => {
                         <Text style={styles.infoText}>{listing.continent || 'N/A'}</Text>
                     </View>
                     <View style={styles.infoRow}>
-                    <Text style={styles.infoTitle}>Languages :</Text>
-                    {languages.length > 2 ? (
-                        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-                            {languages.map((language, index) => (
-                                <Text key={index} style={styles.infoText}>{language}{index < languages.length - 1 ? ', ' : ''}</Text>
-                            ))}
-                        </ScrollView>
-                    ) : (
-                        <Text style={styles.infoText}>{languages.length > 0 ? languages.join(', ') : 'N/A'}</Text>
-                    )}
-                </View>
+                        <Text style={styles.infoTitle}>Language :</Text>
+                        {languages.length > 2 ? (
+                            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+                                {languages.map((language, index) => (
+                                    <Text key={index} style={styles.infoText}>{language}{index < languages.length - 1 ? ', ' : ''}</Text>
+                                ))}
+                            </ScrollView>
+                        ) : (
+                            <Text style={styles.infoText}>{languages.length > 0 ? languages.join(', ') : 'N/A'}</Text>
+                        )}
+                    </View>
                     <View style={styles.infoRow}>
                         <Text style={styles.infoTitle}>Currency :</Text>
                         <Text style={styles.infoText}>{listing.currency || 'N/A'}</Text>
@@ -141,38 +138,35 @@ const CountryDetails = () => {
                     </View>
                 </View>
             );
-        } else if (selectedCategory === 'Cooking' && categoryInfo) {
+        } else if (categoryInfo) {
+            if (categoryInfo.error) {
+                return (
+                    <View style={styles.infoContainer}>
+                        <Text style={styles.infoText}>{categoryInfo.error}</Text>
+                    </View>
+                );
+            } else if (Array.isArray(categoryInfo) && categoryInfo.length > 0) {
+                return (
+                    <View style={styles.infoContainer}>
+                        <Text style={styles.infoText}>{categoryInfo.map(info => info.content).join(', ')}</Text>
+                    </View>
+                );
+            } else {
+                return (
+                    <View style={styles.infoContainer}>
+                        <Text style={styles.infoText}>No information available for this category</Text>
+                    </View>
+                );
+            }
+        } else {
             return (
                 <View style={styles.infoContainer}>
-                    <Text style={styles.infoTitle}>Culinary Specialties :</Text>
-                    <Text style={styles.infoText}>{categoryInfo.map(info => info.content).join(', ') || 'Cooking information unavailable'}</Text>
-                </View>
-            );
-        } else if (selectedCategory === 'Culture' && categoryInfo) {
-            return (
-                <View style={styles.infoContainer}>
-                    <Text style={styles.infoTitle}>Culture:</Text>
-                    <Text style={styles.infoText}>{categoryInfo.map(info => info.content).join(', ') || 'Cultural information unavailable'}</Text>
-                </View>
-            );
-        } else if (selectedCategory === 'Health' && categoryInfo) {
-            return (
-                <View style={styles.infoContainer}>
-                    <Text style={styles.infoTitle}>Health:</Text>
-                    <Text style={styles.infoText}>{categoryInfo.map(info => info.content).join(', ') || 'Health information unavailable'}</Text>
-                </View>
-            );
-        } else if (selectedCategory === 'Law' && categoryInfo) {
-            return (
-                <View style={styles.infoContainer}>
-                    <Text style={styles.infoTitle}>Law:</Text>
-                    <Text style={styles.infoText}>{categoryInfo.map(info => info.content).join(', ') || 'Law information unavailable'}</Text>
+                    <Text style={styles.infoText}>No information available for this category</Text>
                 </View>
             );
         }
-        return null;
     };
-    
+
     return (
         <>
             <Stack.Screen options={{
@@ -182,7 +176,7 @@ const CountryDetails = () => {
             }} />
             <View style={styles.container}>
                 <View style={styles.imageContainer}>
-                    {<Image source={{ uri: listing.image }} style={styles.image} />}
+                    {listing.image ? <Image source={{ uri: listing.image }} style={styles.image} /> : null}
                     <View style={styles.overlay}>
                         <Text style={styles.countryName}>{listing.name}</Text>
                     </View>
@@ -201,7 +195,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'flex-start',
-        backgroundColor : Colors.white
+        backgroundColor: Colors.white
     },
     imageContainer: {
         position: 'relative',
@@ -222,7 +216,7 @@ const styles = StyleSheet.create({
     countryName: {
         fontSize: 24,
         fontWeight: 'bold',
-        color: 'white'
+        color: Colors.white
     },
     separator: {
         height: 2,
@@ -230,39 +224,40 @@ const styles = StyleSheet.create({
         marginTop: 20,
     },
     infoContainer: {
-      padding: 20,
-      borderRadius: 8,
-      marginHorizontal: 15,
-      marginBottom: 20,
-      marginTop: 20,
-  },
-  infoRow: {
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      marginBottom: 15,
-  },
-  infoTitle: {
-      fontSize: 18,
-      fontWeight: 'bold',
-      color: '#333',
-      marginRight: 10
-  },
-  infoText: {
-      fontSize: 16,
-      color: '#333',
-  },
-  languageRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    flexWrap: 'wrap',
-},
-languageScrollContainer: {
-    flexDirection: 'row',
-},
-languageText: {
-    fontSize: 16,
-    color: '#333',
-    marginRight: 10,
-}
+        padding: 20,
+        borderRadius: 8,
+        marginHorizontal: 15,
+        marginBottom: 20,
+        marginTop: 20,
+    },
+    infoRow: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 15,
+    },
+    infoTitle: {
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: '#333',
+        marginRight: 10
+    },
+    infoText: {
+        fontSize: 16,
+        color: '#333',
+    },
+    languageRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        flexWrap: 'wrap',
+    },
+    languageScrollContainer: {
+        flexDirection: 'row',
+    },
+    languageText: {
+        fontSize: 16,
+        color: '#333',
+        marginRight: 10,
+    }
 });
+

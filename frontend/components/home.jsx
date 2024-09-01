@@ -147,18 +147,27 @@ const TimezoneItem = ({ time, city, country, imageUri }) => (
 
 const GridMenu = ({ router }) => (
   <View style={styles.grid}>
+    <View style={styles.gridRowFull}>
+      <GridItem
+        router={router}
+        route="/currencyConverter"
+        imageUri="https://cdn-icons-png.flaticon.com/512/6395/6395470.png"
+        label="Currency converter"
+        fullWidth={true}
+      />
+    </View>
     <View style={styles.gridRow}>
       <GridItem
         router={router}
         route="/userTrips"
         imageUri="https://cdn-icons-png.flaticon.com/512/776/776541.png"
-        label="My Trips"
+        label="Trips"
       />
       <GridItem
         router={router}
         route="/userStatistics"
         imageUri="https://cdn-icons-png.flaticon.com/512/9746/9746676.png"
-        label="My Stats"
+        label="Statistics"
       />
     </View>
     <View style={styles.gridRow}>
@@ -166,30 +175,35 @@ const GridMenu = ({ router }) => (
         router={router}
         route="/userHistory"
         imageUri="https://cdn-icons-png.flaticon.com/512/3286/3286370.png"
-        label="My History"
+        label="History"
       />
       <GridItem
         router={router}
         route="/userInformations"
         imageUri="https://cdn-icons-png.flaticon.com/512/8863/8863767.png"
-        label="My Profile"
+        label="Profile"
       />
     </View>
   </View>
 );
 
-const GridItem = ({ router, route, imageUri, label }) => (
-  <TouchableOpacity style={styles.gridItem} onPress={() => router.push(route)}>
+
+const GridItem = ({ router, route, imageUri, label, fullWidth }) => (
+  <TouchableOpacity
+    style={[styles.gridItem, fullWidth ? styles.gridItemFullWidth : null]}
+    onPress={() => router.push(route)}
+  >
     <Image source={{ uri: imageUri }} style={styles.image} />
     <Text style={styles.gridItemText}>{label}</Text>
   </TouchableOpacity>
 );
 
+
 export default Home;
 
 const styles = StyleSheet.create({
   scrollView: { flex: 1 },
-  scrollContainer: { padding: 20, backgroundColor: Colors.lightGrey },
+  scrollContainer: { padding: 20},
   timezoneContainer: {
     width: "100%",
     marginBottom: 30,
@@ -215,28 +229,37 @@ const styles = StyleSheet.create({
   timezoneText: {
     fontSize: 24,
     fontWeight: "700",
-    color: Colors.text,
+    color: Colors.white,
     marginBottom: 5,
   },
-  timezoneLabel: { fontSize: 16, color: Colors.textLight },
+  timezoneLabel: { fontSize: 16, color: Colors.white },
   grid: { flex: 1 },
   gridRow: {
     flexDirection: "row",
     justifyContent: "space-between",
     marginBottom: 20,
   },
-  gridItem: {
-    width: (width - 60) / 2,
-    backgroundColor: Colors.primaryColor,
-    borderRadius: 10,
-    padding: 20,
-    alignItems: "center",
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.2,
-    shadowRadius: 10,
-    elevation: 4,
-  },
+    gridRowFull: {
+      flexDirection: "row",
+      justifyContent: "center",
+      marginBottom: 20,
+    },
+    gridItemFullWidth: {
+      width: width - 40,
+    },
+    gridItem: {
+      width: (width - 60) / 2,
+      backgroundColor: Colors.primaryColor,
+      borderRadius: 10,
+      padding: 20,
+      alignItems: "center",
+      shadowColor: "#000",
+      shadowOffset: { width: 0, height: 4 },
+      shadowOpacity: 0.2,
+      shadowRadius: 10,
+      elevation: 4,
+    },
+  
   image: { width: 120, height: 120, borderRadius: 10, marginBottom: 10 },
-  gridItemText: { fontSize: 16, fontWeight: "600", color: Colors.text },
+  gridItemText: { fontSize: 16, fontWeight: "600", color: Colors.white },
 });

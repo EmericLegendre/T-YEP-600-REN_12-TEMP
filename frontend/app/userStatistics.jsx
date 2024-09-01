@@ -114,7 +114,7 @@ const UserStatistics = () => {
     <>
       <Stack.Screen
         options={{
-          headerTitle: 'Mes statistiques',
+          headerTitle: 'Statistics',
           headerStyle: {
             backgroundColor: Colors.secondColor,
           },

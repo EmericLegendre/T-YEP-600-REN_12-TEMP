@@ -46,8 +46,7 @@ export default function HomePage() {
 const styles = StyleSheet.create({
   headerTitle: {
     color: Colors.white,
-    fontSize: 24,
-    fontWeight: "700",
+    fontSize: 20,
     marginLeft: 15,
   },
   headerRight: { marginRight: 15 },
