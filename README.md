@@ -81,6 +81,7 @@ Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce proje
 - **Nathan Cahaigne** - [https://github.com/nathanCahgn](https://github.com/nathanCahgn)
 - **Mehdi Sabir** - [https://github.com/mehdaaa](https://github.com/mehdaaa)
 - **Matteo Cogan** - [https://github.com/MatteoCogan](https://github.com/MatteoCogan)
+- **Téophile Chardon** - [https://github.com/KawaiiTenshi555](https://github.com/KawaiiTenshi555)
 
 ## Remerciements
 Merci à toutes les personnes qui ont contribué à l'élaboration de Tripmate.  
