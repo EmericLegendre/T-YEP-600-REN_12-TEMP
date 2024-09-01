@@ -80,7 +80,7 @@ Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce proje
 - **Emeric Legendre** - [https://github.com/EmericLegendre](https://github.com/EmericLegendre)
 - **Camille Kershero** - [https://github.com/Camserho](https://github.com/Camserho)
 - **Nathan Cahaigne** - [https://github.com/nathanCahgn](https://github.com/nathanCahgn)
-- **Medhi** - [https://github.com/mehdaaa](https://github.com/mehdaaa)
+- **Mehdi** - [https://github.com/mehdaaa](https://github.com/mehdaaa)
 - **Matteo Cogan** - [https://github.com/MatteoCogan](https://github.com/MatteoCogan)
 
 ## Remerciements
