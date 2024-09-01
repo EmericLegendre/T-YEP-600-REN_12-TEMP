@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
+import { View, Text, TextInput, Button, StyleSheet, Alert, TouchableOpacity } from 'react-native';
+import { Stack, useRouter } from 'expo-router'
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
 import Colors from '../constants/Colors';
@@ -8,6 +9,7 @@ const UserProfile = () => {
   const [userInfo, setUserInfo] = useState({});
   const [editable, setEditable] = useState(false);
   const [loading, setLoading] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const fetchTokenAndUserData = async () => {
@@ -77,7 +79,26 @@ const UserProfile = () => {
   };
 
   return (
+
     <View style={styles.container}>
+        <Stack.Screen options={{
+                headerTitle: '',
+                headerStyle: {
+                  backgroundColor: Colors.grey,
+                },
+                headerRight: () => (
+                  <Text style={styles.headerTitle}>Hello, {userInfo.first_name}</Text>
+
+                ),
+                headerTintColor: Colors.white
+              }}
+              />
+        <View style={styles.headerContainer}>
+            <TouchableOpacity onPress={() => router.push('/profile')} style={styles.backButton}>
+                <Text style={styles.backButtonText}>← Back</Text>
+            </TouchableOpacity>
+            <Text style={styles.headerTitle}>User Profile</Text>
+        </View>
       <Text style={styles.header}>User Profile</Text>
       <TextInput
         style={styles.input}
@@ -127,7 +148,8 @@ const UserProfile = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 5,
+    justifyContent: 'center',
+    paddingHorizontal: 20,
     backgroundColor: Colors.white,
   },
   headerContainer: {
@@ -135,9 +157,11 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: Colors.grey,
     paddingBottom: 10,
+    flexDirection: 'row',
+    alignItems:'center',
   },
   headerTitle: {
-    color: Colors.white,
+    color: Colors.black,
     fontSize: 20,
     marginRight: 15,
   },
@@ -172,6 +196,15 @@ const styles = StyleSheet.create({
     color: Colors.white,
     fontSize: 16,
     fontWeight: 'bold',
+  },
+  backButton: {
+      marginBottom: 20,
+      padding: 10,
+      alignItems:'center',
+  },
+  backButtonText:{
+    fontSize: 16,
+    color: Colors.primary,
   },
 });
 
