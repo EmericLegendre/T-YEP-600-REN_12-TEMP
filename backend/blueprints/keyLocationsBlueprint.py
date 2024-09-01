@@ -140,7 +140,8 @@ def get_current_key_location_by_user_id():
                         key_location_info.append({
                             "trip_key_location_id": trip_key_location.id,
                             "name" : key_location.name,
-                            "place_id" : key_location.place_id
+                            "place_id" : key_location.place_id,
+                            "position": trip_key_location.position
                         })
                 return jsonify({"key_locations": key_location_info}), 200
         

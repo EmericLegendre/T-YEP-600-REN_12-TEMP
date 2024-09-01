@@ -7,7 +7,6 @@ class TripKeyLocations(db.Model):
     key_locations_id = db.Column(db.Integer, db.ForeignKey('keyLocations.id'), nullable=False)
     trip_id = db.Column(db.Integer, db.ForeignKey('trip.id'))
     position = db.Column(db.Integer, nullable=False)
-    position = db.Column(db.Integer, nullable=False)
     
     created_at = db.Column(db.DateTime, default=db.func.current_timestamp())
     updated_at = db.Column(db.DateTime, default=db.func.current_timestamp(), onupdate=db.func.current_timestamp())

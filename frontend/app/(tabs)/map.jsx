@@ -6,11 +6,11 @@ import axios from 'axios';
 import Modal from 'react-native-modal';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const API_KEY = 'AIzaSyAl4gx3aIX0Tc6mRCYDsyAplhGoSPDSX5A'; // Remplace par ta clé API Google
+const API_KEY = 'AIzaSyAl4gx3aIX0Tc6mRCYDsyAplhGoSPDSX5A'; // Remplace par variable global
 const INCLUDED_TYPES = ["restaurant", "cafe", "bar", "tourist_attraction", "amusement_center", "amusement_park", "aquarium"];
-const SEARCH_RADIUS = 1500; // Rayon en mètres
-const DEFAULT_ZOOM = 0.0922; // Valeur de zoom par défaut
-const MAX_LATITUDE_DELTA = 0.2; // Seuil au-delà duquel on ne fait pas de requête (valeur à ajuster)
+const SEARCH_RADIUS = 1500; 
+const DEFAULT_ZOOM = 0.0922; 
+const MAX_LATITUDE_DELTA = 0.2; 
 
 export default function App() {
   const [location, setLocation] = useState(null);
@@ -19,8 +19,7 @@ export default function App() {
   const [places, setPlaces] = useState([]);
   const [selectedPlace, setSelectedPlace] = useState(null);
   const [isModalVisible, setModalVisible] = useState(false);
-  // const [addedPlaces, setAddedPlaces] = useState([]); // Liste des lieux ajoutés
-  const [directions, setDirections] = useState(null); // Points de l'itinéraire
+  const [directions, setDirections] = useState(null); 
   const mapRef = useRef(null);
   const [keyLocations, setKeyLocations] = useState([]);
 
@@ -44,15 +43,21 @@ export default function App() {
 
       fetchTripKeyId(token, userId);
 
-      fetchKeyLocations(userId, token); // Assuming this function is defined elsewhere.
+      fetchKeyLocations(userId, token); 
 
       let location = await Location.getCurrentPositionAsync({});
       setLocation(location.coords);
 
-      // Initial fetch of nearby places
-      fetchNearbyPlaces(location.coords.latitude, location.coords.longitude, SEARCH_RADIUS); // Assuming SEARCH_RADIUS is defined.
+      if (keyLocations.length > 0) {
+        console.log("ROUTE")
+        const routePoints = await createRoute(keyLocations);
+        if (routePoints) {
+          setDirections(routePoints);
+        }
+      }
 
-      // Start watching location for real-time updates
+      fetchNearbyPlaces(location.coords.latitude, location.coords.longitude, SEARCH_RADIUS); 
+
       await Location.watchPositionAsync(
         {
           accuracy: Location.Accuracy.High,
@@ -65,12 +70,83 @@ export default function App() {
       );
 
     })();
-  }, []); // Ensure you have a dependency array here, even if empty.
+  }, []); 
+
+  useEffect(() => {
+    (async () => {
+      if (keyLocations.length > 0) {
+        console.log("ROUTE");
+
+        const routePoints = await createRoute(keyLocations);
+
+        if (routePoints) {
+          setDirections(routePoints);
+        }
+      }
+    })();
+  }, [keyLocations]);
+
+
+
+const createRoute = async (tripKeyLocations) => {
+  const waypoints = tripKeyLocations.map(location => location.place_id);
+  const destination = waypoints[waypoints.length - 1]; 
+  const intermediates = waypoints.slice(0, -1); 
+  
+  console.log(intermediates.map(id => ({ placeId: id }))); 
+
+  try {
+    let { status } = await Location.requestForegroundPermissionsAsync();
+    if (status !== 'granted') {
+      console.error('Permission to access location was denied');
+      return;
+    }
+
+    let location = await Location.getCurrentPositionAsync({});
+    const { latitude, longitude } = location.coords;
+
+    const response = await axios.post(
+      'https://routes.googleapis.com/directions/v2:computeRoutes',
+      {
+        origin: { 
+          location: {
+            latLng: {
+              latitude: latitude,
+              longitude: longitude,
+            }
+          } 
+        },
+        destination: { placeId: destination }, 
+        intermediates: intermediates.map(id => ({ placeId: id })), 
+        travelMode: 'DRIVE',
+      },
+      {
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Goog-Api-Key': API_KEY,
+          'X-Goog-FieldMask': 'routes.duration,routes.distanceMeters,routes.polyline,routes.legs.polyline,routes.legs.steps.polyline',
+        },
+      }
+    );
+
+    console.log(response.data);
+    if (response.data.routes.length > 0) {
+      return response.data.routes[0].polyline.encodedPolyline;
+    } else {
+      console.error('No routes found');
+      return null;
+    }
+
+  } catch (error) {
+    console.error('Error fetching directions:', error.response ? error.response.data : error.message);
+    return null;
+  }
+};
+
+
 
   const fetchTripKeyId = async (token, userId) => {
     try {
-      // console.log(userId);
-      // console.log(token);
       const response = await fetch('http://192.168.1.14:5000/api/trip/get/currenttrip', {
         method: 'POST',
         headers: {
@@ -92,12 +168,10 @@ export default function App() {
     } catch (error) {
       setErrorMsg(error.message);
     }
-  }
+  };
+
 
   const fetchKeyLocations = async (userId, token) => {
-    // console.log(userId);
-    // console.log(token);
-
     try {
       const response = await fetch('http://192.168.1.14:5000/api/keyLocations/get/currentkeylocation', {
         method: 'POST',
@@ -115,21 +189,18 @@ export default function App() {
       }
 
       const data = await response.json();
-      console.log(data);
       if (data.key_locations) {
-        // Si la réponse contient les key_locations, on les stocke dans l'état
-        console.log(data.key_locations);
-        setKeyLocations(data.key_locations);
+        const sortedKeyLocations = data.key_locations.sort((a, b) => a.position - b.position);
+        setKeyLocations(sortedKeyLocations);
       } else {
         setErrorMsg(data.message || 'No key locations found');
       }
     } catch (error) {
-      // En cas d'erreur (ex: serveur indisponible)
       setErrorMsg(error.message);
     }
   };
 
-  // Fonction de récupération des lieux à proximité, avec debounce
+
   const fetchNearbyPlaces = async (lat, lng, radius = SEARCH_RADIUS) => {
     try {
       const response = await axios.post(
@@ -152,27 +223,25 @@ export default function App() {
         }
       );
 
-      // Vérification que l'API renvoie bien des lieux
+      
       if (response.data && response.data.places && response.data.places.length > 0) {
         const placesData = response.data.places;
         setPlaces(placesData);
       } else {
-        setPlaces([]);  // Réinitialisation si aucune place n'est trouvée
+        setPlaces([]);  
       }
     } catch (error) {
       console.error(error);
     }
-  } // Le délai de 500ms pour le debounce;
+  } 
 
   const handleRegionChange = (newRegion) => {
     setRegion(newRegion);
 
-    // Vérification du zoom : on bloque l'appel si le dézoom est trop important
     if (newRegion.latitudeDelta > MAX_LATITUDE_DELTA) {
       return;
     }
 
-    // Utilisation de la fonction fetch avec debounce pour limiter les appels à l'API
     fetchNearbyPlaces(newRegion.latitude, newRegion.longitude);
   };
 
@@ -196,7 +265,6 @@ export default function App() {
       });
 
       const data = await response.json();
-      console.log(!response.ok);
 
       if (!response.ok) {
         if (data.alreadyExist) {
@@ -212,7 +280,6 @@ export default function App() {
 
 
   const addTripKeyLocation = async (token, tripId, place, keyLocationId) => {
-    console.log(keyLocationId);
     try {
       const response2 = await fetch('http://192.168.1.14:5000/api/tripKeyLocations/add', {
         method: 'POST',
@@ -223,20 +290,17 @@ export default function App() {
         body: JSON.stringify({
           key_location_id: keyLocationId,
           trip_id: tripId,
-          position: 12,
         }),
       });
       data = await response2.json();
 
       setKeyLocations((prevKeyLocations) => {
         const newLocation = {
-          trip_key_location_id: data.tripKeyLocationId,  // Assurez-vous que 'tripKeyLocationId' existe
+          trip_key_location_id: data.tripKeyLocationId,  
           place_id: place.id,
           name: place.displayName?.text,
+          position: data.position
         };
-
-        console.log('Anciennes locations:', prevKeyLocations);
-        console.log('Nouvelle location ajoutée:', newLocation);
 
         return [...prevKeyLocations, newLocation];
       });
@@ -249,14 +313,14 @@ export default function App() {
     try {
       const keyLocationId = await addKeyLocations(token, place);
       await addTripKeyLocation(token, tripId, place, keyLocationId);
-      await fetchKeyLocations(userId, token); // Rafraîchir la liste des lieux ajoutés
+      await fetchKeyLocations(userId, token); 
     } catch (error) {
       setErrorMsg(error.message);
     }
   }
 
   const handleRemovePlace = async (tripKeyLocationId) => {
-    console.log('Suppression du lieu avec l\'ID:', tripKeyLocationId);
+
     try {
       const response = await fetch(`http://192.168.1.14:5000/api/tripKeyLocations/delete/${tripKeyLocationId}`, {
         method: 'DELETE',
@@ -270,18 +334,14 @@ export default function App() {
         throw new Error('Failed to delete place');
       }
 
-      // Met à jour la liste des lieux après suppression
       setKeyLocations((prevKeyLocations) => {
         const updatedLocations = prevKeyLocations.filter((place) => place.trip_key_location_id !== tripKeyLocationId);
-        console.log('Lieux après suppression:', updatedLocations);
         return updatedLocations;
       });
     } catch (error) {
       setErrorMsg(error.message);
     }
   };
-
-
 
   const fetchDirections = async (waypoints) => {
     try {
@@ -310,7 +370,6 @@ export default function App() {
   };
 
   const decodePolyline = (encoded) => {
-    // Fonction pour décoder les polylignes Google Maps
     const points = [];
     let index = 0, lat = 0, lng = 0;
 
@@ -410,7 +469,6 @@ export default function App() {
                 Types : {selectedPlace.types ? selectedPlace.types.join(', ') : 'No types available'}
               </Text>
 
-              {/* Bouton Ajouter amélioré */}
               <TouchableOpacity
                 style={styles.addButton}
                 onPress={() => addPlaceKeyLocations(token, tripId, selectedPlace)}
@@ -430,10 +488,13 @@ export default function App() {
           <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             {keyLocations.map((place, index) => (
               <View key={index} style={styles.card}>
-                <Text style={styles.cardTitle}>{place.displayName?.text || place.name || 'Unnamed Place'}</Text>
+                <View style={styles.cardContent}>
+                  <Text style={styles.cardTitle}>{place.displayName?.text || place.name || 'Unnamed Place'}</Text>
+                  <Text style={styles.cardText}>{place.position || 'No position available'}</Text>
+                </View>
                 <TouchableOpacity
                   style={styles.deleteButton}
-                  onPress={() => handleRemovePlace(place.trip_key_location_id)} // Fonction pour supprimer un lieu
+                  onPress={() => handleRemovePlace(place.trip_key_location_id)}
                 >
                   <Text style={styles.deleteButtonText}>Supprimer</Text>
                 </TouchableOpacity>
@@ -444,6 +505,7 @@ export default function App() {
           <Text>Aucun lieu ajouté</Text>
         )}
       </View>
+
     </View>
   );
 };
@@ -471,10 +533,10 @@ const styles = StyleSheet.create({
     padding: 20,
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
-    maxHeight: '80%', // Ajuste la hauteur maximale pour éviter que le modal ne dépasse l'écran
+    maxHeight: '80%',
   },
   scrollViewContent: {
-    flexGrow: 1, // Permet au contenu de s'étendre
+    flexGrow: 1,
     justifyContent: 'center',
   },
   modalTitle: {
@@ -487,15 +549,15 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   addButton: {
-    backgroundColor: '#4682B4', // Couleur visible
-    padding: 15, // Augmenter la taille du bouton
+    backgroundColor: '#4682B4',
+    padding: 15,
     alignItems: 'center',
     borderRadius: 10,
     marginTop: 20,
   },
   addButtonText: {
     color: 'white',
-    fontSize: 18, // Augmenter la taille du texte pour meilleure visibilité
+    fontSize: 18,
     fontWeight: 'bold',
   },
   addedPlacesContainer: {
@@ -522,6 +584,11 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.3,
     shadowRadius: 5,
     elevation: 5,
+    position: 'relative', 
+  },
+  cardContent: {
+    flex: 1, 
+    marginRight: 50, 
   },
   cardTitle: {
     fontSize: 16,
@@ -533,6 +600,9 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   deleteButton: {
+    position: 'absolute', 
+    bottom: 10,
+    right: 10,
     backgroundColor: '#FF6347',
     padding: 10,
     borderRadius: 5,
@@ -543,5 +613,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 });
+
 
 
