@@ -26,8 +26,9 @@ const login = () => {
               password: password
           }
 
-        const response = await axios.post(`http://192.168.1.23:5000/api/users/auth`, dataJson );
+        const response = await axios.post(`http://${global.local_ip}:5000/api/users/auth`, dataJson );
         const { apiToken } = response.data;
+        const userId = response.data.user.id
         await AsyncStorage.setItem('token', apiToken);
         global.currentUserId = response.data.user.id;
         try {
@@ -38,7 +39,7 @@ const login = () => {
                 headers: { Authorization: `Bearer ${apiToken}` }
             }
 
-            const tripResponse = await axios.post(`http://192.168.1.23:5000/api/trip/add`, tripData, tripConfig);
+            const tripResponse = await axios.post(`http://${global.local_ip}:5000/api/trip/add`, tripData, tripConfig);
             router.push('/homePage');
 
         } catch (e) {
