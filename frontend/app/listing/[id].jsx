@@ -114,7 +114,7 @@ const CountryDetails = () => {
                         <Text style={styles.infoText}>{listing.continent || 'N/A'}</Text>
                     </View>
                     <View style={styles.infoRow}>
-                        <Text style={styles.infoTitle}>Langues :</Text>
+                        <Text style={styles.infoTitle}>Language :</Text>
                         {languages.length > 2 ? (
                             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
                                 {languages.map((language, index) => (
@@ -126,7 +126,7 @@ const CountryDetails = () => {
                         )}
                     </View>
                     <View style={styles.infoRow}>
-                        <Text style={styles.infoTitle}>Devise :</Text>
+                        <Text style={styles.infoTitle}>Currency :</Text>
                         <Text style={styles.infoText}>{listing.currency || 'N/A'}</Text>
                     </View>
                     <View style={styles.infoRow}>
@@ -134,7 +134,7 @@ const CountryDetails = () => {
                         <Text style={styles.infoText}>{formatPopulation(listing.population)}</Text>
                     </View>
                     <View style={styles.infoRow}>
-                        <Text style={styles.infoTitle}>Nom de la population :</Text>
+                        <Text style={styles.infoTitle}>Population name :</Text>
                         <Text style={styles.infoText}>{listing.population_name || 'N/A'}</Text>
                     </View>
                 </View>
