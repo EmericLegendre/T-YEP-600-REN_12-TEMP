@@ -27,7 +27,6 @@ const UserTrip = () => {
 
             setOngoingTrips(relevantTrips);
         } catch (err) {
-            console.log(err);
             setError('Trip not found');
         }
     };
@@ -87,7 +86,7 @@ const UserTrip = () => {
     <>
       <Stack.Screen
         options={{
-          headerTitle: 'My Trips',
+          headerTitle: 'Trips',
           headerStyle: {
             backgroundColor: Colors.secondColor,
           },

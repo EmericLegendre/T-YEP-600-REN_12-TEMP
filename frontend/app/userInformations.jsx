@@ -47,6 +47,7 @@ const UserProfile = () => {
       console.error('Error fetching user data:', error);
       Alert.alert('Error', 'Failed to fetch user data');
     }
+
   };
 
   const handleUpdate = async () => {

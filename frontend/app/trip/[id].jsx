@@ -19,17 +19,16 @@ const TripDetails = () => {
         const fetchTrip = async () => {
             try {
                 const token = await AsyncStorage.getItem('token');
-                if (!token) throw new Error('Token non trouvé');
+                if (!token) throw new Error('Token not found');
 
                 const tripResponse = await axios.get(`http://${global.local_ip}:5000/api/trip/get/${id}`, {
                     headers: { Authorization: `Bearer ${token}` }
                 });
 
-                if (!tripResponse.data) throw new Error('Trip non trouvé');
+                if (!tripResponse.data) throw new Error('Trip not found');
 
                 setTrip(tripResponse.data);
             } catch (err) {
-                console.log(err);
                 setError('Trip not found');
             } finally {
                 setLoading(false);
@@ -39,7 +38,7 @@ const TripDetails = () => {
         const fetchKeyLocations = async () => {
             try {
                 const token = await AsyncStorage.getItem('token');
-                if (!token) throw new Error('Token non trouvé');
+                if (!token) throw new Error('Token not found');
 
                 const TripkeyLocationsResponse = await axios.get(`http://${global.local_ip}:5000/api/tripKeyLocations/get`, {
                     headers: { Authorization: `Bearer ${token}` }
@@ -100,7 +99,6 @@ const TripDetails = () => {
             setTrip({ ...trip, archived: true });
             Alert.alert('Success', 'Trip marked as finished');
         } catch (err) {
-            console.log(err);
             Alert.alert('Error', 'Failed to mark trip as finished');
         }
     };
@@ -117,7 +115,6 @@ const TripDetails = () => {
             Alert.alert('Success', 'Trip deleted');
             router.push('/');  // Navigate to the home or trip list screen after deletion
         } catch (err) {
-            console.log(err);
             Alert.alert('Error', 'Failed to delete trip');
         }
     };

@@ -27,7 +27,6 @@ const userHistory = () => {
 
             setTrips(response.data);
         } catch (err) {
-            console.log(err);
             setError('Trip not found');
         }
     };
@@ -44,7 +43,6 @@ const userHistory = () => {
 
           setPlaces(response.data);
       } catch (err) {
-          console.log(err);
           setError('KeyLocations not found');
       }
   };
@@ -92,7 +90,7 @@ const userHistory = () => {
     <>
       <Stack.Screen
         options={{
-          headerTitle: 'My History',
+          headerTitle: 'History',
           headerStyle: {
             backgroundColor: Colors.secondColor,
           },
