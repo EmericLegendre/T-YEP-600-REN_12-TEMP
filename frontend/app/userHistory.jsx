@@ -92,7 +92,7 @@ const userHistory = () => {
     <>
       <Stack.Screen
         options={{
-          headerTitle: 'My History',
+          headerTitle: 'History',
           headerStyle: {
             backgroundColor: Colors.secondColor,
           },

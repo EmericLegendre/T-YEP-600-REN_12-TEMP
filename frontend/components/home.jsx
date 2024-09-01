@@ -229,10 +229,10 @@ const styles = StyleSheet.create({
   timezoneText: {
     fontSize: 24,
     fontWeight: "700",
-    color: Colors.text,
+    color: Colors.white,
     marginBottom: 5,
   },
-  timezoneLabel: { fontSize: 16, color: Colors.textLight },
+  timezoneLabel: { fontSize: 16, color: Colors.white },
   grid: { flex: 1 },
   gridRow: {
     flexDirection: "row",
@@ -261,5 +261,5 @@ const styles = StyleSheet.create({
     },
   
   image: { width: 120, height: 120, borderRadius: 10, marginBottom: 10 },
-  gridItemText: { fontSize: 16, fontWeight: "600", color: Colors.text },
+  gridItemText: { fontSize: 16, fontWeight: "600", color: Colors.white },
 });

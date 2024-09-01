@@ -1,15 +1,14 @@
-import { StyleSheet, Text, View, SafeAreaView, TouchableOpacity, TextInput } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, TextInput, TouchableOpacity } from 'react-native';
 import React, { useState, useEffect } from 'react';
-import { Stack, useRouter } from 'expo-router';
+import { Stack } from 'expo-router';
 import Colors from '../constants/Colors';
 import { Picker } from '@react-native-picker/picker';
 import { Ionicons } from '@expo/vector-icons';
 import axios from 'axios';
 
 const CurrencyConverter = () => {
-  const router = useRouter();
   const [amount, setAmount] = useState('1');
-  const [convertedAmount, setConvertedAmount] = useState(null);
+  const [convertedAmount, setConvertedAmount] = useState('0');
   const [fromCurrency, setFromCurrency] = useState('USD');
   const [toCurrency, setToCurrency] = useState('EUR');
   const [exchangeRate, setExchangeRate] = useState(null);
@@ -64,15 +63,10 @@ const CurrencyConverter = () => {
     if (exchangeRate && amount) {
       const converted = parseFloat(amount) * exchangeRate;
       setConvertedAmount(converted.toFixed(2));
+    } else {
+      setConvertedAmount('0');
     }
   }, [amount, exchangeRate, fromCurrency, toCurrency]);
-
-  const handleConvert = () => {
-    if (exchangeRate && amount) {
-      const converted = parseFloat(amount) * exchangeRate;
-      setConvertedAmount(converted.toFixed(2));
-    }
-  };
 
   const swapCurrencies = () => {
     setFromCurrency((prev) => {
@@ -86,11 +80,11 @@ const CurrencyConverter = () => {
     <SafeAreaView style={styles.container}>
       <Stack.Screen
         options={{
-          headerTitle: '',
+          headerTitle: 'Currency converter',
           headerStyle: {
             backgroundColor: Colors.secondColor,
           },
-          headerLeft: () => <Text style={styles.headerTitle}>Currency Converter</Text>,
+          headerTintColor: Colors.white,
         }}
       />
 
@@ -140,15 +134,11 @@ const CurrencyConverter = () => {
         </View>
       </View>
 
-      <TouchableOpacity style={styles.convertButton} onPress={handleConvert}>
-        <Text style={styles.buttonText}>Convert</Text>
-      </TouchableOpacity>
-
-      {convertedAmount && (
+      <View style={styles.resultContainer}>
         <Text style={styles.result}>
           {convertedAmount} {toCurrency}
         </Text>
-      )}
+      </View>
     </SafeAreaView>
   );
 };
@@ -165,9 +155,6 @@ const styles = StyleSheet.create({
   headerTitle: {
     color: Colors.white,
     fontSize: 20,
-    marginLeft: 15,
-  },
-  headerLeftButton: {
     marginLeft: 15,
   },
   inputContainer: {
@@ -215,21 +202,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  convertButton: {
+  resultContainer: {
     backgroundColor: Colors.primaryColor,
     paddingVertical: 15,
-    paddingHorizontal: 40,
+    paddingHorizontal: 30,
     borderRadius: 5,
     marginTop: 20,
   },
-  buttonText: {
-    color: Colors.white,
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
   result: {
-    marginTop: 20,
     fontSize: 20,
-    color: Colors.black,
+    color: Colors.white,
   },
 });
