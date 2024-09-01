@@ -16,6 +16,10 @@ const Explore = () => {
   const [filteredData, setFilteredData] = useState([]);
   const [modalVisible, setModalVisible] = useState(false);
   const [languagesData, setLanguagesData] = useState({});
+  const [appliedFilters, setAppliedFilters] = useState({
+    continent: 'All',
+    language: 'All',
+  });
 
   useEffect(() => {
     const fetchCountriesData = async () => {
@@ -26,11 +30,11 @@ const Explore = () => {
           headers: { Authorization: `Bearer ${token}` }
         };
 
-        const response = await axios.get('http://10.19.255.221:5000/api/country/get', config);
+        const response = await axios.get(`http://${global.local_ip}:5000/api/country/get`, config);
         setCountriesData(response.data);
         setFilteredData(response.data); 
 
-        const languagesResponse = await axios.get('http://10.19.255.221:5000/api/countryInfos/get/languages', config);
+        const languagesResponse = await axios.get(`http://${global.local_ip}:5000/api/countryInfos/get/languages`, config);
 
         const languagesByCountry = {};
         languagesResponse.data.forEach(item => {
@@ -56,16 +60,26 @@ const Explore = () => {
 
   const handleSearch = (text) => {
     setSearchTerm(text);
-    console.log('Search Term:', text);
+
+    let filtered = countriesData;
+
+    if (appliedFilters.continent !== 'All') {
+      filtered = filtered.filter(country => country.continent === appliedFilters.continent);
+    }
+
+    if (appliedFilters.language !== 'All') {
+      filtered = filtered.filter(country =>
+        languagesData[country.name] && languagesData[country.name].includes(appliedFilters.language)
+      );
+    }
+
     if (text) {
-      const filtered = countriesData.filter(country =>
+      filtered = filtered.filter(country =>
         country.name.toLowerCase().includes(text.toLowerCase())
       );
-      console.log('Filtered Data:', filtered);
-      setFilteredData(filtered);
-    } else {
-      setFilteredData(countriesData);
     }
+
+    setFilteredData(filtered);
   };
 
   const handleFilter = ({ continent, language }) => {
@@ -76,12 +90,13 @@ const Explore = () => {
     }
 
     if (language !== 'All') {
-      filtered = filtered.filter(country => 
+      filtered = filtered.filter(country =>
         languagesData[country.name] && languagesData[country.name].includes(language)
       );
     }
 
     setFilteredData(filtered);
+    setAppliedFilters({ continent, language });
   };
 
   return (
@@ -89,19 +104,11 @@ const Explore = () => {
       <Stack.Screen options={{
         headerTitle: '',
         headerStyle: {
-          backgroundColor: Colors.grey,
+          backgroundColor: Colors.secondColor,
         },
         headerLeft: () => (
           <Text style={styles.headerTitle}>Explore</Text>
-        ),
-        headerRight: () => (
-          <TouchableOpacity 
-            onPress={() => router.push('/profile')}        
-            style={styles.headerRight}
-          >
-            <Ionicons name="person-sharp" size={30} color={Colors.white} />
-          </TouchableOpacity>
-        ),
+        )
       }}/>
 
       <View style={styles.container}>
@@ -122,7 +129,7 @@ const Explore = () => {
             onPress={() => setModalVisible(true)} 
             style={styles.filterBtn}
           >
-            <Ionicons name="options" size={30} color={Colors.grey} />
+            <Ionicons name="options" size={30} color={Colors.white} />
           </TouchableOpacity>
         </View>
 
@@ -131,8 +138,8 @@ const Explore = () => {
         <FilterModal
           visible={modalVisible}
           onClose={() => setModalVisible(false)}
-          onSelect={(continent) => {
-            handleFilter(continent);
+          onSelect={(filters) => {
+            handleFilter(filters);
             setModalVisible(false);
           }}
         />

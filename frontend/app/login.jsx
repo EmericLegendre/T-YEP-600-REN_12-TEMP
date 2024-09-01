@@ -16,53 +16,63 @@ const login = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleLogin = async () => {
-    if (!email || !password) {
-      setError('Please fill in all fields.');
-      return;
-    }
-
-    try {
-      const dataJson = {
-        email,
-        password,
-      };
-
-      const response = await axios.post('http://192.168.1.23:5000/api/users/auth', dataJson);
-
-      const { apiToken, user } = response.data;
-
-      if (apiToken && user && user.id) {
-        await AsyncStorage.setItem('token', apiToken);
-        await AsyncStorage.setItem('userId', user.id.toString());
-        router.push('/home');
-      } else {
-        throw new Error('Token or user ID is missing in the response');
+      if (!email || !password) {
+            setErrorMessage('Please fill in all fields.');
+            return;
       }
-    } catch (err) {
-      console.error('Login error:', err.message || err);
-      setError('Invalid email or password');
-    }
+      try {
+          const dataJson = {
+              email: email,
+              password: password
+          }
+
+        const response = await axios.post(`http://${global.local_ip}:5000/api/users/auth`, dataJson );
+        const { apiToken } = response.data;
+        await AsyncStorage.setItem('token', apiToken);
+        await AsyncStorage.setItem('id', JSON.stringify(response.data['user']['id']));
+
+        try {
+            const tripData = {
+                user_id: response.data['user']['id']
+            }
+            const tripConfig = {
+                headers: { Authorization: `Bearer ${apiToken}` }
+            }
+
+            const tripResponse = await axios.post(`http://${global.local_ip}:5000/api/trip/add`, tripData, tripConfig);
+            router.push('/homePage');
+
+        } catch (e) {
+            if (e.response.data.notArchivedTrip) {
+                router.push('/homePage')
+            } else {
+                setErrorMessage(e.message);
+            }
+        }
+
+      } catch (err) {
+        setError('Invalid email or password');
+      }
   };
 
   return (
-      <>
-        <Stack.Screen options={{ headerShown: false }} />
-          <View style={styles.container}>
-            <Text style={styles.header}>Login</Text>
+  <>
+      <Stack.Screen options={{ headerShown: false }} />
+      <View style={styles.container}>
+          <ScrollView contentContainerStyle={styles.scrollContainer}>
+              <View style={styles.innerContainer}>
+                <Text style={styles.header}>Login</Text>
 
-            <TextInput style={styles.textinput} placeholder="Email address" value={email} onChangeText={setEmail} underlineColorAndroid={'transparent'}/>
-            <TextInput style={styles.textinput} placeholder="Password" value={password}  onChangeText={setPassword} secureTextEntry={true} underlineColorAndroid={'transparent'}/>
+                <TextInput style={styles.textinput} placeholder="Email address" value={email} onChangeText={setEmail} underlineColorAndroid={'transparent'}/>
+                <TextInput style={styles.textinput} placeholder="Password" svalue={password}  onChangeText={setPassword} secureTextEntry={true} underlineColorAndroid={'transparent'}/>
 
-            <Pressable style={styles.button} onPress={handleLogin}>
-                <Text style={styles.btntext}>Sign in</Text>
-            </Pressable>
-
-            <TouchableOpacity style={styles.signUpButton} onPress={() => router.push('/register')}><Text style={styles.signUpText}>Don't have an account?{' '}
-                <Text style={styles.signUpLink}>Sign up</Text></Text>
-            </TouchableOpacity>
-
-          </View>
-      </>
+                <Pressable style={styles.button} onPress={handleLogin}>
+                    <Text style={styles.btntext}>Sign in</Text>
+                </Pressable>
+              </View>
+          </ScrollView>
+      </View>
+  </>
     );
 }
 
@@ -73,10 +83,18 @@ const styles = StyleSheet.create({
     flex:1,
     justifyContent: 'center',
     alignItems:'center',
-    backgroundColor:'#c7522a',
+    backgroundColor:'#73FD00',
     paddingLeft: 60,
     paddingRight: 60,
-    width: '100%'
+  },
+  scrollContainer: {
+    flexGrow: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  innerContainer: {
+    width: '100%',
+    alignItems: 'center',
   },
   header: {
     fontSize: 24,
@@ -93,7 +111,6 @@ const styles = StyleSheet.create({
     color: '#fff',
     borderBottomColor: '#f8f8f8',
     borderBottomWidth: 1,
-     width: '100%',
   },
   placeholder: {
     color: '#fff',
@@ -102,18 +119,7 @@ const styles = StyleSheet.create({
       alignSelf: 'stretch',
       alignItems: 'center',
       padding: 20,
-      backgroundColor: '#dda15e',
+      backgroundColor: '#FD00CF',
       marginTop: 30,
   },
-  signUpButton: {
-        marginTop: 20,
-    },
-    signUpText: {
-        color: '#fff',
-        textAlign: 'center',
-    },
-    signUpLink: {
-        color: '#dda15e',
-        fontWeight: 'bold',
-    },
 });

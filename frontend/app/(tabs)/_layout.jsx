@@ -6,15 +6,17 @@ import Colors from "../../constants/Colors"
 
 const Layout = () => {
   return (
-    <Tabs screenOptions={{
+    <Tabs 
+      initialRouteName="homePage"
+      screenOptions={{
       tabBarStyle: {
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.white,
         borderTopWidth: 0,
         padding: 0,
         height: 60
       },
       tabBarActiveTintColor: Colors.primaryColor,
-      tabBarInactiveTintColor: Colors.white,
+      tabBarInactiveTintColor: Colors.black,
       tabBarLabelStyle: {
         fontSize: 14,
         marginBottom: 5
@@ -30,7 +32,7 @@ const Layout = () => {
           headerShown: false,
           }} />
         <Tabs.Screen 
-        name='home' 
+        name='homePage'
         options={{
           tabBarLabel: "Home",
           tabBarIcon: ({color}) => (
