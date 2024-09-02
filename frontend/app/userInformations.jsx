@@ -141,17 +141,17 @@ const UserProfile = () => {
         <Stack.Screen options={{
                 headerTitle: '',
                 headerStyle: {
-                  backgroundColor: Colors.grey,
+                  backgroundColor: Colors.secondColor,
                 },
                 headerRight: () => (
-                  <Text style={styles.headerTitle}>Hello, {userInfo.first_name}</Text>
+                  <Text style={styles.headerTitle}>Hello {userInfo.first_name}</Text>
 
                 ),
                 headerTintColor: Colors.white
               }}
               />
         <View style={styles.headerContainer}>
-            <Text style={styles.headerTitle}>Personal information</Text>
+            <Text style={styles.mainTitle}>Personal information</Text>
         </View>
       <TextInput
         style={styles.input}
@@ -229,12 +229,17 @@ const styles = StyleSheet.create({
   headerContainer: {
     marginBottom: 20,
     borderBottomWidth: 1,
-    borderBottomColor: Colors.grey,
+    borderBottomColor: Colors.black,
     paddingBottom: 10,
     flexDirection: 'row',
     alignItems:'center',
   },
   headerTitle: {
+    color: Colors.white,
+    fontSize: 20,
+    marginRight: 15,
+  },
+  mainTitle: {
     color: Colors.black,
     fontSize: 20,
     marginRight: 15,
@@ -248,7 +253,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     padding: 10,
     marginVertical: 10,
-    backgroundColor: Colors.lightGrey,
+    backgroundColor: Colors.white,
   },
   buttonContainer: {
     marginTop: 20,
@@ -261,17 +266,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   saveButton: {
-    backgroundColor: '#c7522a',
+    backgroundColor: Colors.primaryColor,
   },
   editButton: {
-    backgroundColor: '#dda15e',
+    backgroundColor: Colors.primaryColor,
+    marginBottom: 5
   },
   deleteButtonContainer: {
       paddingHorizontal: 20,
       paddingBottom: 20,
   },
   deleteButton: {
-      backgroundColor: Colors.primary,
+      backgroundColor: Colors.prima,
   },
   deleteButtonText: {
       color: Colors.black,
