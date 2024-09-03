@@ -18,31 +18,33 @@ def add_trip_key_locations():
 
     key_location_id = data.get('key_location_id')
     trip_id = data.get('trip_id')
-    position = data.get('position')
 
-    required_fields = ['key_location_id', 'trip_id', 'position']
-    if not all(data.get(field) for field in required_fields):
+    if not key_location_id or not trip_id:
         return jsonify({'error': 'Missing required fields'}), 400
 
-
-    existing_trip_key_location = (TripKeyLocations.query.filter(TripKeyLocations.trip_id == trip_id)
-                                                        .filter(TripKeyLocations.key_locations_id == key_location_id)
-                                                        .first())
+    # Check if the TripKeyLocation already exists
+    existing_trip_key_location = (TripKeyLocations.query
+                                  .filter_by(trip_id=trip_id, key_locations_id=key_location_id)
+                                  .first())
 
     if existing_trip_key_location:
         return jsonify({'error': 'Trip keyLocation already exists'}), 400
 
+    # Get the maximum position for the current trip
+    max_position = db.session.query(db.func.max(TripKeyLocations.position)).filter_by(trip_id=trip_id).scalar()
+    new_position = (max_position or 0) + 1  # Set the new position to max + 1
+
+    # Create the new TripKeyLocation
     new_trip_key_location = TripKeyLocations(
-        key_locations_id = key_location_id,
-        trip_id = trip_id,
-        position = position
+        key_locations_id=key_location_id,
+        trip_id=trip_id,
+        position=new_position
     )
 
     db.session.add(new_trip_key_location)
     db.session.commit()
 
-    return jsonify({'message': 'Trip keyLocation created successfully', "tripKeyLocationId": new_trip_key_location.id }), 201
-    
+    return jsonify({'message': 'Trip keyLocation created successfully', "tripKeyLocationId": new_trip_key_location.id, "position":new_trip_key_location.position}), 201
 
 @tripKeyLocationsBp.route('/delete/<int:id>', methods=['DELETE'])
 @jwt_required()
@@ -52,9 +54,25 @@ def delete_trip_key_location(id):
         if trip_key_location is None:
             return jsonify({'error': 'Trip key location not found'}), 404
 
+        trip_id = trip_key_location.trip_id
+
+        # Delete the trip key location
         db.session.delete(trip_key_location)
         db.session.commit()
-        return jsonify({'message': 'Trip key location deleted successfully'}), 200
+
+        # Reorder remaining locations for the same trip
+        remaining_trip_key_locations = (TripKeyLocations.query
+                                        .filter_by(trip_id=trip_id)
+                                        .order_by(TripKeyLocations.position)
+                                        .all())
+
+        # Update positions sequentially
+        for index, location in enumerate(remaining_trip_key_locations):
+            location.position = index + 1
+
+        db.session.commit()
+
+        return jsonify({'message': 'Trip key location deleted and positions reordered successfully'}), 200
     except SQLAlchemyError as e:
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
@@ -94,23 +112,45 @@ def get_trip_key_location_by_id(id):
 @jwt_required()
 def update_trip_key_location(id):
     data = request.get_json()
-    updatable_fields = ['key_location_id', 'trip_id', 'position']
+    new_position = data.get('position')
 
-    for field in data.keys():
-        if field not in updatable_fields:
-            return jsonify({'error': f'Invalid field: {field}'}), 400
+    if new_position is None:
+        return jsonify({'error': 'Missing required field: position'}), 400
 
     try:
         trip_key_location = TripKeyLocations.query.get(id)
         if trip_key_location is None:
             return jsonify({'error': 'Trip key location not found'}), 404
 
-        for field in updatable_fields:
-            if field in data:
-                setattr(trip_key_location, field, data[field])
+        trip_id = trip_key_location.trip_id
+        old_position = trip_key_location.position
+
+        # If the new position is the same, no need to update
+        if new_position == old_position:
+            return jsonify({'message': 'No changes made'}), 200
+
+        # Fetch all trip key locations for the same trip
+        trip_key_locations = (TripKeyLocations.query
+                              .filter_by(trip_id=trip_id)
+                              .order_by(TripKeyLocations.position)
+                              .all())
+
+        # Shift positions based on the new position
+        if new_position < old_position:  # Moving up
+            for location in trip_key_locations:
+                if new_position <= location.position < old_position:
+                    location.position += 1
+        else:  # Moving down
+            for location in trip_key_locations:
+                if old_position < location.position <= new_position:
+                    location.position -= 1
+
+        # Set the new position for the updated entry
+        trip_key_location.position = new_position
 
         db.session.commit()
-        return jsonify({'message': 'Trip key location updated successfully'}), 200
+
+        return jsonify({'message': 'Trip key location updated and positions adjusted successfully'}), 200
     except SQLAlchemyError as e:
         db.session.rollback()
         return jsonify({'error': str(e)}), 400
