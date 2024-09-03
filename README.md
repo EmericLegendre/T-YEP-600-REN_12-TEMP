@@ -38,21 +38,30 @@ Bienvenue dans **Tripmate** – votre compagnon de voyage ultime ! Tripmate est 
     git clone https://github.com/votre-utilisateur/tripmate.git
     cd tripmate
     ```
-
+    
 2. **Mettez à jour la configuration du frontend :**
 
-   Avant de démarrer l'application, vous devez modifier l'IP dans le fichier de configuration `frontend/config/config.json`. Remplacez `YOUR_IP_HERE` par votre propre adresse IP.
+   Avant de démarrer l'application, vous devez modifier l'IP dans le fichier de configuration `frontend/config/config.json`. Remplacez l'IP par votre propre adresse IP.
+   Exemple :
+   ```bash
+   `http://${global.local_ip}:5000/api/tripKeyLocations/add`
+   ```
+   Il ne faut pas oublier les ` au début et à la fin de l'adresse.
 
-3. **Créez un fichier `.env` dans le dossier frontend :**
+4. **Changement d'IP**
 
-   Dans le dossier `frontend`, créez un fichier `.env` contenant les informations suivantes :
+   Avant de démarrér l'application, vous devez modifier l'IP dans le fichier `./frontend/app/(tabs)/map.jsx`. Remplacez par votre .
+   
+5. **Créez un fichier `.env` dans le dossier backend :**
+
+   Dans le dossier `backend`, créez un fichier `.env` contenant les informations suivantes :
 
     ```bash
     DATABASE_URL=mysql+pymysql://root:root@db/tripmate
     JWT_SECRET_KEY=tripmate_jwt_token
     ```
 
-4. **Créez le dossier versions pour les migrations du backend :**
+6. **Créez le dossier versions pour les migrations du backend :**
 
    Dans le dossier `backend/migrations`, créez un dossier appelé `versions` :
 
@@ -60,17 +69,23 @@ Bienvenue dans **Tripmate** – votre compagnon de voyage ultime ! Tripmate est 
     mkdir backend/migrations/versions
     ```
 
-5. **Construisez et lancez les conteneurs :**
+7. **Construisez et lancez les conteneurs :**
 
    Utilisez Docker Compose pour construire et lancer les conteneurs du frontend et backend :
 
     ```bash
-    docker-compose up --build
+    docker compose up --build
     ```
 
    Cette commande va télécharger les images nécessaires, construire les conteneurs et lancer l'application.
 
-6. **Démarrez Expo pour le frontend :**
+8. **Installer les dépendances :**
+   ```bash
+   cd ./frontend
+   npm i
+   ```
+
+9. **Démarrez Expo pour le frontend :**
 
    Une fois les conteneurs lancés, ouvrez un autre terminal et exécutez la commande suivante pour démarrer Expo :
 
@@ -78,7 +93,7 @@ Bienvenue dans **Tripmate** – votre compagnon de voyage ultime ! Tripmate est 
     npx expo start
     ```
 
-7. **Installez Expo Go sur votre téléphone :**
+10. **Installez Expo Go sur votre téléphone :**
 
    Pour tester l'application sur un appareil réel, installez Expo Go depuis l'App Store (iOS) ou Google Play (Android). Scannez ensuite le QR code généré par la commande `npx expo start` pour lancer l'application sur votre téléphone.
 
@@ -100,7 +115,7 @@ Pour continuer à développer l'application, assurez-vous que vos modifications 
    Si vous ajoutez de nouvelles dépendances ou effectuez des changements dans les Dockerfiles, reconstruisez les conteneurs avec :
 
     ```bash
-    docker-compose up --build
+    docker compose up --build
     ```
 
 3. **Arrêtez les conteneurs :**
@@ -108,7 +123,7 @@ Pour continuer à développer l'application, assurez-vous que vos modifications 
    Pour arrêter l'application, utilisez la commande :
 
     ```bash
-    docker-compose down
+    docker compose down
     ```
 
 ## Contribuer
