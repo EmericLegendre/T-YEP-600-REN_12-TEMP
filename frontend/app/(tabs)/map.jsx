@@ -147,7 +147,7 @@ const createRoute = async (tripKeyLocations) => {
 
   const fetchTripKeyId = async (token, userId) => {
     try {
-      const response = await fetch('http://192.168.1.14:5000/api/trip/get/currenttrip', {
+      const response = await fetch(`http://${global.local_ip}:5000/api/trip/get/currenttrip`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -173,7 +173,7 @@ const createRoute = async (tripKeyLocations) => {
 
   const fetchKeyLocations = async (userId, token) => {
     try {
-      const response = await fetch('http://192.168.1.14:5000/api/keyLocations/get/currentkeylocation', {
+      const response = await fetch(`http://${global.local_ip}:5000/api/keyLocations/get/currentkeylocation`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -252,7 +252,7 @@ const createRoute = async (tripKeyLocations) => {
 
   const addKeyLocations = async (token, place) => {
     try {
-      const response = await fetch('http://192.168.1.14:5000/api/keyLocations/add', {
+      const response = await fetch(`http://${global.local_ip}:5000/api/keyLocations/add`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -281,7 +281,7 @@ const createRoute = async (tripKeyLocations) => {
 
   const addTripKeyLocation = async (token, tripId, place, keyLocationId) => {
     try {
-      const response2 = await fetch('http://192.168.1.14:5000/api/tripKeyLocations/add', {
+      const response2 = await fetch(`http://${global.local_ip}:5000/api/tripKeyLocations/add`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -292,7 +292,8 @@ const createRoute = async (tripKeyLocations) => {
           trip_id: tripId,
         }),
       });
-      data = await response2.json();
+
+      const data = await response2.json();
 
       setKeyLocations((prevKeyLocations) => {
         const newLocation = {
@@ -322,7 +323,7 @@ const createRoute = async (tripKeyLocations) => {
   const handleRemovePlace = async (tripKeyLocationId) => {
 
     try {
-      const response = await fetch(`http://192.168.1.14:5000/api/tripKeyLocations/delete/${tripKeyLocationId}`, {
+      const response = await fetch(`http://${global.local_ip}:5000/api/tripKeyLocations/delete/${tripKeyLocationId}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
